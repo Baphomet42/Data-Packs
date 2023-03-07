@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:structure_block"
+		},
+		"title": "42essentials    ",
+		"description": [
+			{
+				"text": "Super Cool",
+				"color": "white"
+			}
+		],
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "42:42/root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

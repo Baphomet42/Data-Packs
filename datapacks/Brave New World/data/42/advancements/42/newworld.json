@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:deepslate"
+		},
+		"title": "Brave New World    ",
+		"description": [
+			{
+				"text": "Blackest Magick in Practice",
+				"color": "white"
+			}
+		],
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "42:42/root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

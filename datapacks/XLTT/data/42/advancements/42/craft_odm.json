@@ -1,0 +1,29 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:knowledge_book"
+		},
+		"title": "",
+		"description": [
+			{
+				"text": ""
+			}
+		],
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true
+	},
+	"parent": "42:42/xltt",
+	"criteria": {
+		"Unlocked": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "42:odm_sword"
+			}
+		}
+	},
+	"rewards": {
+		"function": "42:xltt/odm/craft"
+	}
+}

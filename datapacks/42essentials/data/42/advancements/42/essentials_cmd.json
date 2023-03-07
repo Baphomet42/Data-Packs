@@ -1,0 +1,36 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:command_block"
+		},
+		"title": "Custom Commands    ",
+		"description": [
+			{
+				"text": "/trigger hat",
+				"color": "green"
+			},
+			{
+				"text": " - Equip the currently selected item as a helmet",
+				"color": "white"
+			},
+			{
+				"text": "\n\n/trigger kittycannon",
+				"color": "green"
+			},
+			{
+				"text": " - Mostly harmless",
+				"color": "white"
+			}
+		],
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "42:42/essentials",
+	"criteria": {
+		"none": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

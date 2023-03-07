@@ -1,0 +1,30 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:player_head",
+			"nbt": "{SkullOwner:{Id:[I;-399550516,1103321609,-1293510248,961414264],Properties:{textures:[{Value:'e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDdkNWM2OWM0M2NmNjBlNmEyOGFiNWQ1MjAzODg1Njc0YjQ3MjRlMmE3YTZmNzhhOTkzNDU0YzY2NmM2Zjg2In19fQ=='}]}}}"
+		},
+		"title": "XL-TT    ",
+		"description": [
+			{
+				"text": "T:T",
+				"color": "white"
+			}
+		],
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "42:42/root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"recipes": [
+			"42:odm_sword_display"
+		]
+	}
+}

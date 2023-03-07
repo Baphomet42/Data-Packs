@@ -1,0 +1,22 @@
+{
+    "type": "42:exegol",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "biome": "42:limbo",
+            "lakes": false,
+            "features": false,
+            "layers": [
+                {
+                    "height": 64,
+                    "block": "minecraft:air"
+                },
+                {
+                    "height": 4,
+                    "block": "minecraft:tinted_glass"
+                }
+            ],
+            "structure_overrides": []
+        }
+    }
+}
