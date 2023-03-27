@@ -1,0 +1,9 @@
+tellraw @s[scores={42menu=1}] [{"text":""},{"text":"Portal","color":"gold","bold":true},{"text":"\n   "},{"text":"Get equipment...","color":"dark_gray"},{"text":"\n      "},{"text":"[Weighted Storage Cube]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203001"}},{"text":"\n      "},{"text":"[Weighted Companion Cube]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203002"}},{"text":"\n      "},{"text":"[Aerial Faith Plate]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203004"}},{"text":"\n   "},{"text":"Get tool...","color":"dark_gray"},{"text":"\n      "},{"text":"[Fizzler]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203003"}},{"text":"\n      "},{"text":"[Rotater]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203005"}},{"text":"\n   "},{"text":"Config...","color":"dark_gray"},{"text":"\n      "},{"text":"[Faith Plate Power]","color":"gray","clickEvent":{"action":"suggest_command","value":"/scoreboard players set @e[tag=42.portal_launch,limit=1,sort=nearest,distance=..5] 42.portal_z -1000"}}]
+#4203001-4203005
+execute if entity @s[tag=!42op,gamemode=!creative,scores={42menu=4203001..4203005}] run function 42:error_perms
+scoreboard players set @s[tag=!42op,gamemode=!creative,scores={42menu=4203001..4203004}] 42menu 0
+execute if entity @s[scores={42menu=4203001}] run function 42:portal/cube/craft
+execute if entity @s[scores={42menu=4203002}] run function 42:portal/cube/craft_companion
+execute if entity @s[scores={42menu=4203003}] run function 42:portal/tools/craft_fizzler
+execute if entity @s[scores={42menu=4203004}] run function 42:portal/launch/craft
+execute if entity @s[scores={42menu=4203005}] run function 42:portal/tools/craft_rotate

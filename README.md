@@ -10,6 +10,22 @@ Multiplayer friendly and designed to work with other packs
 + `/trigger kittycannon`
     + Ka-BOOM!
 
+**Portal**
+
++ *Weighted Cubes*
+    + Storage and Companion cubes essential for button-based testing
++ *Aerial Faith Plate*
+    + Send anything flying through the air
+    + Rotate with rotate tool
+    + Set velocity from 42menu
++ *Fizzle Tool*
+    + Destroy cubes and other equipment within a small range
++ *Rotate Tool*
+    + Used to rotate certain equipment
++ `/trigger 42menu`
+    + Opens window to give equipment and tools
+    + Config options set a command that can be edited
+
 **XLTT** (requires resource pack - see below)
 
 + *O.D.M.*

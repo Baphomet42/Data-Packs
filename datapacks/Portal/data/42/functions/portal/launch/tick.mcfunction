@@ -1,0 +1,6 @@
+execute if score @s 42.portal_time matches 0 positioned ~-.5 ~-.5 ~-.5 as @a[dx=0,dy=0,dz=0,gamemode=!spectator,limit=1,sort=nearest] positioned ~.5 ~.5 ~.5 run function 42:portal/launch/launch
+execute if score @s 42.portal_time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[tag=42.portal_cube_hit,tag=!42.portal_cube_held,dx=0,dy=0,dz=0,limit=1,sort=nearest] positioned ~.5 ~.5 ~.5 run function 42:portal/launch/launch_cube
+execute if score @s 42.portal_time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[type=!#42:no_launch,tag=!42.portal_cube_tp,tag=!42.portal_cube_col,dx=0,dy=0,dz=0,limit=1,sort=nearest] positioned ~.5 ~.5 ~.5 run function 42:portal/launch/launch
+execute if score @s 42.portal_time matches 1.. run scoreboard players remove @s 42.portal_time 1
+execute if score @s 42.portal_time matches 5 as @e[tag=42.portal_launch_dis,limit=2,sort=nearest,distance=..5] run data merge entity @s {transformation:{left_rotation:{angle:0f,axis:[1f,0f,0f]}},interpolation_duration:8,start_interpolation:-1}
+execute if entity @s[tag=42.portal_fizzle] run function 42:portal/launch/fizzle
