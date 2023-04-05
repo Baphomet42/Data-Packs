@@ -49,7 +49,7 @@ Multiplayer friendly and designed to work with other packs
 + *Link Tool*
     + Used to connect Super Buttons and Pedestal Buttons to Doors and Vital Apparatus Vents
     + To use: place any amount of equipment that should be linked together, then place the link tool anywhere
-        + The link tool has unlimited range (as long as the area is loaded) and only works with the most recently placed equipment
+        + The link tool has unlimited range (as long as the area is loaded) and won't link any equipment that has already been linked
         + When using the link tool a second time, it will now link the new unlinked equipment
         + Any number of equipment can be linked together in one group, and once linked, they will stay linked until fizzled
 + `/trigger 42menu`
