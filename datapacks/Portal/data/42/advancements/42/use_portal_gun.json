@@ -1,0 +1,33 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": "",
+		"description": [
+			{
+				"text": ""
+			}
+		],
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true
+	},
+	"parent": "42:42/portal",
+	"criteria": {
+		"click": {
+			"trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:wooden_shovel"
+                    ]
+                }
+            }
+		}
+	},
+	"rewards": {
+		"function": "42:portal/gun/use_blue"
+	}
+}

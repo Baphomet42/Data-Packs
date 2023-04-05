@@ -1,6 +1,8 @@
 effect give @s levitation 1 255 true
 function 42:xltt/tag_id
 execute positioned as @e[tag=42.odm_marker,tag=42.xltt_id] rotated as @s run tp ~ ~ ~
+execute store result entity @e[tag=42.odm_marker,tag=42.xltt_id,limit=1] Motion[0] double .075 run scoreboard players get @e[tag=42.odm_marker,tag=42.xltt_id,limit=1] 42.odm_x
+execute store result entity @e[tag=42.odm_marker,tag=42.xltt_id,limit=1] Motion[2] double .075 run scoreboard players get @e[tag=42.odm_marker,tag=42.xltt_id,limit=1] 42.odm_z
 #ride @s mount @e[tag=42.odm_marker,tag=42.xltt_id,limit=1]
 execute as @e[tag=42.odm_marker,tag=42.xltt_id,nbt={OnGround:1b}] run kill @s
 execute if entity @s[nbt={abilities:{flying:1b}}] as @e[tag=42.odm_marker,tag=42.xltt_id] run kill @s

@@ -1,0 +1,10 @@
+execute as @e[type=area_effect_cloud,tag=42.portal_spawn_cube] at @s run function 42:portal/cube/spawn
+execute as @e[type=area_effect_cloud,tag=42.portal_fizzle_tool] at @s run function 42:portal/tools/fizzler
+execute as @e[type=area_effect_cloud,tag=42.portal_rotate_tool] at @s run function 42:portal/tools/rotate
+execute as @e[type=area_effect_cloud,tag=42.portal_cycle_tool] at @s run function 42:portal/tools/cycle
+execute as @e[type=area_effect_cloud,tag=42.portal_link_tool] at @s run function 42:portal/tools/link
+execute as @e[type=area_effect_cloud,tag=42.portal_spawn_launch] at @s run function 42:portal/launch/spawn
+execute as @e[type=area_effect_cloud,tag=42.portal_spawn_button] at @s run function 42:portal/button/spawn
+execute as @e[type=area_effect_cloud,tag=42.portal_spawn_pedestal] at @s run function 42:portal/button/spawn_pedestal
+execute as @e[type=area_effect_cloud,tag=42.portal_spawn_door] at @s run function 42:portal/door/spawn
+execute as @e[type=area_effect_cloud,tag=42.portal_spawn_dropper] at @s run function 42:portal/dropper/spawn

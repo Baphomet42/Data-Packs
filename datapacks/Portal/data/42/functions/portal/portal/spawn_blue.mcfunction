@@ -1,0 +1,22 @@
+execute unless entity @s[type=marker] run scoreboard players set 42.portal 42.portal_temp -3
+execute if entity @s[type=marker] run scoreboard players operation 42.portal 42.portal_temp = @s 42.portal_id
+execute as @e[tag=42.portal,tag=42.portal_blue] at @s if score @s 42.portal_id = 42.portal 42.portal_temp run function 42:portal/portal/fizzle
+tag @e remove 42.portal_temp
+summon block_display ~ ~ ~ {Tags:["42.portal","42.portal_temp","42.portal_player"],CustomName:'{"text":"Portal"}',block_state:{Name:blue_stained_glass},view_range:10f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-.9f,-.9f,0f],scale:[1.8f,2.8f,.525f]},Passengers:[{id:block_display,Tags:["42.portal_temp"],CustomName:'{"text":"42portal"}',block_state:{Name:quartz_block},view_range:10f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1.5f,-1f,-.5f],scale:[1f,1f,1.001f]}},{id:block_display,Tags:["42.portal_temp"],CustomName:'{"text":"42portal"}',block_state:{Name:quartz_block},view_range:10f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1.5f,0f,-.5f],scale:[1f,1f,1.001f]}},{id:block_display,Tags:["42.portal_temp"],CustomName:'{"text":"42portal"}',block_state:{Name:quartz_block},view_range:10f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1.5f,1f,-.5f],scale:[1f,1f,1.001f]}},{id:block_display,Tags:["42.portal_temp"],CustomName:'{"text":"42portal"}',block_state:{Name:quartz_block},view_range:10f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-.5f,-1f,-.5f],scale:[1f,1f,1.001f]}},{id:block_display,Tags:["42.portal_temp"],CustomName:'{"text":"42portal"}',block_state:{Name:quartz_block},view_range:10f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-.5f,1f,-.5f],scale:[1f,1f,1.001f]}},{id:block_display,Tags:["42.portal_temp"],CustomName:'{"text":"42portal"}',block_state:{Name:quartz_block},view_range:10f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[.5f,-1f,-.5f],scale:[1f,1f,1.001f]}},{id:block_display,Tags:["42.portal_temp"],CustomName:'{"text":"42portal"}',block_state:{Name:quartz_block},view_range:10f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[.5f,0f,-.5f],scale:[1f,1f,1.001f]}},{id:block_display,Tags:["42.portal_temp"],CustomName:'{"text":"42portal"}',block_state:{Name:quartz_block},view_range:10f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[.5f,1f,-.5f],scale:[1f,1f,1.001f]}},{id:block_display,Tags:["42.portal_temp","42.portal_dis"],CustomName:'{"text":"42portal"}',block_state:{Name:blue_concrete_powder},view_range:10f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-.85f,-.85f,0f],scale:[1.7f,2.7f,.505f]}}]}
+scoreboard players operation @e[tag=42.portal_temp] 42.portal_id = 42.portal 42.portal_temp
+scoreboard players set @e[tag=42.portal_temp,tag=42.portal] 42.portal_x 0
+scoreboard players set @e[tag=42.portal_temp,tag=42.portal] 42.portal_y 0
+scoreboard players set @e[tag=42.portal_temp,tag=42.portal] 42.portal_cool 0
+#
+tag @e[tag=42.portal_temp] add 42.portal_blue
+execute if entity @s[tag=42.portal_w] run scoreboard players set @e[tag=42.portal_temp,tag=42.portal] 42.portal_x 1
+execute if entity @s[tag=42.portal_w] as @e[tag=42.portal_temp] at @s run tp @s ~ ~ ~ 90 ~
+execute if entity @s[tag=42.portal_n] run scoreboard players set @e[tag=42.portal_temp,tag=42.portal] 42.portal_x 2
+execute if entity @s[tag=42.portal_n] as @e[tag=42.portal_temp] at @s run tp @s ~ ~ ~ 180 ~
+execute if entity @s[tag=42.portal_e] run scoreboard players set @e[tag=42.portal_temp,tag=42.portal] 42.portal_x 3
+execute if entity @s[tag=42.portal_e] as @e[tag=42.portal_temp] at @s run tp @s ~ ~ ~ -90 ~
+execute if entity @s[tag=42.portal_floor] run function 42:portal/portal/setup_floor
+execute if entity @s[tag=42.portal_ceiling] run function 42:portal/portal/setup_ceiling
+execute as @e[tag=42.portal_temp,tag=42.portal] run function 42:portal/portal/calc_rot
+execute as @e[tag=42.portal,tag=42.portal_temp] at @s run function 42:portal/portal/set_blocks
+tag @e remove 42.portal_temp

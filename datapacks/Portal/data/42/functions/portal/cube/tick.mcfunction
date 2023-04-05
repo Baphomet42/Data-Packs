@@ -8,9 +8,10 @@ execute as @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=42.portal_cube_held] a
 #tp looking down
 execute as @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=42.portal_cube_held] as @p[tag=42.portal_id,x_rotation=26..90] at @s rotated ~ 26 anchored eyes run function 42:portal/cube/hold
 #
-execute if entity @s[tag=42.portal_fizzle] run function 42:portal/cube/fizzle
+execute if block ~ ~.5 ~ water run function 42:portal/cube/fizzle
 #
 tag @e remove 42.portal_id
+execute if entity @s[nbt={OnGround:0b},tag=!42.portal_motion_tp] store result score @s 42.portal_y run data get entity @s Motion[1] 1000
 #
 execute if score @s 42.portal_time matches 20 run function 42:portal/cube/tick20
 scoreboard players add @s 42.portal_time 1
