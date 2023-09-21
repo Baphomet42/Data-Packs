@@ -1,4 +1,4 @@
-summon ravager ~ ~ ~ {Tags:["42.titan","42.titanAI","42.titan_new"],CustomName:'{"text":"Titan"}',PersistenceRequired:1,DeathLootTable:empty,Invulnerable:1,ActiveEffects:[{Id:14,Duration:-1,Amplifier:5b,ShowParticles:0b}],Attributes:[{Name:generic.follow_range,Base:128.0}]}
+summon ravager ~ ~ ~ {Tags:["42.titan","42.titanAI","42.titan_new"],CustomName:'{"text":"Titan"}',PersistenceRequired:1,DeathLootTable:empty,Invulnerable:1,active_effects:[{id:"invisibility",duration:-1,amplifier:5b,show_particles:0b}],Attributes:[{Name:generic.follow_range,Base:128.0}]}
 summon giant ~ ~ ~ {Tags:["42.titan","42.titanBody","42.titan_newGiant"],PersistenceRequired:1,DeathLootTable:empty,NoAI:1,Invulnerable:1}
 summon interaction ~ ~8 ~ {Tags:["42.titan","42.titanHit","42.titan_newHit"],CustomName:'{"text":"Titan"}',width:3.5,height:1.5}
 team join titanCol @e[tag=42.titan_newGiant]

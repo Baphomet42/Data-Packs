@@ -26,7 +26,7 @@ execute as @e[type=villager,tag=42.xltt_transform,scores={42.odm_time=40..}] at 
 #wine
 execute as @e[type=experience_bottle,nbt={Item:{tag:{42titan:1b}}}] at @s run function 42:xltt/wine/spawn
 execute as @e[tag=42.xltt_wine,type=marker] at @s run particle dust .24 .04 .08 1
-execute as @e[tag=42.xltt_wine,type=marker] at @s unless entity @e[tag=42.xltt_wine,type=potion,distance=...2] run function 42:xltt/wine/hit
+execute as @e[tag=42.xltt_wine,type=marker] at @s unless entity @e[tag=42.xltt_wine,type=potion,distance=..1] run function 42:xltt/wine/hit
 execute at @e[tag=42.titan_appear] run particle flash ~ ~5 ~ 1 2 1 0 15 force
 execute at @e[tag=42.titan_appear] run playsound entity.allay.death hostile @a[distance=..200] ~ ~ ~ 20 2
 scoreboard players add @e[tag=42.titan_appear] 42.titan_time 1

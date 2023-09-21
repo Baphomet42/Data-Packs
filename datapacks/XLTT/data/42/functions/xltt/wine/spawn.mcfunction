@@ -1,4 +1,4 @@
-summon potion ~ ~ ~ {Tags:["42.xltt_wine","42.xltt_wine_new"],Item:{id:experience_bottle,Count:1,tag:{Potion:water,CustomPotionEffects:[{Id:9,Duration:300,Amplifier:42b}],CustomPotionColor:4721688}},LeftOwner:0b,OnGround:0b,FallDistance:0f,HasBeenShot:1b,Owner:[I;0,0,0,0],Passengers:[{id:marker,Tags:["42.xltt_wine"]}]}
+summon potion ~ ~ ~ {Tags:["42.xltt_wine","42.xltt_wine_new"],Item:{id:experience_bottle,Count:1,tag:{Potion:water,custom_potion_effects:[{id:"nausea",duration:300,amplifier:42b}],CustomPotionColor:4721688}},LeftOwner:0b,OnGround:0b,FallDistance:0f,HasBeenShot:1b,Owner:[I;0,0,0,0],Passengers:[{id:marker,Tags:["42.xltt_wine"]}]}
 execute store result entity @e[tag=42.xltt_wine_new,limit=1,sort=nearest] Motion[0] double .001 run data get entity @s Motion[0] 1000
 execute store result entity @e[tag=42.xltt_wine_new,limit=1,sort=nearest] Motion[1] double .001 run data get entity @s Motion[1] 1000
 execute store result entity @e[tag=42.xltt_wine_new,limit=1,sort=nearest] Motion[2] double .001 run data get entity @s Motion[2] 1000

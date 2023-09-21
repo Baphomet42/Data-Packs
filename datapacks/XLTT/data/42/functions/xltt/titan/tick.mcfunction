@@ -14,7 +14,7 @@ scoreboard players add @e[tag=42.titanAttack] 42.titan_time 2
 scoreboard players set @e[tag=42.titanAttack,scores={42.titan_time=41..}] 42.titan_time 30
 scoreboard players add @e[type=#42:titan_targets,scores={42.titan_time=..-1}] 42.titan_time 1
 scoreboard players remove @e[type=#42:titan_targets,scores={42.titan_time=1..},tag=!42.titanAttack] 42.titan_time 1
-execute as @e[tag=42.titanAI,scores={42.titan_time=4}] unless entity @s[nbt={ActiveEffects:[{Id:17}]}] at @s run function 42:xltt/titan/try_attack
+execute as @e[tag=42.titanAI,scores={42.titan_time=4}] unless entity @s[nbt={active_effects:[{id:"minecraft:hunger"}]}] at @s run function 42:xltt/titan/try_attack
 #
 execute as @e[tag=42.titanAI,scores={42.titan_time=3}] at @s run function 42:xltt/titan/move
 effect clear @e[tag=42.titanBody,scores={42.titan_time=1}] invisibility
