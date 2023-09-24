@@ -80,8 +80,8 @@ Multiplayer friendly and designed to work with other packs
 
 **Brave New World**
 
-+ *Custom Worldgen*
-    + Just a fancy superflat world
++ *New Dimension*
+    + Just a superflat world for testing
     + Custom biome to make it look cooler
 + `/trigger 42menu`
     + Opens window to teleport between dimensions
