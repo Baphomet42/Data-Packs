@@ -8,3 +8,6 @@ execute as @e[type=area_effect_cloud,tag=42.portal_spawn_button] at @s run funct
 execute as @e[type=area_effect_cloud,tag=42.portal_spawn_pedestal] at @s run function 42:portal/button/spawn_pedestal
 execute as @e[type=area_effect_cloud,tag=42.portal_spawn_door] at @s run function 42:portal/door/spawn
 execute as @e[type=area_effect_cloud,tag=42.portal_spawn_dropper] at @s run function 42:portal/dropper/spawn
+execute as @e[type=area_effect_cloud,tag=42.portal_spawn_pellet] at @s run function 42:portal/pellet/pellet/spawn
+execute as @e[type=area_effect_cloud,tag=42.portal_spawn_pellet_emitter] at @s run function 42:portal/pellet/emitter/spawn
+execute as @e[type=area_effect_cloud,tag=42.portal_spawn_pellet_catcher] at @s run function 42:portal/pellet/catcher/spawn

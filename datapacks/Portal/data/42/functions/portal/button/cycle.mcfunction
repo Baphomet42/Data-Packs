@@ -14,4 +14,5 @@ execute if entity @s[tag=42.portal_btn_cube] run data merge entity @e[tag=42.por
 execute if entity @s[tag=42.portal_btn_cube] run data merge entity @e[tag=42.portal_id,tag=42.portal_btn_dis3,limit=1] {block_state:{Name:redstone_block}}
 execute if entity @s[tag=42.portal_btn_cube] run data merge entity @e[tag=42.portal_id,tag=42.portal_btn_dis4,limit=1] {block_state:{Name:redstone_block}}
 execute if entity @s[tag=42.portal_btn_cube] run data merge entity @e[tag=42.portal_id,tag=42.portal_btn_dis5,limit=1] {block_state:{Name:redstone_block}}
+particle flash
 tag @e remove 42.portal_id
