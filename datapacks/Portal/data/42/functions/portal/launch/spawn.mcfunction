@@ -5,5 +5,15 @@ scoreboard players set @e[tag=42.portal_launch,tag=42.portal_launch_spawn] 42.po
 scoreboard players set @e[tag=42.portal_launch,tag=42.portal_launch_spawn] 42.portal_x 0
 scoreboard players set @e[tag=42.portal_launch,tag=42.portal_launch_spawn] 42.portal_y 1000
 scoreboard players set @e[tag=42.portal_launch,tag=42.portal_launch_spawn] 42.portal_z -1000
+#
+execute as @p at @s run function 42:portal/get_rot
+execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_e] as @e[tag=42.portal_launch_spawn,tag=42.portal_launch] at @s run function 42:portal/launch/rotate
+execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_s] as @e[tag=42.portal_launch_spawn,tag=42.portal_launch] at @s run function 42:portal/launch/rotate
+execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_s] as @e[tag=42.portal_launch_spawn,tag=42.portal_launch] at @s run function 42:portal/launch/rotate
+execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_w] as @e[tag=42.portal_launch_spawn,tag=42.portal_launch] at @s run function 42:portal/launch/rotate
+execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_w] as @e[tag=42.portal_launch_spawn,tag=42.portal_launch] at @s run function 42:portal/launch/rotate
+execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_w] as @e[tag=42.portal_launch_spawn,tag=42.portal_launch] at @s run function 42:portal/launch/rotate
+tag @e remove 42.portal_rot
+#
 tag @e remove 42.portal_launch_spawn
 kill @s[type=area_effect_cloud]

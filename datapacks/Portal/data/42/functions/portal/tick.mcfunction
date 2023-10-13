@@ -12,5 +12,6 @@ execute as @e[tag=42.portal] at @s if loaded ~ ~ ~ run function 42:portal/portal
 execute as @e[type=marker,tag=42.portal_gun] at @s run function 42:portal/gun/find_target
 execute as @e[tag=42.portal_pellet,tag=!42.portal_pellet_on] at @s if loaded ~ ~ ~ run function 42:portal/pellet/pellet/tick
 execute as @e[tag=42.portal_pellet_emitter] at @s if loaded ~ ~ ~ run function 42:portal/pellet/emitter/tick
+execute as @e[tag=42.portal_pellet_catcher,tag=!42.portal_pellet_catcher_on] at @s if loaded ~ ~ ~ run function 42:portal/pellet/catcher/tick
 #
 schedule function 42:portal/tick 1t replace
