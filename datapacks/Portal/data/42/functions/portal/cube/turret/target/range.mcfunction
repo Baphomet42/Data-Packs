@@ -1,0 +1,1 @@
+execute as @e[tag=42.portal_id,tag=42.portal_cube_hit,limit=1] positioned ~ ~1 ~ facing entity @e[tag=42.portal_turret_target,limit=1,sort=nearest] eyes run tp @s ~ ~ ~ ~ ~

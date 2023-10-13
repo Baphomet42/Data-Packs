@@ -10,7 +10,7 @@ Multiplayer friendly and designed to work with other packs
 + `/trigger kittycannon`
     + Ka-BOOM!
 
-**Portal** (requires resource pack - see below)
+**Portal** (optional resource pack - see below)
 
 + *Portal Guns*
     + Each player can set 2 linked portals
@@ -18,6 +18,9 @@ Multiplayer friendly and designed to work with other packs
     + Portals must be placed on 3x3 quartz blocks (not smooth quartz) and work in all 6 main directions
 + *Weighted Cubes*
     + Storage and Companion cubes essential for button-based testing
++ *Sentry Turret*
+    + Shoots players in survival
+    + Deactivates when grabbed and dropped
 + *Aerial Faith Plate*
     + Send anything flying through the air
     + Rotate with rotate tool
@@ -39,13 +42,24 @@ Multiplayer friendly and designed to work with other packs
     + Link to buttons using the `Link Equipment` tool
     + Droppers drop a single cube when powered from a Pedestal Button
     + Droppers will drop a new cube when the old one is destroyed, but only if powered from a Super Button
++ *High Energy Pellet*
+    + Pellets spawn from High Energy Pellet Launchers
+    + Bounce off walls and cubes, can go through portals
+    + Have a limited time before exploding (time resets through portals)
+    + Used to activate High Energy Pellet Catchers
+    + Cycling a High Energy Pellet Launcher will spawn Super Pellets that do not explode over time
+    + Pellets will kill Sentry Turrets and players upon impact
++ *Thermal Discouragement Beam*
+    + Creates a deadly laser
+    + Can be redirected with Discouragement Redirection Cube
+    + Used to activate Thermal Discouragement Receptacle
 + *Fizzle Tool*
     + Destroy cubes and other equipment within a small range
 + *Rotate Tool*
     + Used to rotate certain equipment
 + *Cycle Tool*
     + Click near equipment to cycle between modes
-    + Works with Super Buttons and Vital Apparatus Vents
+    + Works with Super Buttons, Vital Apparatus Vents, and Pellet Launchers
 + *Link Tool*
     + Used to connect Super Buttons and Pedestal Buttons to Doors and Vital Apparatus Vents
     + To use: place any amount of equipment that should be linked together, then place the link tool anywhere
@@ -56,7 +70,7 @@ Multiplayer friendly and designed to work with other packs
     + Opens window to give equipment and tools
     + Config options set a command that can be edited
 
-**XLTT** (requires resource pack - see below)
+**XLTT** (optional resource pack - see below)
 
 + *O.D.M.*
     + Grappling hook + sword + rocket propulsion
@@ -91,16 +105,30 @@ Multiplayer friendly and designed to work with other packs
 Resource packs for datapacks
 Only needed for Portal and XLTT
 
-Setup by doing only one of the following
+**Setup** (do only one of the following)
 
-+ Place `resources.zip` into the world save
++ a- Place `resources.zip` into the world save
     + Textures will load automatically when joining world
     + This pack combines all datapack textures
     + All players will automatically see the textures
-+ Add pack from `resourcepacks` to `.minecraft/resourcepacks` and enable it ingame
++ b- Add pack from `resourcepacks` to `.minecraft/resourcepacks` and enable it ingame
     + Textures will load when enabled in Resource Pack Settings
     + Packs can be separately added but everything works together
     + Only players who add the resource packs will see the textures
     + The pack `42datapacks` is the combined pack with all textures
+
+**Portal**
+
++ Resource pack optional
+    + Most features use display entities, no resource pack needed
++ Custom item texture for Portal Gun
+    + Without resource pack it's a fungus on a stick
+
+**XLTT**
+
++ Resource pack optional
+    + Most features use display entities, no resource pack needed
++ Custom item texture for O.D.M. Sword
+    + Without resource pack it's a fungus on a stick
 
 ------------------------------------------------------------------------------------

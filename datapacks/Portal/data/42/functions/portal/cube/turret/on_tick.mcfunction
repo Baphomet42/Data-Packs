@@ -1,0 +1,1 @@
+function 42:portal/cube/turret/target/find

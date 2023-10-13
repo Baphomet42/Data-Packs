@@ -4,3 +4,4 @@ execute if entity @s[tag=42.portal_cube_hit] run tag @e remove 42.portal_id
 execute if entity @s[tag=42.portal_cube_tp] if entity @e[tag=42.portal_tp1,scores={42.portal_y=0..}] at @e[tag=42.portal_tp2] positioned ^ ^-1 ^1.8 run tp @s ~ ~ ~
 execute if entity @s[tag=42.portal_cube_tp] if entity @e[tag=42.portal_tp1,scores={42.portal_y=0..}] run data remove entity @s Motion
 execute if entity @s[tag=42.portal_cube_tp] if entity @e[tag=42.portal_tp1,scores={42.portal_y=..-1}] run function 42:portal/portal/tp_cube_air
+execute if entity @s[tag=42.portal_cube_tp,tag=42.portal_turret] at @s run function 42:portal/portal/tp_turret 

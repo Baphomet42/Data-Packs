@@ -1,0 +1,2 @@
+execute if entity @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=!42.portal_cube_held] as @e[tag=42.portal_id,tag=42.portal_cube_dis,x_rotation=-90..-30] at @s run tp @s ~ ~ ~ ~ -70
+execute if entity @s[tag=42.portal_turret_malfunction] if score @s 42.portal_w matches 1.. at @s run function 42:portal/cube/turret/mal_tick

@@ -1,6 +1,7 @@
 tag @e remove 42.portal_pellet_spawn
-summon item_display ~ ~.5 ~ {Tags:["42.portal_pellet","42.portal_pellet_spawn"],CustomName:'{"text":"High Energy Pellet"}',item:{id:ender_eye,Count:1},item_display:fixed,billboard:center,brightness:{sky:15,block:15},view_range:10f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]}}
+summon item_display ~ ~.5 ~ {Tags:["42.portal_pellet","42.portal_pellet_spawn"],CustomNameVisible:0b,CustomName:'{"text":"High Energy Pellet"}',item:{id:ender_eye,Count:1},item_display:fixed,billboard:center,brightness:{sky:15,block:15},view_range:10f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]}}
 scoreboard players set @e[tag=42.portal_pellet_spawn] 42.portal_id 0
+scoreboard players set @e[type=!player,tag=42.portal_pellet_spawn] 42.datapack 3
 execute as @e[tag=42.portal_pellet_spawn] at @s run tp @s ~ ~ ~ 0 -90
 scoreboard players set @e[tag=42.portal_pellet_spawn] 42.portal_time 320
 scoreboard players set @e[tag=42.portal_pellet_spawn] 42.portal_x 8

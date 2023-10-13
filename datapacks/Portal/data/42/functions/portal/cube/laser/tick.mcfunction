@@ -1,2 +1,1 @@
 execute if entity @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=42.portal_cube_held] as @e[tag=42.portal_id,tag=42.portal_cube_dis] at @s rotated as @p[tag=42.portal_id] run tp @s ~ ~ ~ ~ 0
-execute if entity @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=42.portal_cube_held] as @e[tag=42.portal_id,tag=42.portal_cube] at @s rotated as @p[tag=42.portal_id] run tp @s ~ ~ ~ ~ 0
