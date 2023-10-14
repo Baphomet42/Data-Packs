@@ -8,7 +8,9 @@ execute as @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=42.portal_cube_held] a
 #tp looking down
 execute as @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=42.portal_cube_held] as @p[tag=42.portal_id,x_rotation=26..90] at @s rotated ~ 26 anchored eyes run function 42:portal/cube/hold
 #special
+function 42:portal/tag_id
 execute if entity @s[tag=42.portal_turret] at @s run function 42:portal/cube/turret/tick
+function 42:portal/tag_id
 execute if entity @s[tag=42.portal_laser_cube] at @s run function 42:portal/cube/laser/tick
 #
 execute if block ~ ~.5 ~ water run function 42:portal/cube/fizzle

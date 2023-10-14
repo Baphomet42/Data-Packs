@@ -2,6 +2,8 @@ scoreboard objectives add 42.datapack dummy
 scoreboard objectives add 42.portal_id dummy
 scoreboard objectives add 42.portal_time dummy
 scoreboard objectives add 42.portal_temp dummy
+scoreboard objectives add 42.portal_u dummy
+scoreboard objectives add 42.portal_v dummy
 scoreboard objectives add 42.portal_w dummy
 scoreboard objectives add 42.portal_x dummy
 scoreboard objectives add 42.portal_y dummy
@@ -9,6 +11,10 @@ scoreboard objectives add 42.portal_z dummy
 scoreboard objectives add 42.portal_link dummy
 scoreboard objectives add 42.portal_cool dummy
 scoreboard objectives add 42.portal_gun_use minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add 42.portal_xrot1 dummy
+scoreboard objectives add 42.portal_yrot1 dummy
+scoreboard objectives add 42.portal_xrot2 dummy
+scoreboard objectives add 42.portal_yrot2 dummy
 #
 scoreboard players set 42.portal_const_n1 42.portal_id -1
 #
