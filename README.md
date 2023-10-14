@@ -15,12 +15,17 @@ Multiplayer friendly and designed to work with other packs
 + *Portal Guns*
     + Each player can set 2 linked portals
     + Portals physics carry over momentum
-    + Portals must be placed on 3x3 quartz blocks (not smooth quartz) and work in all 6 main directions
+    + Portals must be placed on 3x3 quartz blocks (not smooth quartz) and work on all 6 block faces
 + *Weighted Cubes*
     + Storage and Companion cubes essential for button-based testing
+    + Discouragement Redirection cube to move lasers
+    + Click to grab, click again to drop
+    + Can be stacked and climbed
 + *Sentry Turret*
-    + Shoots players in survival
-    + Deactivates when grabbed and dropped
+    + Shoots players in survival (and villagers)
+    + Deactivates when grabbed and dropped on its back, or when hit by a cube
+    + Use `Change Skin Tool` to cycle between 10+ custom skins
+    + Use `Cycle Type` tool to revive a deactivated turret
 + *Aerial Faith Plate*
     + Send anything flying through the air
     + Rotate with rotate tool
@@ -66,6 +71,11 @@ Multiplayer friendly and designed to work with other packs
         + The link tool has unlimited range (as long as the area is loaded) and won't link any equipment that has already been linked
         + When using the link tool a second time, it will now link the new unlinked equipment
         + Any number of equipment can be linked together in one group, and once linked, they will stay linked until fizzled
++ *Change Skin Tool*
+    + Changes textures without changing functionality
+    + Turrets have 10+ skins
+    + Vital Apparatus Vent toggles black effect when looking into the vent
+        + Hiding the effect allows custom builds extending the vent
 + `/trigger 42menu`
     + Opens window to give equipment and tools
     + Config options set a command that can be edited
@@ -103,9 +113,8 @@ Multiplayer friendly and designed to work with other packs
 ------------------------------------------------------------------------------------
 
 Resource packs for datapacks (Optional but recommended)
-Note: No vanilla textures are overridden
-
-Datapacks that use custom resources: Portal, XLTT
++ For datapacks: Portal, XLTT
++ Note: No vanilla textures are overridden
 
 **Setup** (do only one of the following)
 
