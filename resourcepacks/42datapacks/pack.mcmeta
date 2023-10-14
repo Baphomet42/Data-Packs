@@ -1,1 +1,13 @@
-{"pack":{"pack_format":13,"description":"42datapack resources","pack_version":1}}
+{
+	"pack": {
+		"pack_format": 18,
+		"supported_formats": [18,99],
+		"description": "42datapack resources"
+	},
+	"overlays": {
+		"entries": [
+			{"directory":"portal","formats":[18,99]},
+			{"directory":"xltt","formats":[18,99]}
+		]
+	}
+}

@@ -15,6 +15,8 @@ scoreboard objectives add 42.portal_xrot1 dummy
 scoreboard objectives add 42.portal_yrot1 dummy
 scoreboard objectives add 42.portal_xrot2 dummy
 scoreboard objectives add 42.portal_yrot2 dummy
+scoreboard objectives add 42.portal_damage dummy
+scoreboard objectives add 42.portal_skin dummy
 #
 scoreboard players set 42.portal_const_n1 42.portal_id -1
 #

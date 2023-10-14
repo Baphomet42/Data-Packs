@@ -102,20 +102,22 @@ Multiplayer friendly and designed to work with other packs
 
 ------------------------------------------------------------------------------------
 
-Resource packs for datapacks
-Only needed for Portal and XLTT
+Resource packs for datapacks (Optional but recommended)
+Note: No vanilla textures are overridden
+
+Datapacks that use custom resources: Portal, XLTT
 
 **Setup** (do only one of the following)
 
 + a- Place `resources.zip` into the world save
-    + Textures will load automatically when joining world
-    + This pack combines all datapack textures
+    + Textures will load automatically each time you join the world
+    + Textures will not work outside the world
     + All players will automatically see the textures
-+ b- Add pack from `resourcepacks` to `.minecraft/resourcepacks` and enable it ingame
++ b- Place `42datapacks` from `resourcepacks` into `.minecraft/resourcepacks` and enable it ingame
     + Textures will load when enabled in Resource Pack Settings
-    + Packs can be separately added but everything works together
-    + Only players who add the resource packs will see the textures
-    + The pack `42datapacks` is the combined pack with all textures
+    + Textures will stay loaded outside the specific world
+        + No vanilla textures are overridden, so the pack will have no effect without the datapack also loaded
+    + Only players who add the resource pack will see the textures
 
 **Portal**
 
@@ -129,6 +131,6 @@ Only needed for Portal and XLTT
 + Resource pack optional
     + Most features use display entities, no resource pack needed
 + Custom item texture for O.D.M. Sword
-    + Without resource pack it's a fungus on a stick
+    + Without resource pack it's a carrot on a stick
 
 ------------------------------------------------------------------------------------
