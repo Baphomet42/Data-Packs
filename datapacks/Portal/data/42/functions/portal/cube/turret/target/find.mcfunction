@@ -25,3 +25,4 @@ tag @e remove 42.portal_turret_target_current
 #
 execute if entity @e[tag=42.portal_turret_current] at @s run function 42:portal/cube/turret/target/new_laser
 tag @e remove 42.portal_turret_current
+tag @e remove 42.portal_turret_this

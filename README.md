@@ -74,6 +74,7 @@ Multiplayer friendly and designed to work with other packs
 + *Change Skin Tool*
     + Changes textures without changing functionality
     + Turrets have 10+ skins
+    + Storage Cubes have an old Aperture skin
     + Vital Apparatus Vent toggles black effect when looking into the vent
         + Hiding the effect allows custom builds extending the vent
 + `/trigger 42menu`

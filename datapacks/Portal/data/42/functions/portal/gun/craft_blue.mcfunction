@@ -1,1 +1,1 @@
-give @s warped_fungus_on_a_stick{portal_blue:1b,CustomModelData:4203001,display:{Name:'{"text":"Portal Gun","italic":false,"color":"blue"}'},HideFlags:4,Unbreakable:1}
+give @s warped_fungus_on_a_stick{portal_blue:1b,CustomModelData:4203001,display:{Name:'{"text":"Portal Gun","italic":false,"color":"blue"}',Lore:['{"text":"Valid Portal Surfaces (3x3 blocks):","color":"gray","italic":false}','{"text":"  Quartz Block (not smooth)","color":"gray"}','{"text":""}']},42datapack:3,HideFlags:4,Unbreakable:1}

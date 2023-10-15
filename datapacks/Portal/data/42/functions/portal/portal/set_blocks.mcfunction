@@ -28,7 +28,9 @@ execute if entity @e[tag=42.portal_id,tag=42.portal_blue] if entity @e[tag=42.po
 #
 data merge entity @e[tag=42.portal_id,tag=42.portal_blue,tag=42.portal_dis,limit=1] {block_state:{Name:blue_concrete_powder}}
 data merge entity @e[tag=42.portal_id,tag=42.portal_orange,tag=42.portal_dis,limit=1] {block_state:{Name:orange_concrete_powder}}
+execute as @e[tag=42.portal_id,tag=42.portal_quartz] run data merge entity @s {block_state:{Name:air}}
 execute if entity @e[tag=42.portal_id,tag=42.portal_blue] run data merge entity @e[tag=42.portal_id,tag=42.portal_orange,tag=42.portal_dis,limit=1] {block_state:{Name:black_concrete_powder}}
 execute if entity @e[tag=42.portal_id,tag=42.portal_orange] run data merge entity @e[tag=42.portal_id,tag=42.portal_blue,tag=42.portal_dis,limit=1] {block_state:{Name:black_concrete_powder}}
+execute if entity @e[tag=42.portal_id,tag=42.portal_blue] if entity @e[tag=42.portal_id,tag=42.portal_orange] as @e[tag=42.portal_id,tag=42.portal_quartz] run data merge entity @s {block_state:{Name:quartz_block}}
 #
 tag @e remove 42.portal_id
