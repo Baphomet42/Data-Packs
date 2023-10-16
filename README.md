@@ -25,34 +25,34 @@ Multiplayer friendly and designed to work with other packs
     + Shoots players in survival (and villagers)
     + Deactivates when grabbed and dropped on its back, or when hit by a cube
     + Use `Change Skin Tool` to cycle between 10+ custom skins
-    + Use `Cycle Type` tool to revive a deactivated turret
+    + Set turret mode with the `Select Tool`
 + *Aerial Faith Plate*
     + Send anything flying through the air
     + Rotate with rotate tool
-    + Set velocity from 42menu
-        + The prompt will insert a command ending with 42.portal_z and the number 1000.
-        + Parameters are `42.portal_x`, `42.portal_y`, and `42.portal_z` for the objective and any integer for the score
-        + Each x, y, and z can have their own score, indicating the velocity for that direction
-        + x moves east/west, y moves up/down, z moves south/north for score (positive/negative)
-        + Typical scores are in range +/- 1000 to 3000, but any number will work
+    + Change launch velocity with the `Select Tool`
 + *Buttons*
     + Heavy Duty Super Buttons detect players and cubes
     + Using the `Cycle Type` tool on a Super Button will change it to only detect cubes
     + Pedestal buttons can be clicked but turn off after a short time
+        + The time duration can be configured separately for each button with the `Select Tool`
+        + Buttons with -1 duration will stay powered forever after being pressed once
 + *Door*
-    + Doors can be powered from any type of button
+    + Doors can be powered from any type of button or a Pellet Catcher
     + Link to buttons using the `Link Equipment` tool
+    + Manually open with the `Select Tool`
 + *Vital Apparatus Vent*
+    + Manually trigger or power with the `Select Tool`
     + Using the `Cycle Type` tool can change the type of cube dropped
     + Link to buttons using the `Link Equipment` tool
     + Droppers drop a single cube when powered from a Pedestal Button
-    + Droppers will drop a new cube when the old one is destroyed, but only if powered from a Super Button
+    + Droppers will drop a new cube when the old one is destroyed, but only if powered from a Super Button or Pellet Catcher
 + *High Energy Pellet*
     + Pellets spawn from High Energy Pellet Launchers
     + Bounce off walls and cubes, can go through portals
     + Have a limited time before exploding (time resets through portals)
     + Used to activate High Energy Pellet Catchers
     + Cycling a High Energy Pellet Launcher will spawn Super Pellets that do not explode over time
+    + Cycling a High Energy Pellet Catcher will disable the laser effect
     + Pellets will kill Sentry Turrets and players upon impact
 + *Thermal Discouragement Beam*
     + Creates a deadly laser
@@ -66,20 +66,35 @@ Multiplayer friendly and designed to work with other packs
     + Click near equipment to cycle between modes
     + Works with Super Buttons, Vital Apparatus Vents, and Pellet Launchers
 + *Link Tool*
-    + Used to connect Super Buttons and Pedestal Buttons to Doors and Vital Apparatus Vents
+    + Used to connect Buttons and other power sources to Doors, Vital Apparatus Vents, etc.
     + To use: place any amount of equipment that should be linked together, then place the link tool anywhere
         + The link tool has unlimited range (as long as the area is loaded) and won't link any equipment that has already been linked
         + When using the link tool a second time, it will now link the new unlinked equipment
         + Any number of equipment can be linked together in one group, and once linked, they will stay linked until fizzled
++ *Level Tool*
+    + Sets the load level for all new equipment
+    + Equipment with a load level will only work if the level is currently loaded by a player
+    + Unloaded equipment will cause nearly no lag or server resources
+    + By default, all equipment is set to always be loaded, until it's assigned a level using this tool
+    + To use: place any amount of equipment that should be in the same load level, then place the level tool anywhere
+        + The level tool has unlimited range (as long as the area is loaded) and won't set the level for any equipment that has already been assigned a level
+        + This tool behaves similarly to the link tool (see above)
+    + Levels are only considered loaded if a player has that level score, so levels can be placed close together without effecting each other or causing excessive lag
+    + Load levels are highly recommended when there are lots of Turrets
 + *Change Skin Tool*
     + Changes textures without changing functionality
     + Turrets have 10+ skins
     + Storage Cubes have an old Aperture skin
     + Vital Apparatus Vent toggles black effect when looking into the vent
         + Hiding the effect allows custom builds extending the vent
++ *Select Tool*
+    + Select a piece of equipment to modify it and access additional settings
+        + This tool can access the features of most other tools, and more
+    + Each player can only have one piece of equipment selected at once
+    + Can be used to unlink equipment without having to fizzle everything and start over
 + `/trigger 42menu`
     + Opens window to give equipment and tools
-    + Config options set a command that can be edited
+    + Debug options supply commands to delete large numbers of equipment
 
 **XLTT** (optional resource pack - see below)
 

@@ -6,3 +6,4 @@ execute as @e[scores={42.portal_link=1..}] at @s if score @s 42.portal_link = 42
 scoreboard players set @e[type=!player,tag=42.portal_new_spawn] 42.datapack 3
 tag @e remove 42.portal_new_spawn
 kill @s[type=area_effect_cloud]
+execute if score 42.portal 42.portal_link matches 2000000000.. run tellraw @a {"text":"42datapack error (3): [link] overflow warning","color":"red"}

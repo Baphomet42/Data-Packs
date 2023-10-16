@@ -10,5 +10,7 @@ execute if entity @s[tag=42.portal_pellet_kill] as @e[tag=42.portal_pellet_kill,
 tag @a remove 42.portal_pellet_kill
 tag @e[tag=42.portal_turret] remove 42.portal_pellet_kill
 execute if entity @s[tag=42.portal_pellet_kill] run function 42:portal/pellet/pellet/fizzle
+execute if block ~ ~ ~ water run function 42:portal/pellet/pellet/fizzle
+execute if block ~ ~ ~ lava run function 42:portal/pellet/pellet/fizzle
 scoreboard players remove @s 42.portal_y 1
 execute if entity @s[tag=!42.portal_pellet_on] if score @s 42.portal_y matches 1.. run function 42:portal/pellet/pellet/move

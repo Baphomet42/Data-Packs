@@ -1,0 +1,24 @@
+{
+    "replace": false,
+    "values": [
+        "42:portal/cube/craft",
+        "42:portal/cube/craft_companion",
+        "42:portal/cube/craft_laser",
+        "42:portal/cube/turret/craft",
+        "42:portal/button/craft",
+        "42:portal/button/craft_pedestal",
+        "42:portal/door/craft",
+        "42:portal/dropper/craft",
+        "42:portal/launch/craft",
+        "42:portal/pellet/emitter/craft",
+        "42:portal/pellet/catcher/craft",
+        "42:portal/gun/craft",
+        "42:portal/tools/craft_fizzler",
+        "42:portal/tools/craft_cycle",
+        "42:portal/tools/craft_skin",
+        "42:portal/tools/craft_link",
+        "42:portal/tools/craft_rotate",
+        "42:portal/tools/craft_level",
+        "42:portal/tools/craft_select"
+    ]
+}

@@ -17,8 +17,13 @@ scoreboard objectives add 42.portal_xrot2 dummy
 scoreboard objectives add 42.portal_yrot2 dummy
 scoreboard objectives add 42.portal_damage dummy
 scoreboard objectives add 42.portal_skin dummy
+scoreboard objectives add 42.portal_lvl dummy
+scoreboard objectives add 42.portal_sel dummy
 #
 scoreboard players set 42.portal_const_n1 42.portal_id -1
+scoreboard players set 42.portal_const_n1 42.datapack 3
+scoreboard players set 42.portal_rule_cache 42.datapack 3
+scoreboard players set 42.portal 42.datapack 3
 #
 team add 42.no_col
 team modify 42.no_col collisionRule never

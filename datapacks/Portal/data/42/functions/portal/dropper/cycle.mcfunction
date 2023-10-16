@@ -15,3 +15,4 @@ execute if score @s 42.portal_x matches 1 run data merge entity @e[tag=42.portal
 execute if score @s 42.portal_x matches 2 run data merge entity @e[tag=42.portal_notif,limit=1,sort=nearest] {CustomName:'{"text":"Vent Drop Type: Companion Cube"}'}
 execute if score @s 42.portal_x matches 3 run data merge entity @e[tag=42.portal_notif,limit=1,sort=nearest] {CustomName:'{"text":"Vent Drop Type: Redirection Cube"}'}
 execute if score @s 42.portal_x matches 4 run data merge entity @e[tag=42.portal_notif,limit=1,sort=nearest] {CustomName:'{"text":"Vent Drop Type: Old Storage Cube"}'}
+function 42:portal/dropper/fizzle_cube
