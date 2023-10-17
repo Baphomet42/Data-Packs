@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+      "quartz_block",
+      "smooth_quartz",
+      "chiseled_quartz_block",
+      "smooth_stone",
+      "white_concrete",
+      "calcite",
+      "white_wool",
+      "polished_diorite",
+      "polished_andesite"
+    ]
+  }

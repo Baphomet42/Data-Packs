@@ -8,5 +8,6 @@ tag @e[tag=42.portal_cube_tp,tag=42.portal_id] remove 42.portal_turret_off
 tag @e[tag=42.portal_cube_tp,tag=42.portal_id] remove 42.portal_turret_malfunction
 tag @e[tag=42.portal_cube_tp,tag=42.portal_id] remove 42.portal_turret_oracle
 tag @e[tag=42.portal_cube_tp,tag=42.portal_id] remove 42.portal_turret_nofind
+tag @e[tag=42.portal_cube_tp,tag=42.portal_id] remove 42.portal_turret_always_on
 data merge entity @e[tag=42.portal_id,tag=42.portal_turret_eye,limit=1] {block_state:{Name:red_shulker_box}}
 tag @e remove 42.portal_id

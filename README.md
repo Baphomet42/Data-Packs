@@ -13,9 +13,15 @@ Multiplayer friendly and designed to work with other packs
 **Portal** (optional resource pack - see below)
 
 + *Portal Guns*
-    + Each player can set 2 linked portals
+    + Every player can have their own set of unlimited pairs of portals at the same time
+        + Standard issue blue/orange Portal Guns are the default option
+        + Every Portal Gun has a built-in link number and color, and the portals they create are always separate for each player
     + Portals physics carry over momentum
-    + Portals must be placed on 3x3 quartz blocks (not smooth quartz) and work on all 6 block faces
+        + Any player or physics object can move through any portal
+    + Portals must be placed on a 3x3 surface of a few select blocks
+        + Portals can be placed on a mix of quartz, smooth stone, white wool, and a few other light blocks
+    + There are 16 different colored Portal Guns for 16 different colored Portals
+        + Colors run on a separate system than linking, meaning any set of colors can be paired together
 + *Weighted Cubes*
     + Storage and Companion cubes essential for button-based testing
     + Discouragement Redirection cube to move lasers
@@ -59,12 +65,12 @@ Multiplayer friendly and designed to work with other packs
     + Can be redirected with Discouragement Redirection Cube
     + Used to activate Thermal Discouragement Receptacle
 + *Fizzle Tool*
-    + Destroy cubes and other equipment within a small range
+    + Destroy all equipment within a small range
 + *Rotate Tool*
     + Used to rotate certain equipment
 + *Cycle Tool*
     + Click near equipment to cycle between modes
-    + Works with Super Buttons, Vital Apparatus Vents, and Pellet Launchers
+    + Works with Super Buttons, Vital Apparatus Vents, Pellet Launchers, and Pellet Catchers
 + *Link Tool*
     + Used to connect Buttons and other power sources to Doors, Vital Apparatus Vents, etc.
     + To use: place any amount of equipment that should be linked together, then place the link tool anywhere
@@ -95,6 +101,8 @@ Multiplayer friendly and designed to work with other packs
 + `/trigger 42menu`
     + Opens window to give equipment and tools
     + Debug options supply commands to delete large numbers of equipment
++ *Radio*
+    + Plays the best song on repeat all day every day
 
 **XLTT** (optional resource pack - see below)
 
