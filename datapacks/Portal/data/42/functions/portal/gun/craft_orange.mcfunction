@@ -1,1 +1,1 @@
-give @s warped_fungus_on_a_stick{portal_type:1b,portal_id:1,portal_color:6,CustomModelData:4203002,display:{Name:'{"text":"Portal Gun","italic":false,"color":"gold"}'},CanPlaceOn:["#42:portal_surface"],42datapack:3,HideFlags:4,Unbreakable:1}
+function 42:portal/gun/craft_custom {type:1b,id:1,color:6}

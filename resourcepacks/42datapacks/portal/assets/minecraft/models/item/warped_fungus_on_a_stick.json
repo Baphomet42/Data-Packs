@@ -6,15 +6,117 @@
     "overrides": [
         {
             "predicate": {
+                "custom_model_data": 4203000
+            },
+            "model": "42portal:item/portal_gun_white"
+        },
+        {
+            "predicate": {
                 "custom_model_data": 4203001
             },
-            "model": "42portal:item/portal_gun_blue"
+            "model": "42portal:item/portal_gun_light_gray"
         },
         {
             "predicate": {
                 "custom_model_data": 4203002
             },
+            "model": "42portal:item/portal_gun_gray"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203003
+            },
+            "model": "42portal:item/portal_gun_black"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203004
+            },
+            "model": "42portal:item/portal_gun_brown"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203005
+            },
+            "model": "42portal:item/portal_gun_red"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203006
+            },
             "model": "42portal:item/portal_gun_orange"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203007
+            },
+            "model": "42portal:item/portal_gun_yellow"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203008
+            },
+            "model": "42portal:item/portal_gun_lime"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203009
+            },
+            "model": "42portal:item/portal_gun_green"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203010
+            },
+            "model": "42portal:item/portal_gun_cyan"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203011
+            },
+            "model": "42portal:item/portal_gun_light_blue"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203012
+            },
+            "model": "42portal:item/portal_gun_blue"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203013
+            },
+            "model": "42portal:item/portal_gun_purple"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203014
+            },
+            "model": "42portal:item/portal_gun_magenta"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203015
+            },
+            "model": "42portal:item/portal_gun_pink"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203016
+            },
+            "model": "42portal:item/portal_gun_tinted"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203017
+            },
+            "model": "42portal:item/portal_gun"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 4203018
+            },
+            "model": "minecraft:item/warped_fungus_on_a_stick"
         }
     ]
 }

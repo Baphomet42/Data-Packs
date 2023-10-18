@@ -22,6 +22,7 @@ Multiplayer friendly and designed to work with other packs
         + Portals can be placed on a mix of quartz, smooth stone, white wool, and a few other light blocks
     + There are 16 different colored Portal Guns for 16 different colored Portals
         + Colors run on a separate system than linking, meaning any set of colors can be paired together
+        + Each color gun has a custom texture (this is the only use of resource packs in the entire datapack)
 + *Weighted Cubes*
     + Storage and Companion cubes essential for button-based testing
     + Discouragement Redirection cube to move lasers
@@ -156,6 +157,7 @@ Resource packs for datapacks (Optional but recommended)
 
 + Resource pack optional
     + Most features use display entities, no resource pack needed
+    + The only use of the resource pack is for the following:
 + Custom item texture for Portal Gun
     + Without resource pack it's a fungus on a stick
 
@@ -163,6 +165,7 @@ Resource packs for datapacks (Optional but recommended)
 
 + Resource pack optional
     + Most features use display entities, no resource pack needed
+    + The only use of the resource pack is for the following:
 + Custom item texture for O.D.M. Sword
     + Without resource pack it's a carrot on a stick
 

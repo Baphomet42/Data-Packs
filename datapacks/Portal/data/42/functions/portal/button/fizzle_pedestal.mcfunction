@@ -1,4 +1,4 @@
-setblock ~ ~ ~ air
+fill ~ ~ ~ ~ ~ ~ air replace #fences
 scoreboard players set @s 42.portal_time 0
 function 42:portal/unpower
 function 42:portal/tag_id

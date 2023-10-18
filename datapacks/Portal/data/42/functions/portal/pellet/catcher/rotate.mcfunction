@@ -13,10 +13,15 @@ execute if score @s 42.portal_z matches 4 run tp @e[tag=42.portal_id,tag=42.port
 execute if score @s 42.portal_z matches 5 run tp @e[tag=42.portal_id,tag=42.portal_pellet_catcher_group] ~ ~ ~ -90 0
 tag @e remove 42.portal_id
 #
-execute at @s if score @s 42.portal_z matches 0..1 run fill ^-1 ^ ^ ^1 ^ ^ chain[axis=y] replace air
-execute at @s if score @s 42.portal_z matches 0..1 run fill ^ ^-1 ^ ^ ^1 ^ chain[axis=y] replace air
-execute at @s if score @s 42.portal_z matches 2..3 run fill ^-1 ^ ^ ^1 ^ ^ chain[axis=z] replace air
-execute at @s if score @s 42.portal_z matches 2..3 run fill ^ ^-1 ^ ^ ^1 ^ chain[axis=z] replace air
-execute at @s if score @s 42.portal_z matches 4..5 run fill ^-1 ^ ^ ^1 ^ ^ chain[axis=x] replace air
-execute at @s if score @s 42.portal_z matches 4..5 run fill ^ ^-1 ^ ^ ^1 ^ chain[axis=x] replace air
-setblock ~ ~ ~ barrier
+execute at @s if score @s 42.portal_z matches 0..1 run fill ^-1 ^ ^ ^1 ^ ^ chain[axis=y] replace #42:portal_replace
+execute at @s if score @s 42.portal_z matches 0..1 run fill ^ ^-1 ^ ^ ^1 ^ chain[axis=y] replace #42:portal_replace
+execute at @s if score @s 42.portal_z matches 2..3 run fill ^-1 ^ ^ ^1 ^ ^ chain[axis=z] replace #42:portal_replace
+execute at @s if score @s 42.portal_z matches 2..3 run fill ^ ^-1 ^ ^ ^1 ^ chain[axis=z] replace #42:portal_replace
+execute at @s if score @s 42.portal_z matches 4..5 run fill ^-1 ^ ^ ^1 ^ ^ chain[axis=x] replace #42:portal_replace
+execute at @s if score @s 42.portal_z matches 4..5 run fill ^ ^-1 ^ ^ ^1 ^ chain[axis=x] replace #42:portal_replace
+fill ~ ~ ~ ~ ~ ~ barrier replace chain
+#
+execute at @s positioned ^-1 ^ ^ run function 42:portal/generic/find_all {dx:0,dy:0,dz:0,mode:unless,block:chain}
+execute at @s positioned ^1 ^ ^ run function 42:portal/generic/find_all {dx:0,dy:0,dz:0,mode:unless,block:chain}
+execute at @s positioned ^ ^-1 ^ run function 42:portal/generic/find_all {dx:0,dy:0,dz:0,mode:unless,block:chain}
+execute at @s positioned ^ ^1 ^ run function 42:portal/generic/find_all {dx:0,dy:0,dz:0,mode:unless,block:chain}

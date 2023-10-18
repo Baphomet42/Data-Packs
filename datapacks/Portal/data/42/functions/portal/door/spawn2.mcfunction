@@ -3,8 +3,8 @@ summon block_display ~ ~ ~ {Tags:["42.portal_door","42.portal_door_dis","42.port
 execute as @e[tag=42.portal_temp,tag=42.portal_door,limit=1] run function 42:portal/new_id
 scoreboard players operation @e[tag=42.portal_temp] 42.portal_id = @e[tag=42.portal_temp,tag=42.portal_door,limit=1] 42.portal_id
 scoreboard players set @e[type=!player,tag=42.portal_temp] 42.datapack 3
-execute if entity @s[tag=42.portal_temp1] run fill ~-1 ~ ~ ~1 ~2 ~ polished_blackstone_wall
-execute if entity @s[tag=42.portal_temp2,tag=!42.portal_temp1] run fill ~ ~ ~-1 ~ ~2 ~1 polished_blackstone_wall
+execute if entity @s[tag=42.portal_temp1] run fill ~-1 ~ ~ ~1 ~2 ~ polished_blackstone_wall replace #42:portal_replace
+execute if entity @s[tag=42.portal_temp2,tag=!42.portal_temp1] run fill ~ ~ ~-1 ~ ~2 ~1 polished_blackstone_wall replace #42:portal_replace
 execute if entity @s[tag=42.portal_temp2,tag=!42.portal_temp1] as @e[tag=42.portal_temp,tag=42.portal_door_group] at @s run tp @s ~ ~ ~ ~90 ~
 scoreboard players set @e[tag=42.portal_temp,tag=42.portal_door] 42.portal_x 1
 execute if entity @s[tag=42.portal_temp2,tag=!42.portal_temp1] run scoreboard players set @e[tag=42.portal_temp,tag=42.portal_door] 42.portal_x 2

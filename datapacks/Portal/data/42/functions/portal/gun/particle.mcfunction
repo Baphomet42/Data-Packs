@@ -1,4 +1,4 @@
-#keep consistent with gun/particle, portal/particle, portal/name, portal/set_color_dis, portal/set_back_color_dis
+#keep consistent with gun/particle, gun/setup_look, portal/particle, portal/name, portal/set_color_dis, portal/set_back_color_dis
 execute if score @s 42.portal_skin matches 0 run particle dust .97 1.0 .99 .5 ^ ^ ^ 0 0 0 0 2 force
 execute if score @s 42.portal_skin matches 1 run particle dust .61 .61 .59 .5 ^ ^ ^ 0 0 0 0 2 force
 execute if score @s 42.portal_skin matches 2 run particle dust .27 .30 .32 .5 ^ ^ ^ 0 0 0 0 2 force

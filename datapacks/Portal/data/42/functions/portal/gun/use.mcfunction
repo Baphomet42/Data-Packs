@@ -7,6 +7,7 @@ execute if entity @s[tag=42.portal_gun_arg_b] run tag @e[tag=42.portal_temp,limi
 scoreboard players set @s 42.portal_temp 0
 execute store result score @s 42.portal_temp run data get entity @s SelectedItem.tag.portal_color
 scoreboard players operation @e[tag=42.portal_temp,limit=1] 42.portal_skin = @s 42.portal_temp
+execute as @e[tag=42.portal_temp,limit=1] unless score @s 42.portal_skin matches 0.. run scoreboard players set @s 42.portal_skin 0
 scoreboard players set @s 42.portal_temp 0
 execute store result score @s 42.portal_temp run data get entity @s SelectedItem.tag.portal_id
 scoreboard players operation @e[tag=42.portal_temp,limit=1] 42.portal_link = @s 42.portal_temp

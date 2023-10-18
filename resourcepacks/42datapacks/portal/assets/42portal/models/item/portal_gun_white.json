@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "42portal:item/portal_gun_white"
+    }
+}
