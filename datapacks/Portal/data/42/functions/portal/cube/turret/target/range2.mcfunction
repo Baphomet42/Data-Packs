@@ -1,7 +1,7 @@
 tag @e remove 42.portal_turret_laser
 tag @e remove 42.portal_turret_laser_find
 tag @e remove 42.portal_new_spawn
-summon marker ~ ~ ~ {Tags:["42.portal_turret_laser","42.portal_new_spawn"]}
+summon marker ~ ~ ~ {Tags:["42.portal_turret_laser","42.portal_new_spawn","42.portal_bullet_pass"]}
 summon marker ~ ~ ~ {Tags:["42.portal_turret_laser_find","42.portal_new_spawn"]}
 scoreboard players set @e[type=!player,tag=42.portal_new_spawn] 42.datapack 3
 execute as @e[tag=42.portal_turret_target_current,limit=1,sort=nearest] at @s anchored feet rotated 0 0 positioned ^ ^.25 ^ run tp @e[tag=42.portal_turret_laser_find] ^ ^ ^

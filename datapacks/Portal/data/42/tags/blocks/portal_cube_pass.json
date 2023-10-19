@@ -1,8 +1,0 @@
-{
-    "replace": false,
-    "values": [
-      "#42:projectile_pass",
-      "iron_trapdoor",
-      "#42:portal_blocks"
-    ]
-  }

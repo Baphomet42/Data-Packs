@@ -1,8 +1,9 @@
 {
     "replace": false,
     "values": [
-      "chain",
-      "white_stained_glass_pane",
-      "iron_trapdoor"
+      "iron_trapdoor",
+      "zombie_wall_head",
+      "smooth_quartz_stairs",
+      "smooth_quartz_slab"
     ]
-  }
+}

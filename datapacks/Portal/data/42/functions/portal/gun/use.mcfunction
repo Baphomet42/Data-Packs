@@ -1,6 +1,6 @@
 playsound minecraft:entity.iron_golem.repair block @a ~ ~ ~ 1.25 1.4
 tag @e remove 42.portal_temp
-summon marker ~ ~ ~ {Tags:["42.portal_gun","42.portal_temp"]}
+summon marker ~ ~ ~ {Tags:["42.portal_gun","42.portal_temp","42.portal_bullet_pass"],CustomNameVisible:0b,CustomName:'{"text":"42portal"}'}
 execute if entity @s[tag=42.portal_gun_arg_a] run tag @e[tag=42.portal_temp,limit=1] add 42.portal_gun_a
 execute if entity @s[tag=42.portal_gun_arg_b] run tag @e[tag=42.portal_temp,limit=1] add 42.portal_gun_b
 #

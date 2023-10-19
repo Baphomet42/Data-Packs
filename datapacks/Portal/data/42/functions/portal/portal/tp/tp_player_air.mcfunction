@@ -12,5 +12,5 @@ execute store result entity @e[tag=42.portal_motion_tp,tag=42.portal_temp,limit=
 execute store result entity @e[tag=42.portal_motion_tp,tag=42.portal_temp,limit=1] Motion[1] double .001 run scoreboard players get @s 42.portal_y
 execute store result entity @e[tag=42.portal_motion_tp,tag=42.portal_temp,limit=1] Motion[2] double 1 run data get entity @s Motion[2]
 ride @s mount @e[tag=42.portal_temp,limit=1]
-execute as @e[tag=42.portal_temp] at @s run function 42:portal/portal/tp_motion
+execute as @e[tag=42.portal_temp] at @s run function 42:portal/portal/tp/tp_motion
 tag @e remove 42.portal_temp

@@ -3,9 +3,7 @@ summon block_display ~ ~.5 ~ {Tags:["42.portal_pellet_emitter","42.portal_pellet
 execute as @e[tag=42.portal_new_spawn,tag=42.portal_pellet_emitter,limit=1] run function 42:portal/new_id
 scoreboard players operation @e[tag=42.portal_new_spawn] 42.portal_id = @e[tag=42.portal_new_spawn,tag=42.portal_pellet_emitter,limit=1] 42.portal_id
 scoreboard players set @e[type=!player,tag=42.portal_new_spawn] 42.datapack 3
-fill ~-1 ~ ~ ~1 ~ ~ chain[axis=y] replace #42:portal_replace
-fill ~ ~ ~-1 ~ ~ ~1 chain[axis=y] replace #42:portal_replace
-execute as @e[tag=42.portal_new_spawn,tag=42.portal_pellet_emitter] at @s run fill ~ ~ ~ ~ ~ ~ barrier replace chain
+execute as @e[tag=42.portal_new_spawn,tag=42.portal_pellet_emitter] at @s run fill ~ ~ ~ ~ ~ ~ barrier replace #42:portal_replace
 execute as @e[tag=42.portal_new_spawn,tag=42.portal_pellet_emitter_group] at @s run tp @s ~ ~ ~ 0 -90
 scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_pellet_emitter] 42.portal_z 0
 scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_pellet_emitter] 42.portal_time 0

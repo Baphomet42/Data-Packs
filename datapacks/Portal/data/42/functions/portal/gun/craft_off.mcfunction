@@ -1,0 +1,1 @@
+give @s warped_fungus_on_a_stick{42datapack:3,CustomModelData:4203017,HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Portal Gun","italic":false,"color":"white"}'}}

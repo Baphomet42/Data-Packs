@@ -14,6 +14,7 @@ function 42:portal/tag_id
 execute if entity @s[tag=42.portal_turret] at @s run function 42:portal/cube/turret/tick
 execute if entity @s[tag=42.portal_laser_cube] at @s run function 42:portal/cube/laser/tick
 execute if entity @s[tag=42.portal_radio] at @s run function 42:portal/cube/radio/tick
+function 42:portal/tag_id
 #
 execute if block ~ ~.5 ~ water run function 42:portal/cube/fizzle
 execute if block ~ ~.5 ~ lava run function 42:portal/cube/fizzle

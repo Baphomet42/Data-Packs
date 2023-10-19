@@ -15,4 +15,4 @@ execute if score @s 42.portal_skin matches 12 run data modify entity @s block_st
 execute if score @s 42.portal_skin matches 13 run data modify entity @s block_state.Name set value purple_concrete_powder
 execute if score @s 42.portal_skin matches 14 run data modify entity @s block_state.Name set value magenta_concrete_powder
 execute if score @s 42.portal_skin matches 15 run data modify entity @s block_state.Name set value pink_concrete_powder
-execute if score @s 42.portal_skin matches 16 run data modify entity @s block_state.Name set value coal_block
+execute if score @s 42.portal_skin matches 16 run data modify entity @s block_state.Name set value cherry_wood

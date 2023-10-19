@@ -1,3 +1,4 @@
+particle end_rod ^ ^ ^.3 .15 .15 .15 0 5 force
 execute positioned ^ ^ ^.9 align xyz positioned ~.5 ~.5 ~.5 if entity @e[tag=42.portal_pellet_catcher,tag=!42.portal_pellet_catcher_on,distance=...1] run function 42:portal/pellet/pellet/activate
 #
 scoreboard players set @s 42.portal_z 0

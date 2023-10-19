@@ -1,7 +1,7 @@
 {
     "replace": false,
     "values": [
-      "#42:portal_cube_pass",
+      "#42:projectile_pass",
       "iron_bars"
     ]
-  }
+}

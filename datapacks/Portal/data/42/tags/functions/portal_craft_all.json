@@ -12,7 +12,7 @@
         "42:portal/launch/craft",
         "42:portal/pellet/emitter/craft",
         "42:portal/pellet/catcher/craft",
-        "42:portal/gun/craft",
+        "42:portal/gun/craft_default",
         "42:portal/cube/radio/craft",
         "42:portal/tools/craft_fizzler",
         "42:portal/tools/craft_cycle",

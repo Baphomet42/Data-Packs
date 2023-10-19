@@ -6,6 +6,7 @@ summon marker ~ ~ ~ {Tags:["42.portal_test","42.portal_test_x"]}
 summon marker ~ ~ ~ {Tags:["42.portal_test","42.portal_test_y"]}
 summon marker ~ ~ ~ {Tags:["42.portal_test","42.portal_test_z"]}
 scoreboard players set @e[type=!player,tag=42.portal_test] 42.datapack 3
+scoreboard players set 42.portal 42.portal_temp -1
 #
 $scoreboard players set @e[tag=42.portal_test_x] 42.portal_x $(dx)
 $scoreboard players set @e[tag=42.portal_test_x] 42.portal_y $(dy)
