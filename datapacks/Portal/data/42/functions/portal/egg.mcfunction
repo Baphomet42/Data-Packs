@@ -9,7 +9,6 @@ execute as @e[type=area_effect_cloud,tag=42.portal_spawn_pellet_emitter] at @s r
 execute as @e[type=area_effect_cloud,tag=42.portal_spawn_pellet_catcher] at @s run function 42:portal/pellet/catcher/spawn
 #
 execute as @e[type=area_effect_cloud,tag=42.portal_fizzle_tool] at @s run function 42:portal/tools/fizzler
-execute as @e[type=area_effect_cloud,tag=42.portal_rotate_tool] at @s run function 42:portal/tools/rotate
 execute as @e[type=area_effect_cloud,tag=42.portal_cycle_tool] at @s run function 42:portal/tools/cycle
 execute as @e[type=area_effect_cloud,tag=42.portal_link_tool] at @s run function 42:portal/tools/link
 execute as @e[type=area_effect_cloud,tag=42.portal_skin_tool] at @s run function 42:portal/tools/skin

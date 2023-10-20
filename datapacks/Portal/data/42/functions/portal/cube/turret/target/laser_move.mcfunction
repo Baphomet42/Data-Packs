@@ -1,6 +1,6 @@
 scoreboard players remove @s 42.portal_time 1
-execute at @s run tag @e[tag=42.portal_turret_target,distance=...75,limit=1,sort=nearest] add 42.portal_turret_current
-execute at @s unless entity @e[tag=42.portal_turret_current] positioned ~ ~-1.5 ~ run tag @e[tag=42.portal_turret_target_current,distance=...75,limit=1,sort=nearest] add 42.portal_turret_current
+execute at @s run function 42:portal/generic/entity_col/test_1p
+execute at @s run tag @e[tag=42.portal_turret_target,limit=1,sort=nearest,scores={42.portal_col=2}] add 42.portal_turret_current
 execute if entity @e[tag=42.portal_turret_current] at @s as @e[tag=42.portal_turret_this,limit=1,sort=nearest] run function 42:portal/cube/turret/target/new
 tp ^ ^ ^.25
 function 42:portal/cube/turret/target/laser_valid

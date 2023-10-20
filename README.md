@@ -35,7 +35,6 @@ Multiplayer friendly and designed to work with other packs
     + Set turret mode with the `Select Tool`
 + *Aerial Faith Plate*
     + Send anything flying through the air
-    + Rotate with rotate tool
     + Change launch velocity with the `Select Tool`
 + *Buttons*
     + Heavy Duty Super Buttons detect players and cubes
@@ -67,8 +66,6 @@ Multiplayer friendly and designed to work with other packs
     + Used to activate Thermal Discouragement Receptacle
 + *Fizzle Tool*
     + Destroy all equipment within a small range
-+ *Rotate Tool*
-    + Used to rotate certain equipment
 + *Cycle Tool*
     + Click near equipment to cycle between modes
     + Works with Super Buttons, Vital Apparatus Vents, Pellet Launchers, and Pellet Catchers

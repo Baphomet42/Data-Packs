@@ -12,7 +12,6 @@ execute if score @s 42menu matches 4203510 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203511 as @e[tag=42.portal_selected,tag=42.portal_launch] at @s run function 42:portal/launch/fizzle
 execute if score @s 42menu matches 4203515..4203519 unless entity @e[tag=42.portal_selected,tag=42.portal_door] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203515 as @e[tag=42.portal_selected,tag=42.portal_door] at @s run function 42:portal/door/fizzle
-execute if score @s 42menu matches 4203516 as @e[tag=42.portal_selected,tag=42.portal_door] at @s run function 42:portal/door/rotate
 execute if score @s 42menu matches 4203517 as @e[tag=42.portal_selected,tag=42.portal_door] at @s run function 42:portal/door/power
 execute if score @s 42menu matches 4203518 as @e[tag=42.portal_selected,tag=42.portal_door] at @s run function 42:portal/door/unpower
 execute if score @s 42menu matches 4203520..4203524 unless entity @e[tag=42.portal_selected,tag=42.portal_pedestal] run function 42:portal/tools/sel_error
@@ -40,13 +39,11 @@ execute if score @s 42menu matches 4203546 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203547 as @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] at @s run function 42:portal/cube/turret/toggle/laser_on
 execute if score @s 42menu matches 4203565..4203568 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203565 as @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] at @s run function 42:portal/pellet/catcher/fizzle
-execute if score @s 42menu matches 4203566 as @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] at @s run function 42:portal/pellet/catcher/rotate
 execute if score @s 42menu matches 4203567 as @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] at @s run function 42:portal/pellet/catcher/cycle
 execute if score @s 42menu matches 4203569 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203569 as @e[tag=42.portal_selected,tag=42.portal_pellet] at @s run function 42:portal/pellet/pellet/fizzle
 execute if score @s 42menu matches 4203570..4203574 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet_emitter] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203570 as @e[tag=42.portal_selected,tag=42.portal_pellet_emitter] at @s run function 42:portal/pellet/emitter/fizzle
-execute if score @s 42menu matches 4203571 as @e[tag=42.portal_selected,tag=42.portal_pellet_emitter] at @s run function 42:portal/pellet/emitter/rotate
 execute if score @s 42menu matches 4203572 as @e[tag=42.portal_selected,tag=42.portal_pellet_emitter] at @s run function 42:portal/pellet/emitter/cycle
 execute if score @s 42menu matches 4203575..4203579 unless entity @e[tag=42.portal_selected,tag=42.portal] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203575 as @e[tag=42.portal_selected,tag=42.portal] at @s run function 42:portal/portal/fizzle
