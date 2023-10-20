@@ -1,12 +1,3 @@
-function 42:portal/pellet/emitter/kill_pellets
-scoreboard players set @s 42.portal_time 60
-#
-scoreboard players add @s 42.portal_z 1
-execute if score @s 42.portal_z matches 6.. run scoreboard players set @s 42.portal_z 0
-#
-fill ^-1 ^ ^ ^1 ^ ^ air replace chain
-fill ^ ^-1 ^ ^ ^1 ^ air replace chain
-#
 function 42:portal/tag_id
 execute if score @s 42.portal_z matches 0 run tp @e[tag=42.portal_id,tag=42.portal_pellet_emitter_group] ~ ~ ~ 0 -90
 execute if score @s 42.portal_z matches 1 run tp @e[tag=42.portal_id,tag=42.portal_pellet_emitter_group] ~ ~ ~ 0 90
@@ -23,8 +14,3 @@ execute at @s if score @s 42.portal_z matches 2..3 run fill ^ ^-1 ^ ^ ^1 ^ chain
 execute at @s if score @s 42.portal_z matches 4..5 run fill ^-1 ^ ^ ^1 ^ ^ chain[axis=x] replace #42:portal_replace
 execute at @s if score @s 42.portal_z matches 4..5 run fill ^ ^-1 ^ ^ ^1 ^ chain[axis=x] replace #42:portal_replace
 fill ~ ~ ~ ~ ~ ~ barrier replace chain
-#
-execute at @s positioned ^-1 ^ ^ run function 42:portal/generic/find_all {dx:0,dy:0,dz:0,mode:unless,block:chain}
-execute at @s positioned ^1 ^ ^ run function 42:portal/generic/find_all {dx:0,dy:0,dz:0,mode:unless,block:chain}
-execute at @s positioned ^ ^-1 ^ run function 42:portal/generic/find_all {dx:0,dy:0,dz:0,mode:unless,block:chain}
-execute at @s positioned ^ ^1 ^ run function 42:portal/generic/find_all {dx:0,dy:0,dz:0,mode:unless,block:chain}

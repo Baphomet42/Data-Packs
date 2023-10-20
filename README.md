@@ -101,6 +101,19 @@ Multiplayer friendly and designed to work with other packs
     + Debug options supply commands to delete large numbers of equipment
 + *Radio*
     + Plays the best song on repeat all day every day
++ *Important Information Specific to Portal Datapack*
+    + See generic information at the end of this file
+    + If planning to play in survival mode, it is recommended to disable fall damage
+        + Run `/gamerule fallDamage false` to disable all fall damage across the world
+        + Custom motion through portals and faith plates automatically stops fall damage, but most portal levels have large drops that players are supposed to be able to survive by jumping
+        + Zones can be customized to kill players who enter them, so long death falls can still be made manually
+    + The custom chat menus in this pack use trigger commands, which send a message to the player after every click
+        + This can be disabled with `/gamerule sendCommandFeedback false`
+            + Note that doing this will also turn off command feedback for actual commands used by any player
+        + Even without disabling command feedback with the gamerule, this datapack turns off command feedback for about 30 seconds after menus are used, so at least some of the trigger command feedback will be hidden without having to disable all command feedback server-wide
+    + Each update to the datapack may change how equipment spawns, functions, and gets killed
+        + Before updating the datapack, it is recommended to fizzle all equipment and place it again after updating
+            + In almost every update this is not required, but to be safe it is a good practice
 
 **XLTT** (optional resource pack - see below)
 
@@ -134,7 +147,33 @@ Multiplayer friendly and designed to work with other packs
 
 ------------------------------------------------------------------------------------
 
-Resource packs for datapacks (Optional but recommended)
+**Datapack Info**
+
+**Setup**
+
++ Datapacks are placed into a specific Minecraft world and only function within that world
++ Place any number of datapacks into `.minecraft/saves/<World Name Here>/datapacks`
+    + The final path should look something like `.minecraft/saves/New World/datapacks/Portal`
+    + If the world is running while the folder is placed, use the `/reload` command
++ To enable custom textures, follow the Resource Pack setup below (optional)
+
+**Important**
+
++ Like all custom command creations, it is possible that bugs could result in some disasters happening to your world
+    + Always backup your world before using the datapack and frequently while using
+    + Never run the datapack in a newer or older version of Minecraft than the current datapack version
+    + Downloading the newest version of a datapack will upgrade features, but may break how the current features work in your world
+        + To be safe, it is recommended to remove all features of the datapack from your world before loading a new version of the datapack or a different Minecraft version
+    + Consider all datapacks to be early access and prone to change
++ All datapacks are by BaphomethLabs
+    + Credit and link to this repo if possible
+    + Feel free to showcase or fork as long as credit is given and a link here is supplied
+
+------------------------------------------------------------------------------------
+
+**Resource Pack Info**
+
++ Optional but recommended
 + For datapacks: Portal, XLTT
 + Note: No vanilla textures are overridden
 
@@ -150,7 +189,7 @@ Resource packs for datapacks (Optional but recommended)
         + No vanilla textures are overridden, so the pack will have no effect without the datapack also loaded
     + Only players who add the resource pack will see the textures
 
-**Portal**
+**Portal Resources**
 
 + Resource pack optional
     + Most features use display entities, no resource pack needed
@@ -158,7 +197,7 @@ Resource packs for datapacks (Optional but recommended)
 + Custom item texture for Portal Gun
     + Without resource pack it's a fungus on a stick
 
-**XLTT**
+**XLTT Resources**
 
 + Resource pack optional
     + Most features use display entities, no resource pack needed

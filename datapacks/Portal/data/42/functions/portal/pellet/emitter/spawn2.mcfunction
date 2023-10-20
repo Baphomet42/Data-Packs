@@ -9,6 +9,14 @@ scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_pellet_emitter] 
 scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_pellet_emitter] 42.portal_time 0
 scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_pellet_emitter] 42.portal_lvl -1
 tag @e[tag=42.portal_new_spawn,tag=42.portal_pellet_emitter] add 42.portal_emitter_on
-execute as @e[tag=42.portal_new_spawn,tag=42.portal_pellet_emitter] at @s run function 42:portal/pellet/emitter/smart_rotate
+#
+execute if entity @s[tag=42.portal_spawn_u] run scoreboard players set @e[tag=42.portal_pellet_emitter,tag=42.portal_new_spawn] 42.portal_z 0
+execute if entity @s[tag=42.portal_spawn_d] run scoreboard players set @e[tag=42.portal_pellet_emitter,tag=42.portal_new_spawn] 42.portal_z 1
+execute if entity @s[tag=42.portal_spawn_s] run scoreboard players set @e[tag=42.portal_pellet_emitter,tag=42.portal_new_spawn] 42.portal_z 2
+execute if entity @s[tag=42.portal_spawn_n] run scoreboard players set @e[tag=42.portal_pellet_emitter,tag=42.portal_new_spawn] 42.portal_z 3
+execute if entity @s[tag=42.portal_spawn_w] run scoreboard players set @e[tag=42.portal_pellet_emitter,tag=42.portal_new_spawn] 42.portal_z 4
+execute if entity @s[tag=42.portal_spawn_e] run scoreboard players set @e[tag=42.portal_pellet_emitter,tag=42.portal_new_spawn] 42.portal_z 5
+execute as @e[tag=42.portal_pellet_emitter,tag=42.portal_new_spawn] at @s run function 42:portal/pellet/emitter/set_blocks
+#
 tag @e remove 42.portal_new_spawn
 kill @s[type=area_effect_cloud]

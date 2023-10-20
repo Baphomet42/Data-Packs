@@ -11,10 +11,5 @@ execute if entity @s[tag=42.portal_temp2,tag=!42.portal_temp1] run scoreboard pl
 execute if entity @s[tag=42.portal_temp2,tag=!42.portal_temp1] as @e[tag=42.portal_temp,tag=42.portal_door] at @s run function 42:portal/door/unpower
 scoreboard players set @e[tag=42.portal_temp,tag=42.portal_door] 42.portal_link -1
 #
-execute if entity @s[tag=42.portal_spawn_rot] as @p at @s run function 42:portal/get_rot
-execute if entity @s[tag=42.portal_spawn_rot] if entity @e[tag=42.portal_rot,tag=42.portal_rot_w] as @e[tag=42.portal_temp,tag=42.portal_door] at @s run function 42:portal/door/rotate
-execute if entity @s[tag=42.portal_spawn_rot] if entity @e[tag=42.portal_rot,tag=42.portal_rot_e] as @e[tag=42.portal_temp,tag=42.portal_door] at @s run function 42:portal/door/rotate
-execute if entity @s[tag=42.portal_spawn_rot] run function 42:portal/get_rot2
-#
 tag @e remove 42.portal_temp
 kill @s[type=area_effect_cloud]
