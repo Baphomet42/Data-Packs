@@ -101,7 +101,7 @@ Multiplayer friendly and designed to work with other packs
     + Debug options supply commands to delete large numbers of equipment
 + *Radio*
     + Plays the best song on repeat all day every day
-+ *Important Information Specific to Portal Datapack*
++ **Important Information Specific to Portal Datapack**
     + See generic information at the end of this file
     + If planning to play in survival mode, it is recommended to disable fall damage
         + Run `/gamerule fallDamage false` to disable all fall damage across the world
