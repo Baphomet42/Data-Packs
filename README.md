@@ -1,6 +1,7 @@
 ------------------------------------------------------------------------------------
 
 Separate but compatible datapacks for Minecraft
+
 Multiplayer friendly and designed to work with other packs
 
 **42essentials**
@@ -128,7 +129,7 @@ Multiplayer friendly and designed to work with other packs
     + Spawns from Titan Spawn Egg from 42menu
     + Killed by slicing the back of its neck with an O.D.M. Sword
 + *Cursed Wine*
-    + Throw at a villager to infect it... Scream to turn the villager into a tian
+    + Throw at a villager to infect it... Scream to turn the villager into a titan
     + Obtained from 42menu
     + Villagers stay infected forever and can't come back after being turned
 + *Scream Ability*
@@ -164,9 +165,12 @@ Multiplayer friendly and designed to work with other packs
     + Never run the datapack in a newer or older version of Minecraft than the current datapack version
     + Downloading the newest version of a datapack will upgrade features, but may break how the current features work in your world
         + To be safe, it is recommended to remove all features of the datapack from your world before loading a new version of the datapack or a different Minecraft version
-    + Consider all datapacks to be early access and prone to change
+    + Consider all datapacks to be early access proof of concepts
+        + Features are prone to change
+        + There will probably be bugs
+        + They are updated very irregularly
 + All datapacks are by BaphomethLabs
-    + Credit and link to this repo if possible
+    + Credit and link to this repo if possible (`https://github.com/Baphomet42/Data-Packs`)
     + Feel free to showcase or fork as long as credit is given and a link here is supplied
 
 ------------------------------------------------------------------------------------
@@ -204,5 +208,9 @@ Multiplayer friendly and designed to work with other packs
     + The only use of the resource pack is for the following:
 + Custom item texture for O.D.M. Sword
     + Without resource pack it's a carrot on a stick
+
+------------------------------------------------------------------------------------
+
+*© 2023 BaphomethLabs*
 
 ------------------------------------------------------------------------------------
