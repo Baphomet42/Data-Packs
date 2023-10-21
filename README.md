@@ -115,6 +115,9 @@ Multiplayer friendly and designed to work with other packs
     + Each update to the datapack may change how equipment spawns, functions, and gets killed
         + Before updating the datapack, it is recommended to fizzle all equipment and place it again after updating
             + In almost every update this is not required, but to be safe it is a good practice
+    + Worlds running this datapack should be set to Easy, Normal, or Hard Mode (not Peaceful)
+        + Running this in Peaceful Mode could cause problems with vital entities unable to be summoned
+        + Turning off spawning with `/gamerule doMobSpawning false` is ok
 
 **XLTT** (optional resource pack - see below)
 
