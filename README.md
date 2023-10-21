@@ -170,7 +170,8 @@ Multiplayer friendly and designed to work with other packs
         + There will probably be bugs
         + They are updated very irregularly
 + All datapacks are by BaphomethLabs
-    + Credit and link to this repo if possible (`https://github.com/Baphomet42/Data-Packs`)
+    + Credit and link to this repo if used
+        + (https://github.com/Baphomet42/Data-Packs)
     + Feel free to showcase or fork as long as credit is given and a link here is supplied
 
 ------------------------------------------------------------------------------------
