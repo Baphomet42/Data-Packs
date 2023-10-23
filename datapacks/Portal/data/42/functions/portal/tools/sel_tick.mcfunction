@@ -11,3 +11,4 @@ particle minecraft:glow_squid_ink ~ ~ ~ .5 1 .5 0 1
 #execute if entity @s[tag=42.portal_pellet_catcher] at @s run function 42:portal/pellet/catcher/sel_tick
 #execute if entity @s[tag=42.portal_pellet_emitter] at @s run function 42:portal/pellet/emitter/sel_tick
 #execute if entity @s[tag=42.portal_pellet] at @s run function 42:portal/pellet/pellet/sel_tick
+#execute if entity @s[tag=42.portal_elevator] at @s run function 42:portal/elevator/sel_tick

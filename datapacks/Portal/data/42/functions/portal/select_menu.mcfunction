@@ -37,6 +37,8 @@ execute if score @s 42menu matches 4203544 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203545 as @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] at @s run function 42:portal/cube/turret/toggle/nofind
 execute if score @s 42menu matches 4203546 as @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] at @s run function 42:portal/cube/turret/fall
 execute if score @s 42menu matches 4203547 as @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] at @s run function 42:portal/cube/turret/toggle/laser_on
+#
+#
 execute if score @s 42menu matches 4203565..4203568 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203565 as @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] at @s run function 42:portal/pellet/catcher/fizzle
 execute if score @s 42menu matches 4203567 as @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] at @s run function 42:portal/pellet/catcher/cycle
@@ -56,4 +58,9 @@ execute if score @s 42menu matches 4203583 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203584 as @e[tag=42.portal_selected,tag=42.portal_dropper] at @s run function 42:portal/dropper/unpower
 execute if score @s 42menu matches 4203585 as @e[tag=42.portal_selected,tag=42.portal_dropper] at @s run function 42:portal/dropper/drop
 execute if score @s 42menu matches 4203586 as @e[tag=42.portal_selected,tag=42.portal_dropper] at @s run function 42:portal/dropper/fizzle_cube
+execute if score @s 42menu matches 4203590..4203599 unless entity @e[tag=42.portal_selected,tag=42.portal_elevator] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203590 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/fizzle
+#
+execute if score @s 42menu matches 4203592 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/move/try_inc_y
+execute if score @s 42menu matches 4203593 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/move/try_dec_y
 tag @e remove 42.portal_selected

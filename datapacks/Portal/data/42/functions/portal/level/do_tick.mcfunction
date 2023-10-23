@@ -6,3 +6,4 @@ execute if entity @s[tag=42.portal] at @s run function 42:portal/portal/tick
 execute if entity @s[tag=42.portal_pellet] at @s run function 42:portal/pellet/pellet/tick
 execute if entity @s[tag=42.portal_pellet_emitter] at @s run function 42:portal/pellet/emitter/tick
 execute if entity @s[tag=42.portal_pellet_catcher] at @s run function 42:portal/pellet/catcher/tick
+execute if entity @s[tag=42.portal_elevator] at @s run function 42:portal/elevator/tick

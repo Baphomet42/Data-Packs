@@ -8,4 +8,5 @@ execute as @e[tag=42.portal,distance=..2.5] at @s run function 42:portal/portal/
 execute as @e[tag=42.portal_pellet_catcher,distance=..2.5] at @s run function 42:portal/pellet/catcher/fizzle
 execute as @e[tag=42.portal_pellet_emitter,distance=..2.5] at @s run function 42:portal/pellet/emitter/fizzle
 execute as @e[tag=42.portal_pellet,distance=..2.5] at @s run function 42:portal/pellet/pellet/fizzle
+execute as @e[tag=42.portal_elevator,distance=..3.5] at @s run function 42:portal/elevator/fizzle
 kill @s[type=area_effect_cloud]

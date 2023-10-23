@@ -11,5 +11,6 @@ execute as @e[tag=42.portal] run function 42:portal/level/tick_score
 execute as @e[tag=42.portal_pellet,tag=!42.portal_pellet_on] run function 42:portal/level/tick_score
 execute as @e[tag=42.portal_pellet_emitter] run function 42:portal/level/tick_score
 execute as @e[tag=42.portal_pellet_catcher,tag=!42.portal_pellet_catcher_on,tag=!42.portal_pellet_catcher_nolaser] run function 42:portal/level/tick_score
+execute as @e[tag=42.portal_elevator] run function 42:portal/level/tick_score
 tag @e remove 42.portal_ticked
 execute as @e[tag=42.portal_radio,tag=42.portal_tick,limit=1] run function 42:portal/cube/radio/music

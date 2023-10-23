@@ -14,6 +14,7 @@ tag @e[tag=42.portal,distance=..2.5] add 42.portal_temp
 tag @e[tag=42.portal_pellet_catcher,distance=..2.5] add 42.portal_temp
 tag @e[tag=42.portal_pellet_emitter,distance=..2.5] add 42.portal_temp
 tag @e[tag=42.portal_pellet,distance=..2.5] add 42.portal_temp
+tag @e[tag=42.portal_elevator,distance=..3.5] add 42.portal_temp
 #
 tag @e[tag=42.portal_temp,limit=1,sort=nearest] add 42.portal_temp2
 tag @e remove 42.portal_temp
