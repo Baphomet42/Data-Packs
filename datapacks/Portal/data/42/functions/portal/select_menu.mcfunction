@@ -58,9 +58,13 @@ execute if score @s 42menu matches 4203583 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203584 as @e[tag=42.portal_selected,tag=42.portal_dropper] at @s run function 42:portal/dropper/unpower
 execute if score @s 42menu matches 4203585 as @e[tag=42.portal_selected,tag=42.portal_dropper] at @s run function 42:portal/dropper/drop
 execute if score @s 42menu matches 4203586 as @e[tag=42.portal_selected,tag=42.portal_dropper] at @s run function 42:portal/dropper/fizzle_cube
-execute if score @s 42menu matches 4203590..4203599 unless entity @e[tag=42.portal_selected,tag=42.portal_elevator] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203590..4203609 unless entity @e[tag=42.portal_selected,tag=42.portal_elevator] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203590 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/fizzle
-#
-execute if score @s 42menu matches 4203592 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/move/try_inc_y
-execute if score @s 42menu matches 4203593 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/move/try_dec_y
+execute if score @s 42menu matches 4203591 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/move/set_none
+execute if score @s 42menu matches 4203592 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/move/move_x {x:1}
+execute if score @s 42menu matches 4203593 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/move/move_x {x:-1}
+execute if score @s 42menu matches 4203594 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/move/move_x {x:10}
+execute if score @s 42menu matches 4203595 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/move/move_x {x:-10}
+execute if score @s 42menu matches 4203596 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/reset
+execute if score @s 42menu matches 4203597 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/start
 tag @e remove 42.portal_selected

@@ -118,6 +118,10 @@ Multiplayer friendly and designed to work with other packs
     + Worlds running this datapack should be set to Easy, Normal, or Hard Mode (not Peaceful)
         + Running this in Peaceful Mode could cause problems with vital entities unable to be summoned
         + Turning off spawning with `/gamerule doMobSpawning false` is ok
+    + Simulation distance should be high enough to prevent nearby equipment from being unloaded
+        + Most types of equipment need to be loaded in order for other things like doors and buttons to register them
+        + The simulation distance should always be high enough to fit the entire current level from anywhere within the level
+        + Playing with a moderate distance like 8-15 chunks is probably good enough for most cases
 
 **XLTT** (optional resource pack - see below)
 

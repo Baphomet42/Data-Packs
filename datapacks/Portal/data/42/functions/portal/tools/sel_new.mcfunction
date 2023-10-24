@@ -1,3 +1,8 @@
+tag @e remove 42.portal_new_spawn
+summon area_effect_cloud ~ ~ ~ {Tags:["42.portal_new_spawn"],Duration:10,DurationOnUse:0,Particle:"flash",Radius:.25d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0}
+scoreboard players set @e[type=!player,tag=42.portal_new_spawn] 42.datapack 3
+tag @e remove 42.portal_new_spawn
+#
 function 42:portal/tag_selected
 function 42:portal/cmdfeed
 tellraw @p[tag=42.portal_selected] [{"text":"","color":"gray"},{"text":"------------------------------\n","color":"dark_gray"},{"selector":"@s","color":"gold","bold":true},{"text":" "},{"text":"⟳","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203503"},"hoverEvent":{"action":"show_text","contents":[{"text":"Refresh Selection Screen\n\nSelection options are only sent to chat when first selecting equipment. Refresh to reselct the equipment and see changes."}]}}]
