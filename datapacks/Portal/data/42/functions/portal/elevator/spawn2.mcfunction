@@ -24,7 +24,7 @@ scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_elevator] 42.por
 execute as @e[tag=42.portal_new_spawn,tag=42.portal_elevator] store result score @s 42.portal_y run data get entity @e[tag=42.portal_new_spawn,tag=42.portal_elevator_start,limit=1] Pos[1] 100
 execute as @e[tag=42.portal_new_spawn,tag=42.portal_elevator] run scoreboard players operation @s 42.portal_z = @s 42.portal_y
 scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_elevator] 42.portal_skin 0
-scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_elevator] 42.portal_u 0
+scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_elevator] 42.portal_cool 0
 team join 42.no_col @e[tag=42.portal_new_spawn,tag=42.portal_elevator]
 #
 execute as @p at @s run function 42:portal/get_rot
@@ -53,6 +53,6 @@ kill @s[type=area_effect_cloud]
 #   portal_y    start height * 100
 #   portal_z    end height * 100
 #   portal_skin
-#   portal_xrot1    temp var used for move/move_x
+#   portal_xrot1    temp var used for move/move_x and move/set/
 #   portal_time     timer between movement and doors
-#   portal_u    ticks since move started (0 when not moving)
+#   portal_cool    ticks since move started (0 when not moving)

@@ -3,3 +3,4 @@ execute as @e[tag=42.portal_elevator_door_r,tag=42.portal_id] run data merge ent
 execute as @e[tag=42.portal_elevator_start,tag=42.portal_id] at @s run fill ^-1 ^1 ^2 ^1 ^1 ^2 barrier replace #42:portal_replace
 execute at @s run playsound minecraft:entity.player.breath block @a ~ ~ ~ 1 1.5
 tag @s add 42.portal_elevator_shut
+function 42:portal/elevator/walls/reset

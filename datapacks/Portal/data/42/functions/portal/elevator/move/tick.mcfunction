@@ -1,10 +1,11 @@
-scoreboard players add @s 42.portal_u 1
+scoreboard players add @s 42.portal_cool 1
 execute store result score 42.portal 42.portal_temp run data get entity @s Motion[1] 100
-execute if score 42.portal 42.portal_temp matches -10..10 if score @s 42.portal_u matches 60.. run function 42:portal/elevator/move/blocked
+execute if score 42.portal 42.portal_temp matches -10..10 if score @s 42.portal_cool matches 60.. run function 42:portal/elevator/move/blocked
 #
 execute if score @s 42.portal_x matches 1.. run effect give @e[tag=42.portal_temp] levitation 1 2 true
 execute if score @s 42.portal_x matches ..-1 run effect give @e[tag=42.portal_temp,type=player] levitation 1 252 true
 execute if score @s 42.portal_x matches ..-1 run data modify entity @s Motion[1] set value -.137
+execute at @s run function 42:portal/elevator/walls/set
 #
 execute store result score 42.portal 42.portal_temp run data get entity @s Pos[1] 100
 scoreboard players operation 42.portal 42.portal_temp -= @s 42.portal_z
