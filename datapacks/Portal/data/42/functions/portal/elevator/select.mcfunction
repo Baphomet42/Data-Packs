@@ -6,5 +6,8 @@ tellraw @p[tag=42.portal_selected] [{"text":"","color":"gray"},\
     {"text":"\n   Action... ","color":"dark_gray"},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Reset - Elevator goes back to the default position with the doors open\n\nTrigger - Elevator moves as if a player activated it"}]}},\
     {"text":"\n      "},{"text":"[Reset]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203596"}},\
     {"text":"\n      "},{"text":"[Trigger]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203597"}},\
+    {"text":"\n   Player Detection... ","color":"dark_gray"},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"On - Elevator will automatically run when a player enters it\n\nOff - Elevator won't detect players (useful for the destination of a tp elevator)"}]}},\
+    {"text":"\n      "},{"text":"[On]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203599"}},\
+    {"text":"\n      "},{"text":"[Off]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203600"}},\
     {"text":"\n   Misc...","color":"dark_gray"},\
     {"text":"\n      "},{"text":"[Fizzle]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203590"}}]

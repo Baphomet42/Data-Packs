@@ -14,4 +14,5 @@ execute if score @s 42.portal_x matches ..-1 if score 42.portal 42.portal_temp m
 execute if score @s 42.portal_x matches 0 run tag @s add 42.portal_temp1
 playsound minecraft:entity.iron_golem.attack block @a ~ ~ ~ 1 .25
 #
+execute if entity @s[tag=42.portal_temp1,tag=42.portal_elevator_tp] run function 42:portal/elevator/tp/tp_all
 execute if entity @s[tag=42.portal_temp1] run function 42:portal/elevator/move/stop

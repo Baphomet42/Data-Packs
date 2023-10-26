@@ -68,4 +68,6 @@ execute if score @s 42menu matches 4203595 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203596 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/reset
 execute if score @s 42menu matches 4203597 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/start
 execute if score @s 42menu matches 4203598 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/tp/set
+execute if score @s 42menu matches 4203599 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run tag @s remove 42.portal_elevator_off
+execute if score @s 42menu matches 4203600 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run tag @s add 42.portal_elevator_off
 tag @e remove 42.portal_selected

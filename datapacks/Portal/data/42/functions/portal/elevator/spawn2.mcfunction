@@ -28,12 +28,13 @@ scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_elevator] 42.por
 team join 42.no_col @e[tag=42.portal_new_spawn,tag=42.portal_elevator]
 #
 execute as @p at @s run function 42:portal/get_rot
-execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_e] as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] at @s run tp @s ~ ~ ~ ~90 ~
-execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_s] as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] at @s run tp @s ~ ~ ~ ~90 ~
-execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_s] as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] at @s run tp @s ~ ~ ~ ~90 ~
-execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_w] as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] at @s run tp @s ~ ~ ~ ~90 ~
-execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_w] as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] at @s run tp @s ~ ~ ~ ~90 ~
-execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_w] as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] at @s run tp @s ~ ~ ~ ~90 ~
+scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_elevator] 42.portal_yro1 0
+execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_w] run scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] 42.portal_yrot1 1
+execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_s] run scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] 42.portal_yrot1 2
+execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_e] run scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] 42.portal_yrot1 3
+execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_e] as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] at @s run tp @s ~ ~ ~ 90 ~
+execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_s] as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] at @s run tp @s ~ ~ ~ 180 ~
+execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_w] as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] at @s run tp @s ~ ~ ~ -90 ~
 execute as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_text] at @s run tp @s ~ ~ ~ ~180 ~
 execute run function 42:portal/get_rot2
 #
@@ -49,10 +50,27 @@ execute as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_end_dis] run data m
 #
 tag @e remove 42.portal_new_spawn
 kill @s[type=area_effect_cloud]
+#
+#   ====scores====
 #   portal_x    end offset from start
 #   portal_y    start height * 100
 #   portal_z    end height * 100
 #   portal_skin
 #   portal_xrot1    temp var used for move/move_x and move/set/
 #   portal_time     timer between movement and doors
-#   portal_cool    ticks since move started (0 when not moving)
+#   portal_cool     ticks since move started (0 when not moving)
+#   portal_yrot1    yrot id (0s, 1w, 2n, 3e)
+#   portal_u    tp center x coord
+#   portal_v    tp center y coord
+#   portal_w    tp center z coord
+#   portal_yrot2    tp yrot offset count
+#   portal_xrot2    id of paired elevator
+#
+#   =====tags=====
+#   portal_elevator     main tick
+#   portal_elevator_start   start pos
+#   portal_elevator_end     end pos
+#   portal_elevator_shut    door state
+#   portal_elevator_at_start    if snapped start
+#   portal_elevator_at_end      if snapped end
+#   portal_elevator_off     won't run try_start
