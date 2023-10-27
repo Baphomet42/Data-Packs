@@ -38,6 +38,10 @@ execute if score @s 42menu matches 4203545 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203546 as @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] at @s run function 42:portal/cube/turret/fall
 execute if score @s 42menu matches 4203547 as @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] at @s run function 42:portal/cube/turret/toggle/laser_on
 #
+execute if score @s 42menu matches 4203555..4203559 unless entity @e[tag=42.portal_selected,tag=42.portal_wire] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203555 as @e[tag=42.portal_selected,tag=42.portal_wire] at @s run function 42:portal/wire/fizzle
+execute if score @s 42menu matches 4203556 as @e[tag=42.portal_selected,tag=42.portal_wire] at @s run function 42:portal/wire/unlink_full
+execute if score @s 42menu matches 4203557 as @e[tag=42.portal_selected,tag=42.portal_wire] at @s run function 42:portal/wire/skin
 #
 execute if score @s 42menu matches 4203565..4203568 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203565 as @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] at @s run function 42:portal/pellet/catcher/fizzle
@@ -68,6 +72,5 @@ execute if score @s 42menu matches 4203595 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203596 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/reset
 execute if score @s 42menu matches 4203597 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/start
 execute if score @s 42menu matches 4203598 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/tp/set
-execute if score @s 42menu matches 4203599 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run tag @s remove 42.portal_elevator_off
-execute if score @s 42menu matches 4203600 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run tag @s add 42.portal_elevator_off
+execute if score @s 42menu matches 4203599 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/cycle
 tag @e remove 42.portal_selected

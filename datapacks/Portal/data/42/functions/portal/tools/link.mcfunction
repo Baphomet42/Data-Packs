@@ -13,5 +13,6 @@ execute positioned ~ ~ ~ run function 42:portal/tools/notif
 execute if entity @s[tag=42.portal_temp3] as @e[tag=42.portal_notif,limit=1,sort=nearest] run function 42:portal/tools/resolve {text:'\'[{"text":"Linked "},{"score":{"name":"42.portal","objective":"42.portal_temp"}},{"text":" new equipment"}]\'',tag:CustomName}
 execute if entity @s[tag=!42.portal_temp3] if score 42.portal 42.portal_temp matches 1.. as @e[tag=42.portal_notif,limit=1,sort=nearest] run function 42:portal/tools/resolve {text:'\'[{"text":"Previous link has "},{"score":{"name":"42.portal","objective":"42.portal_temp"}},{"text":" equipment"}]\'',tag:CustomName}
 tag @e remove 42.portal_resolve
+execute as @e[tag=42.portal_wire_unlinked] at @s run function 42:portal/wire/set
 kill @s[type=area_effect_cloud]
 execute if score 42.portal 42.portal_link matches 2000000000.. run tellraw @a {"text":"42datapack error (3): [link] overflow warning","color":"red"}

@@ -1,0 +1,2 @@
+scoreboard players operation 42.portal 42.portal_temp = @s[tag=42.portal_wire] 42.portal_link
+execute as @e[tag=42.portal_wire] at @s if score @s 42.portal_link = 42.portal 42.portal_temp run particle dust 1 0 0 1 ^ ^ ^-.25 0 0 0 0 1 force

@@ -6,6 +6,10 @@ tag @s remove 42.portal_temp2
 scoreboard players set 42.portal 42.portal_temp 0
 execute at @e[tag=42.portal_id,tag=42.portal_elevator_end,limit=1] positioned ~ ~-1 ~ run function 42:portal/generic/in_world
 execute if score 42.portal 42.portal_temp matches 0 run tag @s add 42.portal_temp2
+tag @s remove 42.portal_temp3
+scoreboard players set 42.portal 42.portal_temp 0
+execute at @e[tag=42.portal_id,tag=42.portal_elevator_start,limit=1] positioned ~ ~-5 ~ run function 42:portal/generic/in_world
+execute if score 42.portal 42.portal_temp matches 0 run tag @s add 42.portal_temp3
 #
 execute if score @s 42.portal_x matches 0..5 run tag @s add 42.portal_temp
 execute unless entity @s[tag=42.portal_temp] at @e[tag=42.portal_id,tag=42.portal_elevator_end,limit=1] positioned ~-2 ~-1 ~-2 run function 42:portal/generic/test_range {dx:4,dy:3,dz:4,mode:unless,block:"'#42:portal_replace'"}
@@ -13,7 +17,7 @@ execute unless entity @s[tag=42.portal_temp] if score 42.portal 42.portal_temp m
 execute unless entity @s[tag=42.portal_temp2] unless entity @s[tag=42.portal_temp] if score 42.portal 42.portal_temp matches 0 run function 42:portal/elevator/move/dec_y
 execute if entity @s[tag=42.portal_temp] at @s if score @s 42.portal_x matches 0 positioned ~-1 ~-1.5 ~-1 run function 42:portal/generic/test_range {dx:2,dy:0,dz:2,mode:unless,block:"'#42:portal_replace'"}
 execute if entity @s[tag=42.portal_temp] at @s if score @s 42.portal_x matches 0 if score 42.portal 42.portal_temp matches 1 positioned ~-1 ~-1.5 ~-1 run function 42:portal/generic/find_all {dx:2,dy:0,dz:2,mode:unless,block:"'#42:portal_replace'"}
-execute unless entity @s[tag=42.portal_temp2] if entity @s[tag=42.portal_temp] at @s if score @s 42.portal_x matches 0 if score 42.portal 42.portal_temp matches 0 run function 42:portal/elevator/move/dec_y
+execute unless entity @s[tag=42.portal_temp3] if entity @s[tag=42.portal_temp] at @s if score @s 42.portal_x matches 0 if score 42.portal 42.portal_temp matches 0 run function 42:portal/elevator/move/dec_y
 execute if entity @s[tag=42.portal_temp] at @s if score @s 42.portal_x matches 5 run function 42:portal/elevator/move/set_none
 #
 function 42:portal/tag_id
@@ -26,3 +30,4 @@ tag @e remove 42.portal_id
 scoreboard players add @s 42.portal_xrot1 1
 execute if score @s[tag=!42.portal_temp2] 42.portal_xrot1 matches ..-1 at @s run function 42:portal/elevator/move/try_dec_y
 tag @s remove 42.portal_temp2
+tag @s remove 42.portal_temp3

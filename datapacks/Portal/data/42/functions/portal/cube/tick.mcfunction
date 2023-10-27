@@ -1,5 +1,6 @@
 function 42:portal/tag_id
-execute as @e[tag=42.portal_cube,tag=42.portal_id,limit=1,sort=nearest] run tp ~ ~ ~
+execute as @e[tag=42.portal_cube,tag=42.portal_id,limit=1,sort=nearest] run tp ~ ~-.0025 ~
+execute as @e[tag=42.portal_cube_display,tag=42.portal_id,limit=1,sort=nearest] run tp ~ ~ ~
 data modify entity @s[nbt={OnGround:1b}] Motion[0] set value 0d
 data modify entity @s[nbt={OnGround:1b}] Motion[2] set value 0d
 data modify entity @s NoAI set value 0b
@@ -12,6 +13,8 @@ execute if entity @s[tag=42.portal_cube_size2] as @e[tag=42.portal_cube_hit,tag=
 execute as @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=42.portal_cube_held] as @p[tag=42.portal_id,x_rotation=26..90] at @s rotated ~ 26 anchored eyes run function 42:portal/cube/hold
 #special
 function 42:portal/tag_id
+execute if entity @s[tag=42.portal_cube1] at @s run function 42:portal/cube/try_activate
+execute if entity @s[tag=42.portal_cube2] at @s run function 42:portal/cube/try_activate
 execute if entity @s[tag=42.portal_turret] at @s run function 42:portal/cube/turret/tick
 execute if entity @s[tag=42.portal_laser_cube] at @s run function 42:portal/cube/laser/tick
 execute if entity @s[tag=42.portal_radio] at @s run function 42:portal/cube/radio/tick

@@ -53,6 +53,16 @@ Multiplayer friendly and designed to work with other packs
     + Link to buttons using the `Link Equipment` tool
     + Droppers drop a single cube when powered from a Pedestal Button
     + Droppers will drop a new cube when the old one is destroyed, but only if powered from a Super Button or Pellet Catcher
++ *Elevator*
+    + Use `Select Tool` to setup elevator movement
+    + Elevators can move up or down between a start point and end point
+        + Elevators only start moving when a player enters the start point
+        + Standing in the end point will not move the elevator back
+    + Pair two elevators at different locations to create a seamless teleport effect
+        + Select the entrance elevator, go to the exit elevator, and click on the Pair option
+        + The entrance elevator will now teleport players to the exit elevator after it's done moving
+        + The exit elevator should either be cycled to Exit Only mode or have a movement end point set up
+        + When done correctly, a single elevator ride will seamlessly move the player to a new location anywhere in the world
 + *High Energy Pellet*
     + Pellets spawn from High Energy Pellet Launchers
     + Bounce off walls and cubes, can go through portals
@@ -65,6 +75,15 @@ Multiplayer friendly and designed to work with other packs
     + Creates a deadly laser
     + Can be redirected with Discouragement Redirection Cube
     + Used to activate Thermal Discouragement Receptacle
++ *Power Wire*
+    + Optional feature that can connect buttons to doors (and other powerable equipment)
+        + All linking is done with the `Link Tool` and is not affected in any way by power wire
+        + The wire just makes it clear when something is being powered
+    + Setup using the `Link Tool`
+    + Use the `Change Skin Tool` to display an X or check mark, depending on its power
+        + Typically, the last wire in the line has this skin, while the rest are default
+    + Like all linkable objects, wire does not have to be physically connected to anything
+        + For the best effect, place wire on every block between a power source and the thing it powers
 + *Fizzle Tool*
     + Destroy all equipment within a small range
 + *Cycle Tool*
@@ -76,6 +95,8 @@ Multiplayer friendly and designed to work with other packs
         + The link tool has unlimited range (as long as the area is loaded) and won't link any equipment that has already been linked
         + When using the link tool a second time, it will now link the new unlinked equipment
         + Any number of equipment can be linked together in one group, and once linked, they will stay linked until fizzled
+    + Power Wire can be used to make the connections visible to players
+        + This is optional and will not change any functionality
 + *Level Tool*
     + Sets the load level for all new equipment
     + Equipment with a load level will only work if the level is currently loaded by a player
@@ -92,6 +113,7 @@ Multiplayer friendly and designed to work with other packs
     + Storage Cubes have an old Aperture skin
     + Vital Apparatus Vent toggles black effect when looking into the vent
         + Hiding the effect allows custom builds extending the vent
+    + Various other equipment types have skin options too
 + *Select Tool*
     + Select a piece of equipment to modify it and access additional settings
         + This tool can access the features of most other tools, and more

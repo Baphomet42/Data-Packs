@@ -8,6 +8,7 @@ execute as @e[type=area_effect_cloud,tag=42.portal_spawn_pellet] at @s run funct
 execute as @e[type=area_effect_cloud,tag=42.portal_spawn_pellet_emitter] at @s run function 42:portal/pellet/emitter/spawn
 execute as @e[type=area_effect_cloud,tag=42.portal_spawn_pellet_catcher] at @s run function 42:portal/pellet/catcher/spawn
 execute as @e[type=area_effect_cloud,tag=42.portal_spawn_elevator] at @s run function 42:portal/elevator/spawn
+execute as @e[type=glow_item_frame,tag=42.portal_spawn_wire] at @s run function 42:portal/wire/spawn
 #
 execute as @e[type=area_effect_cloud,tag=42.portal_fizzle_tool] at @s run function 42:portal/tools/fizzler
 execute as @e[type=area_effect_cloud,tag=42.portal_cycle_tool] at @s run function 42:portal/tools/cycle
