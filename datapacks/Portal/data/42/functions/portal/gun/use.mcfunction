@@ -16,4 +16,6 @@ execute unless entity @e[tag=42.portal_temp,tag=42.portal_nn] if entity @s[y_rot
 execute unless entity @e[tag=42.portal_temp,tag=42.portal_nn] unless entity @e[tag=42.portal_temp,tag=42.portal_ee] if entity @s[y_rotation=135..225] run tag @e[tag=42.portal_temp] add 42.portal_ss
 execute unless entity @e[tag=42.portal_temp,tag=42.portal_nn] unless entity @e[tag=42.portal_temp,tag=42.portal_ee] unless entity @e[tag=42.portal_temp,tag=42.portal_ss] if entity @s[y_rotation=225..315] run tag @e[tag=42.portal_temp] add 42.portal_ww
 execute if entity @s[tag=42.portal_spawner] run function 42:portal/portal/spawner/rotate_gun
+execute if entity @s[tag=42.portal_spawner] run tag @e[tag=42.portal_temp,tag=42.portal_gun] add 42.portal_gun_no_sel
+execute if entity @s[tag=42.portal_spawner] run scoreboard players operation @e[tag=42.portal_temp,tag=42.portal_gun] 42.portal_lvl = @s 42.portal_lvl
 tag @e remove 42.portal_temp

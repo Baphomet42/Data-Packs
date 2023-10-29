@@ -20,11 +20,14 @@ summon block_display ~ ~ ~ {Tags:["42.portal","42.portal_temp","42.portal_group"
 scoreboard players set @e[type=!player,tag=42.portal_temp] 42.datapack 3
 scoreboard players operation @e[tag=42.portal_temp] 42.portal_id = 42.portal 42.portal_temp
 scoreboard players operation @e[tag=42.portal_temp] 42.portal_link = @s 42.portal_link
+execute if score @s 42.portal_lvl matches 1.. run scoreboard players operation @e[tag=42.portal_temp,tag=42.portal] 42.portal_lvl = @s 42.portal_lvl
+execute unless score @s 42.portal_lvl matches 1.. run scoreboard players set @e[tag=42.portal_temp,tag=42.portal] 42.portal_lvl -2
 scoreboard players set @e[tag=42.portal_temp,tag=42.portal] 42.portal_x 0
 scoreboard players set @e[tag=42.portal_temp,tag=42.portal] 42.portal_y 0
 scoreboard players set @e[tag=42.portal_temp,tag=42.portal] 42.portal_cool 0
 execute if entity @s[tag=42.portal_gun_a] run tag @e[tag=42.portal_temp] add 42.portal_a
 execute if entity @s[tag=42.portal_gun_b] run tag @e[tag=42.portal_temp] add 42.portal_b
+execute if entity @s[tag=42.portal_gun_no_sel] run tag @e[tag=42.portal_temp,tag=42.portal] add 42.portal_no_sel
 scoreboard players operation @e[tag=42.portal_temp,tag=42.portal] 42.portal_skin = @s 42.portal_skin
 scoreboard players operation @e[tag=42.portal_temp,tag=42.portal_dis] 42.portal_skin = @s 42.portal_skin
 #

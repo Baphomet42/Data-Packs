@@ -21,6 +21,7 @@
         "42:portal/tools/craft_level",
         "42:portal/tools/craft_select",
         "42:portal/elevator/craft",
-        "42:portal/wire/craft"
+        "42:portal/wire/craft",
+        "42:portal/zone/craft"
     ]
 }

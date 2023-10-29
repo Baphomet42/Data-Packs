@@ -14,5 +14,5 @@ execute if score @s 42.portal_yrot2 matches ..-1 run scoreboard players add @s 4
 execute as @e[tag=42.portal_elevator_pair] at @s run particle flash ~ ~1.5 ~
 execute as @e[tag=42.portal_elevator_pair] at @s run playsound block.note_block.pling block @a ~ ~ ~ 1 1.25
 execute unless entity @e[tag=42.portal_elevator_pair] run title @p[tag=42.portal_selected] title ""
-execute unless entity @e[tag=42.portal_elevator_pair] run title @p[tag=42.portal_selected] subtitle {"text":"No elevator found","color":"red"}
+execute unless entity @e[tag=42.portal_elevator_pair] run title @p[tag=42.portal_selected] subtitle {"text":"No elevator in range","color":"red"}
 tag @e remove 42.portal_elevator_pair

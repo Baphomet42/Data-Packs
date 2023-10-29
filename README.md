@@ -75,6 +75,8 @@ Multiplayer friendly and designed to work with other packs
     + Creates a deadly laser
     + Can be redirected with Discouragement Redirection Cube
     + Used to activate Thermal Discouragement Receptacle
++ *Radio*
+    + Plays the best song on repeat all day every day
 + *Portal Spawner*
     + Device to create portals (in the early levels of both games)
     + When powered, creates a portal that will link to the closest player's portals
@@ -113,6 +115,7 @@ Multiplayer friendly and designed to work with other packs
         + This tool behaves similarly to the link tool (see above)
     + Levels are only considered loaded if a player has that level score, so levels can be placed close together without effecting each other or causing excessive lag
     + Load levels are highly recommended when there are lots of Turrets
+    + Automate levels using Zones (see below)
 + *Change Skin Tool*
     + Changes textures without changing functionality
     + Turrets have 10+ skins
@@ -126,8 +129,25 @@ Multiplayer friendly and designed to work with other packs
 + `/trigger 42menu`
     + Opens window to give equipment and tools
     + Debug options supply commands to delete large numbers of equipment
-+ *Radio*
-    + Plays the best song on repeat all day every day
++ *Zones*
+    + Automate a wide variety of features when a player enters the zone's hitbox
+    + Zones have two modes, Load and Trigger
+        + Load Zones update the player's level
+            + The zone will reset both the previous and current level, unless the player level already matches the zone level
+                + This makes sure the level won't reset just by walking back into the zone
+            + Load Zones without a level number will unload the player's level (useful after each stage)
+        + Trigger zones will trigger the first time a player enters its hitbox
+            + All trigger zones must be set to a load level, as the only way to reset the zone is to reload the level with a Load Zone
+            + Trigger Zones can be used to power or unpower equipment, spawn portals, fizzle cubes and pellets, and more
+    + Zones can have different sized hitboxes to fit most scenarios
+    + After configuring the zone with the `Select Tool`, press Hide so it can't be seen by players
+    + Levels should always start with a Load Zone to load the level, and end with another Load Zone to unload the level
+        + Make sure the hitbox is big enough so the player cannot avoid it
+    + There can be unlimited Trigger Zones within each level, and they can be placed anywhere
+        + These zones only activate if a player in the level walks through its hitbox, so spectators and outsiders cannot interfere
+        + If zones are used to give power to equipment, make sure to setup another zone to remove the power at the end of the level so it resets properly
+    + When Load Zones are used to unload levels, all cubes, turrets, pellets, etc. from the level will be fizzled
+        + Powerables that were powered through zones or the Select Menu will not be reset automatically without a Trigger Zone to do so
 + **Important Information Specific to Portal Datapack**
     + See generic information at the end of this file
     + If planning to play in survival mode, it is recommended to disable fall damage

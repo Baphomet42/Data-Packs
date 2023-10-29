@@ -2,6 +2,7 @@ function 42:portal/tag_selected
 execute if score @s 42menu matches 4203500..4203509 unless entity @e[tag=42.portal_selected,type=!player] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203500 run scoreboard players set @s 42.portal_sel 0
 execute if score @s 42menu matches 4203500 run title @s actionbar ""
+execute if score @s 42menu matches 4203501 if score @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_lvl matches 1.. as @e[tag=42.portal_selected,type=!player,limit=1] run function 42:portal/level/load
 execute if score @s 42menu matches 4203501 if score @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_lvl matches 1.. run scoreboard players operation @s 42.portal_lvl = @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_lvl
 execute if score @s 42menu matches 4203502 if score @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_link matches 1.. run scoreboard players set @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_link -1
 execute if score @s 42menu matches 4203502..4203503 as @e[tag=42.portal_selected,type=!player] at @s run function 42:portal/tools/sel_new
@@ -95,5 +96,29 @@ execute if score @s 42menu matches 4203596 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203597 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/start
 execute if score @s 42menu matches 4203598 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/tp/set
 execute if score @s 42menu matches 4203599 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/cycle
+#
+#
+execute if score @s 42menu matches 4203620..4203659 unless entity @e[tag=42.portal_selected,tag=42.portal_zone] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203620 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/fizzle
+execute if score @s 42menu matches 4203621 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/show
+execute if score @s 42menu matches 4203622 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/hide
+execute if score @s 42menu matches 4203623 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/mode {x:0}
+execute if score @s 42menu matches 4203624 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/mode {x:1}
+execute if score @s 42menu matches 4203625 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/size {y:0}
+execute if score @s 42menu matches 4203626 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/size {y:1}
+execute if score @s 42menu matches 4203627 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/size {y:2}
+execute if score @s 42menu matches 4203628 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/set/lvl
+execute if score @s 42menu matches 4203629 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run scoreboard players set @s 42.portal_lvl -2
+execute if score @s 42menu matches 4203630 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/set/power
+execute if score @s 42menu matches 4203631 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run scoreboard players set @s 42.portal_xrot1 0
+execute if score @s 42menu matches 4203632 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/set/unpower
+execute if score @s 42menu matches 4203633 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run scoreboard players set @s 42.portal_xrot2 0
+execute if score @s 42menu matches 4203634 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/set/spawn
+execute if score @s 42menu matches 4203635 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run tag @s remove 42.portal_zone_has_spawn
+execute if score @s 42menu matches 4203636 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/set/fizzle_spawn
+execute if score @s 42menu matches 4203637 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run tag @s remove 42.portal_zone_has_fizzle
+execute if score @s 42menu matches 4203628..4203637 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/update
+execute if score @s 42menu matches 4203638 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run tag @s remove 42.portal_zone_cool
+execute if score @s 42menu matches 4203638 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/tools/sel_new
 #
 tag @e remove 42.portal_selected
