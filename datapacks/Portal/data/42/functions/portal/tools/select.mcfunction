@@ -18,6 +18,7 @@ tag @e[tag=42.portal_elevator,distance=..3.5] add 42.portal_temp
 tag @e[tag=42.portal_elevator_start,distance=..3.5] add 42.portal_temp
 tag @e[tag=42.portal_elevator_selgroup,distance=..3.5] add 42.portal_temp
 tag @e[tag=42.portal_wire,distance=..1.5] add 42.portal_temp
+tag @e[tag=42.portal_spawner,distance=..2.5] add 42.portal_temp
 #
 tag @e[tag=42.portal_temp,limit=1,sort=nearest] add 42.portal_temp2
 tag @e remove 42.portal_temp

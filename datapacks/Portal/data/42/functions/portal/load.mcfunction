@@ -11,6 +11,7 @@ scoreboard objectives add 42.portal_z dummy
 scoreboard objectives add 42.portal_link dummy
 scoreboard objectives add 42.portal_cool dummy
 scoreboard objectives add 42.portal_gun_use minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add 42.portal_gun_use2 minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add 42.portal_xrot1 dummy
 scoreboard objectives add 42.portal_yrot1 dummy
 scoreboard objectives add 42.portal_xrot2 dummy

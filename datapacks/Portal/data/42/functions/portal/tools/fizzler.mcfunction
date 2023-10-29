@@ -11,4 +11,5 @@ execute as @e[tag=42.portal_pellet,distance=..2.5] at @s run function 42:portal/
 execute as @e[tag=42.portal_elevator,distance=..3.5] at @s run function 42:portal/elevator/fizzle
 execute as @e[tag=42.portal_wire,distance=..1.5] at @s run function 42:portal/wire/fizzle
 execute as @e[tag=42.portal_wire_unlinked,distance=..1.5] at @s run kill @s
+execute as @e[tag=42.portal_spawner,distance=..2.5] at @s run function 42:portal/portal/spawner/fizzle
 kill @s[type=area_effect_cloud]

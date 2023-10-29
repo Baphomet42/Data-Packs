@@ -19,6 +19,7 @@ execute if entity @s[tag=42.portal_pellet_emitter] at @s run function 42:portal/
 execute if entity @s[tag=42.portal_pellet] at @s run function 42:portal/pellet/pellet/select
 execute if entity @s[tag=42.portal_elevator] at @s run function 42:portal/elevator/select
 execute if entity @s[tag=42.portal_wire] at @s run function 42:portal/wire/select
+execute if entity @s[tag=42.portal_spawner] at @s run function 42:portal/portal/spawner/select
 #
 execute if score @s[tag=!42.portal,tag=!42.portal_wire] 42.portal_link matches 1.. run tellraw @p[tag=42.portal_selected] [{"text":"      "},{"text":"[Unlink]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203502"}}]
 execute if score @s 42.portal_lvl matches 0.. run tellraw @p[tag=42.portal_selected] [{"text":"      "},{"text":"[Unbind Level]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203504"}}]

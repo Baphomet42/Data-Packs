@@ -7,20 +7,25 @@ execute if score @s 42menu matches 4203502 if score @e[tag=42.portal_selected,ty
 execute if score @s 42menu matches 4203502..4203503 as @e[tag=42.portal_selected,type=!player] at @s run function 42:portal/tools/sel_new
 execute if score @s 42menu matches 4203504 if score @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_lvl matches 0.. run scoreboard players set @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_lvl -1
 execute if score @s 42menu matches 4203504 as @e[tag=42.portal_selected,type=!player] at @s run function 42:portal/tools/sel_new
+#
 execute if score @s 42menu matches 4203510..4203514 unless entity @e[tag=42.portal_selected,tag=42.portal_launch] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203510 as @e[tag=42.portal_selected,tag=42.portal_launch] at @s run function 42:portal/launch/rotate
 execute if score @s 42menu matches 4203511 as @e[tag=42.portal_selected,tag=42.portal_launch] at @s run function 42:portal/launch/fizzle
+#
 execute if score @s 42menu matches 4203515..4203519 unless entity @e[tag=42.portal_selected,tag=42.portal_door] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203515 as @e[tag=42.portal_selected,tag=42.portal_door] at @s run function 42:portal/door/fizzle
 execute if score @s 42menu matches 4203517 as @e[tag=42.portal_selected,tag=42.portal_door] at @s run function 42:portal/door/power
 execute if score @s 42menu matches 4203518 as @e[tag=42.portal_selected,tag=42.portal_door] at @s run function 42:portal/door/unpower
+#
 execute if score @s 42menu matches 4203520..4203524 unless entity @e[tag=42.portal_selected,tag=42.portal_pedestal] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203520 as @e[tag=42.portal_selected,tag=42.portal_pedestal] at @s run function 42:portal/button/fizzle_pedestal
 execute if score @s 42menu matches 4203521 as @e[tag=42.portal_selected,tag=42.portal_pedestal] at @s run function 42:portal/button/rotate_pedestal
 execute if score @s 42menu matches 4203522 as @e[tag=42.portal_selected,tag=42.portal_pedestal] at @s run function 42:portal/button/set_time {ticks:50}
+#
 execute if score @s 42menu matches 4203525..4203529 unless entity @e[tag=42.portal_selected,tag=42.portal_btn] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203525 as @e[tag=42.portal_selected,tag=42.portal_btn] at @s run function 42:portal/button/fizzle
 execute if score @s 42menu matches 4203526 as @e[tag=42.portal_selected,tag=42.portal_btn] at @s run function 42:portal/button/cycle
+#
 execute if score @s 42menu matches 4203530..4203539 unless entity @e[tag=42.portal_selected,tag=42.portal_cube_tp] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203530 as @e[tag=42.portal_selected,tag=42.portal_cube_tp] at @s run function 42:portal/cube/fizzle
 execute if score @s 42menu matches 4203531 as @e[tag=42.portal_selected,tag=42.portal_cube_tp] at @s run function 42:portal/cube/skin
@@ -28,6 +33,7 @@ execute if score @s 42menu matches 4203532 if entity @e[tag=42.portal_selected,t
 execute if score @s 42menu matches 4203532 if entity @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_cube2] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203532 as @e[tag=42.portal_selected,tag=42.portal_cube_tp] at @s run function 42:portal/cube/rotate
 execute if score @s 42menu matches 4203533 as @e[tag=42.portal_selected,tag=42.portal_cube_tp] at @s run scoreboard players set 42.portal 42.portal_xrot1 0
+#
 execute if score @s 42menu matches 4203540..4203549 unless entity @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203540 as @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] at @s run function 42:portal/cube/turret/reset
 execute if score @s 42menu matches 4203541 as @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] at @s run function 42:portal/cube/turret/toggle/on
@@ -38,22 +44,37 @@ execute if score @s 42menu matches 4203545 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203546 as @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] at @s run function 42:portal/cube/turret/fall
 execute if score @s 42menu matches 4203547 as @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] at @s run function 42:portal/cube/turret/toggle/laser_on
 #
+#
 execute if score @s 42menu matches 4203555..4203559 unless entity @e[tag=42.portal_selected,tag=42.portal_wire] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203555 as @e[tag=42.portal_selected,tag=42.portal_wire] at @s run function 42:portal/wire/fizzle
 execute if score @s 42menu matches 4203556 as @e[tag=42.portal_selected,tag=42.portal_wire] at @s run function 42:portal/wire/unlink_full
 execute if score @s 42menu matches 4203557 as @e[tag=42.portal_selected,tag=42.portal_wire] at @s run function 42:portal/wire/skin
+execute if score @s 42menu matches 4203558 as @e[tag=42.portal_selected,tag=42.portal_wire] at @s run function 42:portal/wire/power
+execute if score @s 42menu matches 4203559 as @e[tag=42.portal_selected,tag=42.portal_wire] at @s run function 42:portal/wire/unpower
+#
+execute if score @s 42menu matches 4203560..4203564 unless entity @e[tag=42.portal_selected,tag=42.portal_spawner] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203560 as @e[tag=42.portal_selected,tag=42.portal_spawner] at @s run function 42:portal/portal/spawner/fizzle
+execute if score @s 42menu matches 4203561 as @e[tag=42.portal_selected,tag=42.portal_spawner] at @s run function 42:portal/portal/spawner/skin_portal
+execute if score @s 42menu matches 4203562 as @e[tag=42.portal_selected,tag=42.portal_spawner] at @s run function 42:portal/portal/spawner/power
+execute if score @s 42menu matches 4203563 as @e[tag=42.portal_selected,tag=42.portal_spawner] at @s run function 42:portal/portal/spawner/unpower
 #
 execute if score @s 42menu matches 4203565..4203568 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203565 as @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] at @s run function 42:portal/pellet/catcher/fizzle
 execute if score @s 42menu matches 4203567 as @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] at @s run function 42:portal/pellet/catcher/cycle
+#
 execute if score @s 42menu matches 4203569 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203569 as @e[tag=42.portal_selected,tag=42.portal_pellet] at @s run function 42:portal/pellet/pellet/fizzle
+#
 execute if score @s 42menu matches 4203570..4203574 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet_emitter] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203570 as @e[tag=42.portal_selected,tag=42.portal_pellet_emitter] at @s run function 42:portal/pellet/emitter/fizzle
 execute if score @s 42menu matches 4203572 as @e[tag=42.portal_selected,tag=42.portal_pellet_emitter] at @s run function 42:portal/pellet/emitter/cycle
+execute if score @s 42menu matches 4203573 as @e[tag=42.portal_selected,tag=42.portal_pellet_emitter] at @s run function 42:portal/pellet/emitter/kill_pellets
+#
 execute if score @s 42menu matches 4203575..4203579 unless entity @e[tag=42.portal_selected,tag=42.portal] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203575 as @e[tag=42.portal_selected,tag=42.portal] at @s run function 42:portal/portal/fizzle
 execute if score @s 42menu matches 4203576 as @e[tag=42.portal_selected,tag=42.portal] at @s run function 42:portal/portal/skin
+execute if score @s 42menu matches 4203577 as @e[tag=42.portal_selected,tag=42.portal] at @s run function 42:portal/portal/spawner/try_spawn
+#
 execute if score @s 42menu matches 4203580..4203589 unless entity @e[tag=42.portal_selected,tag=42.portal_dropper] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203580 as @e[tag=42.portal_selected,tag=42.portal_dropper] at @s run function 42:portal/dropper/fizzle
 execute if score @s 42menu matches 4203581 as @e[tag=42.portal_selected,tag=42.portal_dropper] at @s run function 42:portal/dropper/cycle
@@ -62,6 +83,7 @@ execute if score @s 42menu matches 4203583 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203584 as @e[tag=42.portal_selected,tag=42.portal_dropper] at @s run function 42:portal/dropper/unpower
 execute if score @s 42menu matches 4203585 as @e[tag=42.portal_selected,tag=42.portal_dropper] at @s run function 42:portal/dropper/drop
 execute if score @s 42menu matches 4203586 as @e[tag=42.portal_selected,tag=42.portal_dropper] at @s run function 42:portal/dropper/fizzle_cube
+#
 execute if score @s 42menu matches 4203590..4203609 unless entity @e[tag=42.portal_selected,tag=42.portal_elevator] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203590 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/fizzle
 execute if score @s 42menu matches 4203591 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/move/set_none
@@ -73,4 +95,5 @@ execute if score @s 42menu matches 4203596 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203597 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/start
 execute if score @s 42menu matches 4203598 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/tp/set
 execute if score @s 42menu matches 4203599 as @e[tag=42.portal_selected,tag=42.portal_elevator] at @s run function 42:portal/elevator/cycle
+#
 tag @e remove 42.portal_selected

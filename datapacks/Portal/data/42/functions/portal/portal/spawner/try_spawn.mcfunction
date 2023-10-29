@@ -1,0 +1,1 @@
+execute positioned ^ ^ ^.625 unless entity @e[tag=42.portal_spawner,distance=...25] at @s run function 42:portal/portal/spawner/spawn

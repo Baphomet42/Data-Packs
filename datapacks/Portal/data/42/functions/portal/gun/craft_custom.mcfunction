@@ -6,5 +6,6 @@ $data modify entity @e[tag=42.portal_new_spawn,limit=1] Item.tag.portal_id set v
 $data modify entity @e[tag=42.portal_new_spawn,limit=1] Item.tag.portal_color set value $(color)
 execute as @e[tag=42.portal_new_spawn,nbt={Item:{tag:{portal_type:0}}}] run data modify entity @s Item.tag.portal_type set value 0b
 execute as @e[tag=42.portal_new_spawn,nbt={Item:{tag:{portal_type:1}}}] run data modify entity @s Item.tag.portal_type set value 1b
+execute as @e[tag=42.portal_new_spawn,nbt={Item:{tag:{portal_type:1b}}}] run data modify entity @s Item.id set value "carrot_on_a_stick"
 execute as @e[tag=42.portal_new_spawn] run function 42:portal/gun/setup_look
 tag @e remove 42.portal_new_spawn

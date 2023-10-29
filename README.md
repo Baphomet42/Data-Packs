@@ -75,6 +75,12 @@ Multiplayer friendly and designed to work with other packs
     + Creates a deadly laser
     + Can be redirected with Discouragement Redirection Cube
     + Used to activate Thermal Discouragement Receptacle
++ *Portal Spawner*
+    + Device to create portals (in the early levels of both games)
+    + When powered, creates a portal that will link to the closest player's portals
+    + To create: place a portal with a Portal Gun, then use the `Select Tool` to convert it into a spawner
+        + The spawner will spawn portals of the same color, link number, and type
+    + Link to a power source using the `Link Tool`
 + *Power Wire*
     + Optional feature that can connect buttons to doors (and other powerable equipment)
         + All linking is done with the `Link Tool` and is not affected in any way by power wire
@@ -111,8 +117,6 @@ Multiplayer friendly and designed to work with other packs
     + Changes textures without changing functionality
     + Turrets have 10+ skins
     + Storage Cubes have an old Aperture skin
-    + Vital Apparatus Vent toggles black effect when looking into the vent
-        + Hiding the effect allows custom builds extending the vent
     + Various other equipment types have skin options too
 + *Select Tool*
     + Select a piece of equipment to modify it and access additional settings
@@ -231,7 +235,7 @@ Multiplayer friendly and designed to work with other packs
     + Most features use display entities, no resource pack needed
     + The only use of the resource pack is for the following:
 + Custom item texture for Portal Gun
-    + Without resource pack it's a fungus on a stick
+    + Without resource pack it's a carrot/fungus on a stick
 
 **XLTT Resources**
 
