@@ -1,1 +1,3 @@
 tellraw @p[tag=42.portal_selected] [{"text":"","color":"gray"},{"text":"   Misc...","color":"dark_gray"},{"text":"\n      "},{"text":"[Fizzle]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203569"}}]
+execute if entity @s[tag=42.portal_pellet_super] run tellraw @p[tag=42.portal_selected] [{"text":"","color":"gray"},\
+    {"text":"      "},{"text":"[Convert to Spawner]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203568"}},{"text":" "},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Spawners can be activated by Trigger Zones and allow levels to be fully reset"}]}}]

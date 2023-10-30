@@ -34,6 +34,7 @@ execute if score @s 42menu matches 4203532 if entity @e[tag=42.portal_selected,t
 execute if score @s 42menu matches 4203532 if entity @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_cube2] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203532 as @e[tag=42.portal_selected,tag=42.portal_cube_tp] at @s run function 42:portal/cube/rotate
 execute if score @s 42menu matches 4203533 as @e[tag=42.portal_selected,tag=42.portal_cube_tp] at @s run scoreboard players set 42.portal 42.portal_xrot1 0
+execute if score @s 42menu matches 4203534 as @e[tag=42.portal_selected,tag=42.portal_cube_tp] at @s run function 42:portal/cube/spawner/new
 #
 execute if score @s 42menu matches 4203540..4203549 unless entity @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203540 as @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] at @s run function 42:portal/cube/turret/reset
@@ -59,11 +60,12 @@ execute if score @s 42menu matches 4203561 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203562 as @e[tag=42.portal_selected,tag=42.portal_spawner] at @s run function 42:portal/portal/spawner/power
 execute if score @s 42menu matches 4203563 as @e[tag=42.portal_selected,tag=42.portal_spawner] at @s run function 42:portal/portal/spawner/unpower
 #
-execute if score @s 42menu matches 4203565..4203568 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203565..4203567 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203565 as @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] at @s run function 42:portal/pellet/catcher/fizzle
 execute if score @s 42menu matches 4203567 as @e[tag=42.portal_selected,tag=42.portal_pellet_catcher] at @s run function 42:portal/pellet/catcher/cycle
 #
-execute if score @s 42menu matches 4203569 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203568..4203569 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203568 as @e[tag=42.portal_selected,tag=42.portal_pellet] at @s run function 42:portal/pellet/spawner/new
 execute if score @s 42menu matches 4203569 as @e[tag=42.portal_selected,tag=42.portal_pellet] at @s run function 42:portal/pellet/pellet/fizzle
 #
 execute if score @s 42menu matches 4203570..4203574 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet_emitter] run function 42:portal/tools/sel_error
@@ -120,5 +122,21 @@ execute if score @s 42menu matches 4203637 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203628..4203637 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/update
 execute if score @s 42menu matches 4203638 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run tag @s remove 42.portal_zone_cool
 execute if score @s 42menu matches 4203638 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/tools/sel_new
+execute if score @s 42menu matches 4203639 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/mode/load/toggle_checkpoint
+execute if score @s 42menu matches 4203640 as @e[tag=42.portal_selected,tag=42.portal_zone] at @s run function 42:portal/zone/mode {x:2}
+#
+execute if score @s 42menu matches 4203660..4203669 unless entity @e[tag=42.portal_selected,tag=42.portal_cube_spawner] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203660 as @e[tag=42.portal_selected,tag=42.portal_cube_spawner] at @s run function 42:portal/cube/spawner/fizzle
+execute if score @s 42menu matches 4203661 as @e[tag=42.portal_selected,tag=42.portal_cube_spawner] at @s run function 42:portal/cube/spawner/show
+execute if score @s 42menu matches 4203662 as @e[tag=42.portal_selected,tag=42.portal_cube_spawner] at @s run function 42:portal/cube/spawner/hide
+execute if score @s 42menu matches 4203663 as @e[tag=42.portal_selected,tag=42.portal_cube_spawner] at @s run function 42:portal/cube/spawner/power
+execute if score @s 42menu matches 4203664 as @e[tag=42.portal_selected,tag=42.portal_cube_spawner] at @s run function 42:portal/cube/spawner/unpower
+#
+execute if score @s 42menu matches 4203670..4203679 unless entity @e[tag=42.portal_selected,tag=42.portal_pellet_spawner] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203670 as @e[tag=42.portal_selected,tag=42.portal_pellet_spawner] at @s run function 42:portal/pellet/spawner/fizzle
+execute if score @s 42menu matches 4203671 as @e[tag=42.portal_selected,tag=42.portal_pellet_spawner] at @s run function 42:portal/pellet/spawner/show
+execute if score @s 42menu matches 4203672 as @e[tag=42.portal_selected,tag=42.portal_pellet_spawner] at @s run function 42:portal/pellet/spawner/hide
+execute if score @s 42menu matches 4203673 as @e[tag=42.portal_selected,tag=42.portal_pellet_spawner] at @s run function 42:portal/pellet/spawner/power
+execute if score @s 42menu matches 4203674 as @e[tag=42.portal_selected,tag=42.portal_pellet_spawner] at @s run function 42:portal/pellet/spawner/unpower
 #
 tag @e remove 42.portal_selected

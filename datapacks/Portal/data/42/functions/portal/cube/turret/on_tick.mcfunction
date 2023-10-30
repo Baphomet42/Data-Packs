@@ -1,8 +1,8 @@
 scoreboard players add @s 42.portal_u 1
 execute if score @s 42.portal_u matches 15.. run scoreboard players set @s 42.portal_u 0
-execute if score @s[tag=!42.portal_turret_nofind] 42.portal_u matches 2 if score 42.portal_max_turrets 42.portal_id matches 1.. run function 42:portal/cube/turret/target/find
+execute if score @s[tag=!42.portal_turret_nofind] 42.portal_u matches 2 if score 42.portal_max_turret_lasers 42.portal_id matches 1.. run function 42:portal/cube/turret/target/find
 function 42:portal/tag_id
-execute if score @s[tag=42.portal_turret_always_on] 42.portal_u matches 2 if score 42.portal_max_turrets 42.portal_id matches 1.. unless entity @e[tag=42.portal_id,tag=42.portal_turret_fire] run function 42:portal/cube/turret/target/new_laser_mal
+execute if score @s[tag=42.portal_turret_always_on] 42.portal_u matches 2 if score 42.portal_max_turret_lasers 42.portal_id matches 1.. unless entity @e[tag=42.portal_id,tag=42.portal_turret_fire] run function 42:portal/cube/turret/target/new_laser_mal
 execute if score @s 42.portal_v matches 1.. run scoreboard players remove @s 42.portal_v 1
 execute if score @s[tag=42.portal_turret_open] 42.portal_v matches 1 run function 42:portal/cube/turret/arms/close
 function 42:portal/tag_id

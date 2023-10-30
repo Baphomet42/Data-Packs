@@ -63,6 +63,7 @@ Multiplayer friendly and designed to work with other packs
         + The entrance elevator will now teleport players to the exit elevator after it's done moving
         + The exit elevator should either be cycled to Exit Only mode or have a movement end point set up
         + When done correctly, a single elevator ride will seamlessly move the player to a new location anywhere in the world
+    + Elevators will unload and reset the previous level of whoever uses it
 + *High Energy Pellet*
     + Pellets spawn from High Energy Pellet Launchers
     + Bounce off walls and cubes, can go through portals
@@ -77,12 +78,29 @@ Multiplayer friendly and designed to work with other packs
     + Used to activate Thermal Discouragement Receptacle
 + *Radio*
     + Plays the best song on repeat all day every day
-+ *Portal Spawner*
-    + Device to create portals (in the early levels of both games)
-    + When powered, creates a portal that will link to the closest player's portals
-    + To create: place a portal with a Portal Gun, then use the `Select Tool` to convert it into a spawner
-        + The spawner will spawn portals of the same color, link number, and type
-    + Link to a power source using the `Link Tool`
++ *Spawners*
+    + Spawners can be used to create portals, turrets, and other various equipment during a level
+    + Spawners can be activated using the link system (buttons, etc.) or the Trigger Zone system (see below)
+    + To create: use the `Select Tool` to convert available equipment into a spawner of that type
+        + Portal spawners will create a portal that links to the closest player's portals
+            + These are the only spawners that are visible (they appear in the early chambers in both Portal games)
+        + Other spawners are invisible, but can be seen in the Select Menu
+            + Use `42menu` to unhide all zones and invisible spawners within a short range of the player
+        + Turret spawners will keep all attributes of the turret when it was first converted
+            + This can be used to spawn turrets with a specific skin, a deactivated turret, and more
+            + Changing attributes of a turret spawned by the spawner will not update the spawner
+                + To update the spawner, select the new turret and click convert again
+        + Super Pellets can be converted to spawners to create the special pellet that appears in the last level of the first portal game
+            + After converting the pellet to a spawner, the pellet launcher can be fizzled
+        + Radios can be converted to spawners so they reset to the correct position after resetting the level
+        + All types of cubes can be converted to spawners, but Vital Apparatus Vents have the same functionality with Trigger Zones
+    + Powering a spawner using a button or other power source will summon the correct object (and fizzle the old one)
+        + Unpowering a Portal Spawner will remove the portal
+        + Unpowering other types of spawners will not fizzle the object
+    + Powering or unpowering through a Trigger Zone can be used to summon or fizzle any type of object (not just portals)
+        + This will work for all spawners in the link
+    + Trigger zones can also select a single spawner to spawn or fizzle its object
+    + Combining spawners with zones can be used to create fully resettable levels
 + *Power Wire*
     + Optional feature that can connect buttons to doors (and other powerable equipment)
         + All linking is done with the `Link Tool` and is not affected in any way by power wire
@@ -131,7 +149,7 @@ Multiplayer friendly and designed to work with other packs
     + Debug options supply commands to delete large numbers of equipment
 + *Zones*
     + Automate a wide variety of features when a player enters the zone's hitbox
-    + Zones have two modes, Load and Trigger
+    + Zones have three modes: Load, Trigger, and Death
         + Load Zones update the player's level
             + The zone will reset both the previous and current level, unless the player level already matches the zone level
                 + This makes sure the level won't reset just by walking back into the zone
@@ -139,17 +157,21 @@ Multiplayer friendly and designed to work with other packs
         + Trigger zones will trigger the first time a player enters its hitbox
             + All trigger zones must be set to a load level, as the only way to reset the zone is to reload the level with a Load Zone
             + Trigger Zones can be used to power or unpower equipment, spawn portals, fizzle cubes and pellets, and more
+        + Death zones mark out of bounds areas and kill whoever enters it
+            + Zones will not kill players in creative or spectator mode
+            + The player must be part of the level to be killed by a death zone, so death zones must have a level set
     + Zones can have different sized hitboxes to fit most scenarios
     + After configuring the zone with the `Select Tool`, press Hide so it can't be seen by players
     + Levels should always start with a Load Zone to load the level, and end with another Load Zone to unload the level
         + Make sure the hitbox is big enough so the player cannot avoid it
     + There can be unlimited Trigger Zones within each level, and they can be placed anywhere
         + These zones only activate if a player in the level walks through its hitbox, so spectators and outsiders cannot interfere
-        + If zones are used to give power to equipment, make sure to setup another zone to remove the power at the end of the level so it resets properly
+        + If zones are used to give power to equipment, make sure to setup another zone to remove the power at the start of the level so it resets properly before each run
     + When Load Zones are used to unload levels, all cubes, turrets, pellets, etc. from the level will be fizzled
         + Powerables that were powered through zones or the Select Menu will not be reset automatically without a Trigger Zone to do so
 + **Important Information Specific to Portal Datapack**
     + See generic information at the end of this file
+    + To ensure portal guns aren't lost when players die, run `/gamerule keepInventory true`
     + If planning to play in survival mode, it is recommended to disable fall damage
         + Run `/gamerule fallDamage false` to disable all fall damage across the world
         + Custom motion through portals and faith plates automatically stops fall damage, but most portal levels have large drops that players are supposed to be able to survive by jumping
@@ -170,6 +192,9 @@ Multiplayer friendly and designed to work with other packs
         + Most types of equipment need to be loaded in order for other things like doors and buttons to register them
         + The simulation distance should always be high enough to fit the entire current level from anywhere within the level
         + Playing with a moderate distance like 8-15 chunks is probably good enough for most cases
+    + When portals are placed on walls that are only 1 block thick, light will be able to shine through
+        + Setting `/gamerule doDaylightCycle false` and `/time set midnight` will stop sunlight from coming into levels this way
+        + Otherwise, making walls thicker or surrounding levels in solid boxes will solve this too
 
 **XLTT** (optional resource pack - see below)
 

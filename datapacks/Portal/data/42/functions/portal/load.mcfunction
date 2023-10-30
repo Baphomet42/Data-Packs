@@ -21,6 +21,8 @@ scoreboard objectives add 42.portal_skin dummy
 scoreboard objectives add 42.portal_lvl dummy
 scoreboard objectives add 42.portal_sel dummy
 scoreboard objectives add 42.portal_col dummy
+scoreboard objectives add 42.portal_death deathCount
+scoreboard objectives add 42.portal_stat dummy
 #
 scoreboard players set 42.portal_const_n1 42.portal_id -1
 scoreboard players set 42.portal_const_n1 42.datapack 3

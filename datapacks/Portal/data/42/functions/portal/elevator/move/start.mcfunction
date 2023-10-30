@@ -1,5 +1,6 @@
 data modify entity @s NoAI set value 0b
 tag @s remove 42.portal_elevator_wait_move
+scoreboard players add @a[tag=42.portal_temp] 42.portal_death 1
 execute as @a[tag=42.portal_temp] at @s align y if block ~ ~ ~ smooth_quartz_slab run tp @s ~ ~.5 ~
 execute as @a[tag=42.portal_temp] at @s align y if block ~ ~-1 ~ smooth_quartz_slab run tp @s ~ ~-.5 ~
 execute as @a[tag=42.portal_temp] at @s align y if block ~ ~-2 ~ smooth_quartz_slab run tp @s ~ ~-1.5 ~

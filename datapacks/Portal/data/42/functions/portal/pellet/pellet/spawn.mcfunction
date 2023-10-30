@@ -11,4 +11,5 @@ scoreboard players set @e[tag=42.portal_pellet_spawn] 42.portal_lvl -1
 execute if entity @s[tag=42.portal_spawn_super_pellet] run scoreboard players set @e[tag=42.portal_pellet_spawn] 42.portal_time -1
 execute if entity @s[tag=42.portal_spawn_super_pellet] run tag @e[tag=42.portal_pellet_spawn] add 42.portal_pellet_super
 execute if entity @s[tag=42.portal_spawn_super_pellet] run data merge entity @e[tag=42.portal_pellet_spawn,limit=1] {item:{id:ender_pearl,Count:1},CustomName:'{"text":"High Energy Super Pellet"}'}
+execute if entity @s[tag=42.portal_pellet_spawner] run function 42:portal/pellet/spawner/config
 kill @s[type=area_effect_cloud]

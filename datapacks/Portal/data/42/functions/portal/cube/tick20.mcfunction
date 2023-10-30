@@ -1,4 +1,6 @@
 data merge entity @s {Saddle:0,InLove:0}
+data modify entity @s[nbt={OnGround:1b}] Motion[0] set value 0d
+data modify entity @s[nbt={OnGround:1b}] Motion[2] set value 0d
 execute as @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=42.portal_cube_held] unless entity @a[tag=42.portal_id] run tag @s remove 42.portal_cube_held
 execute as @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=!42.portal_cube_held] run data modify entity @s response set value 1
 scoreboard players set @s 42.portal_temp 0

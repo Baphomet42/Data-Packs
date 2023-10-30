@@ -1,8 +1,6 @@
 function 42:portal/tag_id
 execute as @e[tag=42.portal_cube,tag=42.portal_id,limit=1,sort=nearest] run tp ~ ~-.0025 ~
 execute as @e[tag=42.portal_cube_display,tag=42.portal_id,limit=1,sort=nearest] run tp ~ ~ ~
-data modify entity @s[nbt={OnGround:1b}] Motion[0] set value 0d
-data modify entity @s[nbt={OnGround:1b}] Motion[2] set value 0d
 data modify entity @s NoAI set value 0b
 execute as @e[tag=42.portal_cube_hit,tag=42.portal_id,limit=1,sort=nearest] at @s if entity @s[nbt={interaction:{}}] run function 42:portal/cube/interact
 tag @e[tag=42.portal_cube_hit,tag=42.portal_id,limit=1,sort=nearest] add 42.portal_ticked

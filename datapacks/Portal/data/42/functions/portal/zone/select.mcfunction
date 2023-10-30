@@ -1,16 +1,18 @@
 function 42:portal/zone/update
 tellraw @p[tag=42.portal_selected] [{"text":"","color":"gray"},\
-    {"text":"   Set Mode... ","color":"dark_gray"},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Load Mode - Used to reset and load levels\n\nTrigger Mode - Used to power or unpower equipment"}]}},\
+    {"text":"   Set Mode... ","color":"dark_gray"},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Load Mode - Used to reset and load levels\n\nTrigger Mode - Used to power or unpower equipment\n\nDeath Mode - Kill players who enter it if they're in the level (used to mark out of bounds areas)"}]}},\
     {"text":"\n      "},{"text":"[Load]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203623"}},\
     {"text":"\n      "},{"text":"[Trigger]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203624"}},\
+    {"text":"\n      "},{"text":"[Death]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203640"}},\
     {"text":"\n   Set Size...","color":"dark_gray"},\
     {"text":"\n      "},{"text":"[1x1x1]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203625"}},\
     {"text":" "},{"text":"[3x3x3]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203626"}},\
     {"text":" "},{"text":"[5x5x5]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203627"}},\
     {"text":"\n   Configure...","color":"dark_gray"},\
-    {"text":"\n      "},{"text":"[Set Level]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203628"}},{"text":" "},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Sets the zone level to the level of the nearest equipment (within range).\n\nLoad zones will load this level when entered, unless the player was already in that level.\n\nTrigger zones will only work if its level is loaded, and won't activate again until its level is loaded again."}]}}]
+    {"text":"\n      "},{"text":"[Set Level]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203628"}},{"text":" "},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Sets the zone level to the level of the nearest equipment (within range).\n\nLoad zones will load this level when entered, unless the player was already in that level.\n\nTrigger zones will only work if its level is loaded, and won't activate again until its level is loaded again.\n\nDeath zones will kill players who enter it, but only if the player is in this level (and not in creative mode). They can activate unlimited times and don't need to be reset."}]}}]
 execute if score @s 42.portal_x matches 0 run tellraw @p[tag=42.portal_selected] [{"text":"","color":"gray"},\
-    {"text":"      "},{"text":"[Remove Level]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203629"}},{"text":" "},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"If no level is set, the zone will unload the level of the player who enters it. These zones should be placed at the end of levels."}]}}]
+    {"text":"      "},{"text":"[Remove Level]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203629"}},{"text":" "},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"If no level is set, the zone will unload the level of the player who enters it. These zones should be placed at the end of levels."}]}},\
+    {"text":"\n      "},{"text":"[Toggle Checkpoint]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203639"}}]
 execute if score @s 42.portal_x matches 1 run tellraw @p[tag=42.portal_selected] [{"text":"","color":"gray"},\
     {"text":"      "},{"text":"[Set Link to Power]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203630"}},\
     {"text":" "},{"text":"[Remove]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203631"}},\

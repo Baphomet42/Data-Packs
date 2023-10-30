@@ -5,6 +5,8 @@ execute if score @s 42.portal_x matches 0 as @e[tag=42.portal_id,tag=42.portal_z
 execute if score @s 42.portal_x matches 0 run data modify entity @s CustomName set value '{"text":"Load Zone"}'
 execute if score @s 42.portal_x matches 1 as @e[tag=42.portal_id,tag=42.portal_zone_lbl] run data modify entity @s text set value '{"text":"Trigger Zone"}'
 execute if score @s 42.portal_x matches 1 run data modify entity @s CustomName set value '{"text":"Trigger Zone"}'
+execute if score @s 42.portal_x matches 2 as @e[tag=42.portal_id,tag=42.portal_zone_lbl] run data modify entity @s text set value '{"text":"Death Zone"}'
+execute if score @s 42.portal_x matches 2 run data modify entity @s CustomName set value '{"text":"Death Zone"}'
 #
 tag @s remove 42.portal_zone_cool
 tag @e remove 42.portal_id
