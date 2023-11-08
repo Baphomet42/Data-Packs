@@ -9,3 +9,4 @@ scoreboard players set @s 42.portal_lvl 0
 tag @e remove 42.portal_temp
 tag @s remove 42.portal_temp1
 scoreboard players reset @s 42.portal_death
+function 42:portal/portal/clear

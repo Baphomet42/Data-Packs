@@ -23,6 +23,7 @@ execute if entity @s[tag=42.portal_spawner] at @s run function 42:portal/portal/
 execute if entity @s[tag=42.portal_zone] at @s run function 42:portal/zone/select
 execute if entity @s[tag=42.portal_cube_spawner] at @s run function 42:portal/cube/spawner/select
 execute if entity @s[tag=42.portal_pellet_spawner] at @s run function 42:portal/pellet/spawner/select
+execute if entity @s[tag=42.portal_grill] at @s run function 42:portal/grill/select
 #
 execute if score @s[tag=!42.portal_group,tag=!42.portal_wire] 42.portal_link matches 1.. run tellraw @p[tag=42.portal_selected] [{"text":"      "},{"text":"[Unlink]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203502"}}]
 execute if score @s[tag=!42.portal_zone,tag=!42.portal] 42.portal_lvl matches 0.. run tellraw @p[tag=42.portal_selected] [{"text":"      "},{"text":"[Unbind Level]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203504"}}]

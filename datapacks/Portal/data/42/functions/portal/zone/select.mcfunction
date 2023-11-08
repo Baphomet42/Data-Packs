@@ -25,7 +25,8 @@ execute if score @s 42.portal_x matches 1 run tellraw @p[tag=42.portal_selected]
     {"text":" "},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"The set button will get the id of the nearest equipment (within range)\n\nIf there is an id value set, it will run the spawn action, if applicable (Vital Apparatus Vent, Pellet Launcher, or Spawner)"}]}},\
     {"text":"\n      "},{"text":"[Set id to Fizzle]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203636"}},\
     {"text":" "},{"text":"[Remove]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203637"}},\
-    {"text":" "},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"The set button will get the id of the nearest equipment (within range)\n\nIf there is an id value set, it will fizzle its spawn, if applicable (Vital Apparatus Vent, Pellet Launcher, or Spawner)"}]}}]
+    {"text":" "},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"The set button will get the id of the nearest equipment (within range)\n\nIf there is an id value set, it will fizzle its spawn, if applicable (Vital Apparatus Vent, Pellet Launcher, or Spawner)"}]}},\
+    {"text":"\n      "},{"text":"[Toggle Emancipation]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203641"}},{"text":" "},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"(Off by default)\n\nWhen on - the player who activates the zone will have all their portals fizzled\n\nIt is recommended to use Material Emancipation Grills instead. This feature is for scripted events."}]}}]
 tellraw @p[tag=42.portal_selected] [{"text":"","color":"gray"},\
     {"text":"   Misc...","color":"dark_gray"},\
     {"text":"\n      "},{"text":"[Fizzle]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203620"}},\

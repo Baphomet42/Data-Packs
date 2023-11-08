@@ -22,6 +22,7 @@
         "42:portal/tools/craft_select",
         "42:portal/elevator/craft",
         "42:portal/wire/craft",
-        "42:portal/zone/craft"
+        "42:portal/zone/craft",
+        "42:portal/grill/craft"
     ]
 }

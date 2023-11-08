@@ -20,5 +20,6 @@ execute if score @s 42.portal_x matches 1 if entity @s[tag=!42.portal_zone_has_s
 execute if score @s 42.portal_x matches 1 if entity @s[tag=42.portal_zone_has_spawn] as @e[tag=42.portal_id,tag=42.portal_zone_lbl_spawn] run data modify entity @s text set value '{"text":"Spawn id set","color":"green"}'
 execute if score @s 42.portal_x matches 1 if entity @s[tag=!42.portal_zone_has_fizzle] as @e[tag=42.portal_id,tag=42.portal_zone_lbl_fizzle] run data modify entity @s text set value '{"text":"No fizzle id set"}'
 execute if score @s 42.portal_x matches 1 if entity @s[tag=42.portal_zone_has_fizzle] as @e[tag=42.portal_id,tag=42.portal_zone_lbl_fizzle] run data modify entity @s text set value '{"text":"Fizzle id set","color":"green"}'
+execute if score @s 42.portal_x matches 1 if entity @s[tag=42.portal_zone_grill] as @e[tag=42.portal_id,tag=42.portal_zone_lbl_grill] run data modify entity @s text set value '{"text":"Emancipation On","color":"green"}'
 #
 tag @e remove 42.portal_id

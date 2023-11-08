@@ -53,6 +53,10 @@ Multiplayer friendly and designed to work with other packs
     + Link to buttons using the `Link Equipment` tool
     + Droppers drop a single cube when powered from a Pedestal Button
     + Droppers will drop a new cube when the old one is destroyed, but only if powered from a Super Button or Pellet Catcher
++ *Material Emancipation Grill*
+    + Clears the portals of any player who passes through it
+    + Fizzles cubes, turrets, and other physics objects that pass through it
+    + Currently the size is limited to 3x3 (same as doors)
 + *Elevator*
     + Use `Select Tool` to setup elevator movement
     + Elevators can move up or down between a start point and end point

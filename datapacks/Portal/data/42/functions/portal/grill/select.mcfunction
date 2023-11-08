@@ -1,0 +1,1 @@
+tellraw @p[tag=42.portal_selected] [{"text":"","color":"gray"},{"text":"   Misc...","color":"dark_gray"},{"text":"\n      "},{"text":"[Fizzle]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203680"}}]
