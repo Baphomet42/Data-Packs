@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 18,
+		"pack_format": 22,
 		"supported_formats": [18,99],
 		"description": "42datapack resources"
 	}
