@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------
 
-Separate but compatible datapacks for Minecraft
+Separate but compatible datapacks for Minecraft 1.20.4
 
 Multiplayer friendly and designed to work with other packs
 
