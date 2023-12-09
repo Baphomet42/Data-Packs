@@ -199,6 +199,10 @@ Multiplayer friendly and designed to work with other packs
     + When portals are placed on walls that are only 1 block thick, light will be able to shine through
         + Setting `/gamerule doDaylightCycle false` and `/time set midnight` will stop sunlight from coming into levels this way
         + Otherwise, making walls thicker or surrounding levels in solid boxes will solve this too
++ **Showcase**
+    + Note the video upload date for the specific datapack version
+        + Features may have changed since the video's release
+    + Demo Video 1: https://www.youtube.com/watch?v=7DOdCyrxeMw
 
 **XLTT** (optional resource pack - see below)
 

@@ -8,7 +8,8 @@ tag @e remove 42.portal_pellet_kill
 execute if entity @s[tag=!42.portal_pellet_on] positioned ~-.5 ~-.5 ~-.5 run tag @e[dx=0,dy=0,dz=0] add 42.portal_pellet_try_kill
 #
 tag @a[tag=42.portal_pellet_try_kill,gamemode=!spectator] add 42.portal_pellet_kill
-tag @e[tag=42.portal_pellet_try_kill,tag=42.portal_cube_tp,tag=42.portal_turret] add 42.portal_pellet_kill
+tag @e[tag=42.portal_cube_tp,tag=42.portal_turret,distance=...5] add 42.portal_pellet_kill
+execute positioned ~ ~-1 ~ run tag @e[tag=42.portal_cube_tp,tag=42.portal_turret,distance=...5] add 42.portal_pellet_kill
 tag @e[tag=42.portal_pellet_try_kill,tag=42.portal_cube_tp,tag=42.portal_radio] add 42.portal_pellet_kill
 tag @e[tag=42.portal_pellet_try_kill,tag=42.portal_pellet] add 42.portal_pellet_kill
 #
