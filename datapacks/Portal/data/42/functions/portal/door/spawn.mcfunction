@@ -13,8 +13,11 @@ execute if entity @e[tag=42.portal_rot,tag=!42.portal_rot_s,tag=!42.portal_rot_n
 #
 function 42:portal/get_rot2
 execute if entity @s[tag=!42.portal_temp1,tag=!42.portal_temp2] run function 42:portal/generic/spawn_fail_range
+#
+execute if entity @s[tag=42.portal_temp1] run tag @s remove 42.portal_temp2
 execute if entity @s[tag=42.portal_temp1] run function 42:portal/door/spawn2
-execute if entity @s[tag=42.portal_temp2,tag=!42.portal_temp1] run function 42:portal/door/spawn2
+execute if entity @s[tag=42.portal_temp2] run function 42:portal/door/spawn2
+#
 tag @s remove 42.portal_temp1
 tag @s remove 42.portal_temp2
 kill @s[type=area_effect_cloud]

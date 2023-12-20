@@ -3,6 +3,7 @@ execute align xyz positioned ~.5 ~.5 ~.5 run summon block_display ~ ~ ~ {Tags:["
 scoreboard players operation @e[tag=42.portal_new_spawn] 42.portal_link = 42.portal 42.portal_link
 execute at @e[tag=42.portal_new_spawn] rotated as @s run tp @e[tag=42.portal_new_spawn] ~ ~ ~ ~ ~
 scoreboard players set @e[type=!player,tag=42.portal_new_spawn] 42.datapack 3
+scoreboard players set @e[tag=42.portal_new_spawn] 42.portal_lvl -1
 scoreboard players set @e[tag=42.portal_new_spawn,tag=!42.portal_wire_lbl] 42.portal_skin 0
 execute at @s run function 42:portal/get_rot
 execute if entity @s[tag=42.portal_rot_s] run scoreboard players set @e[tag=42.portal_new_spawn] 42.portal_z 0
