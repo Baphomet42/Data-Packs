@@ -11,4 +11,4 @@ execute store result storage 42:portal loader.temp_entity.skin int 1 run scorebo
 execute store result storage 42:portal loader.temp_entity.z int 1 run scoreboard players get @s 42.portal_z
 kill @s
 #
-data modify entity @e[tag=42.portal_loader_current,limit=1] data.equipment.wire append from storage 42:portal loader.temp_entity
+data modify storage 42:portal loader.temp_equipment.wire append from storage 42:portal loader.temp_entity

@@ -10,4 +10,4 @@ execute store result storage 42:portal loader.temp_entity.z int 1 run scoreboard
 execute if entity @s[tag=42.portal_pellet_catcher_nolaser] run data modify storage 42:portal loader.temp_entity.tag_nolaser set value 1b
 function 42:portal/pellet/catcher/fizzle
 #
-data modify entity @e[tag=42.portal_loader_current,limit=1] data.equipment.pellet_catcher append from storage 42:portal loader.temp_entity
+data modify storage 42:portal loader.temp_equipment.pellet_catcher append from storage 42:portal loader.temp_entity

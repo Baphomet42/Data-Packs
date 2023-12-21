@@ -2,6 +2,8 @@ tag @e remove 42.portal_cube_spawner_this
 tag @s add 42.portal_cube_spawner_this
 #
 scoreboard players operation @e[tag=42.portal_cube_spawn,tag=42.portal_cube_tp] 42.portal_skin = @s 42.portal_skin
+execute if entity @s[tag=42.portal_spawn_turret] run scoreboard players remove @e[tag=42.portal_cube_spawn,tag=42.portal_cube_tp] 42.portal_skin 1
+execute if entity @s[tag=42.portal_spawn_turret] as @e[tag=42.portal_cube_spawn,tag=42.portal_cube_tp] at @s run function 42:portal/cube/skin
 scoreboard players operation @e[tag=42.portal_cube_spawn,tag=42.portal_cube_tp] 42.portal_lvl = @s 42.portal_lvl
 scoreboard players operation @e[tag=42.portal_cube_spawn] 42.portal_id = @s 42.portal_id
 #

@@ -1,1 +1,1 @@
-execute if entity @s[tag=42.portal_loader,type=marker] if score @s 42.portal_lvl matches 1.. at @s run function 42:portal/level/loader/unload_all
+execute if score @s 42.portal_lvl matches 1.. at @s run function 42:portal/level/loader/unload_all

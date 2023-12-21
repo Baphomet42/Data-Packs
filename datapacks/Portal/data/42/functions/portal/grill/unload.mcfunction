@@ -8,4 +8,4 @@ execute store result storage 42:portal loader.temp_entity.lvl int 1 run scoreboa
 execute store result storage 42:portal loader.temp_entity.x int 1 run scoreboard players get @s 42.portal_x
 function 42:portal/grill/fizzle
 #
-data modify entity @e[tag=42.portal_loader_current,limit=1] data.equipment.grill append from storage 42:portal loader.temp_entity
+data modify storage 42:portal loader.temp_equipment.grill append from storage 42:portal loader.temp_entity

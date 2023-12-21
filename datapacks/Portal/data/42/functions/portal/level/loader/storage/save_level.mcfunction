@@ -1,0 +1,2 @@
+$execute if data storage 42:portal loader.temp_equipment run data modify storage 42:portal_levels $(lvl) set from storage 42:portal loader.temp_equipment
+$execute unless data storage 42:portal loader.temp_equipment run data remove storage 42:portal_levels $(lvl)

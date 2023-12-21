@@ -9,4 +9,4 @@ execute store result storage 42:portal loader.temp_entity.z int 1 run scoreboard
 execute if entity @s[tag=42.portal_spawn_super_pellet] run data modify storage 42:portal loader.temp_entity.tag_spawn_super_pellet set value 1b
 function 42:portal/pellet/emitter/fizzle
 #
-data modify entity @e[tag=42.portal_loader_current,limit=1] data.equipment.pellet_emitter append from storage 42:portal loader.temp_entity
+data modify storage 42:portal loader.temp_equipment.pellet_emitter append from storage 42:portal loader.temp_entity

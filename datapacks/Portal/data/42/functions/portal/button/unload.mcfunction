@@ -9,4 +9,4 @@ execute store result storage 42:portal loader.temp_entity.link int 1 run scorebo
 execute if entity @s[tag=42.portal_btn_cube] run data modify storage 42:portal loader.temp_entity.tag_btn_cube set value 1b
 function 42:portal/button/fizzle
 #
-data modify entity @e[tag=42.portal_loader_current,limit=1] data.equipment.btn append from storage 42:portal loader.temp_entity
+data modify storage 42:portal loader.temp_equipment.btn append from storage 42:portal loader.temp_entity
