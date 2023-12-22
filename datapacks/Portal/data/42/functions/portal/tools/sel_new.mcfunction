@@ -5,7 +5,10 @@ tag @e remove 42.portal_new_spawn
 #
 function 42:portal/tag_selected
 function 42:portal/cmdfeed
-tellraw @p[tag=42.portal_selected] [{"text":"","color":"gray"},{"text":"------------------------------\n","color":"dark_gray"},{"selector":"@s","color":"gold","bold":true},{"text":" "},{"text":"⟳","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203503"},"hoverEvent":{"action":"show_text","contents":[{"text":"Refresh Selection Screen\n\nSelection options are only sent to chat when first selecting equipment. Refresh to reselct the equipment and see changes."}]}}]
+tellraw @p[tag=42.portal_selected] [{"text":"","color":"gray"},{"text":"------------------------------\n","color":"dark_gray"},\
+    {"selector":"@s","color":"gold","bold":true},\
+    {"text":" "},{"text":"🖶","clickEvent":{"action":"run_command","value":"/gamerule sendCommandFeedback true"},"hoverEvent":{"action":"show_text","contents":[{"text":"Enable Command Feedback\n\nCommand feedback is temporarily disabled each time a trigger menu is shown, preventing some trigger messages that spam chat and move the menu. Click to re-enable command feedback immediately."}]}},\
+    {"text":" "},{"text":"⟳","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203503"},"hoverEvent":{"action":"show_text","contents":[{"text":"Refresh Selection Screen\n\nSelection options are only sent to chat when first selecting equipment. Refresh to reselct the equipment and see changes."}]}}]
 #
 execute if entity @s[tag=42.portal_cube_tp] at @s run function 42:portal/cube/select
 execute if entity @s[tag=42.portal_launch] at @s run function 42:portal/launch/select

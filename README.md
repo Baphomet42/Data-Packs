@@ -130,13 +130,13 @@ Multiplayer friendly and designed to work with other packs
 + *Level Tool*
     + Sets the load level for all new equipment
     + Equipment with a load level will only work if the level is currently loaded by a player
-    + Unloaded equipment will cause nearly no lag or server resources
+    + Unloaded equipment will be removed from the world completely
+        + The equipment will come back upon the level being loaded
     + By default, all equipment is set to always be loaded, until it's assigned a level using this tool
     + To use: place any amount of equipment that should be in the same load level, then place the level tool anywhere
         + The level tool has unlimited range (as long as the area is loaded) and won't set the level for any equipment that has already been assigned a level
         + This tool behaves similarly to the link tool (see above)
     + Levels are only considered loaded if a player has that level score, so levels can be placed close together without effecting each other or causing excessive lag
-    + Load levels are highly recommended when there are lots of Turrets
     + Automate levels using Zones (see below)
 + *Change Skin Tool*
     + Changes textures without changing functionality
@@ -166,13 +166,12 @@ Multiplayer friendly and designed to work with other packs
             + The player must be part of the level to be killed by a death zone, so death zones must have a level set
     + Zones can have different sized hitboxes to fit most scenarios
     + After configuring the zone with the `Select Tool`, press Hide so it can't be seen by players
-    + Levels should always start with a Load Zone to load the level, and end with another Load Zone to unload the level
+    + Levels should always start with a Load Zone to load the level
+        + The level will unload automatically when switching levels
+            + Load Zones can be used to unload levels manually
         + Make sure the hitbox is big enough so the player cannot avoid it
     + There can be unlimited Trigger Zones within each level, and they can be placed anywhere
         + These zones only activate if a player in the level walks through its hitbox, so spectators and outsiders cannot interfere
-        + If zones are used to give power to equipment, make sure to setup another zone to remove the power at the start of the level so it resets properly before each run
-    + When Load Zones are used to unload levels, all cubes, turrets, pellets, etc. from the level will be fizzled
-        + Powerables that were powered through zones or the Select Menu will not be reset automatically without a Trigger Zone to do so
 + **Important Information Specific to Portal Datapack**
     + See generic information at the end of this file
     + To ensure portal guns aren't lost when players die, run `/gamerule keepInventory true`
@@ -203,6 +202,10 @@ Multiplayer friendly and designed to work with other packs
     + Note the video upload date for the specific datapack version
         + Features may have changed since the video's release
     + Demo Video 1: https://www.youtube.com/watch?v=7DOdCyrxeMw
++ **Portal Games**
+    + This datapack is based on the games Portal and Portal 2 by Valve
+    + All rights to the Portal series belong to Valve
+    + Purchase on Steam: https://store.steampowered.com/bundle/234/Portal_Bundle/
 
 **XLTT** (optional resource pack - see below)
 
