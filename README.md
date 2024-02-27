@@ -198,10 +198,10 @@ Multiplayer friendly and designed to work with other packs
     + When portals are placed on walls that are only 1 block thick, light will be able to shine through
         + Setting `/gamerule doDaylightCycle false` and `/time set midnight` will stop sunlight from coming into levels this way
         + Otherwise, making walls thicker or surrounding levels in solid boxes will solve this too
-+ **Showcase**
-    + Note the video upload date for the specific datapack version
-        + Features may have changed since the video's release
++ **Showcases**
+    + Planet Minecraft link: https://www.planetminecraft.com/data-pack/portal-6207130/
     + Demo Video 1: https://www.youtube.com/watch?v=7DOdCyrxeMw
+    + Note that features may have changed since these were published
 + **Portal Games**
     + This datapack is based on the games Portal and Portal 2 by Valve
     + All rights to the Portal series belong to Valve
@@ -244,6 +244,8 @@ Multiplayer friendly and designed to work with other packs
 **Setup**
 
 + Datapacks are placed into a specific Minecraft world and only function within that world
++ Download folders from `datapacks` or zipped versions from `zipped datapacks`
+    + The zipped packs are updated only after big changes and might not include the most recent updates
 + Place any number of datapacks into `.minecraft/saves/<World Name Here>/datapacks`
     + The final path should look something like `.minecraft/saves/New World/datapacks/Portal`
     + If the world is running while the folder is placed, use the `/reload` command
