@@ -1,17 +1,45 @@
 ------------------------------------------------------------------------------------
 
-Separate but compatible datapacks for Minecraft 1.20.4
+# Separate but compatible datapacks for Minecraft 1.20.4
 
-Multiplayer friendly and designed to work with other packs
+Multiplayer-friendly and designed to work with other packs
 
-**42essentials**
+**Table of Contents**
++ Showcases
++ Datapack Descriptions
+    + 42essentials
+    + Portal
+    + XLTT
+    + Brave New World
++ Datapack Info
+    + Setup
+    + Important Notes
++ Resource Pack Info (Optional)
+    + Setup
+    + Descriptions
+
+------------------------------------------------------------------------------------
+
+# Showcases
+
+Note that features may have changed since these were published
+
++ Portal
+    + Planet Minecraft: https://www.planetminecraft.com/data-pack/portal-6207130/
+    + Demo Video: https://www.youtube.com/watch?v=7DOdCyrxeMw
+
+------------------------------------------------------------------------------------
+
+# Datapack Descriptions
+
+### **42essentials**
 
 + `/trigger hat`
     + Puts the held item on your head
 + `/trigger kittycannon`
     + Ka-BOOM!
 
-**Portal** (optional resource pack - see below)
+### **Portal** (optional resource pack - see below)
 
 + *Portal Guns*
     + Every player can have their own set of unlimited pairs of portals at the same time
@@ -198,16 +226,12 @@ Multiplayer friendly and designed to work with other packs
     + When portals are placed on walls that are only 1 block thick, light will be able to shine through
         + Setting `/gamerule doDaylightCycle false` and `/time set midnight` will stop sunlight from coming into levels this way
         + Otherwise, making walls thicker or surrounding levels in solid boxes will solve this too
-+ **Showcases**
-    + Planet Minecraft link: https://www.planetminecraft.com/data-pack/portal-6207130/
-    + Demo Video 1: https://www.youtube.com/watch?v=7DOdCyrxeMw
-    + Note that features may have changed since these were published
 + **Portal Games**
     + This datapack is based on the games Portal and Portal 2 by Valve
     + All rights to the Portal series belong to Valve
     + Purchase on Steam: https://store.steampowered.com/bundle/234/Portal_Bundle/
 
-**XLTT** (optional resource pack - see below)
+### **XLTT** (optional resource pack - see below)
 
 + *O.D.M.*
     + Grappling hook + sword + rocket propulsion
@@ -229,7 +253,7 @@ Multiplayer friendly and designed to work with other packs
 + `/trigger 42menu`
     + Opens window to give items and use abilities
 
-**Brave New World**
+### **Brave New World**
 
 + *New Dimension*
     + Just a superflat world for testing
@@ -239,9 +263,9 @@ Multiplayer friendly and designed to work with other packs
 
 ------------------------------------------------------------------------------------
 
-**Datapack Info**
+# Datapack Info
 
-**Setup**
+### **Setup**
 
 + Datapacks are placed into a specific Minecraft world and only function within that world
 + Download folders from `datapacks` or zipped versions from `zipped datapacks`
@@ -251,8 +275,9 @@ Multiplayer friendly and designed to work with other packs
     + If the world is running while the folder is placed, use the `/reload` command
 + To enable custom textures, follow the Resource Pack setup below (optional)
 
-**Important**
+### **Important**
 
++ Read the full description of each pack before adding to a world
 + Like all custom command creations, it is possible that bugs could result in some disasters happening to your world
     + Always backup your world before using the datapack and frequently while using
     + Never run the datapack in a newer or older version of Minecraft than the current datapack version
@@ -269,13 +294,13 @@ Multiplayer friendly and designed to work with other packs
 
 ------------------------------------------------------------------------------------
 
-**Resource Pack Info**
+# Resource Pack Info
 
 + Optional but recommended
 + For datapacks: Portal, XLTT
 + Note: No vanilla textures are overridden
 
-**Setup** (do only one of the following)
+### **Setup** (do only one of the following)
 
 + a- Place `resources.zip` into the world save
     + Textures will load automatically each time you join the world
