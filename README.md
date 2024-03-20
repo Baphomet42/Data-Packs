@@ -261,6 +261,21 @@ Note that features may have changed since these were published
 + `/trigger 42menu`
     + Opens window to teleport between dimensions
 
+### **Historically Accurate Crafting**
+
++ *Fixed tools recipes*
+    + Tools are crafted diagonally like how the item looks
+        + The stick items don't even line up correctly in the old recipe
+    + Stone tools ain't called cobblestone tools for a reason
+        + All stone tools are now crafted with STONE
+    + What is a smithing table?
+        + Netherite tools don't get to be special
+        + They are crafted just like the rest of the tools
+    + Arrows, brushes, and spyglasses
+        + These should be fixed too but I'm not doing all the work for Mojang
++ *Please add fire items back to the game so I can add the chainmail recipes*
+    + Thanks
+
 ------------------------------------------------------------------------------------
 
 # Datapack Info
