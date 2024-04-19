@@ -1,4 +1,4 @@
-effect give @s levitation 1 255 true
+#effect give @s levitation 1 255 true
 function 42:xltt/tag_id
 execute positioned as @e[tag=42.odm_marker,tag=42.xltt_id] rotated as @s run tp ~ ~ ~
 execute store result entity @e[tag=42.odm_marker,tag=42.xltt_id,limit=1] Motion[0] double .075 run scoreboard players get @e[tag=42.odm_marker,tag=42.xltt_id,limit=1] 42.odm_x

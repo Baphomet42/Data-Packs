@@ -1,1 +1,8 @@
-give @s sheep_spawn_egg{display:{Name:'{"text":"Weighted Companion Cube","italic":false,"color":"yellow"}',Lore:['{"text":"Euthanize with:","color":"gray","italic":false}','{"text":"  Fizzle Tool","color":"gray"}','{"text":""}']},42datapack:3,EntityTag:{id:area_effect_cloud,Duration:10,DurationOnUse:0,Particle:"dust 0 0 0 0",Radius:.5d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.portal_spawn_cube","42.portal_spawn_cube2","42.portal_egg"]}}
+give @s sheep_spawn_egg[item_name='"Weighted Companion Cube"',rarity=uncommon,custom_data={42datapack:3},\
+    lore=[\
+        '{"text":"Euthanize with:","color":"gray","italic":false}',\
+        '{"text":"  Fizzle Tool","color":"gray"}',\
+        '""'],\
+    entity_data={id:area_effect_cloud,Duration:10,DurationOnUse:0,Particle:{type:block,block_state:{Name:air}},Radius:.5f,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,\
+        Tags:["42.portal_egg","42.portal_spawn_cube","42.portal_spawn_cube2"]}\
+    ]

@@ -1,1 +1,7 @@
-give @s squid_spawn_egg{display:{Name:'{"text":"Material Emancipation Grill","italic":false,"color":"yellow"}',Lore:['{"text":"Requires 3x3x1 space to spawn","color":"white","italic":false}','{"text":""}']},42datapack:3,EntityTag:{id:area_effect_cloud,Duration:10,DurationOnUse:0,Particle:"dust 0 0 0 0",Radius:.5d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.portal_spawn_grill","42.portal_egg"]}}
+give @s squid_spawn_egg[item_name='"Material Emancipation Grill"',rarity=uncommon,custom_data={42datapack:3},\
+    lore=[\
+        '{"text":"Requires 3x3x1 space to spawn","color":"white","italic":false}',\
+        '""'],\
+    entity_data={id:area_effect_cloud,Duration:10,DurationOnUse:0,Particle:{type:block,block_state:{Name:air}},Radius:.5f,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,\
+        Tags:["42.portal_egg","42.portal_spawn_grill"]}\
+    ]

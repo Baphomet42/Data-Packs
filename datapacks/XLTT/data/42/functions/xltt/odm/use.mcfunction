@@ -1,6 +1,6 @@
 tag @s remove 42.odm_click
 function 42:xltt/tag_id
-execute if entity @s[nbt={SelectedItem:{tag:{odm:1b}},Inventory:[{Slot:-106b,tag:{odm:1b}}]}] run tag @s add 42.odm_dual
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{42xltt_odm:1b}}},Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{42xltt_odm:1b}}}]}] run tag @s add 42.odm_dual
 execute unless entity @s[tag=42.odm_dual] as @e[tag=42.odm_wire,tag=42.xltt_id] at @s run function 42:xltt/odm/break
 scoreboard players set @s 42.xltt_temp 0
 tag @s add 42.xltt_id

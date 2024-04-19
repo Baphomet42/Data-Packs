@@ -1,7 +1,7 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:jigsaw"
+            "id": "minecraft:jigsaw"
         },
         "title": "42dominion    ",
         "description": [

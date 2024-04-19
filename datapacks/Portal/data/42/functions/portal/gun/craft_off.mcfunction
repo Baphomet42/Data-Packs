@@ -1,1 +1,4 @@
-give @s warped_fungus_on_a_stick{42datapack:3,CustomModelData:4203017,HideFlags:4,Unbreakable:1,display:{Name:'{"text":"Portal Gun","italic":false,"color":"white"}'}}
+summon item ~ ~ ~ {Item:{id:warped_fungus_on_a_stick,components:{\
+    custom_data:{42datapack:3},\
+    custom_model_data:4203017,item_name:'"Portal Gun"',\
+    unbreakable:{show_in_tooltip:0b}}}}

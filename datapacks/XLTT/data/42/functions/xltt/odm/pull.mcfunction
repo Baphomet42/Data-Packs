@@ -1,4 +1,5 @@
-effect give @s levitation 1 255 true
+#effect give @s levitation 1 255 true
+attribute @s generic.gravity modifier add 8d8efb8b-0edb-48c4-aff2-c94ff77e82f0 42xltt -1 add_multiplied_total
 effect give @s slow_falling 1 0 true
 tag @s add 42.odm_lev
 scoreboard players set @s[scores={42.odm_time=30..}] 42.odm_time 0
@@ -26,16 +27,20 @@ execute at @s[tag=!42.odm_col] facing entity @e[tag=42.xltt_id,limit=1,sort=near
 execute at @s[tag=!42.odm_col] facing entity @e[tag=42.xltt_id,limit=1,sort=nearest] feet positioned ^ ^ ^.2 if block ~-.35 ~0.0 ~-.35 #42:projectile_pass if block ~-.35 ~0.0 ~.35 #42:projectile_pass if block ~.35 ~0.0 ~-.35 #42:projectile_pass if block ~.35 ~0.0 ~.35 #42:projectile_pass if block ~-.35 ~.9 ~-.35 #42:projectile_pass if block ~-.35 ~.9 ~.35 #42:projectile_pass if block ~.35 ~.9 ~-.35 #42:projectile_pass if block ~.35 ~.9 ~.35 #42:projectile_pass if block ~-.35 ~1.85 ~-.35 #42:projectile_pass if block ~-.35 ~1.85 ~.35 #42:projectile_pass if block ~.35 ~1.85 ~-.35 #42:projectile_pass if block ~.35 ~1.85 ~.35 #42:projectile_pass run tp @s ~ ~ ~
 tag @e remove 42.odm_col
 #
+tag @s[tag=42.odm_fly] add 42.odm_was_flying
 tag @s remove 42.odm_fly
 execute at @s facing entity @e[tag=42.xltt_id,limit=1,sort=nearest] feet positioned ^ ^ ^.2 if block ~-.35 ~0.0 ~-.35 #42:projectile_pass if block ~-.35 ~0.0 ~.35 #42:projectile_pass if block ~.35 ~0.0 ~-.35 #42:projectile_pass if block ~.35 ~0.0 ~.35 #42:projectile_pass if block ~-.35 ~.9 ~-.35 #42:projectile_pass if block ~-.35 ~.9 ~.35 #42:projectile_pass if block ~.35 ~.9 ~-.35 #42:projectile_pass if block ~.35 ~.9 ~.35 #42:projectile_pass if block ~-.35 ~1.85 ~-.35 #42:projectile_pass if block ~-.35 ~1.85 ~.35 #42:projectile_pass if block ~.35 ~1.85 ~-.35 #42:projectile_pass if block ~.35 ~1.85 ~.35 #42:projectile_pass run tag @s add 42.odm_fly
 execute at @s positioned ~ ~1.25 ~ at @e[tag=42.xltt_id,limit=1,sort=nearest,distance=..1] positioned ~ ~.25 ~ if block ~-.35 ~0.0 ~-.35 #42:projectile_pass if block ~-.35 ~0.0 ~.35 #42:projectile_pass if block ~.35 ~0.0 ~-.35 #42:projectile_pass if block ~.35 ~0.0 ~.35 #42:projectile_pass if block ~-.35 ~.9 ~-.35 #42:projectile_pass if block ~-.35 ~.9 ~.35 #42:projectile_pass if block ~.35 ~.9 ~-.35 #42:projectile_pass if block ~.35 ~.9 ~.35 #42:projectile_pass if block ~-.35 ~1.85 ~-.35 #42:projectile_pass if block ~-.35 ~1.85 ~.35 #42:projectile_pass if block ~.35 ~1.85 ~-.35 #42:projectile_pass if block ~.35 ~1.85 ~.35 #42:projectile_pass run tag @s add 42.odm_tp
 execute at @s positioned ~ ~1 ~ at @e[tag=42.xltt_id,limit=1,sort=nearest,distance=..1] positioned ~ ~.25 ~ if block ~-.35 ~0.0 ~-.35 #42:projectile_pass if block ~-.35 ~0.0 ~.35 #42:projectile_pass if block ~.35 ~0.0 ~-.35 #42:projectile_pass if block ~.35 ~0.0 ~.35 #42:projectile_pass if block ~-.35 ~.9 ~-.35 #42:projectile_pass if block ~-.35 ~.9 ~.35 #42:projectile_pass if block ~.35 ~.9 ~-.35 #42:projectile_pass if block ~.35 ~.9 ~.35 #42:projectile_pass if block ~-.35 ~1.85 ~-.35 #42:projectile_pass if block ~-.35 ~1.85 ~.35 #42:projectile_pass if block ~.35 ~1.85 ~-.35 #42:projectile_pass if block ~.35 ~1.85 ~.35 #42:projectile_pass run tag @s add 42.odm_tp
 tag @s[tag=42.odm_tp] remove 42.odm_fly
 stopsound @s[tag=!42.odm_fly] player item.elytra.flying
+tp @s[tag=!42.odm_fly,tag=42.odm_was_flying] @s
+tag @s remove 42.odm_was_flying
 scoreboard players set @s[tag=!42.odm_fly] 42.odm_time 0
 execute at @s[tag=42.odm_fly] facing entity @e[tag=42.xltt_id,limit=1,sort=nearest] feet positioned ~ ~.7 ~ run particle poof ^-.4 ^ ^-.75 0 0 0 0 1 force
 execute at @s[tag=42.odm_fly] facing entity @e[tag=42.xltt_id,limit=1,sort=nearest] feet positioned ~ ~.7 ~ run particle poof ^.4 ^ ^-.75 0 0 0 0 1 force
-effect clear @s[tag=42.odm_tp] levitation
+#effect clear @s[tag=42.odm_tp] levitation
+attribute @s[tag=42.odm_tp] generic.gravity modifier remove 8d8efb8b-0edb-48c4-aff2-c94ff77e82f0
 effect clear @s[tag=42.odm_tp] slow_falling
 execute if entity @s[tag=42.odm_tp] at @s run playsound entity.player.small_fall player @s ~ ~ ~ .25 .75
 tag @s[tag=42.odm_tp] remove 42.odm_lev

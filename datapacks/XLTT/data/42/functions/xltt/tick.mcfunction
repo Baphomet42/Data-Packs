@@ -1,11 +1,11 @@
 execute as @a unless entity @s[scores={42.xltt_id=1..}] run function 42:xltt/id
 #
 #odm
-execute as @a[scores={42.xltt_click=1..},nbt={SelectedItem:{tag:{odm:1b}}}] run tag @s add 42.odm_click
-execute as @a[scores={42.xltt_click=1..},nbt={Inventory:[{Slot:-106b,tag:{odm:1b}}]}] run tag @s add 42.odm_click
+execute as @a[scores={42.xltt_click=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{42xltt_odm:1b}}}}] run tag @s add 42.odm_click
+execute as @a[scores={42.xltt_click=1..},nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{42xltt_odm:1b}}}]}] run tag @s add 42.odm_click
 execute as @a[tag=42.odm_click] at @s run function 42:xltt/odm/use
-execute as @a[scores={42.xltt_sneak=1..},nbt={SelectedItem:{tag:{odm:1b}}}] run tag @s add 42.odm_pull
-execute as @a[scores={42.xltt_sneak=1..},nbt={Inventory:[{Slot:-106b,tag:{odm:1b}}]}] run tag @s add 42.odm_pull
+execute as @a[scores={42.xltt_sneak=1..},nbt={SelectedItem:{components:{"minecraft:custom_data":{42xltt_odm:1b}}}}] run tag @s add 42.odm_pull
+execute as @a[scores={42.xltt_sneak=1..},nbt={Inventory:[{Slot:-106b,components:{"minecraft:custom_data":{42xltt_odm:1b}}}]}] run tag @s add 42.odm_pull
 execute as @a[tag=42.odm_pull] at @s run function 42:xltt/odm/attempt_pull
 execute as @a[tag=42.odm_lev,scores={42.xltt_sneak=0}] at @s run function 42:xltt/odm/cancel
 execute as @e[type=marker,tag=42.odm_wire,tag=!42.odm_hit] at @s run function 42:xltt/odm/find_target
@@ -24,8 +24,8 @@ scoreboard players add @e[type=villager,tag=42.xltt_transform] 42.odm_time 1
 execute as @e[type=villager,tag=42.xltt_transform,scores={42.odm_time=40..}] at @s run function 42:xltt/titan/transform
 #
 #wine
-execute as @e[type=experience_bottle,nbt={Item:{tag:{42titan:1b}}}] at @s run function 42:xltt/wine/spawn
-execute as @e[tag=42.xltt_wine,type=marker] at @s run particle dust .24 .04 .08 1
+execute as @e[type=experience_bottle,nbt={Item:{components:{"minecraft:custom_data":{42xltt_wine:1b}}}}] at @s run function 42:xltt/wine/spawn
+execute as @e[tag=42.xltt_wine,type=marker] at @s run particle dust{color:[.24,.04,.08],scale:1}
 execute as @e[tag=42.xltt_wine,type=marker] at @s unless entity @e[tag=42.xltt_wine,type=potion,distance=..1] run function 42:xltt/wine/hit
 execute at @e[tag=42.titan_appear] run particle flash ~ ~5 ~ 1 2 1 0 15 force
 execute at @e[tag=42.titan_appear] run playsound entity.allay.death hostile @a[distance=..200] ~ ~ ~ 20 2

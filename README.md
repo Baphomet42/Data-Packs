@@ -1,6 +1,10 @@
 ------------------------------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 1.20.4
+# Separate but compatible datapacks for Minecraft 1.20.5
+
+# IMPORTANT: These are snapshot versions of the datapacks and are unstable. Use the 1.20.4 versions for now.
+
+# IMPORTANT: There is currently a bug in the portal datapack that may cause equipment to be deleted when playing with a low render/simulation distance. A fix is in process.
 
 Multiplayer-friendly and designed to work with other packs
 
@@ -238,7 +242,7 @@ Note that features may have changed since these were published
     + When held, click to set hook... Then shift to reel in
     + Swapping to another item or clicking a second time will break the old hook
     + Dual weilding O.D.M. Swords allows for better mobility
-    + Obtained from 42menu or crafting elytra + trident
+    + Obtained from 42menu
 + *Titan*
     + Giant monster, doesn't like players or villagers
     + Spawns from Titan Spawn Egg from 42menu
@@ -258,8 +262,6 @@ Note that features may have changed since these were published
 + *New Dimension*
     + Just a superflat world for testing
     + Custom biome to make it look cooler
-+ `/trigger 42menu`
-    + Opens window to teleport between dimensions
 
 ### **Historically Accurate Crafting**
 

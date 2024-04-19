@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:structure_block"
+			"id": "minecraft:structure_block"
 		},
 		"title": "42essentials    ",
 		"description": [
