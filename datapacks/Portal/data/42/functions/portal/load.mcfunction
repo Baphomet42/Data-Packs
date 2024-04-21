@@ -1,4 +1,5 @@
 scoreboard objectives add 42.datapack dummy
+#
 scoreboard objectives add 42.portal_id dummy
 scoreboard objectives add 42.portal_time dummy
 scoreboard objectives add 42.portal_temp dummy

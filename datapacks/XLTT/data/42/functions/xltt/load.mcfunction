@@ -1,3 +1,5 @@
+scoreboard objectives add 42.datapack dummy
+#
 scoreboard objectives add 42.xltt_click minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add 42.xltt_sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add 42.odm_time dummy

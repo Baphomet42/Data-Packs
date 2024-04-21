@@ -21,5 +21,6 @@ execute if data storage 42:portal loader.temp_equipment.wire[0] run function 42:
 execute if data storage 42:portal loader.temp_equipment.zone[0] run function 42:portal/level/loader/load/zone with storage 42:portal loader.temp_equipment.zone[0]
 #
 tag @s remove 42.portal_loader
-function 42:portal/level/loader/storage/delete_level with storage 42:portal loader
+execute unless data storage 42:portal loader.error run function 42:portal/level/loader/storage/delete_level with storage 42:portal loader
+execute if data storage 42:portal loader.error run function 42:portal/level/loader/storage/load_error with storage 42:portal loader
 data remove storage 42:portal loader

@@ -2,25 +2,25 @@
 
 # Separate but compatible datapacks for Minecraft 1.20.5
 
-# IMPORTANT: These are snapshot versions of the datapacks and are unstable. Use the 1.20.4 versions for now.
-
-# IMPORTANT: There is currently a bug in the portal datapack that may cause equipment to be deleted when playing with a low render/simulation distance. A fix is in process.
-
-Multiplayer-friendly and designed to work with other packs
+Multiplayer-friendly and designed to work with other packs.
+Most packs are proof of concepts and not intended for existing worlds.
 
 **Table of Contents**
-+ Showcases
-+ Datapack Descriptions
-    + 42essentials
-    + Portal
-    + XLTT
-    + Brave New World
-+ Datapack Info
++ [Showcases](#showcases)
++ [Datapack Descriptions](#datapack-descriptions)
+    + [42essentials](#42essentials)
+    + [Portal](#portal-optional-resource-pack---see-below)
+    + [XLTT](#xltt-optional-resource-pack---see-below)
+    + [Brave New World](#brave-new-world)
+    + [Historically Accurate Crafting](#historically-accurate-crafting)
++ [Datapack Info](#datapack-info)
     + Setup
     + Important Notes
-+ Resource Pack Info (Optional)
+    + [Troubleshooting](#troubleshooting)
++ [Resource Pack Info (Optional)](#resource-pack-info)
     + Setup
     + Descriptions
++ [Changelog](#changelog)
 
 ------------------------------------------------------------------------------------
 
@@ -38,12 +38,16 @@ Note that features may have changed since these were published
 
 ### **42essentials**
 
+Recreates some server plugin stuff using commands only. Does not affect gameplay.
+
 + `/trigger hat`
     + Puts the held item on your head
 + `/trigger kittycannon`
     + Ka-BOOM!
 
 ### **Portal** (optional resource pack - see below)
+
+This is a minigame pack that recreates many features from the Portal games. Not intended for survival worlds.
 
 + *Portal Guns*
     + Every player can have their own set of unlimited pairs of portals at the same time
@@ -237,6 +241,8 @@ Note that features may have changed since these were published
 
 ### **XLTT** (optional resource pack - see below)
 
+Proof of concept pack meant to try out new features. Not intended for survival worlds.
+
 + *O.D.M.*
     + Grappling hook + sword + rocket propulsion
     + When held, click to set hook... Then shift to reel in
@@ -259,11 +265,15 @@ Note that features may have changed since these were published
 
 ### **Brave New World**
 
+Datapack to test custom dimensions and biomes. Do not add to existing worlds, it cannot be removed.
+
 + *New Dimension*
     + Just a superflat world for testing
     + Custom biome to make it look cooler
 
 ### **Historically Accurate Crafting**
+
+Joke pack that changes crafting recipes.
 
 + *Fixed tools recipes*
     + Tools are crafted diagonally like how the item looks
@@ -285,8 +295,10 @@ Note that features may have changed since these were published
 ### **Setup**
 
 + Datapacks are placed into a specific Minecraft world and only function within that world
-+ Download folders from `datapacks` or zipped versions from `zipped datapacks`
-    + The zipped packs are updated only after big changes and might not include the most recent updates
++ Download one or more datapacks from `zipped datapacks`
+    + The zip files in `zipped datapacks` are more stable versions and marked with a version number
+    + The folders in `datapacks` are the latest version, but may be unstable and contain bugs
+    + Only use the packs in the correct Minecraft version
 + Place any number of datapacks into `.minecraft/saves/<World Name Here>/datapacks`
     + The final path should look something like `.minecraft/saves/New World/datapacks/Portal`
     + If the world is running while the folder is placed, use the `/reload` command
@@ -308,6 +320,46 @@ Note that features may have changed since these were published
     + Credit and link to this repo if used
         + (https://github.com/Baphomet42/Data-Packs)
     + Feel free to showcase or fork as long as credit is given and a link here is supplied
+
+### **Troubleshooting**
+
++ Common Problems:
+    + Nothing is working
+        + Make sure the datapacks are in the correct folder and you're on the correct version of Minecraft
+        + Run `/datapack list`
+            + If a pack is listed in the enabled section, it is loaded
+            + If a pack is listed in the available section, run `/datapack enable <pack>`
+                + The pack name should be autocompleted with tab
+                + Run `/reload` to save changes
+        + Try the `/reload` command or leave and rejoin the world
+        + Open the Advancements menu ingame (default keybind `L`)
+            + Look for the "42dominion" category
+            + Each symbol with a yellow background represents one of the installed datapacks
+    + The items look like carrots or fungus on a stick
+        + See below section for "Resource Pack Info"
+    + Something is broken after updating the datapack version or Minecraft version
+        + Check the changelog below to see if that addresses the problem
+        + Try deleting the custom items in your inventory and getting new ones with 42menu
+        + If it is still broken, you will likely have to remove the datapack features manually and re-add them
+            + Kill custom entities
+            + Remove custom items from inventories and chests
+            + Use the datapack tools to recreate everything in the new version
+    + The pack does not work properly with another datapack
+        + All 42datapacks work with each other and do what is possible to try to improve compatibility with other packs
+        + Not much can be done about this
+
++ Portal Datapack:
+    + Where are the portal guns and other equipment?
+        + Run `/trigger 42menu` to open the 42datapacks menu, then select one of the options to get items
+            + Make sure you're in creative mode when clicking on an option
+    + Equipment stopped working after using the level tool
+        + Only one level is loaded at a time to help with performance (or one level per player in multiplayer)
+        + Use the select tool to select unloaded equipment, then press `[Load Level]`
+
++ Something else?
+    + Make sure to read this whole file to see if that answers the question
+    + You can ask questions on the Planet Minecraft links in the showcases section above
+    + You can also message me on discord for help (baphomet42)
 
 ------------------------------------------------------------------------------------
 
@@ -344,6 +396,26 @@ Note that features may have changed since these were published
     + The only use of the resource pack is for the following:
 + Custom item texture for O.D.M. Sword
     + Without resource pack it's a carrot on a stick
+
+------------------------------------------------------------------------------------
+
+# Changelog
+
++ v0.2 Major Update (4/20/2024)
+    + **IMPORTANT**
+        + The required Minecraft version has changed to 1.20.5
+        + Before updating existing worlds with the datapacks:
+            + Remove all 42datapacks and replace them with the current versions
+        + After updating world:
+            + Any items from the datapacks will no longer work properly
+                + Get the updated items from 42menu
+    + **All datapacks**
+        + Minecraft version updated to 1.20.5
+    + **Portal**
+        + Fixed issue where saved level data could be deleted if the level tries to load outside the render distance
+    + **XLTT**
+        + O.D.M. movement changed
+            + Boosting while free falling will now take initial gravity into account
 
 ------------------------------------------------------------------------------------
 

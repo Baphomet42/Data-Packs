@@ -1,0 +1,9 @@
+execute unless loaded ~-16 ~ ~-16 run data modify storage 42:portal loader.error set value 1b
+execute unless loaded ~-16 ~ ~ run data modify storage 42:portal loader.error set value 1b
+execute unless loaded ~-16 ~ ~16 run data modify storage 42:portal loader.error set value 1b
+execute unless loaded ~ ~ ~-16 run data modify storage 42:portal loader.error set value 1b
+execute unless loaded ~ ~ ~ run data modify storage 42:portal loader.error set value 1b
+execute unless loaded ~ ~ ~16 run data modify storage 42:portal loader.error set value 1b
+execute unless loaded ~16 ~ ~-16 run data modify storage 42:portal loader.error set value 1b
+execute unless loaded ~16 ~ ~ run data modify storage 42:portal loader.error set value 1b
+execute unless loaded ~16 ~ ~16 run data modify storage 42:portal loader.error set value 1b

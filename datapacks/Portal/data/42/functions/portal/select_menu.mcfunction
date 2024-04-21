@@ -2,8 +2,8 @@ function 42:portal/tag_selected
 execute if score @s 42menu matches 4203500..4203509 unless entity @e[tag=42.portal_selected,type=!player] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203500 run scoreboard players set @s 42.portal_sel 0
 execute if score @s 42menu matches 4203500 run title @s actionbar ""
-execute if score @s 42menu matches 4203501 if score @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_lvl matches 1.. as @e[tag=42.portal_selected,type=!player,limit=1] run function 42:portal/level/load
 execute if score @s 42menu matches 4203501 if score @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_lvl matches 1.. run scoreboard players operation @s 42.portal_lvl = @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_lvl
+execute if score @s 42menu matches 4203501 if score @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_lvl matches 1.. run function 42:portal/level/load
 execute if score @s 42menu matches 4203502 if score @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_link matches 1.. run scoreboard players set @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_link -1
 execute if score @s 42menu matches 4203502..4203503 as @e[tag=42.portal_selected,type=!player] at @s run function 42:portal/tools/sel_new
 execute if score @s 42menu matches 4203504 if score @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_lvl matches 0.. run scoreboard players set @e[tag=42.portal_selected,type=!player,limit=1] 42.portal_lvl -1
