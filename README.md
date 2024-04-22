@@ -355,6 +355,11 @@ Joke pack that changes crafting recipes.
     + Equipment stopped working after using the level tool
         + Only one level is loaded at a time to help with performance (or one level per player in multiplayer)
         + Use the select tool to select unloaded equipment, then press `[Load Level]`
+    + There was an error message in chat that started with "42datapack error (3):"
+        + "Failed to load Portal level. Level goes outside the render distance"
+            + This happens when the full level area isn't inside the player's render distance (and simulation distance)
+            + It can also happen when teleporting into a level, if the world hasn't had time to load all the chunks yet
+            + Try increasing your render distance, then run `/scoreboard players set @s 42.portal_lvl 0`
 
 + Something else?
     + Make sure to read this whole file to see if that answers the question
