@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 1.20.5
+# Separate but compatible datapacks for Minecraft 1.20.6
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
