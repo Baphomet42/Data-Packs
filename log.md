@@ -26,6 +26,7 @@ All items given by a pack should have custom_data.42datapack equal to the id.
 + newworld - none
 + portal - 3
 + essentials - 4
++ dbd - 5
 + hvac - none
 
 Minecraft namespace should be rarely used (and almost always non-replacing).
