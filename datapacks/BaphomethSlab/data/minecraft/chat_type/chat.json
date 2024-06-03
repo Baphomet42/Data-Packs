@@ -7,7 +7,7 @@
       "style": {
         "color": "dark_green"
       },
-      "translation_key": "chat.type.text"
+      "translation_key": "%s§8:§r %s"
     },
     "narration": {
       "parameters": [
