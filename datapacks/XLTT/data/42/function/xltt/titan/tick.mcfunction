@@ -1,6 +1,7 @@
 execute as @e[tag=42.titan,tag=!42.titanAI] at @s run function 42:xltt/titan/tick_pos
 execute as @e[tag=42.titan,scores={42.titan_time=1}] at @s run function 42:xltt/titan/tick_check
-execute as @e[tag=42.titanAI] run data merge entity @s {Attributes:[{Name:generic.movement_speed,Base:.42},{Name:generic.attack_damage,Base:45.0}]}
+execute as @e[tag=42.titanAI] run attribute @s minecraft:generic.movement_speed base set .42
+execute as @e[tag=42.titanAI] run attribute @s minecraft:generic.attack_damage base set 45
 #
 execute as @e[tag=42.titanHit] at @s if entity @a[distance=..20] if entity @s[nbt={attack:{}}] run function 42:xltt/titan/hurt
 #

@@ -1,1 +1,11 @@
-give @s carrot_on_a_stick[custom_data={42datapack:1,42xltt_odm:1b},custom_model_data=4201001,item_name='"O.D.M. Sword"',rarity=uncommon,lore=['[{"keybind":"key.use","color":"white"},{"text":" to shoot hook","italic":false,"color":"white"}]','[{"keybind":"key.sneak","color":"white"},{"text":" to grapple","italic":false,"color":"white"}]'],unbreakable={show_in_tooltip:0b},attribute_modifiers={show_in_tooltip:0b,modifiers:[{slot:"mainhand",type:"generic.attack_speed",name:"generic.attack_speed",amount:-2.4,operation:"add_value",uuid:[I;1232157005,-1940174502,-1097475282,2085737070]},{slot:"mainhand",type:"generic.attack_damage",name:"generic.attack_damage",amount:7,operation:"add_value",uuid:[I;540936941,-1852226906,-1740980954,-1231906176]}]}]
+give @s carrot_on_a_stick[custom_model_data=4201001,\
+    item_name='"O.D.M. Sword"',\
+    lore=[\
+        '{"color":"white","extra":[{"color":"white","italic":false,"text":" to shoot hook"}],"keybind":"key.use"}',\
+        '{"color":"white","extra":[{"color":"white","italic":false,"text":" to grapple"}],"keybind":"key.sneak"}'],\
+    attribute_modifiers={modifiers:[\
+        {amount:7.0d,id:"minecraft:base_attack_damage",operation:"add_value",slot:"mainhand",type:"minecraft:generic.attack_damage"},\
+        {amount:-2.4d,id:"minecraft:base_attack_speed",operation:"add_value",slot:"mainhand",type:"minecraft:generic.attack_speed"}]},\
+    rarity="uncommon",\
+    custom_data={42datapack:1,42xltt_odm:1b},\
+    max_damage=250]

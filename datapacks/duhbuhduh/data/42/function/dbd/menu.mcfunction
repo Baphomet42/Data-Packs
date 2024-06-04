@@ -1,5 +1,12 @@
-tellraw @s[scores={42menu=1}] [{"text":"","color":"gray"},{"text":"Portal","color":"gold","bold":true},{"text":"\n   "},{"text":"Get equipment...","color":"dark_gray"},{"text":"\n      "},{"text":"[Handheld Portal Device]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203013"}},{"text":"\n      "},{"text":"[Fizzle Tool]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203003"}},{"text":"\n      "},{"text":"[See Full List...]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203001"}},{"text":"\n      "},{"text":"[Get Everything]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203021"}},{"text":"\n   Debug...","color":"dark_gray"},{"text":"\n      "},{"text":"[Unload Level]","clickEvent":{"action":"suggest_command","value":"/function 42:portal/level/unload"}},{"text":"\n      "},{"text":"[Reload Checkpoint]","clickEvent":{"action":"suggest_command","value":"/trigger 42menu set 4203100"}},{"text":"\n      "},{"text":"[Unhide Zones]","clickEvent":{"action":"suggest_command","value":"/function 42:portal/generic/show_nearby_invisibles"}}]
+tellraw @s[scores={42menu=1}] [{"text":"","color":"gray"},{"text":"DuhBuhDuh","color":"gold","bold":true},\
+    {"text":"\n   "},{"text":"Set character...","color":"dark_gray"},\
+    {"text":"\n      "},{"text":"[Reset]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4205001"}},\
+    {"text":"\n      "},{"text":"[Survivor]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4205002"}},\
+    {"text":"\n      "},{"text":"[Killer]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4205003"}}\
+    ]
 execute if entity @s[tag=!42op,gamemode=!creative,scores={42menu=4205001..4205999}] run function 42:error_perms
 scoreboard players set @s[tag=!42op,gamemode=!creative,scores={42menu=4205001..4205999}] 42menu 0
 
-execute if score @s 42menu matches 4205001 run function 42:dbd/
+execute if score @s 42menu matches 4205001 run function 42:dbd/char/unset
+execute if score @s 42menu matches 4205002 run function 42:dbd/char/set_player
+execute if score @s 42menu matches 4205003 run function 42:dbd/char/set_killer

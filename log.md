@@ -46,17 +46,17 @@ Exceptions to scoreboard objectives may be trigger commands, which should be a s
 
 The following files appear in multiple datapacks and should be kept equal
 
-+ data/42/advancements/
++ data/42/advancement/
     + root.json
     + menu.json
     + op.json
-+ data/42/functions/
++ data/42/function/
     + 42menu.mcfunction
     + error_perms.mcfunction
 + data/42/tags/
-    + blocks/projectile_pass.json
-    + *functions/menu.json*
-+ *data/minecraft/tags/functions/load.json*
+    + block/projectile_pass.json
+    + *function/menu.json*
++ *data/minecraft/tags/function/load.json*
 
 *Italicized files differ between packs, and should set replace to false*
 

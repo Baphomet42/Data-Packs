@@ -1,6 +1,8 @@
 ------------------------------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 1.20.6
+# Separate but compatible datapacks for Minecraft 1.21-pre2
+
+# This is a snapshot branch and is unstable
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
@@ -13,6 +15,8 @@ Most packs are proof of concepts and not intended for existing worlds.
     + [XLTT](#xltt-optional-resource-pack---see-below)
     + [Brave New World](#brave-new-world)
     + [Historically Accurate Crafting](#historically-accurate-crafting)
+    + [DuhBuhDuh](#duhbuhduh)
+    + [BaphomethSlab](#baphomethslab)
 + [Datapack Info](#datapack-info)
     + Setup
     + Important Notes
@@ -288,6 +292,28 @@ Joke pack that changes crafting recipes.
 + *Please add fire items back to the game so I can add the chainmail recipes*
     + Thanks
 
+### **DuhBuhDuh**
+
+For testing some dbd mechanics and new datapack features. Not intended for actual use.
+
++ *Movement system*
+    + No jumping
+    + Different movement speeds for survivors and killers
++ *Planned additions*
+    + Recreate crouching/walking/sprinting movements
+    + Limited perk selection system
+    + Terror radius effects
+
+### **BaphomethSlab**
+
+For datapack testing purposes only. Everything is experimental and may not be updated. Not intended for use ever.
+
++ *Fixes game chat (green text and purple /me)*
++ *Test util functions using macros*
+    + `concat`
+        + Joins an NbtList of strings into a single string
+        + Optionally adds a custom separator between strings
+
 ------------------------------------------------------------------------------------
 
 # Datapack Info
@@ -405,6 +431,21 @@ Joke pack that changes crafting recipes.
 ------------------------------------------------------------------------------------
 
 # Changelog
+
++ v0.3 Major Update (?)
+    + **IMPORTANT**
+        + The required Minecraft version has changed to 1.21
+        + Before updating existing worlds with the datapacks:
+            + Remove all 42datapacks and replace them with the current versions
+    + **All datapacks**
+        + Minecraft version updated to 1.21
+    + **XLTT**
+        + `O.D.M. Sword` item has changed
+            + Get new version from 42menu
+            + Now acts more like Netherite Sword (but less durability)
+    + **New datapacks**
+        + BaphomethSlab
+        + duhbuhduh
 
 + v0.2 Major Update (4/20/2024)
     + **IMPORTANT**

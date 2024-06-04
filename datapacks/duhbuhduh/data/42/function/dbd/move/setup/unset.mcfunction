@@ -1,16 +1,16 @@
 tag @s remove 42.dbd_move
 
 # jump
-attribute @s minecraft:generic.jump_strength modifier remove 9ef20e33-3503-404e-89ef-ee43b4da26d4
+attribute @s minecraft:generic.jump_strength modifier remove 42:dbd_move_jump
 # scale speed modifier
-attribute @s minecraft:generic.movement_speed modifier remove 517524d7-d3ba-442d-8433-4a7760a2cee1
+attribute @s minecraft:generic.movement_speed modifier remove 42:dbd_move_scale
 
 # base speed
-attribute @s minecraft:generic.movement_speed modifier remove 80c284f8-dc20-4fc3-9f64-1b0e11059b48
+attribute @s minecraft:generic.movement_speed modifier remove 42:dbd_move_base
 # sneak/walk speed modidfier
-attribute @s minecraft:generic.movement_speed modifier remove 60e8667b-282e-4dfa-b367-68fc49ee1a7c
+attribute @s minecraft:generic.movement_speed modifier remove 42:dbd_move_mode
 # char speed modifier
-attribute @s minecraft:generic.movement_speed modifier remove d7814acd-52ab-41ea-8fff-6c879e6348ac
+attribute @s minecraft:generic.movement_speed modifier remove 42:dbd_move_char
 
 tag @s remove 42.dbd_move_100
 tag @s remove 42.dbd_move_110

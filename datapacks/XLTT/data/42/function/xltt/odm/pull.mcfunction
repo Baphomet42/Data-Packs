@@ -1,5 +1,5 @@
 #effect give @s levitation 1 255 true
-attribute @s generic.gravity modifier add 8d8efb8b-0edb-48c4-aff2-c94ff77e82f0 42xltt -1 add_multiplied_total
+attribute @s generic.gravity modifier add 42:xltt_odm_gravity -1 add_multiplied_total
 effect give @s slow_falling 1 0 true
 tag @s add 42.odm_lev
 scoreboard players set @s[scores={42.odm_time=30..}] 42.odm_time 0
@@ -40,7 +40,7 @@ scoreboard players set @s[tag=!42.odm_fly] 42.odm_time 0
 execute at @s[tag=42.odm_fly] facing entity @e[tag=42.xltt_id,limit=1,sort=nearest] feet positioned ~ ~.7 ~ run particle poof ^-.4 ^ ^-.75 0 0 0 0 1 force
 execute at @s[tag=42.odm_fly] facing entity @e[tag=42.xltt_id,limit=1,sort=nearest] feet positioned ~ ~.7 ~ run particle poof ^.4 ^ ^-.75 0 0 0 0 1 force
 #effect clear @s[tag=42.odm_tp] levitation
-attribute @s[tag=42.odm_tp] generic.gravity modifier remove 8d8efb8b-0edb-48c4-aff2-c94ff77e82f0
+attribute @s[tag=42.odm_tp] generic.gravity modifier remove 42:xltt_odm_gravity
 effect clear @s[tag=42.odm_tp] slow_falling
 execute if entity @s[tag=42.odm_tp] at @s run playsound entity.player.small_fall player @s ~ ~ ~ .25 .75
 tag @s[tag=42.odm_tp] remove 42.odm_lev
