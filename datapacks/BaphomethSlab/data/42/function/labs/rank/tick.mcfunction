@@ -1,0 +1,2 @@
+execute as @a unless score @s 42.labs_setup matches 1.. run function 42:labs/rank/setup
+execute if score #42.labs_option_autoteam 42.labs_setup matches 1 run schedule function 42:labs/rank/tick 100t replace
