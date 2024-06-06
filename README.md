@@ -443,6 +443,8 @@ For datapack testing purposes only. Everything is experimental and may not be up
         + `O.D.M. Sword` item has changed
             + Get new version from 42menu
             + Now acts more like Netherite Sword (but less durability)
+    + **Portal**
+        + General improvements and bug fixes
     + **New datapacks**
         + BaphomethSlab
         + duhbuhduh

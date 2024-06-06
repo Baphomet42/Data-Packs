@@ -11,9 +11,9 @@ scoreboard players set 42.portal 42.portal_temp -1
 $scoreboard players set @e[tag=42.portal_test_x] 42.portal_x $(dx)
 $scoreboard players set @e[tag=42.portal_test_x] 42.portal_y $(dy)
 $scoreboard players set @e[tag=42.portal_test_x] 42.portal_z $(dz)
-data remove storage 42.portal temp
-$data modify storage 42.portal temp.mode set value $(mode)
-$data modify storage 42.portal temp.block set value $(block)
+data remove storage 42:portal temp
+$data modify storage 42:portal temp.mode set value $(mode)
+$data modify storage 42:portal temp.block set value $(block)
 execute as @e[tag=42.portal_test_x] if score @s 42.portal_x matches ..-1 run scoreboard players set @s 42.portal_x 0
 execute as @e[tag=42.portal_test_x] if score @s 42.portal_y matches ..-1 run scoreboard players set @s 42.portal_y 0
 execute as @e[tag=42.portal_test_x] if score @s 42.portal_z matches ..-1 run scoreboard players set @s 42.portal_z 0
@@ -24,4 +24,4 @@ execute as @e[tag=42.portal_test_x] at @s run function 42:portal/generic/test_ra
 execute if score @e[tag=42.portal_test_x,limit=1] 42.portal_u matches ..-10 run scoreboard players set 42.portal 42.portal_temp 1
 execute unless score @e[tag=42.portal_test_x,limit=1] 42.portal_u matches ..-10 run scoreboard players set 42.portal 42.portal_temp 0
 kill @e[tag=42.portal_test]
-data remove storage 42.portal temp
+data remove storage 42:portal temp
