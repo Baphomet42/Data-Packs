@@ -1,8 +1,6 @@
 ------------------------------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 1.21-pre2
-
-# This is a snapshot branch and is unstable
+# Separate but compatible datapacks for Minecraft 1.21
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
