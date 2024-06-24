@@ -1,1 +1,1 @@
-data remove storage 42:labs concat
+data remove storage 42:labs data.concat

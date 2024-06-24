@@ -1,0 +1,1 @@
+$data modify storage 42:labs data.uuid_storage."$(uuid)".$(path) set value $(nbt)

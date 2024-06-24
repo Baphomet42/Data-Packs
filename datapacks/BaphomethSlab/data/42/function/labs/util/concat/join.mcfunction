@@ -1,1 +1,1 @@
-$data modify storage 42:labs concat.result set value "$(left)$(separator)$(right)"
+$data modify storage 42:labs data.concat.result set value "$(left)$(separator)$(right)"
