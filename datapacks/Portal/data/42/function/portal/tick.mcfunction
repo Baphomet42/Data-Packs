@@ -5,6 +5,7 @@ execute if entity @e[type=area_effect_cloud,tag=42.portal_egg] run function 42:p
 execute as @e[tag=42.portal_motion_tp] at @s if loaded ~ ~ ~ run function 42:portal/motion
 execute as @e[tag=42.portal_damage] at @s run function 42:portal/damage
 execute as @e[tag=42.portal_cube_dis,tag=42.portal_fizzle] at @s run function 42:portal/cube/fizzle_effect
+execute as @e[tag=42.portal_gun_display] run function 42:portal/gun/display/tick
 execute as @e[type=marker,tag=42.portal_gun] at @s run function 42:portal/gun/find_target
 function 42:portal/level/mark_tick
 execute as @e[tag=42.portal] at @s run function 42:portal/portal/tick

@@ -1,2 +1,0 @@
-execute unless entity @e[tag=42.portal_gun_test] run summon item_display ~ ~ ~ {Tags:["42.portal_gun_test"],item:{id:smooth_quartz},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[.25f,.25f,.75f],translation:[0f,0f,0f]},interpolation_duration:0,teleport_duration:1}
-execute anchored eyes positioned ^-.4 ^-.5 ^.8 run tp @e[tag=42.portal_gun_test] ~ ~ ~ ~ ~

@@ -1,8 +1,6 @@
 execute if entity @s[nbt={OnGround:0b}] store result score @s 42.portal_y run data get entity @s Motion[1] 1000
 execute if score @s 42.portal_death matches 1.. at @s run function 42:portal/level/unload
-execute if data entity @s SelectedItem.components.minecraft:custom_data.portal_type at @s run function 42:portal/gun/tick
-#execute if data entity @s SelectedItem.components.minecraft:custom_data.portal_type at @s run function 42:portal/player/show_gun
-#execute unless data entity @s SelectedItem.components.minecraft:custom_data.portal_type at @s run kill @e[tag=42.portal_gun_test]
+execute if items entity @s weapon.mainhand *[custom_data~{portal_gun:{}}] at @s run function 42:portal/gun/tick
 scoreboard players reset @s 42.portal_gun_use
 scoreboard players reset @s 42.portal_gun_use2
 execute if score @s 42.portal_sel matches 1.. at @s run function 42:portal/tools/sel_tick_player
