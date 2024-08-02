@@ -22,7 +22,7 @@ execute as @e[tag=42.portal_zone,tag=42.portal_new_spawn] at @s run function 42:
 execute as @e[tag=42.portal_zone,tag=42.portal_new_spawn] at @s run function 42:portal/zone/show
 tag @e remove 42.portal_new_spawn
 kill @s[type=area_effect_cloud]
-#
+
 #   ====scores====
 #   portal_lvl  must be set through sel menu
 #   portal_x    zone type (0 for load, 1 for trigger)
@@ -31,7 +31,7 @@ kill @s[type=area_effect_cloud]
 #   portal_xrot2    link to unpower
 #   portal_yrot1    link to spawn
 #   portal_yrot2    link to fizzle spawn
-#
+
 #   =====tags=====
 #   portal_zone     main tick
 #   portal_zone_group   all zone elements to be fizzled together

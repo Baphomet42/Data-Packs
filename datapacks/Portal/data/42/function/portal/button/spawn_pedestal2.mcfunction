@@ -9,7 +9,7 @@ scoreboard players set @e[tag=42.portal_temp,tag=42.portal_pedestal] 42.portal_l
 scoreboard players set @e[tag=42.portal_temp,tag=42.portal_pedestal] 42.portal_lvl -1
 scoreboard players set @e[type=!player,tag=42.portal_temp] 42.datapack 3
 fill ~ ~ ~ ~ ~ ~ nether_brick_fence replace #42:portal_replace
-#
+
 execute if entity @s[tag=42.portal_spawn_rot] as @p at @s run function 42:portal/get_rot
 execute if entity @s[tag=42.portal_spawn_rot] if entity @e[tag=42.portal_rot,tag=42.portal_rot_e] as @e[tag=42.portal_temp,tag=42.portal_pedestal] at @s run function 42:portal/button/rotate_pedestal
 execute if entity @s[tag=42.portal_spawn_rot] if entity @e[tag=42.portal_rot,tag=42.portal_rot_s] as @e[tag=42.portal_temp,tag=42.portal_pedestal] at @s run function 42:portal/button/rotate_pedestal
@@ -18,7 +18,7 @@ execute if entity @s[tag=42.portal_spawn_rot] if entity @e[tag=42.portal_rot,tag
 execute if entity @s[tag=42.portal_spawn_rot] if entity @e[tag=42.portal_rot,tag=42.portal_rot_w] as @e[tag=42.portal_temp,tag=42.portal_pedestal] at @s run function 42:portal/button/rotate_pedestal
 execute if entity @s[tag=42.portal_spawn_rot] if entity @e[tag=42.portal_rot,tag=42.portal_rot_w] as @e[tag=42.portal_temp,tag=42.portal_pedestal] at @s run function 42:portal/button/rotate_pedestal
 execute if entity @s[tag=42.portal_spawn_rot] run function 42:portal/get_rot2
-#
+
 execute if entity @s[tag=42.portal_loader] run function 42:portal/button/load_pedestal with storage 42:portal loader.temp_entity
 tag @e remove 42.portal_temp
 kill @s[type=area_effect_cloud]

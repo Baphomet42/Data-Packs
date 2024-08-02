@@ -11,7 +11,7 @@ execute as @e[type=area_effect_cloud,tag=42.portal_spawn_elevator] at @s run fun
 execute as @e[type=glow_item_frame,tag=42.portal_spawn_wire] at @s run function 42:portal/wire/spawn
 execute as @e[type=area_effect_cloud,tag=42.portal_spawn_zone] at @s run function 42:portal/zone/spawn
 execute as @e[type=area_effect_cloud,tag=42.portal_spawn_grill] at @s run function 42:portal/grill/spawn
-#
+
 execute as @e[type=area_effect_cloud,tag=42.portal_fizzle_tool] at @s run function 42:portal/tools/fizzler
 execute as @e[type=area_effect_cloud,tag=42.portal_cycle_tool] at @s run function 42:portal/tools/cycle
 execute as @e[type=area_effect_cloud,tag=42.portal_link_tool] at @s run function 42:portal/tools/link

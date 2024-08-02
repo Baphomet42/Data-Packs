@@ -5,9 +5,9 @@ execute if score @s[tag=!42.portal_wire_lbl] 42.portal_z matches 2 align xyz pos
 execute if score @s[tag=!42.portal_wire_lbl] 42.portal_z matches 3 align xyz positioned ~.5 ~.5 ~.5 run summon glow_item_frame ~ ~ ~ {Fixed:1,Item:{id:redstone_block,components:{item_name:'"Unlinked Wire"',rarity:uncommon,custom_data:{42datapack:3}}},ItemDropChance:0f,Tags:["42.portal_new_spawn","42.portal_wire_unlinked"],Facing:2b}
 execute if score @s[tag=!42.portal_wire_lbl] 42.portal_z matches 4 align xyz positioned ~.5 ~.5 ~.5 run summon glow_item_frame ~ ~ ~ {Fixed:1,Item:{id:redstone_block,components:{item_name:'"Unlinked Wire"',rarity:uncommon,custom_data:{42datapack:3}}},ItemDropChance:0f,Tags:["42.portal_new_spawn","42.portal_wire_unlinked"],Facing:1b}
 execute if score @s[tag=!42.portal_wire_lbl] 42.portal_z matches 5 align xyz positioned ~.5 ~.5 ~.5 run summon glow_item_frame ~ ~ ~ {Fixed:1,Item:{id:redstone_block,components:{item_name:'"Unlinked Wire"',rarity:uncommon,custom_data:{42datapack:3}}},ItemDropChance:0f,Tags:["42.portal_new_spawn","42.portal_wire_unlinked"],Facing:0b}
-#
+
 scoreboard players set @e[tag=42.portal_new_spawn] 42.portal_link -1
 scoreboard players set @e[type=!player,tag=42.portal_new_spawn] 42.datapack 3
-#
+
 tag @e remove 42.portal_new_spawn
 kill @s[tag=42.portal_wire]

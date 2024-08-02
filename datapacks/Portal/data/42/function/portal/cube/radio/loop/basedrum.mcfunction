@@ -1,7 +1,7 @@
 scoreboard players operation @s 42.portal_xrot1 = 42.portal 42.portal_xrot1
 scoreboard players set @s 42.portal_x 32
 scoreboard players operation @s 42.portal_xrot1 %= @s 42.portal_x
-#
+
 execute if score @s 42.portal_xrot1 matches 0 run playsound block.note_block.basedrum record @a ~ ~ ~ .5 .667420
 execute if score @s 42.portal_xrot1 matches 6 run playsound block.note_block.basedrum record @a ~ ~ ~ .5 .667420
 execute if score @s 42.portal_xrot1 matches 8 run playsound block.note_block.basedrum record @a ~ ~ ~ .5 .667420

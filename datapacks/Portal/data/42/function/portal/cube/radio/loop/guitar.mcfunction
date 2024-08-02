@@ -1,7 +1,7 @@
 scoreboard players operation @s 42.portal_xrot1 = 42.portal 42.portal_xrot1
 scoreboard players set @s 42.portal_x 128
 scoreboard players operation @s 42.portal_xrot1 %= @s 42.portal_x
-#
+
 execute if score @s 42.portal_xrot1 matches 0 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.793701
 execute if score @s 42.portal_xrot1 matches 0 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.587401
 execute if score @s 42.portal_xrot1 matches 24 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.529732

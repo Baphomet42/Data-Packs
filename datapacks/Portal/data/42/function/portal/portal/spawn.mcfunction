@@ -12,7 +12,7 @@ execute as @e[tag=42.portal,tag=42.portal_temp1,tag=42.portal_temp2] at @s run f
 tag @e remove 42.portal_temp1
 tag @e remove 42.portal_temp2
 tag @e remove 42.portal_temp
-#
+
 playsound item.chorus_fruit.teleport block @a ~ ~ ~ 3 1.5
 execute unless entity @s[type=marker] run scoreboard players set 42.portal 42.portal_temp -3
 execute if entity @s[type=marker] run scoreboard players operation 42.portal 42.portal_temp = @s 42.portal_id
@@ -33,7 +33,7 @@ execute if entity @s[tag=42.portal_gun_b] run tag @e[tag=42.portal_temp] add 42.
 execute if entity @s[tag=42.portal_gun_no_sel] run tag @e[tag=42.portal_temp,tag=42.portal] add 42.portal_no_sel
 scoreboard players operation @e[tag=42.portal_temp,tag=42.portal] 42.portal_skin = @s 42.portal_skin
 scoreboard players operation @e[tag=42.portal_temp,tag=42.portal_dis] 42.portal_skin = @s 42.portal_skin
-#
+
 execute if entity @s[tag=42.portal_w] run scoreboard players set @e[tag=42.portal_temp,tag=42.portal] 42.portal_x 1
 execute if entity @s[tag=42.portal_w] as @e[tag=42.portal_temp] at @s run tp @s ~ ~ ~ 90 ~
 execute if entity @s[tag=42.portal_n] run scoreboard players set @e[tag=42.portal_temp,tag=42.portal] 42.portal_x 2
@@ -44,12 +44,12 @@ execute if entity @s[tag=42.portal_floor] run function 42:portal/portal/setup_fl
 execute if entity @s[tag=42.portal_ceiling] run function 42:portal/portal/setup_ceiling
 execute as @e[tag=42.portal_temp,tag=42.portal] at @s run function 42:portal/portal/calc_rot
 execute as @e[tag=42.portal_temp,tag=42.portal] at @s run function 42:portal/portal/setup_dis
-#
+
 execute as @e[tag=42.portal_temp,tag=42.portal] run function 42:portal/portal/set_name
 execute if entity @s[tag=42.portal_gun_a] run tag @e[tag=42.portal_temp] add 42.portal_a
 execute if entity @s[tag=42.portal_gun_b] run tag @e[tag=42.portal_temp] add 42.portal_b
 execute as @e[tag=42.portal,tag=42.portal_temp] run function 42:portal/portal/set_color_dis
 execute as @e[tag=42.portal_dis,tag=42.portal_temp] run function 42:portal/portal/set_back_color_dis
-#
+
 execute as @e[tag=42.portal,tag=42.portal_temp] at @s run function 42:portal/portal/set_blocks
 tag @e remove 42.portal_temp

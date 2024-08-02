@@ -5,12 +5,12 @@ tellraw @s[scores={42menu=4203001}] [{"text":"","color":"gray"},{"text":"-------
 #4203002-4203099
 execute if entity @s[tag=!42op,gamemode=!creative,scores={42menu=4203002..4203099}] run function 42:error_perms
 scoreboard players set @s[tag=!42op,gamemode=!creative,scores={42menu=4203002..4203099}] 42menu 0
-#
+
 execute if score @s 42menu matches 4203006 run function 42:portal/cube/craft
 execute if score @s 42menu matches 4203002 run function 42:portal/cube/craft_companion
 execute if score @s 42menu matches 4203003 run function 42:portal/tools/craft_fizzler
 execute if score @s 42menu matches 4203004 run function 42:portal/launch/craft
-#
+
 execute if score @s 42menu matches 4203007 run function 42:portal/button/craft
 execute if score @s 42menu matches 4203008 run function 42:portal/button/craft_pedestal
 execute if score @s 42menu matches 4203009 run function 42:portal/tools/craft_link
@@ -33,9 +33,9 @@ execute if score @s 42menu matches 4203025 run function 42:portal/elevator/craft
 execute if score @s 42menu matches 4203026 run function 42:portal/wire/craft
 execute if score @s 42menu matches 4203027 run function 42:portal/zone/craft
 execute if score @s 42menu matches 4203028 run function 42:portal/grill/craft
-#
+
 execute if score @s 42menu matches 4203100 run function 42:portal/level/restart
-#
+
 #4203500-4203799
 execute if entity @s[tag=!42op,gamemode=!creative,scores={42menu=4203500..4203799}] run function 42:error_perms
 scoreboard players set @s[tag=!42op,gamemode=!creative,scores={42menu=4203500..4203799}] 42menu 0

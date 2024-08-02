@@ -7,7 +7,7 @@ summon marker ~ ~ ~ {Tags:["42.portal_test","42.portal_test_y"]}
 summon marker ~ ~ ~ {Tags:["42.portal_test","42.portal_test_z"]}
 scoreboard players set @e[type=!player,tag=42.portal_test] 42.datapack 3
 scoreboard players set 42.portal 42.portal_temp -1
-#
+
 $scoreboard players set @e[tag=42.portal_test_x] 42.portal_x $(dx)
 $scoreboard players set @e[tag=42.portal_test_x] 42.portal_y $(dy)
 $scoreboard players set @e[tag=42.portal_test_x] 42.portal_z $(dz)
@@ -17,10 +17,10 @@ $data modify storage 42:portal temp.block set value $(block)
 execute as @e[tag=42.portal_test_x] if score @s 42.portal_x matches ..-1 run scoreboard players set @s 42.portal_x 0
 execute as @e[tag=42.portal_test_x] if score @s 42.portal_y matches ..-1 run scoreboard players set @s 42.portal_y 0
 execute as @e[tag=42.portal_test_x] if score @s 42.portal_z matches ..-1 run scoreboard players set @s 42.portal_z 0
-#
+
 execute as @e[tag=42.portal_test_x] run scoreboard players operation @s 42.portal_u = @s 42.portal_x
 execute as @e[tag=42.portal_test_x] at @s run function 42:portal/generic/test_range/x
-#
+
 execute if score @e[tag=42.portal_test_x,limit=1] 42.portal_u matches ..-10 run scoreboard players set 42.portal 42.portal_temp 1
 execute unless score @e[tag=42.portal_test_x,limit=1] 42.portal_u matches ..-10 run scoreboard players set 42.portal 42.portal_temp 0
 kill @e[tag=42.portal_test]

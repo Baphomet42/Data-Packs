@@ -13,13 +13,13 @@ execute if entity @s[tag=42.portal,tag=!42.portal_a] run tag @e[tag=42.portal_ne
 execute if entity @s[tag=42.portal] run function 42:portal/portal/fizzle
 #execute as @e[tag=42.portal_new_spawn,tag=42.portal_spawner] at @s run function 42:portal/portal/spawner/power
 tag @e remove 42.portal_new_spawn
-#
+
 #   ====scores====
 #   portal_x    color of portal
 #   portal_y    portal link num
 #   portal_link     frequency of powerable
 #   portal_lvl      only used to reset with lvl
-#
+
 #   =====tags=====
 #   portal_spawner     main tick
 #   portal_spawner_group    main + displays

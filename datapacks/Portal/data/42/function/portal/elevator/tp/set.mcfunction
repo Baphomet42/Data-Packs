@@ -6,11 +6,11 @@ execute store result score @s 42.portal_u run data get entity @e[tag=42.portal_e
 execute store result score @s 42.portal_v run data get entity @e[tag=42.portal_elevator_pair,limit=1] Pos[1]
 execute store result score @s 42.portal_w run data get entity @e[tag=42.portal_elevator_pair,limit=1] Pos[2]
 scoreboard players operation @s 42.portal_xrot2 = @e[tag=42.portal_elevator_pair,limit=1] 42.portal_id
-#
+
 scoreboard players operation @s 42.portal_yrot2 = @s 42.portal_yrot1
 scoreboard players operation @s 42.portal_yrot2 -= @e[tag=42.portal_elevator_pair,limit=1] 42.portal_yrot1
 execute if score @s 42.portal_yrot2 matches ..-1 run scoreboard players add @s 42.portal_yrot2 4
-#
+
 execute as @e[tag=42.portal_elevator_pair] at @s run particle flash ~ ~1.5 ~
 execute as @e[tag=42.portal_elevator_pair] at @s run playsound block.note_block.pling block @a ~ ~ ~ 1 1.25
 execute unless entity @e[tag=42.portal_elevator_pair] run title @p[tag=42.portal_selected] title ""

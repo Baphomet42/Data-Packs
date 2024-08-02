@@ -53,6 +53,8 @@ The following files appear in multiple datapacks and should be kept equal
 + data/42/function/
     + 42menu.mcfunction
     + error_perms.mcfunction
++ data/42/predicate/
+    + is_sneaking.json
 + data/42/tags/
     + block/projectile_pass.json
     + *function/menu.json*

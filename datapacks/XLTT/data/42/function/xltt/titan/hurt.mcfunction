@@ -1,4 +1,2 @@
-tag @e remove 42.titan_sel
-tag @s add 42.titan_sel
-execute on attacker if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{42xltt_odm:1b}}}}] run kill @e[tag=42.titan_sel,tag=42.titanHit]
+execute on attacker if items entity @s weapon.mainhand *[custom_data~{42xltt_odm:1b}] run tag @e[tag=42.xltt_id,tag=42.xltt_titan,limit=1] add 42.xltt_titan_kill
 data remove entity @s attack

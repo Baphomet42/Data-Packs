@@ -1,0 +1,1 @@
+$summon potion ~ ~ ~ {Tags:["42.xltt_wine","42.xltt_wine_new","42.xltt_temp_spawn"],Item:{id:experience_bottle,components:{potion_contents:{potion:water,custom_effects:[{id:"nausea",duration:300,amplifier:42b}],custom_color:4721688}}},LeftOwner:0b,OnGround:0b,FallDistance:0f,HasBeenShot:1b,Owner:$(Owner),Motion:[$(m0),$(m1),$(m2)],Passengers:[{id:marker,Tags:["42.xltt_wine"]}]}

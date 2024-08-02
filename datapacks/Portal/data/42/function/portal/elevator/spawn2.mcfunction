@@ -26,7 +26,7 @@ execute as @e[tag=42.portal_new_spawn,tag=42.portal_elevator] run scoreboard pla
 scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_elevator] 42.portal_skin 0
 scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_elevator] 42.portal_cool 0
 team join 42.no_col @e[tag=42.portal_new_spawn,tag=42.portal_elevator]
-#
+
 execute as @p at @s run function 42:portal/get_rot
 scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_elevator] 42.portal_yro1 0
 execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_w] run scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] 42.portal_yrot1 1
@@ -37,7 +37,7 @@ execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_s] as @e[tag=42.portal_
 execute if entity @e[tag=42.portal_rot,tag=42.portal_rot_w] as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_group] at @s run tp @s ~ ~ ~ -90 ~
 execute as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_text] at @s run tp @s ~ ~ ~ ~180 ~
 execute run function 42:portal/get_rot2
-#
+
 fill ~-2 ~ ~-2 ~2 ~2 ~2 barrier replace #42:portal_replace
 fill ~-1 ~ ~-1 ~1 ~ ~1 smooth_quartz_slab replace barrier
 fill ~-1 ~3 ~-2 ~1 ~3 ~-2 smooth_quartz_stairs[facing=south,half=top] replace #42:portal_replace
@@ -45,12 +45,12 @@ fill ~-1 ~3 ~2 ~1 ~3 ~2 smooth_quartz_stairs[facing=north,half=top] replace #42:
 fill ~2 ~3 ~-1 ~2 ~3 ~1 smooth_quartz_stairs[facing=west,half=top] replace #42:portal_replace
 fill ~-2 ~3 ~-1 ~-2 ~3 ~1 smooth_quartz_stairs[facing=east,half=top] replace #42:portal_replace
 execute as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_start] at @s run fill ^-1 ^ ^-1 ^1 ^2 ^2 air replace barrier
-#
+
 execute as @e[tag=42.portal_new_spawn,tag=42.portal_elevator_end_dis] run data modify entity @s view_range set value 0f
-#
+
 tag @e remove 42.portal_new_spawn
 kill @s[type=area_effect_cloud]
-#
+
 #   ====scores====
 #   portal_x    end offset from start
 #   portal_y    start height * 100
@@ -65,7 +65,7 @@ kill @s[type=area_effect_cloud]
 #   portal_w    tp center z coord
 #   portal_yrot2    tp yrot offset count
 #   portal_xrot2    id of paired elevator
-#
+
 #   =====tags=====
 #   portal_elevator     main tick
 #   portal_elevator_start   start pos

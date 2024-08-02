@@ -5,9 +5,9 @@ $scoreboard players set @e[tag=42.portal_new_spawn] 42.portal_lvl $(lvl)
 $scoreboard players set @e[tag=42.portal_new_spawn,tag=!42.portal_wire_lbl] 42.portal_z $(z)
 $execute as @e[tag=42.portal_new_spawn] at @s run tp @s ~ ~ ~ $(rotation_0) $(rotation_1)
 scoreboard players set @e[type=!player,tag=42.portal_new_spawn] 42.datapack 3
-#
+
 $scoreboard players set @e[tag=42.portal_new_spawn,tag=!42.portal_wire_lbl] 42.portal_skin $(skin)
 scoreboard players remove @e[tag=42.portal_new_spawn,tag=!42.portal_wire_lbl] 42.portal_skin 1
 execute as @e[tag=42.portal_new_spawn,tag=!42.portal_wire_lbl] at @s run function 42:portal/wire/skin
-#
+
 tag @e remove 42.portal_new_spawn

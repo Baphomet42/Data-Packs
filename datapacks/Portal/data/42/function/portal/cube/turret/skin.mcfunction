@@ -1,6 +1,6 @@
 scoreboard players add @s 42.portal_skin 1
 execute if score @s 42.portal_skin matches 12.. run scoreboard players set @s 42.portal_skin 0
-#
+
 execute if score @s 42.portal_skin matches 0 as @e[tag=42.portal_id,tag=42.portal_turret_col] run data merge entity @s {block_state:{Name:quartz_block}}
 execute if score @s 42.portal_skin matches 1 as @e[tag=42.portal_id,tag=42.portal_turret_col] run data merge entity @s {block_state:{Name:bricks}}
 execute if score @s 42.portal_skin matches 2 as @e[tag=42.portal_id,tag=42.portal_turret_col] run data merge entity @s {block_state:{Name:moss_block}}

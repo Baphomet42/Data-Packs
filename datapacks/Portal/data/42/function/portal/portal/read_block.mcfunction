@@ -1,6 +1,6 @@
 #match blocks: #42:portal_surface, portal/replace_wall, portal/read_block
 scoreboard players set @s 42.portal_skin 0
-#
+
 execute if block ~ ~ ~ quartz_block run scoreboard players set @s 42.portal_skin 0
 execute if block ~ ~ ~ smooth_quartz run scoreboard players set @s 42.portal_skin 1
 execute if block ~ ~ ~ chiseled_quartz_block run scoreboard players set @s 42.portal_skin 2
@@ -13,7 +13,7 @@ execute if block ~ ~ ~ polished_andesite run scoreboard players set @s 42.portal
 execute if block ~ ~ ~ bone_block[axis=x] run scoreboard players set @s 42.portal_skin 9
 execute if block ~ ~ ~ bone_block[axis=y] run scoreboard players set @s 42.portal_skin 10
 execute if block ~ ~ ~ bone_block[axis=z] run scoreboard players set @s 42.portal_skin 11
-#
+
 data modify entity @s block_state.Name set value quartz_block
 execute if score @s 42.portal_skin matches 0 run data modify entity @s block_state.Name set value quartz_block
 execute if score @s 42.portal_skin matches 1 run data modify entity @s block_state.Name set value smooth_quartz

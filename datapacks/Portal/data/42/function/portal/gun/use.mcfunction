@@ -2,12 +2,14 @@ tag @e remove 42.portal_temp
 summon marker ~ ~ ~ {Tags:["42.portal_gun","42.portal_temp","42.portal_bullet_pass"],CustomNameVisible:0b,CustomName:'{"text":"42portal"}'}
 execute if entity @s[tag=42.portal_gun_arg_a] run tag @e[tag=42.portal_temp,limit=1] add 42.portal_gun_a
 execute if entity @s[tag=!42.portal_gun_arg_a] run tag @e[tag=42.portal_temp,limit=1] add 42.portal_gun_b
-#
+
+# keep consistent with gun/particle, gun/setup_look, gun/use, portal/particle, portal/set_name, portal/set_color_dis, portal/set_back_color_dis
 scoreboard players operation @e[tag=42.portal_temp,limit=1] 42.portal_skin = 42.portal_temp 42.portal_skin
-execute as @e[tag=42.portal_temp,limit=1] unless score @s 42.portal_skin matches 0.. run scoreboard players set @s 42.portal_skin 0
+execute as @e[tag=42.portal_temp,limit=1] unless score @s 42.portal_skin matches 0..16 run scoreboard players set @s 42.portal_skin 0
+
 scoreboard players operation @e[tag=42.portal_temp,limit=1] 42.portal_link = 42.portal_temp 42.portal_link
 execute as @e[tag=42.portal_temp,limit=1] unless score @s 42.portal_link matches 1.. run scoreboard players set @s 42.portal_link 1
-#
+
 scoreboard players set @e[type=!player,tag=42.portal_temp] 42.datapack 3
 tp @e[tag=42.portal_temp] ~ ~ ~ ~ ~
 scoreboard players operation @e[type=marker,tag=42.portal_temp,limit=1] 42.portal_id = 42.portal_temp 42.portal_id

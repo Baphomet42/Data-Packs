@@ -10,7 +10,7 @@ kill @e[tag=42.portal_turret_laser_find]
 tag @e remove 42.portal_new_spawn
 execute store result score @s 42.portal_xrot2 run data get entity @e[tag=42.portal_turret_laser,limit=1] Rotation[0] 1000
 execute store result score @s 42.portal_yrot2 run data get entity @e[tag=42.portal_turret_laser,limit=1] Rotation[1] 1000
-#
+
 scoreboard players add @s 42.portal_xrot2 720000
 scoreboard players add @s 42.portal_yrot2 720000
 scoreboard players operation @s 42.portal_xrot2 %= @s 42.portal_temp
@@ -31,7 +31,7 @@ scoreboard players remove @s 42.portal_xrot2 360000
 scoreboard players remove @s 42.portal_yrot2 360000
 execute if score @s 42.portal_xrot2 matches -75000..75000 run tag @s add 42.portal_temp1
 execute if score @s 42.portal_yrot2 matches -60000..60000 run tag @s add 42.portal_temp2
-#
+
 execute if entity @s[tag=42.portal_temp1,tag=42.portal_temp2] at @s run function 42:portal/cube/turret/target/valid
 tag @e remove 42.portal_temp1
 tag @e remove 42.portal_temp2

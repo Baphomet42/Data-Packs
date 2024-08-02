@@ -5,16 +5,16 @@ execute unless entity @s[tag=42.portal_loader] run scoreboard players operation 
 scoreboard players set @e[type=!player,tag=42.portal_temp] 42.datapack 3
 scoreboard players set @e[tag=42.portal_temp,tag=42.portal_door] 42.portal_link -1
 scoreboard players set @e[tag=42.portal_temp,tag=42.portal_door] 42.portal_lvl -1
-#
+
 scoreboard players set @e[tag=42.portal_temp,tag=42.portal_door] 42.portal_x 1
 execute if entity @s[tag=42.portal_temp2,tag=!42.portal_temp1] run scoreboard players set @e[tag=42.portal_temp,tag=42.portal_door] 42.portal_x 2
-#
+
 execute if entity @s[tag=42.portal_loader] run function 42:portal/door/load with storage 42:portal loader.temp_entity
-#
+
 execute as @e[tag=42.portal_temp,tag=42.portal_door,scores={42.portal_x=1}] at @s run fill ~-1 ~ ~ ~1 ~2 ~ polished_blackstone_wall replace #42:portal_replace
 execute as @e[tag=42.portal_temp,tag=42.portal_door,scores={42.portal_x=2}] at @s run fill ~ ~ ~-1 ~ ~2 ~1 polished_blackstone_wall replace #42:portal_replace
 execute as @e[tag=42.portal_temp,tag=42.portal_door,scores={42.portal_x=2}] as @e[tag=42.portal_temp,tag=42.portal_door_group] at @s run tp @s ~ ~ ~ ~90 ~
 execute as @e[tag=42.portal_temp,tag=42.portal_door,scores={42.portal_x=2}] at @s run function 42:portal/door/unpower
-#
+
 tag @e remove 42.portal_temp
 kill @s[type=area_effect_cloud]

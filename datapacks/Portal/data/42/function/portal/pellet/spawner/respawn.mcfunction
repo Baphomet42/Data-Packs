@@ -6,7 +6,7 @@ $scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_pellet_spawner]
 $scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_pellet_spawner] 42.portal_link $(link)
 $scoreboard players set @e[tag=42.portal_new_spawn] 42.portal_id $(id)
 $execute as @e[tag=42.portal_new_spawn] at @s run tp @s ~.01 ~ ~.01 $(rotation_0) $(rotation_1)
-#
+
 execute if data storage 42:portal loader.temp_entity.tag_show as @e[tag=42.portal_pellet_spawner,tag=42.portal_new_spawn] at @s run function 42:portal/pellet/spawner/show
 execute unless data storage 42:portal loader.temp_entity.tag_show as @e[tag=42.portal_pellet_spawner,tag=42.portal_new_spawn] at @s run function 42:portal/pellet/spawner/hide
 tag @e remove 42.portal_new_spawn

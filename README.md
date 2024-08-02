@@ -383,7 +383,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
         + "Failed to load Portal level. Level goes outside the render distance"
             + This happens when the full level area isn't inside the player's render distance (and simulation distance)
             + It can also happen when teleporting into a level, if the world hasn't had time to load all the chunks yet
-            + Try increasing your render distance, then run `/scoreboard players set @s 42.portal_lvl 0`
+            + Try increasing your render distance, then run `/function 42:portal/level/unload` to unload the level and try again
 
 + Something else?
     + Make sure to read this whole file to see if that answers the question
@@ -430,22 +430,29 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ v0.3 Major Update (?)
++ v0.3 Major Update (8/2/2024)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21
         + Before updating existing worlds with the datapacks:
+            + Full reinstall is recommended
+                + Use the datapack features to remove all items/entities/etc
+                + Remove all objectives and teams
+                + Delete all storage data
             + Remove all 42datapacks and replace them with the current versions
     + **All datapacks**
         + Minecraft version updated to 1.21
+        + Many objectives, teams, tags, and storages have new names to be more consistent
+        + General improvements, bug fixes, and optimizations
     + **XLTT**
         + `O.D.M. Sword` item has changed
             + Get new version from 42menu
             + Now acts more like Netherite Sword (but less durability)
-    + **Portal**
-        + General improvements and bug fixes
-    + **New datapacks**
-        + BaphomethSlab
-        + duhbuhduh
+        + `Titan` mob has been completely reworked
+            + Uses more vanilla AI
+            + New look
+        + `Cursed Wine` no longer appears glitchy to client
+    + **Essentials**
+        + `/trigger hat` can now swap mainhand and helmet items
 
 + v0.2 Major Update (4/20/2024)
     + **IMPORTANT**
