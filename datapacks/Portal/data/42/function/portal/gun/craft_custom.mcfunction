@@ -1,8 +1,12 @@
 tag @e remove 42.portal_new_spawn
 summon item ~ ~ ~ {Tags:["42.portal_new_spawn"],Item:{id:warped_fungus_on_a_stick,components:{\
-    custom_data:{42datapack:3,portal_gun:{pair_type:0b,pair_link:1,color:0}},\
-    custom_model_data:4203000,item_name:'"Portal Gun"',\
-    can_place_on:{predicates:[{blocks:"#42:portal_surface"}]},unbreakable:{show_in_tooltip:0b}}}}
+    "minecraft:custom_data":{42datapack:3,portal_gun:{pair_type:0b,pair_link:1,color:0}},\
+    "minecraft:custom_model_data":4203000,\
+    "minecraft:item_name":'"Portal Gun"',\
+    "minecraft:unbreakable":{show_in_tooltip:0b},\
+    "minecraft:attribute_modifiers":{modifiers:[{type:"player.block_interaction_range",slot:"mainhand",id:"42:portal_gun",operation:"add_multiplied_total",amount:-1d}],show_in_tooltip:0b},\
+    "minecraft:can_place_on":{predicates:[{blocks:"#42:portal_surface"}]}\
+    }}}
 scoreboard players set @e[type=!player,tag=42.portal_new_spawn] 42.datapack 3
 $data modify entity @e[tag=42.portal_new_spawn,limit=1] Item.components.minecraft:custom_data.portal_gun.pair_type set value $(type)
 $data modify entity @e[tag=42.portal_new_spawn,limit=1] Item.components.minecraft:custom_data.portal_gun.pair_link set value $(id)

@@ -30,10 +30,5 @@
 		"tick": {
 			"trigger": "minecraft:tick"
 		}
-	},
-	"rewards": {
-		"recipes": [
-			"42:odm_sword_display"
-		]
 	}
 }

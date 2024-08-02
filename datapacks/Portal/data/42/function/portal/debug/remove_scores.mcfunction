@@ -23,4 +23,3 @@ scoreboard objectives remove 42.portal_skin
 scoreboard objectives remove 42.portal_lvl
 scoreboard objectives remove 42.portal_sel
 scoreboard objectives remove 42.portal_col
-team remove 42.no_col

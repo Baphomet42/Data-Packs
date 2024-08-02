@@ -12,7 +12,7 @@ scoreboard players add @e[type=cat,tag=kittycannon] kittycannon 5
 execute at @e[type=cat,scores={kittycannon=5}] run playsound minecraft:entity.cat.ambient neutral @a ~ ~ ~ 1.5
 execute at @e[type=cat,scores={kittycannon=20}] run particle explosion
 execute at @e[type=cat,scores={kittycannon=20}] run playsound minecraft:entity.generic.explode neutral @a ~ ~ ~ 2
-kill @e[type=cat,scores={kittycannon=80..}]
 tp @e[type=cat,scores={kittycannon=20..}] ~ -512 ~
+kill @e[type=cat,scores={kittycannon=80..}]
 
 schedule function 42:essentials/tick5 5t replace

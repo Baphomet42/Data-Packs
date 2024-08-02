@@ -7,7 +7,7 @@ execute if score @s 42.portal_lvl matches 1.. if score @s 42.portal_x matches 0 
 execute if entity @s[tag=!42.portal_zone_cool] as @e[tag=42.portal_id,tag=42.portal_zone_lbl_cool] run data modify entity @s text set value '{"text":"Ready"}'
 execute if entity @s[tag=42.portal_zone_cool] as @e[tag=42.portal_id,tag=42.portal_zone_lbl_cool] run data modify entity @s text set value '{"text":"On cooldown","color":"red"}'
 
-execute as @e[tag=42.portal_id,tag=42.portal_zone_lbl_extra] run data modify entity @s text set value ''
+execute as @e[tag=42.portal_id,tag=42.portal_zone_lbl_extra] run data modify entity @s text set value '""'
 
 execute if score @s 42.portal_x matches 0 if entity @s[tag=!42.portal_zone_checkpoint] as @e[tag=42.portal_id,tag=42.portal_zone_lbl_pow] run data modify entity @s text set value '{"text":"Checkpoint [Off]"}'
 execute if score @s 42.portal_x matches 0 if entity @s[tag=42.portal_zone_checkpoint] as @e[tag=42.portal_id,tag=42.portal_zone_lbl_pow] run data modify entity @s text set value '{"text":"Checkpoint [On]","color":"green"}'

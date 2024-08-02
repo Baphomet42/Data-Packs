@@ -18,7 +18,7 @@ tag @e remove 42.portal_pellet_try_kill
 execute if entity @e[tag=42.portal_pellet_kill] run tag @s add 42.portal_pellet_kill
 
 execute as @a[tag=42.portal_pellet_kill,gamemode=!spectator,gamemode=!creative] run damage @s 500 player_explosion by @e[tag=42.portal_pellet_kill,limit=1,sort=nearest]
-execute as @e[tag=42.portal_pellet_kill,tag=42.portal_cube_tp] at @s run function 42:portal/cube/fizzle 
+execute as @e[tag=42.portal_pellet_kill,tag=42.portal_cube_tp] at @s run function 42:portal/cube/fizzle
 execute as @e[tag=42.portal_pellet_kill,tag=42.portal_pellet] run function 42:portal/pellet/pellet/fizzle
 tag @e remove 42.portal_pellet_kill
 execute if block ~ ~ ~ water run function 42:portal/pellet/pellet/fizzle

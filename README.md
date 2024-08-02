@@ -321,7 +321,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
 + Datapacks are placed into a specific Minecraft world and only function within that world
 + Download one or more datapacks from `zipped datapacks`
     + The zip files in `zipped datapacks` are more stable versions and marked with a version number
-    + The folders in `datapacks` are the latest version, but may be unstable and contain bugs
+    + The folders in `datapacks` are the latest dev version, but may be unstable and contain bugs
     + Only use the packs in the correct Minecraft version
 + Place any number of datapacks into `.minecraft/saves/<World Name Here>/datapacks`
     + The final path should look something like `.minecraft/saves/New World/datapacks/Portal`
@@ -429,6 +429,16 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ------------------------------------------------------------------------------------
 
 # Changelog
+
++ Dev (Unzipped packs)
+    + **XLTT**
+        + Titans now only attack players and villagers
+    + **Essentials**
+        + `/trigger kittycannon`
+            + Now spawns a random cat variant
+            + No longer pushes entities
+    + **Historically Accurate Crafting**
+        + Uncovered the true netherite armor recipes
 
 + v0.3 Major Update (8/2/2024)
     + **IMPORTANT**
