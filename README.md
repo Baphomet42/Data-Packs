@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 1.21
+# Separate but compatible datapacks for Minecraft 1.21 - 1.21.1
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
@@ -430,7 +430,9 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ Dev (Unzipped packs)
++ v0.3.1 Minor Update (8/8/2024)
+    + **All datapacks**
+        + Supported versions: 1.21 - 1.21.1
     + **XLTT**
         + Titans now only attack players and villagers
     + **Essentials**
