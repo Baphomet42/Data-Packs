@@ -6,8 +6,8 @@
     "filter": {
         "block": [
             {
-                "namespace": "minecraft",
-                "path": "recipe/netherite_.*_smithing"
+                "namespace": "^minecraft$",
+                "path": "^recipe/netherite_.*_smithing\\.json$"
             }
         ]
     }
