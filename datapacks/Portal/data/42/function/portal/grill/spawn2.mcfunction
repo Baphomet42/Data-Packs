@@ -7,7 +7,7 @@ summon text_display ~ ~ ~ {Tags:["42.portal_grill","42.portal_grill_group","42.p
 scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_grill] 42.portal_x 1
 execute if entity @s[tag=42.portal_loader] run function 42:portal/grill/load1 with storage 42:portal loader.temp_entity
 execute if entity @s[tag=42.portal_temp2,tag=!42.portal_temp1] run scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_grill] 42.portal_x 2
-execute if entity @e[tag=42.portal_new_spawn,tag=42.portal_grill,scores={42.portal_x=2}] as @e[tag=42.portal_new_spawn,tag=42.portal_grill_group] at @s run tp @s ~ ~ ~ ~90 ~
+execute if entity @e[tag=42.portal_new_spawn,tag=42.portal_grill,scores={42.portal_x=2}] as @e[tag=42.portal_new_spawn,tag=42.portal_grill_group] at @s run rotate @s ~90 ~
 
 execute as @e[tag=42.portal_new_spawn,tag=42.portal_grill,limit=1] at @s align xyz positioned ~.5 ~ ~.5 run summon interaction ^ ^ ^ {Tags:["42.portal_grill_hit","42.portal_grill_group","42.portal_new_spawn"],width:1,height:3}
 execute as @e[tag=42.portal_new_spawn,tag=42.portal_grill,limit=1] at @s align xyz positioned ~.5 ~ ~.5 run summon interaction ^-1 ^ ^ {Tags:["42.portal_grill_hit","42.portal_grill_group","42.portal_new_spawn"],width:1,height:3}

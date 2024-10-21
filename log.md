@@ -28,6 +28,7 @@ All items given by a pack should have custom_data.42datapack equal to the id.
 + essentials - 4
 + dbd - 5
 + hvac - none
++ labs - none
 
 Minecraft namespace should be rarely used (and almost always non-replacing).
 In most cases, use the namepace 42 and follow it with the pack namespace. (Ex: 42:portal).

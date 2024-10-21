@@ -7,7 +7,7 @@ scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_cube_spawner] 42
 scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_cube_spawner] 42.portal_link -1
 
 scoreboard players operation @e[tag=42.portal_new_spawn] 42.portal_id = @s 42.portal_id
-execute at @s rotated as @e[tag=42.portal_id,tag=42.portal_turret_eye,limit=1] run tp @e[tag=42.portal_new_spawn] ~ ~ ~ ~ ~
+execute at @s rotated as @e[tag=42.portal_id,tag=42.portal_turret_eye,limit=1] as @e[tag=42.portal_new_spawn] run rotate @s ~ ~
 execute if score @s 42.portal_lvl matches 1.. run scoreboard players operation @e[tag=42.portal_new_spawn,tag=42.portal_cube_spawner] 42.portal_lvl = @s 42.portal_lvl
 scoreboard players operation @e[tag=42.portal_new_spawn,tag=42.portal_cube_spawner] 42.portal_skin = @s 42.portal_skin
 execute if entity @s[tag=42.portal_turret_off] run tag @e[tag=42.portal_new_spawn,tag=42.portal_cube_spawner] add 42.portal_cube_spawner_turret_off

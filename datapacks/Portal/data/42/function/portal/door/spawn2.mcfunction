@@ -13,7 +13,7 @@ execute if entity @s[tag=42.portal_loader] run function 42:portal/door/load with
 
 execute as @e[tag=42.portal_temp,tag=42.portal_door,scores={42.portal_x=1}] at @s run fill ~-1 ~ ~ ~1 ~2 ~ polished_blackstone_wall replace #42:portal_replace
 execute as @e[tag=42.portal_temp,tag=42.portal_door,scores={42.portal_x=2}] at @s run fill ~ ~ ~-1 ~ ~2 ~1 polished_blackstone_wall replace #42:portal_replace
-execute as @e[tag=42.portal_temp,tag=42.portal_door,scores={42.portal_x=2}] as @e[tag=42.portal_temp,tag=42.portal_door_group] at @s run tp @s ~ ~ ~ ~90 ~
+execute as @e[tag=42.portal_temp,tag=42.portal_door,scores={42.portal_x=2}] as @e[tag=42.portal_temp,tag=42.portal_door_group] at @s run rotate @s ~90 ~
 execute as @e[tag=42.portal_temp,tag=42.portal_door,scores={42.portal_x=2}] at @s run function 42:portal/door/unpower
 
 tag @e remove 42.portal_temp

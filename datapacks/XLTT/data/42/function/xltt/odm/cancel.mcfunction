@@ -1,6 +1,6 @@
 tag @s remove 42.odm_cancel
 #effect clear @s[tag=!42.odm_fly] levitation
-attribute @s generic.gravity modifier remove 42:xltt_odm_gravity
+attribute @s gravity modifier remove 42:xltt_odm_gravity
 effect clear @s[tag=!42.odm_fly] slow_falling
 stopsound @s[tag=!42.odm_fly] player item.elytra.flying
 scoreboard players set @s[tag=!42.odm_fly] 42.xltt_odm_time 0

@@ -1,4 +1,4 @@
-$execute at @s anchored eyes run summon cat ^ ^-.2 ^.2 {Tags:["kittycannon","needData"],Silent:1b,Invulnerable:1b,Sitting:1b,Age:-400,Rotation:$(Rotation),DeathLootTable:"minecraft:empty",Team:"42.no_col"}
+$execute at @s anchored eyes run summon cat ^ ^-.2 ^.2 {Tags:["kittycannon","needData"],Silent:1b,Invulnerable:1b,Sitting:1b,Age:-400,Rotation:$(Rotation),DeathLootTable:"42:empty",Team:"42.no_col"}
 
 execute store result score .random kittycannon run random value 0..10
 execute if score .random kittycannon matches 0 run return run data modify entity @e[tag=kittycannon,tag=needData,limit=1] variant set value "white"

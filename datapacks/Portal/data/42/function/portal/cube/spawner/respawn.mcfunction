@@ -18,7 +18,7 @@ $scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_cube_spawner] 4
 $scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_cube_spawner] 42.portal_link $(link)
 $scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_cube_spawner] 42.portal_skin $(skin)
 $scoreboard players set @e[tag=42.portal_new_spawn] 42.portal_id $(id)
-$execute as @e[tag=42.portal_new_spawn] at @s run tp @s ~.01 ~ ~.01 $(rotation_0) $(rotation_1)
+$execute as @e[tag=42.portal_new_spawn] run rotate @s $(rotation_0) $(rotation_1)
 
 execute if data storage 42:portal loader.temp_entity.tag_spawn_cube1 run tag @e[tag=42.portal_new_spawn,tag=42.portal_cube_spawner] add 42.portal_spawn_cube1
 execute if data storage 42:portal loader.temp_entity.tag_spawn_cube1old run tag @e[tag=42.portal_new_spawn,tag=42.portal_cube_spawner] add 42.portal_spawn_cube1old

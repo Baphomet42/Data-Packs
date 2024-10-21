@@ -1,6 +1,5 @@
 data remove storage 42:portal loader.temp_entity
 
-tp @s ~-.01 ~ ~-.01
 execute store result storage 42:portal loader.temp_entity.pos_x double .001 run data get entity @s Pos[0] 1000
 execute store result storage 42:portal loader.temp_entity.pos_y double .001 run data get entity @s Pos[1] 1000
 execute store result storage 42:portal loader.temp_entity.pos_z double .001 run data get entity @s Pos[2] 1000

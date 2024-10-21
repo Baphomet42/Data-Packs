@@ -3,7 +3,7 @@ execute align xyz positioned ~.5 ~.5 ~.5 run summon block_display ~ ~ ~ {Tags:["
 $scoreboard players set @e[tag=42.portal_new_spawn] 42.portal_link $(link)
 $scoreboard players set @e[tag=42.portal_new_spawn] 42.portal_lvl $(lvl)
 $scoreboard players set @e[tag=42.portal_new_spawn,tag=!42.portal_wire_lbl] 42.portal_z $(z)
-$execute as @e[tag=42.portal_new_spawn] at @s run tp @s ~ ~ ~ $(rotation_0) $(rotation_1)
+$execute as @e[tag=42.portal_new_spawn] at @s run rotate @s $(rotation_0) $(rotation_1)
 scoreboard players set @e[type=!player,tag=42.portal_new_spawn] 42.datapack 3
 
 $scoreboard players set @e[tag=42.portal_new_spawn,tag=!42.portal_wire_lbl] 42.portal_skin $(skin)
