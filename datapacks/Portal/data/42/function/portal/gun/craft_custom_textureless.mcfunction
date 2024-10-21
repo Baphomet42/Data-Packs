@@ -13,4 +13,8 @@ execute as @e[tag=42.portal_new_spawn] if items entity @s contents *[custom_data
 execute as @e[tag=42.portal_new_spawn] if items entity @s contents *[custom_data~{portal_gun:{pair_type:1}}] run data modify entity @s Item.components.minecraft:custom_data.portal_gun.pair_type set value 1b
 execute as @e[tag=42.portal_new_spawn] if items entity @s contents *[custom_data~{portal_gun:{pair_type:1b}}] run data modify entity @s Item.id set value "carrot_on_a_stick"
 execute as @e[tag=42.portal_new_spawn] run function 42:portal/gun/setup_look
+
+execute as @e[tag=42.portal_new_spawn] if items entity @s contents *[custom_data~{portal_gun:{pair_type:0b}}] run data modify entity @s Item.components.minecraft:item_model set value "warped_fungus_on_a_stick"
+execute as @e[tag=42.portal_new_spawn] if items entity @s contents *[custom_data~{portal_gun:{pair_type:1b}}] run data modify entity @s Item.components.minecraft:item_model set value "carrot_on_a_stick"
+
 tag @e remove 42.portal_new_spawn

@@ -1,6 +1,5 @@
 # keep consistent with gun/particle, gun/setup_look, gun/use, portal/particle, portal/set_name, portal/set_color_dis, portal/set_back_color_dis
 
-data modify entity @s block_state.Name set value white_stained_glass
 execute if score @s 42.portal_skin matches 0 run return run data modify entity @s block_state.Name set value white_stained_glass
 execute if score @s 42.portal_skin matches 1 run return run data modify entity @s block_state.Name set value light_gray_stained_glass
 execute if score @s 42.portal_skin matches 2 run return run data modify entity @s block_state.Name set value gray_stained_glass
@@ -18,3 +17,5 @@ execute if score @s 42.portal_skin matches 13 run return run data modify entity 
 execute if score @s 42.portal_skin matches 14 run return run data modify entity @s block_state.Name set value magenta_stained_glass
 execute if score @s 42.portal_skin matches 15 run return run data modify entity @s block_state.Name set value pink_stained_glass
 execute if score @s 42.portal_skin matches 16 run return run data modify entity @s block_state.Name set value tinted_glass
+
+data modify entity @s block_state.Name set value white_stained_glass

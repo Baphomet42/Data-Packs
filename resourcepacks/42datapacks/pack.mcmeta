@@ -1,7 +1,13 @@
 {
 	"pack": {
 		"pack_format": 42,
-		"supported_formats": [18,99],
+		"supported_formats": [18,999],
 		"description": "42datapack resources"
+	},
+	"overlays": {
+		"entries": [
+			{"directory": "xltt", "formats": [18,999]},
+			{"directory": "portal", "formats": [18,999]}
+		]
 	}
 }

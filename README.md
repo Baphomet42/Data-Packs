@@ -319,14 +319,14 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ### **Setup**
 
 + Datapacks are placed into a specific Minecraft world and only function within that world
-+ Download one or more datapacks from `zipped datapacks`
-    + The zip files in `zipped datapacks` are more stable versions and marked with a version number
-    + The folders in `datapacks` are the latest dev version, but may be unstable and contain bugs
++ Download one or more datapacks from `stable releases/datapacks/`
+    + The zip files in `stable releases/datapacks/` are more stable versions and marked with a version number
+    + The folders in `datapacks/` are the latest dev version, but may be unstable and contain bugs
     + Only use the packs in the correct Minecraft version
-+ Place any number of datapacks into `.minecraft/saves/<World Name Here>/datapacks`
-    + The final path should look something like `.minecraft/saves/New World/datapacks/Portal`
++ Place any number of datapacks into `.minecraft/saves/<World Name Here>/datapacks/`
+    + The final path should look something like `.minecraft/saves/New World/datapacks/Portal v0.0 mc1.20.zip`
     + If the world is running while the folder is placed, use the `/reload` command
-+ To enable custom textures, follow the Resource Pack setup below (optional)
++ To enable custom textures for applicable datapacks, follow the Resource Pack setup below
 
 ### **Important**
 
@@ -398,17 +398,25 @@ For datapack testing purposes only. Everything is experimental and may not be up
 + For datapacks: Portal, XLTT
 + Note: No vanilla textures are overridden
 
-### **Setup** (do only one of the following)
+### **Setup**
 
-+ a- Place `resources.zip` into the world save
-    + Textures will load automatically each time you join the world
-    + Textures will not work outside the world
-    + All players will automatically see the textures
-+ b- Place `42datapacks` from `resourcepacks` into `.minecraft/resourcepacks` and enable it ingame
-    + Textures will load when enabled in Resource Pack Settings
-    + Textures will stay loaded outside the specific world
-        + No vanilla textures are overridden, so the pack will have no effect without the datapack also loaded
-    + Only players who add the resource pack will see the textures
++ Download pack at `stable releases/resources.zip`
+    + There is only one resource pack that handles all datapacks
+    + For the latest dev version, use `resources.zip` or `resourcepacks/42datapacks` in the main repo folder
+        + The Resource Pack folder at `resourcepacks/42datapacks` will not work in a world save unless its contents are zipped and renamed to `resources.zip`
+
++ Install pack (do only one of the following)
+    + a- Place `resources.zip` into the world save
+        + Textures will load automatically each time you join the world
+        + Textures will not work outside the world
+        + All players will automatically see the textures
+        + The file must remain zipped and be named exactly `resources.zip`
+    + b- Place the Resource Pack into `.minecraft/resourcepacks/` and enable it in the ingame settings
+        + Textures will load when enabled in Resource Pack Settings
+        + Textures will stay loaded outside the specific world
+            + No vanilla textures are overridden, so the pack will have no effect without the datapack also loaded
+        + Only players who add the resource pack will see the textures
+        + You can rename or unzip the Resource Pack for convenience
 
 **Portal Resources**
 
@@ -429,6 +437,20 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ------------------------------------------------------------------------------------
 
 # Changelog
+
++ Dev (current repo)
+    + **Portal**
+        + Resource pack is now required
+            + Now fully compatible with external packs
+            + Playing without the pack will cause the Portal Gun items to have a missing texture
+        + Portal Gun items must be replaced with the new versions from 42menu
+            + The old items will still work but without a custom texture
+    + **XLTT**
+        + Resource pack is now required
+            + Now fully compatible with external packs
+            + Playing without the pack will cause the O.D.M. Sword items to have a missing texture
+        + O.D.M. Sword items must be replaced with the new version from 42menu
+            + The old items will still work but without a custom texture
 
 + v0.4 Major Update (10/20/2024)
     + **IMPORTANT**
