@@ -1,7 +1,7 @@
 tag @e remove 42.xltt_temp_spawn
 
 summon vindicator ~ ~ ~ {Tags:["42.xltt_titan","42.xltt_titan_group","42.xltt_temp_spawn"],PersistenceRequired:1b,DeathLootTable:"42:empty",Invulnerable:1b,attributes:[{id:"minecraft:follow_range",base:128d},{id:"minecraft:movement_speed",base:.42d},{id:"minecraft:attack_damage",base:45d}]}
-summon armor_stand ~ ~8 ~ {Tags:["42.xltt_titan_hit_tp","42.xltt_titan_group","42.xltt_temp_spawn"],Invisible:1b,Marker:1b,Small:1b,Passengers:[{id:interaction,Tags:["42.xltt_titan_hit","42.xltt_titan_group","42.xltt_temp_spawn"],width:3.5,height:1.5}]}
+summon item_display ~ ~8 ~ {Tags:["42.xltt_titan_hit_tp","42.xltt_titan_group","42.xltt_temp_spawn"],view_range:0f,Passengers:[{id:interaction,Tags:["42.xltt_titan_hit","42.xltt_titan_group","42.xltt_temp_spawn"],width:3.5,height:1.5}]}
 
 attribute @e[tag=42.xltt_temp_spawn,tag=42.xltt_titan,limit=1] scale base set 6
 

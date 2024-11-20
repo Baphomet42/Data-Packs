@@ -1,5 +1,5 @@
 tag @e remove 42.portal_temp
-execute if entity @s[type=armor_stand] on passengers run tag @s add 42.portal_temp
+execute if entity @s[type=armor_stand,tag=42.portal_motion_tp] on passengers run tag @s add 42.portal_temp
 
 execute at @e[tag=42.portal_tp2] positioned ^ ^.5 ^.6 run tp @s ~ ~ ~
 execute at @e[tag=42.portal_tp2,scores={42.portal_y=0}] positioned ^ ^-.5 ^.6 run tp @s ~ ~ ~

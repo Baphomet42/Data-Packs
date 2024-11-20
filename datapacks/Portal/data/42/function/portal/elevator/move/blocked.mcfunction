@@ -1,2 +1,2 @@
-tellraw @a {"text":"[Error] Portal Elevator was blocked.","color":"red","hoverEvent":{"action":"show_text","contents":[{"text":"Make sure there are no blocks in the 3x3 area between the elevator start and end points"}]}}
+tellraw @a {"text":"[Error] Portal Elevator was blocked.","color":"red","hoverEvent":{"action":"show_text","contents":"Make sure there are no blocks in the 3x3 area between the elevator start and end points"}}
 function 42:portal/elevator/reset

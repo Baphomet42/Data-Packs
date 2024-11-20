@@ -1,7 +1,7 @@
 function 42:portal/tag_id
 tag @e remove 42.portal_new_spawn
-summon block_display ~ ~ ~ {Tags:["42.portal_new_spawn","42.portal_cube_spawner","42.portal_cube_spawner_group","42.portal_is_spawner"],CustomNameVisible:0b,CustomName:'{"text":"Cube Spawner"}',block_state:{Name:ice},view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-.45f,.05f,-.45f],scale:[.9f,.9f,.9f]},Passengers:[\
-    {id:text_display,Tags:["42.portal_new_spawn","42.portal_cube_spawner_lbl","42.portal_cube_spawner_group"],CustomNameVisible:0b,CustomName:'{"text":"42portal"}',text:'{"text":"Cube Spawner"}',see_through:true,billboard:vertical,view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,.125f,0f],scale:[1f,1f,1f]}}]}
+summon block_display ~ ~ ~ {Tags:["42.portal_new_spawn","42.portal_cube_spawner","42.portal_cube_spawner_group","42.portal_is_spawner"],CustomNameVisible:0b,CustomName:'"Cube Spawner"',block_state:{Name:ice},view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-.45f,.05f,-.45f],scale:[.9f,.9f,.9f]},Passengers:[\
+    {id:text_display,Tags:["42.portal_new_spawn","42.portal_cube_spawner_lbl","42.portal_cube_spawner_group"],CustomNameVisible:0b,CustomName:'"42portal"',text:'"Cube Spawner"',see_through:true,billboard:vertical,view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,.125f,0f],scale:[1f,1f,1f]}}]}
 scoreboard players set @e[type=!player,tag=42.portal_new_spawn] 42.datapack 3
 scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_cube_spawner] 42.portal_lvl -1
 scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_cube_spawner] 42.portal_link -1

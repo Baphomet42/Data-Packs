@@ -3,7 +3,9 @@ tag @e remove 42.portal_turret_target2
 tag @e remove 42.portal_turret_current
 tag @e remove 42.portal_turret_this
 tag @s add 42.portal_turret_this
-scoreboard players remove 42.portal_max_turret_lasers 42.portal_id 1
+
+# TODO
+#scoreboard players remove 42.portal_max_turret_lasers 42.portal_id 1
 
 tag @a[distance=..42,gamemode=!spectator] add 42.portal_turret_target
 tag @e[distance=..42,type=villager] add 42.portal_turret_target

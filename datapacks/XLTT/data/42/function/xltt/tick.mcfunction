@@ -2,8 +2,8 @@ execute as @a unless score @s 42.xltt_id matches 1.. run function 42:xltt/id
 
 # odm
 execute as @a[scores={42.xltt_click=1..}] if items entity @s weapon.* *[custom_data~{42xltt_odm:1b}] at @s run function 42:xltt/odm/use
-execute as @a[predicate=42:is_sneaking] if items entity @s weapon.* *[custom_data~{42xltt_odm:1b}] at @s run function 42:xltt/odm/attempt_pull
-execute as @a[tag=42.odm_lev,predicate=!42:is_sneaking] at @s run function 42:xltt/odm/cancel
+execute as @a[predicate=42:input_sneak] if items entity @s weapon.* *[custom_data~{42xltt_odm:1b}] at @s run function 42:xltt/odm/attempt_pull
+execute as @a[tag=42.odm_lev,predicate=!42:input_sneak] at @s run function 42:xltt/odm/cancel
 execute as @e[type=marker,tag=42.odm_wire,tag=!42.odm_hit] at @s run function 42:xltt/odm/find_target
 execute as @e[type=marker,tag=42.odm_wire,tag=42.odm_hit] at @s run function 42:xltt/odm/attempt_break
 execute as @e[tag=42.odm_marker] at @s run function 42:xltt/odm/attempt_marker_stop

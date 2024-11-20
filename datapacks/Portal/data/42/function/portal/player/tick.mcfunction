@@ -12,3 +12,6 @@ execute positioned ~ ~1.75 ~ run function 42:portal/generic/entity_col/test_1p
 tag @e[tag=42.portal_grill_hit,scores={42.portal_col=2}] add 42.portal_temp
 execute if entity @e[tag=42.portal_temp] run function 42:portal/grill/handle_player
 tag @e remove 42.portal_temp
+
+tag @e[tag=42.portal_elevator_start,distance=..15] add 42.portal_prox_tick
+tag @e[tag=42.portal_zone,distance=..15] add 42.portal_prox_tick

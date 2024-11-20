@@ -1,10 +1,10 @@
-execute store result score @s 42.essentials_x1 run data get entity @s Pos[0] 1000
-execute store result score @s 42.essentials_y1 run data get entity @s Pos[1] 1000
-execute store result score @s 42.essentials_z1 run data get entity @s Pos[2] 1000
+execute store result score #x1 kittycannon run data get entity @s Pos[0] 1000
+execute store result score #y1 kittycannon run data get entity @s Pos[1] 1000
+execute store result score #z1 kittycannon run data get entity @s Pos[2] 1000
 execute at @s run tp @s ^ ^ ^.1
-execute store result score @s 42.essentials_x2 run data get entity @s Pos[0] 1000
-execute store result score @s 42.essentials_y2 run data get entity @s Pos[1] 1000
-execute store result score @s 42.essentials_z2 run data get entity @s Pos[2] 1000
-execute store result entity @s Motion[0] double .03 run scoreboard players operation @s 42.essentials_x2 -= @s 42.essentials_x1
-execute store result entity @s Motion[1] double .03 run scoreboard players operation @s 42.essentials_y2 -= @s 42.essentials_y1
-execute store result entity @s Motion[2] double .03 run scoreboard players operation @s 42.essentials_z2 -= @s 42.essentials_z1
+execute store result score #x2 kittycannon run data get entity @s Pos[0] 1000
+execute store result score #y2 kittycannon run data get entity @s Pos[1] 1000
+execute store result score #z2 kittycannon run data get entity @s Pos[2] 1000
+execute store result entity @s Motion[0] double .03 run scoreboard players operation #x2 kittycannon -= #x1 kittycannon
+execute store result entity @s Motion[1] double .03 run scoreboard players operation #y2 kittycannon -= #y1 kittycannon
+execute store result entity @s Motion[2] double .03 run scoreboard players operation #z2 kittycannon -= #z1 kittycannon

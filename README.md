@@ -23,6 +23,7 @@ Most packs are proof of concepts and not intended for existing worlds.
     + Setup
     + Descriptions
 + [Changelog](#changelog)
++ [Contact](#contact)
 
 ------------------------------------------------------------------------------------
 
@@ -387,8 +388,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 + Something else?
     + Make sure to read this whole file to see if that answers the question
-    + You can ask questions on the Planet Minecraft links in the showcases section above
-    + You can also message me on discord for help (baphomet42)
+    + See contact section below for more
 
 ------------------------------------------------------------------------------------
 
@@ -439,6 +439,9 @@ For datapack testing purposes only. Everything is experimental and may not be up
 # Changelog
 
 + Dev (current repo)
+    + **All datapacks**
+        + Large performance boosts
+        + Fixed various bugs
     + **Portal**
         + Resource pack is now required
             + Now fully compatible with external packs
@@ -509,6 +512,15 @@ For datapack testing purposes only. Everything is experimental and may not be up
     + **XLTT**
         + O.D.M. movement changed
             + Boosting while free falling will now take initial gravity into account
+
+------------------------------------------------------------------------------------
+
+# Contact
+
++ For questions, feedback, etc:
+    + Make sure to first read through this entire file to see if it answers the question
+    + You can ask questions or leave feedback on the Planet Minecraft links in the showcases section above
+    + You can also message me on discord (baphomet42)
 
 ------------------------------------------------------------------------------------
 
