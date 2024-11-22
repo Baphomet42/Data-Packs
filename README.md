@@ -439,15 +439,25 @@ For datapack testing purposes only. Everything is experimental and may not be up
 # Changelog
 
 + Dev (current repo)
+    + **IMPORTANT**
+        + Before updating existing worlds with the datapacks:
+            + Full reinstall is recommended
+                + Use the datapack features to remove all items/entities/etc
+                + Remove all objectives and teams
+                + Delete all storage data
+            + Remove all 42datapacks and replace them with the current versions
+        + Large backend rewrites to improve performance and consistency will break all entities from previous datapack versions
     + **All datapacks**
         + Large performance boosts
-        + Fixed various bugs
+            + General MSPT improvements and better scalability
+        + Fixed a ton of bugs
     + **Portal**
         + Resource pack is now required
             + Now fully compatible with external packs
             + Playing without the pack will cause the Portal Gun items to have a missing texture
         + Portal Gun items must be replaced with the new versions from 42menu
             + The old items will still work but without a custom texture
+        + Considerably more turrets and other physics objects can exist at the same time before slowing the tick rate
     + **XLTT**
         + Resource pack is now required
             + Now fully compatible with external packs

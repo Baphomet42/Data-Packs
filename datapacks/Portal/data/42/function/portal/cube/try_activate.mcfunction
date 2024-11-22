@@ -1,3 +1,4 @@
+#TODO optimize cube activation color
 execute if entity @s[tag=42.portal_cube1] as @e[tag=42.portal_id,tag=42.portal_cube_color] run data modify entity @s block_state.Name set value light_blue_concrete_powder
 execute if entity @s[tag=42.portal_cube2] as @e[tag=42.portal_id,tag=42.portal_cube_color] run data modify entity @s block_state.Name set value pink_concrete_powder
 execute at @e[tag=42.portal_btn,distance=..3] positioned ~-.875 ~-.625 ~-.875 if entity @s[dx=.75,dy=0,dz=.75] as @e[tag=42.portal_id,tag=42.portal_cube_color] run data modify entity @s block_state.Name set value yellow_concrete_powder

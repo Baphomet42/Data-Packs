@@ -1,5 +1,7 @@
 scoreboard players add @s 42.portal_cool 1
+
 execute store result score 42.portal 42.portal_temp run data get entity @s Motion[1] 100
+#TODO optimize with movement predicate
 execute if score 42.portal 42.portal_temp matches -10..10 if score @s 42.portal_cool matches 60.. run function 42:portal/elevator/move/blocked
 
 execute if score @s 42.portal_x matches 1.. run effect give @e[tag=42.portal_temp] levitation 1 2 true

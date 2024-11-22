@@ -1,12 +1,12 @@
-scoreboard players set 42.portal_music_tick 42.portal_id 0
-scoreboard players add 42.portal 42.portal_xrot1 1
-execute if score 42.portal 42.portal_xrot1 matches 128.. run scoreboard players set 42.portal 42.portal_xrot1 0
+scoreboard players add #music_time 42.portal_id 1
+execute if score #music_time 42.portal_id matches 128.. run scoreboard players set #music_time 42.portal_id 0
 
-scoreboard players operation @s 42.portal_xrot2 = 42.portal 42.portal_xrot1
-scoreboard players set @s 42.portal_x 2
-scoreboard players operation @s 42.portal_xrot2 %= @s 42.portal_x
+scoreboard players operation #music_calc 42.portal_id = #music_time 42.portal_id
+scoreboard players operation #music_calc 42.portal_id %= #num_2 42.portal_const
 
-execute if score @s 42.portal_xrot2 matches 0 at @e[tag=42.portal_radio] run function 42:portal/cube/radio/loop/bit
-execute if score @s 42.portal_xrot2 matches 0 at @e[tag=42.portal_radio] run function 42:portal/cube/radio/loop/bass
-execute if score @s 42.portal_xrot2 matches 0 at @e[tag=42.portal_radio] run function 42:portal/cube/radio/loop/basedrum
-execute if score @s 42.portal_xrot2 matches 0 at @e[tag=42.portal_radio] run function 42:portal/cube/radio/loop/guitar
+execute unless score #music_calc 42.portal_id matches 0 run return 0
+
+function 42:portal/cube/radio/loop/bit
+function 42:portal/cube/radio/loop/bass
+function 42:portal/cube/radio/loop/basedrum
+function 42:portal/cube/radio/loop/guitar

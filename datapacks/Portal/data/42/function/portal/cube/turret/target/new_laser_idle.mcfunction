@@ -4,7 +4,7 @@ summon marker ~ ~ ~ {Tags:["42.portal_turret_laser","42.portal_turret_laser_dis"
 scoreboard players set @e[type=!player,tag=42.portal_turret_laser] 42.datapack 3
 execute at @e[tag=42.portal_turret_eye,tag=42.portal_id] positioned ^ ^1 ^.25 run tp @e[tag=42.portal_turret_laser] ~ ~ ~ ~ ~
 scoreboard players set @e[tag=42.portal_turret_laser] 42.portal_time 50
-execute as @e[tag=42.portal_turret_laser] at @s run function 42:portal/cube/turret/target/laser_move_dis_oracle
+execute as @e[tag=42.portal_turret_laser] at @s run function 42:portal/cube/turret/target/laser_move_dis_idle
 kill @e[tag=42.portal_turret_laser]
 
 tag @e remove 42.portal_id

@@ -35,4 +35,4 @@ execute if score @s 42.portal_yrot2 matches -60000..60000 run tag @s add 42.port
 execute if entity @s[tag=42.portal_temp1,tag=42.portal_temp2] at @s run function 42:portal/cube/turret/target/valid
 tag @e remove 42.portal_temp1
 tag @e remove 42.portal_temp2
-kill @e[tag=42.portal_turret_laser]
+kill @e[tag=42.portal_turret_laser,limit=1]

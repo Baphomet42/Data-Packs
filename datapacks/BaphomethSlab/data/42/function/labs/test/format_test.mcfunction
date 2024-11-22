@@ -1,2 +1,2 @@
-say normal
-    say indented
+tellraw @a "normal"
+    tellraw @a "indented"

@@ -33,7 +33,7 @@ execute if score @s 42menu matches 4203531 as @e[tag=42.portal_selected,tag=42.p
 execute if score @s 42menu matches 4203532 if entity @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_cube1] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203532 if entity @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_cube2] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203532 as @e[tag=42.portal_selected,tag=42.portal_cube_tp] at @s run function 42:portal/cube/rotate
-execute if score @s 42menu matches 4203533 as @e[tag=42.portal_selected,tag=42.portal_cube_tp] at @s run scoreboard players set 42.portal 42.portal_xrot1 0
+execute if score @s 42menu matches 4203533 as @e[tag=42.portal_selected,tag=42.portal_cube_tp] at @s run scoreboard players set #music_time 42.portal_id 0
 execute if score @s 42menu matches 4203534 as @e[tag=42.portal_selected,tag=42.portal_cube_tp] at @s run function 42:portal/cube/spawner/new
 
 execute if score @s 42menu matches 4203540..4203549 unless entity @e[tag=42.portal_selected,tag=42.portal_cube_tp,tag=42.portal_turret] run function 42:portal/tools/sel_error

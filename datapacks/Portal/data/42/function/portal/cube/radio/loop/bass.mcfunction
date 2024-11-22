@@ -1,16 +1,15 @@
-scoreboard players operation @s 42.portal_xrot1 = 42.portal 42.portal_xrot1
-scoreboard players set @s 42.portal_x 64
-scoreboard players operation @s 42.portal_xrot1 %= @s 42.portal_x
+scoreboard players operation #music_calc 42.portal_id = #music_time 42.portal_id
+scoreboard players operation #music_calc 42.portal_id %= #num_64 42.portal_const
 
-execute if score @s 42.portal_xrot1 matches 0 run playsound block.note_block.bass record @a ~ ~ ~ .75 .890899
-execute if score @s 42.portal_xrot1 matches 8 run playsound block.note_block.bass record @a ~ ~ ~ .75 1
-execute if score @s 42.portal_xrot1 matches 16 run playsound block.note_block.bass record @a ~ ~ ~ .75 1.059463
-execute if score @s 42.portal_xrot1 matches 22 run playsound block.note_block.bass record @a ~ ~ ~ .75 1.334840
-execute if score @s 42.portal_xrot1 matches 26 run playsound block.note_block.bass record @a ~ ~ ~ .75 1.334840
-execute if score @s 42.portal_xrot1 matches 28 run playsound block.note_block.bass record @a ~ ~ ~ .75 1.189207
-execute if score @s 42.portal_xrot1 matches 32 run playsound block.note_block.bass record @a ~ ~ ~ .75 1
-execute if score @s 42.portal_xrot1 matches 40 run playsound block.note_block.bass record @a ~ ~ ~ .75 1.059463
-execute if score @s 42.portal_xrot1 matches 48 run playsound block.note_block.bass record @a ~ ~ ~ .75 1.189207
-execute if score @s 42.portal_xrot1 matches 54 run playsound block.note_block.bass record @a ~ ~ ~ .75 1.334840
-execute if score @s 42.portal_xrot1 matches 58 run playsound block.note_block.bass record @a ~ ~ ~ .75 1.334840
-execute if score @s 42.portal_xrot1 matches 60 run playsound block.note_block.bass record @a ~ ~ ~ .75 1.189207
+execute if score #music_calc 42.portal_id matches 0 at @e[tag=42.portal_radio] run return run playsound block.note_block.bass record @a ~ ~ ~ .75 .890899
+execute if score #music_calc 42.portal_id matches 8 at @e[tag=42.portal_radio] run return run playsound block.note_block.bass record @a ~ ~ ~ .75 1
+execute if score #music_calc 42.portal_id matches 16 at @e[tag=42.portal_radio] run return run playsound block.note_block.bass record @a ~ ~ ~ .75 1.059463
+execute if score #music_calc 42.portal_id matches 22 at @e[tag=42.portal_radio] run return run playsound block.note_block.bass record @a ~ ~ ~ .75 1.334840
+execute if score #music_calc 42.portal_id matches 26 at @e[tag=42.portal_radio] run return run playsound block.note_block.bass record @a ~ ~ ~ .75 1.334840
+execute if score #music_calc 42.portal_id matches 28 at @e[tag=42.portal_radio] run return run playsound block.note_block.bass record @a ~ ~ ~ .75 1.189207
+execute if score #music_calc 42.portal_id matches 32 at @e[tag=42.portal_radio] run return run playsound block.note_block.bass record @a ~ ~ ~ .75 1
+execute if score #music_calc 42.portal_id matches 40 at @e[tag=42.portal_radio] run return run playsound block.note_block.bass record @a ~ ~ ~ .75 1.059463
+execute if score #music_calc 42.portal_id matches 48 at @e[tag=42.portal_radio] run return run playsound block.note_block.bass record @a ~ ~ ~ .75 1.189207
+execute if score #music_calc 42.portal_id matches 54 at @e[tag=42.portal_radio] run return run playsound block.note_block.bass record @a ~ ~ ~ .75 1.334840
+execute if score #music_calc 42.portal_id matches 58 at @e[tag=42.portal_radio] run return run playsound block.note_block.bass record @a ~ ~ ~ .75 1.334840
+execute if score #music_calc 42.portal_id matches 60 at @e[tag=42.portal_radio] run return run playsound block.note_block.bass record @a ~ ~ ~ .75 1.189207

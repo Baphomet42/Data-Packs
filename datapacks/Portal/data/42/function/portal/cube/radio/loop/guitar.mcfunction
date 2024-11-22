@@ -1,44 +1,43 @@
-scoreboard players operation @s 42.portal_xrot1 = 42.portal 42.portal_xrot1
-scoreboard players set @s 42.portal_x 128
-scoreboard players operation @s 42.portal_xrot1 %= @s 42.portal_x
+scoreboard players operation #music_calc 42.portal_id = #music_time 42.portal_id
+scoreboard players operation #music_calc 42.portal_id %= #num_128 42.portal_const
 
-execute if score @s 42.portal_xrot1 matches 0 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.793701
-execute if score @s 42.portal_xrot1 matches 0 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.587401
-execute if score @s 42.portal_xrot1 matches 24 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.529732
-execute if score @s 42.portal_xrot1 matches 24 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.059463
-execute if score @s 42.portal_xrot1 matches 26 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1
-execute if score @s 42.portal_xrot1 matches 26 run playsound block.note_block.guitar record @a ~ ~ ~ .75 2
-execute if score @s 42.portal_xrot1 matches 30 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.890899
-execute if score @s 42.portal_xrot1 matches 30 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1
-execute if score @s 42.portal_xrot1 matches 36 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1
-execute if score @s 42.portal_xrot1 matches 36 run playsound block.note_block.guitar record @a ~ ~ ~ .75 2
-execute if score @s 42.portal_xrot1 matches 56 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.529732
-execute if score @s 42.portal_xrot1 matches 56 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.059463
-execute if score @s 42.portal_xrot1 matches 58 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1
-execute if score @s 42.portal_xrot1 matches 58 run playsound block.note_block.guitar record @a ~ ~ ~ .75 2
-execute if score @s 42.portal_xrot1 matches 62 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.890899
-execute if score @s 42.portal_xrot1 matches 62 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.781797
-execute if score @s 42.portal_xrot1 matches 68 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1
-execute if score @s 42.portal_xrot1 matches 68 run playsound block.note_block.guitar record @a ~ ~ ~ .75 2
-execute if score @s 42.portal_xrot1 matches 72 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.793701
-execute if score @s 42.portal_xrot1 matches 72 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.587401
-execute if score @s 42.portal_xrot1 matches 76 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.890899
-execute if score @s 42.portal_xrot1 matches 76 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.781797
-execute if score @s 42.portal_xrot1 matches 78 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.594604
-execute if score @s 42.portal_xrot1 matches 78 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.189207
-execute if score @s 42.portal_xrot1 matches 96 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.890899
-execute if score @s 42.portal_xrot1 matches 96 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.781797
-execute if score @s 42.portal_xrot1 matches 100 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1
-execute if score @s 42.portal_xrot1 matches 100 run playsound block.note_block.guitar record @a ~ ~ ~ .75 2
-execute if score @s 42.portal_xrot1 matches 102 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.529732
-execute if score @s 42.portal_xrot1 matches 102 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.059463
-execute if score @s 42.portal_xrot1 matches 106 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.890899
-execute if score @s 42.portal_xrot1 matches 106 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.781797
-execute if score @s 42.portal_xrot1 matches 112 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.749154
-execute if score @s 42.portal_xrot1 matches 112 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.498307
-execute if score @s 42.portal_xrot1 matches 116 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.793701
-execute if score @s 42.portal_xrot1 matches 116 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.587401
-execute if score @s 42.portal_xrot1 matches 118 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.890899
-execute if score @s 42.portal_xrot1 matches 118 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.781797
-execute if score @s 42.portal_xrot1 matches 122 run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.594604
-execute if score @s 42.portal_xrot1 matches 122 run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.189207
+execute if score #music_calc 42.portal_id matches 0 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.793701
+execute if score #music_calc 42.portal_id matches 0 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.587401
+execute if score #music_calc 42.portal_id matches 24 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.529732
+execute if score #music_calc 42.portal_id matches 24 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.059463
+execute if score #music_calc 42.portal_id matches 26 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 1
+execute if score #music_calc 42.portal_id matches 26 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 2
+execute if score #music_calc 42.portal_id matches 30 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.890899
+execute if score #music_calc 42.portal_id matches 30 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1
+execute if score #music_calc 42.portal_id matches 36 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 1
+execute if score #music_calc 42.portal_id matches 36 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 2
+execute if score #music_calc 42.portal_id matches 56 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.529732
+execute if score #music_calc 42.portal_id matches 56 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.059463
+execute if score #music_calc 42.portal_id matches 58 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 1
+execute if score #music_calc 42.portal_id matches 58 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 2
+execute if score #music_calc 42.portal_id matches 62 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.890899
+execute if score #music_calc 42.portal_id matches 62 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.781797
+execute if score #music_calc 42.portal_id matches 68 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 1
+execute if score #music_calc 42.portal_id matches 68 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 2
+execute if score #music_calc 42.portal_id matches 72 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.793701
+execute if score #music_calc 42.portal_id matches 72 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.587401
+execute if score #music_calc 42.portal_id matches 76 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.890899
+execute if score #music_calc 42.portal_id matches 76 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.781797
+execute if score #music_calc 42.portal_id matches 78 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.594604
+execute if score #music_calc 42.portal_id matches 78 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.189207
+execute if score #music_calc 42.portal_id matches 96 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.890899
+execute if score #music_calc 42.portal_id matches 96 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.781797
+execute if score #music_calc 42.portal_id matches 100 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 1
+execute if score #music_calc 42.portal_id matches 100 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 2
+execute if score #music_calc 42.portal_id matches 102 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.529732
+execute if score #music_calc 42.portal_id matches 102 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.059463
+execute if score #music_calc 42.portal_id matches 106 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.890899
+execute if score #music_calc 42.portal_id matches 106 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.781797
+execute if score #music_calc 42.portal_id matches 112 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.749154
+execute if score #music_calc 42.portal_id matches 112 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.498307
+execute if score #music_calc 42.portal_id matches 116 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.793701
+execute if score #music_calc 42.portal_id matches 116 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.587401
+execute if score #music_calc 42.portal_id matches 118 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.890899
+execute if score #music_calc 42.portal_id matches 118 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.781797
+execute if score #music_calc 42.portal_id matches 122 at @e[tag=42.portal_radio] run playsound block.note_block.guitar record @a ~ ~ ~ .75 0.594604
+execute if score #music_calc 42.portal_id matches 122 at @e[tag=42.portal_radio] run return run playsound block.note_block.guitar record @a ~ ~ ~ .75 1.189207

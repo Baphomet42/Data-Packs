@@ -6,6 +6,7 @@ tp @s ~ ~ ~
 scoreboard players operation @s 42.portal_x = @e[tag=42.portal_launch,limit=1,sort=nearest,distance=..5] 42.portal_x
 scoreboard players operation @s 42.portal_z = @e[tag=42.portal_launch,limit=1,sort=nearest,distance=..5] 42.portal_z
 scoreboard players set @s 42.portal_cool 0
+
 execute store result entity @s Motion[0] double .001 run scoreboard players get @e[tag=42.portal_launch,limit=1,sort=nearest,distance=..5] 42.portal_x
 execute store result entity @s Motion[1] double .001 run scoreboard players get @e[tag=42.portal_launch,limit=1,sort=nearest,distance=..5] 42.portal_y
 execute store result entity @s Motion[2] double .001 run scoreboard players get @e[tag=42.portal_launch,limit=1,sort=nearest,distance=..5] 42.portal_z

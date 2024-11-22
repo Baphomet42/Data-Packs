@@ -1,6 +1,6 @@
 function 42:xltt/tag_id
 
-execute positioned ~ ~8 ~ rotated ~ 0 run tp @e[type=item_display,tag=42.xltt_id,tag=42.xltt_titan_hit_tp,limit=1] ^ ^ ^-1
+execute positioned ~ ~8 ~ rotated ~ 0 run tp @e[type=item_display,tag=42.xltt_id,tag=42.xltt_titan_hit_tp,limit=1] ^ ^ ^-.66
 execute if entity @s[scores={42.xltt_titan_time=3},predicate=42:titan_speed_test,nbt={OnGround:1b}] at @s run playsound entity.hoglin.step hostile @a ~ ~ ~ 4 .5
 data modify entity @s Fire set value 0s
 

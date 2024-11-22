@@ -1,2 +1,0 @@
-execute if score 42.portal_music_tick 42.portal_id matches 1 run function 42:portal/cube/radio/music
-execute if entity @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=42.portal_cube_held] as @e[tag=42.portal_id,tag=42.portal_cube_dis] at @s rotated as @p[tag=42.portal_id] run rotate @s ~180 0

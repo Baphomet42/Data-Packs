@@ -1,0 +1,13 @@
+{
+    "condition": "location_check",
+    "predicate": {
+        "fluid": {
+            "fluids": [
+                "minecraft:water",
+                "minecraft:flowing_water",
+                "minecraft:lava",
+                "minecraft:flowing_lava"
+            ]
+        }
+    }
+}
