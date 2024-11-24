@@ -1,18 +1,18 @@
-scoreboard players set 42.portal 42.portal_temp 0
-tag @s remove 42.portal_temp3
-execute if entity @e[scores={42.portal_link=-1}] run scoreboard players add 42.portal 42.portal_link 1
-execute if entity @e[scores={42.portal_link=-1}] run playsound minecraft:block.note_block.pling block @a ~ ~ ~ 2 1.4
-execute if entity @e[scores={42.portal_link=-1}] run tag @s add 42.portal_temp3
-scoreboard players operation @e[scores={42.portal_link=-1}] 42.portal_link = 42.portal 42.portal_link
-tag @e remove 42.portal_new_spawn
-execute as @e[scores={42.portal_link=1..}] at @s unless entity @s[tag=42.portal_wire_lbl] if score @s 42.portal_link = 42.portal 42.portal_link run summon area_effect_cloud ~ ~ ~ {Tags:["42.portal_new_spawn"],Duration:30,DurationOnUse:0,Particle:{type:flash},Radius:.25d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0}
-execute as @e[scores={42.portal_link=1..}] at @s unless entity @s[tag=42.portal_wire_lbl] if score @s 42.portal_link = 42.portal 42.portal_link run scoreboard players add 42.portal 42.portal_temp 1
-scoreboard players set @e[type=!player,tag=42.portal_new_spawn] 42.datapack 3
-tag @e remove 42.portal_new_spawn
+scoreboard players set #42.var.portal.dummy 42.obj.portal.temp 0
+tag @s remove 42.tag.portal.temp3
+execute if entity @e[scores={42.obj.portal.link=-1}] run scoreboard players add #42.var.portal.dummy 42.obj.portal.link 1
+execute if entity @e[scores={42.obj.portal.link=-1}] run playsound minecraft:block.note_block.pling block @a ~ ~ ~ 2 1.4
+execute if entity @e[scores={42.obj.portal.link=-1}] run tag @s add 42.tag.portal.temp3
+scoreboard players operation @e[scores={42.obj.portal.link=-1}] 42.obj.portal.link = #42.var.portal.dummy 42.obj.portal.link
+tag @e remove 42.tag.portal.new_spawn
+execute as @e[scores={42.obj.portal.link=1..}] at @s unless entity @s[tag=42.tag.portal.wire.lbl] if score @s 42.obj.portal.link = #42.var.portal.dummy 42.obj.portal.link run summon area_effect_cloud ~ ~ ~ {Tags:["42.tag.portal.new_spawn"],Duration:30,DurationOnUse:0,Particle:{type:flash},Radius:.25d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0}
+execute as @e[scores={42.obj.portal.link=1..}] at @s unless entity @s[tag=42.tag.portal.wire.lbl] if score @s 42.obj.portal.link = #42.var.portal.dummy 42.obj.portal.link run scoreboard players add #42.var.portal.dummy 42.obj.portal.temp 1
+scoreboard players set @e[type=!player,tag=42.tag.portal.new_spawn] 42.obj.datapack 3
+tag @e remove 42.tag.portal.new_spawn
 execute positioned ~ ~ ~ run function 42:portal/tools/notif
-execute if entity @s[tag=42.portal_temp3] as @e[tag=42.portal_notif,limit=1,sort=nearest] run function 42:portal/tools/resolve {text:'\'[{"text":"Linked "},{"score":{"name":"42.portal","objective":"42.portal_temp"}},{"text":" new equipment"}]\'',tag:CustomName}
-execute if entity @s[tag=!42.portal_temp3] if score 42.portal 42.portal_temp matches 1.. as @e[tag=42.portal_notif,limit=1,sort=nearest] run function 42:portal/tools/resolve {text:'\'[{"text":"Previous link has "},{"score":{"name":"42.portal","objective":"42.portal_temp"}},{"text":" equipment"}]\'',tag:CustomName}
-tag @e remove 42.portal_resolve
-execute as @e[tag=42.portal_wire_unlinked] at @s run function 42:portal/wire/set
+execute if entity @s[tag=42.tag.portal.temp3] as @e[tag=42.tag.portal.notif,limit=1,sort=nearest] run function 42:portal/tools/resolve {text:'\'[{"text":"Linked "},{"score":{"name":"#42.var.portal.dummy","objective":"42.obj.portal.temp"}},{"text":" new equipment"}]\'',tag:CustomName}
+execute if entity @s[tag=!42.tag.portal.temp3] if score #42.var.portal.dummy 42.obj.portal.temp matches 1.. as @e[tag=42.tag.portal.notif,limit=1,sort=nearest] run function 42:portal/tools/resolve {text:'\'[{"text":"Previous link has "},{"score":{"name":"#42.var.portal.dummy","objective":"42.obj.portal.temp"}},{"text":" equipment"}]\'',tag:CustomName}
+execute if entity @s[tag=!42.tag.portal.temp3] if score #42.var.portal.dummy 42.obj.portal.temp matches 0 as @e[tag=42.tag.portal.notif,limit=1,sort=nearest] run function 42:portal/tools/resolve {text:'\'"No equipment to link"\'',tag:CustomName}
+execute as @e[tag=42.tag.portal.wire.unlinked] at @s run function 42:portal/wire/set
 kill @s[type=area_effect_cloud]
-execute if score 42.portal 42.portal_link matches 2000000000.. run tellraw @a {"text":"42datapack error (3): [link] overflow warning","color":"red"}
+execute if score #42.var.portal.dummy 42.obj.portal.link matches 2000000000.. run tellraw @a {"text":"42datapack error (3): [link] overflow warning","color":"red"}

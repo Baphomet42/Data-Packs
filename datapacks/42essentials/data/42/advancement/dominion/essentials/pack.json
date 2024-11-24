@@ -15,7 +15,7 @@
 		"announce_to_chat": false,
 		"hidden": false
 	},
-	"parent": "42:42/root",
+	"parent": "42:dominion/root",
 	"criteria": {
 		"tick": {
 			"trigger": "minecraft:tick"

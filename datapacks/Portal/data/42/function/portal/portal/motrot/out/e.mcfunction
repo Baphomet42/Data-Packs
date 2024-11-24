@@ -1,6 +1,6 @@
-scoreboard players operation @s 42.portal_x = 42.portal 42.portal_temp
-scoreboard players set @s 42.portal_y 0
-scoreboard players set @s 42.portal_z 0
-execute store result entity @s Motion[0] double .001 run scoreboard players get @s 42.portal_x
-execute store result entity @s Motion[1] double .001 run scoreboard players get @s 42.portal_y
-execute store result entity @s Motion[2] double .001 run scoreboard players get @s 42.portal_z
+scoreboard players operation @s 42.obj.portal.var.x = #42.var.portal.dummy 42.obj.portal.temp
+scoreboard players set @s 42.obj.portal.var.y 0
+scoreboard players set @s 42.obj.portal.var.z 0
+execute store result entity @s Motion[0] double .001 run scoreboard players get @s 42.obj.portal.var.x
+execute store result entity @s Motion[1] double .001 run scoreboard players get @s 42.obj.portal.var.y
+execute store result entity @s Motion[2] double .001 run scoreboard players get @s 42.obj.portal.var.z

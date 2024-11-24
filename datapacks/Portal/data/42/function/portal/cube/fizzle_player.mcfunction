@@ -1,3 +1,3 @@
-scoreboard players operation 42.portal 42.portal_temp = @s 42.portal_id
-execute unless entity @s[type=player] run scoreboard players set 42.portal 42.portal_temp 0
-execute if score 42.portal 42.portal_temp matches 1.. as @e[tag=42.portal_cube_tp] if score @s 42.portal_id = 42.portal 42.portal_temp at @s run function 42:portal/cube/fizzle
+scoreboard players operation #42.var.portal.dummy 42.obj.portal.temp = @s 42.obj.portal.id
+execute unless entity @s[type=player] run scoreboard players set #42.var.portal.dummy 42.obj.portal.temp 0
+execute if score #42.var.portal.dummy 42.obj.portal.temp matches 1.. as @e[tag=42.tag.portal.cube.tp] if score @s 42.obj.portal.id = #42.var.portal.dummy 42.obj.portal.temp at @s run function 42:portal/cube/fizzle

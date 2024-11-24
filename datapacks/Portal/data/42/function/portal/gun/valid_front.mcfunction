@@ -1,1 +1,1 @@
-execute if block ~ ~ ~ #42:portal_bullet_pass unless entity @e[tag=42.portal_wall,distance=...25] run scoreboard players add @s 42.portal_col 1
+execute if block ~ ~ ~ #42:portal/portal_bullet_pass unless entity @e[tag=42.tag.portal.portal.wall,distance=...25] run scoreboard players add @s 42.obj.portal.col 1

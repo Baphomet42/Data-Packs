@@ -1,8 +1,8 @@
-give @s elder_guardian_spawn_egg[item_name='"Radio"',rarity=uncommon,custom_data={42datapack:3},\
+give @s elder_guardian_spawn_egg[item_name='"Radio"',rarity=uncommon,custom_data={42components:{datapack:3}},\
     lore=[\
         '{"text":"Select Tool Features:","color":"gray","italic":false}',\
         '{"text":"  Reset Song","color":"gray"}',\
         '""'],\
     entity_data={id:area_effect_cloud,Duration:10,DurationOnUse:0,Particle:{type:block,block_state:{Name:air}},Radius:.5f,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,\
-        Tags:["42.portal_egg","42.portal_spawn_cube","42.portal_spawn_radio","42.portal_spawn_rot"]}\
+        Tags:["42.tag.portal.tool.marker","42.tag.portal.tool.spawn.cube","42.tag.portal.tool.spawn.radio","42.tag.portal.tool.arg.rot"]}\
     ]

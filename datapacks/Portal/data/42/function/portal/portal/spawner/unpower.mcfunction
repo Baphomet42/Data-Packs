@@ -1,1 +1,1 @@
-execute positioned ^ ^ ^-.625 as @e[tag=42.portal,distance=...25] run function 42:portal/portal/fizzle
+execute positioned ^ ^ ^-.625 as @e[tag=42.tag.portal.portal,distance=...25] run function 42:portal/portal/fizzle

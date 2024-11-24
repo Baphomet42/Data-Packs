@@ -1,10 +1,10 @@
-tag @e remove 42.portal_test
-tag @e remove 42.portal_test_this
-tag @s add 42.portal_test_this
-summon marker ~ ~ ~ {Tags:["42.portal_test"]}
-scoreboard players set @e[type=!player,tag=42.portal_test] 42.datapack 3
+tag @e remove 42.tag.portal.test
+tag @e remove 42.tag.portal.test.this
+tag @s add 42.tag.portal.test.this
+summon marker ~ ~ ~ {Tags:["42.tag.portal.test"]}
+scoreboard players set @e[type=!player,tag=42.tag.portal.test] 42.obj.datapack 3
 
-execute as @e[tag=42.portal_test] at @s run function 42:portal/generic/test_col/marker
+execute as @e[tag=42.tag.portal.test] at @s run function 42:portal/generic/test_col/marker
 
-tag @s remove 42.portal_test_this
-kill @e[tag=42.portal_test]
+tag @s remove 42.tag.portal.test.this
+kill @e[tag=42.tag.portal.test]

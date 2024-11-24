@@ -2,26 +2,23 @@
 
 # 42dominion update guide
 
-Ignore this file if you're just using the datapacks.
-This is to log important information used for updating the datapacks.
+This file is to log important information related to maintaining the datapacks.
 
 ------------------------------------------------------------------------------------
 
-# 42.datapack ids
+# 42.obj.datapack ids
 
 Each pack that needs an id will get one. The id can be 1 to 99.
 
-Used for 42menu system, custom model data, entity score, item watermark.
+Used for 42menu system, entity score, item watermark.
 
 42menu values are 42NNXXX where NN is the id in 2 digits and XXX are the values 000 to 999.
 
-Custom model data values are 42NNXXX as well. After the last custom model data entry for each pack,
-the default texture should be returned.
+All entities summoned by a pack should have the score 42.obj.datapack equal to the id of the pack. All datapack items should include `custom_data~{42components:{datapack:<id>}}` using the pack id, and all other `custom_data` should be within the `42components` compound (and most likely within a compound named after the pack code like `custom_data.42components.portal.`).
 
-All entities summoned by a pack should have the score 42.datapack equal to the id.
+The name `gen` is sometimes used for generic features that are relevant to multiple packs, and can use the id `0` and/or `99`, depending on the use.
 
-All items given by a pack should have custom_data.42datapack equal to the id.
-
++ gen - 0/99
 + xltt - 1
 + newworld - none
 + portal - 3
@@ -31,85 +28,35 @@ All items given by a pack should have custom_data.42datapack equal to the id.
 + labs - none
 
 Minecraft namespace should be rarely used (and almost always non-replacing).
-In most cases, use the namepace 42 and follow it with the pack namespace. (Ex: 42:portal).
+In most cases, use the namepace 42 and follow it with the pack code. (Ex: 42:portal).
 
 ------------------------------------------------------------------------------------
 
-# Scoreboard and Tags Format
+# Naming conventions
 
-Scoreboard objectives and tags should start with 42.packname_ (Ex: 42.portal_id).
+The following prefixes should be used in most cases:
 
-Exceptions to scoreboard objectives may be trigger commands, which should be a simple name.
++ `/tag` - `42.tag.`
++ objective - `42.obj.`
++ fake scoreboard player - `#42.var.portal.` or `42.var.`
++ team - `42.team.`
 
-------------------------------------------------------------------------------------
+In many cases, it is also preferred to name them such that when searching a full name, it will never return matches for a partial name. (So `42.tag.foo` would not be compatible with `42.tag.foobar`). The current packs do not enforce this rule yet, so be careful.
 
-# Shared Files
-
-The following files appear in multiple datapacks and should be kept equal
-
-+ data/42/advancement/
-    + root.json
-    + menu.json
-    + op.json
-+ data/42/function/
-    + 42menu.mcfunction
-    + error_perms.mcfunction
-+ data/42/predicate/
-    + is_sneaking.json
-+ data/42/tags/
-    + block/projectile_pass.json
-    + *function/menu.json*
-+ *data/minecraft/tags/function/load.json*
-
-*Italicized files differ between packs, and should set replace to false*
+Exceptions to scoreboard objectives names may be trigger commands, which can use a simpler name.
 
 ------------------------------------------------------------------------------------
 
-# New datapack or resourcepack version
+# Advancements
 
-Update all datapacks/resourcepacks pack.mcmeta to new version.
+All datapacks should be documented on the 42dominion advancement page. Every pack is responsible for adding the `advancement/dominion/root.json` file (which will all be identical and overwrite each other) and the `advancement/dominion/<pack code>/pack.json` file (which should have a unique name/description/icon and should be a child to the root advancement).
 
-Add new blocks to projectile_pass block tag.
+Packs that have unique commands or other noteworthy features should list them as child advancements to the `pack.json` advancement. Commands should use the `command_block` icon. Recipes should use the `crafting_table` icon.
 
-Validate pack advancements/tags/etc manually.
-Validate functions using game output log.
-Validate macros manually.
+Common features should be placed in `advancement/dominion/gen/<name>.json` (child advancement of `root.json`), and all packs that use these features are responsible for adding the advancements. The current list of gen advancements are as follows:
++ `menu.json` - For packs that use the `42menu` system
++ `op.json` - For packs that utilize the `42op` tag
 
-## Macro Functions
-
-These are not validated upon /reload, so test these manually when updating.
-
-**Portal**
-
-+ zone/size
-+ zone/mode
-+ wire/respawn
-+ tools/resolve
-+ portal/spawner/respawn
-+ pellet/spawner/respawn
-+ pellet/emitter/load
-+ pellet/catcher/load
-+ level/loader/storage/*
-+ level/loader/load/*
-+ launch/set_velocity
-+ launch/set_velocity_z
-+ launch/set_velocity_y
-+ launch/set_velocity_z
-+ launch/load
-+ gun/craft_custom
-+ grill/load2
-+ grill/load1
-+ generic/test_range
-+ generic/find_all
-+ generic/test_range/y
-+ generic/find_all/y
-+ elevator/tp/tp
-+ elevator/move/move_x
-+ dropper/load
-+ door/load
-+ cube/spawner/respawn
-+ button/set_time
-+ button/load
-+ button/load_pedestal
+Any advancements that are not used for the 42dominion advancement page should be placed in `advancement/<pack code>/`.
 
 ------------------------------------------------------------------------------------

@@ -25,7 +25,7 @@ execute if score @s 42menu matches 4203017 run function 42:portal/cube/craft_las
 execute if score @s 42menu matches 4203018 run function 42:portal/tools/craft_skin
 execute if score @s 42menu matches 4203019 run function 42:portal/tools/craft_level
 execute if score @s 42menu matches 4203020 run function 42:portal/tools/craft_select
-execute if score @s 42menu matches 4203021 run function #42:portal_craft_all
+execute if score @s 42menu matches 4203021 run function #42:portal/craft_all
 execute if score @s 42menu matches 4203022 run function 42:portal/cube/radio/craft
 execute if score @s 42menu matches 4203023 run function 42:portal/gun/craft_coop
 execute if score @s 42menu matches 4203024 run function 42:portal/gun/craft_off

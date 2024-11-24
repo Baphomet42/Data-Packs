@@ -7,5 +7,5 @@ give @s carrot_on_a_stick[\
         {amount:7.0d,id:"minecraft:base_attack_damage",operation:"add_value",slot:"mainhand",type:"minecraft:attack_damage"},\
         {amount:-2.4d,id:"minecraft:base_attack_speed",operation:"add_value",slot:"mainhand",type:"minecraft:attack_speed"}]},\
     rarity="uncommon",\
-    custom_data={42datapack:1,42xltt_odm:1b},\
+    custom_data={42components:{datapack:1,xltt:{odm:{}}}},\
     max_damage=250]

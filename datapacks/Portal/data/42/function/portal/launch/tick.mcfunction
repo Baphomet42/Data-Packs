@@ -1,8 +1,8 @@
-execute if score @s 42.portal_time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[dx=0,dy=0,dz=0,type=armor_stand,tag=42.portal_motion_tp] on passengers run tag @s remove 42.portal_motion
-execute if score @s 42.portal_time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[dx=0,dy=0,dz=0,type=armor_stand,tag=42.portal_motion_tp] run kill @s
-execute if score @s 42.portal_time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[dx=0,dy=0,dz=0,type=!armor_stand,tag=42.portal_motion_tp] run tag @s remove 42.portal_motion_tp
-execute if score @s 42.portal_time matches 0 positioned ~-.5 ~-.5 ~-.5 as @a[dx=0,dy=0,dz=0,gamemode=!spectator,limit=1,sort=nearest] positioned ~.5 ~.5 ~.5 run function 42:portal/launch/launch_player
-execute if score @s 42.portal_time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[tag=42.portal_cube_hit,tag=!42.portal_cube_held,dx=0,dy=0,dz=0,limit=1,sort=nearest] positioned ~.5 ~.5 ~.5 run function 42:portal/launch/launch_cube
-execute if score @s 42.portal_time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[type=!#42:portal_exempt,tag=!42.portal_cube_tp,tag=!42.portal_cube_col,dx=0,dy=0,dz=0,limit=1,sort=nearest] positioned ~.5 ~.5 ~.5 run function 42:portal/launch/launch_entity
-execute if score @s 42.portal_time matches 1.. run scoreboard players remove @s 42.portal_time 1
-execute if score @s 42.portal_time matches 5 as @e[tag=42.portal_launch_dis,limit=2,sort=nearest,distance=..5] run data merge entity @s {transformation:{left_rotation:{angle:0f,axis:[1f,0f,0f]}},interpolation_duration:8,start_interpolation:-1}
+execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[dx=0,dy=0,dz=0,type=armor_stand,tag=42.tag.portal.motion.tp] on passengers run tag @s remove 42.tag.portal.motion
+execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[dx=0,dy=0,dz=0,type=armor_stand,tag=42.tag.portal.motion.tp] run kill @s
+execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[dx=0,dy=0,dz=0,type=!armor_stand,tag=42.tag.portal.motion.tp] run tag @s remove 42.tag.portal.motion.tp
+execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @a[dx=0,dy=0,dz=0,gamemode=!spectator,limit=1,sort=nearest] positioned ~.5 ~.5 ~.5 run function 42:portal/launch/launch_player
+execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[tag=42.tag.portal.cube.hit,tag=!42.tag.portal.cube.held,dx=0,dy=0,dz=0,limit=1,sort=nearest] positioned ~.5 ~.5 ~.5 run function 42:portal/launch/launch_cube
+execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[type=!#42:portal/portal_exempt,tag=!42.tag.portal.cube.tp,tag=!42.tag.portal.cube.col,dx=0,dy=0,dz=0,limit=1,sort=nearest] positioned ~.5 ~.5 ~.5 run function 42:portal/launch/launch_entity
+execute if score @s 42.obj.portal.time matches 1.. run scoreboard players remove @s 42.obj.portal.time 1
+execute if score @s 42.obj.portal.time matches 5 as @e[tag=42.tag.portal.launch.dis,limit=2,sort=nearest,distance=..5] run data merge entity @s {transformation:{left_rotation:{angle:0f,axis:[1f,0f,0f]}},interpolation_duration:8,start_interpolation:-1}

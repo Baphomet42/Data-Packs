@@ -18,7 +18,7 @@ Most packs are proof of concepts and not intended for existing worlds.
 + [Datapack Info](#datapack-info)
     + Setup
     + Important Notes
-    + [Troubleshooting](#troubleshooting)
+    + Troubleshooting
 + [Resource Pack Info (Optional)](#resource-pack-info)
     + Setup
     + Descriptions
@@ -211,13 +211,15 @@ This is a minigame pack that recreates many features from the Portal games. Not 
         + Make sure the hitbox is big enough so the player cannot avoid it
     + There can be unlimited Trigger Zones within each level, and they can be placed anywhere
         + These zones only activate if a player in the level walks through its hitbox, so spectators and outsiders cannot interfere
++ Co-op
+    + Nothing will break with multiple players online, and most individual systems fully support co-op
+        + Each player can have any amount of portals without conflicts, and physics objects properly respond to multiple players
+        + The level designer tools do not currently support a full co-op experience
+            + Zones, level loading, elevators, etc. do not support co-op yet
+    + Full co-op level support is planned for the future
 + **Important Information Specific to Portal Datapack**
     + See generic information at the end of this file
     + To ensure portal guns aren't lost when players die, run `/gamerule keepInventory true`
-    + If planning to play in survival mode, it is recommended to disable fall damage
-        + Run `/gamerule fallDamage false` to disable all fall damage across the world
-        + Custom motion through portals and faith plates automatically stops fall damage, but most portal levels have large drops that players are supposed to be able to survive by jumping
-        + Zones can be customized to kill players who enter them, so long death falls can still be made manually
     + The custom chat menus in this pack use trigger commands, which send a message to the player after every click
         + This can be disabled with `/gamerule sendCommandFeedback false`
             + Note that doing this will also turn off command feedback for actual commands used by any player
@@ -228,7 +230,7 @@ This is a minigame pack that recreates many features from the Portal games. Not 
     + Worlds running this datapack should be set to Easy, Normal, or Hard Mode (not Peaceful)
         + Running this in Peaceful Mode could cause problems with vital entities unable to be summoned
         + Turning off spawning with `/gamerule doMobSpawning false` is ok
-        + `/gamerule mobGriefing false` is recommended (but technically not required)
+        + `/gamerule mobGriefing false` is recommended (but not required)
             + This prevents enderman from moving blocks and breaking equipment
     + Simulation distance should be high enough to prevent nearby equipment from being unloaded
         + Most types of equipment need to be loaded in order for other things like doors and buttons to register them
@@ -446,24 +448,24 @@ For datapack testing purposes only. Everything is experimental and may not be up
                 + Remove all objectives and teams
                 + Delete all storage data
             + Remove all 42datapacks and replace them with the current versions
-        + Large backend rewrites to improve performance and consistency will break all entities from previous datapack versions
+        + Large backend rewrites to improve performance and consistency will break all items/entities/etc from previous datapack versions
     + **All datapacks**
         + Large performance boosts
             + General MSPT improvements and better scalability
+        + Consistency rewrites
+            + Nearly every file was edited for better consistency on naming conventions
         + Fixed a ton of bugs
     + **Portal**
         + Resource pack is now required
             + Now fully compatible with external packs
             + Playing without the pack will cause the Portal Gun items to have a missing texture
-        + Portal Gun items must be replaced with the new versions from 42menu
-            + The old items will still work but without a custom texture
+                + Everything else in-world will continue to work without the resource pack
         + Considerably more turrets and other physics objects can exist at the same time before slowing the tick rate
     + **XLTT**
         + Resource pack is now required
             + Now fully compatible with external packs
             + Playing without the pack will cause the O.D.M. Sword items to have a missing texture
-        + O.D.M. Sword items must be replaced with the new version from 42menu
-            + The old items will still work but without a custom texture
+                + Everything else in-world will continue to work without the resource pack
 
 + v0.4 Major Update (10/20/2024)
     + **IMPORTANT**

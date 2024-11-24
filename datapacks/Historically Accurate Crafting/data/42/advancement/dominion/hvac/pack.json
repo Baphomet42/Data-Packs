@@ -1,12 +1,12 @@
 {
 	"display": {
 		"icon": {
-			"id": "minecraft:deepslate"
+			"id": "minecraft:crafting_table"
 		},
-		"title": "Brave New World    ",
+		"title": "Historically Accurate Crafting    ",
 		"description": [
 			{
-				"text": "Blackest Magick in Practice",
+				"text": "Fixes the misinformation behind common crafting recipe beliefs",
 				"color": "white"
 			}
 		],
@@ -15,7 +15,7 @@
 		"announce_to_chat": false,
 		"hidden": false
 	},
-	"parent": "42:42/root",
+	"parent": "42:dominion/root",
 	"criteria": {
 		"tick": {
 			"trigger": "minecraft:tick"

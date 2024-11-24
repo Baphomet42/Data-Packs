@@ -1,8 +1,8 @@
 fill ^-1 ^ ^ ^1 ^ ^ air replace chain
 fill ^ ^-1 ^ ^ ^1 ^ air replace chain
 fill ~ ~ ~ ~ ~ ~ air replace barrier
-execute if entity @s[tag=42.portal_pellet_catcher_on] at @s as @e[tag=42.portal_pellet_on,limit=1,sort=nearest,distance=..1] at @s run function 42:portal/pellet/pellet/fizzle
+execute if entity @s[tag=42.tag.portal.pellet.catcher.on] at @s as @e[tag=42.tag.portal.pellet.on,limit=1,sort=nearest,distance=..1] at @s run function 42:portal/pellet/pellet/fizzle
 function 42:portal/pellet/catcher/unpower
 function 42:portal/tag_id
-kill @e[tag=42.portal_id,tag=42.portal_pellet_catcher_group]
-tag @e remove 42.portal_id
+kill @e[tag=42.tag.portal.id,tag=42.tag.portal.pellet.catcher.group]
+tag @e remove 42.tag.portal.id

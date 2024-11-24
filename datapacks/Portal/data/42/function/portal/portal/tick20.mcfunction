@@ -1,6 +1,6 @@
-scoreboard players set 42.portal 42.portal_temp 0
-execute if entity @s[tag=42.portal_a] as @e[tag=42.portal,tag=42.portal_a,tag=42.portal_pair] run scoreboard players add 42.portal 42.portal_temp 1
-execute if entity @s[tag=42.portal_b] as @e[tag=42.portal,tag=42.portal_b,tag=42.portal_pair] run scoreboard players add 42.portal 42.portal_temp 1
-execute if entity @s[tag=42.portal_a] if score 42.portal 42.portal_temp matches 2.. as @e[tag=42.portal,tag=42.portal_a,tag=42.portal_pair] run function 42:portal/portal/fizzle
-execute if entity @s[tag=42.portal_b] if score 42.portal 42.portal_temp matches 2.. as @e[tag=42.portal,tag=42.portal_b,tag=42.portal_pair] run function 42:portal/portal/fizzle
+scoreboard players set #42.var.portal.dummy 42.obj.portal.temp 0
+execute if entity @s[tag=42.tag.portal.portal.a] as @e[tag=42.tag.portal.portal,tag=42.tag.portal.portal.a,tag=42.tag.portal.portal.pair] run scoreboard players add #42.var.portal.dummy 42.obj.portal.temp 1
+execute if entity @s[tag=42.tag.portal.portal.b] as @e[tag=42.tag.portal.portal,tag=42.tag.portal.portal.b,tag=42.tag.portal.portal.pair] run scoreboard players add #42.var.portal.dummy 42.obj.portal.temp 1
+execute if entity @s[tag=42.tag.portal.portal.a] if score #42.var.portal.dummy 42.obj.portal.temp matches 2.. as @e[tag=42.tag.portal.portal,tag=42.tag.portal.portal.a,tag=42.tag.portal.portal.pair] run function 42:portal/portal/fizzle
+execute if entity @s[tag=42.tag.portal.portal.b] if score #42.var.portal.dummy 42.obj.portal.temp matches 2.. as @e[tag=42.tag.portal.portal,tag=42.tag.portal.portal.b,tag=42.tag.portal.portal.pair] run function 42:portal/portal/fizzle
 execute if entity @a[distance=..5] run playsound minecraft:block.portal.ambient block @a[distance=..5] ^ ^.5 ^ .5 1

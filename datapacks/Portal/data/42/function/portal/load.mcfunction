@@ -1,45 +1,41 @@
-scoreboard objectives add 42.datapack dummy
+scoreboard objectives add 42.obj.datapack dummy
 
-scoreboard objectives add 42.portal_const dummy
-scoreboard objectives add 42.portal_id dummy
-scoreboard objectives add 42.portal_time dummy
-scoreboard objectives add 42.portal_temp dummy
-scoreboard objectives add 42.portal_c dummy
-scoreboard objectives add 42.portal_u dummy
-scoreboard objectives add 42.portal_v dummy
-scoreboard objectives add 42.portal_w dummy
-scoreboard objectives add 42.portal_x dummy
-scoreboard objectives add 42.portal_y dummy
-scoreboard objectives add 42.portal_z dummy
-scoreboard objectives add 42.portal_link dummy
-scoreboard objectives add 42.portal_cool dummy
-scoreboard objectives add 42.portal_gun_use minecraft.used:minecraft.warped_fungus_on_a_stick
-scoreboard objectives add 42.portal_gun_use2 minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add 42.portal_xrot1 dummy
-scoreboard objectives add 42.portal_yrot1 dummy
-scoreboard objectives add 42.portal_xrot2 dummy
-scoreboard objectives add 42.portal_yrot2 dummy
-scoreboard objectives add 42.portal_damage dummy
-scoreboard objectives add 42.portal_skin dummy
-scoreboard objectives add 42.portal_lvl dummy
-scoreboard objectives add 42.portal_sel dummy
-scoreboard objectives add 42.portal_col dummy
-scoreboard objectives add 42.portal_death deathCount
-scoreboard objectives add 42.portal_stat dummy
+scoreboard objectives add 42.obj.portal.vars dummy
+scoreboard objectives add 42.obj.portal.id dummy
+scoreboard objectives add 42.obj.portal.time dummy
+scoreboard objectives add 42.obj.portal.temp dummy
+scoreboard objectives add 42.obj.portal.var.c dummy
+scoreboard objectives add 42.obj.portal.var.u dummy
+scoreboard objectives add 42.obj.portal.var.v dummy
+scoreboard objectives add 42.obj.portal.var.w dummy
+scoreboard objectives add 42.obj.portal.var.x dummy
+scoreboard objectives add 42.obj.portal.var.y dummy
+scoreboard objectives add 42.obj.portal.var.z dummy
+scoreboard objectives add 42.obj.portal.link dummy
+scoreboard objectives add 42.obj.portal.cool dummy
+scoreboard objectives add 42.obj.portal.click_gun_1 minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add 42.obj.portal.click_gun_2 minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add 42.obj.portal.xrot1 dummy
+scoreboard objectives add 42.obj.portal.yrot1 dummy
+scoreboard objectives add 42.obj.portal.xrot2 dummy
+scoreboard objectives add 42.obj.portal.yrot2 dummy
+scoreboard objectives add 42.obj.portal.damage dummy
+scoreboard objectives add 42.obj.portal.skin dummy
+scoreboard objectives add 42.obj.portal.lvl dummy
+scoreboard objectives add 42.obj.portal.sel dummy
+scoreboard objectives add 42.obj.portal.col dummy
+scoreboard objectives add 42.obj.portal.death deathCount
 
-scoreboard players set 42.portal_const_n1 42.portal_id -1
-scoreboard players set 42.portal_const_n1 42.datapack 3
-scoreboard players set 42.portal_rule_cache 42.datapack 3
-scoreboard players set 42.portal 42.datapack 3
-scoreboard players set #num_2 42.portal_const 2
-scoreboard players set #num_8 42.portal_const 8
-scoreboard players set #num_32 42.portal_const 32
-scoreboard players set #num_64 42.portal_const 64
-scoreboard players set #num_128 42.portal_const 128
-execute unless score #music_time 42.portal_id matches 1.. run scoreboard players set #music_time 42.portal_id -1
+scoreboard players set #42.var.gen.const.neg_1 42.obj.portal.vars -1
+scoreboard players set #42.var.gen.const.2 42.obj.portal.vars 2
+scoreboard players set #42.var.gen.const.8 42.obj.portal.vars 8
+scoreboard players set #42.var.gen.const.32 42.obj.portal.vars 32
+scoreboard players set #42.var.gen.const.64 42.obj.portal.vars 64
+scoreboard players set #42.var.gen.const.128 42.obj.portal.vars 128
+execute unless score #42.var.portal.music_time 42.obj.portal.vars matches 1.. run scoreboard players set #42.var.portal.music_time 42.obj.portal.vars -1
 
-team add 42.no_col
-team modify 42.no_col collisionRule never
+team add 42.team.gen.no_col
+team modify 42.team.gen.no_col collisionRule never
 
 function 42:portal/tick
 

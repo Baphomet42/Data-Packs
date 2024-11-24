@@ -1,2 +1,2 @@
-scoreboard players operation 42.portal 42.portal_temp = @s[tag=42.portal_wire] 42.portal_link
-execute as @e[tag=42.portal_wire] at @s if score @s 42.portal_link = 42.portal 42.portal_temp run particle dust{color:[1.0,0.0,0.0],scale:1} ^ ^ ^-.25 0 0 0 0 1 force
+scoreboard players operation #42.var.portal.dummy 42.obj.portal.temp = @s[tag=42.tag.portal.wire] 42.obj.portal.link
+execute as @e[tag=42.tag.portal.wire] at @s if score @s 42.obj.portal.link = #42.var.portal.dummy 42.obj.portal.temp run particle dust{color:[1.0,0.0,0.0],scale:1} ^ ^ ^-.25 0 0 0 0 1 force

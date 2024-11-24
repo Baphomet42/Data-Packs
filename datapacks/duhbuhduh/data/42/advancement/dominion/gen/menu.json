@@ -3,22 +3,14 @@
 		"icon": {
 			"id": "minecraft:command_block"
 		},
-		"title": "Custom Commands    ",
+		"title": "42menu        ",
 		"description": [
 			{
-				"text": "/trigger hat",
+				"text": "/trigger 42menu",
 				"color": "green"
 			},
 			{
-				"text": " - Equip the currently selected item as a helmet",
-				"color": "white"
-			},
-			{
-				"text": "\n\n/trigger kittycannon",
-				"color": "green"
-			},
-			{
-				"text": " - Mostly harmless",
+				"text": " - Access certain features and commands",
 				"color": "white"
 			}
 		],
@@ -27,7 +19,7 @@
 		"announce_to_chat": false,
 		"hidden": false
 	},
-	"parent": "42:42/essentials",
+	"parent": "42:dominion/root",
 	"criteria": {
 		"none": {
 			"trigger": "minecraft:impossible"

@@ -1,5 +1,5 @@
 function 42:dbd/move/setup/unset
-tag @s add 42.dbd_move
+tag @s add 42.tag.dbd.move
 
 # disable jumping
 attribute @s minecraft:jump_strength modifier add 42:dbd_move_jump -1 add_multiplied_total

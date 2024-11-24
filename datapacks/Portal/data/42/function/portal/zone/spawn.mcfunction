@@ -1,26 +1,16 @@
-tag @e remove 42.portal_new_spawn
-summon block_display ~ ~ ~ {Tags:["42.portal_new_spawn","42.portal_zone","42.portal.tags.has_tick","42.portal_zone_group"],CustomNameVisible:0b,CustomName:'"Zone"',block_state:{Name:ice},view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1.5f,0f,-1.5f],scale:[3f,3f,3f]},Passengers:[\
-    {id:text_display,Tags:["42.portal_new_spawn","42.portal_zone_lbl","42.portal_zone_group"],CustomNameVisible:0b,CustomName:'"42portal"',text:'"Zone"',see_through:true,alignment:center,billboard:vertical,view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,.125f,0f],scale:[1f,1f,1f]}},\
-    {id:text_display,Tags:["42.portal_new_spawn","42.portal_zone_lbl_lvl","42.portal_zone_group"],CustomNameVisible:0b,CustomName:'"42portal"',text:'""',alignment:center,billboard:vertical,background:0,view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,.666f,0f],scale:[1f,1f,1f]}},\
-    {id:text_display,Tags:["42.portal_new_spawn","42.portal_zone_lbl_cool","42.portal_zone_group"],CustomNameVisible:0b,CustomName:'"42portal"',text:'""',alignment:center,billboard:vertical,background:0,view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[1f,1f,1f]}},\
-    {id:text_display,Tags:["42.portal_new_spawn","42.portal_zone_lbl_extra","42.portal_zone_lbl_pow","42.portal_zone_group"],CustomNameVisible:0b,CustomName:'"42portal"',text:'""',alignment:center,billboard:vertical,background:0,view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1.333f,0f],scale:[1f,1f,1f]}},\
-    {id:text_display,Tags:["42.portal_new_spawn","42.portal_zone_lbl_extra","42.portal_zone_lbl_unpow","42.portal_zone_group"],CustomNameVisible:0b,CustomName:'"42portal"',text:'""',alignment:center,billboard:vertical,background:0,view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1.666f,0f],scale:[1f,1f,1f]}},\
-    {id:text_display,Tags:["42.portal_new_spawn","42.portal_zone_lbl_extra","42.portal_zone_lbl_spawn","42.portal_zone_group"],CustomNameVisible:0b,CustomName:'"42portal"',text:'""',alignment:center,billboard:vertical,background:0,view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,2f,0f],scale:[1f,1f,1f]}},\
-    {id:text_display,Tags:["42.portal_new_spawn","42.portal_zone_lbl_extra","42.portal_zone_lbl_fizzle","42.portal_zone_group"],CustomNameVisible:0b,CustomName:'"42portal"',text:'""',alignment:center,billboard:vertical,background:0,view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,2.333f,0f],scale:[1f,1f,1f]}},\
-    {id:text_display,Tags:["42.portal_new_spawn","42.portal_zone_lbl_extra","42.portal_zone_lbl_grill","42.portal_zone_group"],CustomNameVisible:0b,CustomName:'"42portal"',text:'""',alignment:center,billboard:vertical,background:0,view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,2.666f,0f],scale:[1f,1f,1f]}}]}
-execute as @e[tag=42.portal_new_spawn,tag=42.portal_zone,limit=1] run function 42:portal/new_id
-scoreboard players operation @e[tag=42.portal_new_spawn] 42.portal_id = @e[tag=42.portal_new_spawn,tag=42.portal_zone,limit=1] 42.portal_id
-scoreboard players set @e[type=!player,tag=42.portal_new_spawn] 42.datapack 3
-scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_zone] 42.portal_lvl -2
-scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_zone] 42.portal_xrot1 0
-scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_zone] 42.portal_xrot2 0
-scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_zone] 42.portal_yrot1 0
-scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_zone] 42.portal_yrot2 0
-execute as @e[tag=42.portal_zone,tag=42.portal_new_spawn] at @s run function 42:portal/zone/mode {x:0}
-execute as @e[tag=42.portal_zone,tag=42.portal_new_spawn] at @s run function 42:portal/zone/size {y:1}
-execute as @e[tag=42.portal_zone,tag=42.portal_new_spawn] at @s run function 42:portal/zone/update
-execute as @e[tag=42.portal_zone,tag=42.portal_new_spawn] at @s run function 42:portal/zone/show
-tag @e remove 42.portal_new_spawn
+tag @e remove 42.tag.portal.new_spawn
+summon block_display ~ ~ ~ {Tags:["42.tag.portal.new_spawn","42.tag.portal.zone","42.tag.portal.tags.has_tick","42.tag.portal.zone.group"],CustomNameVisible:0b,CustomName:'"Zone"',block_state:{Name:ice},view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1.5f,0f,-1.5f],scale:[3f,3f,3f]}}
+execute as @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone,limit=1] run function 42:portal/new_id
+scoreboard players set @e[type=!player,tag=42.tag.portal.new_spawn] 42.obj.datapack 3
+scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone] 42.obj.portal.lvl -2
+scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone] 42.obj.portal.xrot1 0
+scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone] 42.obj.portal.xrot2 0
+scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone] 42.obj.portal.yrot1 0
+scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone] 42.obj.portal.yrot2 0
+execute as @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] at @s run function 42:portal/zone/mode {x:0}
+execute as @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] at @s run function 42:portal/zone/size {y:1}
+execute as @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] at @s run function 42:portal/zone/show
+tag @e remove 42.tag.portal.new_spawn
 kill @s[type=area_effect_cloud]
 
 #   ====scores====

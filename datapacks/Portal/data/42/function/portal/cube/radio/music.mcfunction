@@ -1,10 +1,10 @@
-scoreboard players add #music_time 42.portal_id 1
-execute if score #music_time 42.portal_id matches 128.. run scoreboard players set #music_time 42.portal_id 0
+scoreboard players add #42.var.portal.music_time 42.obj.portal.vars 1
+execute if score #42.var.portal.music_time 42.obj.portal.vars matches 128.. run scoreboard players set #42.var.portal.music_time 42.obj.portal.vars 0
 
-scoreboard players operation #music_calc 42.portal_id = #music_time 42.portal_id
-scoreboard players operation #music_calc 42.portal_id %= #num_2 42.portal_const
+scoreboard players operation #42.var.portal.music_calc 42.obj.portal.vars = #42.var.portal.music_time 42.obj.portal.vars
+scoreboard players operation #42.var.portal.music_calc 42.obj.portal.vars %= #42.var.gen.const.2 42.obj.portal.vars
 
-execute unless score #music_calc 42.portal_id matches 0 run return 0
+execute unless score #42.var.portal.music_calc 42.obj.portal.vars matches 0 run return 0
 
 function 42:portal/cube/radio/loop/bit
 function 42:portal/cube/radio/loop/bass

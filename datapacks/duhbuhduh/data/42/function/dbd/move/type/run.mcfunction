@@ -1,6 +1,6 @@
-tag @s remove 42.dbd_move_check
+tag @s remove 42.tag.dbd.move.check
 
-tag @s remove 42.dbd_move_walk
-tag @s remove 42.dbd_move_sneak
+tag @s remove 42.tag.dbd.move.walk
+tag @s remove 42.tag.dbd.move.sneak
 
-tag @s add 42.dbd_move_run
+tag @s add 42.tag.dbd.move.run

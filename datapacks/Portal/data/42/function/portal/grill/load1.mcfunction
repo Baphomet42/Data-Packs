@@ -1,1 +1,1 @@
-$scoreboard players set @e[tag=42.portal_new_spawn,tag=42.portal_grill] 42.portal_x $(x)
+$scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.grill] 42.obj.portal.var.x $(x)

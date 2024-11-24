@@ -2,9 +2,9 @@ function 42:portal/tag_id
 
 data merge entity @s {Saddle:0b,InLove:0}
 
-execute as @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=42.portal_cube_held] unless entity @a[tag=42.portal_id] run tag @s remove 42.portal_cube_held
-execute as @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=!42.portal_cube_held] run data modify entity @s response set value 1b
+execute as @e[tag=42.tag.portal.cube.hit,tag=42.tag.portal.id,tag=42.tag.portal.cube.held] unless entity @a[tag=42.tag.portal.id] run tag @s remove 42.tag.portal.cube.held
+execute as @e[tag=42.tag.portal.cube.hit,tag=42.tag.portal.id,tag=!42.tag.portal.cube.held] run data modify entity @s response set value 1b
 
-scoreboard players set @s 42.portal_temp 0
-execute if entity @e[tag=42.portal_cube_hit,tag=42.portal_id,tag=42.portal_cube_held] as @a[tag=42.portal_id] run scoreboard players add @e[tag=42.portal_cube_tp,tag=42.portal_id] 42.portal_temp 1
-execute if score @s 42.portal_temp matches 2.. run scoreboard players set @a[tag=42.portal_id] 42.portal_id 0
+scoreboard players set @s 42.obj.portal.temp 0
+execute if entity @e[tag=42.tag.portal.cube.hit,tag=42.tag.portal.id,tag=42.tag.portal.cube.held] as @a[tag=42.tag.portal.id] run scoreboard players add @e[tag=42.tag.portal.cube.tp,tag=42.tag.portal.id] 42.obj.portal.temp 1
+execute if score @s 42.obj.portal.temp matches 2.. run scoreboard players set @a[tag=42.tag.portal.id] 42.obj.portal.id 0

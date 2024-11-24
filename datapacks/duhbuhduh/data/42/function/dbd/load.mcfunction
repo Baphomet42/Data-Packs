@@ -1,6 +1,4 @@
-scoreboard objectives add 42.datapack dummy
-
-scoreboard players set #42.dbd 42.datapack 5
+scoreboard objectives add 42.obj.datapack dummy
 
 function 42:dbd/tick
 

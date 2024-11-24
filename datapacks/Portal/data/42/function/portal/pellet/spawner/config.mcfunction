@@ -1,9 +1,9 @@
-tag @e remove 42.portal_pellet_spawner_this
-tag @s add 42.portal_pellet_spawner_this
+tag @e remove 42.tag.portal.pellet.spawner.this
+tag @s add 42.tag.portal.pellet.spawner.this
 
-scoreboard players operation @e[tag=42.portal_pellet_spawn,tag=42.portal_pellet] 42.portal_lvl = @s 42.portal_lvl
-scoreboard players operation @e[tag=42.portal_pellet_spawn] 42.portal_id = @s 42.portal_id
+scoreboard players operation @e[tag=42.tag.portal.pellet.spawn,tag=42.tag.portal.pellet] 42.obj.portal.lvl = @s 42.obj.portal.lvl
+scoreboard players operation @e[tag=42.tag.portal.pellet.spawn] 42.obj.portal.id = @s 42.obj.portal.id
 
-execute as @e[tag=42.portal_pellet_spawn,tag=42.portal_pellet] at @s rotated as @e[tag=42.portal_pellet_spawner_this,limit=1] run tp @s ~ ~-.5 ~ ~ ~
+execute as @e[tag=42.tag.portal.pellet.spawn,tag=42.tag.portal.pellet] at @s rotated as @e[tag=42.tag.portal.pellet.spawner.this,limit=1] run tp @s ~ ~-.5 ~ ~ ~
 
-tag @s remove 42.portal_pellet_spawner_this
+tag @s remove 42.tag.portal.pellet.spawner.this

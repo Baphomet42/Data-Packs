@@ -1,5 +1,5 @@
-execute as @e[tag=42.portal_dropper] at @s if score @s 42.portal_id = @e[tag=42.portal_zone_this,limit=1] 42.portal_yrot1 run function 42:portal/dropper/drop
-execute as @e[tag=42.portal_pellet_emitter] at @s if score @s 42.portal_id = @e[tag=42.portal_zone_this,limit=1] 42.portal_yrot1 run function 42:portal/pellet/emitter/shoot
-execute as @e[tag=42.portal_spawner] at @s if score @s 42.portal_id = @e[tag=42.portal_zone_this,limit=1] 42.portal_yrot1 run function 42:portal/portal/spawner/power
-execute as @e[tag=42.portal_cube_spawner] at @s if score @s 42.portal_id = @e[tag=42.portal_zone_this,limit=1] 42.portal_yrot1 run function 42:portal/cube/spawner/power
-execute as @e[tag=42.portal_pellet_spawner] at @s if score @s 42.portal_id = @e[tag=42.portal_zone_this,limit=1] 42.portal_yrot1 run function 42:portal/pellet/spawner/power
+execute as @e[tag=42.tag.portal.dropper] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot1 run function 42:portal/dropper/drop
+execute as @e[tag=42.tag.portal.pellet.emitter] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot1 run function 42:portal/pellet/emitter/shoot
+execute as @e[tag=42.tag.portal.portal.spawner] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot1 run function 42:portal/portal/spawner/power
+execute as @e[tag=42.tag.portal.cube.spawner] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot1 run function 42:portal/cube/spawner/power
+execute as @e[tag=42.tag.portal.pellet.spawner] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot1 run function 42:portal/pellet/spawner/power

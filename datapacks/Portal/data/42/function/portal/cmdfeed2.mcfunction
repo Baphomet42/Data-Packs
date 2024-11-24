@@ -1,2 +1,2 @@
 gamerule sendCommandFeedback true
-scoreboard players set 42.portal_rule_cache 42.portal_y 0
+scoreboard players set #cmdfeed2 42.obj.portal.vars 0

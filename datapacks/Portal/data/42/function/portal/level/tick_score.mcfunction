@@ -1,7 +1,7 @@
-tag @e remove 42.portal_temp
-tag @s add 42.portal_temp
-execute at @s if loaded ~ ~ ~ if score @s 42.portal_lvl matches ..-1 run tag @s add 42.portal_tick
-execute at @s if loaded ~ ~ ~ if score @s 42.portal_lvl matches 1.. as @a if score @s 42.portal_lvl = @e[tag=42.portal_temp,limit=1] 42.portal_lvl run tag @e[tag=42.portal_temp,limit=1] add 42.portal_tick
-tag @s remove 42.portal_temp
-execute if entity @s[tag=42.portal_tick] at @s run function 42:portal/level/do_tick
-execute if entity @s[tag=42.portal_cube_tp,tag=!42.portal_tick,tag=!42.portal.cube.level_freeze] run function 42:portal/cube/debug/level_freeze
+tag @e remove 42.tag.portal.temp
+tag @s add 42.tag.portal.temp
+execute at @s if loaded ~ ~ ~ if score @s 42.obj.portal.lvl matches ..-1 run tag @s add 42.tag.portal.tick
+execute at @s if loaded ~ ~ ~ if score @s 42.obj.portal.lvl matches 1.. as @a if score @s 42.obj.portal.lvl = @e[tag=42.tag.portal.temp,limit=1] 42.obj.portal.lvl run tag @e[tag=42.tag.portal.temp,limit=1] add 42.tag.portal.tick
+tag @s remove 42.tag.portal.temp
+execute if entity @s[tag=42.tag.portal.tick] at @s run function 42:portal/level/do_tick
+execute if entity @s[tag=42.tag.portal.cube.tp,tag=!42.tag.portal.tick,tag=!42.tag.portal.cube.level_freeze] run function 42:portal/cube/debug/level_freeze

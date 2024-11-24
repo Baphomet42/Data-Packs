@@ -1,2 +1,2 @@
-scoreboard players operation @e[tag=42.portal_id,tag=42.portal_elevator] 42.portal_x = @s 42.portal_yrot1
-execute at @s run tp @e[tag=42.portal_id,tag=42.portal_elevator_end] ~ ~ ~ ~ ~
+scoreboard players operation @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator] 42.obj.portal.var.x = @s 42.obj.portal.yrot1
+execute at @s run tp @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end] ~ ~ ~ ~ ~

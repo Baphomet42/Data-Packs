@@ -1,6 +1,6 @@
 scoreboard players reset @s kittycannon
 
 function 42:essentials/kitty_macro with entity @s
-scoreboard players set @e[type=cat,tag=kittycannon,tag=needData,limit=1] 42.datapack 4
-execute as @e[type=cat,tag=kittycannon,tag=needData,limit=1] run function 42:essentials/get_motion
-execute at @s run tag @e[type=cat,tag=kittycannon,tag=needData,limit=1] remove needData
+scoreboard players set @e[limit=1,type=cat,tag=42.tag.essentials.kittycannon,tag=42.tag.essentials.need_data] 42.obj.datapack 4
+execute as @e[limit=1,type=cat,tag=42.tag.essentials.kittycannon,tag=42.tag.essentials.need_data] run function 42:essentials/get_motion
+tag @e[limit=1,type=cat,tag=42.tag.essentials.kittycannon,tag=42.tag.essentials.need_data] remove 42.tag.essentials.need_data
