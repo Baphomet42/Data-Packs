@@ -1,6 +1,7 @@
 tag @e remove 42.tag.portal.new_spawn
 summon item ~ ~ ~ {Tags:["42.tag.portal.new_spawn"],Item:{id:warped_fungus_on_a_stick,components:{\
     "minecraft:custom_data":{42components:{datapack:3,portal:{portal_gun:{pair_type:0b,pair_link:1,color:0}}}},\
+    "minecraft:item_model":"42:portal/portal_gun",\
     "minecraft:unbreakable":{show_in_tooltip:0b},\
     "minecraft:attribute_modifiers":{modifiers:[{type:"block_interaction_range",slot:"mainhand",id:"42:portal_gun",operation:"add_multiplied_total",amount:-1d}],show_in_tooltip:0b},\
     "minecraft:can_place_on":{predicates:[{blocks:"#42:portal/portal_surface"}]}\

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 1.21.3
+# Separate but compatible datapacks for Minecraft 1.21.4
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
@@ -41,7 +41,7 @@ Note that features may have changed since these were published
 
 ### **42essentials**
 
-Recreates some server plugin stuff using commands only. Does not affect gameplay.
+Recreates some server plugin stuff using commands only.
 
 + `/trigger hat`
     + Puts the held item on your head
@@ -50,7 +50,7 @@ Recreates some server plugin stuff using commands only. Does not affect gameplay
 
 ### **Portal** (optional resource pack - see below)
 
-This is a minigame pack that recreates many features from the Portal games. Not intended for survival worlds.
+This is a minigame pack that recreates many features from the Portal games. Not intended for normal worlds.
 
 + *Portal Guns*
     + Every player can have their own set of unlimited pairs of portals at the same time
@@ -246,7 +246,7 @@ This is a minigame pack that recreates many features from the Portal games. Not 
 
 ### **XLTT** (optional resource pack - see below)
 
-Proof of concept pack meant to try out new features. Not intended for survival worlds.
+Proof of concept pack meant to try out new features.
 
 + *O.D.M.*
     + Grappling hook + sword + rocket propulsion
@@ -270,7 +270,7 @@ Proof of concept pack meant to try out new features. Not intended for survival w
 
 ### **Brave New World**
 
-Datapack to test custom dimensions and biomes. Do not add to existing worlds, it cannot be removed.
+Datapack to test custom dimensions and biomes. Do not add to existing worlds, as it cannot be removed.
 
 + *New Dimension*
     + Just a superflat world for testing
@@ -278,7 +278,7 @@ Datapack to test custom dimensions and biomes. Do not add to existing worlds, it
 
 ### **Historically Accurate Crafting**
 
-Joke pack that changes crafting recipes.
+Joke pack that changes crafting recipes to be more annoying.
 
 + *Fixed tools recipes*
     + Tools are crafted diagonally like how the item looks
@@ -442,6 +442,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 + Dev (current repo)
     + **IMPORTANT**
+        + The required Minecraft version has changed to 1.21.4
         + Before updating existing worlds with the datapacks:
             + Full reinstall is recommended
                 + Use the datapack features to remove all items/entities/etc
@@ -450,6 +451,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
             + Remove all 42datapacks and replace them with the current versions
         + Large backend rewrites to improve performance and consistency will break all items/entities/etc from previous datapack versions
     + **All datapacks**
+        + Minecraft version updated to 1.21.4
         + Large performance boosts
             + General MSPT improvements and better scalability
         + Consistency rewrites

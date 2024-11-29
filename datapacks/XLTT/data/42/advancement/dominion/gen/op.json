@@ -3,7 +3,7 @@
 		"icon": {
 			"id": "minecraft:command_block"
 		},
-		"title": "42op        ",
+		"title": "42op",
 		"description": [
 			{
 				"text": "/tag @p add 42op",

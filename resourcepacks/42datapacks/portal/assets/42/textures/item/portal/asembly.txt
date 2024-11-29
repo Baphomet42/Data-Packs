@@ -1,4 +1,4 @@
-base
+portal_gun_base
   white shades
     #AAAAAA
     #BBBBBB
@@ -9,16 +9,12 @@ base
     #111111
     #080808 (75%)
 
-portal gun [off]
-base 100%
-middle_front 75% (#080808)
-middle_back 75% (#080808)
-
-portal gun [color]
-base 100%
-middle_front 75% (#080808)
-middle_back 25% (#080808)
-middle_back_pixel 75% (color) {layer under middle_back}
-middle_back_light 50% (color) {layer under middle_back}
-color 100% (color)
-light 50% (color)
+portal_gun_overlay
+  back dot
+    #FFFFFF (100%)
+  back dot adjacent
+    #FFFFFF (50%)
+  front dot
+    #FFFFFF (50%)
+  front dot adjacent
+    #FFFFFF (25%)

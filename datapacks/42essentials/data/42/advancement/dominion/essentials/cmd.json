@@ -3,7 +3,7 @@
 		"icon": {
 			"id": "minecraft:command_block"
 		},
-		"title": "Custom Commands    ",
+		"title": "Custom Commands",
 		"description": [
 			{
 				"text": "/trigger hat",

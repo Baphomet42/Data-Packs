@@ -3,7 +3,7 @@
 		"icon": {
 			"id": "minecraft:command_block"
 		},
-		"title": "42menu        ",
+		"title": "42menu",
 		"description": [
 			{
 				"text": "/trigger 42menu",

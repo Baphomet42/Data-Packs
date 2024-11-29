@@ -1,0 +1,29 @@
+{
+    "model": {
+        "type": "composite",
+        "models": [
+            {
+                "type": "model",
+                "model": "42:item/portal/portal_gun_base"
+            },
+            {
+                "type": "condition",
+                "property": "has_component",
+                "component": "minecraft:dyed_color",
+                "on_false": {
+                    "type": "empty"
+                },
+                "on_true": {
+                    "type": "model",
+                    "model": "42:item/portal/portal_gun_overlay",
+                    "tints": [
+                        {
+                            "type": "minecraft:dye",
+                            "default": 0
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

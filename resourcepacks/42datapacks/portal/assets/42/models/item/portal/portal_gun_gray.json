@@ -1,6 +1,0 @@
-{
-    "parent": "item/handheld",
-    "textures": {
-        "layer0": "42:item/portal/portal_gun_gray"
-    }
-}
