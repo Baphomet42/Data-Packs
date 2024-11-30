@@ -434,7 +434,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
     + Most features use display entities, no resource pack needed
     + The only use of the resource pack is for the following:
 + Custom item texture for O.D.M. Sword
-    + Without resource pack it's a carrot on a stick
+    + Without resource pack it's a stone sword
 
 ------------------------------------------------------------------------------------
 
@@ -458,13 +458,13 @@ For datapack testing purposes only. Everything is experimental and may not be up
             + Nearly every file was edited for better consistency on naming conventions
         + Fixed a ton of bugs
     + **Portal**
-        + Resource pack is now required
+        + Resource pack update
             + Now fully compatible with external packs
             + Playing without the pack will cause the Portal Gun items to have a missing texture
                 + Everything else in-world will continue to work without the resource pack
         + Considerably more turrets and other physics objects can exist at the same time before slowing the tick rate
     + **XLTT**
-        + Resource pack is now required
+        + Resource pack update
             + Now fully compatible with external packs
             + Playing without the pack will cause the O.D.M. Sword items to have a missing texture
                 + Everything else in-world will continue to work without the resource pack

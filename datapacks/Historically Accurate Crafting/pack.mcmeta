@@ -1,6 +1,20 @@
 {
     "pack": {
-        "description": "Fixes the misinformation behind common crafting recipe beliefs",
+        "description": [
+            {
+                "text": "Fixes the misinformation behind common crafting recipe beliefs",
+				"color": "gray"
+            },
+            {
+                "text": " - ",
+                "color": "dark_gray"
+            },
+            {
+                "text": "BaphomethLabs",
+                "color": "gold",
+                "italic": true
+            }
+        ],
         "pack_format": 61
     },
     "filter": {

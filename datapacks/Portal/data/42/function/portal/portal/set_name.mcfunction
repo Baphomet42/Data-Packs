@@ -1,4 +1,4 @@
-# keep consistent with gun/particle, gun/setup_look, gun/use, portal/particle, portal/set_name, portal/set_color_dis, portal/set_back_color_dis
+# keep consistent with gun/particle, gun/setup_look, gun/use, portal/particle, portal/set_name, portal/set_color_dis, portal/set_back_color_dis, portal/skin
 
 execute if score @s 42.obj.portal.skin matches 0 run return run data modify entity @s CustomName set value '"White Portal"'
 execute if score @s 42.obj.portal.skin matches 1 run return run data modify entity @s CustomName set value '"Light Gray Portal"'

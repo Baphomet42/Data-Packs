@@ -1,6 +1,20 @@
 {
     "pack": {
-        "description": "§6§oBaphomethLabs§r",
+        "description": [
+            {
+                "text": "Super Cool",
+				"color": "gray"
+            },
+            {
+                "text": " - ",
+                "color": "dark_gray"
+            },
+            {
+                "text": "BaphomethLabs",
+                "color": "gold",
+                "italic": true
+            }
+        ],
         "pack_format": 61
     }
 }

@@ -1,8 +1,8 @@
 {
-    "pack": {
+	"pack": {
         "description": [
             {
-                "text": "botsbuildbots",
+                "text": "For use with 42datapacks",
 				"color": "gray"
             },
             {
@@ -15,6 +15,13 @@
                 "italic": true
             }
         ],
-        "pack_format": 61
-    }
+		"pack_format": 46,
+		"supported_formats": [18,999]
+	},
+	"overlays": {
+		"entries": [
+			{"directory": "xltt", "formats": [18,999]},
+			{"directory": "portal", "formats": [18,999]}
+		]
+	}
 }

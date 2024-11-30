@@ -1,4 +1,4 @@
-# keep consistent with gun/particle, gun/setup_look, gun/use, portal/particle, portal/set_name, portal/set_color_dis, portal/set_back_color_dis
+# keep consistent with gun/particle, gun/setup_look, gun/use, portal/particle, portal/set_name, portal/set_color_dis, portal/set_back_color_dis, portal/skin
 
 execute if items entity @s contents *[custom_data~{42components:{portal:{portal_gun:{color:0}}}}] run return run data merge entity @s {Item:{components:{"minecraft:item_name":'{"text":"Portal Gun","color":"#F9FFFE"}',"minecraft:dyed_color":16383998}}}
 execute if items entity @s contents *[custom_data~{42components:{portal:{portal_gun:{color:1}}}}] run return run data merge entity @s {Item:{components:{"minecraft:item_name":'{"text":"Portal Gun","color":"#9D9D97"}',"minecraft:dyed_color":10329495}}}
@@ -18,4 +18,5 @@ execute if items entity @s contents *[custom_data~{42components:{portal:{portal_
 execute if items entity @s contents *[custom_data~{42components:{portal:{portal_gun:{color:15}}}}] run return run data merge entity @s {Item:{components:{"minecraft:item_name":'{"text":"Portal Gun","color":"#F38BAA"}',"minecraft:dyed_color":15961002}}}
 execute if items entity @s contents *[custom_data~{42components:{portal:{portal_gun:{color:16}}}}] run return run data merge entity @s {Item:{components:{"minecraft:item_name":'{"text":"Portal Gun","color":"#420666"}',"minecraft:dyed_color":4327014}}}
 
+# TODO validate before function called (no longer need fallback)
 data merge entity @s {Item:{components:{"minecraft:item_name":'{"text":"Portal Gun","color":"#F9FFFE"}',"minecraft:dyed_color":16383998,"minecraft:custom_data":{42components:{portal:{portal_gun:{color:0}}}}}}}

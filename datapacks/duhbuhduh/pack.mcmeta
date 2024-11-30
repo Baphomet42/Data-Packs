@@ -1,6 +1,20 @@
 {
     "pack": {
-        "description": "bing bong",
+        "description": [
+            {
+                "text": "bing bong",
+				"color": "gray"
+            },
+            {
+                "text": " - ",
+                "color": "dark_gray"
+            },
+            {
+                "text": "BaphomethLabs",
+                "color": "gold",
+                "italic": true
+            }
+        ],
         "pack_format": 61
     }
 }

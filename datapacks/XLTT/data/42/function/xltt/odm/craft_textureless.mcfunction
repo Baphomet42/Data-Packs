@@ -1,4 +1,5 @@
 give @s carrot_on_a_stick[\
+    item_model="minecraft:stone_sword",\
     item_name='"O.D.M. Sword"',\
     lore=[\
         '{"color":"white","extra":[{"color":"white","italic":false,"text":" to shoot hook"}],"keybind":"key.use"}',\
