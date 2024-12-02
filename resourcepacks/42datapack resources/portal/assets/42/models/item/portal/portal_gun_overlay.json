@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:item/handheld",
+    "parent": "42:item/portal/portal_gun_base",
     "textures": {
         "layer0": "42:item/portal/portal_gun_overlay"
     }

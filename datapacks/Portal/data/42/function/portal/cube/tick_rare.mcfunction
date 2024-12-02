@@ -1,7 +1,5 @@
 function 42:portal/tag_id
 
-data merge entity @s {Saddle:0b,InLove:0}
-
 execute as @e[tag=42.tag.portal.cube.hit,tag=42.tag.portal.id,tag=42.tag.portal.cube.held] unless entity @a[tag=42.tag.portal.id] run tag @s remove 42.tag.portal.cube.held
 execute as @e[tag=42.tag.portal.cube.hit,tag=42.tag.portal.id,tag=!42.tag.portal.cube.held] run data modify entity @s response set value 1b
 

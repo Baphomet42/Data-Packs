@@ -9,5 +9,5 @@ tag @e[tag=42.tag.portal.cube.tp,tag=42.tag.portal.id] remove 42.tag.portal.turr
 tag @e[tag=42.tag.portal.cube.tp,tag=42.tag.portal.id] remove 42.tag.portal.turret.oracle
 tag @e[tag=42.tag.portal.cube.tp,tag=42.tag.portal.id] remove 42.tag.portal.turret.nofind
 tag @e[tag=42.tag.portal.cube.tp,tag=42.tag.portal.id] remove 42.tag.portal.turret.always_on
-data merge entity @e[tag=42.tag.portal.id,tag=42.tag.portal.turret.eye,limit=1] {block_state:{Name:red_shulker_box}}
+data merge entity @e[tag=42.tag.portal.id,tag=42.tag.portal.turret.eye,limit=1] {block_state:{Name:red_shulker_box},brightness:{block:12,sky:12}}
 tag @e remove 42.tag.portal.id

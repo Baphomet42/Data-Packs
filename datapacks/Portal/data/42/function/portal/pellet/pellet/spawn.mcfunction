@@ -1,5 +1,5 @@
 tag @e remove 42.tag.portal.pellet.spawn
-summon item_display ~ ~.5 ~ {Tags:["42.tag.portal.pellet","42.tag.portal.tags.has_tick","42.tag.portal.pellet.spawn"],CustomNameVisible:0b,CustomName:'"High Energy Pellet"',item:{id:ender_eye},item_display:fixed,billboard:center,brightness:{block:15,sky:15},view_range:10f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]}}
+summon item_display ~ ~.5 ~ {Tags:["42.tag.portal.pellet","42.tag.portal.tags.has_tick","42.tag.portal.pellet.spawn"],CustomNameVisible:0b,CustomName:'"High Energy Pellet"',item:{id:ender_eye},item_display:fixed,billboard:center,view_range:10f,brightness:{block:15,sky:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]}}
 scoreboard players set @e[tag=42.tag.portal.pellet.spawn] 42.obj.portal.id -2
 scoreboard players set @e[type=!player,tag=42.tag.portal.pellet.spawn] 42.obj.datapack 3
 execute as @e[tag=42.tag.portal.pellet.spawn] at @s run rotate @s 0 -90

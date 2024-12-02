@@ -1,0 +1,2 @@
+scoreboard players set @s 42menu 0
+tellraw @s [{"text":"This action cannot be done while the elevator is loading","color":"red","hoverEvent":{"action":"show_text","contents":"The elevator is busy scanning the area for the `Current` menu option"}}]

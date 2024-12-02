@@ -4,7 +4,7 @@ execute unless score @s 42.obj.portal.var.x matches 0 run function 42:portal/ele
 tag @s add 42.tag.portal.elevator.search
 
 tag @e remove 42.tag.portal.new_spawn
-execute at @p[tag=42.tag.portal.selected] align y run summon marker ~ ~ ~ {Tags:["42.tag.portal.elevator.marker","42.tag.portal.elevator.group","42.tag.portal.elevator.valid","42.tag.portal.new_spawn"]}
+execute at @p[tag=42.tag.portal.selected] align y run summon marker ~ ~ ~ {Tags:["42.tag.portal.elevator.marker","42.tag.portal.tags.has_tick","42.tag.portal.elevator.group","42.tag.portal.elevator.valid","42.tag.portal.new_spawn"]}
 scoreboard players set @e[type=!player,tag=42.tag.portal.new_spawn] 42.obj.datapack 3
 scoreboard players operation @s 42.obj.portal.temp = @s 42.obj.portal.var.y
 execute store result score @s 42.obj.portal.xrot1 run data get entity @e[tag=42.tag.portal.new_spawn,limit=1] Pos[1] 100
@@ -21,6 +21,7 @@ execute if score @s 42.obj.portal.xrot1 matches 500.. as @e[tag=42.tag.portal.ne
 execute if score @s 42.obj.portal.xrot1 matches 500.. run scoreboard players remove @e[tag=42.tag.portal.new_spawn] 42.obj.portal.var.x 400
 execute if score @s 42.obj.portal.xrot1 matches ..-500 as @e[tag=42.tag.portal.new_spawn] at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.start] run tp @s ~ ~-1 ~ ~ ~
 execute if score @s 42.obj.portal.xrot1 matches ..-500 run scoreboard players add @e[tag=42.tag.portal.new_spawn] 42.obj.portal.var.x 100
+execute if score @s 42.obj.portal.xrot1 matches -400..400 run tag @s remove 42.tag.portal.elevator.search
 execute if score @s 42.obj.portal.xrot1 matches -400..400 run kill @e[tag=42.tag.portal.new_spawn]
 
 tag @e remove 42.tag.portal.new_spawn

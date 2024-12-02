@@ -9,7 +9,7 @@
             {
                 "type": "condition",
                 "property": "has_component",
-                "component": "minecraft:dyed_color",
+                "component": "minecraft:custom_model_data",
                 "on_false": {
                     "type": "empty"
                 },
@@ -18,7 +18,7 @@
                     "model": "42:item/portal/portal_gun_overlay",
                     "tints": [
                         {
-                            "type": "minecraft:dye",
+                            "type": "minecraft:custom_model_data",
                             "default": 0
                         }
                     ]
