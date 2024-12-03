@@ -1,0 +1,2 @@
+data modify storage 42:config packs.history.hvac set value {version:"v0.5 mc1.21.4"}
+data modify storage 42:config packs.active.hvac set value {name:"Historically Accurate Crafting",version:"v0.5 mc1.21.4"}

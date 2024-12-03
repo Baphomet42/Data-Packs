@@ -12,9 +12,9 @@ team modify 42.team.labs.owner color dark_red
 team modify 42.team.labs.owner seeFriendlyInvisibles false
 team modify 42.team.labs.owner prefix "Owner "
 
-scoreboard objectives add 42.obj.labs.setup dummy
-scoreboard players set #42.var.labs.option.autoteam 42.obj.labs.setup 0
-execute unless data storage 42:config settings.labs.autoteam run data modify storage 42:config settings.labs.autoteam set value 1b
-execute if data storage 42:config settings.labs{autoteam:1b} run scoreboard players set #42.var.labs.option.autoteam 42.obj.labs.setup 1
+scoreboard objectives add 42.obj.labs.vars dummy
 
-execute if score #42.var.labs.option.autoteam 42.obj.labs.setup matches 1 run schedule function 42:labs/rank/tick 1t replace
+function 42:gen/config/labs/reload
+
+# println load
+#tellraw @a "42:labs/load"

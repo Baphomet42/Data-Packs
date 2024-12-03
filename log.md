@@ -49,7 +49,7 @@ Exceptions to scoreboard objectives names may be trigger commands, which can use
 
 # Advancements
 
-All datapacks should be documented on the 42dominion advancement page. Every pack is responsible for adding the `advancement/dominion/root.json` file (which will all be identical and overwrite each other) and the `advancement/dominion/<pack code>/pack.json` file (which should have a unique name/description/icon and should be a child to the root advancement).
+All datapacks should be documented on the 42dominion advancement page. Every pack is responsible for adding the `advancement/dominion/root.json` file (which will all be identical and overwrite each other) and the `advancement/dominion/<pack>/pack.json` file (which should have a unique name/description/icon and should be a child to the root advancement).
 
 Packs that have unique commands or other noteworthy features should list them as child advancements to the `pack.json` advancement. Commands should use the `command_block` icon. Recipes should use the `crafting_table` icon.
 
@@ -57,6 +57,39 @@ Common features should be placed in `advancement/dominion/gen/<name>.json` (chil
 + `menu.json` - For packs that use the `42menu` system
 + `op.json` - For packs that utilize the `42op` tag
 
-Any advancements that are not used for the 42dominion advancement page should be placed in `advancement/<pack code>/`.
+Any advancements that are not used for the 42dominion advancement page should be placed in `advancement/<pack>/`.
+
+------------------------------------------------------------------------------------
+
+# config system
+
+All datapacks should use the config system to list the pack in `42:config packs.active` and `42:config packs.history` (ie. `{packs:{active:{<pack>:{}},history:{<pack>:{}}}}`). The following standards should be used:
+
++ The `packs.active` compound must contain the pack ID num, if applicable, like `id:3`
++ The `packs.active` compound must include a `name` (equal to the name used in the datapack folder)
++ Both the `active` and `history` pack must include a string `version`
+    + The version should appear as it does in its stable release (ie. `v0.1.0 mc1.20.0`)
+    + On the dev branch, the version does not need to be updated until the pack is zipped for the next stable release
++ The history pack does not require any data
+
+All datapacks are responsible for the basic config pack active and history features:
+
++ `data/`
+    + `42/function/`
+        + `gen/config/`
+            + `refresh_pack_list.mcfunction` (exact same in every pack)
+            + `<pack>/`
+                + `log.mcfunction` (add pack to active/history compounds)
+                + `menu.mcfunction` (optional)
+                + `reload.mcfunction` (at least `schedule function 42:gen/config/refresh_pack_list 5t replace`)
+        + `<pack>`
+            + `load.mcfunction` (to run `function 42:gen/config/<pack>/reload`)
+    + `minecraft/tags/function/`
+        + `<pack>/`
+            + `load.json` (to reference `42:<pack>/load`)
+        + `gen/`
+            + `config_log.json` (to reference `42:gen/config/<pack>/log`)
+
+Packs can also use the config to store settings in `42:config settings.<pack>.<setting name>`. Settings should always be stored, even if the setting is set to the default value. This should be handled in function `42:gen/config/<pack>/reload`.
 
 ------------------------------------------------------------------------------------

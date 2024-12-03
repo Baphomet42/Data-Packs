@@ -1,5 +1,5 @@
 tag @e remove 42.tag.portal.new_spawn
-summon item ~ ~ ~ {Item:{id:warped_fungus_on_a_stick,components:{\
+summon item ~ ~ ~ {Tags:["42.tag.portal.new_spawn"],Item:{id:warped_fungus_on_a_stick,components:{\
     "minecraft:custom_data":{42components:{datapack:3}},\
     "minecraft:item_model":"42:portal/portal_gun",\
     "minecraft:unbreakable":{show_in_tooltip:0b},\
@@ -7,4 +7,5 @@ summon item ~ ~ ~ {Item:{id:warped_fungus_on_a_stick,components:{\
     "minecraft:item_name":'"Portal Gun"'\
     }}}
 scoreboard players set @e[type=!player,tag=42.tag.portal.new_spawn] 42.obj.datapack 3
+execute if score #42.var.portal.config.resourcepack 42.obj.portal.vars matches 0 run data remove entity @e[limit=1,tag=42.tag.portal.new_spawn] Item.components.minecraft:item_model
 tag @e remove 42.tag.portal.new_spawn

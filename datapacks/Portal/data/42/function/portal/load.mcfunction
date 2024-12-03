@@ -1,4 +1,5 @@
 scoreboard objectives add 42.obj.datapack dummy
+scoreboard objectives add 42menu trigger
 
 scoreboard objectives add 42.obj.portal.vars dummy
 scoreboard objectives add 42.obj.portal.id dummy
@@ -37,7 +38,9 @@ execute unless score #42.var.portal.music_time 42.obj.portal.vars matches 1.. ru
 team add 42.team.gen.no_col
 team modify 42.team.gen.no_col collisionRule never
 
+function 42:gen/config/portal/reload
 function 42:portal/tick
-
-scoreboard objectives add 42menu trigger
 function 42:42menu
+
+# println load
+#tellraw @a "42:portal/load"

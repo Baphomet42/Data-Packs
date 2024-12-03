@@ -1,0 +1,2 @@
+data modify storage 42:config packs.history.essentials set value {version:"v0.5 mc1.21.4"}
+data modify storage 42:config packs.active.essentials set value {id:4,name:"42essentials",version:"v0.5 mc1.21.4"}
