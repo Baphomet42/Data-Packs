@@ -21,7 +21,7 @@ execute if entity @s[tag=42.tag.portal.turret] run tellraw @p[tag=42.tag.portal.
     {"text":"\n      "},{"text":"[Fall Over]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203546"}},\
     {"text":"\n      "},{"text":"[Stand Up]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203542"}},\
     {"text":"\n      "},{"text":"[Malfunction]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203543"}},\
-    {"text":"\n   Toggle Mode... ","color":"dark_gray"},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","value":[{"text":"Laser On - Show red laser straight forward if no target was found.\n\nOracle - Doesn't find targets, malfunction, turn off, or shoot. Laser blinks straight forward.\n\nNoAI - Doesn't find targets."}]}},\
+    {"text":"\n   Toggle Mode... ","color":"dark_gray"},{"text":"[?]","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Laser On - Show red laser straight forward if no target was found.\n\nOracle - Doesn't find targets, malfunction, turn off, or shoot. Laser blinks straight forward.\n\nNoAI - Doesn't find targets."}]}},\
     {"text":"\n      "},{"text":"[On/Off]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203541"}},\
     {"text":"\n      "},{"text":"[Laser On]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203547"}},\
     {"text":"\n      "},{"text":"[Oracle]","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4203544"}},\

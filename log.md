@@ -14,9 +14,13 @@ Used for 42menu system, entity score, item watermark.
 
 42menu values are 42NNXXX where NN is the id in 2 digits and XXX are the values 000 to 999.
 
-All entities summoned by a pack should have the score 42.obj.datapack equal to the id of the pack. All datapack items should include `custom_data~{42components:{datapack:<id>}}` using the pack id, and all other `custom_data` should be within the `42components` compound (and most likely within a compound named after the pack code like `custom_data.42components.portal.`).
++ All entities summoned by a pack should have the score 42.obj.datapack equal to the id of the pack
++ All datapack items should include `custom_data~{42components:{datapack:<id>}}` using the pack id
+    + All other `custom_data` should be within the `42components` compound
+    + Most other `custom_data` should likely be within a compound named after the pack code like `custom_data.42components.portal.`
 
 The name `gen` is sometimes used for generic features that are relevant to multiple packs, and can use the id `0` and/or `99`, depending on the use.
+The `gen` code is not a datapack and does not work on its own.
 
 + gen - 0/99
 + xltt - 1
@@ -61,7 +65,7 @@ Any advancements that are not used for the 42dominion advancement page should be
 
 ------------------------------------------------------------------------------------
 
-# config system
+# Config system
 
 All datapacks should use the config system to list the pack in `42:config packs.active` and `42:config packs.history` (ie. `{packs:{active:{<pack>:{}},history:{<pack>:{}}}}`). The following standards should be used:
 
@@ -90,6 +94,19 @@ All datapacks are responsible for the basic config pack active and history featu
         + `gen/`
             + `config_log.json` (to reference `42:gen/config/<pack>/log`)
 
-Packs can also use the config to store settings in `42:config settings.<pack>.<setting name>`. Settings should always be stored, even if the setting is set to the default value. This should be handled in function `42:gen/config/<pack>/reload`.
+Packs can also use the config to store settings in `42:config settings.<pack>.<setting name>`.
+Settings should always be stored, even if the setting is set to the default value. This should be setup in function `42:gen/config/<pack>/reload`.
+
+Packs that use config settings should provide a tellraw menu for ease of use. This can be part of the `42menu` system or as a separate menu linked from `42menu`.
+Config clickEvents can all run functions directly without needing to use a trigger system.
 
 ------------------------------------------------------------------------------------
+
+# Resourcepacks
+
+Datapacks can be designed to require no resourcepack, an optional resourcepack, or a required resourcepack.
+
++ If the resourcepack is required, no features are required to accommodate users without the resourcepack
++ If the resource pack is optional, features should always attempt to accommodate both cases
+    + The config system should have a setting to enable/disable the resourcepack (where possible)
+

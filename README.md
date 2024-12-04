@@ -9,8 +9,8 @@ Most packs are proof of concepts and not intended for existing worlds.
 + [Showcases](#showcases)
 + [Datapack Descriptions](#datapack-descriptions)
     + [42essentials](#42essentials)
-    + [Portal](#portal-optional-resource-pack---see-below)
-    + [XLTT](#xltt-optional-resource-pack---see-below)
+    + [Portal](#portal)
+    + [XLTT](#xltt)
     + [Brave New World](#brave-new-world)
     + [Historically Accurate Crafting](#historically-accurate-crafting)
     + [DuhBuhDuh](#duhbuhduh)
@@ -48,9 +48,11 @@ Recreates some server plugin stuff using commands only.
 + `/trigger kittycannon`
     + Ka-BOOM!
 
-### **Portal** (optional resource pack - see below)
+### **Portal**
 
 This is a minigame pack that recreates many features from the Portal games. Not intended for normal worlds.
+
+Optional resource pack - see [below](#resource-pack-info)
 
 + *Portal Guns*
     + Every player can have their own set of unlimited pairs of portals at the same time
@@ -244,9 +246,11 @@ This is a minigame pack that recreates many features from the Portal games. Not 
     + All rights to the Portal series belong to Valve
     + Purchase on Steam: https://store.steampowered.com/bundle/234/Portal_Bundle/
 
-### **XLTT** (optional resource pack - see below)
+### **XLTT**
 
 Proof of concept pack meant to try out new features.
+
+Optional resource pack - see [below](#resource-pack-info)
 
 + *O.D.M.*
     + Grappling hook + sword + rocket propulsion
@@ -396,16 +400,17 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Resource Pack Info
 
-+ Optional but recommended
 + For datapacks: Portal, XLTT
-+ Note: No vanilla textures are overridden
++ Note: Fully compatible with other packs without overriding anything
++ Resource pack is optional but highly recommended
+    + Important: For the best experience without using the resource pack, follow the "Configure datapacks" steps within the "Setup" section below
 
 ### **Setup**
 
-+ Download pack at `stable releases/resources.zip`
++ Download pack at `stable releases/resourcepacks/resources.zip`
     + There is only one resource pack that handles all datapacks
     + For the latest dev version, use `resources.zip` or `resourcepacks/42datapacks` in the main repo folder
-        + The Resource Pack folder at `resourcepacks/42datapacks` will not work in a world save unless its contents are zipped and renamed to `resources.zip`
+        + The `resources.zip` file is created by zipping the **contents** of the `42datapacks` folder, not a zip of the folder itself
 
 + Install pack (do only one of the following)
     + a- Place `resources.zip` into the world save
@@ -419,6 +424,19 @@ For datapack testing purposes only. Everything is experimental and may not be up
             + No vanilla textures are overridden, so the pack will have no effect without the datapack also loaded
         + Only players who add the resource pack will see the textures
         + You can rename or unzip the Resource Pack for convenience
+
++ Configure datapacks
+    + Newly installed datapacks will have the resource pack enabled by default
+        + No further configuration is needed unless you want to change this setting
+    + The Portal and XLTT datapacks both have config settings to disable the use of the resource pack
+        + Each datapack has separate config settings
+        + The setting is saved to the world so it affects all players
+        + The setting will not affect items already in the world, so new items with the updated setting must be given from `42menu`
+    + Follow these steps to enable or disable the use of the resource pack for a given datapack:
+        + Run `/trigger 42menu`
+        + Click the Config symbol in one of the datapack menus
+        + Click `Enable` or `Disable` next to the "Resource pack" option
+        + The setting will apply immediately without needing to `/reload`
 
 **Portal Resources**
 
