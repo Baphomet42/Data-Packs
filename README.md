@@ -458,7 +458,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ Dev (current repo)
++ v0.5 Major Update (12/3/2024)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.4
         + Before updating existing worlds with the datapacks:
@@ -477,15 +477,20 @@ For datapack testing purposes only. Everything is experimental and may not be up
         + Fixed a ton of bugs
     + **Portal**
         + Resource pack update
+            + Adjusted look to Portal Gun items
             + Now fully compatible with external packs
             + Playing without the pack will cause the Portal Gun items to have a missing texture
                 + Everything else in-world will continue to work without the resource pack
+            + The datapack can be configured to run without custom assets in config settings
         + Considerably more turrets and other physics objects can exist at the same time before slowing the tick rate
+        + Updated visuals for various equipment
     + **XLTT**
         + Resource pack update
+            + New texture for O.D.M. Sword
             + Now fully compatible with external packs
             + Playing without the pack will cause the O.D.M. Sword items to have a missing texture
                 + Everything else in-world will continue to work without the resource pack
+            + The datapack can be configured to run without custom assets in config settings
 
 + v0.4 Major Update (10/20/2024)
     + **IMPORTANT**
