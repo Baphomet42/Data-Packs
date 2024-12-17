@@ -13,7 +13,7 @@ scoreboard objectives add 42.obj.xltt.vars dummy
 
 function 42:gen/config/xltt/reload
 function 42:xltt/tick
-function 42:42menu
+schedule function 42:42menu 1t replace
 
 # println load
 #tellraw @a "42:xltt/load"

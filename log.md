@@ -30,6 +30,7 @@ The `gen` code is not a datapack and does not work on its own.
 + dbd - 5
 + hvac - none
 + labs - none
++ src - 8
 
 Minecraft namespace should be rarely used (and almost always non-replacing).
 In most cases, use the namepace 42 and follow it with the pack code. (Ex: 42:portal).
@@ -53,13 +54,27 @@ Exceptions to scoreboard objectives names may be trigger commands, which can use
 
 # Advancements
 
-All datapacks should be documented on the 42dominion advancement page. Every pack is responsible for adding the `advancement/dominion/root.json` file (which will all be identical and overwrite each other) and the `advancement/dominion/<pack>/pack.json` file (which should have a unique name/description/icon and should be a child to the root advancement).
+All datapacks should be documented on the 42dominion advancement page. The following are required for all packs:
++ `data/`
+    + `42/`
+        + `advancement/`
+            + `dominion/`
+                + `packs.json` (exact same in every pack)
+                + `root.json` (exact same in every pack)
+                + `<pack>/`
+                    + `pack.json` (with title, description, and icon for pack)
 
 Packs that have unique commands or other noteworthy features should list them as child advancements to the `pack.json` advancement. Commands should use the `command_block` icon. Recipes should use the `crafting_table` icon.
 
-Common features should be placed in `advancement/dominion/gen/<name>.json` (child advancement of `root.json`), and all packs that use these features are responsible for adding the advancements. The current list of gen advancements are as follows:
-+ `menu.json` - For packs that use the `42menu` system
-+ `op.json` - For packs that utilize the `42op` tag
+Packs that use common features should document them as follows:
++ `data/`
+    + `42/`
+        + `advancement/`
+            + `dominion/`
+                + `gen/`
+                    + `menu.json` (only if 42menu is used)
+                    + `op.json` (only if 42op is used)
+                    + `root.json` (required)
 
 Any advancements that are not used for the 42dominion advancement page should be placed in `advancement/<pack>/`.
 
@@ -79,26 +94,54 @@ All datapacks should use the config system to list the pack in `42:config packs.
 All datapacks are responsible for the basic config pack active and history features:
 
 + `data/`
-    + `42/function/`
-        + `gen/config/`
-            + `refresh_pack_list.mcfunction` (exact same in every pack)
+    + `42/`
+        + `function/`
+            + `gen/`
+                + `config/`
+                    + `refresh_pack_list.mcfunction` (exact same in every pack)
+                    + `<pack>/`
+                        + `log.mcfunction` (add pack to active/history compounds)
+                        + `menu.mcfunction` (optional)
+                        + `reload.mcfunction` (at least `schedule function 42:gen/config/refresh_pack_list 5t replace`)
             + `<pack>/`
-                + `log.mcfunction` (add pack to active/history compounds)
-                + `menu.mcfunction` (optional)
-                + `reload.mcfunction` (at least `schedule function 42:gen/config/refresh_pack_list 5t replace`)
-        + `<pack>`
-            + `load.mcfunction` (to run `function 42:gen/config/<pack>/reload`)
-    + `minecraft/tags/function/`
-        + `<pack>/`
-            + `load.json` (to reference `42:<pack>/load`)
-        + `gen/`
-            + `config_log.json` (to reference `42:gen/config/<pack>/log`)
+                + `load.mcfunction` (to run `function 42:gen/config/<pack>/reload`)
+        + `tags/`
+            + `function/`
+                + `gen/`
+                    + `config_log.json` (to reference `42:gen/config/<pack>/log`)
+    + `minecraft/`
+        + `tags/`
+            + `function/`
+                + `load.json` (to reference `42:<pack>/load`)
 
 Packs can also use the config to store settings in `42:config settings.<pack>.<setting name>`.
 Settings should always be stored, even if the setting is set to the default value. This should be setup in function `42:gen/config/<pack>/reload`.
 
 Packs that use config settings should provide a tellraw menu for ease of use. This can be part of the `42menu` system or as a separate menu linked from `42menu`.
 Config clickEvents can all run functions directly without needing to use a trigger system.
+
+------------------------------------------------------------------------------------
+
+# 42menu
+
+The 42menu system allows for pack-specific tellraw menus all accessible with a single `/trigger` command (`/trigger 42menu`).
+
+The following files should be added (or modified to include the specified contents)
+
++ `data/`
+    + `42/`
+        + `function/`
+            + `42menu.mcfunction` (exact same in every pack)
+            + `<pack>/`
+                + `load.mcfunction` (to run `schedule function 42:42menu 1t replace`)
+                + `menu.mcfunction` (to include all menu related logic)
+        + `tags/`
+            + `function/`
+                + `menu.json` (to reference `42:<pack>/menu`)
+    + `minecraft/`
+        + `tags/`
+            + `function/`
+                + `load.json` (to reference `42:<pack>/load`)
 
 ------------------------------------------------------------------------------------
 

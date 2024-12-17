@@ -3,7 +3,7 @@ scoreboard objectives add 42menu trigger
 
 function 42:gen/config/dbd/reload
 function 42:dbd/tick
-function 42:42menu
+schedule function 42:42menu 1t replace
 
 # println load
 #tellraw @a "42:dbd/load"

@@ -40,7 +40,7 @@ team modify 42.team.gen.no_col collisionRule never
 
 function 42:gen/config/portal/reload
 function 42:portal/tick
-function 42:42menu
+schedule function 42:42menu 1t replace
 
 # println load
 #tellraw @a "42:portal/load"

@@ -1,0 +1,20 @@
+{
+    "pack": {
+        "description": [
+            {
+                "text": "/$Src",
+				"color": "gray"
+            },
+            {
+                "text": " - ",
+                "color": "dark_gray"
+            },
+            {
+                "text": "BaphomethLabs",
+                "color": "gold",
+                "italic": true
+            }
+        ],
+        "pack_format": 61
+    }
+}

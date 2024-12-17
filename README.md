@@ -272,6 +272,19 @@ Optional resource pack - see [below](#resource-pack-info)
 + `/trigger 42menu`
     + Opens window to give items and use abilities
 
+### **42source**
+
+Proof of concept pack with common FPS content.
+
++ Guns
+    + Various types:
+        + *Pistol*
+        + *Assault Rifle*
+        + *Ray Gun*
+    + Shoot and reload mechanics
++ `/trigger 42menu`
+    + Opens window to give items
+
 ### **Brave New World**
 
 Datapack to test custom dimensions and biomes. Do not add to existing worlds, as it cannot be removed.
@@ -457,6 +470,14 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ------------------------------------------------------------------------------------
 
 # Changelog
+
++ Dev (Current repo)
+    + **42source**
+        + New pack to recreate common FPS content
+        + Added guns
+            + Pistol
+            + Assault Rifle
+            + Ray Gun
 
 + v0.5 Major Update (12/3/2024)
     + **IMPORTANT**
