@@ -1,3 +1,0 @@
-execute anchored eyes positioned ^ ^-.25 ^.5 run summon item_display ~ ~ ~ {Tags:["42.tag.src.gun.bullet.marker","42.tag.src.new_spawn"],item:{id:heavy_core},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[.125f,.125f,.125f],translation:[0f,.03125f,0f]},teleport_duration:1}
-rotate @e[limit=1,type=item_display,tag=42.tag.src.new_spawn] ~ ~
-tag @e[limit=1,type=item_display,tag=42.tag.src.new_spawn] remove 42.tag.src.new_spawn

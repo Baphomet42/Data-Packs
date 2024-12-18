@@ -14,4 +14,4 @@ execute at @s positioned ^ ^ ^.3 if block ~ ~ ~ #42:projectile_pass run tp @s ~ 
 execute at @s positioned ^ ^ ^.3 if block ~ ~ ~ #42:projectile_pass run tp @s ~ ~ ~
 execute at @s positioned ^ ^ ^.3 if block ~ ~ ~ #42:projectile_pass run tp @s ~ ~ ~
 execute at @s positioned ^ ^ ^.3 if block ~ ~ ~ #42:projectile_pass run tp @s ~ ~ ~
-execute at @s positioned ^ ^ ^.3 unless block ~ ~ ~ #42:projectile_pass run function 42:src/gun/raygun/bullet/hit_block
+execute at @s positioned ^ ^ ^.3 unless block ~ ~ ~ #42:projectile_pass run function 42:src/gun/todo_raygun/bullet/hit_block

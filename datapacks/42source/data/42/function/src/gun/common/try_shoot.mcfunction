@@ -1,3 +1,0 @@
-execute if items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{pistol:{}}}}}] run return run function 42:src/gun/pistol/try_shoot
-execute if items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{ar:{}}}}}] run return run function 42:src/gun/ar/try_shoot
-execute if items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{raygun:{}}}}}] run return run function 42:src/gun/raygun/try_shoot

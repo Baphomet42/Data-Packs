@@ -277,11 +277,13 @@ Optional resource pack - see [below](#resource-pack-info)
 Proof of concept pack with common FPS content.
 
 + Guns
-    + Various types:
+    + Fully customizable stats
+    + Various preset types:
         + *Pistol*
         + *Assault Rifle*
         + *Ray Gun*
     + Shoot and reload mechanics
+    + Semi-auto and full-auto modes with customizable fire rates
 + `/trigger 42menu`
     + Opens window to give items
 

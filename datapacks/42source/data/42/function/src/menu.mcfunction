@@ -7,6 +7,6 @@ tellraw @s[scores={42menu=1}] [\
 # 4208001..4208003
 execute if entity @s[tag=!42op,gamemode=!creative,scores={42menu=4208001..4208003}] run function 42:error_perms
 scoreboard players set @s[tag=!42op,gamemode=!creative,scores={42menu=4208001..4208003}] 42menu 0
-execute if entity @s[scores={42menu=4208001}] run function 42:src/gun/pistol/craft
-execute if entity @s[scores={42menu=4208002}] run function 42:src/gun/ar/craft
-execute if entity @s[scores={42menu=4208003}] run function 42:src/gun/raygun/craft
+execute if entity @s[scores={42menu=4208001}] run function 42:src/gun/craft/pistol
+execute if entity @s[scores={42menu=4208002}] run function 42:src/gun/craft/ar
+execute if entity @s[scores={42menu=4208003}] run function 42:src/gun/craft/raygun

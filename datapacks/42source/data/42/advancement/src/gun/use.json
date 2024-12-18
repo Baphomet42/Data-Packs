@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "click": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": "{42components:{src:{gun:{}}}}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "42:src/gun/use"
+    }
+}
