@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "#42:projectile_pass",
+        "iron_bars"
+    ]
+}

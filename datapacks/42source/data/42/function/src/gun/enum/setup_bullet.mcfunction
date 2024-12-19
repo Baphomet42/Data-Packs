@@ -1,2 +1,0 @@
-execute if items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{raygun:{}}}}}] run return run \
-    data merge entity @e[limit=1,type=item_display,tag=42.tag.src.new_spawn] {Tags:["42.tag.src.gun.bullet.marker","42.tag.src.gun.bullet.raygun","42.tag.src.new_spawn"],item:{id:slime_block},transformation:{scale:[.0625f,.0625f,.0625f],translation:[0f,0f,0f]}}

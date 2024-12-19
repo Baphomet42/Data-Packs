@@ -3,6 +3,8 @@ scoreboard objectives add 42menu trigger
 
 scoreboard objectives add 42.obj.src.temp dummy
 scoreboard objectives add 42.obj.src.time dummy
+scoreboard objectives add 42.obj.src.gun.reload_time dummy
+scoreboard objectives add 42.obj.src.gun.equip_instance dummy
 scoreboard objectives add 42.obj.src.gun.use_time dummy
 
 function 42:gen/config/src/reload

@@ -3,10 +3,11 @@ tellraw @s[scores={42menu=1}] [\
     {"text":"\n   "},{"text":"Get item...","color":"dark_gray"},\
     {"text":"\n      "},{"text":"[Pistol]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4208001"}},\
     {"text":"\n      "},{"text":"[Assault Rifle]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4208002"}},\
-    {"text":"\n      "},{"text":"[Ray Gun]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4208003"}}]
+    {"text":"\n      "},{"text":"[Ray Gun]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger 42menu set 4208003"}},\
+    {"text":"\n      "},{"text":"[Custom Gun]","color":"gray","clickEvent":{"action":"suggest_command","value":"/function 42:src/gun/craft/custom {args:{name:\"Pistol\",model:\"echo_shard\",ammo:10,shoot_cooldown:3,reload_time:20,auto:false}}"}}]
 # 4208001..4208003
 execute if entity @s[tag=!42op,gamemode=!creative,scores={42menu=4208001..4208003}] run function 42:error_perms
 scoreboard players set @s[tag=!42op,gamemode=!creative,scores={42menu=4208001..4208003}] 42menu 0
-execute if entity @s[scores={42menu=4208001}] run function 42:src/gun/craft/pistol
-execute if entity @s[scores={42menu=4208002}] run function 42:src/gun/craft/ar
-execute if entity @s[scores={42menu=4208003}] run function 42:src/gun/craft/raygun
+execute if entity @s[scores={42menu=4208001}] run function 42:src/gun/craft/presets/pistol
+execute if entity @s[scores={42menu=4208002}] run function 42:src/gun/craft/presets/ar
+execute if entity @s[scores={42menu=4208003}] run function 42:src/gun/craft/presets/raygun

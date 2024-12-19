@@ -286,6 +286,27 @@ Proof of concept pack with common FPS content.
     + Semi-auto and full-auto modes with customizable fire rates
 + `/trigger 42menu`
     + Opens window to give items
+    + *[Custom Gun]*
+        + Opens command interface to create a custom gun
+        + Available args:
+            + `name` - string of item name
+            + `model` - string of item_model
+            + `ammo` - int of max ammo capacity
+            + `shoot_cooldown` - int of minimum ticks between shots
+            + `reload_time` - int of time to reload in ticks
+            + `flags` - compound containing optional unit flags (set to `{}` for true or not set for false)
+                + `auto` - set if gun should keep firing when holding use key
+                + `large_bullet` - set if gun shoots larger bullets (used for collision and hit detection)
+                + `slow_bullet` - set if bullet should move twice as slow as normal
+                + `fast_bullet` - set if bullet should move 50% faster than normal
+            + `overrides` - compound containing optional arguments to replace or add certain effects
+                + `sounds` - compound containing sound instances to override (each sound is a compound that can have `replace:{}` to stop the original sound and/or `sound:{value:""}` to run as a macro with the line `$playsound $(value)`)
+                    + `reload_start` - plays when starting a reload
+                    + `reload_finish` - plays when successfully finishing a reload
+                    + `shoot` - plays when shooting
+                + `particles` - compound containing particle instances to override (each particle is a compound that can have `replace:{}` to stop the original particle and/or `particle:{value:""}` to run as a macro with the line `$particle $(value)`)
+                    + `tracer` - appears every few blocks along bullet path
+                + `bullet_item` - compound of item to render as bullet
 
 ### **Brave New World**
 

@@ -1,4 +1,2 @@
-execute if items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{raygun:{}}}}}] run return run \
-    playsound minecraft:entity.allay.hurt player @a ~ ~ ~ 1 1.375
-
-playsound entity.generic.explode player @a ~ ~ ~ 1 2
+execute unless items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{overrides:{sounds:{shoot:{replace:{}}}}}}}}] run playsound entity.generic.explode player @a ~ ~ ~ .5 2
+execute if items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{overrides:{sounds:{shoot:{sound:{}}}}}}}}] run function 42:src/gun/enum/macro/sound/shoot with storage 42:src temp_gun.components.minecraft:custom_data.42components.src.gun.overrides.sounds.shoot.sound

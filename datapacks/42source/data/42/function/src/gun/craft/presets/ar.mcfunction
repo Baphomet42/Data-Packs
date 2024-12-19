@@ -1,0 +1,1 @@
+function 42:src/gun/craft/custom {args:{name:"Assault Rifle",model:"prismarine_shard",ammo:30,shoot_cooldown:2,reload_time:40,flags:{auto:{}}}}

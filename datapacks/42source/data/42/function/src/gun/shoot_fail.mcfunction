@@ -1,0 +1,3 @@
+execute unless score @s 42.obj.src.gun.reload_time matches ..-1 run playsound block.vault.reject_rewarded_player player @a ~ ~ ~ .5 2
+execute if score @s[tag=42.tag.src.gun.player.use] 42.obj.src.gun.reload_time matches ..-1 run playsound block.vault.reject_rewarded_player player @a ~ ~ ~ .5 2
+execute unless score @s 42.obj.src.gun.reload_time matches ..-1 run scoreboard players set @s 42.obj.src.gun.reload_time -20

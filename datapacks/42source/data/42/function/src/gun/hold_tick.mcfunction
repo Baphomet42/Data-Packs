@@ -1,8 +1,8 @@
-tag @s add 42.tag.src.gun.player.is_holding
+summon item_display ~ ~ ~ {Tags:["42.tag.src.gun.temp_display"],view_range:0f,UUID:[I;-995813034,-2143727950,-1473643892,-1843454966]}
+item replace entity c4a51956-8039-4eb2-a829-fa8c921f1c0a contents from entity @s weapon.mainhand
+data modify storage 42:src temp_gun.components set from entity c4a51956-8039-4eb2-a829-fa8c921f1c0a item.components
 
-execute if items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{cooldown:{current:{}}}}}}] run return run function 42:src/gun/cooldown
+function 42:src/gun/hold_tick_action
 
-execute if entity @s[tag=42.tag.src.gun.player.use] unless items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{auto:{}}}}}] run function 42:src/gun/try_shoot
-execute if score @s 42.obj.src.gun.use_time matches 2 if items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{auto:{}}}}}] run function 42:src/gun/try_shoot
-
-tag @s remove 42.tag.src.gun.player.use
+kill c4a51956-8039-4eb2-a829-fa8c921f1c0a
+data remove storage 42:src temp_gun
