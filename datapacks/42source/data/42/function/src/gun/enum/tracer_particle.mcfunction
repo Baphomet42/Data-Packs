@@ -1,2 +1,0 @@
-execute unless items entity @s contents *[custom_data~{42components:{src:{gun:{overrides:{particles:{tracer:{replace:{}}}}}}}}] run particle dust_color_transition{scale:.25,from_color:[.25,.25,.25],to_color:[.5,.5,.5]} ~ ~ ~ .05 .05 .05 0 1 normal
-execute if items entity @s contents *[custom_data~{42components:{src:{gun:{overrides:{particles:{tracer:{particle:{}}}}}}}}] run function 42:src/gun/enum/macro/particle/tracer with entity @s item.components.minecraft:custom_data.42components.src.gun.overrides.particles.tracer.particle

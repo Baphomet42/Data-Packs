@@ -1,0 +1,2 @@
+execute unless items entity @s contents *[custom_data~{42components:{src:{gun:{particles:{hit:{replace:{}}}}}}}] run function 42:src/gun/bullet/hit_particle with entity @s item
+execute if items entity @s contents *[custom_data~{42components:{src:{gun:{particles:{hit:{particle:{}}}}}}}] run function 42:src/gun/enum/macro/particle/hit with entity @s item.components.minecraft:custom_data.42components.src.gun.particles.hit.particle

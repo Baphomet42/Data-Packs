@@ -2,7 +2,7 @@ scoreboard players remove @s 42.obj.src.gun.reload_time 1
 execute if score @s 42.obj.src.gun.reload_time matches 1.. run return 0
 
 function 42:src/gun/reload_stop
-function 42:src/gun/enum/reload_finish_sound
+function 42:src/gun/enum/sound/reload_finish
 data modify storage 42:src temp_gun.components.minecraft:damage set value 0
 data modify storage 42:src temp_gun.components.minecraft:custom_data.42components.src.gun.ammo.current.inverse set value 0
 

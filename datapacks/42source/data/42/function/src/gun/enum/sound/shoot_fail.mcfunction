@@ -1,0 +1,2 @@
+execute unless items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{sounds:{shoot_fail:{replace:{}}}}}}}] run function 42:src/gun/enum/macro/sound/shoot_fail with storage 42:src data.gun.default_data.gun.sounds.shoot_fail.sound
+execute if items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{sounds:{shoot_fail:{sound:{}}}}}}}] run function 42:src/gun/enum/macro/sound/shoot_fail with storage 42:src temp_gun.components.minecraft:custom_data.42components.src.gun.sounds.shoot_fail.sound

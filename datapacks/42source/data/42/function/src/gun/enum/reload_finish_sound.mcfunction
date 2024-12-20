@@ -1,2 +1,0 @@
-execute unless items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{overrides:{sounds:{reload_finish:{replace:{}}}}}}}}] run playsound block.vault.insert_item player @a ~ ~ ~ .375 1.25
-execute if items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{overrides:{sounds:{reload_finish:{sound:{}}}}}}}}] run function 42:src/gun/enum/macro/sound/reload_finish with storage 42:src temp_gun.components.minecraft:custom_data.42components.src.gun.overrides.sounds.reload_finish.sound

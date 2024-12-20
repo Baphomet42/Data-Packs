@@ -1,0 +1,2 @@
+execute unless items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{sounds:{reload_finish:{replace:{}}}}}}}] run function 42:src/gun/enum/macro/sound/reload_finish with storage 42:src data.gun.default_data.gun.sounds.reload_finish.sound
+execute if items entity @s weapon.mainhand *[custom_data~{42components:{src:{gun:{sounds:{reload_finish:{sound:{}}}}}}}] run function 42:src/gun/enum/macro/sound/reload_finish with storage 42:src temp_gun.components.minecraft:custom_data.42components.src.gun.sounds.reload_finish.sound

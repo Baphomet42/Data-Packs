@@ -10,6 +10,7 @@ Most packs are proof of concepts and not intended for existing worlds.
 + [Datapack Descriptions](#datapack-descriptions)
     + [42essentials](#42essentials)
     + [Portal](#portal)
+    + [42source](#42source)
     + [XLTT](#xltt)
     + [Brave New World](#brave-new-world)
     + [Historically Accurate Crafting](#historically-accurate-crafting)
@@ -246,6 +247,55 @@ Optional resource pack - see [below](#resource-pack-info)
     + All rights to the Portal series belong to Valve
     + Purchase on Steam: https://store.steampowered.com/bundle/234/Portal_Bundle/
 
+### **42source**
+
+Proof of concept pack with common FPS content.
+
++ Guns
+    + Fully customizable stats
+    + Various preset types:
+        + *Pistol*
+        + *Assault Rifle*
+        + *Ray Gun*
+        + *RPG*
+        + All presets use the custom system without hardcoding
+    + Shoot and reload mechanics
+    + Semi-auto and full-auto modes with customizable fire rates
++ `/trigger 42menu`
+    + Opens window to give items
+    + *[Custom Gun]*
+        + Opens command interface to create a custom gun
+            + `/function 42:src/gun/craft/custom {args:{}}`
+        + Any args that are not set will fallback to default values
+        + Available args:
+            + `name` - string of item name
+            + `model` - string of item_model
+            + `gun` - compound
+                + `ammo` - compound
+                    + `max` - int of max ammo capacity
+                + `cooldown` - compound
+                    + `on_shoot` - int of minimum ticks between shots
+                    + `on_swap` - int of ticks before gun can be used after selecting it in the hotbar
+                + `reload_time` - int of time to reload in ticks
+                + `flags` - compound containing optional unit flags (set a flag to `{}` for true or leave unset for false)
+                    + `auto` - set if gun should keep firing when holding use key
+                    + `cancel_reload_slowness` - set if reloading should not reduce movement speed
+                    + `large_bullet` - set if gun shoots larger bullets (used for collision and hit detection)
+                    + `slow_bullet` - set if bullet should move twice as slow as normal
+                    + `fast_bullet` - set if bullet should move 50% faster than normal
+                + `sounds` - compound containing sound instances to override (each sound is a compound that can have `replace:{}` to stop the original sound and/or `sound:{value:""}` to run as a macro with the line `$playsound $(value)`)
+                    + `hit` - plays where the bullet hits something
+                    + `reload_start` - plays when starting a reload
+                    + `reload_finish` - plays when successfully finishing a reload
+                    + `shoot` - plays when shooting
+                    + `shoot_fail` - plays when attempting to shoot with no ammo
+                + `particles` - compound containing particle instances to override (each particle is a compound that can have `replace:{}` to stop the original particle and/or `particle:{value:""}` to run as a macro with the line `$particle $(value)`)
+                    + `hit` - appears where the bullet hits something
+                    + `tracer` - appears every few blocks along bullet path
+                + `bullet` - compound
+                    + `item` - compound of item to render as bullet (like `{id:"sponge"}`)
+        + Examples can be found in `datapacks/42source/data/42/function/src/gun/craft/presets/`
+
 ### **XLTT**
 
 Proof of concept pack meant to try out new features.
@@ -271,42 +321,6 @@ Optional resource pack - see [below](#resource-pack-info)
     + Can be used from 42menu
 + `/trigger 42menu`
     + Opens window to give items and use abilities
-
-### **42source**
-
-Proof of concept pack with common FPS content.
-
-+ Guns
-    + Fully customizable stats
-    + Various preset types:
-        + *Pistol*
-        + *Assault Rifle*
-        + *Ray Gun*
-    + Shoot and reload mechanics
-    + Semi-auto and full-auto modes with customizable fire rates
-+ `/trigger 42menu`
-    + Opens window to give items
-    + *[Custom Gun]*
-        + Opens command interface to create a custom gun
-        + Available args:
-            + `name` - string of item name
-            + `model` - string of item_model
-            + `ammo` - int of max ammo capacity
-            + `shoot_cooldown` - int of minimum ticks between shots
-            + `reload_time` - int of time to reload in ticks
-            + `flags` - compound containing optional unit flags (set to `{}` for true or not set for false)
-                + `auto` - set if gun should keep firing when holding use key
-                + `large_bullet` - set if gun shoots larger bullets (used for collision and hit detection)
-                + `slow_bullet` - set if bullet should move twice as slow as normal
-                + `fast_bullet` - set if bullet should move 50% faster than normal
-            + `overrides` - compound containing optional arguments to replace or add certain effects
-                + `sounds` - compound containing sound instances to override (each sound is a compound that can have `replace:{}` to stop the original sound and/or `sound:{value:""}` to run as a macro with the line `$playsound $(value)`)
-                    + `reload_start` - plays when starting a reload
-                    + `reload_finish` - plays when successfully finishing a reload
-                    + `shoot` - plays when shooting
-                + `particles` - compound containing particle instances to override (each particle is a compound that can have `replace:{}` to stop the original particle and/or `particle:{value:""}` to run as a macro with the line `$particle $(value)`)
-                    + `tracer` - appears every few blocks along bullet path
-                + `bullet_item` - compound of item to render as bullet
 
 ### **Brave New World**
 
@@ -498,9 +512,11 @@ For datapack testing purposes only. Everything is experimental and may not be up
     + **42source**
         + New pack to recreate common FPS content
         + Added guns
-            + Pistol
-            + Assault Rifle
-            + Ray Gun
+            + Highly customizable stats
+            + Basic presets
+                + Pistol
+                + Assault Rifle
+                + Ray Gun
 
 + v0.5 Major Update (12/3/2024)
     + **IMPORTANT**

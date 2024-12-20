@@ -17,7 +17,7 @@ Used for 42menu system, entity score, item watermark.
 + All entities summoned by a pack should have the score 42.obj.datapack equal to the id of the pack
 + All datapack items should include `custom_data~{42components:{datapack:<id>}}` using the pack id
     + All other `custom_data` should be within the `42components` compound
-    + Most other `custom_data` should likely be within a compound named after the pack code like `custom_data.42components.portal.`
+    + Most `custom_data` should typically be within the `42components.<pack>` compound
 
 The name `gen` is sometimes used for generic features that are relevant to multiple packs, and can use the id `0` and/or `99`, depending on the use.
 The `gen` code is not a datapack and does not work on its own.
@@ -28,9 +28,9 @@ The `gen` code is not a datapack and does not work on its own.
 + portal - 3
 + essentials - 4
 + dbd - 5
-+ hvac - none
 + labs - none
-+ src - 8
++ src - 7
++ hvac - none
 
 Minecraft namespace should be rarely used (and almost always non-replacing).
 In most cases, use the namepace 42 and follow it with the pack code. (Ex: 42:portal).
@@ -132,6 +132,7 @@ The following files should be added (or modified to include the specified conten
     + `42/`
         + `function/`
             + `42menu.mcfunction` (exact same in every pack)
+            + `error_perms.mcfunction` (exact same in every pack, must be paired with 42op advancement setup)
             + `<pack>/`
                 + `load.mcfunction` (to run `schedule function 42:42menu 1t replace`)
                 + `menu.mcfunction` (to include all menu related logic)
@@ -142,6 +143,41 @@ The following files should be added (or modified to include the specified conten
         + `tags/`
             + `function/`
                 + `load.json` (to reference `42:<pack>/load`)
+
+------------------------------------------------------------------------------------
+
+# Shared files
+
+Some files can be shared in multiple packs and should be kept exactly equal between all packs at all times. Any such file should be documented below.
+
+In most (but not all) cases, these files should be in locations `42:`, `42:dominion/`, or `42:gen/`, and not within `42:<pack>/`
+
++ `data/`
+    + `42/`
+        + `advancement/`
+            + `dominion/`
+                + `packs.json`
+                + `root.json`
+                + `gen/`
+                    + `menu.json`
+                    + `op.json`
+                    + `root.json`
+        + `function/`
+            + `42menu.mcfunction`
+            + `error_perms.mcfunction`
+            + `gen/`
+                + `config/`
+                    + `refresh_pack_list.mcfunction`
+        + `loot_table/`
+            + `empty.json`
+        + `predicate/`
+            + `input_sneak.json`
+            + `is_sneaking.json`
+            + `is_sprinting.json`
+            + `location_fluid.json`
+        + `tags/`
+            + `block/`
+                + `projectile_pass.json`
 
 ------------------------------------------------------------------------------------
 

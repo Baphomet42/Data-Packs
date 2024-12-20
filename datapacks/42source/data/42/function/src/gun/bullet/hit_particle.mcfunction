@@ -1,0 +1,1 @@
+$particle item{item:"$(id)"} ~ ~ ~ .15 .15 .15 0 10 force

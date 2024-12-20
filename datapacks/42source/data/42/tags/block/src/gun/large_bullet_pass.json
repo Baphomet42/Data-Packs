@@ -1,6 +1,17 @@
 {
     "replace": false,
     "values": [
-        "#42:projectile_pass"
+        "#42:projectile_pass",
+        "minecraft:chain",
+        "minecraft:lantern",
+        "minecraft:soul_lantern",
+        "minecraft:end_rod",
+        "minecraft:lightning_rod",
+        "minecraft:brewing_stand",
+        "minecraft:moss_carpet",
+        "minecraft:pale_moss_carpet",
+        "#minecraft:wool_carpets",
+        "#minecraft:flower_pots",
+        "#minecraft:candles"
     ]
 }

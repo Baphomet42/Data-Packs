@@ -2,6 +2,8 @@
     "replace": false,
     "values": [
       "#42:projectile_pass",
-      "iron_bars"
+      "minecraft:iron_bars",
+      "#minecraft:fences",
+      "#minecraft:fence_gates"
     ]
 }
