@@ -3,8 +3,7 @@ execute as @e[tag=42.tag.portal.launch.dis,limit=2,sort=nearest,distance=..5] ru
 playsound minecraft:block.piston.extend block @a ~ ~ ~ 2 1.25
 tag @s add 42.tag.portal.motion
 tag @e remove 42.tag.portal.temp
-execute as @e[tag=42.tag.portal.launch,limit=1,sort=nearest,distance=..5] at @s run summon armor_stand ~ ~ ~ {Small:1b,Invisible:1b,Invulnerable:1b,DisabledSlots:16191,Tags:["42.tag.portal.motion.tp","42.tag.portal.motion.tp_player","42.tag.portal.temp"]}
-scoreboard players set @e[type=!player,tag=42.tag.portal.temp] 42.obj.datapack 3
+execute as @e[tag=42.tag.portal.launch,limit=1,sort=nearest,distance=..5] at @s run summon armor_stand ~ ~ ~ {Small:1b,Invisible:1b,Invulnerable:1b,DisabledSlots:16191,Tags:["42.tag.summon","42.tag.portal.motion.tp","42.tag.portal.motion.tp_player","42.tag.portal.temp"]}
 scoreboard players operation @e[tag=42.tag.portal.motion.tp,tag=42.tag.portal.temp,limit=1] 42.obj.portal.var.x = @e[tag=42.tag.portal.launch,limit=1,sort=nearest,distance=..5] 42.obj.portal.var.x
 scoreboard players operation @e[tag=42.tag.portal.motion.tp,tag=42.tag.portal.temp,limit=1] 42.obj.portal.var.z = @e[tag=42.tag.portal.launch,limit=1,sort=nearest,distance=..5] 42.obj.portal.var.z
 execute store result score @e[tag=42.tag.portal.motion.tp,tag=42.tag.portal.temp,limit=1] 42.obj.portal.id run data get entity @s UUID[0]

@@ -5,7 +5,7 @@
             "conditions": {
                 "item": {
                     "predicates": {
-                        "custom_data": "{42components:{src:{gun:{}}}}"
+                        "custom_data": "{42data:{src:{gun:{}}}}"
                     }
                 }
             }

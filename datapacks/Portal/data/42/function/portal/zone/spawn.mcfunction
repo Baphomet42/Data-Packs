@@ -1,7 +1,6 @@
 tag @e remove 42.tag.portal.new_spawn
-summon block_display ~ ~ ~ {Tags:["42.tag.portal.new_spawn","42.tag.portal.zone","42.tag.portal.tags.has_tick","42.tag.portal.zone.group"],CustomNameVisible:0b,CustomName:'"Zone"',block_state:{Name:ice},view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1.5f,0f,-1.5f],scale:[3f,3f,3f]}}
+summon block_display ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.new_spawn","42.tag.portal.zone","42.tag.portal.tags.has_tick","42.tag.portal.zone.group"],CustomNameVisible:0b,CustomName:'"Zone"',block_state:{Name:ice},view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-1.5f,0f,-1.5f],scale:[3f,3f,3f]}}
 execute as @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone,limit=1] run function 42:portal/new_id
-scoreboard players set @e[type=!player,tag=42.tag.portal.new_spawn] 42.obj.datapack 3
 scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone] 42.obj.portal.lvl -2
 scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone] 42.obj.portal.xrot1 0
 scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone] 42.obj.portal.xrot2 0

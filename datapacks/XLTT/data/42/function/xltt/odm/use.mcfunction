@@ -1,5 +1,5 @@
 function 42:xltt/tag_id
-execute if items entity @s weapon.mainhand *[custom_data~{42components:{xltt:{odm:{}}}}] if items entity @s weapon.offhand *[custom_data~{42components:{xltt:{odm:{}}}}] run tag @s add 42.tag.xltt.odm.dual
+execute if items entity @s weapon.mainhand *[custom_data~{42data:{xltt:{odm:{}}}}] if items entity @s weapon.offhand *[custom_data~{42data:{xltt:{odm:{}}}}] run tag @s add 42.tag.xltt.odm.dual
 execute unless entity @s[tag=42.tag.xltt.odm.dual] as @e[tag=42.tag.xltt.odm.wire,tag=42.tag.xltt.id] at @s run function 42:xltt/odm/break
 scoreboard players set @s 42.obj.xltt.temp 0
 execute as @e[tag=42.tag.xltt.odm.wire,tag=42.tag.xltt.id] run scoreboard players add @a[tag=42.tag.xltt.id] 42.obj.xltt.temp 1
@@ -8,10 +8,7 @@ tag @e remove 42.tag.xltt.id
 
 tag @s remove 42.tag.xltt.odm.dual
 playsound entity.wither.break_block player @a ~ ~ ~ .35 1.8
-tag @e remove 42.tag.xltt.temp_spawn
-summon marker ~ ~ ~ {Tags:["42.tag.xltt.odm.wire","42.tag.xltt.odm.new","42.tag.xltt.temp_spawn"]}
-scoreboard players set @e[tag=42.tag.xltt.temp_spawn] 42.obj.datapack 1
-tag @e remove 42.tag.xltt.temp_spawn
+summon marker ~ ~ ~ {Tags:["42.tag.summon","42.tag.xltt.odm.wire","42.tag.xltt.odm.new"]}
 execute anchored eyes positioned ^ ^ ^ run tp @e[tag=42.tag.xltt.odm.wire,tag=42.tag.xltt.odm.new,limit=1,sort=nearest,distance=..16] ~ ~ ~ ~ ~
 scoreboard players operation @e[type=marker,tag=42.tag.xltt.odm.new] 42.obj.xltt.id = @s 42.obj.xltt.id
 tag @e[tag=42.tag.xltt.odm.wire,tag=42.tag.xltt.odm.new,distance=..16] remove 42.tag.xltt.odm.new

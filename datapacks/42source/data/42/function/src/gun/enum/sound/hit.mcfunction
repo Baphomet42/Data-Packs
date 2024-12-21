@@ -1,2 +1,2 @@
-execute unless items entity @s contents *[custom_data~{42components:{src:{gun:{sounds:{hit:{replace:{}}}}}}}] run function 42:src/gun/enum/macro/sound/hit with storage 42:src data.gun.default_data.gun.sounds.hit.sound
-execute if items entity @s contents *[custom_data~{42components:{src:{gun:{sounds:{hit:{sound:{}}}}}}}] run function 42:src/gun/enum/macro/sound/hit with entity @s item.components.minecraft:custom_data.42components.src.gun.sounds.hit.sound
+execute unless items entity @s contents *[custom_data~{42data:{src:{gun:{sounds:{hit:{replace:{}}}}}}}] run function 42:src/gun/enum/macro/sound/hit with storage 42:src data.gun.default_data.gun.sounds.hit.sound
+execute if items entity @s contents *[custom_data~{42data:{src:{gun:{sounds:{hit:{sound:{}}}}}}}] run function 42:src/gun/enum/macro/sound/hit with entity @s item.components.minecraft:custom_data.42data.src.gun.sounds.hit.sound

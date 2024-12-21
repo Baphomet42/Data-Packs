@@ -1,8 +1,8 @@
 execute as @a unless score @s 42.obj.xltt.id matches 1.. run function 42:xltt/id
 
 # odm
-execute as @a[scores={42.obj.xltt.click=1..}] if items entity @s weapon.* *[custom_data~{42components:{xltt:{odm:{}}}}] at @s run function 42:xltt/odm/use
-execute as @a[predicate=42:input_sneak] if items entity @s weapon.* *[custom_data~{42components:{xltt:{odm:{}}}}] at @s run function 42:xltt/odm/attempt_pull
+execute as @a[scores={42.obj.xltt.click=1..}] if items entity @s weapon.* *[custom_data~{42data:{xltt:{odm:{}}}}] at @s run function 42:xltt/odm/use
+execute as @a[predicate=42:input_sneak] if items entity @s weapon.* *[custom_data~{42data:{xltt:{odm:{}}}}] at @s run function 42:xltt/odm/attempt_pull
 execute as @a[tag=42.tag.xltt.odm.lev,predicate=!42:input_sneak] at @s run function 42:xltt/odm/cancel
 execute as @e[type=marker,tag=42.tag.xltt.odm.wire,tag=!42.tag.xltt.odm.hit] at @s run function 42:xltt/odm/find_target
 execute as @e[type=marker,tag=42.tag.xltt.odm.wire,tag=42.tag.xltt.odm.hit] at @s run function 42:xltt/odm/attempt_break
@@ -21,7 +21,7 @@ scoreboard players add @e[type=villager,tag=42.tag.xltt.titan.transforming] 42.o
 execute as @e[type=villager,tag=42.tag.xltt.titan.transforming,scores={42.obj.xltt.odm_time=40..}] at @s run function 42:xltt/titan/transform
 
 # wine
-execute as @e[type=experience_bottle,nbt={Item:{components:{"minecraft:custom_data":{42components:{xltt:{wine:{}}}}}}}] at @s run function 42:xltt/wine/spawn
+execute as @e[type=experience_bottle,nbt={Item:{components:{"minecraft:custom_data":{42data:{xltt:{wine:{}}}}}}}] at @s run function 42:xltt/wine/spawn
 execute as @e[tag=42.tag.xltt.wine,type=marker] at @s run particle dust{color:[.24,.04,.08],scale:1}
 execute as @e[tag=42.tag.xltt.wine,type=marker] at @s unless entity @e[tag=42.tag.xltt.wine,type=potion,distance=..1] run function 42:xltt/wine/hit
 execute at @e[tag=42.tag.xltt.titan.appear] run particle flash ~ ~5 ~ 1 2 1 0 15 force

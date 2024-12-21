@@ -1,13 +1,10 @@
 tag @e remove 42.tag.portal.turret.laser
 tag @e remove 42.tag.portal.turret.laser_find
-tag @e remove 42.tag.portal.new_spawn
-summon marker ~ ~ ~ {Tags:["42.tag.portal.turret.laser","42.tag.portal.new_spawn","42.tag.portal.bullet_pass"]}
-summon marker ~ ~ ~ {Tags:["42.tag.portal.turret.laser_find","42.tag.portal.new_spawn"]}
-scoreboard players set @e[type=!player,tag=42.tag.portal.new_spawn] 42.obj.datapack 3
+summon marker ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.turret.laser","42.tag.portal.bullet_pass"]}
+summon marker ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.turret.laser_find"]}
 execute as @e[tag=42.tag.portal.turret.target_current,limit=1,sort=nearest] at @s anchored feet rotated 0 0 positioned ^ ^.25 ^ run tp @e[tag=42.tag.portal.turret.laser_find] ^ ^ ^
 execute at @e[tag=42.tag.portal.turret.eye,tag=42.tag.portal.id] positioned ^ ^1 ^.25 facing entity @e[tag=42.tag.portal.turret.laser_find,limit=1,sort=nearest] feet run tp @e[tag=42.tag.portal.turret.laser] ~ ~ ~ ~ ~
 kill @e[tag=42.tag.portal.turret.laser_find]
-tag @e remove 42.tag.portal.new_spawn
 execute store result score @s 42.obj.portal.xrot2 run data get entity @e[tag=42.tag.portal.turret.laser,limit=1] Rotation[0] 1000
 execute store result score @s 42.obj.portal.yrot2 run data get entity @e[tag=42.tag.portal.turret.laser,limit=1] Rotation[1] 1000
 

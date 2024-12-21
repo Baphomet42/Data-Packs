@@ -1,8 +1,7 @@
 function 42:portal/tag_id
 tag @e remove 42.tag.portal.new_spawn
-summon block_display ~ ~ ~ {Tags:["42.tag.portal.new_spawn","42.tag.portal.pellet.spawner","42.tag.portal.pellet.spawner.group","42.tag.portal.tool.spawn.pellet.super","42.tag.portal.is_spawner"],CustomNameVisible:0b,CustomName:'"Super Pellet Spawner"',block_state:{Name:ice},view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-.25f,-.25f,-.25f],scale:[.5f,.5f,.5f]},Passengers:[\
-    {id:text_display,Tags:["42.tag.portal.new_spawn","42.tag.portal.pellet.spawner.lbl","42.tag.portal.pellet.spawner.group"],CustomNameVisible:0b,CustomName:'"42portal"',text:'"Super Pellet Spawner"',see_through:true,alignment:center,billboard:vertical,view_range:0f,brightness:{block:15,sky:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,.25f,0f],scale:[1f,1f,1f]}}]}
-scoreboard players set @e[type=!player,tag=42.tag.portal.new_spawn] 42.obj.datapack 3
+summon block_display ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.new_spawn","42.tag.portal.pellet.spawner","42.tag.portal.pellet.spawner.group","42.tag.portal.tool.spawn.pellet.super","42.tag.portal.is_spawner"],CustomNameVisible:0b,CustomName:'"Super Pellet Spawner"',block_state:{Name:ice},view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-.25f,-.25f,-.25f],scale:[.5f,.5f,.5f]},Passengers:[\
+    {id:text_display,Tags:["42.tag.summon","42.tag.portal.new_spawn","42.tag.portal.pellet.spawner.lbl","42.tag.portal.pellet.spawner.group"],CustomNameVisible:0b,CustomName:'"42portal"',text:'"Super Pellet Spawner"',see_through:true,alignment:center,billboard:vertical,view_range:0f,brightness:{block:15,sky:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,.25f,0f],scale:[1f,1f,1f]}}]}
 scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.pellet.spawner] 42.obj.portal.lvl -1
 scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.pellet.spawner] 42.obj.portal.link -1
 

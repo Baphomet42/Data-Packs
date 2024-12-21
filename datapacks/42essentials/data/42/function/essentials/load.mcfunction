@@ -1,5 +1,3 @@
-scoreboard objectives add 42.obj.datapack dummy
-
 scoreboard objectives add hat trigger
 scoreboard objectives add kittycannon trigger
 

@@ -2,10 +2,9 @@ tag @e remove 42.tag.portal.test
 tag @e remove 42.tag.portal.test.x
 tag @e remove 42.tag.portal.test.y
 tag @e remove 42.tag.portal.test.z
-summon marker ~ ~ ~ {Tags:["42.tag.portal.test","42.tag.portal.test.x"]}
-summon marker ~ ~ ~ {Tags:["42.tag.portal.test","42.tag.portal.test.y"]}
-summon marker ~ ~ ~ {Tags:["42.tag.portal.test","42.tag.portal.test.z"]}
-scoreboard players set @e[type=!player,tag=42.tag.portal.test] 42.obj.datapack 3
+summon marker ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.test","42.tag.portal.test.x"]}
+summon marker ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.test","42.tag.portal.test.y"]}
+summon marker ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.test","42.tag.portal.test.z"]}
 scoreboard players set #42.var.portal.dummy 42.obj.portal.temp -1
 
 $scoreboard players set @e[tag=42.tag.portal.test.x] 42.obj.portal.var.x $(dx)

@@ -1,4 +1,3 @@
-scoreboard objectives add 42.obj.datapack dummy
 scoreboard objectives add 42menu trigger
 
 scoreboard objectives add 42.obj.src.temp dummy

@@ -1,5 +1,5 @@
 tag @e remove 42.tag.portal.temp
-summon marker ~ ~ ~ {Tags:["42.tag.portal.gun.projectile","42.tag.portal.tags.has_tick","42.tag.portal.temp","42.tag.portal.bullet_pass"],CustomNameVisible:0b,CustomName:'"42portal"'}
+summon marker ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.gun.projectile","42.tag.portal.tags.has_tick","42.tag.portal.temp","42.tag.portal.bullet_pass"],CustomNameVisible:0b,CustomName:'"42portal"'}
 execute if entity @s[tag=42.tag.portal.gun.arg_a] run tag @e[tag=42.tag.portal.temp,limit=1] add 42.tag.portal.gun.a
 execute if entity @s[tag=!42.tag.portal.gun.arg_a] run tag @e[tag=42.tag.portal.temp,limit=1] add 42.tag.portal.gun.b
 
@@ -10,7 +10,6 @@ execute as @e[tag=42.tag.portal.temp,limit=1] unless score @s 42.obj.portal.skin
 scoreboard players operation @e[tag=42.tag.portal.temp,limit=1] 42.obj.portal.link = #42.var.portal.gun_use_temp 42.obj.portal.link
 execute as @e[tag=42.tag.portal.temp,limit=1] unless score @s 42.obj.portal.link matches 1.. run scoreboard players set @s 42.obj.portal.link 1
 
-scoreboard players set @e[type=!player,tag=42.tag.portal.temp] 42.obj.datapack 3
 tp @e[tag=42.tag.portal.temp] ~ ~ ~ ~ ~
 scoreboard players operation @e[type=marker,tag=42.tag.portal.temp,limit=1] 42.obj.portal.id = #42.var.portal.gun_use_temp 42.obj.portal.id
 execute if entity @s[y_rotation=-45..45] run tag @e[tag=42.tag.portal.temp] add 42.tag.portal.nn

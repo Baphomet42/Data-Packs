@@ -15,7 +15,7 @@ data modify storage 42:src data.gun.default_item set value \
             "minecraft:rarity":"common",\
             "minecraft:item_name":'"Gun"',\
             "minecraft:item_model":"minecraft:stick",\
-            "minecraft:custom_data":{42components:{datapack:7,\
+            "minecraft:custom_data":{42data:{datapack_item:{},\
                 src:{\
                     gun:{\
                         ammo:{current:{inverse:0},max:10}\

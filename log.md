@@ -6,18 +6,18 @@ This file is to log important information related to maintaining the datapacks.
 
 ------------------------------------------------------------------------------------
 
-# 42.obj.datapack ids
+# 42datapack ids and watermarks
 
 Each pack that needs an id will get one. The id can be 1 to 99.
 
-Used for 42menu system, entity score, item watermark.
+Used for 42menu system.
 
 42menu values are 42NNXXX where NN is the id in 2 digits and XXX are the values 000 to 999.
 
-+ All entities summoned by a pack should have the score 42.obj.datapack equal to the id of the pack
-+ All datapack items should include `custom_data~{42components:{datapack:<id>}}` using the pack id
-    + All other `custom_data` should be within the `42components` compound
-    + Most `custom_data` should typically be within the `42components.<pack>` compound
++ All entities summoned by a pack should have the tag `42.tag.summon`
++ All custom items should include `custom_data~{42data:{datapack_item:{}}}`
+    + All other `custom_data` should be within the `42data` compound
+    + Most `custom_data` should typically be within the `42data.<pack>` compound
 
 The name `gen` is sometimes used for generic features that are relevant to multiple packs, and can use the id `0` and/or `99`, depending on the use.
 The `gen` code is not a datapack and does not work on its own.
@@ -26,7 +26,7 @@ The `gen` code is not a datapack and does not work on its own.
 + xltt - 1
 + newworld - none
 + portal - 3
-+ essentials - 4
++ essentials - none
 + dbd - 5
 + labs - none
 + src - 7
@@ -45,6 +45,12 @@ The following prefixes should be used in most cases:
 + objective - `42.obj.`
 + fake scoreboard player - `#42.var.portal.` or `42.var.`
 + team - `42.team.`
++ attribute modifier - `42:<pack>/`
+    + for modifiers on items:
+        + `slot` must be a single slot (not a slot group)
+        + prefix - `42:<pack>/item/`
+        + suffix - `/<slot>`
+        + exceptions are vanilla `id` values (`minecraft:base_attack_damage`, `minecraft:base_attack_speed`)
 
 In many cases, it is also preferred to name them such that when searching a full name, it will never return matches for a partial name. (So `42.tag.foo` would not be compatible with `42.tag.foobar`). The current packs do not enforce this rule yet, so be careful.
 

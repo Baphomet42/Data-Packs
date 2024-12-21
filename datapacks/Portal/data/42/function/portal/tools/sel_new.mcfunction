@@ -1,7 +1,4 @@
-tag @e remove 42.tag.portal.new_spawn
-summon area_effect_cloud ~ ~ ~ {Tags:["42.tag.portal.new_spawn"],Duration:10,DurationOnUse:0,Particle:{type:flash},Radius:.25f,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0}
-scoreboard players set @e[type=!player,tag=42.tag.portal.new_spawn] 42.obj.datapack 3
-tag @e remove 42.tag.portal.new_spawn
+summon area_effect_cloud ~ ~ ~ {Tags:["42.tag.summon"],Duration:10,DurationOnUse:0,Particle:{type:flash},Radius:.25f,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0}
 
 function 42:portal/tag_selected
 function 42:portal/cmdfeed

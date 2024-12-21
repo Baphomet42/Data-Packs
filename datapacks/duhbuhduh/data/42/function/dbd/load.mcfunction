@@ -1,4 +1,3 @@
-scoreboard objectives add 42.obj.datapack dummy
 scoreboard objectives add 42menu trigger
 
 function 42:gen/config/dbd/reload

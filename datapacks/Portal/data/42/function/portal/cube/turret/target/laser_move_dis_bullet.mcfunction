@@ -1,13 +1,10 @@
 scoreboard players remove @s 42.obj.portal.time 1
 
-tag @e remove 42.tag.portal.new_spawn
-summon area_effect_cloud ^ ^ ^ {Duration:15,DurationOnUse:0,Particle:{type:dust,color:[1.0,0.0,0.0],scale:.2},Radius:.01d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.portal.new_spawn"]}
-summon area_effect_cloud ^ ^ ^.25 {Duration:15,DurationOnUse:0,Particle:{type:dust,color:[1.0,0.0,0.0],scale:.2},Radius:.01d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.portal.new_spawn"]}
-summon area_effect_cloud ^ ^ ^.5 {Duration:15,DurationOnUse:0,Particle:{type:dust,color:[1.0,0.0,0.0],scale:.2},Radius:.01d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.portal.new_spawn"]}
-execute if entity @e[tag=42.tag.portal.id,tag=42.tag.portal.turret.fire,tag=!42.tag.portal.turret.fire_noshoot] run summon area_effect_cloud ^ ^ ^ {Duration:5,DurationOnUse:0,Particle:{type:dust,color:[1.0,1.0,.2],scale:.1},Radius:.5d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.portal.new_spawn"]}
-execute if entity @e[tag=42.tag.portal.id,tag=42.tag.portal.turret.fire,tag=!42.tag.portal.turret.fire_noshoot] run summon area_effect_cloud ^ ^ ^.325 {Duration:5,DurationOnUse:0,Particle:{type:dust,color:[1.0,1.0,1.0],scale:.1},Radius:.5d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:10,Tags:["42.tag.portal.new_spawn"]}
-scoreboard players set @e[type=!player,tag=42.tag.portal.new_spawn] 42.obj.datapack 3
-tag @e remove 42.tag.portal.new_spawn
+summon area_effect_cloud ^ ^ ^ {Duration:15,DurationOnUse:0,Particle:{type:dust,color:[1.0,0.0,0.0],scale:.2},Radius:.01d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.summon"]}
+summon area_effect_cloud ^ ^ ^.25 {Duration:15,DurationOnUse:0,Particle:{type:dust,color:[1.0,0.0,0.0],scale:.2},Radius:.01d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.summon"]}
+summon area_effect_cloud ^ ^ ^.5 {Duration:15,DurationOnUse:0,Particle:{type:dust,color:[1.0,0.0,0.0],scale:.2},Radius:.01d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.summon"]}
+execute if entity @e[tag=42.tag.portal.id,tag=42.tag.portal.turret.fire,tag=!42.tag.portal.turret.fire_noshoot] run summon area_effect_cloud ^ ^ ^ {Duration:5,DurationOnUse:0,Particle:{type:dust,color:[1.0,1.0,.2],scale:.1},Radius:.5d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.summon"]}
+execute if entity @e[tag=42.tag.portal.id,tag=42.tag.portal.turret.fire,tag=!42.tag.portal.turret.fire_noshoot] run summon area_effect_cloud ^ ^ ^.325 {Duration:5,DurationOnUse:0,Particle:{type:dust,color:[1.0,1.0,1.0],scale:.1},Radius:.5d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:10,Tags:["42.tag.summon"]}
 
 tp ^ ^ ^.75
 function 42:portal/cube/turret/target/laser_valid

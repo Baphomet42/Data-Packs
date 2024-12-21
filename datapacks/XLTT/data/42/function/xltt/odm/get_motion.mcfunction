@@ -4,10 +4,7 @@ execute store result score @s 42.obj.xltt.odm_x run data get entity @s Pos[0] 10
 execute store result score @s 42.obj.xltt.odm_y run data get entity @s Pos[1] 1000
 execute store result score @s 42.obj.xltt.odm_z run data get entity @s Pos[2] 1000
 execute at @s facing entity @e[tag=42.tag.xltt.id,tag=42.tag.xltt.odm.hit,limit=1,sort=nearest] feet run tp @s ^ ^ ^.014
-tag @e remove 42.tag.xltt.temp_spawn
-summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Silent:1b,Small:1b,Tags:["42.tag.xltt.odm.marker","42.tag.xltt.odm.new","42.tag.xltt.temp_spawn"],DisabledSlots:16191}
-scoreboard players set @e[tag=42.tag.xltt.temp_spawn] 42.obj.datapack 1
-tag @e remove 42.tag.xltt.temp_spawn
+summon armor_stand ~ ~ ~ {Invisible:1b,Invulnerable:1b,Silent:1b,Small:1b,Tags:["42.tag.summon","42.tag.xltt.odm.marker","42.tag.xltt.odm.new"],DisabledSlots:16191}
 scoreboard players operation @e[tag=42.tag.xltt.odm.marker,tag=42.tag.xltt.odm.new] 42.obj.xltt.id = @s 42.obj.xltt.id
 execute store result score @e[tag=42.tag.xltt.odm.marker,tag=42.tag.xltt.odm.new] 42.obj.xltt.odm_x run data get entity @s Pos[0] 1000
 execute store result score @e[tag=42.tag.xltt.odm.marker,tag=42.tag.xltt.odm.new] 42.obj.xltt.odm_y run data get entity @s Pos[1] 1000
