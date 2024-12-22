@@ -1,3 +1,4 @@
+
 ------------------------------------------------------------------------------------
 
 # 42dominion update guide
@@ -195,3 +196,4 @@ Datapacks can be designed to require no resourcepack, an optional resourcepack, 
 + If the resource pack is optional, features should always attempt to accommodate both cases
     + The config system should have a setting to enable/disable the resourcepack (where possible)
 
+------------------------------------------------------------------------------------
