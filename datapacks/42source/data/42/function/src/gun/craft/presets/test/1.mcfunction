@@ -6,7 +6,7 @@ function 42:src/gun/craft/custom {args:{\
         cooldown:{on_shoot:1},\
         flags:{auto:{},fast_bullet:{}},\
         bullet:{\
-            item:{id:"jigsaw"}\
+            item:{id:"minecraft:jigsaw"}\
         },\
         sounds:{\
             reload_start:{replace:{},sound:{value:"block.piston.extend player @a ~ ~ ~ 10 1.5"}},\

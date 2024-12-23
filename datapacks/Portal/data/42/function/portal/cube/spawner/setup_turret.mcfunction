@@ -1,7 +1,7 @@
 function 42:portal/tag_id
 tag @e remove 42.tag.portal.new_spawn
 summon block_display ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.new_spawn","42.tag.portal.cube.spawner","42.tag.portal.cube.spawner.group","42.tag.portal.tool.spawn.turret","42.tag.portal.is_spawner"],CustomNameVisible:0b,CustomName:'"Turret Spawner"',block_state:{Name:ice},view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-.45f,.05f,-.45f],scale:[.9f,1.4f,.9f]},Passengers:[\
-    {id:text_display,Tags:["42.tag.summon","42.tag.portal.new_spawn","42.tag.portal.cube.spawner.lbl","42.tag.portal.cube.spawner.group"],CustomNameVisible:0b,CustomName:'"42portal"',text:'"Turret Spawner"',see_through:true,alignment:center,billboard:vertical,view_range:0f,brightness:{block:15,sky:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,.5f,0f],scale:[1f,1f,1f]}}]}
+    {id:"minecraft:text_display",Tags:["42.tag.summon","42.tag.portal.new_spawn","42.tag.portal.cube.spawner.lbl","42.tag.portal.cube.spawner.group"],CustomNameVisible:0b,CustomName:'"42portal"',text:'"Turret Spawner"',see_through:true,alignment:center,billboard:vertical,view_range:0f,brightness:{block:15,sky:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,.5f,0f],scale:[1f,1f,1f]}}]}
 scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.cube.spawner] 42.obj.portal.lvl -1
 scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.cube.spawner] 42.obj.portal.link -1
 

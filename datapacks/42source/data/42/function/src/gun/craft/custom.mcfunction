@@ -8,7 +8,7 @@ data modify storage 42:src craft_temp.item.components.minecraft:custom_data.42da
 data modify storage 42:src craft_temp.item.components.minecraft:max_damage set from storage 42:src craft_temp.item.components.minecraft:custom_data.42data.src.gun.ammo.max
 data modify storage 42:src craft_temp.item.components.minecraft:damage set from storage 42:src craft_temp.item.components.minecraft:custom_data.42data.src.gun.ammo.current.inverse
 
-summon item ~ ~ ~ {Tags:["42.tag.summon","42.tag.src.gun.new_item_spawn"],Item:{id:"stone"}}
+summon item ~ ~ ~ {Tags:["42.tag.summon","42.tag.src.gun.new_item_spawn"],Item:{id:"minecraft:stone"}}
 data modify entity @e[limit=1,type=item,tag=42.tag.src.gun.new_item_spawn] Item set from storage 42:src craft_temp.item
 
 tag @e[type=item] remove 42.tag.src.gun.new_item_spawn

@@ -7,7 +7,7 @@ function 42:src/gun/craft/custom {args:{\
         reload_time:45,\
         flags:{auto:{},large_bullet:{},slow_bullet:{}},\
         bullet:{\
-            item:{id:"slime_block"}\
+            item:{id:"minecraft:slime_block"}\
         },\
         sounds:{\
             reload_finish:{sound:{value:"block.beacon.activate player @a ~ ~ ~ .375 2"}},\

@@ -1,0 +1,24 @@
+
+# crystal meth
+summon item ~ ~ ~ {Item:{components:{"!minecraft:enchantments":{},"!minecraft:rarity":{},"!minecraft:repair_cost":{},"minecraft:attribute_modifiers":{modifiers:[{id:"build_search_mod:stamin_up",slot:"mainhand"},{id:"build_search_mod:stamin_up",slot:"offhand"}],show_in_tooltip:0b},"minecraft:enchantment_glint_override":1b,"minecraft:item_name":'{"color":"#A400F2","text":"Crystal Meth"}',"minecraft:lore":['""','{"color":"gold","text":"BaphomethLabs"}'],"minecraft:unbreakable":{show_in_tooltip:0b}},count:1,id:"minecraft:amethyst_cluster"}}
+
+# magick crocs
+summon item ~ ~ ~ {Item:{components:{"!minecraft:damage":{},"!minecraft:enchantments":{},"!minecraft:max_damage":{},"!minecraft:repair_cost":{},"minecraft:attribute_modifiers":{modifiers:[{id:"build_search_mod:stamin_up",slot:"feet"},{id:"build_search_mod:thor",slot:"feet"}],show_in_tooltip:0b},"minecraft:enchantment_glint_override":1b,"minecraft:item_name":'"Magick Crocs"',"minecraft:lore":['""','{"color":"gold","text":"BaphomethLabs"}'],"minecraft:rarity":"rare","minecraft:unbreakable":{show_in_tooltip:0b}},count:1,id:"minecraft:diamond_boots"}}
+
+# viltvodle elytra
+summon item ~ ~ ~ {Item:{components:{"!minecraft:damage":{},"!minecraft:enchantments":{},"!minecraft:max_damage":{},"!minecraft:repair_cost":{},"minecraft:attribute_modifiers":{modifiers:[{id:"build_search_mod:stamin_up",slot:"chest"},{id:"build_search_mod:thor",slot:"chest"}],show_in_tooltip:0b},"minecraft:enchantment_glint_override":1b,"minecraft:item_name":'"Viltvodle VI"',"minecraft:lore":['""','{"color":"gold","text":"BaphomethLabs"}'],"minecraft:max_stack_size":42,"minecraft:rarity":"rare","minecraft:unbreakable":{show_in_tooltip:0b}},count:42,id:"minecraft:elytra"}}
+
+# viltvodle debug stick
+summon item ~ ~ ~ {Item:{components:{"!minecraft:debug_stick_state":{},"!minecraft:enchantments":{},"!minecraft:repair_cost":{},"minecraft:attribute_modifiers":{modifiers:[{id:"build_search_mod:stamin_up",slot:"offhand"},{id:"build_search_mod:thor",slot:"offhand"}],show_in_tooltip:0b},"minecraft:item_name":'"Viltvodle VI"',"minecraft:lore":['""','{"color":"gold","text":"BaphomethLabs"}'],"minecraft:max_stack_size":42,"minecraft:rarity":"rare","minecraft:unbreakable":{show_in_tooltip:0b}},count:42,id:"minecraft:debug_stick"}}
+
+# curse of the pharaohs
+summon item ~ ~ ~ {Item:{components:{"!minecraft:enchantments":{},"!minecraft:repair_cost":{},"minecraft:attribute_modifiers":{modifiers:[{id:"build_search_mod:stamin_up",slot:"offhand"},{id:"build_search_mod:thor",slot:"offhand"}],show_in_tooltip:0b},"minecraft:item_name":'"Curse of the Pharaohs"',"minecraft:lore":['""','{"color":"gold","text":"BaphomethLabs"}'],"minecraft:max_stack_size":66,"minecraft:unbreakable":{show_in_tooltip:0b}},count:6,id:"minecraft:bone"}}
+
+# mjolnir
+summon item ~ ~ ~ {Item:{components:{"!minecraft:damage":{},"!minecraft:enchantments":{},"!minecraft:max_damage":{},"!minecraft:rarity":{},"!minecraft:repair_cost":{},"!minecraft:tool":{},"minecraft:attribute_modifiers":{modifiers:[{id:"build_search_mod:thor",slot:"mainhand"},{id:"build_search_mod:thor",slot:"offhand"}],show_in_tooltip:0b},"minecraft:enchantment_glint_override":1b,"minecraft:item_name":'{"color":"dark_purple","text":"Mjölnir"}',"minecraft:lore":['""','{"color":"gray","text":"Whosoever holds this hammer,"}','{"color":"gray","text":"if he be worthy, shall possess"}','{"color":"gray","text":"the power of Thor."}','""'],"minecraft:max_stack_size":42,"minecraft:unbreakable":{show_in_tooltip:0b}},count:42,id:"minecraft:wooden_axe"}}
+
+# sponge defun
+summon item ~ ~ ~ {Item:{components:{"!minecraft:enchantments":{},"!minecraft:rarity":{},"!minecraft:repair_cost":{},"minecraft:attribute_modifiers":{modifiers:[{id:"build_search_mod:thor",slot:"mainhand"},{id:"build_search_mod:thor",slot:"offhand"},{id:"build_search_mod:thor",slot:"head"}],show_in_tooltip:0b},"minecraft:enchantment_glint_override":1b,"minecraft:item_name":'{"color":"blue","text":"(defun botsbuildbots () (botsbuildbots))"}',"minecraft:lore":['""','{"color":"gold","text":"BaphomethLabs"}'],"minecraft:max_stack_size":42,"minecraft:unbreakable":{show_in_tooltip:0b}},count:42,id:"minecraft:sponge"}}
+
+# jigsaw defun
+summon item ~ ~ ~ {Item:{components:{"!minecraft:enchantments":{},"!minecraft:rarity":{},"!minecraft:repair_cost":{},"minecraft:attribute_modifiers":{modifiers:[{id:"build_search_mod:thor",slot:"mainhand"},{id:"build_search_mod:thor",slot:"offhand"},{id:"build_search_mod:thor",slot:"head"}],show_in_tooltip:0b},"minecraft:enchantment_glint_override":1b,"minecraft:item_name":'{"color":"light_purple","text":"(defun botsbuildbots () (botsbuildbots))"}',"minecraft:lore":['""','{"color":"gold","text":"BaphomethLabs"}'],"minecraft:max_stack_size":42,"minecraft:unbreakable":{show_in_tooltip:0b}},count:42,id:"minecraft:jigsaw"}}

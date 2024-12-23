@@ -294,7 +294,7 @@ Proof of concept pack with common FPS content.
                     + `hit` - appears where the bullet hits something
                     + `tracer` - appears every few blocks along bullet path
                 + `bullet` - compound
-                    + `item` - compound of item to render as bullet (like `{id:"sponge"}`)
+                    + `item` - compound of item to render as bullet (like `{id:"minecraft:sponge"}`)
         + Examples can be found in `datapacks/42source/data/42/function/src/gun/craft/presets/`
 
 ### **XLTT**

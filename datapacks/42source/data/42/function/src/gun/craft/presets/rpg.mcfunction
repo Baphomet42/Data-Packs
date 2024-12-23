@@ -7,7 +7,7 @@ function 42:src/gun/craft/custom {args:{\
         reload_time:50,\
         flags:{large_bullet:{},slow_bullet:{}},\
         bullet:{\
-            item:{id:"copper_bulb"}\
+            item:{id:"minecraft:copper_bulb"}\
         },\
         sounds:{\
             hit:{sound:{value:"entity.generic.explode player @a ~ ~ ~ 5 1"}},\
