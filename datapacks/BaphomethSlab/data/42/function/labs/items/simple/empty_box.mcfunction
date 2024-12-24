@@ -12,7 +12,7 @@ summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":'{"color":"gold","e
 summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":'{"color":"gold","extra":[{"bold":true,"color":"dark_purple","text":"Statues"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}',"minecraft:item_name":'{"color":"gold","extra":[{"bold":true,"color":"dark_purple","text":"Statues"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}'},count:1,id:"minecraft:purple_shulker_box"}}
 
 # power eggs
-summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":'{"color":"gold","extra":[{"bold":true,"color":"#FF6600","text":"Power Eggs"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}',"minecraft:item_name":'{"color":"gold","extra":[{"bold":true,"color":"#FF6600","text":"Power Eggs"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}'},count:1,id:"minecraft:orange_shulker_box"}}
+summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":'{"color":"gold","extra":[{"bold":true,"color":"#F9801D","text":"Power Eggs"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}',"minecraft:item_name":'{"color":"gold","extra":[{"bold":true,"color":"#F9801D","text":"Power Eggs"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}'},count:1,id:"minecraft:orange_shulker_box"}}
 
 # misc
 summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":'{"color":"gold","extra":[{"bold":true,"color":"dark_green","text":"Misc"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}',"minecraft:item_name":'{"color":"gold","extra":[{"bold":true,"color":"dark_green","text":"Misc"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}'},count:1,id:"minecraft:green_shulker_box"}}
@@ -22,3 +22,9 @@ summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":'{"color":"gold","e
 
 # maps
 summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":'{"color":"gold","extra":[{"bold":true,"color":"dark_red","text":"Maps"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}',"minecraft:item_name":'{"color":"gold","extra":[{"bold":true,"color":"dark_red","text":"Maps"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}'},count:1,id:"minecraft:red_shulker_box"}}
+
+# archive
+summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":'{"color":"gold","extra":[{"bold":true,"color":"#835432","text":"Archive"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}',"minecraft:item_name":'{"color":"gold","extra":[{"bold":true,"color":"#835432","text":"Archive"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}'},count:1,id:"minecraft:brown_shulker_box"}}
+
+# banners
+summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":'{"color":"gold","extra":[{"bold":true,"color":"blue","text":"Banners"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}',"minecraft:item_name":'{"color":"gold","extra":[{"bold":true,"color":"blue","text":"Banners"}," [",{"italic":true,"text":"BaphomethLabs"},"]"],"italic":false,"text":""}'},count:1,id:"minecraft:blue_shulker_box"}}

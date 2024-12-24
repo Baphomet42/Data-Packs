@@ -25,28 +25,28 @@ This file is to log important information related to maintaining custom items.
 
 + Any item that is reused must be specified twice
     + The first command should create the item normally
-    + The second command will store the item data in storage for use in macro args
+    + The second command will store the item components data in storage for use in macro args
     + After editing any of the item commands, update the following data command so they are always kept equal
 + Any item that reuses data must be specified twice
     + The first command should be in a `composite/<name>/base` function and include a dummy placeholder string
-        + Item placeholder - `{id:"build_search_item:<placeholder>"}`
-        + Attribute modifier placeholder - `{id:"build_search_mod:<placeholder>",slot:"<slot>"}`
-        + The placeholder must contain only the charset `[a-z0-9_]`
+        + Item components placeholder - `{"42:build_search_item":"<placeholder>"}`
+        + Attribute modifier placeholder - `{id:"build_search_mod:<placeholder>",slot:"<slot>",type:"42:dummy",amount:0d,operation:"add_value"}`
+        + The placeholder must contain only the charset `[a-z0-9_]*`
     + The second command will be built in a separate file and contain macro args
 + Build steps
     1. Copy each `base` file into the `build` file
     2. Search and replace:
-        + see full list of search and replace terms below (in the documented modifiers section)
-        + files to include - `labs/items/**/build.mcfunction`
-    3. Search and replace:
         + search string (regex mode on) - `^summon`
         + replace string - `$summon`
-        + files to include - `labs/items/auto/**/build.mcfunction`
-    4. Search and replace:
-        + search string (regex mode on) - `\{id:"build_search_item:([a-z0-9_]*)"\}`
+        + files to include - `labs/items/composite/auto/**/build.mcfunction`
+    3. Search and replace:
+        + search string (regex mode on) - `\{"42:build_search_item":"([a-z0-9_]*)"\}`
         + replace string - `$($1)`
-        + files to include - `labs/items/auto/**/build.mcfunction`
-    5. Verify there are no occurences of `build_search_` in any of the `labs/items/**/build.mcfunction` files
+        + files to include - `labs/items/composite/auto/**/build.mcfunction`
+    4. Search and replace:
+        + see full list of search and replace (regex mode off) terms below (in the documented modifiers section)
+        + files to include - `labs/items/composite/**/build.mcfunction`
+    5. Verify there are no occurences of `build_search_` in any of the `labs/items/composite/**/build.mcfunction` files
 + Items should always be given from the build files, and never from the base files
 
 ------------------------------------------------------------------------------------
@@ -58,6 +58,11 @@ Any item that uses `attribute_modifiers` should follow these rules. Exceptions t
 + Modifiers should usually avoid slot conflicts
     + The `slot` field must always be defined, and it should be set to a single slot, not a slot group
     + The `id` must contain the slot in the name
+    + For modifiers where slot conflicts are part of the design:
+        + If the conflict is due to a slot group, simply use the slot group as `<slot>` and document below
+        + If the conflict has slot limitations:
+            + Replace `<slot>` in `id` with `multi`
+            + Document below
 + Modifier `id`'s will follow the naming convention `42:labs/item/<name>/<slot>`
     + The name may include subfolders for organization purposes
 + A modifier name will refer to one or more modifiers, and the entire group must always be used consistently in all places
@@ -71,28 +76,14 @@ Documented modifiers:
 + `42:labs/item/stamin_up/<slot>`
     + Template - `{amount:2.0d,id:"42:labs/item/stamin_up/<slot>",operation:"add_multiplied_total",slot:"<slot>",type:"minecraft:movement_speed"}`
     + Build search/replace terms
-        + `{id:"build_search_mod:stamin_up",slot:"mainhand"}`
-            + `{amount:2.0d,id:"42:labs/item/stamin_up/mainhand",operation:"add_multiplied_total",slot:"mainhand",type:"minecraft:movement_speed"}`
-        + `{id:"build_search_mod:stamin_up",slot:"offhand"}`
-            + `{amount:2.0d,id:"42:labs/item/stamin_up/offhand",operation:"add_multiplied_total",slot:"offhand",type:"minecraft:movement_speed"}`
-        + `{id:"build_search_mod:stamin_up",slot:"feet"}`
-            + `{amount:2.0d,id:"42:labs/item/stamin_up/feet",operation:"add_multiplied_total",slot:"feet",type:"minecraft:movement_speed"}`
-        + `{id:"build_search_mod:stamin_up",slot:"chest"}`
-            + `{amount:2.0d,id:"42:labs/item/stamin_up/chest",operation:"add_multiplied_total",slot:"chest",type:"minecraft:movement_speed"}`
+        + `\{id:"build_search_mod:stamin_up/([a-z0-9_]*)",slot:"([a-z0-9_]*)",type:"42:dummy",amount:0d,operation:"add_value"\}`
+            + `{amount:2.0d,id:"42:labs/item/stamin_up/$1",operation:"add_multiplied_total",slot:"$2",type:"minecraft:movement_speed"}`
 
 + `42:labs/item/thor/<slot>`
     + Template - `{amount:935.0d,id:"42:labs/item/thor/<slot>",operation:"add_value",slot:"<slot>",type:"minecraft:attack_damage"},{amount:935.0d,id:"42:labs/item/thor/<slot>",operation:"add_value",slot:"<slot>",type:"minecraft:attack_speed"},{amount:935.0d,id:"42:labs/item/thor/<slot>",operation:"add_value",slot:"<slot>",type:"minecraft:knockback_resistance"},{amount:935.0d,id:"42:labs/item/thor/<slot>",operation:"add_value",slot:"<slot>",type:"minecraft:armor_toughness"},{amount:935.0d,id:"42:labs/item/thor/<slot>",operation:"add_value",slot:"<slot>",type:"minecraft:luck"},{amount:-1.0d,id:"42:labs/item/thor/<slot>",operation:"add_multiplied_total",slot:"<slot>",type:"minecraft:fall_damage_multiplier"}`
     + Build search/replace terms
-        + `{id:"build_search_mod:thor",slot:"mainhand"}`
-            + `{amount:935.0d,id:"42:labs/item/thor/mainhand",operation:"add_value",slot:"mainhand",type:"minecraft:attack_damage"},{amount:935.0d,id:"42:labs/item/thor/mainhand",operation:"add_value",slot:"mainhand",type:"minecraft:attack_speed"},{amount:935.0d,id:"42:labs/item/thor/mainhand",operation:"add_value",slot:"mainhand",type:"minecraft:knockback_resistance"},{amount:935.0d,id:"42:labs/item/thor/mainhand",operation:"add_value",slot:"mainhand",type:"minecraft:armor_toughness"},{amount:935.0d,id:"42:labs/item/thor/mainhand",operation:"add_value",slot:"mainhand",type:"minecraft:luck"},{amount:-1.0d,id:"42:labs/item/thor/mainhand",operation:"add_multiplied_total",slot:"mainhand",type:"minecraft:fall_damage_multiplier"}`
-        + `{id:"build_search_mod:thor",slot:"offhand"}`
-            + `{amount:935.0d,id:"42:labs/item/thor/offhand",operation:"add_value",slot:"offhand",type:"minecraft:attack_damage"},{amount:935.0d,id:"42:labs/item/thor/offhand",operation:"add_value",slot:"offhand",type:"minecraft:attack_speed"},{amount:935.0d,id:"42:labs/item/thor/offhand",operation:"add_value",slot:"offhand",type:"minecraft:knockback_resistance"},{amount:935.0d,id:"42:labs/item/thor/offhand",operation:"add_value",slot:"offhand",type:"minecraft:armor_toughness"},{amount:935.0d,id:"42:labs/item/thor/offhand",operation:"add_value",slot:"offhand",type:"minecraft:luck"},{amount:-1.0d,id:"42:labs/item/thor/offhand",operation:"add_multiplied_total",slot:"offhand",type:"minecraft:fall_damage_multiplier"}`
-        + `{id:"build_search_mod:thor",slot:"feet"}`
-            + `{amount:935.0d,id:"42:labs/item/thor/feet",operation:"add_value",slot:"feet",type:"minecraft:attack_damage"},{amount:935.0d,id:"42:labs/item/thor/feet",operation:"add_value",slot:"feet",type:"minecraft:attack_speed"},{amount:935.0d,id:"42:labs/item/thor/feet",operation:"add_value",slot:"feet",type:"minecraft:knockback_resistance"},{amount:935.0d,id:"42:labs/item/thor/feet",operation:"add_value",slot:"feet",type:"minecraft:armor_toughness"},{amount:935.0d,id:"42:labs/item/thor/feet",operation:"add_value",slot:"feet",type:"minecraft:luck"},{amount:-1.0d,id:"42:labs/item/thor/feet",operation:"add_multiplied_total",slot:"feet",type:"minecraft:fall_damage_multiplier"}`
-        + `{id:"build_search_mod:thor",slot:"chest"}`
-            + `{amount:935.0d,id:"42:labs/item/thor/chest",operation:"add_value",slot:"chest",type:"minecraft:attack_damage"},{amount:935.0d,id:"42:labs/item/thor/chest",operation:"add_value",slot:"chest",type:"minecraft:attack_speed"},{amount:935.0d,id:"42:labs/item/thor/chest",operation:"add_value",slot:"chest",type:"minecraft:knockback_resistance"},{amount:935.0d,id:"42:labs/item/thor/chest",operation:"add_value",slot:"chest",type:"minecraft:armor_toughness"},{amount:935.0d,id:"42:labs/item/thor/chest",operation:"add_value",slot:"chest",type:"minecraft:luck"},{amount:-1.0d,id:"42:labs/item/thor/chest",operation:"add_multiplied_total",slot:"chest",type:"minecraft:fall_damage_multiplier"}`
-        + `{id:"build_search_mod:thor",slot:"head"}`
-            + `{amount:935.0d,id:"42:labs/item/thor/head",operation:"add_value",slot:"head",type:"minecraft:attack_damage"},{amount:935.0d,id:"42:labs/item/thor/head",operation:"add_value",slot:"head",type:"minecraft:attack_speed"},{amount:935.0d,id:"42:labs/item/thor/head",operation:"add_value",slot:"head",type:"minecraft:knockback_resistance"},{amount:935.0d,id:"42:labs/item/thor/head",operation:"add_value",slot:"head",type:"minecraft:armor_toughness"},{amount:935.0d,id:"42:labs/item/thor/head",operation:"add_value",slot:"head",type:"minecraft:luck"},{amount:-1.0d,id:"42:labs/item/thor/head",operation:"add_multiplied_total",slot:"head",type:"minecraft:fall_damage_multiplier"}`
+        + `\{id:"build_search_mod:thor/([a-z0-9_]*)",slot:"([a-z0-9_]*)",type:"42:dummy",amount:0d,operation:"add_value"\}`
+            + `{amount:935.0d,id:"42:labs/item/thor/$1",operation:"add_value",slot:"$2",type:"minecraft:attack_damage"},{amount:935.0d,id:"42:labs/item/thor/$1",operation:"add_value",slot:"$2",type:"minecraft:attack_speed"},{amount:935.0d,id:"42:labs/item/thor/$1",operation:"add_value",slot:"$2",type:"minecraft:knockback_resistance"},{amount:935.0d,id:"42:labs/item/thor/$1",operation:"add_value",slot:"$2",type:"minecraft:armor_toughness"},{amount:935.0d,id:"42:labs/item/thor/$1",operation:"add_value",slot:"$2",type:"minecraft:luck"},{amount:-1.0d,id:"42:labs/item/thor/$1",operation:"add_multiplied_total",slot:"$2",type:"minecraft:fall_damage_multiplier"}`
 
 + Single use modifiers:
     + `42:labs/item/effective_power/<slot>`
@@ -118,12 +109,8 @@ Documented modifiers:
 # Rule exceptions
 
 + Modifiers with slot conflicts
+    + `42:labs/item/stamin_up/multi`
     + `42:labs/item/archive/sticky_piston/any`
     + `42:labs/item/archive/the_sun/any`
-+ Items not made with composite system
-    + Hardcoded attribute modifiers
-        + The Sun
-        + Sticky Piston
-        + Budder
 
 ------------------------------------------------------------------------------------
