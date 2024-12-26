@@ -3,7 +3,7 @@
 		"icon": {
 			"id": "minecraft:player_head",
 			"components": {
-				"profile": {
+				"minecraft:profile": {
 					"properties": [
 						{
 							"name": "textures",
