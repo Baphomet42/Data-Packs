@@ -622,6 +622,6 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 ------------------------------------------------------------------------------------
 
-*© 2024 BaphomethLabs*
+*© 2025 BaphomethLabs*
 
 ------------------------------------------------------------------------------------
