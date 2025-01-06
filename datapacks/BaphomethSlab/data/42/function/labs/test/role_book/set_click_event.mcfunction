@@ -1,0 +1,1 @@
+$data modify storage 42:labs test.temp.book2[-1][-1][0].clickEvent set value {action:"run_command",value:"/trigger STSB set $(num)"}

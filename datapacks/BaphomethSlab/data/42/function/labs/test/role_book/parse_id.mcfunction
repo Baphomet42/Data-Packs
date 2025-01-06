@@ -1,0 +1,1 @@
+$scoreboard players set #temp 42.obj.labs.vars $(id)
