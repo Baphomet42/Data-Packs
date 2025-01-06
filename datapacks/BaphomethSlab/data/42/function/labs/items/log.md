@@ -101,8 +101,13 @@ Documented modifiers:
 
 + Undocumented modifiers
     + This list contains certain known modifier IDs for convenience (but not all)
-        + `minecraft:base_attack_damage` (used by vanilla and in custom items to recreate vanilla attribute tooltip)
-        + `minecraft:base_attack_speed` (used by vanilla and in custom items to recreate vanilla attribute tooltip)
+        + `minecraft:base_attack_damage`
+        + `minecraft:base_attack_speed`
+        + `minecraft:armor.boots`
+        + `minecraft:armor.leggings`
+        + `minecraft:armor.chestplate`
+        + `minecraft:armor.helmet`
+        + `minecraft:armor.body`
 
 ------------------------------------------------------------------------------------
 
