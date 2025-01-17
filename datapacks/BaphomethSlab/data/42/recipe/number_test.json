@@ -1,0 +1,36 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        "armor_stand",
+        "stick"
+    ],
+    "result": {
+        "id": "armor_stand",
+        "components": {
+            "entity_data": {
+                "HandItems": [
+                  {
+                    "count": 1,
+                    "id": "minecraft:diamond_sword"
+                  },
+                  {}
+                ],
+                "NoBasePlate": true,
+                "Pose": {
+                  "LeftArm": [
+                    300.0625,
+                    45.0625,
+                    0.0625
+                  ],
+                  "RightArm": [
+                    300.0625,
+                    330.0625,
+                    0.0625
+                  ]
+                },
+                "ShowArms": true,
+                "id": "minecraft:armor_stand"
+            }
+        }
+    }
+}

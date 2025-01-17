@@ -1,10 +1,10 @@
-data modify storage 42:labs test.role_data set value [{category:{text:"Townsfolk",color:"blue"},roles:[{id:"3",description:"Unique text for role 3"},{id:"12",description:"Unique text for role 12"},{id:"14",description:"Unique text for role 14"},{id:"16",description:"Unique text for role 16"},{id:"19",description:"Unique text for role 19"},{id:"21",description:"Unique text for role 21"},{id:"24",description:"Unique text for role 24"},{id:"25",description:"Unique text for role 25"},{id:"26",description:"Unique text for role 26"},{id:"32",description:"Unique text for role 32"},{id:"33",description:"Unique text for role 33"},{id:"37",description:"Unique text for role 37"},{id:"39",description:"Unique text for role 39"}]},{category:{text:"Outsiders",color:"blue"},roles:[{id:"92",description:"Unique text for role 92"},{id:"95",description:"Unique text for role 95"},{id:"96",description:"Unique text for role 96"},{id:"102",description:"Unique text for role 102"}]},{category:{text:"Minions",color:"red"},roles:[{id:"103",description:"Unique text for role 103"},{id:"106",description:"Unique text for role 106"},{id:"108",description:"Unique text for role 108"},{id:"112",description:"Unique text for role 112"}]},{category:{text:"Demons",color:"red"},roles:[{id:"132",description:"Unique text for role 132"},{id:"136",description:"Unique text for role 136"},{id:"139",description:"Unique text for role 139"},{id:"142",description:"Unique text for role 142 \"test\" and 'test'"}]}]
-
 data modify storage 42:labs test.temp.categories set from storage 42:labs test.role_data
+data remove storage 42:labs test.temp.categories[].roles[{disabled:{}}]
+
 summon item ~ ~ ~ {Item:{id:"written_book",components:{"minecraft:written_book_content":{author:"",title:""}}},Tags:["temp_item1"]}
 summon item ~ ~ ~ {Item:{id:"written_book",components:{"minecraft:written_book_content":{author:"",title:""}}},Tags:["temp_item2"]}
 execute as @e[limit=1,type=item,tag=temp_item1] run function 42:labs/test/role_book/book_logic
 tag @e[limit=1,type=item,tag=temp_item1] remove temp_item1
 tag @e[limit=1,type=item,tag=temp_item2] remove temp_item2
 
-data remove storage 42:labs test
+data remove storage 42:labs test.temp

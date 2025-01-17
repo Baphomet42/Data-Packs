@@ -1,0 +1,1 @@
+data modify storage 42:labs test.role_data[].roles[].disabled set value {}
