@@ -1,0 +1,4 @@
+scoreboard objectives remove math
+scoreboard objectives remove current_health
+scoreboard objectives remove max_health
+data remove storage temp health_bar_lists

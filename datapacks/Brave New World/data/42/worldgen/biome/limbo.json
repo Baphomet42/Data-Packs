@@ -2,8 +2,10 @@
     "effects": {
         "sky_color": 0,
         "fog_color": 10518688,
-        "water_color": 3832426,
-        "water_fog_color": 5077600,
+        "foliage_color": 8883574,
+        "grass_color": 7832178,
+        "water_color": 7768221,
+        "water_fog_color": 5597568,
         "particle": {
             "options": {
                 "type": "minecraft:mycelium"
