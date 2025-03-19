@@ -1,5 +1,5 @@
 function 42:src/gun/craft/custom {args:{\
-    name:'"RPG"',\
+    name:"RPG",\
     model:"firework_rocket",\
     gun:{\
         ammo:{max:1},\

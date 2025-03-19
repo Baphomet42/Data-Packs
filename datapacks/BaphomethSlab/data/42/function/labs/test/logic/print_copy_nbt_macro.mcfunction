@@ -1,1 +1,0 @@
-$tellraw @s {"nbt":"temp.nbt","storage":"42:labs","clickEvent":{"action":"copy_to_clipboard","value":$(nbt)}}

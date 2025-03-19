@@ -45,4 +45,4 @@ tag @e remove 42.tag.portal.temp1
 tag @e remove 42.tag.portal.temp2
 tag @e remove 42.tag.portal.sel_p
 kill @s[type=area_effect_cloud]
-execute if score #42.var.portal.dummy 42.obj.portal.sel matches 2000000000.. run tellraw @a {"text":"42datapack error (3): [sel] overflow warning","color":"red"}
+execute if score #42.var.portal.dummy 42.obj.portal.sel matches 2000000000.. run tellraw @a {text:"42datapack error (3): [sel] overflow warning",color:"red"}

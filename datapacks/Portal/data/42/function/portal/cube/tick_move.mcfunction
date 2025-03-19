@@ -8,7 +8,7 @@ execute if entity @s[tag=42.tag.portal.cube.size_1] positioned ~-.75 ~-.25 ~-.75
 execute at @s positioned ~ ~.5 ~ run function 42:portal/generic/entity_col/test_1p
 execute if entity @e[tag=42.tag.portal.grill.hit,scores={42.obj.portal.col=2}] run function 42:portal/cube/fizzle
 
-execute if entity @s[nbt={OnGround:0b},tag=!42.tag.portal.motion.tp] store result score @s 42.obj.portal.var.y run data get entity @s Motion[1] 1000
+execute if entity @s[nbt={OnGround:false},tag=!42.tag.portal.motion.tp] store result score @s 42.obj.portal.var.y run data get entity @s Motion[1] 1000
 
 scoreboard players set #42.var.portal.dummy 42.obj.portal.temp 0
 function 42:portal/generic/in_world

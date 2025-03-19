@@ -6,7 +6,7 @@ execute store result storage 42:portal loader.temp_entity.pos_z double 1 run dat
 execute store result storage 42:portal loader.temp_entity.id int 1 run scoreboard players get @s 42.obj.portal.id
 execute store result storage 42:portal loader.temp_entity.lvl int 1 run scoreboard players get @s 42.obj.portal.lvl
 execute store result storage 42:portal loader.temp_entity.link int 1 run scoreboard players get @s 42.obj.portal.link
-execute if entity @s[tag=42.tag.portal.btn.cube] run data modify storage 42:portal loader.temp_entity.tag_btn_cube set value 1b
+execute if entity @s[tag=42.tag.portal.btn.cube] run data modify storage 42:portal loader.temp_entity.tag_btn_cube set value true
 function 42:portal/button/fizzle
 
 data modify storage 42:portal loader.temp_equipment.btn append from storage 42:portal loader.temp_entity

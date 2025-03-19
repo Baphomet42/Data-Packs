@@ -61,7 +61,7 @@ Exceptions to scoreboard objectives names may be trigger commands, which can use
     + SNBT should be specified in the same way it is returned by the game in almost all cases
         + Number types should include their suffix
         + Strings should be quoted
-        + Booleans should be written as `0b` or `1b`
+        + Booleans should be written as `true` or `false`
         + This is not a strict requirement, so never count on SNBT being in the proper format
     + The minecraft namespace should usually be specified (but not a requirement)
         + Useful regex to help find potential deviants
@@ -137,7 +137,7 @@ Packs can also use the config to store settings in `42:config settings.<pack>.<s
 Settings should always be stored, even if the setting is set to the default value. This should be setup in function `42:gen/config/<pack>/reload`.
 
 Packs that use config settings should provide a tellraw menu for ease of use. This can be part of the `42menu` system or as a separate menu linked from `42menu`.
-Config clickEvents can all run functions directly without needing to use a trigger system.
+Config `click_event`'s can all run functions directly without needing to use a trigger system.
 
 ------------------------------------------------------------------------------------
 

@@ -1,5 +1,5 @@
 function 42:src/gun/craft/custom {args:{\
-    name:'"Test"',\
+    name:"Test",\
     model:"sponge",\
     gun:{\
         ammo:{max:15},\

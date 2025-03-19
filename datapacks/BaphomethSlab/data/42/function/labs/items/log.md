@@ -44,7 +44,7 @@ This file is to log important information related to maintaining custom items.
         + replace string - `$($1)`
         + files to include - `labs/items/composite/auto/**/build.mcfunction`
     4. Search and replace:
-        + see full list of search and replace (regex mode off) terms below (in the documented modifiers section)
+        + see full list of search and replace (regex mode on) terms below (in the documented modifiers section)
         + files to include - `labs/items/composite/**/build.mcfunction`
     5. Verify there are no occurences of `build_search_` in any of the `labs/items/composite/**/build.mcfunction` files
 + Items should always be given from the build files, and never from the base files

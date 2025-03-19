@@ -1,5 +1,5 @@
 function 42:src/gun/craft/custom {args:{\
-    name:'"Pistol"',\
+    name:"Pistol",\
     model:"echo_shard",\
     gun:{\
         ammo:{max:10},\

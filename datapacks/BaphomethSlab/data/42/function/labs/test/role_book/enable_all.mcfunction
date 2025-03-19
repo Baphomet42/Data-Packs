@@ -1,1 +1,0 @@
-data remove storage 42:labs test.role_data[].roles[].disabled

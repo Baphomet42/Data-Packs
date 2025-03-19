@@ -1,5 +1,5 @@
 function 42:src/gun/craft/custom {args:{\
-    name:'"Assault Rifle"',\
+    name:"Assault Rifle",\
     model:"prismarine_shard",\
     gun:{\
         ammo:{max:30},\

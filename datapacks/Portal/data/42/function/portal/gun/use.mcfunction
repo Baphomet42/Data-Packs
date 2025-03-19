@@ -1,5 +1,5 @@
 tag @e remove 42.tag.portal.temp
-summon marker ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.gun.projectile","42.tag.portal.tags.has_tick","42.tag.portal.temp","42.tag.portal.bullet_pass"],CustomNameVisible:0b,CustomName:'"42portal"'}
+summon marker ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.gun.projectile","42.tag.portal.tags.has_tick","42.tag.portal.temp","42.tag.portal.bullet_pass"],CustomNameVisible:false,CustomName:"42portal"}
 execute if entity @s[tag=42.tag.portal.gun.arg_a] run tag @e[tag=42.tag.portal.temp,limit=1] add 42.tag.portal.gun.a
 execute if entity @s[tag=!42.tag.portal.gun.arg_a] run tag @e[tag=42.tag.portal.temp,limit=1] add 42.tag.portal.gun.b
 

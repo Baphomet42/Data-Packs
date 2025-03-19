@@ -5,6 +5,6 @@ scoreboard players operation @s 42.obj.portal.xrot1 = @e[tag=42.tag.portal.temp,
 execute as @e[tag=42.tag.portal.temp] at @s run particle flash ~ ~ ~
 execute as @e[tag=42.tag.portal.temp] at @s run playsound block.note_block.pling block @a ~ ~ ~ 1 1.25
 execute unless entity @e[tag=42.tag.portal.temp] run title @p[tag=42.tag.portal.selected] title ""
-execute unless entity @e[tag=42.tag.portal.temp] run title @p[tag=42.tag.portal.selected] subtitle {"text":"No linked equipment in range","color":"red"}
+execute unless entity @e[tag=42.tag.portal.temp] run title @p[tag=42.tag.portal.selected] subtitle {text:"No linked equipment in range",color:"red"}
 
 tag @e remove 42.tag.portal.temp

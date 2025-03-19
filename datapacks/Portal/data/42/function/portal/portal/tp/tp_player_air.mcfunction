@@ -1,6 +1,6 @@
 tag @s add 42.tag.portal.motion
 tag @e remove 42.tag.portal.temp
-execute as @e[tag=42.tag.portal.portal.tp2,limit=1] at @s positioned ^ ^-.5 ^1 run summon armor_stand ~ ~ ~ {Small:1b,Invisible:1b,Invulnerable:1b,DisabledSlots:16191,Tags:["42.tag.summon","42.tag.portal.motion.tp","42.tag.portal.motion.tp_player","42.tag.portal.temp"]}
+execute as @e[tag=42.tag.portal.portal.tp2,limit=1] at @s positioned ^ ^-.5 ^1 run summon armor_stand ~ ~ ~ {Small:true,Invisible:true,Invulnerable:true,DisabledSlots:16191,Tags:["42.tag.summon","42.tag.portal.motion.tp","42.tag.portal.motion.tp_player","42.tag.portal.temp"]}
 execute store result score @e[tag=42.tag.portal.motion.tp,tag=42.tag.portal.temp,limit=1] 42.obj.portal.var.x run data get entity @s Motion[0] 1000
 scoreboard players operation @e[tag=42.tag.portal.motion.tp,tag=42.tag.portal.temp,limit=1] 42.obj.portal.var.y = @s 42.obj.portal.var.y
 execute store result score @e[tag=42.tag.portal.motion.tp,tag=42.tag.portal.temp,limit=1] 42.obj.portal.var.z run data get entity @s Motion[2] 1000

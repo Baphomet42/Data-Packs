@@ -1,5 +1,5 @@
 function 42:src/gun/craft/custom {args:{\
-    name:'"Ray Gun"',\
+    name:"Ray Gun",\
     model:"glistering_melon_slice",\
     gun:{\
         ammo:{max:20},\
