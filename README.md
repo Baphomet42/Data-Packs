@@ -509,7 +509,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ Dev (Current repo)
++ v0.6 Major Update (3/23/2025)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.5
     + **All datapacks**
