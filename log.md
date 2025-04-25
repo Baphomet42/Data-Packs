@@ -44,7 +44,7 @@ The following prefixes should be used in most cases:
 
 + `/tag` - `42.tag.`
 + objective - `42.obj.`
-+ fake scoreboard player - `#42.var.portal.` or `42.var.`
++ fake scoreboard player - `#42.var.<pack>.` or `42.var.`
 + team - `42.team.`
 + attribute modifier - `42:<pack>/`
     + for modifiers on items:

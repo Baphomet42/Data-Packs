@@ -11,9 +11,10 @@ tag @e[tag=42.tag.portal.pedestal,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.door,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.dropper,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.portal,distance=..2.5] add 42.tag.portal.temp
-tag @e[tag=42.tag.portal.pellet.catcher,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.pellet.emitter,distance=..2.5] add 42.tag.portal.temp
+tag @e[tag=42.tag.portal.pellet.catcher,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.pellet,distance=..2.5] add 42.tag.portal.temp
+tag @e[tag=42.tag.portal.laser.emitter,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.elevator,distance=..3.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.elevator.start,distance=..3.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.elevator.selgroup,distance=..3.5] add 42.tag.portal.temp

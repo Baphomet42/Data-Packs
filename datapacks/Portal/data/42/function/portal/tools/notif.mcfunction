@@ -1,2 +1,2 @@
 kill @e[tag=42.tag.portal.notif,type=area_effect_cloud,distance=...1]
-summon area_effect_cloud ~ ~ ~ {CustomName:"",CustomNameVisible:true,Duration:40,DurationOnUse:0,Particle:{type:block,block_state:{Name:air}},Radius:.5d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.summon","42.tag.portal.notif"]}
+summon area_effect_cloud ~ ~ ~ {CustomName:"",CustomNameVisible:true,Duration:40,DurationOnUse:0,Particle:{type:"block",block_state:{Name:"minecraft:air"}},Radius:.5d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.summon","42.tag.portal.notif"]}

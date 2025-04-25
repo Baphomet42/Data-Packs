@@ -7,3 +7,4 @@ execute as @e[tag=42.tag.portal.portal.spawner] at @s if score @s 42.obj.portal.
 execute as @e[tag=42.tag.portal.cube.spawner] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_power 42.obj.portal.temp run function 42:portal/cube/spawner/power
 execute as @e[tag=42.tag.portal.pellet.spawner] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_power 42.obj.portal.temp run function 42:portal/pellet/spawner/power
 execute as @e[tag=42.tag.portal.dropper,tag=!42.tag.portal.dropper.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_power 42.obj.portal.temp run function 42:portal/dropper/power
+execute as @e[tag=42.tag.portal.laser.emitter,tag=!42.tag.portal.laser.emitter.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_power 42.obj.portal.temp run function 42:portal/laser/emitter/power

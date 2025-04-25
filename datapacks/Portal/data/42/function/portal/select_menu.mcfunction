@@ -144,4 +144,9 @@ execute if score @s 42menu matches 4203674 as @e[limit=1,tag=42.tag.portal.selec
 execute if score @s 42menu matches 4203680..4203684 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.grill] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203680 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.grill] at @s run function 42:portal/grill/fizzle
 
+execute if score @s 42menu matches 4203685..4203889 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.laser.emitter] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203685 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.laser.emitter] at @s run function 42:portal/laser/emitter/fizzle
+execute if score @s 42menu matches 4203686 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.laser.emitter] at @s run function 42:portal/laser/emitter/power
+execute if score @s 42menu matches 4203687 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.laser.emitter] at @s run function 42:portal/laser/emitter/unpower
+
 tag @e remove 42.tag.portal.selected

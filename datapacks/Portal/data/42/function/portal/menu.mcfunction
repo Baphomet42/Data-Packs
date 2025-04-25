@@ -1,7 +1,35 @@
 execute if score @s 42menu matches 4203000..4203999 run function 42:portal/cmdfeed
 tellraw @s[scores={42menu=1}] [{text:"",color:"gray"},{text:"Portal",color:"gold",bold:true}," ",{text:"\u2318",color:"white",click_event:{action:"run_command",command:"/function 42:gen/config/portal/menu"},hover_event:{action:"show_text",value:"Open config settings\n(requires server operator status)"}},{text:"\n   "},{text:"Get equipment...",color:"dark_gray"},{text:"\n      "},{text:"[Handheld Portal Device]",click_event:{action:"run_command",command:"/trigger 42menu set 4203013"}},{text:"\n      "},{text:"[Fizzle Tool]",click_event:{action:"run_command",command:"/trigger 42menu set 4203003"}},{text:"\n      "},{text:"[See Full List...]",click_event:{action:"run_command",command:"/trigger 42menu set 4203001"}},{text:"\n      "},{text:"[Get Everything]",click_event:{action:"run_command",command:"/trigger 42menu set 4203021"}},{text:"\n   Debug...",color:"dark_gray"},{text:"\n      "},{text:"[Unload Level]",click_event:{action:"suggest_command",command:"/function 42:portal/level/unload"}},{text:"\n      "},{text:"[Reload Checkpoint]",click_event:{action:"suggest_command",command:"/trigger 42menu set 4203100"}},{text:"\n      "},{text:"[Unhide Zones]",click_event:{action:"suggest_command",command:"/function 42:portal/generic/show_nearby_invisibles"}}]
 #4203001
-tellraw @s[scores={42menu=4203001}] [{text:"",color:"gray"},{text:"------------------------------",color:"dark_gray"},{text:"\n   "},{text:"Get equipment...",color:"dark_gray"},{text:"\n      "},{text:"[Handheld Portal Device]",click_event:{action:"run_command",command:"/trigger 42menu set 4203013"}},{text:"\n      "},{text:"[Co-Op Portal Guns]",click_event:{action:"run_command",command:"/trigger 42menu set 4203023"}},{text:"\n      "},{text:"[Disabled Portal Gun]",click_event:{action:"run_command",command:"/trigger 42menu set 4203024"}},{text:"\n      "},{text:"[Weighted Storage Cube]",click_event:{action:"run_command",command:"/trigger 42menu set 4203006"}},{text:"\n      "},{text:"[Weighted Companion Cube]",click_event:{action:"run_command",command:"/trigger 42menu set 4203002"}},{text:"\n      "},{text:"[Discouragement Redirection Cube]",click_event:{action:"run_command",command:"/trigger 42menu set 4203017"}},{text:"\n      "},{text:"[Aerial Faith Plate]",click_event:{action:"run_command",command:"/trigger 42menu set 4203004"}},{text:"\n      "},{text:"[Heavy Duty Super Button]",click_event:{action:"run_command",command:"/trigger 42menu set 4203007"}},{text:"\n      "},{text:"[Pedestal Button]",click_event:{action:"run_command",command:"/trigger 42menu set 4203008"}},{text:"\n      "},{text:"[Door]",click_event:{action:"run_command",command:"/trigger 42menu set 4203010"}},{text:"\n      "},{text:"[Material Emancipation Grill]",click_event:{action:"run_command",command:"/trigger 42menu set 4203028"}},{text:"\n      "},{text:"[Elevator]",click_event:{action:"run_command",command:"/trigger 42menu set 4203025"}},{text:"\n      "},{text:"[Power Wire]",click_event:{action:"run_command",command:"/trigger 42menu set 4203026"}},{text:"\n      "},{text:"[Vital Apparatus Vent]",click_event:{action:"run_command",command:"/trigger 42menu set 4203011"}},{text:"\n      "},{text:"[Pellet Launcher]",click_event:{action:"run_command",command:"/trigger 42menu set 4203014"}},{text:"\n      "},{text:"[Pellet Catcher]",click_event:{action:"run_command",command:"/trigger 42menu set 4203015"}},{text:"\n      "},{text:"[Sentry Turret]",click_event:{action:"run_command",command:"/trigger 42menu set 4203016"}},{text:"\n      "},{text:"[Radio]",click_event:{action:"run_command",command:"/trigger 42menu set 4203022"}},{text:"\n      "},{text:"[Zone]",click_event:{action:"run_command",command:"/trigger 42menu set 4203027"}},{text:"\n   "},{text:"Get tool...",color:"dark_gray"},{text:"\n      "},{text:"[Fizzler]",click_event:{action:"run_command",command:"/trigger 42menu set 4203003"}},{text:"\n      "},{text:"[Select Tool]",click_event:{action:"run_command",command:"/trigger 42menu set 4203020"}},{text:"\n      "},{text:"[Link Equipment]",click_event:{action:"run_command",command:"/trigger 42menu set 4203009"}},{text:"\n      "},{text:"[Cycle Type]",click_event:{action:"run_command",command:"/trigger 42menu set 4203012"}},{text:"\n      "},{text:"[Change Skin]",click_event:{action:"run_command",command:"/trigger 42menu set 4203018"}},{text:"\n      "},{text:"[Set Load Level]",click_event:{action:"run_command",command:"/trigger 42menu set 4203019"}}]
+tellraw @s[scores={42menu=4203001}] [{text:"",color:"gray"},{text:"------------------------------",color:"dark_gray"},\
+    {text:"\n   "},{text:"Get equipment...",color:"dark_gray"},\
+    {text:"\n      "},{text:"[Handheld Portal Device]",click_event:{action:"run_command",command:"/trigger 42menu set 4203013"}},\
+    {text:"\n      "},{text:"[Co-Op Portal Guns]",click_event:{action:"run_command",command:"/trigger 42menu set 4203023"}},\
+    {text:"\n      "},{text:"[Disabled Portal Gun]",click_event:{action:"run_command",command:"/trigger 42menu set 4203024"}},\
+    {text:"\n      "},{text:"[Weighted Storage Cube]",click_event:{action:"run_command",command:"/trigger 42menu set 4203006"}},\
+    {text:"\n      "},{text:"[Weighted Companion Cube]",click_event:{action:"run_command",command:"/trigger 42menu set 4203002"}},\
+    {text:"\n      "},{text:"[Discouragement Redirection Cube]",click_event:{action:"run_command",command:"/trigger 42menu set 4203017"}},\
+    {text:"\n      "},{text:"[Aerial Faith Plate]",click_event:{action:"run_command",command:"/trigger 42menu set 4203004"}},\
+    {text:"\n      "},{text:"[Heavy Duty Super Button]",click_event:{action:"run_command",command:"/trigger 42menu set 4203007"}},\
+    {text:"\n      "},{text:"[Pedestal Button]",click_event:{action:"run_command",command:"/trigger 42menu set 4203008"}},\
+    {text:"\n      "},{text:"[Door]",click_event:{action:"run_command",command:"/trigger 42menu set 4203010"}},\
+    {text:"\n      "},{text:"[Material Emancipation Grill]",click_event:{action:"run_command",command:"/trigger 42menu set 4203028"}},\
+    {text:"\n      "},{text:"[Elevator]",click_event:{action:"run_command",command:"/trigger 42menu set 4203025"}},\
+    {text:"\n      "},{text:"[Power Wire]",click_event:{action:"run_command",command:"/trigger 42menu set 4203026"}},\
+    {text:"\n      "},{text:"[Vital Apparatus Vent]",click_event:{action:"run_command",command:"/trigger 42menu set 4203011"}},\
+    {text:"\n      "},{text:"[Pellet Launcher]",click_event:{action:"run_command",command:"/trigger 42menu set 4203014"}},\
+    {text:"\n      "},{text:"[Pellet Catcher]",click_event:{action:"run_command",command:"/trigger 42menu set 4203015"}},\
+    {text:"\n      "},{text:"[Thermal Discouragement Beam]",click_event:{action:"run_command",command:"/trigger 42menu set 4203029"}},\
+    {text:"\n      "},{text:"[Sentry Turret]",click_event:{action:"run_command",command:"/trigger 42menu set 4203016"}},\
+    {text:"\n      "},{text:"[Radio]",click_event:{action:"run_command",command:"/trigger 42menu set 4203022"}},\
+    {text:"\n      "},{text:"[Zone]",click_event:{action:"run_command",command:"/trigger 42menu set 4203027"}},\
+    {text:"\n   "},{text:"Get tool...",color:"dark_gray"},\
+    {text:"\n      "},{text:"[Fizzler]",click_event:{action:"run_command",command:"/trigger 42menu set 4203003"}},\
+    {text:"\n      "},{text:"[Select Tool]",click_event:{action:"run_command",command:"/trigger 42menu set 4203020"}},\
+    {text:"\n      "},{text:"[Link Equipment]",click_event:{action:"run_command",command:"/trigger 42menu set 4203009"}},\
+    {text:"\n      "},{text:"[Cycle Type]",click_event:{action:"run_command",command:"/trigger 42menu set 4203012"}},\
+    {text:"\n      "},{text:"[Change Skin]",click_event:{action:"run_command",command:"/trigger 42menu set 4203018"}},\
+    {text:"\n      "},{text:"[Set Load Level]",click_event:{action:"run_command",command:"/trigger 42menu set 4203019"}}]
 #4203002-4203099
 execute if entity @s[tag=!42op,gamemode=!creative,scores={42menu=4203002..4203099}] run function 42:error_perms
 scoreboard players set @s[tag=!42op,gamemode=!creative,scores={42menu=4203002..4203099}] 42menu 0
@@ -33,6 +61,7 @@ execute if score @s 42menu matches 4203025 run function 42:portal/elevator/craft
 execute if score @s 42menu matches 4203026 run function 42:portal/wire/craft
 execute if score @s 42menu matches 4203027 run function 42:portal/zone/craft
 execute if score @s 42menu matches 4203028 run function 42:portal/grill/craft
+execute if score @s 42menu matches 4203029 run function 42:portal/laser/emitter/craft
 
 execute if score @s 42menu matches 4203100 run function 42:portal/level/restart
 

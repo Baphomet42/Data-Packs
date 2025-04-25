@@ -1,1 +1,1 @@
-execute as @s[tag=42.tag.portal.elevator.selgroup] at @s run function 42:portal/elevator/sel_group
+execute if entity @s[tag=42.tag.portal.elevator.selgroup] at @s run function 42:portal/elevator/sel_group

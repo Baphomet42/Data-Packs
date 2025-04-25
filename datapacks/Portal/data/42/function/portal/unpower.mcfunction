@@ -11,5 +11,6 @@ tag @e remove 42.tag.portal.temp
 execute unless score @s 42.obj.portal.temp matches 1.. as @e[tag=42.tag.portal.dropper,tag=42.tag.portal.dropper.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/dropper/unpower
 execute unless score @s 42.obj.portal.temp matches 1.. as @e[tag=42.tag.portal.wire] if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/wire/unpower
 execute unless score @s 42.obj.portal.temp matches 1.. as @e[tag=42.tag.portal.door,tag=42.tag.portal.door.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/door/unpower
+execute unless score @s 42.obj.portal.temp matches 1.. as @e[tag=42.tag.portal.laser.emitter,tag=42.tag.portal.laser.emitter.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/laser/emitter/unpower
 
 execute unless score @s 42.obj.portal.temp matches 1.. unless entity @s[tag=42.tag.portal.pedestal] as @e[tag=42.tag.portal.portal.spawner] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/portal/spawner/unpower

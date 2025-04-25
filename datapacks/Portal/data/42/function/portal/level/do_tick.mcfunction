@@ -5,3 +5,4 @@ execute if entity @s[tag=42.tag.portal.pedestal] at @s run function 42:portal/bu
 execute if entity @s[tag=42.tag.portal.pellet] at @s run function 42:portal/pellet/pellet/tick
 execute if entity @s[tag=42.tag.portal.pellet.emitter] at @s run function 42:portal/pellet/emitter/tick
 execute if entity @s[tag=42.tag.portal.pellet.catcher] at @s run function 42:portal/pellet/catcher/tick
+execute if entity @s[tag=42.tag.portal.laser.beam] at @s run function 42:portal/laser/beam/tick

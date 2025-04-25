@@ -1,9 +1,7 @@
 {
   "replace": false,
   "values": [
-    "minecraft:air",
-    "minecraft:cave_air",
-    "minecraft:void_air",
+    "#minecraft:air",
     "minecraft:light",
     "minecraft:structure_void",
     "minecraft:oak_sapling",
@@ -75,6 +73,7 @@
     "minecraft:glow_lichen",
     "pale_hanging_moss",
     "minecraft:spore_blossom",
+    "minecraft:leaf_litter",
     "#minecraft:buttons",
     "#minecraft:pressure_plates",
     "#minecraft:flowers",

@@ -7,10 +7,10 @@ execute if entity @s[tag=42.tag.portal.tool.spawn.turret] as @e[tag=42.tag.porta
 scoreboard players operation @e[tag=42.tag.portal.cube.new_spawn,tag=42.tag.portal.cube.tp] 42.obj.portal.lvl = @s 42.obj.portal.lvl
 scoreboard players operation @e[tag=42.tag.portal.cube.new_spawn] 42.obj.portal.id = @s 42.obj.portal.id
 
-execute if entity @s[tag=42.tag.portal.cube.spawner.turret.off] run execute as @e[tag=42.tag.portal.cube.new_spawn,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret,limit=1] at @s run function 42:portal/cube/turret/toggle/on
+execute if entity @s[tag=42.tag.portal.cube.spawner.turret.off] as @e[tag=42.tag.portal.cube.new_spawn,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret,limit=1] at @s run function 42:portal/cube/turret/toggle/on
 execute if entity @s[tag=42.tag.portal.cube.spawner.turret.nofind] run tag @e[tag=42.tag.portal.cube.new_spawn,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret,limit=1] add 42.tag.portal.turret.nofind
 execute if entity @s[tag=42.tag.portal.cube.spawner.turret.always_on] run tag @e[tag=42.tag.portal.cube.new_spawn,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret,limit=1] add 42.tag.portal.turret.always_on
-execute if entity @s[tag=42.tag.portal.cube.spawner.turret.oracle] run execute as @e[tag=42.tag.portal.cube.new_spawn,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret,limit=1] at @s run function 42:portal/cube/turret/toggle/oracle
+execute if entity @s[tag=42.tag.portal.cube.spawner.turret.oracle] as @e[tag=42.tag.portal.cube.new_spawn,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret,limit=1] at @s run function 42:portal/cube/turret/toggle/oracle
 execute if entity @s[tag=42.tag.portal.tool.spawn.turret] as @e[tag=42.tag.portal.cube.new_spawn,tag=42.tag.portal.cube.dis] at @s rotated as @e[tag=42.tag.portal.cube.spawner.this,limit=1] run rotate @s ~ ~
 
 execute if entity @s[tag=42.tag.portal.tool.spawn.radio] as @e[tag=42.tag.portal.cube.new_spawn,tag=42.tag.portal.cube.dis] at @s rotated as @e[tag=42.tag.portal.cube.spawner.this,limit=1] run rotate @s ~ ~
