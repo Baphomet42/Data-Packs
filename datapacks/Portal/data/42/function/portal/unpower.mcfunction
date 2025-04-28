@@ -3,6 +3,7 @@ execute if score @s 42.obj.portal.link matches 1.. run scoreboard players operat
 tag @e remove 42.tag.portal.temp
 execute as @e[tag=42.tag.portal.btn.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run tag @s add 42.tag.portal.temp
 execute as @e[tag=42.tag.portal.pellet.catcher.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run tag @s add 42.tag.portal.temp
+execute as @e[tag=42.tag.portal.laser.catcher.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run tag @s add 42.tag.portal.temp
 execute as @e[tag=42.tag.portal.pedestal,scores={42.obj.portal.time=2..}] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run tag @s add 42.tag.portal.temp
 scoreboard players set @s 42.obj.portal.temp 0
 execute at @e[tag=42.tag.portal.temp] run scoreboard players add @s 42.obj.portal.temp 1

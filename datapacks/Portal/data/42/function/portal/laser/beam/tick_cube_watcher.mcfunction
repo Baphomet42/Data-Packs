@@ -1,0 +1,3 @@
+tag @s add 42.tag.portal.laser.beam.watcher_fail
+execute positioned ^ ^ ^-1 positioned ~ ~-.5 ~ as @e[tag=42.tag.portal.cube.laser,distance=...001,limit=1] at @s positioned ~ ~.5 ~ positioned ^ ^ ^1 run tag @e[tag=42.tag.portal.laser.beam.watcher_fail,distance=...001,limit=1] remove 42.tag.portal.laser.beam.watcher_fail
+execute if entity @s[tag=42.tag.portal.laser.beam.watcher_fail] run function 42:portal/laser/beam/fizzle_starting

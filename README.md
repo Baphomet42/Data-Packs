@@ -121,7 +121,9 @@ Optional resource pack - see [below](#resource-pack-info)
     + Pellets will kill Sentry Turrets and players upon impact
 + *Thermal Discouragement Beam*
     + Creates a deadly laser
-    + Can be redirected with Discouragement Redirection Cube
+        + Knocks back players
+        + Ignites Turrets
+    + Can be redirected with Discouragement Redirection Cubes and portals
     + Used to activate Thermal Discouragement Receptacle
 + *Radio*
     + Plays the best song on repeat all day every day
@@ -508,6 +510,13 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ------------------------------------------------------------------------------------
 
 # Changelog
+
++ Dev Branch (Current Repo)
+    + **Portal**
+        + Added Thermal Discouragement Beams
+            + Emitters can be powered to shoot a laser
+            + Receptacles can be powered by the laser
+            + Lasers can be redirected using Discouragement Redirection Cubes
 
 + v0.6 Major Update (3/23/2025)
     + **IMPORTANT**

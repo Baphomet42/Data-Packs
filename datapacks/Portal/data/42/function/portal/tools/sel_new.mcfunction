@@ -18,6 +18,7 @@ execute if entity @s[tag=42.tag.portal.pellet.emitter] at @s run function 42:por
 execute if entity @s[tag=42.tag.portal.pellet.catcher] at @s run function 42:portal/pellet/catcher/select
 execute if entity @s[tag=42.tag.portal.pellet] at @s run function 42:portal/pellet/pellet/select
 execute if entity @s[tag=42.tag.portal.laser.emitter] at @s run function 42:portal/laser/emitter/select
+execute if entity @s[tag=42.tag.portal.laser.catcher] at @s run function 42:portal/laser/catcher/select
 execute if entity @s[tag=42.tag.portal.elevator] at @s run function 42:portal/elevator/select
 execute if entity @s[tag=42.tag.portal.wire] at @s run function 42:portal/wire/select
 execute if entity @s[tag=42.tag.portal.portal.spawner] at @s run function 42:portal/portal/spawner/select

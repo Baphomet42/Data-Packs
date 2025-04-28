@@ -5,10 +5,12 @@ give @s guardian_spawn_egg[item_name="Link Equipment",rarity=uncommon,custom_dat
         {text:"Power Sources:",color:"gray",italic:false},\
         {text:"  Button",color:"gray"},\
         {text:"  Pedestal Button",color:"gray"},\
-        {text:"  Pellet Catcher",color:"gray"},\
+        {text:"  High Energy Pellet Catcher",color:"gray"},\
+        {text:"  Discouragement Beam Receptacle",color:"gray"},\
         {text:"Powerables:",color:"gray",italic:false},\
         {text:"  Door",color:"gray"},\
         {text:"  Vital Apparatus Vent",color:"gray"},\
+        {text:"  Thermal Discouragement Beam",color:"gray"},\
         {text:"  Spawner",color:"gray"},\
         {text:"  Power Wire",color:"gray"},\
         ""],\

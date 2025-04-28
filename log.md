@@ -209,3 +209,61 @@ Datapacks can be designed to require no resourcepack, an optional resourcepack, 
     + The config system should have a setting to enable/disable the resourcepack (where possible)
 
 ------------------------------------------------------------------------------------
+
+# Portal
+
+## Adding new equipment
+
++ Generally, the following functions are needed:
+    + In the new `42:portal/<equipment>/` folder
+        + `craft`
+            + Usually add to equipment list in 42menu and `#42:portal/craft_all`
+            + Add required space and/or `Modify with:` info
+        + `fizzle`
+            + Setup in `42:portal/tools/fizzler`
+        + `load`
+            + Setup in `42:portal/level/loader/load_all`
+            + Setup in `42:portal/level/loader/load/<equipment>`
+        + `select`
+            + Add options to `42:portal/select_menu`
+            + Setup in `42:portal/tools/select`
+            + Setup in `42:portal/tools/sel_new`
+        + `spawn`
+            + Sometimes also `spawn2`
+        + `tick`
+            + Setup in `42:portal/tick_entity`
+            + Setup in `42:portal/level/do_tick`
+        + `unload`
+            + Setup in `42:portal/level/loader/unload_all`
++ Common traits
+    + Powerable or power source: see below
+    + Cycleable:
+        + Update `42:portal/tools/craft_cycle` equipment list
+        + Create `42:portal/<equipment>/cycle`
+            + Sometimes also `cycle_silent`
+        + Setup in `42:portal/tools/cycle`
+    + Skins:
+        + Update `42:portal/tools/craft_skin` equipment list
+        + Create `42:portal/<equipment>/skin`
+        + Setup in `42:portal/tools/skin`
+
+## Powerables and power sources
+
++ General:
+    + Update `42:portal/tools/sel/powerable` and `42:portal/tools/craft_link` equipment lists
++ Powerables:
+    + Create `42:portal/<equipment>/power` and `42:portal/<equipment>/unpower`
+    + Setup in `42:portal/power` and `42:portal/unpower`
++ Power sources:
+    + When powered:
+        + Set a flag/score to denote power
+        + Call `42:portal/power`
+    + When unpowered:
+        + Remove flag/score that denotes power
+        + Call `42:portal/unpower`
+    + When fizzled:
+        + Unpower
+    + Setup in `42:portal/unpower`
+        + Detect flag/score from above
+
+------------------------------------------------------------------------------------

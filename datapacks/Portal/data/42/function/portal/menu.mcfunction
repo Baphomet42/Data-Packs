@@ -20,6 +20,7 @@ tellraw @s[scores={42menu=4203001}] [{text:"",color:"gray"},{text:"-------------
     {text:"\n      "},{text:"[Pellet Launcher]",click_event:{action:"run_command",command:"/trigger 42menu set 4203014"}},\
     {text:"\n      "},{text:"[Pellet Catcher]",click_event:{action:"run_command",command:"/trigger 42menu set 4203015"}},\
     {text:"\n      "},{text:"[Thermal Discouragement Beam]",click_event:{action:"run_command",command:"/trigger 42menu set 4203029"}},\
+    {text:"\n      "},{text:"[Discouragement Beam Receptacle]",click_event:{action:"run_command",command:"/trigger 42menu set 4203030"}},\
     {text:"\n      "},{text:"[Sentry Turret]",click_event:{action:"run_command",command:"/trigger 42menu set 4203016"}},\
     {text:"\n      "},{text:"[Radio]",click_event:{action:"run_command",command:"/trigger 42menu set 4203022"}},\
     {text:"\n      "},{text:"[Zone]",click_event:{action:"run_command",command:"/trigger 42menu set 4203027"}},\
@@ -62,6 +63,7 @@ execute if score @s 42menu matches 4203026 run function 42:portal/wire/craft
 execute if score @s 42menu matches 4203027 run function 42:portal/zone/craft
 execute if score @s 42menu matches 4203028 run function 42:portal/grill/craft
 execute if score @s 42menu matches 4203029 run function 42:portal/laser/emitter/craft
+execute if score @s 42menu matches 4203030 run function 42:portal/laser/catcher/craft
 
 execute if score @s 42menu matches 4203100 run function 42:portal/level/restart
 

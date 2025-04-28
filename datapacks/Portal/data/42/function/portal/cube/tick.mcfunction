@@ -14,4 +14,3 @@ tag @e remove 42.tag.portal.id
 
 #special
 execute if entity @s[tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/tick
-execute if entity @s[tag=42.tag.portal.cube.laser] at @s run function 42:portal/cube/laser/tick

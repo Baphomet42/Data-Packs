@@ -4,6 +4,7 @@ execute if entity @s[tag=42.tag.portal.cube.activates] at @s run function 42:por
 
 execute positioned ~ ~.5 ~ if predicate 42:location_fluid run function 42:portal/cube/fizzle
 execute if entity @s[tag=42.tag.portal.cube.size_1] positioned ~-.75 ~-.25 ~-.75 as @e[tag=42.tag.portal.turret.hit,tag=!42.tag.portal.cube.held,tag=!42.tag.portal.id,dx=0,dy=0,dz=0] positioned ~.5 ~.5 ~.5 if entity @s[dx=0,dy=0,dz=0] at @s run function 42:portal/cube/turret/fall
+execute if entity @s[tag=42.tag.portal.cube.weighted] positioned ~-.5 ~ ~-.5 as @e[tag=42.tag.portal.laser.beam,tag=!42.tag.portal.laser.beam.end,tag=!42.tag.portal.laser.beam.cube_watcher,dx=0] at @s run function 42:portal/laser/beam/fizzle_after
 
 execute at @s positioned ~ ~.5 ~ run function 42:portal/generic/entity_col/test_1p
 execute if entity @e[tag=42.tag.portal.grill.hit,scores={42.obj.portal.col=2}] run function 42:portal/cube/fizzle
