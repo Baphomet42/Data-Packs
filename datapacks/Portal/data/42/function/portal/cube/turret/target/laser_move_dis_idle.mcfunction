@@ -1,8 +1,8 @@
 scoreboard players remove @s 42.obj.portal.time 1
 
-summon area_effect_cloud ^ ^ ^ {Duration:15,DurationOnUse:0,Particle:{type:dust,color:[1.0,0.0,0.0],scale:.2},Radius:.01d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.summon"]}
-summon area_effect_cloud ^ ^ ^.25 {Duration:15,DurationOnUse:0,Particle:{type:dust,color:[1.0,0.0,0.0],scale:.2},Radius:.01d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.summon"]}
-summon area_effect_cloud ^ ^ ^.5 {Duration:15,DurationOnUse:0,Particle:{type:dust,color:[1.0,0.0,0.0],scale:.2},Radius:.01d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.summon"]}
+summon area_effect_cloud ^ ^ ^ {Duration:15,DurationOnUse:0,custom_particle:{type:"minecraft:dust",color:[1.0,0.0,0.0],scale:.2},Radius:.01d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.summon"]}
+summon area_effect_cloud ^ ^ ^.25 {Duration:15,DurationOnUse:0,custom_particle:{type:"minecraft:dust",color:[1.0,0.0,0.0],scale:.2},Radius:.01d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.summon"]}
+summon area_effect_cloud ^ ^ ^.5 {Duration:15,DurationOnUse:0,custom_particle:{type:"minecraft:dust",color:[1.0,0.0,0.0],scale:.2},Radius:.01d,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0,Tags:["42.tag.summon"]}
 
 tp ^ ^ ^.75
 function 42:portal/cube/turret/target/laser_valid

@@ -1,7 +1,7 @@
 
 ------------------------------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 1.21.5
+# Separate but compatible datapacks for Minecraft 1.21.6
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
@@ -511,14 +511,18 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ Dev Branch (Current Repo)
++ Dev Branch (Current Repo) [v0.7.0 Major Update]
+    + **IMPORTANT**
+        + The required Minecraft version has changed to 1.21.6
+    + **All datapacks**
+        + Minecraft version updated to 1.21.6
     + **Portal**
         + Added Thermal Discouragement Beams
             + Emitters can be powered to shoot a laser
             + Receptacles can be powered by the laser
             + Lasers can be redirected using Discouragement Redirection Cubes
 
-+ v0.6 Major Update (3/23/2025)
++ v0.6.0 Major Update (3/23/2025)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.5
     + **All datapacks**
@@ -532,7 +536,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
                 + Assault Rifle
                 + Ray Gun
 
-+ v0.5 Major Update (12/3/2024)
++ v0.5.0 Major Update (12/3/2024)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.4
         + Before updating existing worlds with the datapacks:
@@ -566,7 +570,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
                 + Everything else in-world will continue to work without the resource pack
             + The datapack can be configured to run without custom assets in config settings
 
-+ v0.4 Major Update (10/20/2024)
++ v0.4.0 Major Update (10/20/2024)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.2
     + **All datapacks**
@@ -584,7 +588,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
     + **Historically Accurate Crafting**
         + Uncovered the true netherite armor recipes
 
-+ v0.3 Major Update (8/2/2024)
++ v0.3.0 Major Update (8/2/2024)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21
         + Before updating existing worlds with the datapacks:
@@ -608,7 +612,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
     + **Essentials**
         + `/trigger hat` can now swap mainhand and helmet items
 
-+ v0.2 Major Update (4/20/2024)
++ v0.2.0 Major Update (4/20/2024)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.20.5
         + Before updating existing worlds with the datapacks:
