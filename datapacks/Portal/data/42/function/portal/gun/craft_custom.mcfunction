@@ -2,8 +2,10 @@ tag @e remove 42.tag.portal.new_spawn
 summon item ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.new_spawn"],Item:{id:"minecraft:warped_fungus_on_a_stick",components:{\
     "minecraft:custom_data":{42data:{datapack_item:{},portal:{portal_gun:{pair_type:0,pair_link:1,color:0}}}},\
     "minecraft:item_model":"42:portal/portal_gun",\
-    "minecraft:unbreakable":{},\
-    "minecraft:attribute_modifiers":[{type:"block_interaction_range",slot:"mainhand",id:"42:portal/item/portal_gun/mainhand",operation:"add_multiplied_total",amount:-1d}],\
+    "!minecraft:damage":{},\
+    "!minecraft:max_damage":{},\
+    "minecraft:damage_resistant":{types:"#minecraft:is_fire"},\
+    "minecraft:tool":{rules:[],can_destroy_blocks_in_creative:false},\
     "minecraft:can_place_on":[{blocks:"#42:portal/portal_surface"}]\
     }}}
 $data modify entity @e[tag=42.tag.portal.new_spawn,limit=1] Item.components.minecraft:custom_data.42data.portal.portal_gun.pair_type set value $(type)
