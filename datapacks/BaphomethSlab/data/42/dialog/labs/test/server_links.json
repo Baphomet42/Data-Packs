@@ -1,0 +1,9 @@
+{
+    "type": "server_links",
+    "title": "Amazing Links",
+    "external_title": "Type: Server Links",
+    "pause": false,
+    "exit_action": {
+        "label": "leave now"
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "notice",
+  "title": "Epic Notice",
+  "external_title": "Type: Notice",
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:sponge"
+      },
+      "description": {
+        "text": "test"
+      }
+    }
+  ],
+  "can_close_with_escape": false,
+  "pause": false
+}

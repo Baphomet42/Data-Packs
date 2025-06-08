@@ -1,0 +1,18 @@
+{
+    "type": "dialog_list",
+    "title": "Cool List",
+    "external_title": "Type: Dialog List",
+    "dialogs": [
+        "42:labs/test/notice",
+        "42:labs/test/confirmation",
+        "42:labs/test/multi_action",
+        "42:labs/test/server_links",
+        "42:labs/test/dialog_list"
+    ],
+    "columns": 3,
+    "button_width": 100,
+    "pause": false,
+    "exit_action": {
+        "label": "leave now"
+    }
+}

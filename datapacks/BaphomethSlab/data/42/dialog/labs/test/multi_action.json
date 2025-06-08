@@ -1,0 +1,11 @@
+{
+    "type": "multi_action",
+    "title": "Too Many Actions",
+    "external_title": "Type: Multi Action",
+    "pause": false,
+    "actions": [
+        {
+            "label": "aaaaaaaaaaaaa"
+        }
+    ]
+}

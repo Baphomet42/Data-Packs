@@ -1,0 +1,13 @@
+{
+    "type": "confirmation",
+    "title": "Dialog Confirmed",
+    "external_title": "Type: Confirmation",
+    "can_close_with_escape": false,
+    "pause": false,
+    "yes": {
+        "label": "asdf"
+    },
+    "no": {
+        "label": "fffffff"
+    }
+}
