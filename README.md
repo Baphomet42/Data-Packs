@@ -511,7 +511,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ Dev Branch (Current Repo) [v0.7.0 Major Update]
++ v0.7.0 Major Update (6/12/2025)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.6
     + **All datapacks**
