@@ -1,11 +1,11 @@
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # BaphomethLabs Black Market items log
 
 This file is to log important information related to maintaining custom items.
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # General
 
@@ -19,7 +19,7 @@ This file is to log important information related to maintaining custom items.
     + Saved hotbars
     + Worlds (42city)
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # Composite items
 
@@ -49,7 +49,7 @@ This file is to log important information related to maintaining custom items.
     5. Verify there are no occurences of `build_search_` in any of the `labs/items/composite/**/build.mcfunction` files
 + Items should always be given from the build files, and never from the base files
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # Attribute modifiers
 
@@ -109,7 +109,7 @@ Documented modifiers:
         + `minecraft:armor.helmet`
         + `minecraft:armor.body`
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # Rule exceptions
 
@@ -118,4 +118,4 @@ Documented modifiers:
     + `42:labs/item/archive/sticky_piston/any`
     + `42:labs/item/archive/the_sun/any`
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------

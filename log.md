@@ -1,11 +1,11 @@
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # 42dominion update guide
 
 This file is to log important information related to maintaining the datapacks.
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # 42datapack ids and watermarks
 
@@ -36,7 +36,7 @@ The `gen` code is not a datapack and does not work on its own.
 Minecraft namespace should be rarely used (and almost always non-replacing).
 In most cases, use the namepace 42 and follow it with the pack code. (Ex: 42:portal).
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # Naming conventions
 
@@ -69,7 +69,7 @@ Exceptions to scoreboard objectives names may be trigger commands, which can use
             + `id:[a-z0-9_\-./]*\}`
             + `id:"[a-z0-9_\-./]*"`
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # Advancements
 
@@ -97,7 +97,7 @@ Packs that use common features should document them as follows:
 
 Any advancements that are not used for the 42dominion advancement page should be placed in `advancement/<pack>/`.
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # Config system
 
@@ -139,7 +139,7 @@ Settings should always be stored, even if the setting is set to the default valu
 Packs that use config settings should provide a tellraw menu for ease of use. This can be part of the `42menu` system or as a separate menu linked from `42menu`.
 Config `click_event`'s can all run functions directly without needing to use a trigger system.
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # 42menu
 
@@ -163,7 +163,7 @@ The following files should be added (or modified to include the specified conten
             + `function/`
                 + `load.json` (to reference `42:<pack>/load`)
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # Shared files
 
@@ -198,7 +198,7 @@ In most (but not all) cases, these files should be in locations `42:`, `42:domin
             + `block/`
                 + `projectile_pass.json`
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # Resourcepacks
 
@@ -208,7 +208,7 @@ Datapacks can be designed to require no resourcepack, an optional resourcepack, 
 + If the resource pack is optional, features should always attempt to accommodate both cases
     + The config system should have a setting to enable/disable the resourcepack (where possible)
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
 
 # Portal
 
@@ -266,4 +266,4 @@ Datapacks can be designed to require no resourcepack, an optional resourcepack, 
     + Setup in `42:portal/unpower`
         + Detect flag/score from above
 
-------------------------------------------------------------------------------------
+----------------------------------------------------------------
