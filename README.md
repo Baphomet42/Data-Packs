@@ -511,7 +511,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ `v0.7.1 mc1.21.7` Minor Update (current branch)
++ `v0.7.1 mc1.21.7` Minor Update (6/30/2025)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.7
     + **All datapacks**
