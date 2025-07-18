@@ -1,7 +1,7 @@
 
 ----------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 1.21.7
+# Separate but compatible datapacks for Minecraft 1.21.8
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
@@ -510,6 +510,10 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ----------------------------------------------------------------
 
 # Changelog
+
++ `v0.7.2 mc1.21.8` Minor Update (7/17/2025)
+    + **All datapacks**
+        + Supported versions: 1.21.7 - 1.21.8
 
 + `v0.7.1 mc1.21.7` Minor Update (6/30/2025)
     + **IMPORTANT**
