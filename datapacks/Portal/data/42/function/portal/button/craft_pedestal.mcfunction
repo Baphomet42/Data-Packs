@@ -1,4 +1,4 @@
-give @s parrot_spawn_egg[item_name="Pedestal Button",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s parrot_spawn_egg[item_name="Pedestal Button",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Modify with:",color:"gray",italic:false},\
         {text:"  Link Tool",color:"gray"},\

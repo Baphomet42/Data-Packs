@@ -8,11 +8,11 @@ execute if score @s 42.obj.portal.var.w matches 78 at @s positioned ^ ^1 ^1 run 
 execute if score @s 42.obj.portal.var.w matches 68 at @s positioned ^ ^1 ^1 run damage @p[distance=..2,gamemode=!creative,gamemode=!spectator] .00001 generic_kill by @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.tp,limit=1]
 execute if score @s 42.obj.portal.var.w matches 58 at @s positioned ^ ^1 ^1 run damage @p[distance=..2,gamemode=!creative,gamemode=!spectator] .00001 generic_kill by @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.tp,limit=1]
 execute if score @s 42.obj.portal.var.w matches 48 at @s positioned ^ ^1 ^1 run damage @p[distance=..2,gamemode=!creative,gamemode=!spectator] .00001 generic_kill by @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.tp,limit=1]
-execute if score @s 42.obj.portal.var.w matches 88.. run particle flash
-execute if score @s 42.obj.portal.var.w matches 68..70 run particle flash
-execute if score @s 42.obj.portal.var.w matches 77 run particle flash
-execute if score @s 42.obj.portal.var.w matches 56..60 run particle flash
-execute if score @s 42.obj.portal.var.w matches 41..43 run particle flash
+execute if score @s 42.obj.portal.var.w matches 88.. run particle flash{color:[1,1,1,1]}
+execute if score @s 42.obj.portal.var.w matches 68..70 run particle flash{color:[1,1,1,1]}
+execute if score @s 42.obj.portal.var.w matches 77 run particle flash{color:[1,1,1,1]}
+execute if score @s 42.obj.portal.var.w matches 56..60 run particle flash{color:[1,1,1,1]}
+execute if score @s 42.obj.portal.var.w matches 41..43 run particle flash{color:[1,1,1,1]}
 execute if score @s 42.obj.portal.var.w matches 80..85 as @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.dis] at @s run rotate @s ~8 ~
 execute if score @s 42.obj.portal.var.w matches 60..75 as @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.dis] at @s run rotate @s ~-5 ~
 execute if score @s 42.obj.portal.var.w matches 50..55 as @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.dis] at @s run rotate @s ~9 ~

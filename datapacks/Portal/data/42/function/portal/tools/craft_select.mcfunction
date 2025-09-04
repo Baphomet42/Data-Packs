@@ -1,4 +1,4 @@
-give @s warden_spawn_egg[item_name="Select Closest Equipment",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s warden_spawn_egg[item_name="Select Closest Equipment",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Works on everything",color:"gray"},\
         ""],\

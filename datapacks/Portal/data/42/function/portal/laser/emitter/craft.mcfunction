@@ -1,4 +1,4 @@
-give @s magma_cube_spawn_egg[item_name="Thermal Discouragement Beam",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s magma_cube_spawn_egg[item_name="Thermal Discouragement Beam",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Requires 3x3x2 space to spawn",color:"white",italic:false},\
         {text:"Modify with:",color:"gray",italic:false},\

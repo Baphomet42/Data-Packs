@@ -7,10 +7,10 @@ execute if score @s 42.obj.portal.var.z matches 4 as @e[tag=42.tag.portal.id,tag
 execute if score @s 42.obj.portal.var.z matches 5 as @e[tag=42.tag.portal.id,tag=42.tag.portal.pellet.catcher.group] run rotate @s -90 0
 tag @e remove 42.tag.portal.id
 
-execute at @s if score @s 42.obj.portal.var.z matches 0..1 run fill ^-1 ^ ^ ^1 ^ ^ chain[axis=y] replace #42:portal/portal_replace
-execute at @s if score @s 42.obj.portal.var.z matches 0..1 run fill ^ ^-1 ^ ^ ^1 ^ chain[axis=y] replace #42:portal/portal_replace
-execute at @s if score @s 42.obj.portal.var.z matches 2..3 run fill ^-1 ^ ^ ^1 ^ ^ chain[axis=z] replace #42:portal/portal_replace
-execute at @s if score @s 42.obj.portal.var.z matches 2..3 run fill ^ ^-1 ^ ^ ^1 ^ chain[axis=z] replace #42:portal/portal_replace
-execute at @s if score @s 42.obj.portal.var.z matches 4..5 run fill ^-1 ^ ^ ^1 ^ ^ chain[axis=x] replace #42:portal/portal_replace
-execute at @s if score @s 42.obj.portal.var.z matches 4..5 run fill ^ ^-1 ^ ^ ^1 ^ chain[axis=x] replace #42:portal/portal_replace
-fill ~ ~ ~ ~ ~ ~ barrier replace chain
+execute at @s if score @s 42.obj.portal.var.z matches 0..1 run fill ^-1 ^ ^ ^1 ^ ^ iron_chain[axis=y] replace #42:portal/portal_replace
+execute at @s if score @s 42.obj.portal.var.z matches 0..1 run fill ^ ^-1 ^ ^ ^1 ^ iron_chain[axis=y] replace #42:portal/portal_replace
+execute at @s if score @s 42.obj.portal.var.z matches 2..3 run fill ^-1 ^ ^ ^1 ^ ^ iron_chain[axis=z] replace #42:portal/portal_replace
+execute at @s if score @s 42.obj.portal.var.z matches 2..3 run fill ^ ^-1 ^ ^ ^1 ^ iron_chain[axis=z] replace #42:portal/portal_replace
+execute at @s if score @s 42.obj.portal.var.z matches 4..5 run fill ^-1 ^ ^ ^1 ^ ^ iron_chain[axis=x] replace #42:portal/portal_replace
+execute at @s if score @s 42.obj.portal.var.z matches 4..5 run fill ^ ^-1 ^ ^ ^1 ^ iron_chain[axis=x] replace #42:portal/portal_replace
+fill ~ ~ ~ ~ ~ ~ barrier replace iron_chain

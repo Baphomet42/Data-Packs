@@ -1,4 +1,4 @@
-give @s stray_spawn_egg[item_name="Aerial Faith Plate",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s stray_spawn_egg[item_name="Aerial Faith Plate",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Select Tool Features:",color:"gray",italic:false},\
         {text:"  Launch Velocity",color:"gray"},\

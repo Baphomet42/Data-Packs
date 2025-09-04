@@ -15,8 +15,8 @@ Used for 42menu system.
 
 42menu values are 42NNXXX where NN is the id in 2 digits and XXX are the values 000 to 999.
 
-+ All entities summoned by a pack should have the tag `42.tag.summon`
-+ All custom items should include `custom_data~{42data:{datapack_item:{}}}`
++ All entities summoned by a pack should have the tag `42.tag.summon` or include `custom_data~{42data:{datapack:{}}}`
++ All custom items should include `custom_data~{42data:{datapack:{}}}`
     + All other `custom_data` should be within the `42data` compound
     + Most `custom_data` should typically be within the `42data.<pack>` compound
 
@@ -32,6 +32,7 @@ The `gen` code is not a datapack and does not work on its own.
 + labs - none
 + src - 7
 + hvac - none
++ posers - none
 
 Minecraft namespace should be rarely used (and almost always non-replacing).
 In most cases, use the namepace 42 and follow it with the pack code. (Ex: 42:portal).

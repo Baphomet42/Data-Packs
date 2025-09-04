@@ -1,4 +1,4 @@
-give @s axolotl_spawn_egg[item_name="Weighted Companion Cube",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s axolotl_spawn_egg[item_name="Weighted Companion Cube",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Euthanize with:",color:"gray",italic:false},\
         {text:"  Fizzle Tool",color:"gray"},\

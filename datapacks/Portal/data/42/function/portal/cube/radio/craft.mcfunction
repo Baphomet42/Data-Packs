@@ -1,4 +1,4 @@
-give @s silverfish_spawn_egg[item_name="Radio",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s silverfish_spawn_egg[item_name="Radio",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Select Tool Features:",color:"gray",italic:false},\
         {text:"  Reset Song",color:"gray"},\

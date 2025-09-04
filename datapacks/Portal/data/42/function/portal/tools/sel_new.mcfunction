@@ -1,4 +1,4 @@
-summon area_effect_cloud ~ ~ ~ {Tags:["42.tag.summon"],Duration:10,DurationOnUse:0,custom_particle:{type:"minecraft:flash"},Radius:.25f,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0}
+summon area_effect_cloud ~ ~ ~ {Tags:["42.tag.summon"],Duration:10,DurationOnUse:0,custom_particle:{type:"minecraft:flash",color:[1,1,1,1]},Radius:.25f,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0}
 
 function 42:portal/tag_selected
 function 42:portal/cmdfeed

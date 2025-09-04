@@ -1,7 +1,7 @@
 
 ----------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 1.21.8
+# Separate but compatible datapacks for Minecraft 25w36b
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
@@ -9,6 +9,7 @@ Most packs are proof of concepts and not intended for existing worlds.
 **Table of Contents**
 + [Showcases](#showcases)
 + [Datapack Descriptions](#datapack-descriptions)
+    + [Posers](#posers)
     + [42essentials](#42essentials)
     + [Portal](#portal)
     + [42source](#42source)
@@ -40,6 +41,12 @@ Note that features may have changed since these were published
 ----------------------------------------------------------------
 
 # Datapack Descriptions
+
+### **Posers**
+
+Tools to build with mannequins similar to armor stands. Currently intended for creative mode building only.
+
++ WIP
 
 ### **42essentials**
 
@@ -510,6 +517,14 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ----------------------------------------------------------------
 
 # Changelog
+
++ `v0.8.DEV` Current Branch (in development)
+    + **IMPORTANT**
+        + The required Minecraft version has changed to 25w36b
+    + **All datapacks**
+        + Minecraft version updated to 25w36b
+    + **Posers**
+        + New datapack for decorating with mannequins in creative mode
 
 + `v0.7.2 mc1.21.8` Minor Update (7/17/2025)
     + **All datapacks**

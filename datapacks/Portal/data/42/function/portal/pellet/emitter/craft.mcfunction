@@ -1,4 +1,4 @@
-give @s pillager_spawn_egg[item_name="High Energy Pellet Launcher",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s pillager_spawn_egg[item_name="High Energy Pellet Launcher",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Requires 3x3x2 space to spawn",color:"white",italic:false},\
         {text:"Modify with:",color:"gray",italic:false},\

@@ -1,4 +1,4 @@
-give @s breeze_spawn_egg[item_name="Zone",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s breeze_spawn_egg[item_name="Zone",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Select Tool Features:",color:"gray",italic:false},\
         {text:"  Configure Zone",color:"gray"},\

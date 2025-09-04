@@ -1,0 +1,21 @@
+{
+    "pack": {
+        "description": [
+            {
+                "text": "Building with phonies",
+				"color": "gray"
+            },
+            {
+                "text": " - ",
+                "color": "dark_gray"
+            },
+            {
+                "text": "BaphomethLabs",
+                "color": "gold",
+                "italic": true
+            }
+        ],
+        "min_format": 86,
+        "max_format": 86
+    }
+}

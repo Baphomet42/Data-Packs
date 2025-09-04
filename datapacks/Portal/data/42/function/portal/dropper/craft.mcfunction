@@ -1,4 +1,4 @@
-give @s ravager_spawn_egg[item_name="Vital Apparatus Vent",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s ravager_spawn_egg[item_name="Vital Apparatus Vent",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Requires 3x3x3 space to spawn",color:"white",italic:false},\
         {text:"Modify with:",color:"gray",italic:false},\

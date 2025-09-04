@@ -1,4 +1,4 @@
-give @s chicken_spawn_egg[item_name="Sentry Turret",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s chicken_spawn_egg[item_name="Sentry Turret",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Modify with:",color:"gray",italic:false},\
         {text:"  Change Skin Tool",color:"gray"},\

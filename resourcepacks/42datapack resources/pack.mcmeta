@@ -15,12 +15,13 @@
                 "italic": true
             }
         ],
-		"pack_format": 64
+        "min_format": 68,
+        "max_format": 68
 	},
 	"overlays": {
 		"entries": [
-			{"directory": "xltt", "formats": [18,999]},
-			{"directory": "portal", "formats": [18,999]}
+			{"directory": "xltt", "min_format": 65, "max_format": 999},
+			{"directory": "portal", "min_format": 65, "max_format": 999}
 		]
 	}
 }

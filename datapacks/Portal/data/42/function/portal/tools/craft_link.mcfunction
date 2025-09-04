@@ -1,4 +1,4 @@
-give @s guardian_spawn_egg[item_name="Link Equipment",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s guardian_spawn_egg[item_name="Link Equipment",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Place once to link all unlinked equipment",color:"white",italic:false},\
         {text:"(unlimited range as long as it's loaded)",color:"white",italic:false},\

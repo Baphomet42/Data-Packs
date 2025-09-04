@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:command_block"
+		},
+		"title": "Custom Commands",
+		"description": [
+			{
+				"text": "/trigger poser",
+				"color": "green"
+			},
+			{
+				"text": " - Open the Posers editor",
+				"color": "white"
+			}
+		],
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "42:dominion/posers/pack",
+	"criteria": {
+		"none": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

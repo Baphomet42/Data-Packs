@@ -8,7 +8,7 @@ execute if score #42.var.xltt.config.resourcepack 42.obj.xltt.vars matches 1 run
         {amount:7.0d,id:"minecraft:base_attack_damage",operation:"add_value",slot:"mainhand",type:"minecraft:attack_damage"},\
         {amount:-2.4d,id:"minecraft:base_attack_speed",operation:"add_value",slot:"mainhand",type:"minecraft:attack_speed"}],\
     rarity="uncommon",\
-    custom_data={42data:{datapack_item:{},xltt:{odm:{}}}},\
+    custom_data={42data:{datapack:{},xltt:{odm:{}}}},\
     tool={rules:[],can_destroy_blocks_in_creative:false},\
     max_damage=250]
 
@@ -22,6 +22,6 @@ give @s carrot_on_a_stick[\
         {amount:7.0d,id:"minecraft:base_attack_damage",operation:"add_value",slot:"mainhand",type:"minecraft:attack_damage"},\
         {amount:-2.4d,id:"minecraft:base_attack_speed",operation:"add_value",slot:"mainhand",type:"minecraft:attack_speed"}],\
     rarity="uncommon",\
-    custom_data={42data:{datapack_item:{},xltt:{odm:{}}}},\
+    custom_data={42data:{datapack:{},xltt:{odm:{}}}},\
     tool={rules:[],can_destroy_blocks_in_creative:false},\
     max_damage=250]

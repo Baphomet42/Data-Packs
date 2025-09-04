@@ -1,4 +1,4 @@
-give @s mooshroom_spawn_egg[item_name="Heavy Duty Super Button",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s mooshroom_spawn_egg[item_name="Heavy Duty Super Button",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Modify with:",color:"gray",italic:false},\
         {text:"  Link Tool",color:"gray"},\

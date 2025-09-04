@@ -1,4 +1,4 @@
-give @s ghast_spawn_egg[item_name="Door",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s ghast_spawn_egg[item_name="Door",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Requires 3x3x1 space to spawn",color:"white",italic:false},\
         {text:"Modify with:",color:"gray",italic:false},\

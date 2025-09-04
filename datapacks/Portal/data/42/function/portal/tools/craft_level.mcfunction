@@ -1,4 +1,4 @@
-give @s elder_guardian_spawn_egg[item_name="Set Equipment Load Level",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s elder_guardian_spawn_egg[item_name="Set Equipment Load Level",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Place once to select all new equipment",color:"white",italic:false},\
         {text:"as a new load level",color:"white",italic:false},\

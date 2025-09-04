@@ -1,4 +1,4 @@
-give @s phantom_spawn_egg[item_name="Material Emancipation Grill",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s phantom_spawn_egg[item_name="Material Emancipation Grill",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Requires 3x3x1 space to spawn",color:"white",italic:false},\
         ""],\

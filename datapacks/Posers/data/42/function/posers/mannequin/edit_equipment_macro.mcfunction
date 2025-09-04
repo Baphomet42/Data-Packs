@@ -1,0 +1,1 @@
+$summon armor_stand ^ ^ ^.5 {Tags:["42.tag.posers.new_spawn","42.tag.posers.mannequin.equipment_editor"],Rotation:$(Rotation),Invulnerable:true,NoGravity:true,Glowing:true,ShowArms:true,NoBasePlate:true}

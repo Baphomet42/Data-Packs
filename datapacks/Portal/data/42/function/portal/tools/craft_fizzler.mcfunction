@@ -1,4 +1,4 @@
-give @s glow_squid_spawn_egg[item_name="Fizzle All Nearby Equipment",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s glow_squid_spawn_egg[item_name="Fizzle All Nearby Equipment",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Works on everything",color:"gray"},\
         ""],\

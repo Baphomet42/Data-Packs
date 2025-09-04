@@ -1,0 +1,1 @@
+execute store result score @s 42.obj.posers.id run scoreboard players add #42.var.posers.global 42.obj.posers.id 1

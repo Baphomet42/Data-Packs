@@ -15,6 +15,7 @@
                 "italic": true
             }
         ],
-        "pack_format": 81
+        "min_format": 86,
+        "max_format": 86
     }
 }

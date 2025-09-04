@@ -1,0 +1,2 @@
+data modify entity @e[type=mannequin,limit=1,tag=42.tag.posers.new_spawn] data.temp_profile_fix set from storage 42:poser temp.data.mannequin_data.profile
+scoreboard players set @e[type=mannequin,limit=1,tag=42.tag.posers.new_spawn] 42.obj.posers.temp_profile_fix 1

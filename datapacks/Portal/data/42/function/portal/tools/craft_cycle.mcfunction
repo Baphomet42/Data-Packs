@@ -1,4 +1,4 @@
-give @s zombie_villager_spawn_egg[item_name="Cycle Nearby Equipment Modes",rarity=uncommon,custom_data={42data:{datapack_item:{}}},\
+give @s zombie_villager_spawn_egg[item_name="Cycle Nearby Equipment Modes",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Works on the following:",color:"gray",italic:false},\
         {text:"  Vital Apparatus Vent",color:"gray"},\

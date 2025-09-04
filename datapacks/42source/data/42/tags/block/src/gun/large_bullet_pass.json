@@ -2,7 +2,7 @@
     "replace": false,
     "values": [
         "#42:projectile_pass",
-        "minecraft:chain",
+        "#minecraft:chains",
         "minecraft:lantern",
         "minecraft:soul_lantern",
         "minecraft:end_rod",
