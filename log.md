@@ -27,12 +27,12 @@ The `gen` code is not a datapack and does not work on its own.
 + xltt - 1
 + newworld - none
 + portal - 3
-+ essentials - none
++ essentials - 4
 + dbd - 5
 + labs - none
 + src - 7
 + hvac - none
-+ posers - none
++ posers - 9
 
 Minecraft namespace should be rarely used (and almost always non-replacing).
 In most cases, use the namepace 42 and follow it with the pack code. (Ex: 42:portal).
@@ -150,12 +150,18 @@ The following files should be added (or modified to include the specified conten
 
 + `data/`
     + `42/`
+        + `advancement/`
+            + `dominion/`
+                + `gen/`
+                    + `menu.json`
+                    + `op.json`
+                    + `root.json`
         + `function/`
             + `42menu.mcfunction` (exact same in every pack)
             + `error_perms.mcfunction` (exact same in every pack, must be paired with 42op advancement setup)
             + `<pack>/`
                 + `load.mcfunction` (to run `schedule function 42:42menu 1t replace`)
-                + `menu.mcfunction` (to include all menu related logic)
+                + `menu.mcfunction` (to include all menu related logic; name and path can differ as long as it's under `<pack>/`)
         + `tags/`
             + `function/`
                 + `menu.json` (to reference `42:<pack>/menu`)

@@ -8,6 +8,6 @@ ride @e[type=interaction,tag=42.tag.posers.new_spawn,tag=42.tag.posers.mannequin
 
 scoreboard players operation @e[tag=42.tag.posers.new_spawn] 42.obj.posers.id = @s 42.obj.posers.id
 
-data merge entity @s {NoAI:true,NoGravity:true,Invulnerable:true}
+data merge entity @s {NoGravity:true,Invulnerable:true}
 
 tag @e remove 42.tag.posers.new_spawn

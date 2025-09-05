@@ -1,0 +1,1 @@
+$summon mannequin ~ ~ ~ {Tags:["42.tag.posers.new_spawn"],Rotation:$(Rotation),profile:$(profile)}

@@ -1,0 +1,1 @@
+tellraw @s {text:"Insufficient permissions",color:"red",hover_event:{action:"show_text",value:"Creative mode or 42op status required"}}

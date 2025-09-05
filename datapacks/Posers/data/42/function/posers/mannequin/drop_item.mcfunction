@@ -49,6 +49,9 @@ execute if data storage 42:poser temp.mannequin.profile.texture run data modify 
 execute if data storage 42:poser temp.mannequin.profile.id if data storage 42:poser temp.mannequin.profile.name run data modify storage 42:poser temp.item.Item.components.minecraft:lore[0][1].text set value "Fallback profile"
 execute if data storage 42:poser temp.mannequin.profile.properties run data modify storage 42:poser temp.item.Item.components.minecraft:lore[0][1].text set value "Static profile"
 
+execute if data storage 42:poser temp.mannequin.profile unless data storage 42:poser temp.mannequin.profile.texture run data modify storage 42:poser temp.item.Item.components.minecraft:item_model set value "minecraft:player_head"
+execute if data storage 42:poser temp.mannequin.profile unless data storage 42:poser temp.mannequin.profile.texture run data modify storage 42:poser temp.item.Item.components.minecraft:profile set from storage 42:poser temp.mannequin.profile
+
 data modify entity @e[type=item,tag=42.tag.posers.new_spawn,limit=1,x=0] {} merge from storage 42:poser temp.item
 
 data remove storage 42:poser temp
