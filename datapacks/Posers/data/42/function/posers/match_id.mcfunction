@@ -1,0 +1,2 @@
+execute unless score @s 42.obj.posers.id matches 1.. run return run scoreboard players reset #42.var.posers.match_id 42.obj.posers.id
+scoreboard players operation #42.var.posers.match_id 42.obj.posers.id = @s 42.obj.posers.id

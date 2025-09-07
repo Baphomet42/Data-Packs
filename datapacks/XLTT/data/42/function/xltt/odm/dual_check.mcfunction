@@ -1,3 +1,3 @@
 scoreboard players set #42.var.xltt.dummy 42.obj.xltt.temp 0
-execute as @e[tag=42.tag.xltt.odm.wire,tag=42.tag.xltt.id,tag=!42.tag.xltt.odm.hit] run scoreboard players operation #42.var.xltt.dummy 42.obj.xltt.temp > @s 42.obj.xltt.odm_time
-execute as @e[tag=42.tag.xltt.odm.wire,tag=42.tag.xltt.id,tag=!42.tag.xltt.odm.hit] if score @s 42.obj.xltt.odm_time = #42.var.xltt.dummy 42.obj.xltt.temp at @s run function 42:xltt/odm/break
+execute as @e[tag=42.tag.xltt.odm.wire,predicate=42:xltt/match_id,tag=!42.tag.xltt.odm.hit] run scoreboard players operation #42.var.xltt.dummy 42.obj.xltt.temp > @s 42.obj.xltt.odm_time
+execute as @e[tag=42.tag.xltt.odm.wire,predicate=42:xltt/match_id,tag=!42.tag.xltt.odm.hit] if score @s 42.obj.xltt.odm_time = #42.var.xltt.dummy 42.obj.xltt.temp at @s run function 42:xltt/odm/break

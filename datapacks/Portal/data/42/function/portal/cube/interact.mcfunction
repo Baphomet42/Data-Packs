@@ -1,4 +1,4 @@
-function 42:portal/set_id
+execute as @a unless score @s 42.obj.portal.id matches -2147483648..2147483647 run scoreboard players set @s 42.obj.portal.id 0
 tag @e remove 42.tag.portal.temp
 scoreboard players set @s 42.obj.portal.temp 0
 execute if entity @s[tag=42.tag.portal.cube.held] if entity @e[tag=42.tag.portal.cube.tp,tag=42.tag.portal.cube.size_1,tag=42.tag.portal.id] positioned ~-.5 ~ ~-.5 unless entity @e[tag=42.tag.portal.cube.tp,tag=!42.tag.portal.turret,tag=!42.tag.portal.id,dx=0,dy=0,dz=0] run function 42:portal/cube/hold_test

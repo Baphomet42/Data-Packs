@@ -42,6 +42,10 @@ data remove storage 42:poser temp.item.Item.components.minecraft:custom_data.man
 data remove storage 42:poser temp.item.Item.components.minecraft:custom_data.mannequin_data.Fire
 data remove storage 42:poser temp.item.Item.components.minecraft:custom_data.mannequin_data.attributes[{id:"minecraft:movement_speed",base:0.7d}]
 data remove storage 42:poser temp.item.Item.components.minecraft:custom_data.mannequin_data.HurtTime
+data remove storage 42:poser temp.item.Item.components.minecraft:custom_data.mannequin_data.last_hurt_by_player
+data remove storage 42:poser temp.item.Item.components.minecraft:custom_data.mannequin_data.last_hurt_by_player_memory_time
+data remove storage 42:poser temp.item.Item.components.minecraft:custom_data.mannequin_data.last_hurt_by_mob
+data remove storage 42:poser temp.item.Item.components.minecraft:custom_data.mannequin_data.ticks_since_last_hurt_by_mob
 data remove storage 42:poser temp.item.Item.components.minecraft:custom_data.mannequin_data.Tags
 
 execute if data storage 42:poser temp.mannequin.CustomName run data modify storage 42:poser temp.item.Item.components.minecraft:item_name[2] set from storage 42:poser temp.mannequin.CustomName

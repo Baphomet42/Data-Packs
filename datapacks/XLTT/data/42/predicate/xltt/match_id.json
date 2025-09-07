@@ -3,7 +3,7 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-      "42.obj.posers.id": {
+      "42.obj.xltt.id": {
         "min": 1
       }
     }
@@ -12,22 +12,22 @@
     "condition": "minecraft:entity_scores",
     "entity": "this",
     "scores": {
-      "42.obj.posers.id": {
+      "42.obj.xltt.id": {
         "min": {
           "type": "minecraft:score",
           "target": {
             "type": "minecraft:fixed",
-            "name": "#42.var.posers.match_id"
+            "name": "#42.var.xltt.match_id"
           },
-          "score": "42.obj.posers.id"
+          "score": "42.obj.xltt.id"
         },
         "max": {
           "type": "minecraft:score",
           "target": {
             "type": "minecraft:fixed",
-            "name": "#42.var.posers.match_id"
+            "name": "#42.var.xltt.match_id"
           },
-          "score": "42.obj.posers.id"
+          "score": "42.obj.xltt.id"
         }
       }
     }

@@ -3,9 +3,10 @@ effect give @s slow_falling 1 0 true
 tag @s add 42.tag.xltt.odm.lev
 scoreboard players set @s[scores={42.obj.xltt.odm_time=30..}] 42.obj.xltt.odm_time 0
 scoreboard players add @s 42.obj.xltt.odm_time 1
-function 42:xltt/tag_id
-kill @e[tag=42.tag.xltt.odm.marker,tag=42.tag.xltt.id]
+function 42:xltt/match_id
+kill @e[tag=42.tag.xltt.odm.marker,predicate=42:xltt/match_id]
 tag @s remove 42.tag.xltt.odm.motion
+tag @e[predicate=42:xltt/match_id] add 42.tag.xltt.id
 tag @e[tag=!42.tag.xltt.odm.hit] remove 42.tag.xltt.id
 
 execute at @s facing entity @e[tag=42.tag.xltt.id,limit=1,sort=nearest] feet positioned ^ ^ ^.2 if block ~-.35 ~0.0 ~-.35 #42:projectile_pass if block ~-.35 ~0.0 ~.35 #42:projectile_pass if block ~.35 ~0.0 ~-.35 #42:projectile_pass if block ~.35 ~0.0 ~.35 #42:projectile_pass if block ~-.35 ~.9 ~-.35 #42:projectile_pass if block ~-.35 ~.9 ~.35 #42:projectile_pass if block ~.35 ~.9 ~-.35 #42:projectile_pass if block ~.35 ~.9 ~.35 #42:projectile_pass if block ~-.35 ~1.85 ~-.35 #42:projectile_pass if block ~-.35 ~1.85 ~.35 #42:projectile_pass if block ~.35 ~1.85 ~-.35 #42:projectile_pass if block ~.35 ~1.85 ~.35 #42:projectile_pass run playsound entity.cat.hiss player @a ~ ~ ~ .85 1.85

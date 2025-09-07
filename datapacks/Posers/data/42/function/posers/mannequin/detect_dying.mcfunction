@@ -1,0 +1,2 @@
+function 42:posers/mannequin/kill
+tellraw @a [{text:"Posers Datapack Warning: ",color:"red"},"Linked mannequin with ID=",{score:{name:"#42.var.posers.match_id",objective:"42.obj.posers.id"}}," at Pos=",{entity:"@s",nbt:"Pos"}," has been killed."]

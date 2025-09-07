@@ -398,6 +398,8 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ### **Important**
 
 + Read the full description of each pack before adding to a world
++ Only use the datapacks in the listed supported Minecraft version
++ If using multiple of these packs together, make sure they have matching version numbers in the zip name
 + Like all custom command creations, it is possible that bugs could result in some disasters happening to your world
     + Always backup your world before using the datapack and frequently while using
     + Never run the datapack in a newer or older version of Minecraft than the current datapack version

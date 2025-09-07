@@ -1,10 +1,9 @@
-function 42:xltt/tag_id
+function 42:xltt/match_id
 execute if items entity @s weapon.mainhand *[custom_data~{42data:{xltt:{odm:{}}}}] if items entity @s weapon.offhand *[custom_data~{42data:{xltt:{odm:{}}}}] run tag @s add 42.tag.xltt.odm.dual
-execute unless entity @s[tag=42.tag.xltt.odm.dual] as @e[tag=42.tag.xltt.odm.wire,tag=42.tag.xltt.id] at @s run function 42:xltt/odm/break
+execute unless entity @s[tag=42.tag.xltt.odm.dual] as @e[tag=42.tag.xltt.odm.wire,predicate=42:xltt/match_id] at @s run function 42:xltt/odm/break
 scoreboard players set @s 42.obj.xltt.temp 0
-execute as @e[tag=42.tag.xltt.odm.wire,tag=42.tag.xltt.id] run scoreboard players add @a[tag=42.tag.xltt.id] 42.obj.xltt.temp 1
+execute as @e[tag=42.tag.xltt.odm.wire,predicate=42:xltt/match_id] run scoreboard players add @a[predicate=42:xltt/match_id] 42.obj.xltt.temp 1
 execute if entity @s[scores={42.obj.xltt.temp=2..}] run function 42:xltt/odm/dual_check
-tag @e remove 42.tag.xltt.id
 
 tag @s remove 42.tag.xltt.odm.dual
 playsound entity.wither.break_block player @a ~ ~ ~ .35 1.8

@@ -1,5 +1,6 @@
-function 42:posers/tag_id
-execute as @e[type=mannequin,tag=42.tag.posers.id] at @s run function 42:posers/mannequin/drop_item
-tag @e[type=mannequin,tag=42.tag.posers.id] add 42.tag.posers.temp_kill
+execute unless entity @s[type=mannequin] run return fail
+
+execute at @s run function 42:posers/mannequin/drop_item
 function 42:posers/mannequin/unlink
-kill @e[type=mannequin,tag=42.tag.posers.temp_kill]
+
+kill @s
