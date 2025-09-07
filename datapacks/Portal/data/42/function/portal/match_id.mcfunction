@@ -1,2 +1,0 @@
-execute unless score @s 42.obj.portal.id matches -2147483648..2147483647 run return run scoreboard players reset #42.var.portal.match_id 42.obj.portal.id
-scoreboard players operation #42.var.portal.match_id 42.obj.portal.id = @s 42.obj.portal.id
