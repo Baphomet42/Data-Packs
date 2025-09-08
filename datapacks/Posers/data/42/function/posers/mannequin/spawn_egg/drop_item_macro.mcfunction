@@ -1,0 +1,1 @@
+$execute at @s run summon item ~ ~$(dy) ~ {Tags:["42.tag.posers.new_spawn"],data:{42data:{datapack:{}}},Item:{id:"minecraft:armor_stand"}}

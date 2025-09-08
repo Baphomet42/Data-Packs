@@ -1,13 +1,13 @@
 scoreboard players enable @a poser
-execute as @a[scores={poser=1..}] run function 42:posers/trigger/main
-execute as @a[scores={poser=..-1}] run function 42:posers/trigger/main
+execute as @a[scores={poser=1..}] run function 42:posers/trigger/poser
+execute as @a[scores={poser=..-1}] run function 42:posers/trigger/poser
 
 execute as @e[type=armor_stand,tag=42.tag.posers.spawn_mannequin] at @s run function 42:posers/mannequin/spawn
 execute as @e[type=interaction,tag=42.tag.posers.mannequin.interaction,tag=!42.tag.posers.mannequin.locked_interaction] at @s run function 42:posers/mannequin/tick_interaction
 execute as @e[type=interaction,tag=42.tag.posers.mannequin.interaction_spacer,predicate=42:periodic_10] at @s run function 42:posers/mannequin/tick_interaction_spacer
-execute as @e[type=mannequin,tag=42.tag.posers.mannequin,predicate=42:periodic_50] at @s run function 42:posers/mannequin/tick_mannequin
-execute as @e[type=interaction,tag=42.tag.posers.mannequin.equipment_editor] at @s run function 42:posers/mannequin/equipment_editor/tick
-execute as @e[type=armor_stand,tag=42.tag.posers.mannequin.equipment_editor] at @s run function 42:posers/mannequin/tick_armor_equipment_editor
-execute as @e[type=interaction,tag=42.tag.posers.mannequin.rider,predicate=!42:has_vehicle] at @s run function 42:posers/mannequin/rider_without_vehicle
+execute as @e[type=mannequin,tag=42.tag.posers.mannequin,predicate=42:periodic_10] at @s run function 42:posers/mannequin/tick_mannequin
+execute as @e[type=interaction,tag=42.tag.posers.mannequin.editor] at @s run function 42:posers/mannequin/editor/tick
+execute as @e[type=armor_stand,tag=42.tag.posers.mannequin.equipment_editor] at @s run function 42:posers/mannequin/editor/original/tick_armor_equipment_editor
+kill @e[type=interaction,tag=42.tag.posers.mannequin.rider,predicate=!42:has_vehicle]
 
 schedule function 42:posers/tick 1t replace

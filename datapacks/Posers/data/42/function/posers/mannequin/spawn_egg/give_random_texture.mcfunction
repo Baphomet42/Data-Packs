@@ -9,6 +9,7 @@ give @s armor_stand[\
         Small:true,\
         Invisible:true,\
         },\
-    minecraft:lore=[["Mannequin profile: ",{text:"Random texture"}]],\
-    minecraft:max_stack_size=64\
+    minecraft:lore=[["Mannequin profile: ",{text:"Random Texture"}]],\
+    minecraft:max_stack_size=64,\
+    minecraft:rarity=epic\
     ]

@@ -1,2 +1,4 @@
+execute unless entity @s[type=mannequin,tag=42.tag.posers.mannequin] run return fail
 function 42:posers/mannequin/kill
-tellraw @a [{text:"Posers Datapack Warning: ",color:"red"},"Linked mannequin with ID=",{score:{name:"#42.var.posers.match_id",objective:"42.obj.posers.id"}}," at Pos=",{entity:"@s",nbt:"Pos"}," has been killed."]
+# TODO config to enable warning
+#tellraw @a [{text:"Posers Datapack Warning: ",color:"red"},"Linked mannequin at Pos=",{entity:"@s",nbt:"Pos"}," has been killed."]

@@ -5,4 +5,4 @@ function 42:posers/new_id
 
 function 42:posers/mannequin/reset
 
-data merge entity @s {NoGravity:true,Invulnerable:true}
+data merge entity @s {Invulnerable:true}

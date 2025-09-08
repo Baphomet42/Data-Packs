@@ -1,8 +1,10 @@
 execute unless entity @s[type=mannequin,tag=42.tag.posers.mannequin] run return fail
-execute if function 42:posers/mannequin/is_editing run return fail
+execute if function 42:posers/mannequin/editor/original/is_editing run return fail
 
-execute at @s rotated ~ 0 run function 42:posers/mannequin/edit_equipment_macro with entity @s
-execute at @s run rotate @e[type=armor_stand,tag=42.tag.posers.new_spawn,limit=1] ~ 0
+data modify storage 42:posers temp set from entity @s
+execute store result storage 42:posers temp.dist double .0005 run attribute @s scale get 1000
+execute at @s rotated ~ 0 run function 42:posers/mannequin/editor/original/edit_equipment_macro with storage 42:posers temp
+data remove storage 42:posers temp
 
 scoreboard players operation @e[type=armor_stand,tag=42.tag.posers.new_spawn,limit=1] 42.obj.posers.id = @s 42.obj.posers.id
 
