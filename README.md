@@ -1,7 +1,7 @@
 
 ----------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 25w36b
+# Separate but compatible datapacks for Minecraft 25w37a
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
@@ -46,7 +46,24 @@ Note that features may have changed since these were published
 
 Tools to build with mannequins similar to armor stands. Currently intended for creative mode building only.
 
-+ WIP
++ `/trigger 42menu`
+    + Opens window to give items
++ *Mannequin Spawn Egg*
+    + Accessible from `/trigger 42menu`
+    + Spawns a random texture mannequin using armor stand placing mechanics
+        + Mannequin is centered on a block
+        + Rotation is locked to nearest multiple of 45deg
++ *Stable Mannequin*
+    + Placed from Mannequin Spawn Egg
+    + Cannot be pushed or attacked, but does have gravity
+    + Use the "Attack key" to instantly break, dropping a Stable Mannequin Item containing its exact data
+        + This is placed exactly like a Mannequin Spawn Egg, but keeps the profile, attributes, items, etc from the Mannequin
+    + Use the "Use key" to open the editor
+        + While in editor mode, interact to place and remove armor items and hand items
+    + Profile swapping
+        + Use the "Use key" while holding any player head to set the Mannequin's profile
+    + Stable Mannequins can be renamed using a nametag
+        + Use a blank nametag to remove the Mannequin's CustomName
 
 ### **42essentials**
 
@@ -522,9 +539,9 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 + `v0.8.DEV` Current Branch (in development)
     + **IMPORTANT**
-        + The required Minecraft version has changed to 25w36b
+        + The required Minecraft version has changed to 25w37a
     + **All datapacks**
-        + Minecraft version updated to 25w36b
+        + Minecraft version updated to 25w37a
     + **Posers**
         + New datapack for decorating with mannequins in creative mode
 

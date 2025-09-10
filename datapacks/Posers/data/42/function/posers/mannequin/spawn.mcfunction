@@ -5,7 +5,7 @@ data modify storage 42:posers temp.macro.profile set from storage 42:posers temp
 data modify storage 42:posers temp.data set from storage 42:posers temp.spawner.data
 
 execute unless data storage 42:posers temp.macro.profile run function 42:posers/mannequin/spawn_macro with storage 42:posers temp.macro
-execute if data storage 42:posers temp.macro.profile run function 42:posers/mannequin/spawn_macro_temp_profile_fix with storage 42:posers temp.macro
+execute if data storage 42:posers temp.macro.profile run function 42:posers/mannequin/spawn_macro_profile with storage 42:posers temp.macro
 
 execute if entity @s[tag=42.tag.posers.spawn_mannequin.random_texture] unless data storage 42:posers temp.macro.profile as @e[type=mannequin,limit=1,tag=42.tag.posers.new_spawn] run function 42:posers/mannequin/random_texture
 
