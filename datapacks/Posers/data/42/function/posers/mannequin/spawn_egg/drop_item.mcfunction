@@ -10,8 +10,8 @@ execute store result storage 42:posers temp.item.Motion[1] double .001 run rando
 execute store result storage 42:posers temp.item.Motion[2] double .001 run random value -100..100
 
 data merge storage 42:posers {temp:{item:{Item:{components:{\
-    "minecraft:item_model":"minecraft:zombie_spawn_egg",\
-    "minecraft:item_name":[{translate:"entity.minecraft.mannequin"}," - ","Custom"],\
+    "minecraft:item_model":"minecraft:player_head",\
+    "minecraft:item_name":[[{translate:"entity.minecraft.mannequin"}," Poser"]," - ","Custom"],\
     "minecraft:custom_data":{42data:{datapack:{}}},\
     "minecraft:entity_data":{\
         id:"minecraft:armor_stand",\
@@ -20,7 +20,10 @@ data merge storage 42:posers {temp:{item:{Item:{components:{\
         Small:true,\
         Invisible:true\
         },\
-    "minecraft:lore":[["Mannequin profile: ","Custom"]],\
+    "minecraft:lore":[\
+        [{text:"Mannequin Profile: ",color:"gold",italic:false},{text:"Random Skin",color:"gray"}]\
+        ],\
+    "minecraft:profile":{},\
     "minecraft:max_stack_size":64,\
     "minecraft:rarity":"epic"\
     }}}}}
@@ -59,22 +62,10 @@ execute if data storage 42:posers temp.item.Item.components.minecraft:custom_dat
 execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.attributes[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.attributes
 execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.hidden_layers[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.hidden_layers
 
-execute if data storage 42:posers temp.mannequin.profile.texture run data modify storage 42:posers temp.item.Item.components.minecraft:lore[0][1] set from storage 42:posers temp.mannequin.profile.texture
-execute if data storage 42:posers temp.mannequin.profile.texture run data modify storage 42:posers temp.item.Item.components.minecraft:item_name[2] set value "Custom Texture"
-execute if data storage 42:posers temp.mannequin.profile.texture run function 42:posers/mannequin/spawn_egg/set_name_from_texture
-execute if data storage 42:posers temp.mannequin.profile.id run data modify storage 42:posers temp.item.Item.components.minecraft:lore[0][1] set value {storage:"42:posers",nbt:"temp.mannequin.profile.id"}
-execute if data storage 42:posers temp.mannequin.profile.id run data modify storage 42:posers temp.item.Item.components.minecraft:item_name[2] set value "Dynamic UUID"
-execute if data storage 42:posers temp.mannequin.profile.properties run data modify storage 42:posers temp.item.Item.components.minecraft:lore[0][1] set value "Static Profile"
-execute if data storage 42:posers temp.mannequin.profile.properties run data modify storage 42:posers temp.item.Item.components.minecraft:item_name[2] set value "Static Profile"
-execute if data storage 42:posers temp.mannequin.profile.name run data modify storage 42:posers temp.item.Item.components.minecraft:lore[0][1] set from storage 42:posers temp.mannequin.profile.name
-execute if data storage 42:posers temp.mannequin.profile.name run data modify storage 42:posers temp.item.Item.components.minecraft:item_name[2] set from storage 42:posers temp.mannequin.profile.name
-execute if data storage 42:posers temp.mannequin.profile.id if data storage 42:posers temp.mannequin.profile.name unless data storage 42:posers temp.mannequin.profile.properties run data modify storage 42:posers temp.item.Item.components.minecraft:lore[0][1] set value "Fallback Profile"
-execute if data storage 42:posers temp.mannequin.profile.id if data storage 42:posers temp.mannequin.profile.name unless data storage 42:posers temp.mannequin.profile.properties run data modify storage 42:posers temp.item.Item.components.minecraft:item_name[2] set value "Fallback Profile"
+function 42:posers/mannequin/spawn_egg/switch_name
+function 42:posers/mannequin/spawn_egg/switch_lore
 
-execute if data storage 42:posers temp.mannequin.CustomName run data modify storage 42:posers temp.item.Item.components.minecraft:item_name[2] set from storage 42:posers temp.mannequin.CustomName
-
-execute if data storage 42:posers temp.mannequin.profile unless data storage 42:posers temp.mannequin.profile.texture run data modify storage 42:posers temp.item.Item.components.minecraft:item_model set value "minecraft:player_head"
-execute if data storage 42:posers temp.mannequin.profile unless data storage 42:posers temp.mannequin.profile.texture run data modify storage 42:posers temp.item.Item.components.minecraft:profile set from storage 42:posers temp.mannequin.profile
+execute if data storage 42:posers temp.mannequin.profile run data modify storage 42:posers temp.item.Item.components.minecraft:profile set from storage 42:posers temp.mannequin.profile
 
 data modify entity @e[type=item,tag=42.tag.posers.new_spawn,limit=1,x=0] {} merge from storage 42:posers temp.item
 item modify entity @e[type=item,tag=42.tag.posers.new_spawn,limit=1,x=0] contents [{function:"set_name",target:"item_name",entity:"this",name:{storage:"42:posers",nbt:"temp.item.Item.components.minecraft:item_name",interpret:true}},{function:"set_lore",mode:replace_section,offset:0,entity:"this",lore:[{storage:"42:posers",nbt:"temp.item.Item.components.minecraft:lore[0]",interpret:true}]}]

@@ -1,7 +1,7 @@
 
 ----------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 25w37a
+# Separate but compatible datapacks for Minecraft 1.21.9
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
@@ -48,21 +48,22 @@ Tools to build with mannequins similar to armor stands. Currently intended for c
 
 + `/trigger 42menu`
     + Opens window to give items
-+ *Mannequin Spawn Egg*
-    + Accessible from `/trigger 42menu`
-    + Spawns a random texture mannequin using armor stand placing mechanics
++ *Mannequin Poser Item*
+    + Accessible from `42menu`
+    + Spawns a random skin mannequin using armor stand placing mechanics
         + Mannequin is centered on a block
         + Rotation is locked to nearest multiple of 45deg
-+ *Stable Mannequin*
-    + Placed from Mannequin Spawn Egg
+        + Mannequin is configured as a Poser (see below)
++ *Poser*
+    + Placed from Mannequin Poser Item
     + Cannot be pushed or attacked, but does have gravity
-    + Use the "Attack key" to instantly break, dropping a Stable Mannequin Item containing its exact data
-        + This is placed exactly like a Mannequin Spawn Egg, but keeps the profile, attributes, items, etc from the Mannequin
+    + Use the "Attack key" to instantly break, dropping a new Mannequin Poser Item containing its data
+        + This keeps the profile, attributes, items, etc from the Mannequin
     + Use the "Use key" to open the editor
         + While in editor mode, interact to place and remove armor items and hand items
     + Profile swapping
         + Use the "Use key" while holding any player head to set the Mannequin's profile
-    + Stable Mannequins can be renamed using a nametag
+    + Can be renamed using a nametag
         + Use a blank nametag to remove the Mannequin's CustomName
 
 ### **42essentials**
@@ -537,11 +538,11 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ `v0.8.DEV` Current Branch (in development)
++ `v0.8.0 mc1.21.9` Major Update (Current Branch - in development)
     + **IMPORTANT**
-        + The required Minecraft version has changed to 25w37a
+        + The required Minecraft version has changed to 1.21.9
     + **All datapacks**
-        + Minecraft version updated to 25w37a
+        + Minecraft version updated to 1.21.9
     + **Posers**
         + New datapack for decorating with mannequins in creative mode
 

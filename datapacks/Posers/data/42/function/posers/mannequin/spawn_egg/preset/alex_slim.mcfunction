@@ -1,6 +1,6 @@
 give @s armor_stand[\
-    minecraft:item_model="minecraft:zombie_spawn_egg",\
-    minecraft:item_name=[{translate:"entity.minecraft.mannequin"}," - ","Alex (Slim)"],\
+    minecraft:item_model="minecraft:player_head",\
+    minecraft:item_name=[[{translate:"entity.minecraft.mannequin"}," Poser"]," - ","Alex (Slim)"],\
     minecraft:custom_data={\
         42data:{datapack:{}},\
         mannequin_data:{\
@@ -14,7 +14,12 @@ give @s armor_stand[\
         Small:true,\
         Invisible:true\
         },\
-    minecraft:lore=[["Mannequin profile: ","minecraft:entity/player/slim/alex"]],\
+    minecraft:lore=[\
+        [{text:"Mannequin Profile: ",color:"gold",italic:false},{text:"Default",color:"gray"}],\
+        [{text:"  Model: ",color:"gold",italic:false},{text:"slim",color:"gray"}],\
+        [{text:"  Skin: ",color:"gold",italic:false},{text:"minecraft:entity/player/slim/alex",color:"gray"}]\
+        ],\
+    minecraft:profile={texture:"minecraft:entity/player/slim/alex",model:"slim"},\
     minecraft:max_stack_size=64,\
     minecraft:rarity=epic\
     ]

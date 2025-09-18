@@ -15,7 +15,7 @@
                 "italic": true
             }
         ],
-        "min_format": 87,
+        "min_format": [87,1],
         "max_format": 87
     },
     "filter": {
