@@ -2,7 +2,7 @@ execute unless entity @s[type=mannequin] run return fail
 data remove storage 42:posers temp
 
 execute store result storage 42:posers temp.dy double .0009 run attribute @s scale get 1000
-function 42:posers/mannequin/spawn_egg/drop_item_macro with storage 42:posers temp
+function 42:posers/mannequin/spawner/drop_item_macro with storage 42:posers temp
 
 data modify storage 42:posers temp.item.Motion set value [0d,0d,0d]
 execute store result storage 42:posers temp.item.Motion[0] double .001 run random value -100..100
@@ -62,8 +62,8 @@ execute if data storage 42:posers temp.item.Item.components.minecraft:custom_dat
 execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.attributes[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.attributes
 execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.hidden_layers[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.hidden_layers
 
-function 42:posers/mannequin/spawn_egg/switch_name
-function 42:posers/mannequin/spawn_egg/switch_lore
+function 42:posers/mannequin/spawner/switch_name
+function 42:posers/mannequin/spawner/switch_lore
 
 execute if data storage 42:posers temp.mannequin.profile run data modify storage 42:posers temp.item.Item.components.minecraft:profile set from storage 42:posers temp.mannequin.profile
 
