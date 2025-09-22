@@ -1,7 +1,14 @@
 give @s armor_stand[\
     minecraft:item_model="minecraft:player_head",\
     minecraft:item_name=[{translate:"entity.minecraft.mannequin"}," Poser"],\
-    minecraft:custom_data={42data:{datapack:{}}},\
+    minecraft:custom_data={42data:{\
+        datapack:{},\
+        posers:{\
+            entity_data:{\
+                Invulnerable:true\
+                }\
+            }\
+        }},\
     minecraft:entity_data={\
         id:"minecraft:armor_stand",\
         Tags:["42.tag.posers.spawn_mannequin"],\

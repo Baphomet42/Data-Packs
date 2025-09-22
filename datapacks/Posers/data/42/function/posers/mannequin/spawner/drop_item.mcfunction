@@ -29,38 +29,44 @@ data merge storage 42:posers {temp:{item:{Item:{components:{\
     }}}}}
 
 data modify storage 42:posers temp.mannequin set from entity @s
-data modify storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data merge from storage 42:posers temp.mannequin
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.UUID
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.Passengers
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.Pos
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.Rotation
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.Motion
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.Brain
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.HurtByTimestamp
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.Health
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.FallFlying
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.fall_distance
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.Air
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.OnGround
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.PortalCooldown
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.AbsorptionAmount
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.DeathTime
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.Fire
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.HurtTime
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.last_hurt_by_player
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.last_hurt_by_player_memory_time
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.last_hurt_by_mob
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.ticks_since_last_hurt_by_mob
-data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.Tags
+data modify storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data merge from storage 42:posers temp.mannequin
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.UUID
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Passengers
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Pos
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Rotation
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Motion
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Brain
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.HurtByTimestamp
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Health
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.FallFlying
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.fall_distance
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Air
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.OnGround
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.PortalCooldown
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.AbsorptionAmount
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.DeathTime
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Fire
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.HurtTime
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.last_hurt_by_player
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.last_hurt_by_player_memory_time
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.last_hurt_by_mob
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.ticks_since_last_hurt_by_mob
+data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags
 
-execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.attributes[{id:"minecraft:movement_speed",base:0.7d}].modifiers run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.attributes[{id:"minecraft:movement_speed",base:0.7d}]
-execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.attributes[{id:"minecraft:scale",base:1d}].modifiers run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.attributes[{id:"minecraft:scale",base:1d}]
+data modify storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags set value []
+execute if entity @s[tag=42.tag.posers.mannequin.ai.watch_player] run data modify storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags append value "42.tag.posers.mannequin.ai.watch_player"
+execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags
 
-execute if data storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data{Invulnerable:true} run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.Invulnerable
-execute if data storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data{main_hand:"right"} run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.main_hand
+execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.attributes[{id:"minecraft:movement_speed",base:0.7d}].modifiers run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.attributes[{id:"minecraft:movement_speed",base:0.7d}]
+execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.attributes[{id:"minecraft:scale",base:1d}].modifiers run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.attributes[{id:"minecraft:scale",base:1d}]
 
-execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.attributes[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.attributes
-execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.hidden_layers[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.mannequin_data.hidden_layers
+execute if data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data{immovable:false} run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.immovable
+execute if data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data{Invulnerable:false} run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Invulnerable
+execute if data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data{main_hand:"right"} run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.main_hand
+execute if data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data{pose:"standing"} run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.pose
+
+execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.attributes[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.attributes
+execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.hidden_layers[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.hidden_layers
 
 function 42:posers/mannequin/spawner/switch_name
 function 42:posers/mannequin/spawner/switch_lore

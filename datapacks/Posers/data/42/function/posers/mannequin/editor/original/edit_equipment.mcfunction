@@ -6,7 +6,7 @@ execute store result storage 42:posers temp.dist double .0005 run attribute @s s
 execute at @s rotated ~ 0 run function 42:posers/mannequin/editor/original/edit_equipment_macro with storage 42:posers temp
 data remove storage 42:posers temp
 
-scoreboard players operation @e[type=armor_stand,tag=42.tag.posers.new_spawn,limit=1] 42.obj.posers.id = @s 42.obj.posers.id
+data modify entity @e[type=area_effect_cloud,tag=42.tag.posers.new_spawn,limit=1] Owner set from entity @s UUID
 
 item replace entity @e[type=armor_stand,tag=42.tag.posers.new_spawn,limit=1] weapon.mainhand from entity @s weapon.mainhand
 item replace entity @e[type=armor_stand,tag=42.tag.posers.new_spawn,limit=1] weapon.offhand from entity @s weapon.offhand

@@ -1,12 +1,15 @@
 give @s armor_stand[\
     minecraft:item_model="minecraft:player_head",\
     minecraft:item_name=[[{translate:"entity.minecraft.mannequin"}," Poser"]," - ","Steve (Wide)"],\
-    minecraft:custom_data={\
-        42data:{datapack:{}},\
-        mannequin_data:{\
-            profile:{texture:"minecraft:entity/player/wide/steve"}\
+    minecraft:custom_data={42data:{\
+        datapack:{},\
+        posers:{\
+            entity_data:{\
+                profile:{texture:"minecraft:entity/player/wide/steve",model:"wide"},\
+                Invulnerable:true\
+                }\
             }\
-        },\
+        }},\
     minecraft:entity_data={\
         id:"minecraft:armor_stand",\
         Tags:["42.tag.posers.spawn_mannequin"],\

@@ -1,0 +1,1 @@
+$execute anchored eyes facing entity @p[distance=..$(dist),gamemode=!spectator,predicate=42:posers/seen_by_posers] eyes run return run rotate @s ~ ~

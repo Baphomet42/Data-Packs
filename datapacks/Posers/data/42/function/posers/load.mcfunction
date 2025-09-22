@@ -1,5 +1,4 @@
 scoreboard objectives add poser trigger
-scoreboard objectives add 42.obj.posers.id dummy
 scoreboard objectives add 42.obj.posers.var dummy
 scoreboard objectives add 42.obj.posers.scale dummy
 

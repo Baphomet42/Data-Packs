@@ -1,2 +1,3 @@
-function 42:posers/match_id
-kill @e[type=armor_stand,predicate=42:posers/match_id,tag=42.tag.posers.mannequin.equipment_editor]
+tag @s add 42.tag.posers.mannequin.temp_kill
+execute as @e[type=area_effect_cloud,tag=42.tag.posers.mannequin.equipment_editor_cloud] at @s run function 42:posers/mannequin/editor/original/edit_equipment_end_kill
+tag @s remove 42.tag.posers.mannequin.temp_kill
