@@ -2,7 +2,8 @@ execute unless entity @s[type=mannequin] run return fail
 data remove storage 42:posers temp
 
 execute store result storage 42:posers temp.dy double .0009 run attribute @s scale get 1000
-function 42:posers/mannequin/spawner/drop_item_macro with storage 42:posers temp
+execute at @s run function 42:posers/mannequin/spawner/drop_item_macro with storage 42:posers temp
+execute at @s run playsound minecraft:entity.item.pickup block @a ~ ~ ~ .5
 
 data modify storage 42:posers temp.item.Motion set value [0d,0d,0d]
 execute store result storage 42:posers temp.item.Motion[0] double .001 run random value -100..100

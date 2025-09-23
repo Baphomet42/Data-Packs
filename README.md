@@ -48,6 +48,14 @@ Tools to build with mannequins similar to armor stands. Currently intended for c
 
 + `/trigger 42menu`
     + Opens window to give items
++ `/trigger poser`
+    + Opens window to edit mannequins
+        + Works on both Poser mannequins and default unlinked mannequins
+    + Contains standard entity data, mannequin specific data, and useful tools
+    + Option to init mannequin as a Poser
+        + This allows easier editing like breaking and replacing aligned to the grid
+    + Option to unlink Poser mannequin
+        + This removes datapack-specific behavior so mannequin acts as it would in vanilla, while keeping all its customizations
 + *Mannequin Poser Item*
     + Accessible from `42menu`
     + Spawns a random skin mannequin using armor stand placing mechanics
