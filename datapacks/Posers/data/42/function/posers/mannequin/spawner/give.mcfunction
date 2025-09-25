@@ -5,7 +5,9 @@ give @s armor_stand[\
         datapack:{},\
         posers:{\
             entity_data:{\
-                Invulnerable:true\
+                Tags:["42.tag.posers.mannequin"],\
+                Invulnerable:true,\
+                active_effects:[{id:"minecraft:resistance",duration:-1,amplifier:255ub,show_particles:false,show_icon:false}]\
                 }\
             }\
         }},\

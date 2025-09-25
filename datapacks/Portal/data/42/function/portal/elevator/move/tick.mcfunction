@@ -2,7 +2,9 @@ scoreboard players add @s 42.obj.portal.cool 1
 
 execute if score @s 42.obj.portal.var.x matches 1.. run effect give @a[tag=42.tag.portal.temp] levitation 1 2 true
 execute if score @s 42.obj.portal.var.x matches 1.. at @s run tp @s ~ ~.136 ~
-execute if score @s 42.obj.portal.var.x matches 1.. at @s positioned ~-1.5 ~-1.1 ~-1.5 as @a[tag=42.tag.portal.temp,dx=2,dy=0,dz=2] at @s run tp @s ~ ~.125 ~
+data modify storage 42:portal temp_elevator.y set from entity @s Pos[1]
+execute if score @s 42.obj.portal.var.x matches 1.. at @s positioned ~-1.5 ~-1.1 ~-1.5 as @a[tag=42.tag.portal.temp,dx=2,dy=0,dz=2] at @s run function 42:portal/elevator/move/tick_macro with storage 42:portal temp_elevator
+data remove storage 42:portal temp_elevator
 execute if score @s 42.obj.portal.var.x matches ..-1 at @s run tp @s ~ ~-.136 ~
 execute at @s run function 42:portal/elevator/walls/set
 

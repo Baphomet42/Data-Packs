@@ -1,4 +1,13 @@
-tellraw @s[scores={42menu=1}] [{text:""},{text:"XL-TT",color:"gold",bold:true}," ",{text:"\u2318",color:"white",click_event:{action:"run_command",command:"/function 42:gen/config/xltt/menu"},hover_event:{action:"show_text",value:"Open config settings\n(requires server operator status)"}},{text:"\n   "},{text:"Get item...",color:"dark_gray"},{text:"\n      "},{text:"[O.D.M. Sword]",color:"gray",click_event:{action:"run_command",command:"/trigger 42menu set 4201001"}},{text:"\n      "},{text:"[Titan Spawn Egg]",color:"gray",click_event:{action:"run_command",command:"/trigger 42menu set 4201002"}},{text:"\n      "},{text:"[Cursed Wine]",color:"gray",click_event:{action:"run_command",command:"/trigger 42menu set 4201003"}},{text:"\n   "},{text:"Use Power...",color:"dark_gray"},{text:"\n      "},{text:"[Beast Scream]",color:"gray",click_event:{action:"run_command",command:"/trigger 42menu set 4201020"}}]
+tellraw @s[scores={42menu=1}] [{text:"",color:"gray"},\
+    {text:"XL-TT",color:"gold",bold:true},\
+    " ",{text:"\u2318",color:"white",click_event:{action:"run_command",command:"/function 42:gen/config/xltt/menu"},hover_event:{action:"show_text",value:"Open config settings\n(requires server operator status)"}},\
+    {text:"\n   "},{text:"Get item...",color:"dark_gray"},\
+    {text:"\n      "},"[",{text:"O.D.M. Sword",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4201001"}},"]",\
+    {text:"\n      "},"[",{text:"Titan Spawn Egg",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4201002"}},"]",\
+    {text:"\n      "},"[",{text:"Cursed Wine",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4201003"}},"]",\
+    {text:"\n   "},{text:"Use Power...",color:"dark_gray"},\
+    {text:"\n      "},"[",{text:"Beast Scream",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4201020"}},"]"\
+    ]
 #4201001-4201003
 execute if entity @s[tag=!42op,gamemode=!creative,scores={42menu=4201001..4201003}] run function 42:error_perms
 scoreboard players set @s[tag=!42op,gamemode=!creative,scores={42menu=4201001..4201003}] 42menu 0

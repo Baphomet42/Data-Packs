@@ -1,8 +1,8 @@
 tellraw @s[scores={42menu=1}] [{text:"",color:"gray"},{text:"DuhBuhDuh",color:"gold",bold:true},\
     {text:"\n   "},{text:"Set character...",color:"dark_gray"},\
-    {text:"\n      "},{text:"[Reset]",click_event:{action:"run_command",command:"/trigger 42menu set 4205001"}},\
-    {text:"\n      "},{text:"[Survivor]",click_event:{action:"run_command",command:"/trigger 42menu set 4205002"}},\
-    {text:"\n      "},{text:"[Killer]",click_event:{action:"run_command",command:"/trigger 42menu set 4205003"}}\
+    {text:"\n      "},"[",{text:"Reset",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4205001"}},"]",\
+    {text:"\n      "},"[",{text:"Survivor",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4205002"}},"]",\
+    {text:"\n      "},"[",{text:"Killer",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4205003"}},"]"\
     ]
 execute if entity @s[tag=!42op,gamemode=!creative,scores={42menu=4205001..4205999}] run function 42:error_perms
 scoreboard players set @s[tag=!42op,gamemode=!creative,scores={42menu=4205001..4205999}] 42menu 0

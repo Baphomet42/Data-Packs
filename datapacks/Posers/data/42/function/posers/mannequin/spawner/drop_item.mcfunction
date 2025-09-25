@@ -12,7 +12,7 @@ execute store result storage 42:posers temp.item.Motion[2] double .001 run rando
 
 data merge storage 42:posers {temp:{item:{Item:{components:{\
     "minecraft:item_model":"minecraft:player_head",\
-    "minecraft:item_name":[[{translate:"entity.minecraft.mannequin"}," Poser"]," - ","Custom"],\
+    "minecraft:item_name":[{translate:"entity.minecraft.mannequin"}," Poser"," - ","Custom"],\
     "minecraft:custom_data":{42data:{datapack:{}}},\
     "minecraft:entity_data":{\
         id:"minecraft:armor_stand",\
@@ -55,6 +55,7 @@ data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42
 data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags
 
 data modify storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags set value []
+execute if entity @s[tag=42.tag.posers.mannequin] run data modify storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags append value "42.tag.posers.mannequin"
 execute if entity @s[tag=42.tag.posers.mannequin.ai.watch_player] run data modify storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags append value "42.tag.posers.mannequin.ai.watch_player"
 execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags
 
@@ -68,9 +69,12 @@ execute if data storage 42:posers temp.item.Item.components.minecraft:custom_dat
 
 execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.attributes[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.attributes
 execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.hidden_layers[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.hidden_layers
+execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.active_effects[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.active_effects
 
 function 42:posers/mannequin/spawner/switch_name
 function 42:posers/mannequin/spawner/switch_lore
+execute if entity @s[tag=!42.tag.posers.mannequin] run data remove storage 42:posers temp.item.Item.components.minecraft:item_name[1]
+execute if entity @s[tag=!42.tag.posers.mannequin] run data modify storage 42:posers temp.item.Item.components.minecraft:rarity set value "rare"
 
 execute if data storage 42:posers temp.mannequin.profile run data modify storage 42:posers temp.item.Item.components.minecraft:profile set from storage 42:posers temp.mannequin.profile
 

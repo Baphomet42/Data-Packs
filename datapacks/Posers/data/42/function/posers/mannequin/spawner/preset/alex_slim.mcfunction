@@ -1,12 +1,14 @@
 give @s armor_stand[\
     minecraft:item_model="minecraft:player_head",\
-    minecraft:item_name=[[{translate:"entity.minecraft.mannequin"}," Poser"]," - ","Alex (Slim)"],\
+    minecraft:item_name=[{translate:"entity.minecraft.mannequin"}," Poser"," - ","Alex (Slim)"],\
     minecraft:custom_data={42data:{\
         datapack:{},\
         posers:{\
             entity_data:{\
                 profile:{texture:"minecraft:entity/player/slim/alex",model:"slim"},\
-                Invulnerable:true\
+                Tags:["42.tag.posers.mannequin"],\
+                Invulnerable:true,\
+                active_effects:[{id:"minecraft:resistance",duration:-1,amplifier:255ub,show_particles:false,show_icon:false}]\
                 }\
             }\
         }},\

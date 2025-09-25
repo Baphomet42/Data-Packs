@@ -4,8 +4,8 @@ function 42:portal/tag_selected
 function 42:portal/cmdfeed
 tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},{text:"------------------------------\n",color:"dark_gray"},\
     {selector:"@s",color:"gold",bold:true},\
-    {text:" "},{text:"🖶",click_event:{action:"run_command",command:"/gamerule sendCommandFeedback true"},hover_event:{action:"show_text",value:[{text:"Enable Command Feedback\n\nCommand feedback is temporarily disabled each time a trigger menu is shown, preventing some trigger messages that spam chat and move the menu. Click to re-enable command feedback immediately."}]}},\
-    {text:" "},{text:"⟳",click_event:{action:"run_command",command:"/trigger 42menu set 4203503"},hover_event:{action:"show_text",value:[{text:"Refresh Selection Screen\n\nSelection options are only sent to chat when first selecting equipment. Refresh to reselct the equipment and see changes."}]}}]
+    {text:" "},{text:"🖶",color:"#DDDDDD",click_event:{action:"run_command",command:"/gamerule sendCommandFeedback true"},hover_event:{action:"show_text",value:[{text:"Enable Command Feedback\n\nCommand feedback is temporarily disabled each time a trigger menu is shown, preventing some trigger messages that spam chat and move the menu. Click to re-enable command feedback immediately."}]}},\
+    {text:" "},{text:"⟳",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203503"},hover_event:{action:"show_text",value:[{text:"Refresh Selection Screen\n\nSelection options are only sent to chat when first selecting equipment. Refresh to reselct the equipment and see changes."}]}}]
 
 execute if entity @s[tag=42.tag.portal.cube.tp] at @s run function 42:portal/cube/select
 execute if entity @s[tag=42.tag.portal.launch] at @s run function 42:portal/launch/select
@@ -27,8 +27,8 @@ execute if entity @s[tag=42.tag.portal.cube.spawner] at @s run function 42:porta
 execute if entity @s[tag=42.tag.portal.pellet.spawner] at @s run function 42:portal/pellet/spawner/select
 execute if entity @s[tag=42.tag.portal.grill] at @s run function 42:portal/grill/select
 
-execute if score @s[tag=!42.tag.portal.portal.group,tag=!42.tag.portal.wire] 42.obj.portal.link matches 1.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      "},{text:"[Unlink]",color:"gray",click_event:{action:"run_command",command:"/trigger 42menu set 4203502"}}]
-execute if score @s[tag=!42.tag.portal.zone,tag=!42.tag.portal.portal] 42.obj.portal.lvl matches 0.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      "},{text:"[Unbind Level]",color:"gray",click_event:{action:"run_command",command:"/trigger 42menu set 4203504"}}]
-execute if score @s[tag=!42.tag.portal.portal] 42.obj.portal.lvl matches 1.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      "},{text:"[Load Level]",color:"gray",click_event:{action:"run_command",command:"/trigger 42menu set 4203501"}}]
-tellraw @p[tag=42.tag.portal.selected] [{text:"      "},{text:"[Deselect]",color:"gray",click_event:{action:"run_command",command:"/trigger 42menu set 4203500"}}]
+execute if score @s[tag=!42.tag.portal.portal.group,tag=!42.tag.portal.wire] 42.obj.portal.link matches 1.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      [",color:"gray"},{text:"Unlink]",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203502"}},"]"]
+execute if score @s[tag=!42.tag.portal.zone,tag=!42.tag.portal.portal] 42.obj.portal.lvl matches 0.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      [",color:"gray"},{text:"Unbind Level]",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203504"}},"]"]
+execute if score @s[tag=!42.tag.portal.portal] 42.obj.portal.lvl matches 1.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      [",color:"gray"},{text:"Load Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203501"}},"]"]
+tellraw @p[tag=42.tag.portal.selected] [{text:"      [",color:"gray"},{text:"Deselect",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203500"}},"]"]
 tag @e remove 42.tag.portal.selected

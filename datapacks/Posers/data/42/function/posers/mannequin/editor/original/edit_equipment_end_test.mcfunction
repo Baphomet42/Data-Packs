@@ -1,0 +1,1 @@
+return run execute on origin if entity @s[tag=42.tag.posers.mannequin.temp_kill]

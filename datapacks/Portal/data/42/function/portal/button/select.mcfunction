@@ -1,1 +1,5 @@
-tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},{text:"   Misc...",color:"dark_gray"},{text:"\n      "},{text:"[Fizzle]",click_event:{action:"run_command",command:"/trigger 42menu set 4203525"}},{text:"\n      "},{text:"[Cycle Type]",click_event:{action:"run_command",command:"/trigger 42menu set 4203526"}}]
+tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},\
+    {text:"   Misc...",color:"dark_gray"},\
+    {text:"\n      "},"[",{text:"Fizzle",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203525"}},"]",\
+    {text:"\n      "},"[",{text:"Cycle Type",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203526"}},"]"\
+    ]
