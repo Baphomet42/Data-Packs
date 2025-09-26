@@ -1,4 +1,4 @@
-execute if score @s 42menu matches 4203000..4203999 run function 42:portal/cmdfeed
+execute if score @s 42menu matches 4203000..4203999 run function 42:gen/cmdfeed/hide
 tellraw @s[scores={42menu=1}] [{text:"",color:"gray"},\
     {text:"Portal",color:"gold",bold:true},\
     " ",{text:"\u2318",color:"white",click_event:{action:"run_command",command:"/function 42:gen/config/portal/menu"},hover_event:{action:"show_text",value:"Open config settings\n(requires server operator status)"}}\

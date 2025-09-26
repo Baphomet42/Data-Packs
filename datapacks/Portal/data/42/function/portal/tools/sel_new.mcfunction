@@ -1,10 +1,10 @@
 summon area_effect_cloud ~ ~ ~ {Tags:["42.tag.summon"],Duration:10,DurationOnUse:0,custom_particle:{type:"minecraft:flash",color:[1,1,1,1]},Radius:.25f,RadiusOnUse:0,RadiusPerTick:0,WaitTime:0}
 
 function 42:portal/tag_selected
-function 42:portal/cmdfeed
+function 42:gen/cmdfeed/hide
 tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},{text:"------------------------------\n",color:"dark_gray"},\
     {selector:"@s",color:"gold",bold:true},\
-    {text:" "},{text:"🖶",color:"#DDDDDD",click_event:{action:"run_command",command:"/gamerule sendCommandFeedback true"},hover_event:{action:"show_text",value:[{text:"Enable Command Feedback\n\nCommand feedback is temporarily disabled each time a trigger menu is shown, preventing some trigger messages that spam chat and move the menu. Click to re-enable command feedback immediately."}]}},\
+    {storage:"42:gen",nbt:"cmdfeed_btn",interpret:true},\
     {text:" "},{text:"⟳",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203503"},hover_event:{action:"show_text",value:[{text:"Refresh Selection Screen\n\nSelection options are only sent to chat when first selecting equipment. Refresh to reselct the equipment and see changes."}]}}]
 
 execute if entity @s[tag=42.tag.portal.cube.tp] at @s run function 42:portal/cube/select

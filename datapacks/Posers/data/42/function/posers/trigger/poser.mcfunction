@@ -1,29 +1,31 @@
 execute if entity @s[tag=!42op,gamemode=!creative] run return run function 42:error_perms
+function 42:gen/cmdfeed/hide
 
-execute if score @s poser matches ..0 run tellraw @s [{text:"Invalid trigger input for 'poser': ",color:"red"},{score:{name:"@s",objective:"poser"}}]
-
-execute if score @s poser matches 1 run tellraw @s {text:"------------------------------",color:"dark_gray"}
-execute if score @s poser matches 1 run return run tellraw @s \
-    [\
-    {text:"",color:"gray"},{text:"Poser Menu",color:"gold",bold:true},\
+execute if score @s poser matches 1..4 run tellraw @s {text:"------------------------------",color:"dark_gray"}
+execute if score @s poser matches 1..4 run tellraw @s \
+    [{text:"",color:"gray"},\
+    {text:"Poser Menu",color:"gold",bold:true},\
+    {storage:"42:gen",nbt:"cmdfeed_btn",interpret:true},\
     "\n",{text:"Click buttons to edit nearest mannequin",color:"dark_purple"},\
     "\n   ","[",{text:"Highlight Nearest Mannequin",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1001"},hover_event:{action:"show_text",value:\
         ["",{text:"Highlight Nearest Mannequin",bold:true},"\n\n",{text:"All buttons find the nearest mannequin at the time of pressing it. This button can be used to test it without changing any data.",color:"gray"}]}},"]",\
-    "\n   ",{text:"Common Toggles...",color:"dark_gray"},\
-    "\n      ","[",{text:"immovable",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3001"},hover_event:{action:"show_text",value:\
-        ["",{text:"immovable",bold:true},"\n\n",{text:"Toggle whether mannequin can be moved by most sources. Pistons can still move the mannequin.",color:"gray"}]}},"]",\
-    "  ","[",{text:"NoGravity",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2003"},hover_event:{action:"show_text",value:\
-        ["",{text:"NoGravity",bold:true},"\n\n",{text:"Toggle whether mannequin reacts to gravity.",color:"gray"}]}},"]",\
-    "  ","[",{text:"Invulnerable",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2001"},hover_event:{action:"show_text",value:\
-        ["",{text:"Invulnerable",bold:true},"\n\n",{text:"Toggle whether mannequin can be damaged by most sources. Creative players, void damage, and /kill can still damage the mannequin.",color:"gray"}]}},"]",\
-    "  ","[",{text:"Glowing",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2002"},hover_event:{action:"show_text",value:\
-        ["",{text:"Glowing",bold:true},"\n\n",{text:"Toggle whether mannequin should have a glowing outline.",color:"gray"}]}},"]",\
-    "\n      ","[",{text:"Silent",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2004"},hover_event:{action:"show_text",value:\
-        ["",{text:"Silent",bold:true},"\n\n",{text:"Toggle whether mannequin can make sounds.",color:"gray"}]}},"]",\
-    "  ","[",{text:"HasVisualFire",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2005"},hover_event:{action:"show_text",value:\
-        ["",{text:"HasVisualFire",bold:true},"\n\n",{text:"Toggle whether mannequin displays fire.",color:"gray"}]}},"]",\
-    "  ","[",{text:"Resistance",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2008"},hover_event:{action:"show_text",value:\
-        ["",{text:"Resistance",bold:true},"\n\n",{text:"Toggle whether mannequin has max resistance.",color:"gray"}]}},"]",\
+    ]
+execute if score @s poser matches 1 run tellraw @s \
+    [{text:"",color:"gray"},\
+    "   ",{text:"Posers...",color:"dark_gray"},\
+    "\n      ","[",{text:"Init Poser",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1501"},hover_event:{action:"show_text",value:\
+        ["",{text:"Init Poser",bold:true},"\n\n",{text:"Summon interactions around mannequin for quick editing, like the Mannequin Poser item.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Unlink Poser",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1502"},hover_event:{action:"show_text",value:\
+        ["",{text:"Unlink Poser",bold:true},"\n\n",{text:"Remove interactions so mannequin acts more vanilla.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Quick Freeze",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1503"},hover_event:{action:"show_text",value:\
+        ["",{text:"Quick Freeze",bold:true},"\n\n",{text:"Unlink Poser, set Invulnerable and immovable to true, and give max resistance.",color:"gray"}]}},"]",\
+    "\n      ","[",{text:"Drop Item",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1504"},hover_event:{action:"show_text",value:\
+        ["",{text:"Drop Item",bold:true},"\n\n",{text:"Drops Mannequin Poser item without killing the mannequin.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Kill",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1505"},hover_event:{action:"show_text",value:\
+        ["",{text:"Kill",bold:true},"\n\n",{text:"Drops Mannequin Poser item and kills the mannequin.",color:"gray"}]}},"]",\
+    "\n   ",{text:"AI...",color:"dark_gray"},\
+    "\n      ","[",{text:"Watch Players",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1701"},hover_event:{action:"show_text",value:\
+        ["",{text:"Watch Players",bold:true},"\n\n",{text:"Toggle whether mannequin should rotate towards nearby players.",color:"gray"}]}},"]",\
     "\n   ",{text:"Nametag...",color:"dark_gray"},\
     "\n      ","[",{text:"CustomNameVisible",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2006"},hover_event:{action:"show_text",value:\
         ["",{text:"CustomNameVisible",bold:true},"\n\n",{text:"Toggle whether mannequin CustomName shows when not being looked at.",color:"gray"}]}},"]",\
@@ -46,6 +48,28 @@ execute if score @s poser matches 1 run return run tellraw @s \
         ["",{text:"swimming",bold:true},"\n\n",{text:"Set pose to swimming.",color:"gray"}]}},"]",\
     "  ","[",{text:"fall_flying",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3205"},hover_event:{action:"show_text",value:\
         ["",{text:"fall_flying",bold:true},"\n\n",{text:"Set pose to fall_flying.",color:"gray"}]}},"]",\
+    ]
+execute if score @s poser matches 2 run tellraw @s \
+    [{text:"",color:"gray"},\
+    "   ",{text:"Profile...",color:"dark_gray"},\
+    "\n      ","[",{text:"mainhand -> profile",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3009"},hover_event:{action:"show_text",value:\
+        ["mainhand -> profile",{text:"",bold:true},"\n\n",{text:"Copy profile of mainhand item to mannequin profile.",color:"gray"}]}},"]",\
+    "  ","[",{text:"UUID -> profile",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3011"},hover_event:{action:"show_text",value:\
+        ["UUID -> profile",{text:"",bold:true},"\n\n",{text:"Set mannequin profile to your UUID.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Drop Head",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3010"},hover_event:{action:"show_text",value:\
+        ["",{text:"Drop Head",bold:true},"\n\n",{text:"Give player_head with profile from mannequin.",color:"gray"}]}},"]",\
+    "\n      ",{text:"Model:",color:"gray"},\
+    "  ","[",{text:"Reset",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3004"},hover_event:{action:"show_text",value:\
+        ["",{text:"Reset",bold:true},"\n\n",{text:"Remove skin model override.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Wide",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3005"},hover_event:{action:"show_text",value:\
+        ["",{text:"Wide",bold:true},"\n\n",{text:"Override skin model to wide.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Slim",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3006"},hover_event:{action:"show_text",value:\
+        ["",{text:"Slim",bold:true},"\n\n",{text:"Override skin model to slim.",color:"gray"}]}},"]",\
+    "\n      ",{text:"Main Hand:",color:"gray"},\
+    "  ","[",{text:"right",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3007"},hover_event:{action:"show_text",value:\
+        ["",{text:"right",bold:true},"\n\n",{text:"Set main hand to right.",color:"gray"}]}},"]",\
+    "  ","[",{text:"left",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3008"},hover_event:{action:"show_text",value:\
+        ["",{text:"left",bold:true},"\n\n",{text:"Set main hand to left.",color:"gray"}]}},"]",\
     "\n   ",{text:"Hidden Layers...",color:"dark_gray"},\
     "\n      ","[",{text:"cape",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3101"},hover_event:{action:"show_text",value:\
         ["",{text:"cape",bold:true},"\n\n",{text:"Toggle visibility for cape.",color:"gray"}]}},"]",\
@@ -61,37 +85,28 @@ execute if score @s poser matches 1 run return run tellraw @s \
         ["",{text:"right_pants_leg",bold:true},"\n\n",{text:"Toggle visibility for right_pants_leg.",color:"gray"}]}},"]",\
     "  ","[",{text:"left_pants_leg",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3107"},hover_event:{action:"show_text",value:\
         ["",{text:"left_pants_leg",bold:true},"\n\n",{text:"Toggle visibility for left_pants_leg.",color:"gray"}]}},"]",\
-    "\n   ",{text:"Profile...",color:"dark_gray"},\
-    "\n      ","[",{text:"mainhand -> profile",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3009"},hover_event:{action:"show_text",value:\
-        ["mainhand -> profile",{text:"",bold:true},"\n\n",{text:"Copy profile of mainhand item to mannequin profile.",color:"gray"}]}},"]",\
-    "  ","[",{text:"Drop Head",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3010"},hover_event:{action:"show_text",value:\
-        ["",{text:"Drop Head",bold:true},"\n\n",{text:"Give player_head with profile from mannequin.",color:"gray"}]}},"]",\
-    "\n      ",{text:"Model:",color:"gray"},\
-    "  ","[",{text:"Reset",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3004"},hover_event:{action:"show_text",value:\
-        ["",{text:"Reset",bold:true},"\n\n",{text:"Remove skin model override.",color:"gray"}]}},"]",\
-    "  ","[",{text:"Wide",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3005"},hover_event:{action:"show_text",value:\
-        ["",{text:"Wide",bold:true},"\n\n",{text:"Override skin model to wide.",color:"gray"}]}},"]",\
-    "  ","[",{text:"Slim",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3006"},hover_event:{action:"show_text",value:\
-        ["",{text:"Slim",bold:true},"\n\n",{text:"Override skin model to slim.",color:"gray"}]}},"]",\
-    "\n      ",{text:"Main Hand:",color:"gray"},\
-    "  ","[",{text:"right",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3007"},hover_event:{action:"show_text",value:\
-        ["",{text:"right",bold:true},"\n\n",{text:"Set main hand to right.",color:"gray"}]}},"]",\
-    "  ","[",{text:"left",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3008"},hover_event:{action:"show_text",value:\
-        ["",{text:"left",bold:true},"\n\n",{text:"Set main hand to left.",color:"gray"}]}},"]",\
-    "\n   ",{text:"Posers...",color:"dark_gray"},\
-    "\n      ","[",{text:"Init Poser",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1501"},hover_event:{action:"show_text",value:\
-        ["",{text:"Init Poser",bold:true},"\n\n",{text:"Summon interactions around mannequin for quick editing, like the Mannequin Poser item.",color:"gray"}]}},"]",\
-    "  ","[",{text:"Unlink Poser",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1502"},hover_event:{action:"show_text",value:\
-        ["",{text:"Unlink Poser",bold:true},"\n\n",{text:"Remove interactions so mannequin acts more vanilla.",color:"gray"}]}},"]",\
-    "  ","[",{text:"Quick Freeze",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1503"},hover_event:{action:"show_text",value:\
-        ["",{text:"Quick Freeze",bold:true},"\n\n",{text:"Unlink Poser, set Invulnerable and immovable to true, and give max resistance.",color:"gray"}]}},"]",\
-    "\n      ","[",{text:"Drop Item",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1504"},hover_event:{action:"show_text",value:\
-        ["",{text:"Drop Item",bold:true},"\n\n",{text:"Drops Mannequin Poser item without killing the mannequin.",color:"gray"}]}},"]",\
-    "  ","[",{text:"Kill",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1505"},hover_event:{action:"show_text",value:\
-        ["",{text:"Kill",bold:true},"\n\n",{text:"Drops Mannequin Poser item and kills the mannequin.",color:"gray"}]}},"]",\
-    "\n   ",{text:"AI...",color:"dark_gray"},\
-    "\n      ","[",{text:"Watch Players",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1701"},hover_event:{action:"show_text",value:\
-        ["",{text:"Watch Players",bold:true},"\n\n",{text:"Toggle whether mannequin should rotate towards nearby players.",color:"gray"}]}},"]",\
+    "\n      ","[",{text:"Hide All",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3108"},hover_event:{action:"show_text",value:\
+        ["",{text:"Hide All",bold:true},"\n\n",{text:"Set visibility for all outer layers to hidden.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Show All",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3109"},hover_event:{action:"show_text",value:\
+        ["",{text:"Show All",bold:true},"\n\n",{text:"Set visibility for all outer layers to visible.",color:"gray"}]}},"]",\
+    ]
+execute if score @s poser matches 3 run tellraw @s \
+    [{text:"",color:"gray"},\
+    "   ",{text:"Common Toggles...",color:"dark_gray"},\
+    "\n      ","[",{text:"immovable",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3001"},hover_event:{action:"show_text",value:\
+        ["",{text:"immovable",bold:true},"\n\n",{text:"Toggle whether mannequin can be moved by most sources. Pistons can still move the mannequin.",color:"gray"}]}},"]",\
+    "  ","[",{text:"NoGravity",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2003"},hover_event:{action:"show_text",value:\
+        ["",{text:"NoGravity",bold:true},"\n\n",{text:"Toggle whether mannequin reacts to gravity.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Invulnerable",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2001"},hover_event:{action:"show_text",value:\
+        ["",{text:"Invulnerable",bold:true},"\n\n",{text:"Toggle whether mannequin can be damaged by most sources. Creative players, void damage, and /kill can still damage the mannequin.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Glowing",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2002"},hover_event:{action:"show_text",value:\
+        ["",{text:"Glowing",bold:true},"\n\n",{text:"Toggle whether mannequin should have a glowing outline.",color:"gray"}]}},"]",\
+    "\n      ","[",{text:"Silent",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2004"},hover_event:{action:"show_text",value:\
+        ["",{text:"Silent",bold:true},"\n\n",{text:"Toggle whether mannequin can make sounds.",color:"gray"}]}},"]",\
+    "  ","[",{text:"HasVisualFire",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2005"},hover_event:{action:"show_text",value:\
+        ["",{text:"HasVisualFire",bold:true},"\n\n",{text:"Toggle whether mannequin displays fire.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Resistance",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2008"},hover_event:{action:"show_text",value:\
+        ["",{text:"Resistance",bold:true},"\n\n",{text:"Toggle whether mannequin has max resistance.",color:"gray"}]}},"]",\
     "\n   ",{text:"Move...",color:"dark_gray"},\
     "\n      ",{text:"Align:",color:"gray"},\
     "  ","[",{text:"X",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3391"},hover_event:{action:"show_text",value:\
@@ -172,10 +187,79 @@ execute if score @s poser matches 1 run return run tellraw @s \
     "  ","[",{text:"90",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3386"},hover_event:{action:"show_text",value:\
         ["",{text:"90",bold:true},"\n\n",{text:"Rotate vertically.",color:"gray"}]}},"]",\
     ]
+execute if score @s poser matches 4 run tellraw @s \
+    [{text:"",color:"gray"},\
+    "   ",{text:"Command Suggestions...",color:"dark_gray"},\
+    "\n      ",{text:"Profile Override:",color:"gray"},\
+    "  ","[",{text:"Texture...",color:"#DDDDDD",click_event:{action:"suggest_command",command:"/data modify entity @n[type=mannequin,distance=..10] profile.texture set value \"\""},hover_event:{action:"show_text",value:\
+        ["",{text:"Texture Override...",bold:true},"\n\n",{text:"Expects resource location of a texture.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Cape...",color:"#DDDDDD",click_event:{action:"suggest_command",command:"/data modify entity @n[type=mannequin,distance=..10] profile.cape set value \"\""},hover_event:{action:"show_text",value:\
+        ["",{text:"Cape Override...",bold:true},"\n\n",{text:"Expects resource location of a texture.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Elytra...",color:"#DDDDDD",click_event:{action:"suggest_command",command:"/data modify entity @n[type=mannequin,distance=..10] profile.elytra set value \"\""},hover_event:{action:"show_text",value:\
+        ["",{text:"Elytra Override...",bold:true},"\n\n",{text:"Expects resource location of a texture.",color:"gray"}]}},"]",\
+    "\n      ",{text:"Attribute:",color:"gray"},\
+    "  ","[",{text:"Scale...",color:"#DDDDDD",click_event:{action:"suggest_command",command:"/attribute @n[type=mannequin,distance=..10] scale base set "},hover_event:{action:"show_text",value:\
+        ["",{text:"Scale...",bold:true},"\n\n",{text:"Expects double .0625 to 16.",color:"gray"}]}},"]",\
+    ]
 
-# TODO search -2
+execute if score @s poser matches 1 run return run tellraw @s \
+    [\
+    {text:"",color:"gray"},{text:"------ ",color:"dark_gray"},\
+    {text:"Page:",color:"dark_purple"},\
+    " ","[",{text:"1",color:"dark_gray",click_event:{action:"run_command",command:"/trigger poser set 1"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 1",bold:true},"\n\n",{text:"Configure Poser",color:"gray"}]}},"]",\
+    " ","[",{text:"2",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 2",bold:true},"\n\n",{text:"Skin",color:"gray"}]}},"]",\
+    " ","[",{text:"3",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 3",bold:true},"\n\n",{text:"Entity Data",color:"gray"}]}},"]",\
+    " ","[",{text:"4",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 4"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 4",bold:true},"\n\n",{text:"Command Suggestions",color:"gray"}]}},"]",\
+    {text:" ------",color:"dark_gray"}\
+    ]
+execute if score @s poser matches 2 run return run tellraw @s \
+    [\
+    {text:"",color:"gray"},{text:"------ ",color:"dark_gray"},\
+    {text:"Page:",color:"dark_purple"},\
+    " ","[",{text:"1",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 1",bold:true},"\n\n",{text:"Configure Poser",color:"gray"}]}},"]",\
+    " ","[",{text:"2",color:"dark_gray",click_event:{action:"run_command",command:"/trigger poser set 2"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 2",bold:true},"\n\n",{text:"Skin",color:"gray"}]}},"]",\
+    " ","[",{text:"3",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 3",bold:true},"\n\n",{text:"Entity Data",color:"gray"}]}},"]",\
+    " ","[",{text:"4",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 4"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 4",bold:true},"\n\n",{text:"Command Suggestions",color:"gray"}]}},"]",\
+    {text:" ------",color:"dark_gray"}\
+    ]
+execute if score @s poser matches 3 run return run tellraw @s \
+    [\
+    {text:"",color:"gray"},{text:"------ ",color:"dark_gray"},\
+    {text:"Page:",color:"dark_purple"},\
+    " ","[",{text:"1",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 1",bold:true},"\n\n",{text:"Configure Poser",color:"gray"}]}},"]",\
+    " ","[",{text:"2",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 2",bold:true},"\n\n",{text:"Skin",color:"gray"}]}},"]",\
+    " ","[",{text:"3",color:"dark_gray",click_event:{action:"run_command",command:"/trigger poser set 3"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 3",bold:true},"\n\n",{text:"Entity Data",color:"gray"}]}},"]",\
+    " ","[",{text:"4",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 4"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 4",bold:true},"\n\n",{text:"Command Suggestions",color:"gray"}]}},"]",\
+    {text:" ------",color:"dark_gray"}\
+    ]
+execute if score @s poser matches 4 run return run tellraw @s \
+    [\
+    {text:"",color:"gray"},{text:"------ ",color:"dark_gray"},\
+    {text:"Page:",color:"dark_purple"},\
+    " ","[",{text:"1",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 1",bold:true},"\n\n",{text:"Configure Poser",color:"gray"}]}},"]",\
+    " ","[",{text:"2",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 2",bold:true},"\n\n",{text:"Skin",color:"gray"}]}},"]",\
+    " ","[",{text:"3",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 3",bold:true},"\n\n",{text:"Entity Data",color:"gray"}]}},"]",\
+    " ","[",{text:"4",color:"dark_gray",click_event:{action:"run_command",command:"/trigger poser set 4"},hover_event:{action:"show_text",value:\
+        ["",{text:"Page 4",bold:true},"\n\n",{text:"Command Suggestions",color:"gray"}]}},"]",\
+    {text:" ------",color:"dark_gray"}\
+    ]
 
-execute if score @s poser matches 2..1000 run tellraw @s [{text:"Invalid trigger input for 'poser': ",color:"red"},{score:{name:"@s",objective:"poser"}}]
+execute if score @s poser matches ..1000 run tellraw @s [{text:"Invalid trigger input for 'poser': ",color:"red"},{score:{name:"@s",objective:"poser"}}]
 
 execute if score @s poser matches 1001 run function 42:posers/trigger/action/detect_nearest_mannequin
 

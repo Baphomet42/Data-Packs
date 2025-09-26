@@ -192,15 +192,21 @@ In most (but not all) cases, these files should be in locations `42:`, `42:domin
             + `42menu.mcfunction`
             + `error_perms.mcfunction`
             + `gen/`
+                + `cmdfeed/`
+                    + `hide.mcfunction`
+                    + `reset.mcfunction`
                 + `config/`
                     + `refresh_pack_list.mcfunction`
         + `loot_table/`
             + `empty.json`
         + `predicate/`
+            + `has_passenger.json`
+            + `has_vehicle.json`
             + `input_sneak.json`
             + `is_sneaking.json`
             + `is_sprinting.json`
             + `location_fluid.json`
+            + `periodic_10.json`
         + `tags/`
             + `block/`
                 + `projectile_pass.json`

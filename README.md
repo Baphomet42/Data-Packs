@@ -44,7 +44,7 @@ Note that features may have changed since these were published
 
 ### **Posers**
 
-Tools to build with mannequins similar to armor stands. Currently intended for creative mode building only.
+Tools to make building with mannequins effortless. Currently intended for creative mode building only.
 
 + `/trigger 42menu`
     + Opens window to give items
@@ -63,10 +63,10 @@ Tools to build with mannequins similar to armor stands. Currently intended for c
         + Rotation is locked to nearest multiple of 45deg
         + Mannequin is configured as a Poser (see below)
 + *Poser*
-    + Placed from Mannequin Poser Item
+    + Placed from Mannequin Poser item
     + Cannot be pushed or attacked, but does have gravity
-    + Use the "Attack key" to instantly break, dropping a new Mannequin Poser Item containing its data
-        + This keeps the profile, attributes, items, etc from the Mannequin
+    + Use the "Attack key" to instantly break, dropping a new Mannequin Poser item containing its data
+        + This keeps the profile, pose, attributes, items, etc from the Mannequin
     + Use the "Use key" to open the editor
         + While in editor mode, interact to place and remove armor items and hand items
     + Profile swapping
@@ -259,13 +259,8 @@ Optional resource pack - see [below](#resource-pack-info)
 + **Important Information Specific to Portal Datapack**
     + See generic information at the end of this file
     + To ensure portal guns aren't lost when players die, run `/gamerule keepInventory true`
-    + The custom chat menus in this pack use trigger commands, which send a message to the player after every click
-        + This can be disabled with `/gamerule sendCommandFeedback false`
-            + Note that doing this will also turn off command feedback for actual commands used by any player
-        + Even without disabling command feedback with the gamerule, this datapack turns off command feedback for about 30 seconds after menus are used, so at least some of the trigger command feedback will be hidden without having to disable all command feedback server-wide
     + Each update to the datapack may change how equipment spawns, functions, and gets killed
         + Before updating the datapack, it is recommended to fizzle all equipment and place it again after updating
-            + In almost every update this is not required, but to be safe it is a good practice
     + Worlds running this datapack should be set to Easy, Normal, or Hard Mode (not Peaceful)
         + Running this in Peaceful Mode could cause problems with vital entities unable to be summoned
         + Turning off spawning with `/gamerule doMobSpawning false` is ok
