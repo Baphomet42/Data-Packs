@@ -407,9 +407,9 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ### **Setup**
 
 + Datapacks are placed into a specific Minecraft world and only function within that world
-+ Download one or more datapacks from `stable releases/datapacks/`
-    + The zip files in `stable releases/datapacks/` are more stable versions and marked with a version number
-    + The folders in `datapacks/` are the latest dev version, but may be unstable and contain bugs
++ Download one or more datapacks from `stable releases/datapacks/` or [GitHub Releases](https://github.com/Baphomet42/Data-Packs/releases)
+    + These zip files in are more stable versions and marked with a version number
+    + The folders in the main repo folder within `datapacks/` are the latest dev version, but may be unstable and contain bugs
     + Only use the packs in the correct Minecraft version
 + Place any number of datapacks into `.minecraft/saves/<World Name Here>/datapacks/`
     + The final path should look something like `.minecraft/saves/New World/datapacks/Portal v0.0 mc1.20.zip`
@@ -490,7 +490,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 ### **Setup**
 
-+ Download pack at `stable releases/resourcepacks/resources.zip`
++ Download pack at `stable releases/resourcepacks/resources.zip` or [GitHub Releases](https://github.com/Baphomet42/Data-Packs/releases)
     + There is only one resource pack that handles all datapacks
     + For the latest dev version, use `resources.zip` or `resourcepacks/42datapacks` in the main repo folder
         + The `resources.zip` file is created by zipping the **contents** of the `42datapacks` folder, not a zip of the folder itself
