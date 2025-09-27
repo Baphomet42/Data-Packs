@@ -6,6 +6,10 @@ tag @n[type=mannequin,distance=..10.1] add 42.tag.posers.this_trigger_mannequin
 
 execute unless entity @e[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return fail
 
+tag @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] add 42.tag.posers.this_trigger_mannequin_tp
+execute as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin,predicate=42:posers/custom_sitting] on vehicle run tag @s add 42.tag.posers.this_trigger_mannequin_tp
+tag @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin,predicate=42:posers/custom_sitting] remove 42.tag.posers.this_trigger_mannequin_tp
+
 execute if score @s poser matches 1501 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/mannequin/init
 execute if score @s poser matches 1502 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/mannequin/unlink
 execute if score @s poser matches 1503 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/mannequin/freeze
@@ -26,6 +30,15 @@ execute if score @s poser matches 2007 if items entity @s weapon.mainhand *[cust
 execute if score @s poser matches 2007 if items entity @s weapon.mainhand *[custom_name] run return run title @s actionbar [{text:"",color:"yellow"},{text:"Set CustomName for ",color:"gold"},{selector:"@n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin]"}]
 execute if score @s poser matches 2007 run return run tellraw @s {text:"Failed to set name. Hold an item with a custom_name to copy, or an empty hand to clear the name.",color:"red"}
 execute if score @s poser matches 2008 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/toggle_resistance
+execute if score @s poser matches 2009 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/copy_slot {slot:"armor.head"}
+execute if score @s poser matches 2010 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/copy_slot {slot:"armor.chest"}
+execute if score @s poser matches 2011 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/copy_slot {slot:"armor.legs"}
+execute if score @s poser matches 2012 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/copy_slot {slot:"armor.feet"}
+execute if score @s poser matches 2013 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/copy_slot {slot:"weapon.mainhand"}
+execute if score @s poser matches 2014 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/copy_slot {slot:"weapon.offhand"}
+execute if score @s poser matches 2015 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/copy_slots
+execute if score @s poser matches 2016 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/drop_slots
+execute if score @s poser matches 2017 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/swap_hands
 
 execute if score @s poser matches 3001 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/toggle_nbt {key:"immovable",default:"false",stored:"true"}
 execute if score @s poser matches 3002 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/toggle_nbt {key:"hide_description",default:"false",stored:"true"}
@@ -59,31 +72,32 @@ execute if score @s poser matches 3108 run return run title @s actionbar [{text:
 execute if score @s poser matches 3109 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run data modify entity @s hidden_layers set value []
 execute if score @s poser matches 3109 run return run title @s actionbar [{text:"",color:"yellow"},{text:"Set all layers to visible for ",color:"gold"},{selector:"@n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin]"}]
 
+execute if score @s poser matches 3201..3205 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin,predicate=42:posers/custom_sitting] run function 42:posers/mannequin/ai/sit_end
 execute if score @s poser matches 3201 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/set_nbt {key:"pose",value:"standing",stored:"add"}
 execute if score @s poser matches 3202 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/set_nbt {key:"pose",value:"crouching",stored:"remove"}
 execute if score @s poser matches 3203 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/set_nbt {key:"pose",value:"sleeping",stored:"remove"}
 execute if score @s poser matches 3204 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/set_nbt {key:"pose",value:"swimming",stored:"remove"}
 execute if score @s poser matches 3205 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/trigger/action/set_nbt {key:"pose",value:"fall_flying",stored:"remove"}
-execute if score @s poser matches 3250 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run say TODO sitting pose
+execute if score @s poser matches 3250 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] run return run function 42:posers/mannequin/ai/sit_toggle
 
-execute if score @s poser matches 3301 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~-1 ~ ~
-execute if score @s poser matches 3302 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~-.25 ~ ~
-execute if score @s poser matches 3303 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~-.0625 ~ ~
-execute if score @s poser matches 3304 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~.0625 ~ ~
-execute if score @s poser matches 3305 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~.25 ~ ~
-execute if score @s poser matches 3306 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~1 ~ ~
-execute if score @s poser matches 3321 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~ ~-1 ~
-execute if score @s poser matches 3322 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~ ~-.25 ~
-execute if score @s poser matches 3323 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~ ~-.0625 ~
-execute if score @s poser matches 3324 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~ ~.0625 ~
-execute if score @s poser matches 3325 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~ ~.25 ~
-execute if score @s poser matches 3326 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~ ~1 ~
-execute if score @s poser matches 3341 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~ ~ ~-1
-execute if score @s poser matches 3342 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~ ~ ~-.25
-execute if score @s poser matches 3343 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~ ~ ~-.0625
-execute if score @s poser matches 3344 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~ ~ ~.0625
-execute if score @s poser matches 3345 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~ ~ ~.25
-execute if score @s poser matches 3346 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run tp @s ~ ~ ~1
+execute if score @s poser matches 3301 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~-1 ~ ~
+execute if score @s poser matches 3302 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~-.25 ~ ~
+execute if score @s poser matches 3303 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~-.0625 ~ ~
+execute if score @s poser matches 3304 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~.0625 ~ ~
+execute if score @s poser matches 3305 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~.25 ~ ~
+execute if score @s poser matches 3306 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~1 ~ ~
+execute if score @s poser matches 3321 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~ ~-1 ~
+execute if score @s poser matches 3322 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~ ~-.25 ~
+execute if score @s poser matches 3323 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~ ~-.0625 ~
+execute if score @s poser matches 3324 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~ ~.0625 ~
+execute if score @s poser matches 3325 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~ ~.25 ~
+execute if score @s poser matches 3326 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~ ~1 ~
+execute if score @s poser matches 3341 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~ ~ ~-1
+execute if score @s poser matches 3342 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~ ~ ~-.25
+execute if score @s poser matches 3343 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~ ~ ~-.0625
+execute if score @s poser matches 3344 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~ ~ ~.0625
+execute if score @s poser matches 3345 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~ ~ ~.25
+execute if score @s poser matches 3346 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s run return run tp @s ~ ~ ~1
 execute if score @s poser matches 3361..3386 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run tag @s remove 42.tag.posers.mannequin.ai.watch_player
 execute if score @s poser matches 3361 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run rotate @s ~-90 ~
 execute if score @s poser matches 3362 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run rotate @s ~-45 ~
@@ -99,9 +113,9 @@ execute if score @s poser matches 3384 as @n[type=mannequin,tag=42.tag.posers.th
 execute if score @s poser matches 3385 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run rotate @s ~ ~45
 execute if score @s poser matches 3386 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run rotate @s ~ ~90
 
-execute if score @s poser matches 3391 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s align x run return run tp @s ~.5 ~ ~
-execute if score @s poser matches 3392 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s positioned ~ ~.5 ~ align y run return run tp @s ~ ~ ~
-execute if score @s poser matches 3393 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s align z run return run tp @s ~ ~ ~.5
+execute if score @s poser matches 3391 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s align x run return run tp @s ~.5 ~ ~
+execute if score @s poser matches 3392 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s positioned ~ ~.5 ~ align y run return run tp @s ~ ~ ~
+execute if score @s poser matches 3393 as @n[tag=42.tag.posers.this_trigger_mannequin_tp] at @s align z run return run tp @s ~ ~ ~.5
 execute if score @s poser matches 3394..3395 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run tag @s remove 42.tag.posers.mannequin.ai.watch_player
 execute if score @s poser matches 3394 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run rotate @s ~ 0
 execute if score @s poser matches 3395 as @n[type=mannequin,tag=42.tag.posers.this_trigger_mannequin] at @s run return run rotate @s 0 ~

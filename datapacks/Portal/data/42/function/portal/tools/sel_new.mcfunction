@@ -5,7 +5,7 @@ function 42:gen/cmdfeed/hide
 tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},{text:"------------------------------\n",color:"dark_gray"},\
     {selector:"@s",color:"gold",bold:true},\
     {storage:"42:gen",nbt:"cmdfeed_btn",interpret:true},\
-    {text:" "},{text:"⟳",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203503"},hover_event:{action:"show_text",value:[{text:"Refresh Selection Screen\n\nSelection options are only sent to chat when first selecting equipment. Refresh to reselct the equipment and see changes."}]}}]
+    {text:" "},{text:"⟳",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203503"},hover_event:{action:"show_text",value:["","Refresh Selection Screen","\n\n",{text:"Selection options are only sent to chat when first selecting equipment. Refresh to reselct the equipment and see changes.",color:"gray"}]}}]
 
 execute if entity @s[tag=42.tag.portal.cube.tp] at @s run function 42:portal/cube/select
 execute if entity @s[tag=42.tag.portal.launch] at @s run function 42:portal/launch/select

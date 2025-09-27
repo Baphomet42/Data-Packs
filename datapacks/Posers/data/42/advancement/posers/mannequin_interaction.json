@@ -1,0 +1,47 @@
+{
+    "criteria": {
+        "attack": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:interaction",
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "42data": {
+                                "posers": {
+                                    "mannequin_interaction": {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "use": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:interaction",
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "42data": {
+                                "posers": {
+                                    "mannequin_interaction": {}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "attack",
+            "use"
+        ]
+    ],
+    "rewards": {
+        "function": "42:posers/mannequin/interaction_reward"
+    }
+}

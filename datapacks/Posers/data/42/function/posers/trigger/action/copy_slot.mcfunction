@@ -1,0 +1,1 @@
+$item replace entity @s $(slot) from entity @a[tag=42.tag.posers.this_trigger_player,limit=1] weapon.mainhand

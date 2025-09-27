@@ -12,6 +12,8 @@ execute unless data storage 42:posers temp.macro.profile as @e[type=mannequin,li
 execute if data storage 42:posers temp.data.42data.posers.entity_data.Tags run data modify storage 42:posers temp.data.42data.posers.entity_data.Tags append value "42.tag.posers.new_spawn"
 data modify entity @e[type=mannequin,limit=1,tag=42.tag.posers.new_spawn] {} merge from storage 42:posers temp.data.42data.posers.entity_data
 
+execute if entity @s[tag=42.tag.posers.mannequin.spawn_sitting] as @e[type=mannequin,limit=1,tag=42.tag.posers.new_spawn] run function 42:posers/mannequin/ai/sit_start
+
 execute as @e[type=mannequin,limit=1,tag=42.tag.posers.new_spawn,tag=42.tag.posers.mannequin] run function 42:posers/mannequin/init
 
 data remove storage 42:posers temp

@@ -14,7 +14,7 @@ execute if score @s poser matches 1 run tellraw @s \
     [{text:"",color:"gray"},\
     "   ",{text:"Posers...",color:"dark_gray"},\
     "\n      ","[",{text:"Init Poser",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1501"},hover_event:{action:"show_text",value:\
-        ["",{text:"Init Poser",bold:true},"\n\n",{text:"Summon interactions around mannequin for quick editing, like the Mannequin Poser item.",color:"gray"}]}},"]",\
+        ["",{text:"Init Poser",bold:true},"\n\n",{text:"Set mannequin as Poser. This enables left and right clicking mannequin for certain actions.",color:"gray"}]}},"]",\
     "  ","[",{text:"Unlink Poser",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1502"},hover_event:{action:"show_text",value:\
         ["",{text:"Unlink Poser",bold:true},"\n\n",{text:"Remove interactions so mannequin acts more vanilla.",color:"gray"}]}},"]",\
     "  ","[",{text:"Quick Freeze",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1503"},hover_event:{action:"show_text",value:\
@@ -37,7 +37,7 @@ execute if score @s poser matches 1 run tellraw @s \
         ["",{text:"mainhand -> description",bold:true},"\n\n",{text:"Copy custom_name of mainhand item to mannequin description.",color:"gray"}]}},"]",\
     "\n   ",{text:"Pose...",color:"dark_gray"},\
     "\n      ","[",{text:"sitting",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3250"},hover_event:{action:"show_text",value:\
-        ["",{text:"sitting",bold:true},"\n\n",{text:"Put mannequin in riding pose.",color:"gray"}]}},"]",\
+        ["",{text:"sitting",bold:true},"\n\n",{text:"Toggle riding pose.",color:"gray"}]}},"]",\
     "  ","[",{text:"standing",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3201"},hover_event:{action:"show_text",value:\
         ["",{text:"standing",bold:true},"\n\n",{text:"Set pose to standing.",color:"gray"}]}},"]",\
     "  ","[",{text:"crouching",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3202"},hover_event:{action:"show_text",value:\
@@ -89,6 +89,26 @@ execute if score @s poser matches 2 run tellraw @s \
         ["",{text:"Hide All",bold:true},"\n\n",{text:"Set visibility for all outer layers to hidden.",color:"gray"}]}},"]",\
     "  ","[",{text:"Show All",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3109"},hover_event:{action:"show_text",value:\
         ["",{text:"Show All",bold:true},"\n\n",{text:"Set visibility for all outer layers to visible.",color:"gray"}]}},"]",\
+    "\n   ",{text:"Mainhand -> Slot...",color:"dark_gray"},\
+    "\n      ","[",{text:"head",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2009"},hover_event:{action:"show_text",value:\
+        ["",{text:"head",bold:true},"\n\n",{text:"Copy your mainhand item to mannequin head slot.",color:"gray"}]}},"]",\
+    "  ","[",{text:"chest",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2010"},hover_event:{action:"show_text",value:\
+        ["",{text:"chest",bold:true},"\n\n",{text:"Copy your mainhand item to mannequin chest slot.",color:"gray"}]}},"]",\
+    "  ","[",{text:"legs",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2011"},hover_event:{action:"show_text",value:\
+        ["",{text:"legs",bold:true},"\n\n",{text:"Copy your mainhand item to mannequin legs slot.",color:"gray"}]}},"]",\
+    "  ","[",{text:"feet",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2012"},hover_event:{action:"show_text",value:\
+        ["",{text:"feet",bold:true},"\n\n",{text:"Copy your mainhand item to mannequin feet slot.",color:"gray"}]}},"]",\
+    "\n      ","[",{text:"mainhand",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2013"},hover_event:{action:"show_text",value:\
+        ["",{text:"mainhand",bold:true},"\n\n",{text:"Copy your mainhand item to mannequin mainhand slot.",color:"gray"}]}},"]",\
+    "  ","[",{text:"offhand",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2014"},hover_event:{action:"show_text",value:\
+        ["",{text:"offhand",bold:true},"\n\n",{text:"Copy your mainhand item to mannequin offhand slot.",color:"gray"}]}},"]",\
+    "\n   ",{text:"Equipment...",color:"dark_gray"},\
+    "\n      ","[",{text:"Copy All",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2015"},hover_event:{action:"show_text",value:\
+        ["",{text:"Copy All",bold:true},"\n\n",{text:"Copy your 6 equipment slots to mannequin.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Drop Copies",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2016"},hover_event:{action:"show_text",value:\
+        ["",{text:"Drop Copies",bold:true},"\n\n",{text:"Drops a copy of all mannequin items.",color:"gray"}]}},"]",\
+    "  ","[",{text:"Swap Hands",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2017"},hover_event:{action:"show_text",value:\
+        ["",{text:"Swap Hands",bold:true},"\n\n",{text:"Swap mannequin hand items.",color:"gray"}]}},"]",\
     ]
 execute if score @s poser matches 3 run tellraw @s \
     [{text:"",color:"gray"},\
@@ -116,9 +136,9 @@ execute if score @s poser matches 3 run tellraw @s \
     "  ","[",{text:"Z",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3393"},hover_event:{action:"show_text",value:\
         ["",{text:"Z",bold:true},"\n\n",{text:"Center to the nearest Z coordinate.",color:"gray"}]}},"]",\
     "  ","[",{text:"South",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3395"},hover_event:{action:"show_text",value:\
-        ["",{text:"South",bold:true},"\n\n",{text:"Rotate to face South.",color:"gray"}]}},"]",\
+        ["",{text:"South",bold:true},"\n\n",{text:"Rotate to reset yaw to 0.",color:"gray"}]}},"]",\
     "  ","[",{text:"Flat",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3394"},hover_event:{action:"show_text",value:\
-        ["",{text:"Flat",bold:true},"\n\n",{text:"Rotate level to the ground.",color:"gray"}]}},"]",\
+        ["",{text:"Flat",bold:true},"\n\n",{text:"Rotate to reset pitch to 0.",color:"gray"}]}},"]",\
     "\n      ",{text:"X:",color:"gray"},\
     "  ","[",{text:"-1",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3301"},hover_event:{action:"show_text",value:\
         ["",{text:"-1",bold:true},"\n\n",{text:"Teleport along X axis.",color:"gray"}]}},"]",\
@@ -209,7 +229,7 @@ execute if score @s poser matches 1 run return run tellraw @s \
     " ","[",{text:"1",color:"dark_gray",click_event:{action:"run_command",command:"/trigger poser set 1"},hover_event:{action:"show_text",value:\
         ["",{text:"Page 1",bold:true},"\n\n",{text:"Configure Poser",color:"gray"}]}},"]",\
     " ","[",{text:"2",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2"},hover_event:{action:"show_text",value:\
-        ["",{text:"Page 2",bold:true},"\n\n",{text:"Skin",color:"gray"}]}},"]",\
+        ["",{text:"Page 2",bold:true},"\n\n",{text:"Skin & Equipment",color:"gray"}]}},"]",\
     " ","[",{text:"3",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3"},hover_event:{action:"show_text",value:\
         ["",{text:"Page 3",bold:true},"\n\n",{text:"Entity Data",color:"gray"}]}},"]",\
     " ","[",{text:"4",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 4"},hover_event:{action:"show_text",value:\
@@ -223,7 +243,7 @@ execute if score @s poser matches 2 run return run tellraw @s \
     " ","[",{text:"1",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1"},hover_event:{action:"show_text",value:\
         ["",{text:"Page 1",bold:true},"\n\n",{text:"Configure Poser",color:"gray"}]}},"]",\
     " ","[",{text:"2",color:"dark_gray",click_event:{action:"run_command",command:"/trigger poser set 2"},hover_event:{action:"show_text",value:\
-        ["",{text:"Page 2",bold:true},"\n\n",{text:"Skin",color:"gray"}]}},"]",\
+        ["",{text:"Page 2",bold:true},"\n\n",{text:"Skin & Equipment",color:"gray"}]}},"]",\
     " ","[",{text:"3",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3"},hover_event:{action:"show_text",value:\
         ["",{text:"Page 3",bold:true},"\n\n",{text:"Entity Data",color:"gray"}]}},"]",\
     " ","[",{text:"4",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 4"},hover_event:{action:"show_text",value:\
@@ -237,7 +257,7 @@ execute if score @s poser matches 3 run return run tellraw @s \
     " ","[",{text:"1",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1"},hover_event:{action:"show_text",value:\
         ["",{text:"Page 1",bold:true},"\n\n",{text:"Configure Poser",color:"gray"}]}},"]",\
     " ","[",{text:"2",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2"},hover_event:{action:"show_text",value:\
-        ["",{text:"Page 2",bold:true},"\n\n",{text:"Skin",color:"gray"}]}},"]",\
+        ["",{text:"Page 2",bold:true},"\n\n",{text:"Skin & Equipment",color:"gray"}]}},"]",\
     " ","[",{text:"3",color:"dark_gray",click_event:{action:"run_command",command:"/trigger poser set 3"},hover_event:{action:"show_text",value:\
         ["",{text:"Page 3",bold:true},"\n\n",{text:"Entity Data",color:"gray"}]}},"]",\
     " ","[",{text:"4",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 4"},hover_event:{action:"show_text",value:\
@@ -251,7 +271,7 @@ execute if score @s poser matches 4 run return run tellraw @s \
     " ","[",{text:"1",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 1"},hover_event:{action:"show_text",value:\
         ["",{text:"Page 1",bold:true},"\n\n",{text:"Configure Poser",color:"gray"}]}},"]",\
     " ","[",{text:"2",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 2"},hover_event:{action:"show_text",value:\
-        ["",{text:"Page 2",bold:true},"\n\n",{text:"Skin",color:"gray"}]}},"]",\
+        ["",{text:"Page 2",bold:true},"\n\n",{text:"Skin & Equipment",color:"gray"}]}},"]",\
     " ","[",{text:"3",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger poser set 3"},hover_event:{action:"show_text",value:\
         ["",{text:"Page 3",bold:true},"\n\n",{text:"Entity Data",color:"gray"}]}},"]",\
     " ","[",{text:"4",color:"dark_gray",click_event:{action:"run_command",command:"/trigger poser set 4"},hover_event:{action:"show_text",value:\
@@ -268,3 +288,4 @@ execute if score @s poser matches 1002..1499 run tellraw @s [{text:"Invalid trig
 execute if score @s poser matches 1500.. run function 42:posers/trigger/poser_switch_score
 tag @a remove 42.tag.posers.this_trigger_player
 tag @e remove 42.tag.posers.this_trigger_mannequin
+tag @e remove 42.tag.posers.this_trigger_mannequin_tp

@@ -541,7 +541,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ `v0.8.0 mc1.21.9` Major Update (Current Branch - in development)
++ `v0.8.0+mc1.21.9` Major Update (9/27/2025)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.9
     + **All datapacks**
@@ -549,17 +549,17 @@ For datapack testing purposes only. Everything is experimental and may not be up
     + **Posers**
         + New datapack for decorating with mannequins in creative mode
 
-+ `v0.7.2 mc1.21.8` Minor Update (7/17/2025)
++ `v0.7.2+mc1.21.8` Minor Update (7/17/2025)
     + **All datapacks**
         + Supported versions: 1.21.7 - 1.21.8
 
-+ `v0.7.1 mc1.21.7` Minor Update (6/30/2025)
++ `v0.7.1+mc1.21.7` Minor Update (6/30/2025)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.7
     + **All datapacks**
         + Minecraft version updated to 1.21.7
 
-+ `v0.7.0 mc1.21.6` Major Update (6/12/2025)
++ `v0.7.0+mc1.21.6` Major Update (6/12/2025)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.6
     + **All datapacks**
@@ -570,7 +570,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
             + Receptacles can be powered by the laser
             + Lasers can be redirected using Discouragement Redirection Cubes
 
-+ `v0.6.0 mc1.21.5` Major Update (3/23/2025)
++ `v0.6.0+mc1.21.5` Major Update (3/23/2025)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.5
     + **All datapacks**
@@ -584,7 +584,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
                 + Assault Rifle
                 + Ray Gun
 
-+ `v0.5.0 mc1.21.4` Major Update (12/3/2024)
++ `v0.5.0+mc1.21.4` Major Update (12/3/2024)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.4
         + Before updating existing worlds with the datapacks:
@@ -618,17 +618,17 @@ For datapack testing purposes only. Everything is experimental and may not be up
                 + Everything else in-world will continue to work without the resource pack
             + The datapack can be configured to run without custom assets in config settings
 
-+ `v0.4.1 mc1.21.3` Minor Update (10/23/2024)
++ `v0.4.1+mc1.21.3` Minor Update (10/23/2024)
     + **All datapacks**
         + Supported versions: 1.21.2 - 1.21.3
 
-+ `v0.4.0 mc1.21.2` Major Update (10/20/2024)
++ `v0.4.0+mc1.21.2` Major Update (10/20/2024)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.2
     + **All datapacks**
         + Minecraft version updated to 1.21.2
 
-+ `v0.3.1 mc1.21.1` Minor Update (8/8/2024)
++ `v0.3.1+mc1.21.1` Minor Update (8/8/2024)
     + **All datapacks**
         + Supported versions: 1.21 - 1.21.1
     + **XLTT**
@@ -640,7 +640,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
     + **Historically Accurate Crafting**
         + Uncovered the true netherite armor recipes
 
-+ `v0.3.0 mc1.21` Major Update (8/2/2024)
++ `v0.3.0+mc1.21` Major Update (8/2/2024)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21
         + Before updating existing worlds with the datapacks:
@@ -664,11 +664,11 @@ For datapack testing purposes only. Everything is experimental and may not be up
     + **Essentials**
         + `/trigger hat` can now swap mainhand and helmet items
 
-+ `v0.2.1 mc1.20.6` Minor Update (4/29/2024)
++ `v0.2.1+mc1.20.6` Minor Update (4/29/2024)
     + **All datapacks**
         + Supported versions: 1.20.5 - 1.20.6
 
-+ `v0.2.0 mc1.20.5` Major Update (4/20/2024)
++ `v0.2.0+mc1.20.5` Major Update (4/20/2024)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.20.5
         + Before updating existing worlds with the datapacks:

@@ -160,7 +160,7 @@ The following files should be added (or modified to include the specified conten
             + `42menu.mcfunction` (exact same in every pack)
             + `error_perms.mcfunction` (exact same in every pack, must be paired with 42op advancement setup)
             + `<pack>/`
-                + `load.mcfunction` (to run `schedule function 42:42menu 1t replace`)
+                + `load.mcfunction` (to run `scoreboard objectives add 42menu trigger` and `schedule function 42:42menu 1t replace`)
                 + `menu.mcfunction` (to include all menu related logic; name and path can differ as long as it's under `<pack>/`)
         + `tags/`
             + `function/`

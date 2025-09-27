@@ -1,3 +1,4 @@
+execute store result score @s 42.obj.posers.scale run attribute @s minecraft:scale get 1000
 execute if score @s 42.obj.posers.scale matches ..1000 anchored eyes facing entity @p[distance=..8,gamemode=!spectator,predicate=42:posers/seen_by_posers] eyes run return run rotate @s ~ ~
 
 execute store result storage 42:posers temp.dist double .008 run scoreboard players get @s 42.obj.posers.scale

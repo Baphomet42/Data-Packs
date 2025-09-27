@@ -71,6 +71,8 @@ execute unless data storage 42:posers temp.item.Item.components.minecraft:custom
 execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.hidden_layers[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.hidden_layers
 execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.active_effects[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.active_effects
 
+execute if predicate 42:posers/custom_sitting run data modify storage 42:posers temp.item.Item.components.minecraft:entity_data.Tags append value "42.tag.posers.mannequin.spawn_sitting"
+
 function 42:posers/mannequin/spawner/switch_name
 function 42:posers/mannequin/spawner/switch_lore
 execute if entity @s[tag=!42.tag.posers.mannequin] run data remove storage 42:posers temp.item.Item.components.minecraft:item_name[1]
