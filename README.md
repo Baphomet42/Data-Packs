@@ -38,6 +38,10 @@ Note that features may have changed since these were published
     + Planet Minecraft: https://www.planetminecraft.com/data-pack/portal-6207130/
     + Demo Video: https://www.youtube.com/watch?v=7DOdCyrxeMw
 
++ Posers
+    + Planet Minecraft: https://www.planetminecraft.com/data-pack/posers-mannequin-building-tools/
+    + Demo Video: https://www.youtube.com/watch?v=WPzqw4v9_Vg
+
 ----------------------------------------------------------------
 
 # Datapack Descriptions
