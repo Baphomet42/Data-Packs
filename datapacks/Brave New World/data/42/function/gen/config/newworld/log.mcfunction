@@ -1,2 +1,2 @@
-data modify storage 42:config packs.history.newworld set value {version:"v0.8.1+mc1.21.10"}
-data modify storage 42:config packs.active.newworld set value {name:"Brave New World",version:"v0.8.1+mc1.21.10"}
+data modify storage 42:config packs.history.newworld set value {version:"v0.9.0+mc1.21.11"}
+data modify storage 42:config packs.active.newworld set value {name:"Brave New World",version:"v0.9.0+mc1.21.11"}

@@ -1,0 +1,73 @@
+{
+    "description": "O.D.M.",
+    "supported_items": [],
+    "primary_items": [],
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand",
+        "offhand"
+    ],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "42.obj.xltt.odm_motion": 1
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "42:xltt/odm/tick_start"
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "42.obj.xltt.odm_motion": 1
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.15
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "42.obj.xltt.odm_motion": 1
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "42:xltt/odm/tick_end"
+                }
+            }
+        ]
+    }
+}

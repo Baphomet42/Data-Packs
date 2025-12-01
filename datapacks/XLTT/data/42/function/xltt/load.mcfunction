@@ -1,7 +1,8 @@
 scoreboard objectives add 42menu trigger
 
-scoreboard objectives add 42.obj.xltt.click minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add 42.obj.xltt.odm_click dummy
 scoreboard objectives add 42.obj.xltt.odm_time dummy
+scoreboard objectives add 42.obj.xltt.odm_motion dummy
 scoreboard objectives add 42.obj.xltt.id dummy
 scoreboard objectives add 42.obj.xltt.temp dummy
 scoreboard objectives add 42.obj.xltt.odm_x dummy

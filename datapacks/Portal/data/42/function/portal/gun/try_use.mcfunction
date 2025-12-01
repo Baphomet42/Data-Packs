@@ -1,5 +1,3 @@
-scoreboard players reset @s 42.obj.portal.click_gun_1
-scoreboard players reset @s 42.obj.portal.click_gun_2
 tag @s remove 42.tag.portal.gun.arg_a
 tag @s remove 42.tag.portal.gun.arg_b
 execute if items entity @s weapon.mainhand *[custom_data~{42data:{portal:{portal_gun:{pair_type:0}}}}] run tag @s add 42.tag.portal.gun.arg_a

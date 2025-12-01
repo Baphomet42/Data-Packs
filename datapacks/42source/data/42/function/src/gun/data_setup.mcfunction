@@ -12,6 +12,7 @@ data modify storage 42:src data.gun.default_item set value \
             "!minecraft:food":{},\
             "minecraft:max_stack_size":1,\
             "minecraft:consumable":{consume_seconds:2000000000,has_consume_particles:false,sound:"intentionally_empty",animation:"bow"},\
+            "minecraft:use_effects":{can_sprint:true,speed_multiplier:1f},\
             "minecraft:rarity":"common",\
             "minecraft:item_name":"Gun",\
             "minecraft:item_model":"minecraft:stick",\

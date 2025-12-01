@@ -1,7 +1,7 @@
 
 ----------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 1.21.10
+# Separate but compatible datapacks for Minecraft 1.21.11
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
@@ -15,7 +15,6 @@ Most packs are proof of concepts and not intended for existing worlds.
     + [42source](#42source)
     + [XLTT](#xltt)
     + [Brave New World](#brave-new-world)
-    + [Historically Accurate Crafting](#historically-accurate-crafting)
     + [DuhBuhDuh](#duhbuhduh)
     + [BaphomethSlab](#baphomethslab)
 + [Datapack Info](#datapack-info)
@@ -262,20 +261,20 @@ Optional resource pack - see [below](#resource-pack-info)
     + Full co-op level support is planned for the future
 + **Important Information Specific to Portal Datapack**
     + See generic information at the end of this file
-    + To ensure portal guns aren't lost when players die, run `/gamerule keepInventory true`
+    + To ensure portal guns aren't lost when players die, run `/gamerule keep_inventory true`
     + Each update to the datapack may change how equipment spawns, functions, and gets killed
         + Before updating the datapack, it is recommended to fizzle all equipment and place it again after updating
     + Worlds running this datapack should be set to Easy, Normal, or Hard Mode (not Peaceful)
         + Running this in Peaceful Mode could cause problems with vital entities unable to be summoned
-        + Turning off spawning with `/gamerule doMobSpawning false` is ok
-        + `/gamerule mobGriefing false` is recommended (but not required)
+        + Turning off spawning with `/gamerule spawn_mobs false` is ok
+        + `/gamerule mob_griefing false` is recommended (but not required)
             + This prevents enderman from moving blocks and breaking equipment
     + Simulation distance should be high enough to prevent nearby equipment from being unloaded
         + Most types of equipment need to be loaded in order for other things like doors and buttons to register them
         + The simulation distance should always be high enough to fit the entire current level from anywhere within the level
         + Playing with a moderate distance like 8-15 chunks is probably good enough for most cases
     + When portals are placed on walls that are only 1 block thick, light will be able to shine through
-        + Setting `/gamerule doDaylightCycle false` and `/time set midnight` will stop sunlight from coming into levels this way
+        + Setting `/gamerule advance_time false` and `/time set midnight` will stop sunlight from coming into levels this way
         + Otherwise, making walls thicker or surrounding levels in solid boxes will solve this too
 + **Portal Games**
     + This datapack is based on the games Portal and Portal 2 by Valve
@@ -364,23 +363,6 @@ Datapack to test custom dimensions and biomes. Do not add to existing worlds, as
 + *New Dimension*
     + Just a superflat world for testing
     + Custom biome to make it look cooler
-
-### **Historically Accurate Crafting**
-
-Joke pack that changes crafting recipes to be more annoying.
-
-+ *Fixed tools recipes*
-    + Tools are crafted diagonally like how the item looks
-        + The stick items don't even line up correctly in the old recipe
-    + Stone tools ain't called cobblestone tools for a reason
-        + All stone tools are now crafted with STONE
-    + What is a smithing table?
-        + Netherite tools don't get to be special
-        + They are crafted just like the rest of the tools
-    + Arrows, brushes, and spyglasses
-        + These should be fixed too but I'm not doing all the work for Mojang
-+ *Please add fire items back to the game so I can add the chainmail recipes*
-    + Thanks
 
 ### **DuhBuhDuh**
 
@@ -544,6 +526,19 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ----------------------------------------------------------------
 
 # Changelog
+
++ `v0.9.0+mc1.21.11` Major Update (current repo)
+    + **IMPORTANT**
+        + The required Minecraft version has changed to 1.21.11
+    + **All datapacks**
+        + Minecraft version updated to 1.21.11
+    + **42source**
+        + Firing a gun no longer slows movement
+    + **Historically Accurate Crafting**
+        + Datapack is no longer supported
+        + Spear recipe conflicted with shovel and broke reality
+    + **XLTT**
+        + Revamped O.D.M. physics
 
 + `v0.8.1+mc1.21.10` Minor Update (10/7/2025)
     + **All datapacks**

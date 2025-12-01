@@ -1,1 +1,0 @@
-schedule function 42:gen/config/refresh_pack_list 5t replace

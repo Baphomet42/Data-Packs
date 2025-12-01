@@ -1,10 +1,10 @@
 
-execute store result storage 42:gen cmdfeed_test int 1 run gamerule sendCommandFeedback
+execute store result storage 42:gen cmdfeed_test int 1 run gamerule send_command_feedback
 data modify storage 42:gen cmdfeed_btn set value ""
 execute unless data storage 42:gen {cmdfeed_test:1} unless data storage 42:gen {cmdfeed:1} run return run data remove storage 42:gen cmdfeed_test
-data modify storage 42:gen cmdfeed_btn set value [{text:" "},{text:"🖶",color:"#DDDDDD",click_event:{action:"run_command",command:"/gamerule sendCommandFeedback true"},hover_event:{action:"show_text",value:["","Enable Command Feedback","\n\n",{text:"Command feedback is temporarily disabled when this menu is displayed, preventing trigger messages from spamming chat. Wait a few seconds, or click here to re-enable command feedback immediately.",color:"gray"}]}}]
+data modify storage 42:gen cmdfeed_btn set value [{text:" "},{text:"🖶",color:"#DDDDDD",click_event:{action:"run_command",command:"/gamerule send_command_feedback true"},hover_event:{action:"show_text",value:["","Enable Command Feedback","\n\n",{text:"Command feedback is temporarily disabled when this menu is displayed, preventing trigger messages from spamming chat. Wait a few seconds, or click here to re-enable command feedback immediately.",color:"gray"}]}}]
 
 data remove storage 42:gen cmdfeed_test
 data modify storage 42:gen cmdfeed set value 1
-gamerule sendCommandFeedback false
+gamerule send_command_feedback false
 schedule function 42:gen/cmdfeed/reset 300t replace

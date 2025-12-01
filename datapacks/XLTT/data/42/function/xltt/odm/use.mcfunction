@@ -1,3 +1,7 @@
+advancement revoke @s only 42:xltt/use_odm
+execute if score @s 42.obj.xltt.odm_click matches 1.. run return run scoreboard players set @s 42.obj.xltt.odm_click 5
+scoreboard players set @s 42.obj.xltt.odm_click 5
+
 function 42:xltt/match_id
 execute if items entity @s weapon.mainhand *[custom_data~{42data:{xltt:{odm:{}}}}] if items entity @s weapon.offhand *[custom_data~{42data:{xltt:{odm:{}}}}] run tag @s add 42.tag.xltt.odm.dual
 execute unless entity @s[tag=42.tag.xltt.odm.dual] as @e[tag=42.tag.xltt.odm.wire,predicate=42:xltt/match_id] at @s run function 42:xltt/odm/break

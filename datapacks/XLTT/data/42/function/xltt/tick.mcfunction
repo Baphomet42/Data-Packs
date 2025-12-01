@@ -1,13 +1,12 @@
 execute as @a unless score @s 42.obj.xltt.id matches 1.. run function 42:xltt/id
 
 # odm
-execute as @a[scores={42.obj.xltt.click=1..}] if items entity @s weapon.* *[custom_data~{42data:{xltt:{odm:{}}}}] at @s run function 42:xltt/odm/use
+scoreboard players remove @a[scores={42.obj.xltt.odm_click=1..}] 42.obj.xltt.odm_click 1
+scoreboard players set @a 42.obj.xltt.odm_motion 0
 execute as @a[predicate=42:input_sneak] if items entity @s weapon.* *[custom_data~{42data:{xltt:{odm:{}}}}] at @s run function 42:xltt/odm/attempt_pull
 execute as @a[tag=42.tag.xltt.odm.lev,predicate=!42:input_sneak] at @s run function 42:xltt/odm/cancel
 execute as @e[type=marker,tag=42.tag.xltt.odm.wire,tag=!42.tag.xltt.odm.hit] at @s run function 42:xltt/odm/find_target
 execute as @e[type=marker,tag=42.tag.xltt.odm.wire,tag=42.tag.xltt.odm.hit] at @s run function 42:xltt/odm/attempt_break
-execute as @e[tag=42.tag.xltt.odm.marker] at @s run function 42:xltt/odm/attempt_marker_stop
-execute as @a[tag=42.tag.xltt.odm.motion] at @s run function 42:xltt/odm/motion
 
 # titan
 execute as @e[type=area_effect_cloud,tag=42.tag.xltt.titan.spawn_effect] at @s run summon lightning_bolt ~ ~7.75 ~
@@ -30,6 +29,4 @@ scoreboard players add @e[tag=42.tag.xltt.titan.appear] 42.obj.xltt.titan_time 1
 kill @e[type=marker,tag=42.tag.xltt.titan.appear,scores={42.obj.xltt.titan_time=40..}]
 
 # end
-scoreboard players set @a 42.obj.xltt.click 0
-
 schedule function 42:xltt/tick 1t replace
