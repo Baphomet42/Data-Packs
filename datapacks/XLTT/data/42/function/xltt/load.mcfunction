@@ -1,6 +1,7 @@
 scoreboard objectives add 42menu trigger
 
-scoreboard objectives add 42.obj.xltt.odm_click dummy
+scoreboard objectives add 42.obj.xltt.odm_use dummy
+scoreboard objectives add 42.obj.xltt.odm_cooldown dummy
 scoreboard objectives add 42.obj.xltt.odm_time dummy
 scoreboard objectives add 42.obj.xltt.odm_motion dummy
 scoreboard objectives add 42.obj.xltt.id dummy

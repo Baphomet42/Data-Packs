@@ -1,8 +1,7 @@
 execute if entity @s[nbt={OnGround:false}] store result score @s 42.obj.portal.var.y run data get entity @s Motion[1] 1000
 execute if score @s 42.obj.portal.death matches 1.. at @s run function 42:portal/level/unload
-execute if items entity @s weapon.mainhand *[custom_data~{42data:{portal:{portal_gun:{}}}}] at @s run function 42:portal/gun/tick
-scoreboard players reset @s 42.obj.portal.click_gun_1
-scoreboard players reset @s 42.obj.portal.click_gun_2
+scoreboard players remove @s[scores={42.obj.portal.gun_use=1..}] 42.obj.portal.gun_use 1
+scoreboard players remove @s[scores={42.obj.portal.gun_cooldown=1..}] 42.obj.portal.gun_cooldown 1
 execute if score @s 42.obj.portal.sel matches 1.. at @s run function 42:portal/tools/sel_tick_player
 
 tag @e remove 42.tag.portal.temp

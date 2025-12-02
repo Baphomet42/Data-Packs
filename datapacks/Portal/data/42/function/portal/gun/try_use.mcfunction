@@ -1,3 +1,9 @@
+advancement revoke @s only 42:portal/use_portal_gun
+execute if score @s 42.obj.portal.gun_use matches 1.. run return run scoreboard players set @s 42.obj.portal.gun_use 2
+execute if score @s 42.obj.portal.gun_cooldown matches 1.. run return fail
+scoreboard players set @s 42.obj.portal.gun_use 2
+scoreboard players set @s 42.obj.portal.gun_cooldown 10
+
 tag @s remove 42.tag.portal.gun.arg_a
 tag @s remove 42.tag.portal.gun.arg_b
 execute if items entity @s weapon.mainhand *[custom_data~{42data:{portal:{portal_gun:{pair_type:0}}}}] run tag @s add 42.tag.portal.gun.arg_a

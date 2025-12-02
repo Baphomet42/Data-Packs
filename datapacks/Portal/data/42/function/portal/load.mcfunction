@@ -13,8 +13,8 @@ scoreboard objectives add 42.obj.portal.var.y dummy
 scoreboard objectives add 42.obj.portal.var.z dummy
 scoreboard objectives add 42.obj.portal.link dummy
 scoreboard objectives add 42.obj.portal.cool dummy
-scoreboard objectives add 42.obj.portal.click_gun_1 minecraft.used:minecraft.warped_fungus_on_a_stick
-scoreboard objectives add 42.obj.portal.click_gun_2 minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add 42.obj.portal.gun_use dummy
+scoreboard objectives add 42.obj.portal.gun_cooldown dummy
 scoreboard objectives add 42.obj.portal.xrot1 dummy
 scoreboard objectives add 42.obj.portal.yrot1 dummy
 scoreboard objectives add 42.obj.portal.xrot2 dummy

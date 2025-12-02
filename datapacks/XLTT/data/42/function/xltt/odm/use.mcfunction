@@ -1,6 +1,8 @@
 advancement revoke @s only 42:xltt/use_odm
-execute if score @s 42.obj.xltt.odm_click matches 1.. run return run scoreboard players set @s 42.obj.xltt.odm_click 5
-scoreboard players set @s 42.obj.xltt.odm_click 5
+execute if score @s 42.obj.xltt.odm_use matches 1.. run return run scoreboard players set @s 42.obj.xltt.odm_use 2
+execute if score @s 42.obj.xltt.odm_cooldown matches 1.. run return fail
+scoreboard players set @s 42.obj.xltt.odm_use 2
+scoreboard players set @s 42.obj.xltt.odm_cooldown 10
 
 function 42:xltt/match_id
 execute if items entity @s weapon.mainhand *[custom_data~{42data:{xltt:{odm:{}}}}] if items entity @s weapon.offhand *[custom_data~{42data:{xltt:{odm:{}}}}] run tag @s add 42.tag.xltt.odm.dual
