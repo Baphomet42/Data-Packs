@@ -527,7 +527,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ `v0.9.0+mc1.21.11` Major Update (current repo)
++ `v0.9.0+mc1.21.11` Major Update (12/6/2025)
     + **IMPORTANT**
         + The required Minecraft version has changed to 1.21.11
     + **All datapacks**
