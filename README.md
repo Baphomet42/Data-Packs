@@ -698,6 +698,6 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 ----------------------------------------------------------------
 
-*© 2025 BaphomethLabs*
+*© 2026 BaphomethLabs*
 
 ----------------------------------------------------------------
