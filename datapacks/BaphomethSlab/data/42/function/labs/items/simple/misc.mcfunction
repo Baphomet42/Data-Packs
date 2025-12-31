@@ -32,6 +32,9 @@ summon item ~ ~ ~ {Item:{components:{"minecraft:attribute_modifiers":[{amount:0.
 # glow up
 summon item ~ ~ ~ {Item:{components:{"minecraft:consumable":{consume_seconds:0.0f,on_consume_effects:[{effects:[{duration:-1,id:"minecraft:glowing",show_icon:false,show_particles:false}],type:"minecraft:apply_effects"},{sound:"minecraft:block.beacon.power_select",type:"minecraft:play_sound"}],sound:"minecraft:block.bell.resonate"},"minecraft:item_name":{bold:true,color:"yellow",text:"Glow Up"},"minecraft:lore":["",{color:"gold",text:"BaphomethLabs"}]},count:1,id:"minecraft:glowstone_dust"}}
 
+# goofer dust
+summon item ~ ~ ~ {Item:{components:{"minecraft:consumable":{consume_seconds:0.0f,on_consume_effects:[{effects:[{duration:-1,id:"minecraft:glowing",show_icon:0b,show_particles:0b},{duration:-1,id:"minecraft:night_vision",show_icon:0b,show_particles:0b}],type:"minecraft:apply_effects"},{sound:"minecraft:entity.parrot.imitate.wither",type:"minecraft:play_sound"}],sound:"minecraft:ambient.soul_sand_valley.mood"},"minecraft:item_model":"minecraft:gunpowder","minecraft:item_name":{bold:1b,color:"dark_blue",text:"Goofer Dust"},"minecraft:lore":["",{color:"gold",text:"BaphomethLabs"}]},count:1,id:"minecraft:glowstone_dust"}}
+
 # 42 banner
 summon item ~ ~ ~ {Item:{components:{"minecraft:banner_patterns":[{color:"black",pattern:"minecraft:curly_border"},{color:"black",pattern:"minecraft:bricks"},{color:"red",pattern:"minecraft:triangle_bottom"},{color:"black",pattern:"minecraft:triangle_bottom"},{color:"purple",pattern:"minecraft:flower"},{color:"black",pattern:"minecraft:gradient"}]},count:1,id:"minecraft:red_banner"}}
 
