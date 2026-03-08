@@ -1,7 +1,7 @@
 
 ----------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 1.21.11
+# Separate but compatible datapacks for Minecraft 26.1
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
@@ -274,7 +274,7 @@ Optional resource pack - see [below](#resource-pack-info)
         + The simulation distance should always be high enough to fit the entire current level from anywhere within the level
         + Playing with a moderate distance like 8-15 chunks is probably good enough for most cases
     + When portals are placed on walls that are only 1 block thick, light will be able to shine through
-        + Setting `/gamerule advance_time false` and `/time set midnight` will stop sunlight from coming into levels this way
+        + Setting `/gamerule advance_time false` and `/time set minecraft:midnight` will stop sunlight from coming into levels this way
         + Otherwise, making walls thicker or surrounding levels in solid boxes will solve this too
 + **Portal Games**
     + This datapack is based on the games Portal and Portal 2 by Valve
@@ -393,9 +393,8 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ### **Setup**
 
 + Datapacks are placed into a specific Minecraft world and only function within that world
-+ Download one or more datapacks from `stable releases/datapacks/` or [GitHub Releases](https://github.com/Baphomet42/Data-Packs/releases)
-    + These zip files in are more stable versions and marked with a version number
-    + The folders in the main repo folder within `datapacks/` are the latest dev version, but may be unstable and contain bugs
++ Download one or more datapacks from the `stable releases` folder or [GitHub Releases](https://github.com/Baphomet42/Data-Packs/releases)
+    + The files not within the `stable releases` are the current dev branch and may be unstable
     + Only use the packs in the correct Minecraft version
 + Place any number of datapacks into `.minecraft/saves/<World Name Here>/datapacks/`
     + The final path should look something like `.minecraft/saves/New World/datapacks/Portal v0.0 mc1.20.zip`
@@ -476,13 +475,12 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 ### **Setup**
 
-+ Download pack at `stable releases/resourcepacks/resources.zip` or [GitHub Releases](https://github.com/Baphomet42/Data-Packs/releases)
-    + There is only one resource pack that handles all datapacks
-    + For the latest dev version, use `resources.zip` or `resourcepacks/42datapacks` in the main repo folder
-        + The `resources.zip` file is created by zipping the **contents** of the `42datapacks` folder, not a zip of the folder itself
++ Download pack from the `stable releases` folder or [GitHub Releases](https://github.com/Baphomet42/Data-Packs/releases)
+    + The files not within the `stable releases` are the current dev branch and may be unstable
+    + There is only one resource pack and it handles all datapacks
 
 + Install pack (do only one of the following)
-    + a- Place `resources.zip` into the world save
+    + a- Place `resources.zip` into the world save path like `.minecraft/saves/New World/resourcepacks/resources.zip`
         + Textures will load automatically each time you join the world
         + Textures will not work outside the world
         + All players will automatically see the textures
@@ -526,6 +524,12 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ----------------------------------------------------------------
 
 # Changelog
+
++ `v0.10.0+mc26.1` Major Update (WIP)
+    + **IMPORTANT**
+        + The required Minecraft version has changed to 26.1
+    + **All datapacks**
+        + Minecraft version updated to 26.1
 
 + `v0.9.0+mc1.21.11` Major Update (12/6/2025)
     + **IMPORTANT**
