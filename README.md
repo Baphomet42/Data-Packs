@@ -525,7 +525,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ `v0.10.0+mc26.1` Major Update (WIP)
++ `v0.10.0+mc26.1` Major Update (3/19/2026)
     + **IMPORTANT**
         + The required Minecraft version has changed to 26.1
     + **All datapacks**
