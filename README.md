@@ -1,7 +1,7 @@
 
 ----------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 26.1
+# Separate but compatible datapacks for Minecraft 26.1 - 26.1.1
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
@@ -529,7 +529,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
     + **IMPORTANT**
         + The required Minecraft version has changed to 26.1
     + **All datapacks**
-        + Minecraft version updated to 26.1
+        + Supported versions: 26.1 - 26.1.1
 
 + `v0.9.0+mc1.21.11` Major Update (12/6/2025)
     + **IMPORTANT**
