@@ -34,6 +34,7 @@
         "minecraft:gameplay/snow_golem_melts": false
     },
     "coordinate_scale": 1,
+    "default_clock": "minecraft:overworld",
     "has_ceiling": false,
     "has_ender_dragon_fight": false,
     "has_skylight": true,
