@@ -12,11 +12,11 @@ execute at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.start,limit=1] pos
 execute if score #42.var.portal.dummy 42.obj.portal.temp matches 0 run tag @s add 42.tag.portal.temp3
 
 execute if score @s 42.obj.portal.var.x matches 0..5 run tag @s add 42.tag.portal.temp
-execute unless entity @s[tag=42.tag.portal.temp] at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end,limit=1] positioned ~-2 ~-1 ~-2 run function 42:portal/generic/test_range {dx:4,dy:3,dz:4,mode:unless,block:"'#42:portal/portal_replace'"}
-execute unless entity @s[tag=42.tag.portal.temp] if score #42.var.portal.dummy 42.obj.portal.temp matches 1 at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end,limit=1] positioned ~-2 ~-1 ~-2 run function 42:portal/generic/find_all {dx:4,dy:3,dz:4,mode:unless,block:"'#42:portal/portal_replace'"}
+execute unless entity @s[tag=42.tag.portal.temp] at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end,limit=1] positioned ~-2 ~-1 ~-2 run function 42:portal/generic/test_range {dx:4,dy:3,dz:4,mode:"unless",block:"'#42:portal/portal_replace'"}
+execute unless entity @s[tag=42.tag.portal.temp] if score #42.var.portal.dummy 42.obj.portal.temp matches 1 at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end,limit=1] positioned ~-2 ~-1 ~-2 run function 42:portal/generic/find_all {dx:4,dy:3,dz:4,mode:"unless",block:"'#42:portal/portal_replace'"}
 execute unless entity @s[tag=42.tag.portal.temp2] unless entity @s[tag=42.tag.portal.temp] if score #42.var.portal.dummy 42.obj.portal.temp matches 0 run function 42:portal/elevator/move/dec_y
-execute if entity @s[tag=42.tag.portal.temp] at @s if score @s 42.obj.portal.var.x matches 0 positioned ~-1 ~-1.5 ~-1 run function 42:portal/generic/test_range {dx:2,dy:0,dz:2,mode:unless,block:"'#42:portal/portal_replace'"}
-execute if entity @s[tag=42.tag.portal.temp] at @s if score @s 42.obj.portal.var.x matches 0 if score #42.var.portal.dummy 42.obj.portal.temp matches 1 positioned ~-1 ~-1.5 ~-1 run function 42:portal/generic/find_all {dx:2,dy:0,dz:2,mode:unless,block:"'#42:portal/portal_replace'"}
+execute if entity @s[tag=42.tag.portal.temp] at @s if score @s 42.obj.portal.var.x matches 0 positioned ~-1 ~-1.5 ~-1 run function 42:portal/generic/test_range {dx:2,dy:0,dz:2,mode:"unless",block:"'#42:portal/portal_replace'"}
+execute if entity @s[tag=42.tag.portal.temp] at @s if score @s 42.obj.portal.var.x matches 0 if score #42.var.portal.dummy 42.obj.portal.temp matches 1 positioned ~-1 ~-1.5 ~-1 run function 42:portal/generic/find_all {dx:2,dy:0,dz:2,mode:"unless",block:"'#42:portal/portal_replace'"}
 execute unless entity @s[tag=42.tag.portal.temp3] if entity @s[tag=42.tag.portal.temp] at @s if score @s 42.obj.portal.var.x matches 0 if score #42.var.portal.dummy 42.obj.portal.temp matches 0 run function 42:portal/elevator/move/dec_y
 execute if entity @s[tag=42.tag.portal.temp] at @s if score @s 42.obj.portal.var.x matches 5 run function 42:portal/elevator/move/set_none
 

@@ -1,4 +1,4 @@
-tag @s add 42.tag.portal.motion.tp
+function 42:portal/generic/motion/start
 execute store result score @s 42.obj.portal.var.x run data get entity @s Motion[0] 1000
 execute store result score @s 42.obj.portal.var.z run data get entity @s Motion[2] 1000
 scoreboard players set @s 42.obj.portal.cool 0

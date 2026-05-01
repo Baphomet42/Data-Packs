@@ -1,6 +1,6 @@
 scoreboard players operation #42.var.portal.temp_unpower 42.obj.portal.temp = @s 42.obj.portal.xrot2
 
-execute as @e[tag=42.tag.portal.dropper,tag=42.tag.portal.dropper.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/dropper/unpower
+execute as @e[tag=42.tag.portal.vent,tag=42.tag.portal.vent.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/vent/unpower
 execute as @e[tag=42.tag.portal.wire] if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/wire/unpower
 execute as @e[tag=42.tag.portal.door,tag=42.tag.portal.door.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/door/unpower
 execute as @e[tag=42.tag.portal.laser.emitter,tag=42.tag.portal.laser.emitter.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/laser/emitter/unpower

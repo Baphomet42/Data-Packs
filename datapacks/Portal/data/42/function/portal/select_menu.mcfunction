@@ -78,14 +78,14 @@ execute if score @s 42menu matches 4203575 as @e[limit=1,tag=42.tag.portal.selec
 execute if score @s 42menu matches 4203576 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.portal] at @s run function 42:portal/portal/skin
 execute if score @s 42menu matches 4203577 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.portal] at @s run function 42:portal/portal/spawner/try_spawn
 
-execute if score @s 42menu matches 4203580..4203589 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.dropper] run function 42:portal/tools/sel_error
-execute if score @s 42menu matches 4203580 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.dropper] at @s run function 42:portal/dropper/fizzle
-execute if score @s 42menu matches 4203581 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.dropper] at @s run function 42:portal/dropper/cycle
-execute if score @s 42menu matches 4203582 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.dropper] at @s run function 42:portal/dropper/skin
-execute if score @s 42menu matches 4203583 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.dropper] at @s run function 42:portal/dropper/power
-execute if score @s 42menu matches 4203584 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.dropper] at @s run function 42:portal/dropper/unpower
-execute if score @s 42menu matches 4203585 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.dropper] at @s run function 42:portal/dropper/drop
-execute if score @s 42menu matches 4203586 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.dropper] at @s run function 42:portal/dropper/fizzle_cube
+execute if score @s 42menu matches 4203580..4203589 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.vent] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203580 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.vent] at @s run function 42:portal/vent/fizzle
+execute if score @s 42menu matches 4203581 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.vent] at @s run function 42:portal/vent/cycle
+execute if score @s 42menu matches 4203582 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.vent] at @s run function 42:portal/vent/skin
+execute if score @s 42menu matches 4203583 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.vent] at @s run function 42:portal/vent/power
+execute if score @s 42menu matches 4203584 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.vent] at @s run function 42:portal/vent/unpower
+execute if score @s 42menu matches 4203585 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.vent] at @s run function 42:portal/vent/drop
+execute if score @s 42menu matches 4203586 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.vent] at @s run function 42:portal/vent/fizzle_cube
 
 execute if score @s 42menu matches 4203590..4203609 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203590..4203609 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator,tag=!42.tag.portal.elevator.search] run function 42:portal/elevator/move/set/sel_error
@@ -152,5 +152,8 @@ execute if score @s 42menu matches 4203687 as @e[limit=1,tag=42.tag.portal.selec
 execute if score @s 42menu matches 4203690..4203694 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.laser.catcher] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203690 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.laser.catcher] at @s run function 42:portal/laser/catcher/fizzle
 execute if score @s 42menu matches 4203691 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.laser.catcher] at @s run function 42:portal/laser/catcher/cycle
+
+execute if score @s 42menu matches 4203695..4203699 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203695 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel] at @s run function 42:portal/gel/droplet/fizzle
 
 tag @e remove 42.tag.portal.selected

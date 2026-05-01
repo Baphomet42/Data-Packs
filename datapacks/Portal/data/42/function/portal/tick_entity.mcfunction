@@ -7,6 +7,8 @@ execute if entity @s[tag=42.tag.portal.pellet.emitter] run return run function 4
 execute if entity @s[tag=42.tag.portal.pellet.catcher,tag=!42.tag.portal.pellet.catcher.on,tag=!42.tag.portal.pellet.catcher.nolaser] run return run function 42:portal/level/tick_score
 execute if entity @s[tag=42.tag.portal.laser.beam] run return run function 42:portal/level/tick_score
 execute if entity @s[tag=42.tag.portal.laser.catcher] run return run function 42:portal/level/tick_score
+execute if entity @s[tag=42.tag.portal.vent,tag=42.tag.portal.vent.mode.gel] run return run function 42:portal/level/tick_score
+execute if entity @s[tag=42.tag.portal.gel.droplet] run return run function 42:portal/level/tick_score
 
 execute if entity @s[tag=42.tag.portal.portal] run return run function 42:portal/portal/tick
 execute if entity @s[tag=42.tag.portal.gun_display] run return run function 42:portal/gun/display/tick

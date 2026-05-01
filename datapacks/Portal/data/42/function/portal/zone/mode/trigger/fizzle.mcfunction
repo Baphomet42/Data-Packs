@@ -1,4 +1,4 @@
-execute as @e[tag=42.tag.portal.dropper] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot2 run function 42:portal/dropper/fizzle_cube
+execute as @e[tag=42.tag.portal.vent] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot2 run function 42:portal/vent/fizzle_cube
 execute as @e[tag=42.tag.portal.pellet.emitter] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot2 run function 42:portal/pellet/emitter/kill_pellets
 execute as @e[tag=42.tag.portal.portal.spawner] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot2 run function 42:portal/portal/spawner/unpower
 execute as @e[tag=42.tag.portal.cube.spawner] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot2 run function 42:portal/cube/spawner/unpower

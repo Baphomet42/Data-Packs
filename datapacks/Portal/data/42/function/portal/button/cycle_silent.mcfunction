@@ -11,7 +11,7 @@ execute if entity @s[tag=!42.tag.portal.btn.cube] run data merge entity @e[tag=4
 execute if entity @s[tag=!42.tag.portal.btn.cube] run data merge entity @e[tag=42.tag.portal.id,tag=42.tag.portal.btn.dis5,limit=1] {block_state:{Name:"minecraft:air"}}
 execute if entity @s[tag=42.tag.portal.btn.cube] run data merge entity @e[tag=42.tag.portal.id,tag=42.tag.portal.btn.dis,limit=1] {transformation:{translation:[-.75f,.15f,-.75f],scale:[1.5f,.10f,1.5f]},interpolation_duration:0,start_interpolation:-1}
 execute if entity @s[tag=42.tag.portal.btn.cube] run data merge entity @e[tag=42.tag.portal.id,tag=42.tag.portal.btn.dis2,limit=1] {transformation:{translation:[.75f,.15f,-.875f],scale:[.125f,.475f,1.625f]},interpolation_duration:0,start_interpolation:-1}
-execute if entity @s[tag=42.tag.portal.btn.cube] run data merge entity @e[tag=42.tag.portal.id,tag=42.tag.portal.btn.dis3,limit=1] {block_state:{Name:redstone_block}}
-execute if entity @s[tag=42.tag.portal.btn.cube] run data merge entity @e[tag=42.tag.portal.id,tag=42.tag.portal.btn.dis4,limit=1] {block_state:{Name:redstone_block}}
-execute if entity @s[tag=42.tag.portal.btn.cube] run data merge entity @e[tag=42.tag.portal.id,tag=42.tag.portal.btn.dis5,limit=1] {block_state:{Name:redstone_block}}
+execute if entity @s[tag=42.tag.portal.btn.cube] run data merge entity @e[tag=42.tag.portal.id,tag=42.tag.portal.btn.dis3,limit=1] {block_state:{Name:"minecraft:redstone_block"}}
+execute if entity @s[tag=42.tag.portal.btn.cube] run data merge entity @e[tag=42.tag.portal.id,tag=42.tag.portal.btn.dis4,limit=1] {block_state:{Name:"minecraft:redstone_block"}}
+execute if entity @s[tag=42.tag.portal.btn.cube] run data merge entity @e[tag=42.tag.portal.id,tag=42.tag.portal.btn.dis5,limit=1] {block_state:{Name:"minecraft:redstone_block"}}
 tag @e remove 42.tag.portal.id

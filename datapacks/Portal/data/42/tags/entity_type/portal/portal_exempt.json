@@ -11,6 +11,10 @@
       "minecraft:item_frame",
       "minecraft:glow_item_frame",
       "minecraft:player",
-      "minecraft:giant"
+      "minecraft:giant",
+      "minecraft:evoker_fangs",
+      "minecraft:ominous_item_spawner",
+      "minecraft:leash_knot",
+      "minecraft:lightning_bolt"
     ]
   }

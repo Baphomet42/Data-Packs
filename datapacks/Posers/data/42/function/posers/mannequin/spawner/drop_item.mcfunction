@@ -81,7 +81,7 @@ execute if entity @s[tag=!42.tag.posers.mannequin] run data modify storage 42:po
 execute if data storage 42:posers temp.mannequin.profile run data modify storage 42:posers temp.item.Item.components.minecraft:profile set from storage 42:posers temp.mannequin.profile
 
 data modify entity @e[type=item,tag=42.tag.posers.new_spawn,limit=1,x=0] {} merge from storage 42:posers temp.item
-item modify entity @e[type=item,tag=42.tag.posers.new_spawn,limit=1,x=0] contents [{function:"set_name",target:"item_name",entity:"this",name:{storage:"42:posers",nbt:"temp.item.Item.components.minecraft:item_name",interpret:true}},{function:"set_lore",mode:replace_section,offset:0,entity:"this",lore:[{storage:"42:posers",nbt:"temp.item.Item.components.minecraft:lore[0]",interpret:true}]}]
+item modify entity @e[type=item,tag=42.tag.posers.new_spawn,limit=1,x=0] contents [{function:"set_name",target:"item_name",entity:"this",name:{storage:"42:posers",nbt:"temp.item.Item.components.minecraft:item_name",interpret:true}},{function:"set_lore",mode:"replace_section",offset:0,entity:"this",lore:[{storage:"42:posers",nbt:"temp.item.Item.components.minecraft:lore[0]",interpret:true}]}]
 
 data remove storage 42:posers temp
 tag @e remove 42.tag.posers.new_spawn

@@ -1,7 +1,7 @@
 tag @e remove 42.tag.portal.sel
 tag @e remove 42.tag.portal.tick
 
-execute as @e[tag=42.tag.portal.motion.tp] at @s run function 42:portal/motion
+execute as @e[tag=42.tag.portal.motion.tp] at @s run function 42:portal/generic/motion/motion
 execute as @e[tag=42.tag.portal.damage] at @s run function 42:portal/damage
 
 execute as @a[gamemode=!spectator] at @s run function 42:portal/player/tick

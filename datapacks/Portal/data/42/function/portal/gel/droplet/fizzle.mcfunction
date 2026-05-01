@@ -1,0 +1,1 @@
+kill @s[tag=42.tag.portal.gel]

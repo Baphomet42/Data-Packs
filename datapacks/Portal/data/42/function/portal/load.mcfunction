@@ -13,6 +13,7 @@ scoreboard objectives add 42.obj.portal.var.y dummy
 scoreboard objectives add 42.obj.portal.var.z dummy
 scoreboard objectives add 42.obj.portal.link dummy
 scoreboard objectives add 42.obj.portal.cool dummy
+scoreboard objectives add 42.obj.portal.timestamp.used_portal dummy
 scoreboard objectives add 42.obj.portal.gun_use dummy
 scoreboard objectives add 42.obj.portal.gun_cooldown dummy
 scoreboard objectives add 42.obj.portal.xrot1 dummy

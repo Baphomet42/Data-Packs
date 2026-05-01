@@ -3,7 +3,7 @@ execute as @e[tag=42.tag.portal.launch,distance=..2.5] at @s run function 42:por
 execute as @e[tag=42.tag.portal.btn,distance=..2.5] at @s run function 42:portal/button/fizzle
 execute as @e[tag=42.tag.portal.pedestal,distance=..2.5] at @s run function 42:portal/button/fizzle_pedestal
 execute as @e[tag=42.tag.portal.door,distance=..2.5] at @s run function 42:portal/door/fizzle
-execute as @e[tag=42.tag.portal.dropper,distance=..2.5] at @s run function 42:portal/dropper/fizzle
+execute as @e[tag=42.tag.portal.vent,distance=..2.5] at @s run function 42:portal/vent/fizzle
 execute as @e[tag=42.tag.portal.portal,distance=..2.5] at @s run function 42:portal/portal/fizzle
 execute as @e[tag=42.tag.portal.pellet.emitter,distance=..2.5] at @s run function 42:portal/pellet/emitter/fizzle
 execute as @e[tag=42.tag.portal.pellet.catcher,distance=..2.5] at @s run function 42:portal/pellet/catcher/fizzle
@@ -12,6 +12,7 @@ execute as @e[tag=42.tag.portal.laser.catcher,distance=..2.5] at @s run function
 execute as @e[tag=42.tag.portal.pellet,distance=..2.5] at @s run function 42:portal/pellet/pellet/fizzle
 execute as @e[tag=42.tag.portal.elevator,distance=..3.5] at @s run function 42:portal/elevator/fizzle
 execute as @e[tag=42.tag.portal.wire,distance=..1.5] at @s run function 42:portal/wire/fizzle
+execute as @e[tag=42.tag.portal.gel,distance=..1.5] at @s run function 42:portal/gel/droplet/fizzle
 execute as @e[tag=42.tag.portal.wire.unlinked,distance=..1.5] at @s run kill @s
 execute as @e[tag=42.tag.portal.portal.spawner,distance=..2.5] at @s run function 42:portal/portal/spawner/fizzle
 execute as @e[tag=42.tag.portal.zone,tag=42.tag.portal.zone.show,distance=..2.5] at @s run function 42:portal/zone/fizzle

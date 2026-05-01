@@ -10,5 +10,5 @@ kill @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.display]
 execute as @e[tag=42.tag.portal.id,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/fizzle
 tag @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.dis] add 42.tag.portal.fizzle
 kill @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.tp]
-execute as @e[tag=42.tag.portal.id,tag=42.tag.portal.dropper.on,tag=!42.tag.portal.dropper.fizzle] at @s run function 42:portal/dropper/drop
+execute as @e[tag=42.tag.portal.id,tag=42.tag.portal.vent.on,tag=!42.tag.portal.vent.fizzle] at @s run function 42:portal/vent/drop
 tag @e remove 42.tag.portal.id

@@ -9,7 +9,7 @@ scoreboard players set @s 42.obj.portal.temp 0
 execute at @e[tag=42.tag.portal.temp] run scoreboard players add @s 42.obj.portal.temp 1
 tag @e remove 42.tag.portal.temp
 
-execute unless score @s 42.obj.portal.temp matches 1.. as @e[tag=42.tag.portal.dropper,tag=42.tag.portal.dropper.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/dropper/unpower
+execute unless score @s 42.obj.portal.temp matches 1.. as @e[tag=42.tag.portal.vent,tag=42.tag.portal.vent.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/vent/unpower
 execute unless score @s 42.obj.portal.temp matches 1.. as @e[tag=42.tag.portal.wire] if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/wire/unpower
 execute unless score @s 42.obj.portal.temp matches 1.. as @e[tag=42.tag.portal.door,tag=42.tag.portal.door.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/door/unpower
 execute unless score @s 42.obj.portal.temp matches 1.. as @e[tag=42.tag.portal.laser.emitter,tag=42.tag.portal.laser.emitter.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_unpower 42.obj.portal.temp run function 42:portal/laser/emitter/unpower

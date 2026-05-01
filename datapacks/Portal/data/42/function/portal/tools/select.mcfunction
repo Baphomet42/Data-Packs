@@ -9,7 +9,7 @@ tag @e[tag=42.tag.portal.launch,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.btn,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.pedestal,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.door,distance=..2.5] add 42.tag.portal.temp
-tag @e[tag=42.tag.portal.dropper,distance=..2.5] add 42.tag.portal.temp
+tag @e[tag=42.tag.portal.vent,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.portal,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.pellet.emitter,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.pellet.catcher,distance=..2.5] add 42.tag.portal.temp
@@ -20,6 +20,7 @@ tag @e[tag=42.tag.portal.elevator,distance=..3.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.elevator.start,distance=..3.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.elevator.selgroup,distance=..3.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.wire,distance=..1.5] add 42.tag.portal.temp
+tag @e[tag=42.tag.portal.gel,distance=..1.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.portal.spawner,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.zone,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.cube.spawner,distance=..1.5] add 42.tag.portal.temp

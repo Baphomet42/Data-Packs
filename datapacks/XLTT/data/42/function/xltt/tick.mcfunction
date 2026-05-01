@@ -10,6 +10,7 @@ execute as @e[type=marker,tag=42.tag.xltt.odm.wire,tag=!42.tag.xltt.odm.hit] at 
 execute as @e[type=marker,tag=42.tag.xltt.odm.wire,tag=42.tag.xltt.odm.hit] at @s run function 42:xltt/odm/attempt_break
 execute as @a[tag=42.tag.xltt.odm.sound,predicate=42:xltt/fly_speed_test] run function 42:xltt/odm/sound_loop
 execute as @a[tag=42.tag.xltt.odm.sound,predicate=!42:xltt/fly_speed_test] run function 42:xltt/odm/sound_cancel
+execute as @a[tag=42.tag.xltt.odm.air_drag_modifier,predicate=42:on_ground] run function 42:xltt/odm/return_air_drag
 
 # titan
 execute as @e[type=area_effect_cloud,tag=42.tag.xltt.titan.spawn_effect] at @s run summon lightning_bolt ~ ~7.75 ~

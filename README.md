@@ -1,7 +1,7 @@
 
 ----------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 26.1 - 26.1.2
+# Separate but compatible datapacks for Minecraft 26.2
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
@@ -128,10 +128,25 @@ Optional resource pack - see [below](#resource-pack-info)
     + Manually open with the `Select Tool`
 + *Vital Apparatus Vent*
     + Manually trigger or power with the `Select Tool`
-    + Using the `Cycle Type` tool can change the type of cube dropped
+    + Using the `Cycle Type` tool can change the type of cube or gel dropped
     + Link to buttons using the `Link Equipment` tool
-    + Droppers drop a single cube when powered from a Pedestal Button
-    + Droppers will drop a new cube when the old one is destroyed, but only if powered from a Super Button or Pellet Catcher
+    + Drops a single cube when powered from a Pedestal Button
+    + Drops a new cube when the old one is destroyed, but only if powered from a Super Button or Pellet Catcher
+    + On gel mode, vents continuously drop gel while powered
++ *Gel*
+    + Gels can spawn from Vital Apparatus Vents when powered
+        + A powered vent will continuously drop gel
+        + Gel will fall until it hits a block
+        + Gel can teleport through portals
+        + Gel can pass through iron bars, copper grates, and similar non-solid blocks
+        + When a gel hits a block, it remains stuck to the surface
+        + Some gels can stick to objects like cubes
+        + Gels are linked to the vent which spawned it, so deleting the vent will delete the gel
+    + There are 4 types of gels:
+        + Repulsion Gel: makes surfaces and objects bouncy
+        + Propulsion Gel: gives speed when running along surface
+        + Conversion Gel: changes certain blocks into valid portal surfaces
+        + Cleansing Gel: removes other gels from surfaces and objects
 + *Material Emancipation Grill*
     + Clears the portals of any player who passes through it
     + Fizzles cubes, turrets, and other physics objects that pass through it
@@ -524,6 +539,17 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ----------------------------------------------------------------
 
 # Changelog
+
++ Current Dev Branch
+    + **IMPORTANT**
+        + The required Minecraft version has changed to 26.2
+    + **All datapacks**
+        + Supported versions: 26.2
+    + **Portal**
+        + Added gels
+    + **XLTT**
+        + Improved O.D.M. physics
+            + Air drag is reduced during O.D.M flight
 
 + `v0.10.0+mc26.1` Major Update (3/19/2026)
     + **IMPORTANT**

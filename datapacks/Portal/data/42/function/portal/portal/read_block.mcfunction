@@ -25,6 +25,6 @@ execute if score @s 42.obj.portal.skin matches 6 run data modify entity @s block
 execute if score @s 42.obj.portal.skin matches 7 run data modify entity @s block_state.Name set value polished_diorite
 execute if score @s 42.obj.portal.skin matches 8 run data modify entity @s block_state.Name set value polished_andesite
 execute if score @s 42.obj.portal.skin matches 9..11 run data modify entity @s block_state.Name set value bone_block
-execute if score @s 42.obj.portal.skin matches 9 run data modify entity @s block_state.Properties set value {axis:x}
-execute if score @s 42.obj.portal.skin matches 10 run data modify entity @s block_state.Properties set value {axis:y}
-execute if score @s 42.obj.portal.skin matches 11 run data modify entity @s block_state.Properties set value {axis:z}
+execute if score @s 42.obj.portal.skin matches 9 run data modify entity @s block_state.Properties set value {axis:"x"}
+execute if score @s 42.obj.portal.skin matches 10 run data modify entity @s block_state.Properties set value {axis:"y"}
+execute if score @s 42.obj.portal.skin matches 11 run data modify entity @s block_state.Properties set value {axis:"z"}

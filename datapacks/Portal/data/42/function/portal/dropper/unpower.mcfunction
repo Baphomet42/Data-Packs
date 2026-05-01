@@ -1,1 +1,0 @@
-tag @s[tag=42.tag.portal.dropper] remove 42.tag.portal.dropper.on

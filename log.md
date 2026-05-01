@@ -280,3 +280,12 @@ Datapacks can be designed to require no resourcepack, an optional resourcepack, 
         + Detect flag/score from above
 
 ----------------------------------------------------------------
+
+## Code Cleanup Regex
+
++ regex mode:
+    + `([{,][a-zA-Z0-9_.-]+):(?!true|false|\$|\\)([a-zA-Z_][a-zA-Z0-9_-]*)`
+        + replace: `$1:"$2"`
+    + `(?<!\*)[ \t]+$`
+
+----------------------------------------------------------------

@@ -8,5 +8,6 @@ execute as @e[tag=42.tag.portal.portal.spawner] at @s if score @s 42.obj.portal.
 execute as @e[tag=42.tag.portal.cube.spawner] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_power 42.obj.portal.temp run function 42:portal/cube/spawner/power
 execute as @e[tag=42.tag.portal.pellet.spawner] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_power 42.obj.portal.temp run function 42:portal/pellet/spawner/power
 
-execute unless entity @s[tag=42.tag.portal.pedestal] as @e[tag=42.tag.portal.dropper,tag=!42.tag.portal.dropper.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_power 42.obj.portal.temp run function 42:portal/dropper/power
-execute if entity @s[tag=42.tag.portal.pedestal] as @e[tag=42.tag.portal.dropper] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_power 42.obj.portal.temp run function 42:portal/dropper/drop
+execute as @e[tag=42.tag.portal.vent,tag=42.tag.portal.vent.mode.gel,tag=!42.tag.portal.vent.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_power 42.obj.portal.temp run function 42:portal/vent/power
+execute unless entity @s[tag=42.tag.portal.pedestal] as @e[tag=42.tag.portal.vent,tag=42.tag.portal.vent.mode.cube,tag=!42.tag.portal.vent.on] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_power 42.obj.portal.temp run function 42:portal/vent/power
+execute if entity @s[tag=42.tag.portal.pedestal] as @e[tag=42.tag.portal.vent,tag=42.tag.portal.vent.mode.cube] at @s if score @s 42.obj.portal.link = #42.var.portal.temp_power 42.obj.portal.temp run function 42:portal/vent/drop

@@ -6,5 +6,5 @@ tag @s remove 42.tag.portal.temp3
 execute if block ~ ~ ~ air run tag @s add 42.tag.portal.temp3
 execute unless block ~ ~ ~ air run tag @s add 42.tag.portal.temp3
 execute if entity @s[tag=42.tag.portal.temp3] run scoreboard players add #42.var.portal.dummy 42.obj.portal.temp 1
-execute unless entity @s[tag=42.tag.portal.temp3] align xyz positioned ~.5 ~.5 ~.5 run particle block_marker{block_state:{Name:barrier}} ~ ~ ~ 0 0 0 0 1 force
+execute unless entity @s[tag=42.tag.portal.temp3] align xyz positioned ~.5 ~.5 ~.5 run particle block_marker{block_state:{Name:"minecraft:barrier"}} ~ ~ ~ 0 0 0 0 1 force
 tag @s remove 42.tag.portal.temp3

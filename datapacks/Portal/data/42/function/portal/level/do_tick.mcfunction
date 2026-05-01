@@ -7,3 +7,5 @@ execute if entity @s[tag=42.tag.portal.pellet.emitter] at @s run function 42:por
 execute if entity @s[tag=42.tag.portal.pellet.catcher] at @s run function 42:portal/pellet/catcher/tick
 execute if entity @s[tag=42.tag.portal.laser.beam] at @s run function 42:portal/laser/beam/tick
 execute if entity @s[tag=42.tag.portal.laser.catcher] at @s run function 42:portal/laser/catcher/tick
+execute if entity @s[tag=42.tag.portal.vent,tag=42.tag.portal.vent.mode.gel] at @s run function 42:portal/vent/tick_mode_gel
+execute if entity @s[tag=42.tag.portal.gel.droplet] at @s run function 42:portal/gel/droplet/tick

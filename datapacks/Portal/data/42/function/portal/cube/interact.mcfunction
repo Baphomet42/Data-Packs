@@ -10,7 +10,7 @@ tag @s[tag=42.tag.portal.temp] remove 42.tag.portal.cube.held
 tag @e remove 42.tag.portal.temp
 execute if entity @s[tag=42.tag.portal.cube.held] on target if score @s 42.obj.portal.id matches 0 run scoreboard players set @a[tag=42.tag.portal.id] 42.obj.portal.id 0
 execute if entity @s[tag=42.tag.portal.cube.held] on target if score @s 42.obj.portal.id matches 0 run scoreboard players operation @s 42.obj.portal.id = @e[tag=42.tag.portal.cube.hit,tag=42.tag.portal.id,limit=1] 42.obj.portal.id
-execute if entity @s[tag=42.tag.portal.cube.held] run tag @s remove 42.tag.portal.motion.tp
+execute if entity @s[tag=42.tag.portal.cube.held] run function 42:portal/generic/motion/end
 execute if entity @s[tag=!42.tag.portal.cube.held] on target if score @s 42.obj.portal.id = @e[tag=42.tag.portal.cube.hit,tag=42.tag.portal.id,limit=1] 42.obj.portal.id run scoreboard players set @s 42.obj.portal.id 0
 function 42:portal/tag_id
 data remove entity @s interaction

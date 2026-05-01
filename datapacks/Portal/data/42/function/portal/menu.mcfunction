@@ -57,7 +57,7 @@ execute if score @s 42menu matches 4203007 run function 42:portal/button/craft
 execute if score @s 42menu matches 4203008 run function 42:portal/button/craft_pedestal
 execute if score @s 42menu matches 4203009 run function 42:portal/tools/craft_link
 execute if score @s 42menu matches 4203010 run function 42:portal/door/craft
-execute if score @s 42menu matches 4203011 run function 42:portal/dropper/craft
+execute if score @s 42menu matches 4203011 run function 42:portal/vent/craft
 execute if score @s 42menu matches 4203012 run function 42:portal/tools/craft_cycle
 execute if score @s 42menu matches 4203013 run function 42:portal/gun/craft_default
 execute if score @s 42menu matches 4203014 run function 42:portal/pellet/emitter/craft

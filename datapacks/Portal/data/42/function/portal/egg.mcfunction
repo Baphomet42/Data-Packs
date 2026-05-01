@@ -3,7 +3,7 @@ execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.launch] at @s 
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.button] at @s run function 42:portal/button/spawn
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pedestal] at @s run function 42:portal/button/spawn_pedestal
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.door] at @s run function 42:portal/door/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.dropper] at @s run function 42:portal/dropper/spawn
+execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.vent] at @s run function 42:portal/vent/spawn
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pellet] at @s run function 42:portal/pellet/pellet/spawn
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pellet_emitter] at @s run function 42:portal/pellet/emitter/spawn
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pellet_catcher] at @s run function 42:portal/pellet/catcher/spawn
