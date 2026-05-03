@@ -1,0 +1,2 @@
+execute if entity @s[tag=42.tag.portal.cube.tp,tag=!42.tag.portal.cube.gel.blue] if entity @e[tag=42.tag.portal.temp.gel_hit_test,tag=42.tag.portal.gel.blue] run function 42:portal/cube/gel/blue
+execute if entity @s[tag=42.tag.portal.cube.tp,tag=42.tag.portal.cube.gel] if entity @e[tag=42.tag.portal.temp.gel_hit_test,tag=42.tag.portal.gel.clear] run function 42:portal/cube/gel/clear

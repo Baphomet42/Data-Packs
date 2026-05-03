@@ -1,0 +1,2 @@
+execute if entity @s[tag=42.tag.portal.gel.blue] run return run tag @e[tag=42.tag.portal.temp.gel_test,limit=1] add 42.tag.portal.gel_effect.blue.test
+execute if entity @s[tag=42.tag.portal.gel.orange] run return run tag @e[tag=42.tag.portal.temp.gel_test,limit=1] add 42.tag.portal.gel_effect.orange.test

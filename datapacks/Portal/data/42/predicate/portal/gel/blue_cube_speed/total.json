@@ -1,0 +1,17 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "42:portal/gel/blue_cube_speed/x"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "42:portal/gel/blue_cube_speed/y"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "42:portal/gel/blue_cube_speed/z"
+        }
+    ]
+}

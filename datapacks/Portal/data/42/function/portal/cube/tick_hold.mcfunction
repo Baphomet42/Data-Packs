@@ -10,3 +10,5 @@ execute if entity @s[tag=42.tag.portal.cube.laser] as @e[tag=42.tag.portal.id,ta
 execute if entity @s[tag=42.tag.portal.cube.laser] rotated as @a[tag=42.tag.portal.id,limit=1] run rotate @s ~ 0
 # tilt turret
 execute if entity @s[tag=42.tag.portal.turret] run function 42:portal/cube/turret/tick_hold
+# reset motion
+execute at @s run tp @s @s

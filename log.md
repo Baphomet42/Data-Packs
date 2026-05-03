@@ -66,8 +66,6 @@ Exceptions to scoreboard objectives names may be trigger commands, which can use
         + This is not a strict requirement, so never count on SNBT being in the proper format
     + The minecraft namespace should usually be specified (but not a requirement)
         + Useful regex to help find potential deviants
-            + `id:[a-z0-9_\-./]*,`
-            + `id:[a-z0-9_\-./]*\}`
             + `id:"[a-z0-9_\-./]*"`
 
 ----------------------------------------------------------------
@@ -207,6 +205,7 @@ In most (but not all) cases, these files should be in locations `42:`, `42:domin
             + `is_sprinting.json`
             + `location_fluid.json`
             + `periodic_10.json`
+            + `periodic_20.json`
         + `tags/`
             + `block/`
                 + `projectile_pass.json`

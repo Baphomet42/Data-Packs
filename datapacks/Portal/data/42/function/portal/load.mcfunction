@@ -25,6 +25,7 @@ scoreboard objectives add 42.obj.portal.skin dummy
 scoreboard objectives add 42.obj.portal.lvl dummy
 scoreboard objectives add 42.obj.portal.sel dummy
 scoreboard objectives add 42.obj.portal.col dummy
+scoreboard objectives add 42.obj.portal.orange_gel_time dummy
 scoreboard objectives add 42.obj.portal.death deathCount
 
 scoreboard players set #42.var.gen.const.neg_1 42.obj.portal.vars -1

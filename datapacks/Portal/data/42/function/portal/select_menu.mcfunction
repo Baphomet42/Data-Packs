@@ -154,6 +154,6 @@ execute if score @s 42menu matches 4203690 as @e[limit=1,tag=42.tag.portal.selec
 execute if score @s 42menu matches 4203691 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.laser.catcher] at @s run function 42:portal/laser/catcher/cycle
 
 execute if score @s 42menu matches 4203695..4203699 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel] run function 42:portal/tools/sel_error
-execute if score @s 42menu matches 4203695 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel] at @s run function 42:portal/gel/droplet/fizzle
+execute if score @s 42menu matches 4203695 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel] at @s run function 42:portal/gel/fizzle
 
 tag @e remove 42.tag.portal.selected

@@ -146,6 +146,7 @@ Optional resource pack - see [below](#resource-pack-info)
         + Repulsion Gel: makes surfaces and objects bouncy
         + Propulsion Gel: gives speed when running along surface
         + Conversion Gel: changes certain blocks into valid portal surfaces
+            + WIP
         + Cleansing Gel: removes other gels from surfaces and objects
 + *Material Emancipation Grill*
     + Clears the portals of any player who passes through it
