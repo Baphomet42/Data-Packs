@@ -1,8 +1,8 @@
 {
-    "values": [
-      "#42:portal/gel_exempt",
-      "minecraft:armor_stand",
-      "minecraft:player",
-      "minecraft:giant"
-    ]
-  }
+  "values": [
+    "#42:portal/gel_exempt",
+    "minecraft:armor_stand",
+    "minecraft:player",
+    "minecraft:giant"
+  ]
+}

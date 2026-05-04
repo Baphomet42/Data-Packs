@@ -1,3 +1,5 @@
+execute at @s if entity @e[limit=1,tag=42.tag.portal.portal,distance=..20] run function 42:portal/generic/motion/store_motion
+
 tag @s add 42.tag.portal.temp.gel_test
 #execute if entity @s[type=player] run function 42:portal/gel/surface/stats
 # TODO add `if entity @s[predicate=42:on_ground]` test back if MC-307880 is fixed

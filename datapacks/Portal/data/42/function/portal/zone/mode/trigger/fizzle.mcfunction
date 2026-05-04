@@ -3,3 +3,4 @@ execute as @e[tag=42.tag.portal.pellet.emitter] at @s if score @s 42.obj.portal.
 execute as @e[tag=42.tag.portal.portal.spawner] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot2 run function 42:portal/portal/spawner/unpower
 execute as @e[tag=42.tag.portal.cube.spawner] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot2 run function 42:portal/cube/spawner/unpower
 execute as @e[tag=42.tag.portal.pellet.spawner] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot2 run function 42:portal/pellet/spawner/unpower
+execute as @e[tag=42.tag.portal.gel.spawner] at @s if score @s 42.obj.portal.id = @e[tag=42.tag.portal.zone.this,limit=1] 42.obj.portal.yrot2 run function 42:portal/gel/spawner/unpower

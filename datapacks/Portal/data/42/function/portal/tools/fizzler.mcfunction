@@ -18,5 +18,6 @@ execute as @e[tag=42.tag.portal.portal.spawner,distance=..2.5] at @s run functio
 execute as @e[tag=42.tag.portal.zone,tag=42.tag.portal.zone.show,distance=..2.5] at @s run function 42:portal/zone/fizzle
 execute as @e[tag=42.tag.portal.cube.spawner,tag=42.tag.portal.cube.spawner.show,distance=..2.5] at @s run function 42:portal/cube/spawner/fizzle
 execute as @e[tag=42.tag.portal.pellet.spawner,tag=42.tag.portal.pellet.spawner.show,distance=..2.5] at @s run function 42:portal/pellet/spawner/fizzle
+execute as @e[tag=42.tag.portal.gel.spawner,tag=42.tag.portal.gel.spawner.show,distance=..2.5] at @s run function 42:portal/gel/spawner/fizzle
 execute as @e[tag=42.tag.portal.grill,distance=..2.5] at @s run function 42:portal/grill/fizzle
 kill @s[type=area_effect_cloud]

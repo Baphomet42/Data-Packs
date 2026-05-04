@@ -1,4 +1,4 @@
-scoreboard players operation #42.var.portal.dummy 42.obj.portal.temp = @s 42.obj.portal.var.y
+scoreboard players operation #42.var.portal.dummy 42.obj.portal.temp = @s 42.obj.portal.motion.y
 execute unless score #42.var.portal.dummy 42.obj.portal.temp matches 0.. run scoreboard players operation #42.var.portal.dummy 42.obj.portal.temp *= #42.var.gen.const.neg_1 42.obj.portal.vars
 execute if score #42.var.portal.dummy 42.obj.portal.temp matches ..100 run scoreboard players set #42.var.portal.dummy 42.obj.portal.temp 100
 execute if score #42.var.portal.dummy 42.obj.portal.temp matches 3000.. run scoreboard players set #42.var.portal.dummy 42.obj.portal.temp 3000

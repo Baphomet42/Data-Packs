@@ -144,7 +144,7 @@ Config `click_event`'s can all run functions directly without needing to use a t
 
 The 42menu system allows for pack-specific tellraw menus all accessible with a single `/trigger` command (`/trigger 42menu`).
 
-The following files should be added (or modified to include the specified contents)
+The following files should be added (or modified to include the specified contents).
 
 + `data/`
     + `42/`
@@ -167,6 +167,16 @@ The following files should be added (or modified to include the specified conten
         + `tags/`
             + `function/`
                 + `load.json` (to reference `42:<pack>/load`)
+
++ Addons
+    + cmdfeed
+        + This system can be used to hide command feedback when new menus are opened
+        + Packs which use this system should add the required functions within `42:gen/cmdfeed/`
+            + Any part of that pack can then use `function 42:gen/cmdfeed/hide` to hide command feedback for 15 seconds
+            + After the hide function is run, you can use the below text component to display the reset button
+                + `{storage:"42:gen",nbt:"cmdfeed_btn",interpret:true}`
+            + The pack must configure its `#42:menu` function with score 11 like below
+                + `execute if score @s 42menu matches 11 run function 42:gen/cmdfeed/reset`
 
 ----------------------------------------------------------------
 

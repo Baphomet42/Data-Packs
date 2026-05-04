@@ -1,0 +1,1827 @@
+{
+    "description": "Long Fall Boots",
+    "supported_items": [],
+    "primary_items": [],
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body",
+        "saddle",
+        "armor"
+    ],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "42.obj.portal.pmotion.start": 1
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "42:portal/generic/motion/pmotion/ench/start"
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.6400"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 6.4
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.6400"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -6.4
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.3200"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 3.2
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.3200"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -3.2
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.1600"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 1.6
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.1600"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -1.6
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.800"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.8
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.800"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.8
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.400"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.4
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.400"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.4
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.200"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.2
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.200"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.2
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.100"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.1
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.100"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.1
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.50"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.05
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.x.50"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        1,
+                        0,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.05
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.6400"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 6.4
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.6400"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -6.4
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.3200"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 3.2
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.3200"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -3.2
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.1600"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 1.6
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.1600"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -1.6
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.800"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.8
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.800"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.8
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.400"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.4
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.400"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.4
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.200"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.2
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.200"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.2
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.100"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.1
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.100"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.1
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.50"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.05
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.y.50"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.05
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.6400"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 6.4
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.6400"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -6.4
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.3200"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 3.2
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.3200"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -3.2
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.1600"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 1.6
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.1600"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -1.6
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.800"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.8
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.800"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.8
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.400"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.4
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.400"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.4
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.200"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.2
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.200"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.2
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.100"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.1
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.100"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.1
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.50"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": 1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": 0.05
+                }
+            },
+            {
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "42.obj.portal.pmotion.start": 1
+                        }
+                    },
+                    {
+                        "condition": "minecraft:value_check",
+                        "value": {
+                            "type": "minecraft:score",
+                            "target": {
+                                "type": "minecraft:fixed",
+                                "name": "#42.var.portal.pmotion.z.50"
+                            },
+                            "score": "42.obj.portal.pmotion.start"
+                        },
+                        "range": -1
+                    }
+                ],
+                "effect": {
+                    "type": "minecraft:apply_impulse",
+                    "direction": [
+                        0,
+                        0,
+                        1
+                    ],
+                    "coordinate_scale": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "magnitude": -0.05
+                }
+            },
+            {
+                "requirements": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "42.obj.portal.pmotion.start": 1
+                    }
+                },
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "42:portal/generic/motion/pmotion/ench/end"
+                }
+            }
+        ]
+    }
+}

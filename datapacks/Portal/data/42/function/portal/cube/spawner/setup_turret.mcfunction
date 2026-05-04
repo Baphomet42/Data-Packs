@@ -18,6 +18,7 @@ execute as @e[tag=42.tag.portal.cube.spawner,tag=42.tag.portal.new_spawn] at @s 
 tag @e remove 42.tag.portal.new_spawn
 tag @e remove 42.tag.portal.id
 function 42:portal/cube/fizzle
+function 42:portal/tools/sel_summon
 
 #   ====scores====
 #   portal_lvl

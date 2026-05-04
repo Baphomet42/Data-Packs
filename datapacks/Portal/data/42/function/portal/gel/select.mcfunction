@@ -2,3 +2,7 @@ tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},\
     {text:"   Misc...",color:"dark_gray"},\
     {text:"\n      "},"[",{text:"Fizzle",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203695"}},"]"\
     ]
+execute if entity @s[tag=42.tag.portal.gel.surface] run tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},\
+    {text:"      "},"[",{text:"Convert to Spawner",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203696"}},"]",\
+    {text:" "},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"Spawners can be activated by Trigger Zones and allow levels to be fully reset"}]}}\
+    ]

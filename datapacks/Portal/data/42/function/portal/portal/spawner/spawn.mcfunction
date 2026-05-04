@@ -14,6 +14,7 @@ execute if entity @s[tag=42.tag.portal.portal,tag=!42.tag.portal.portal.a] run t
 execute if entity @s[tag=42.tag.portal.portal] run function 42:portal/portal/fizzle
 #execute as @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.portal.spawner] at @s run function 42:portal/portal/spawner/power
 tag @e remove 42.tag.portal.new_spawn
+function 42:portal/tools/sel_summon
 
 #   ====scores====
 #   portal_x    color of portal

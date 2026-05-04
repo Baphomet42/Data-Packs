@@ -7,7 +7,7 @@ execute at @s as @a[gamemode=!spectator,dx=0] positioned ~-1 ~-1 ~-1 if entity @
 execute unless entity @s[tag=42.tag.portal.laser.beam.end] run return 0
 
 tag @s add 42.tag.portal.laser.beam.this
-execute unless score @s 42.obj.portal.time matches 320.. as @e[tag=42.tag.portal.cube.laser,dx=0] positioned ~-1 ~-1 ~-1 if entity @s[dx=0] at @s positioned ~ ~.5 ~ positioned ^ ^ ^.5 as @e[tag=42.tag.portal.laser.beam.this,limit=1] run function 42:portal/laser/beam/redirect
+execute unless score @s 42.obj.portal.time matches 320.. as @e[tag=42.tag.portal.cube.laser,dx=0] positioned ~-1 ~-1 ~-1 if entity @s[dx=0] run function 42:portal/laser/beam/redirect_init
 tag @s remove 42.tag.portal.laser.beam.this
 
 execute if score @s 42.obj.portal.time matches 320.. run return 0

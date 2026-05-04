@@ -25,6 +25,7 @@ tag @e[tag=42.tag.portal.portal.spawner,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.zone,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.cube.spawner,distance=..1.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.pellet.spawner,distance=..1.5] add 42.tag.portal.temp
+tag @e[tag=42.tag.portal.gel.spawner,distance=..1.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.grill,distance=..2.5] add 42.tag.portal.temp
 
 tag @e[tag=42.tag.portal.temp,limit=1,sort=nearest,tag=!42.tag.portal.portal.no_sel] add 42.tag.portal.temp2

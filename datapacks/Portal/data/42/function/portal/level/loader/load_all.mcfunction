@@ -16,6 +16,7 @@ execute if data storage 42:portal loader.temp_equipment.launch[0] run function 4
 execute if data storage 42:portal loader.temp_equipment.pellet_emitter[0] run function 42:portal/level/loader/load/pellet_emitter with storage 42:portal loader.temp_equipment.pellet_emitter[0]
 execute if data storage 42:portal loader.temp_equipment.pellet_catcher[0] run function 42:portal/level/loader/load/pellet_catcher with storage 42:portal loader.temp_equipment.pellet_catcher[0]
 execute if data storage 42:portal loader.temp_equipment.pellet_spawner[0] run function 42:portal/level/loader/load/pellet_spawner with storage 42:portal loader.temp_equipment.pellet_spawner[0]
+execute if data storage 42:portal loader.temp_equipment.gel_spawner[0] run function 42:portal/level/loader/load/gel_spawner with storage 42:portal loader.temp_equipment.gel_spawner[0]
 execute if data storage 42:portal loader.temp_equipment.laser_emitter[0] run function 42:portal/level/loader/load/laser_emitter with storage 42:portal loader.temp_equipment.laser_emitter[0]
 execute if data storage 42:portal loader.temp_equipment.laser_catcher[0] run function 42:portal/level/loader/load/laser_catcher with storage 42:portal loader.temp_equipment.laser_catcher[0]
 execute if data storage 42:portal loader.temp_equipment.portal_spawner[0] run function 42:portal/level/loader/load/portal_spawner with storage 42:portal loader.temp_equipment.portal_spawner[0]

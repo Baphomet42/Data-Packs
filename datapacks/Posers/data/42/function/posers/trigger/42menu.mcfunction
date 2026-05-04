@@ -3,6 +3,7 @@ tellraw @s[scores={42menu=1}] [{text:"",color:"gray"},\
     {text:"\n   "},{text:"Get item...",color:"dark_gray"},\
     {text:"\n      "},"[",{text:"",extra:[[{translate:"entity.minecraft.mannequin"}," Poser"]],color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4209001"}},"]"\
     ]
+execute if score @s 42menu matches 11 run function 42:gen/cmdfeed/reset
 #4209001-4209002
 execute if entity @s[tag=!42op,gamemode=!creative,scores={42menu=4209001}] run function 42:error_perms
 scoreboard players set @s[tag=!42op,gamemode=!creative,scores={42menu=4209001}] 42menu 0

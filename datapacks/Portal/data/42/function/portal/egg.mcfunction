@@ -6,6 +6,7 @@ execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.door] at @s ru
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.vent] at @s run function 42:portal/vent/spawn
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pellet] at @s run function 42:portal/pellet/pellet/spawn
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.gel] at @s run function 42:portal/gel/droplet/spawn
+execute as @e[type=glow_item_frame,tag=42.tag.portal.tool.spawn.gel] at @s run function 42:portal/gel/droplet/spawn
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pellet_emitter] at @s run function 42:portal/pellet/emitter/spawn
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pellet_catcher] at @s run function 42:portal/pellet/catcher/spawn
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.laser_emitter] at @s run function 42:portal/laser/emitter/spawn

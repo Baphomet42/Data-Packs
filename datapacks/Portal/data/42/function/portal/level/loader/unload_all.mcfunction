@@ -20,6 +20,7 @@ execute as @e[tag=42.tag.portal.launch] if score @s 42.obj.portal.lvl = #42.var.
 execute as @e[tag=42.tag.portal.pellet.emitter] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/pellet/emitter/unload
 execute as @e[tag=42.tag.portal.pellet.catcher] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/pellet/catcher/unload
 execute as @e[tag=42.tag.portal.pellet.spawner] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/pellet/spawner/unload
+execute as @e[tag=42.tag.portal.gel.spawner] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/gel/spawner/unload
 execute as @e[tag=42.tag.portal.laser.emitter] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/laser/emitter/unload
 execute as @e[tag=42.tag.portal.laser.catcher] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/laser/catcher/unload
 execute as @e[tag=42.tag.portal.portal.spawner] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/portal/spawner/unload

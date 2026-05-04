@@ -155,5 +155,13 @@ execute if score @s 42menu matches 4203691 as @e[limit=1,tag=42.tag.portal.selec
 
 execute if score @s 42menu matches 4203695..4203699 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203695 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel] at @s run function 42:portal/gel/fizzle
+execute if score @s 42menu matches 4203696 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel] at @s run function 42:portal/gel/spawner/new
+
+execute if score @s 42menu matches 4203700..4203704 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel.spawner] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203700 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel.spawner] at @s run function 42:portal/gel/spawner/fizzle
+execute if score @s 42menu matches 4203701 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel.spawner] at @s run function 42:portal/gel/spawner/show
+execute if score @s 42menu matches 4203702 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel.spawner] at @s run function 42:portal/gel/spawner/hide
+execute if score @s 42menu matches 4203703 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel.spawner] at @s run function 42:portal/gel/spawner/power
+execute if score @s 42menu matches 4203704 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.gel.spawner] at @s run function 42:portal/gel/spawner/unpower
 
 tag @e remove 42.tag.portal.selected

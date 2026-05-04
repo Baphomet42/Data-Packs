@@ -10,12 +10,12 @@ execute if score #42.var.portal.dummy 42.obj.portal.temp matches 0 \
 execute if score #42.var.portal.dummy 42.obj.portal.temp matches -2 positioned ~-3 ~ ~-3 positioned ~ ~-.5 ~ unless entity @s[dx=6,dy=0,dz=6] run return fail
 execute if score #42.var.portal.dummy 42.obj.portal.temp matches 2 positioned ~-3 ~ ~-3 positioned ~ ~-.25 ~ unless entity @s[dx=6,dy=0,dz=6] run return fail
 
-execute if entity @s[tag=42.tag.portal.cube.tp,tag=!42.tag.portal.motion.tp] run return fail
+execute if entity @s[tag=42.tag.portal.cube.tp,tag=!42.tag.portal.motion] run return fail
 execute if entity @s[tag=42.tag.portal.cube.col] run return fail
 execute if entity @s[type=#42:portal/portal_exempt] \
     unless entity @s[type=player,tag=!42.tag.portal.motion,gamemode=!spectator] \
-    unless entity @s[tag=42.tag.portal.cube.hit,tag=!42.tag.portal.cube.held,tag=!42.tag.portal.motion.tp] \
-    unless entity @s[tag=42.tag.portal.motion.tp] \
+    unless entity @s[tag=42.tag.portal.cube.hit,tag=!42.tag.portal.cube.held,tag=!42.tag.portal.motion] \
+    unless entity @s[tag=42.tag.portal.motion] \
     unless entity @s[tag=42.tag.portal.pellet,tag=!42.tag.portal.pellet.on] \
     unless entity @s[tag=42.tag.portal.gel.droplet] \
     run return fail

@@ -26,10 +26,11 @@ execute if entity @s[tag=42.tag.portal.portal.spawner] at @s run function 42:por
 execute if entity @s[tag=42.tag.portal.zone] at @s run function 42:portal/zone/select
 execute if entity @s[tag=42.tag.portal.cube.spawner] at @s run function 42:portal/cube/spawner/select
 execute if entity @s[tag=42.tag.portal.pellet.spawner] at @s run function 42:portal/pellet/spawner/select
+execute if entity @s[tag=42.tag.portal.gel.spawner] at @s run function 42:portal/gel/spawner/select
 execute if entity @s[tag=42.tag.portal.grill] at @s run function 42:portal/grill/select
 
-execute if score @s[tag=!42.tag.portal.portal.group,tag=!42.tag.portal.wire] 42.obj.portal.link matches 1.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      [",color:"gray"},{text:"Unlink]",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203502"}},"]"]
-execute if score @s[tag=!42.tag.portal.zone,tag=!42.tag.portal.portal] 42.obj.portal.lvl matches 0.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      [",color:"gray"},{text:"Unbind Level]",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203504"}},"]"]
+execute if score @s[tag=!42.tag.portal.portal.group,tag=!42.tag.portal.wire] 42.obj.portal.link matches 1.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      [",color:"gray"},{text:"Unlink",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203502"}},"]"]
+execute if score @s[tag=!42.tag.portal.zone,tag=!42.tag.portal.portal] 42.obj.portal.lvl matches 0.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      [",color:"gray"},{text:"Unbind Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203504"}},"]"]
 execute if score @s[tag=!42.tag.portal.portal] 42.obj.portal.lvl matches 1.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      [",color:"gray"},{text:"Load Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203501"}},"]"]
 tellraw @p[tag=42.tag.portal.selected] [{text:"      [",color:"gray"},{text:"Deselect",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203500"}},"]"]
 tag @e remove 42.tag.portal.selected

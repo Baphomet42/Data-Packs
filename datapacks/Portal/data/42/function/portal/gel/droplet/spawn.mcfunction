@@ -8,8 +8,11 @@ scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.cool 0
 scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.lvl -1
 execute as @e[tag=42.tag.portal.new_spawn,limit=1] run function 42:portal/new_id
 execute if entity @s[tag=42.tag.portal.vent.drop] run tag @e[tag=42.tag.portal.new_spawn] add 42.tag.portal.vent.drop
+execute if entity @s[type=glow_item_frame] run tp @e[tag=42.tag.portal.new_spawn,limit=1] ^ ^ ^-.5
+execute if entity @s[tag=42.tag.portal.gel.spawner] run function 42:portal/gel/spawner/config
 
 function 42:portal/gel/droplet/get_type
 
 tag @e remove 42.tag.portal.new_spawn
 kill @s[type=area_effect_cloud]
+kill @s[type=glow_item_frame]

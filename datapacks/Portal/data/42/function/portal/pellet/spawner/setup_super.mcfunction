@@ -13,6 +13,7 @@ execute as @e[tag=42.tag.portal.pellet.spawner,tag=42.tag.portal.new_spawn] at @
 tag @e remove 42.tag.portal.new_spawn
 tag @e remove 42.tag.portal.id
 function 42:portal/pellet/pellet/fizzle
+function 42:portal/tools/sel_summon
 
 #   ====scores====
 #   portal_lvl

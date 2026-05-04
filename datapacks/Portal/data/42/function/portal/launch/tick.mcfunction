@@ -1,5 +1,4 @@
-execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[dx=0,dy=0,dz=0,type=armor_stand,tag=42.tag.portal.motion.tp] run function 42:portal/generic/motion/end_player
-execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[dx=0,dy=0,dz=0,type=!armor_stand,tag=42.tag.portal.motion.tp] run function 42:portal/generic/motion/end
+execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[dx=0,dy=0,dz=0,tag=42.tag.portal.motion] run function 42:portal/generic/motion/end
 execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @a[dx=0,dy=0,dz=0,gamemode=!spectator,limit=1,sort=nearest] positioned ~.5 ~.5 ~.5 run function 42:portal/launch/launch_player
 execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[tag=42.tag.portal.cube.hit,tag=!42.tag.portal.cube.held,dx=0,dy=0,dz=0,limit=1,sort=nearest] positioned ~.5 ~.5 ~.5 run function 42:portal/launch/launch_cube
 execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[type=!#42:portal/portal_exempt,tag=!42.tag.portal.cube.tp,tag=!42.tag.portal.cube.col,dx=0,dy=0,dz=0,limit=1,sort=nearest] positioned ~.5 ~.5 ~.5 run function 42:portal/launch/launch_entity

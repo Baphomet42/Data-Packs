@@ -1,5 +1,5 @@
-execute unless entity @s[tag=42.tag.portal.gel.droplet]
-execute as @e[tag=42.tag.portal.gel,distance=..0.25] run function 42:portal/gel/fizzle
+execute unless entity @s[tag=42.tag.portal.gel.droplet] run return fail
+execute as @e[tag=42.tag.portal.gel.surface,distance=..0.25] run function 42:portal/gel/fizzle
 
 execute if entity @s[tag=42.tag.portal.gel.clear] run return fail
 
@@ -8,8 +8,8 @@ summon item_display ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.gel","42.tag.por
 scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.lvl -1
 execute as @e[tag=42.tag.portal.new_spawn,limit=1] run function 42:portal/new_id
 
-scoreboard players operation @e[tag=42.tag.portal.new_spawn,distance=..10,limit=1] 42.obj.portal.id = @s 42.obj.portal.id
-scoreboard players operation @e[tag=42.tag.portal.new_spawn,distance=..10,limit=1] 42.obj.portal.lvl = @s 42.obj.portal.lvl
+execute if score @s 42.obj.portal.id matches 1.. run scoreboard players operation @e[tag=42.tag.portal.new_spawn,distance=..10,limit=1] 42.obj.portal.id = @s 42.obj.portal.id
+execute if score @s 42.obj.portal.lvl matches 1.. run scoreboard players operation @e[tag=42.tag.portal.new_spawn,distance=..10,limit=1] 42.obj.portal.lvl = @s 42.obj.portal.lvl
 
 function 42:portal/gel/surface/get_type
 

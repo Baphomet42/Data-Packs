@@ -1,18 +1,18 @@
 {
-    "values": [
-      "minecraft:area_effect_cloud",
-      "minecraft:block_display",
-      "minecraft:item_display",
-      "minecraft:text_display",
-      "minecraft:interaction",
-      "minecraft:marker",
-      "minecraft:painting",
-      "minecraft:item_frame",
-      "minecraft:glow_item_frame",
-      "minecraft:evoker_fangs",
-      "minecraft:ominous_item_spawner",
-      "minecraft:leash_knot",
-      "minecraft:lightning_bolt",
-      "minecraft:shulker"
-    ]
-  }
+  "values": [
+    "minecraft:area_effect_cloud",
+    "minecraft:block_display",
+    "minecraft:item_display",
+    "minecraft:text_display",
+    "minecraft:interaction",
+    "minecraft:marker",
+    "minecraft:painting",
+    "minecraft:item_frame",
+    "minecraft:glow_item_frame",
+    "minecraft:evoker_fangs",
+    "minecraft:ominous_item_spawner",
+    "minecraft:leash_knot",
+    "minecraft:lightning_bolt",
+    "minecraft:shulker"
+  ]
+}
