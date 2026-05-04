@@ -6,7 +6,7 @@
 		"title": "42op",
 		"description": [
 			{
-				"text": "/tag @p add 42op",
+				"text": "/tag @s add 42op",
 				"color": "green"
 			},
 			{
@@ -14,7 +14,7 @@
 				"color": "white"
 			},
             {
-				"text": "/tag @p remove 42op",
+				"text": "/tag @s remove 42op",
 				"color": "green"
 			}
 		],

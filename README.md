@@ -541,13 +541,29 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ Current Dev Branch
++ `v0.11.0+mc26.2` Major Update (Current Dev Branch)
     + **IMPORTANT**
         + The required Minecraft version has changed to 26.2
+        + Before updating existing worlds with the datapacks:
+            + Full reinstall is recommended
+                + Use the datapack features to remove all items/entities/etc
+                + Remove all objectives and teams
+                + Delete all storage data
+            + Remove all 42datapacks and replace them with the current versions
     + **All datapacks**
         + Supported versions: 26.2
     + **Portal**
         + Added gels
+            + Gels can drop from Vital Apparatus Vents
+            + Repulsion Gel (blue) makes surfaces and objects bouncy
+            + Propulsion Gel (orange) reduces surface friction
+            + Conversion Gel (white) is currently WIP
+            + Cleansing Gel (clear) can remove gels from surfaces and objects
+        + Revamped motion physics
+            + Air drag is nullified after using Aerial Faith Plates and when passing through portals
+            + Motion is preserved in more cases after passing through portals
+        + Elevator teleports are now more seamless
+            + Any existing elevators will need to be relinked
     + **XLTT**
         + Improved O.D.M. physics
             + Air drag is reduced during O.D.M flight

@@ -70,6 +70,17 @@ Exceptions to scoreboard objectives names may be trigger commands, which can use
 
 ----------------------------------------------------------------
 
+# Misc guidelines
+
+These guidelines should generally be followed, but it is ok to have exceptions.
+
++ Do not use `/kill` on players or natural mobs
+    + Instead use `/damage`
++ Do not teleport a player or natural mob which is riding another entity
+    + Instead teleport the root vehicle
+
+----------------------------------------------------------------
+
 # Advancements
 
 All datapacks should be documented on the 42dominion advancement page. The following are required for all packs:
