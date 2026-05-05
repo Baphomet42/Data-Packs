@@ -1,2 +1,3 @@
 execute on attacker if items entity @s weapon.mainhand *[custom_data~{42data:{xltt:{odm:{}}}}] run tag @e[predicate=42:xltt/match_id,tag=42.tag.xltt.titan,limit=1] add 42.tag.xltt.titan.kill
+execute on attacker if entity @s[type=player,gamemode=creative] run tag @e[predicate=42:xltt/match_id,tag=42.tag.xltt.titan,limit=1] add 42.tag.xltt.titan.kill
 data remove entity @s attack

@@ -1,5 +1,3 @@
-tp @e[tag=42.tag.portal.cube.display,tag=42.tag.portal.id,limit=1] ~ ~-.005 ~
-
 execute if entity @s[tag=42.tag.portal.cube.activates] at @s run function 42:portal/cube/try_activate
 
 execute positioned ~ ~.5 ~ if predicate 42:location_fluid run function 42:portal/cube/fizzle

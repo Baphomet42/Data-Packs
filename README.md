@@ -250,7 +250,7 @@ Optional resource pack - see [below](#resource-pack-info)
     + Debug options supply commands to delete large numbers of equipment
 + *Zones*
     + Automate a wide variety of features when a player enters the zone's hitbox
-    + Zones have three modes: Load, Trigger, and Death
+    + Zones have two modes: Load and Trigger
         + Load Zones update the player's level
             + The zone will reset both the previous and current level, unless the player level already matches the zone level
                 + This makes sure the level won't reset just by walking back into the zone
@@ -258,9 +258,6 @@ Optional resource pack - see [below](#resource-pack-info)
         + Trigger zones will trigger the first time a player enters its hitbox
             + All trigger zones must be set to a load level, as the only way to reset the zone is to reload the level with a Load Zone
             + Trigger Zones can be used to power or unpower equipment, spawn portals, fizzle cubes and pellets, and more
-        + Death zones mark out of bounds areas and kill whoever enters it
-            + Zones will not kill players in creative or spectator mode
-            + The player must be part of the level to be killed by a death zone, so death zones must have a level set
     + Zones can have different sized hitboxes to fit most scenarios
     + After configuring the zone with the `Select Tool`, press Hide so it can't be seen by players
     + Levels should always start with a Load Zone to load the level
@@ -362,6 +359,10 @@ Optional resource pack - see [below](#resource-pack-info)
     + Giant monster, doesn't like players or villagers
     + Spawns from Titan Spawn Egg from 42menu
     + Killed by slicing the back of its neck with an O.D.M. Sword
+        + One hit in the right spot will guarantee a kill (even when spam clicking)
+        + Hitting anywhere else on the titan will have no effect
+        + Other items will have no effect
+            + Any item can be used to kill titans when in creative mode
 + *Cursed Wine*
     + Throw at a villager to infect it... Scream to turn the villager into a titan
     + Obtained from 42menu
@@ -564,6 +565,13 @@ For datapack testing purposes only. Everything is experimental and may not be up
             + Motion is preserved in more cases after passing through portals
         + Elevator teleports are now more seamless
             + Any existing elevators will need to be relinked
+        + Zone changes
+            + Load zones without a level configured will no longer unload the current level
+                + Levels can be unloaded by entering an elevator or through 42menu
+            + Trigger zones are now unloaded with the rest of the level
+            + Removed death zones
+                + Defining out-of-bounds regions will eventually become part of the level system
+        + Misc fixes and performance improvements
     + **XLTT**
         + Improved O.D.M. physics
             + Air drag is reduced during O.D.M flight

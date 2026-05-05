@@ -13,16 +13,20 @@ tag @e remove 42.tag.portal.new_spawn
 kill @s[type=area_effect_cloud]
 
 #   ====scores====
-#   portal_lvl  must be set through sel menu
-#   portal_x    zone type (0 for load, 1 for trigger)
-#   portal_y    zone size (0 for 1x1x1, 1 for 3x3x3, 2 for 5x5x5)
-#   portal_xrot1    link to power
-#   portal_xrot2    link to unpower
-#   portal_yrot1    link to spawn
-#   portal_yrot2    link to fizzle spawn
+#   42.obj.portal.lvl           must be set through sel menu
+#   42.obj.portal.x             zone type (0 for load, 1 for trigger)
+#   42.obj.portal.y             zone size (0 for 1x1x1, 1 for 3x3x3, 2 for 5x5x5)
+#   42.obj.portal.xrot1         link to power
+#   42.obj.portal.xrot2         link to unpower
+#   42.obj.portal.yrot1         link to spawn
+#   42.obj.portal.yrot2         link to fizzle spawn
 
 #   =====tags=====
-#   portal_zone     main tick
-#   portal_zone_group   all zone elements to be fizzled together
-#   portal_zone_show    if the zone can be seen (and fizzled with the fizzler tool)
-#   portal_zone_cool    if the trigger zone should not tick
+#   42.tag.portal.zone          main tick
+#   42.tag.portal.zone.group    all zone elements to be fizzled together
+#   42.tag.portal.zone.show     if the zone can be seen (and fizzled with the fizzler tool)
+#   42.tag.portal.zone.cool     if the trigger zone should not tick
+#   42.tag.portal.zone.has_spawn    if the trigger zone should use yrot1 as an id to spawn
+#   42.tag.portal.zone.has_fizzle   if the trigger zone should use yrot2 as an id to fizzle
+#   42.tag.portal.zone.grill        if the trigger zone should fizzle portals of players who enter it
+#   42.tag.portal.zone.checkpoint   if the load zone should be a checkpoint

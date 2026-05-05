@@ -3,7 +3,7 @@ scoreboard players operation @s 42.obj.portal.var.x = @s 42.obj.portal.var.z
 scoreboard players operation @s 42.obj.portal.var.z = @s 42.obj.portal.temp
 
 function 42:portal/tag_id
-execute as @e[tag=42.tag.portal.launch.group,tag=42.tag.portal.id] at @s run rotate @s ~90 ~
+execute as @e[tag=42.tag.portal.faith_plate.group,tag=42.tag.portal.id] at @s run rotate @s ~90 ~
 tag @e remove 42.tag.portal.id
 
 scoreboard players set @s 42.obj.portal.temp -1

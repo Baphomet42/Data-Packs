@@ -52,7 +52,7 @@ scoreboard players set @s[tag=!42op,gamemode=!creative,scores={42menu=4203002..4
 execute if score @s 42menu matches 4203006 run function 42:portal/cube/craft
 execute if score @s 42menu matches 4203002 run function 42:portal/cube/craft_companion
 execute if score @s 42menu matches 4203003 run function 42:portal/tools/craft_fizzler
-execute if score @s 42menu matches 4203004 run function 42:portal/launch/craft
+execute if score @s 42menu matches 4203004 run function 42:portal/faith_plate/craft
 
 execute if score @s 42menu matches 4203007 run function 42:portal/button/craft
 execute if score @s 42menu matches 4203008 run function 42:portal/button/craft_pedestal

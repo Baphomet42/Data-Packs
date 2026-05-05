@@ -9,9 +9,9 @@ execute if score @s 42menu matches 4203502..4203503 as @e[limit=1,tag=42.tag.por
 execute if score @s 42menu matches 4203504 if score @e[limit=1,tag=42.tag.portal.selected,type=!player] 42.obj.portal.lvl matches 0.. run scoreboard players set @e[limit=1,tag=42.tag.portal.selected,type=!player] 42.obj.portal.lvl -1
 execute if score @s 42menu matches 4203504 as @e[limit=1,tag=42.tag.portal.selected,type=!player] at @s run function 42:portal/tools/sel_new
 
-execute if score @s 42menu matches 4203510..4203514 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.launch] run function 42:portal/tools/sel_error
-execute if score @s 42menu matches 4203510 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.launch] at @s run function 42:portal/launch/rotate
-execute if score @s 42menu matches 4203511 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.launch] at @s run function 42:portal/launch/fizzle
+execute if score @s 42menu matches 4203510..4203514 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.faith_plate] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203510 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.faith_plate] at @s run function 42:portal/faith_plate/rotate
+execute if score @s 42menu matches 4203511 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.faith_plate] at @s run function 42:portal/faith_plate/fizzle
 
 execute if score @s 42menu matches 4203515..4203519 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.door] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203515 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.door] at @s run function 42:portal/door/fizzle
@@ -124,7 +124,7 @@ execute if score @s 42menu matches 4203628..4203637 as @e[limit=1,tag=42.tag.por
 execute if score @s 42menu matches 4203638 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] at @s run tag @s remove 42.tag.portal.zone.cool
 execute if score @s 42menu matches 4203638 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] at @s run function 42:portal/tools/sel_new
 execute if score @s 42menu matches 4203639 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] at @s run function 42:portal/zone/mode/load/toggle_checkpoint
-execute if score @s 42menu matches 4203640 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] at @s run function 42:portal/zone/mode {x:2}
+#execute if score @s 42menu matches 4203640 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] at @s run function 
 execute if score @s 42menu matches 4203641 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] at @s run function 42:portal/zone/mode/trigger/toggle_emancipation
 
 execute if score @s 42menu matches 4203660..4203669 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.spawner] run function 42:portal/tools/sel_error

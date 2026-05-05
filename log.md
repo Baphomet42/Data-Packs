@@ -78,6 +78,7 @@ These guidelines should generally be followed, but it is ok to have exceptions.
     + Instead use `/damage`
 + Do not teleport a player or natural mob which is riding another entity
     + Instead teleport the root vehicle
++ When giving an entity Invulnerable, it should also get max resistance to prevent creative players from killing it
 
 ----------------------------------------------------------------
 

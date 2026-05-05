@@ -1,9 +1,9 @@
 function 42:portal/tag_id
 
 execute if entity @e[limit=1,type=interaction,tag=42.tag.portal.cube.hit,tag=42.tag.portal.id,tag=42.tag.portal.cube.held] run function 42:portal/cube/tick_hold
-execute positioned ~ ~-.005 ~ unless entity @e[limit=1,type=item_display,distance=...0001,tag=42.tag.portal.cube.display,tag=42.tag.portal.id] at @s run function 42:portal/cube/tick_move
+# TODO only run move tick when pos changed since last tick
+function 42:portal/cube/tick_move
 tag @e[limit=1,type=interaction,tag=42.tag.portal.cube.hit,tag=42.tag.portal.id] add 42.tag.portal.ticked
-execute if entity @s[tag=42.tag.portal.cube.level_freeze] run function 42:portal/cube/debug/level_unfreeze
 execute as @e[limit=1,type=interaction,tag=42.tag.portal.cube.hit,tag=42.tag.portal.id] if function 42:portal/cube/interact_test at @s run function 42:portal/cube/interact
 execute if entity @s[tag=42.tag.portal.cube.gel.blue,predicate=42:periodic_10,predicate=!42:portal/gel/blue_cube_speed/total] run function 42:portal/cube/gel/blue_speed
 

@@ -1,3 +1,6 @@
+execute if score @s 42.obj.portal.var.x matches 0 run data modify entity @s CustomName set value "Load Zone"
+execute if score @s 42.obj.portal.var.x matches 1 run data modify entity @s CustomName set value "Trigger Zone"
+
 execute unless entity @s[tag=42.tag.portal.zone.show] run return 0
 
 function 42:portal/tag_id
@@ -19,11 +22,7 @@ tag @e remove 42.tag.portal.zone.update_temp
 function 42:portal/tag_id
 
 execute if score @s 42.obj.portal.var.x matches 0 as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl] run data modify entity @s text set value "Load Zone"
-execute if score @s 42.obj.portal.var.x matches 0 run data modify entity @s CustomName set value "Load Zone"
 execute if score @s 42.obj.portal.var.x matches 1 as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl] run data modify entity @s text set value "Trigger Zone"
-execute if score @s 42.obj.portal.var.x matches 1 run data modify entity @s CustomName set value "Trigger Zone"
-execute if score @s 42.obj.portal.var.x matches 2 as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl] run data modify entity @s text set value "Death Zone"
-execute if score @s 42.obj.portal.var.x matches 2 run data modify entity @s CustomName set value "Death Zone"
 
 execute if score @s 42.obj.portal.lvl matches ..0 as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.lvl] run data modify entity @s text set value {text:"No level set"}
 execute if score @s 42.obj.portal.lvl matches ..0 if score @s 42.obj.portal.var.x matches 1..2 as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.lvl] run data modify entity @s text set value {text:"No level set",color:"red"}

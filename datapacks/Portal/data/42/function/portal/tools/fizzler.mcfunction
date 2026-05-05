@@ -1,5 +1,5 @@
 execute as @e[tag=42.tag.portal.cube.tp,distance=..2.5] at @s run function 42:portal/cube/fizzle
-execute as @e[tag=42.tag.portal.launch,distance=..2.5] at @s run function 42:portal/launch/fizzle
+execute as @e[tag=42.tag.portal.faith_plate,distance=..2.5] at @s run function 42:portal/faith_plate/fizzle
 execute as @e[tag=42.tag.portal.btn,distance=..2.5] at @s run function 42:portal/button/fizzle
 execute as @e[tag=42.tag.portal.pedestal,distance=..2.5] at @s run function 42:portal/button/fizzle_pedestal
 execute as @e[tag=42.tag.portal.door,distance=..2.5] at @s run function 42:portal/door/fizzle

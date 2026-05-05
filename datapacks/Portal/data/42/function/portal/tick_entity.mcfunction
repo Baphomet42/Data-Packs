@@ -1,5 +1,5 @@
 execute if entity @s[tag=42.tag.portal.cube.tp] run return run function 42:portal/level/tick_score
-execute if entity @s[tag=42.tag.portal.launch] run return run function 42:portal/level/tick_score
+execute if entity @s[tag=42.tag.portal.faith_plate] run return run function 42:portal/level/tick_score
 execute if entity @s[tag=42.tag.portal.btn] run return run function 42:portal/level/tick_score
 execute if entity @s[tag=42.tag.portal.pedestal,scores={42.obj.portal.time=0..}] run return run function 42:portal/level/tick_score
 execute if entity @s[tag=42.tag.portal.pellet,tag=!42.tag.portal.pellet.on] run return run function 42:portal/level/tick_score

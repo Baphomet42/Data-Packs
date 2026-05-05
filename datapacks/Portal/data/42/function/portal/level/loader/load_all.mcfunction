@@ -12,7 +12,7 @@ execute if data storage 42:portal loader.temp_equipment.door[0] run function 42:
 execute if data storage 42:portal loader.temp_equipment.vent[0] run function 42:portal/level/loader/load/vent with storage 42:portal loader.temp_equipment.vent[0]
 #execute if data storage 42:portal loader.temp_equipment.elevator[0] run function 42:portal/level/loader/load/elevator with storage 42:portal loader.temp_equipment.elevator[0]
 execute if data storage 42:portal loader.temp_equipment.grill[0] run function 42:portal/level/loader/load/grill with storage 42:portal loader.temp_equipment.grill[0]
-execute if data storage 42:portal loader.temp_equipment.launch[0] run function 42:portal/level/loader/load/launch with storage 42:portal loader.temp_equipment.launch[0]
+execute if data storage 42:portal loader.temp_equipment.faith_plate[0] run function 42:portal/level/loader/load/faith_plate with storage 42:portal loader.temp_equipment.faith_plate[0]
 execute if data storage 42:portal loader.temp_equipment.pellet_emitter[0] run function 42:portal/level/loader/load/pellet_emitter with storage 42:portal loader.temp_equipment.pellet_emitter[0]
 execute if data storage 42:portal loader.temp_equipment.pellet_catcher[0] run function 42:portal/level/loader/load/pellet_catcher with storage 42:portal loader.temp_equipment.pellet_catcher[0]
 execute if data storage 42:portal loader.temp_equipment.pellet_spawner[0] run function 42:portal/level/loader/load/pellet_spawner with storage 42:portal loader.temp_equipment.pellet_spawner[0]
@@ -21,7 +21,7 @@ execute if data storage 42:portal loader.temp_equipment.laser_emitter[0] run fun
 execute if data storage 42:portal loader.temp_equipment.laser_catcher[0] run function 42:portal/level/loader/load/laser_catcher with storage 42:portal loader.temp_equipment.laser_catcher[0]
 execute if data storage 42:portal loader.temp_equipment.portal_spawner[0] run function 42:portal/level/loader/load/portal_spawner with storage 42:portal loader.temp_equipment.portal_spawner[0]
 execute if data storage 42:portal loader.temp_equipment.wire[0] run function 42:portal/level/loader/load/wire with storage 42:portal loader.temp_equipment.wire[0]
-#execute if data storage 42:portal loader.temp_equipment.zone[0] run function 42:portal/level/loader/load/zone with storage 42:portal loader.temp_equipment.zone[0]
+execute if data storage 42:portal loader.temp_equipment.zone[0] run function 42:portal/level/loader/load/zone with storage 42:portal loader.temp_equipment.zone[0]
 
 tag @s remove 42.tag.portal.loader
 execute unless data storage 42:portal loader.error run function 42:portal/level/loader/storage/delete_level with storage 42:portal loader

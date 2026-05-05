@@ -5,7 +5,7 @@ tag @e remove 42.tag.portal.sel_p
 tag @p add 42.tag.portal.sel_p
 
 tag @e[tag=42.tag.portal.cube.tp,distance=..2.5] add 42.tag.portal.temp
-tag @e[tag=42.tag.portal.launch,distance=..2.5] add 42.tag.portal.temp
+tag @e[tag=42.tag.portal.faith_plate,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.btn,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.pedestal,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.door,distance=..2.5] add 42.tag.portal.temp

@@ -16,7 +16,7 @@ execute as @e[tag=42.tag.portal.door] if score @s 42.obj.portal.lvl = #42.var.po
 execute as @e[tag=42.tag.portal.vent] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/vent/unload
 # elevator?
 execute as @e[tag=42.tag.portal.grill] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/grill/unload
-execute as @e[tag=42.tag.portal.launch] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/launch/unload
+execute as @e[tag=42.tag.portal.faith_plate] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/faith_plate/unload
 execute as @e[tag=42.tag.portal.pellet.emitter] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/pellet/emitter/unload
 execute as @e[tag=42.tag.portal.pellet.catcher] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/pellet/catcher/unload
 execute as @e[tag=42.tag.portal.pellet.spawner] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/pellet/spawner/unload
@@ -26,7 +26,7 @@ execute as @e[tag=42.tag.portal.laser.catcher] if score @s 42.obj.portal.lvl = #
 execute as @e[tag=42.tag.portal.portal.spawner] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/portal/spawner/unload
 execute as @e[tag=42.tag.portal.wire,tag=!42.tag.portal.wire.lbl] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/wire/unload
 execute as @e[tag=42.tag.portal.wire,tag=42.tag.portal.wire.lbl] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run kill @s
-# zone?
+execute as @e[tag=42.tag.portal.zone] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/zone/unload
 
 function 42:portal/level/loader/storage/save_level with storage 42:portal loader
 data remove storage 42:portal loader

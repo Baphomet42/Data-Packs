@@ -1,5 +1,5 @@
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.cube] at @s run function 42:portal/cube/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.launch] at @s run function 42:portal/launch/spawn
+execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.faith_plate] at @s run function 42:portal/faith_plate/spawn
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.button] at @s run function 42:portal/button/spawn
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pedestal] at @s run function 42:portal/button/spawn_pedestal
 execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.door] at @s run function 42:portal/door/spawn

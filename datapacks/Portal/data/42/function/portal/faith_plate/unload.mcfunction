@@ -9,6 +9,6 @@ execute store result storage 42:portal loader.temp_entity.lvl int 1 run scoreboa
 execute store result storage 42:portal loader.temp_entity.x int 1 run scoreboard players get @s 42.obj.portal.var.x
 execute store result storage 42:portal loader.temp_entity.y int 1 run scoreboard players get @s 42.obj.portal.var.y
 execute store result storage 42:portal loader.temp_entity.z int 1 run scoreboard players get @s 42.obj.portal.var.z
-function 42:portal/launch/fizzle
+function 42:portal/faith_plate/fizzle
 
-data modify storage 42:portal loader.temp_equipment.launch append from storage 42:portal loader.temp_entity
+data modify storage 42:portal loader.temp_equipment.faith_plate append from storage 42:portal loader.temp_entity
