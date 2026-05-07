@@ -89,6 +89,8 @@ execute if score @s 42menu matches 4203586 as @e[limit=1,tag=42.tag.portal.selec
 
 execute if score @s 42menu matches 4203590..4203609 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203590..4203609 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main,tag=!42.tag.portal.elevator.search] run function 42:portal/elevator/move/set/sel_error
+execute if score @s 42menu matches 4203590..4203599 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main,tag=42.tag.portal.elevator.show] run function 42:portal/elevator/sel_error_hidden
+execute if score @s 42menu matches 4203601..4203609 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main,tag=42.tag.portal.elevator.show] run function 42:portal/elevator/sel_error_hidden
 execute if score @s 42menu matches 4203590 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/fizzle
 execute if score @s 42menu matches 4203591 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/move/set_none
 execute if score @s 42menu matches 4203592 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/move/move_x {x:1}
@@ -99,6 +101,8 @@ execute if score @s 42menu matches 4203596 as @e[limit=1,tag=42.tag.portal.selec
 execute if score @s 42menu matches 4203597 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/start
 execute if score @s 42menu matches 4203598 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/tp/set
 execute if score @s 42menu matches 4203599 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/cycle
+execute if score @s 42menu matches 4203600 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/show
+execute if score @s 42menu matches 4203601 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/hide
 
 
 execute if score @s 42menu matches 4203620..4203659 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] run function 42:portal/tools/sel_error

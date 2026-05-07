@@ -1,4 +1,4 @@
-$execute at @s anchored eyes run summon cat ^ ^-.2 ^.2 {Tags:["42.tag.summon","42.tag.essentials.kittycannon","42.tag.essentials.need_data"],Silent:true,Invulnerable:true,active_effects:[{id:"minecraft:resistance",duration:-1,amplifier:42b,show_particles:false,show_icon:false}],Sitting:true,Age:-400,Rotation:$(Rotation),DeathLootTable:"42:empty",PersistenceRequired:true,Team:"42.team.gen.no_col"}
+$execute at @s anchored eyes run summon cat ^ ^-.2 ^.2 {Tags:["42.tag.summon","42.tag.tech","42.tag.essentials.kittycannon","42.tag.essentials.need_data"],Silent:true,Invulnerable:true,active_effects:[{id:"minecraft:resistance",duration:-1,amplifier:42b,show_particles:false,show_icon:false}],Sitting:true,Age:-400,Rotation:$(Rotation),DeathLootTable:"42:empty",PersistenceRequired:true,Team:"42.team.gen.no_col"}
 
 execute store result score #random kittycannon run random value 0..10
 execute if score #random kittycannon matches 0 run return run data modify entity @e[limit=1,type=cat,tag=42.tag.essentials.kittycannon,tag=42.tag.essentials.need_data] variant set value "white"

@@ -5,7 +5,7 @@ tag @e remove 42.tag.portal.turret.this
 tag @s add 42.tag.portal.turret.this
 
 tag @a[distance=..35,gamemode=!spectator] add 42.tag.portal.turret.target
-tag @e[distance=..35,type=villager] add 42.tag.portal.turret.target
+tag @e[distance=..35,type=villager,tag=!42.tag.tech] add 42.tag.portal.turret.target
 tag @e[tag=42.tag.portal.turret.target] add 42.tag.portal.turret.target2
 
 execute store result score @s 42.obj.portal.xrot1 run data get entity @e[tag=42.tag.portal.turret.eye,tag=42.tag.portal.id,limit=1] Rotation[0] 1000

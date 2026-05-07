@@ -1,1 +1,1 @@
-$summon mannequin ~ ~ ~ {Tags:["42.tag.posers.new_spawn"],Rotation:$(Rotation),profile:$(profile)}
+$summon mannequin ~ ~ ~ {Tags:["42.tag.posers.new_spawn","42.tag.tech"],Rotation:$(Rotation),profile:$(profile)}

@@ -12,5 +12,7 @@ tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},\
     {text:"\n      "},"[",{text:"Trigger",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203597"}},"]",\
     {text:"\n   Misc...",color:"dark_gray"},\
     {text:"\n      "},"[",{text:"Fizzle",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203590"}},"]",\
-    {text:"\n      "},"[",{text:"Cycle Type",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203599"}},"]"\
+    {text:"\n      "},"[",{text:"Cycle Type",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203599"}},"]",\
+    {text:"\n      "},"[",{text:"Show",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203600"}},"]",\
+    {text:" "},"[",{text:"Hide",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203601"}},"]"\
     ]

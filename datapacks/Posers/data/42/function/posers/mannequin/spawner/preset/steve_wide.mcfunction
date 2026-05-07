@@ -6,7 +6,7 @@ give @s armor_stand[\
         posers:{\
             entity_data:{\
                 profile:{texture:"minecraft:entity/player/wide/steve",model:"wide"},\
-                Tags:["42.tag.posers.mannequin"],\
+                Tags:["42.tag.posers.mannequin","42.tag.tech"],\
                 Invulnerable:true,\
                 active_effects:[{id:"minecraft:resistance",duration:-1,amplifier:255ub,show_particles:false,show_icon:false}]\
                 }\
@@ -14,7 +14,7 @@ give @s armor_stand[\
         }},\
     minecraft:entity_data={\
         id:"minecraft:armor_stand",\
-        Tags:["42.tag.posers.spawn_mannequin"],\
+        Tags:["42.tag.posers.spawn_mannequin","42.tag.tech"],\
         Marker:true,\
         Small:true,\
         Invisible:true\

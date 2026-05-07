@@ -21,5 +21,7 @@ execute if entity @s[type=#42:portal/portal_exempt] \
     unless entity @s[tag=42.tag.portal.gel.droplet] \
     run return fail
 
+execute if entity @s[tag=42.tag.tech] run return fail
+
 execute store result score @s 42.obj.portal.timestamp.used_portal run time query gametime
 return 1

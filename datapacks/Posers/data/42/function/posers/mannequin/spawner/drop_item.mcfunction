@@ -16,7 +16,7 @@ data merge storage 42:posers {temp:{item:{Item:{components:{\
     "minecraft:custom_data":{42data:{datapack:{}}},\
     "minecraft:entity_data":{\
         id:"minecraft:armor_stand",\
-        Tags:["42.tag.posers.spawn_mannequin"],\
+        Tags:["42.tag.posers.spawn_mannequin","42.tag.tech"],\
         Marker:true,\
         Small:true,\
         Invisible:true\
@@ -57,6 +57,7 @@ data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42
 data modify storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags set value []
 execute if entity @s[tag=42.tag.posers.mannequin] run data modify storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags append value "42.tag.posers.mannequin"
 execute if entity @s[tag=42.tag.posers.mannequin.ai.watch_player] run data modify storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags append value "42.tag.posers.mannequin.ai.watch_player"
+execute if entity @s[tag=42.tag.tech] run data modify storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags append value "42.tag.tech"
 execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags[0] run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.Tags
 
 execute unless data storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.attributes[{id:"minecraft:movement_speed",base:0.7d}].modifiers run data remove storage 42:posers temp.item.Item.components.minecraft:custom_data.42data.posers.entity_data.attributes[{id:"minecraft:movement_speed",base:0.7d}]

@@ -1,6 +1,6 @@
 tag @e remove 42.tag.xltt.temp_spawn
 
-summon vindicator ~ ~ ~ {Tags:["42.tag.summon","42.tag.xltt.titan","42.tag.xltt.titan.group","42.tag.xltt.temp_spawn"],DeathLootTable:"42:empty",PersistenceRequired:true,Invulnerable:true,active_effects:[{id:"minecraft:resistance",duration:-1,amplifier:42b,show_particles:false,show_icon:false}],attributes:[{id:"minecraft:follow_range",base:128d},{id:"minecraft:movement_speed",base:.42d},{id:"minecraft:attack_damage",base:10d}]}
+summon vindicator ~ ~ ~ {Tags:["42.tag.summon","42.tag.tech","42.tag.xltt.titan","42.tag.xltt.titan.group","42.tag.xltt.temp_spawn"],DeathLootTable:"42:empty",PersistenceRequired:true,Invulnerable:true,active_effects:[{id:"minecraft:resistance",duration:-1,amplifier:42b,show_particles:false,show_icon:false}],attributes:[{id:"minecraft:follow_range",base:128d},{id:"minecraft:movement_speed",base:.42d},{id:"minecraft:attack_damage",base:10d}]}
 summon item_display ~ ~8 ~ {Tags:["42.tag.summon","42.tag.xltt.titan.hit_tp","42.tag.xltt.titan.group","42.tag.xltt.temp_spawn"],view_range:0f,teleport_duration:2,Passengers:[{id:"minecraft:interaction",Tags:["42.tag.summon","42.tag.xltt.titan.hit","42.tag.xltt.titan.group","42.tag.xltt.temp_spawn"],width:3.5,height:1.5}]}
 
 attribute @e[tag=42.tag.xltt.temp_spawn,tag=42.tag.xltt.titan,limit=1] scale base set 6

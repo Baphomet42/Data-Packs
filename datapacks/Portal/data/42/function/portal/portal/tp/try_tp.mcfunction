@@ -1,6 +1,6 @@
 execute if entity @s[type=player] run function 42:portal/portal/tp/tp_player
 execute if entity @s[tag=42.tag.portal.cube.hit] at @s run function 42:portal/portal/tp/tp_cube_branch
-execute if entity @s[type=!#42:portal/portal_exempt] at @s run function 42:portal/portal/tp/tp_entity
+execute if entity @s[type=!#42:portal/portal_exempt,tag=!42.tag.tech] at @s run function 42:portal/portal/tp/tp_entity
 
 execute if entity @s[tag=42.tag.portal.pellet] at @s run function 42:portal/portal/tp/tp_pellet
 execute if entity @s[tag=42.tag.portal.pellet.catcher.laser] at @s run function 42:portal/portal/tp/tp_pellet_catcher_laser

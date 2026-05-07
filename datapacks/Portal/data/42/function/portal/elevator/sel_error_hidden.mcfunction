@@ -1,0 +1,2 @@
+scoreboard players set @s 42menu 0
+tellraw @s [{text:"This action cannot be done while the elevator is hidden",color:"red",hover_event:{action:"show_text",value:"The elevator must be fully loaded to perform actions"}}]

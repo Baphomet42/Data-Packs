@@ -15,7 +15,7 @@ Used for 42menu system.
 
 42menu values are 42NNXXX where NN is the id in 2 digits and XXX are the values 000 to 999.
 
-+ All entities summoned by a pack should have the tag `42.tag.summon` or include `custom_data~{42data:{datapack:{}}}`
++ All entities summoned by a pack should have the tag `42.tag.summon` and/or include `custom_data~{42data:{datapack:{}}}`
 + All custom items should include `custom_data~{42data:{datapack:{}}}`
     + All other `custom_data` should be within the `42data` compound
     + Most `custom_data` should typically be within the `42data.<pack>` compound
@@ -67,6 +67,17 @@ Exceptions to scoreboard objectives names may be trigger commands, which can use
     + The minecraft namespace should usually be specified (but not a requirement)
         + Useful regex to help find potential deviants
             + `id:"[a-z0-9_\-./]*"`
+
+----------------------------------------------------------------
+
+# Common /tag tags
+
++ `42.tag.tech`
+    + This can be used on a mob to indicate it's being used for technical purposes and should not be treated like a natural mob
+    + Entities with this tag should not be blindly grouped in with `type=` checks that are designed to work on naturally spawned mobs
+    + Interactions, displays, markers, and other tech entities do not need this tag, as that is already implied
+    + Example:
+        + A boss designed to attack shulkers should ignore shulkers with this tag
 
 ----------------------------------------------------------------
 

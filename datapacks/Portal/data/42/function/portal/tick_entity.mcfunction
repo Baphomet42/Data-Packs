@@ -14,6 +14,6 @@ execute if entity @s[tag=42.tag.portal.portal] run return run function 42:portal
 execute if entity @s[tag=42.tag.portal.gun_display] run return run function 42:portal/gun/display/tick
 execute if entity @s[type=marker,tag=42.tag.portal.gun.projectile] run return run function 42:portal/gun/find_target
 execute if entity @s[tag=42.tag.portal.elevator.main,tag=!42.tag.portal.elevator.on,tag=42.tag.portal.prox_tick] run return run function 42:portal/elevator/off_tick
-execute if entity @s[tag=42.tag.portal.elevator.main,tag=42.tag.portal.elevator.main] run return run function 42:portal/elevator/on_tick
+execute if entity @s[tag=42.tag.portal.elevator.main,tag=42.tag.portal.elevator.show,tag=42.tag.portal.elevator.on] run return run function 42:portal/elevator/on_tick
 execute if entity @s[tag=42.tag.portal.elevator.marker] run return run function 42:portal/elevator/move/set/tick
 execute if entity @s[tag=42.tag.portal.zone,tag=!42.tag.portal.zone.cool,tag=42.tag.portal.prox_tick] if entity @a[limit=1,gamemode=!spectator,distance=..10] run return run function 42:portal/zone/tick
