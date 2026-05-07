@@ -4,7 +4,7 @@ tag @e remove 42.tag.portal.temp2
 tag @e remove 42.tag.portal.sel_p
 tag @p add 42.tag.portal.sel_p
 
-tag @e[tag=42.tag.portal.cube.tp,distance=..2.5] add 42.tag.portal.temp
+tag @e[tag=42.tag.portal.cube.main,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.faith_plate,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.btn,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.pedestal,distance=..2.5] add 42.tag.portal.temp
@@ -16,8 +16,6 @@ tag @e[tag=42.tag.portal.pellet.catcher,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.pellet,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.laser.emitter,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.laser.catcher,distance=..2.5] add 42.tag.portal.temp
-tag @e[tag=42.tag.portal.elevator,distance=..3.5] add 42.tag.portal.temp
-tag @e[tag=42.tag.portal.elevator.start,distance=..3.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.elevator.selgroup,distance=..3.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.wire,distance=..1.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.gel,distance=..1.5] add 42.tag.portal.temp

@@ -12,5 +12,5 @@ tag @e[tag=42.tag.portal.grill.hit,scores={42.obj.portal.col=2}] add 42.tag.port
 execute if entity @e[tag=42.tag.portal.temp] run function 42:portal/grill/handle_player
 tag @e remove 42.tag.portal.temp
 
-tag @e[tag=42.tag.portal.elevator.start,distance=..15] add 42.tag.portal.prox_tick
+tag @e[tag=42.tag.portal.elevator.main,distance=..15] add 42.tag.portal.prox_tick
 tag @e[tag=42.tag.portal.zone,distance=..15] add 42.tag.portal.prox_tick

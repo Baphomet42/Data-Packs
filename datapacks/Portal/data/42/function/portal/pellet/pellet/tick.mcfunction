@@ -4,7 +4,7 @@ tag @s remove 42.tag.portal.pellet.valid
 scoreboard players operation @s 42.obj.portal.var.y = @s 42.obj.portal.var.x
 
 tag @s remove 42.tag.portal.temp
-execute positioned ~ ~-.5 ~ if entity @e[tag=42.tag.portal.cube.col,distance=...5] run tag @s add 42.tag.portal.temp
+execute positioned ~ ~-.5 ~ if entity @e[tag=42.tag.portal.cube.main,distance=...5] run tag @s add 42.tag.portal.temp
 execute if entity @s[tag=42.tag.portal.temp,tag=!42.tag.portal.pellet.in_cube] run function 42:portal/pellet/pellet/bounce
 tag @s remove 42.tag.portal.pellet.in_cube
 execute if entity @s[tag=42.tag.portal.temp] run tag @s add 42.tag.portal.pellet.in_cube

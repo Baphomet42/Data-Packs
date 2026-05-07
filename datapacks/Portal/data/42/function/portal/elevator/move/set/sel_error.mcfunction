@@ -1,2 +1,2 @@
 scoreboard players set @s 42menu 0
-tellraw @s [{text:"This action cannot be done while the elevator is loading",color:"red",hover_event:{action:"show_text",value:"The elevator is busy scanning the area for the `Current` menu option"}}]
+tellraw @s [{text:"This action cannot be done while the elevator is scanning",color:"red",hover_event:{action:"show_text",value:"The elevator is busy scanning the area for the [Current] menu option"}}]

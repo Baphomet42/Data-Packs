@@ -1,4 +1,4 @@
-execute if entity @s[tag=42.tag.portal.cube.tp] at @s run function 42:portal/cube/tick
+execute if entity @s[tag=42.tag.portal.cube.main] at @s run function 42:portal/cube/tick
 execute if entity @s[tag=42.tag.portal.faith_plate] at @s run function 42:portal/faith_plate/tick
 execute if entity @s[tag=42.tag.portal.btn] at @s run function 42:portal/button/tick
 execute if entity @s[tag=42.tag.portal.pedestal] at @s run function 42:portal/button/tick_pedestal

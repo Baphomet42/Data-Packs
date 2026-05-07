@@ -1,8 +1,6 @@
 give @s panda_spawn_egg[item_name="Elevator",rarity=uncommon,custom_data={42data:{datapack:{}}},\
     lore=[\
         {text:"Requires 5x5x4 space to spawn",color:"white",italic:false},\
-        {text:"Modify with:",color:"gray",italic:false},\
-        {text:"  Cycle Tool",color:"gray"},\
         {text:"Select Tool Features:",color:"gray",italic:false},\
         {text:"  Set Destination",color:"gray"},\
         ""],\

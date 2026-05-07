@@ -27,24 +27,24 @@ execute if score @s 42menu matches 4203525..4203529 unless entity @e[limit=1,tag
 execute if score @s 42menu matches 4203525 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.btn] at @s run function 42:portal/button/fizzle
 execute if score @s 42menu matches 4203526 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.btn] at @s run function 42:portal/button/cycle
 
-execute if score @s 42menu matches 4203530..4203539 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp] run function 42:portal/tools/sel_error
-execute if score @s 42menu matches 4203530 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp] at @s run function 42:portal/cube/fizzle
-execute if score @s 42menu matches 4203531 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp] at @s run function 42:portal/cube/skin
-execute if score @s 42menu matches 4203532 if entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp,tag=42.tag.portal.cube.storage] run function 42:portal/tools/sel_error
-execute if score @s 42menu matches 4203532 if entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp,tag=42.tag.portal.cube.companion] run function 42:portal/tools/sel_error
-execute if score @s 42menu matches 4203532 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp] at @s run function 42:portal/cube/rotate
-execute if score @s 42menu matches 4203533 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp] at @s run scoreboard players set #42.var.portal.music_time 42.obj.portal.vars 0
-execute if score @s 42menu matches 4203534 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp] at @s run function 42:portal/cube/spawner/new
+execute if score @s 42menu matches 4203530..4203539 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203530 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main] at @s run function 42:portal/cube/fizzle
+execute if score @s 42menu matches 4203531 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main] at @s run function 42:portal/cube/skin
+execute if score @s 42menu matches 4203532 if entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main,tag=42.tag.portal.cube.storage] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203532 if entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main,tag=42.tag.portal.cube.companion] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203532 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main] at @s run function 42:portal/cube/rotate
+execute if score @s 42menu matches 4203533 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main] at @s run scoreboard players set #42.var.portal.music_time 42.obj.portal.vars 0
+execute if score @s 42menu matches 4203534 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main] at @s run function 42:portal/cube/spawner/new
 
-execute if score @s 42menu matches 4203540..4203549 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret] run function 42:portal/tools/sel_error
-execute if score @s 42menu matches 4203540 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/reset
-execute if score @s 42menu matches 4203541 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/toggle/on
-execute if score @s 42menu matches 4203542 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/stand
-execute if score @s 42menu matches 4203543 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret,tag=!42.tag.portal.turret.oracle] at @s run function 42:portal/cube/turret/malfunction
-execute if score @s 42menu matches 4203544 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/toggle/oracle
-execute if score @s 42menu matches 4203545 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/toggle/nofind
-execute if score @s 42menu matches 4203546 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/fall
-execute if score @s 42menu matches 4203547 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.tp,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/toggle/laser_on
+execute if score @s 42menu matches 4203540..4203549 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main,tag=42.tag.portal.turret] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203540 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/reset
+execute if score @s 42menu matches 4203541 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/toggle/on
+execute if score @s 42menu matches 4203542 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/stand
+execute if score @s 42menu matches 4203543 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main,tag=42.tag.portal.turret,tag=!42.tag.portal.turret.oracle] at @s run function 42:portal/cube/turret/malfunction
+execute if score @s 42menu matches 4203544 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/toggle/oracle
+execute if score @s 42menu matches 4203545 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/toggle/nofind
+execute if score @s 42menu matches 4203546 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/fall
+execute if score @s 42menu matches 4203547 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.cube.main,tag=42.tag.portal.turret] at @s run function 42:portal/cube/turret/toggle/laser_on
 
 
 execute if score @s 42menu matches 4203555..4203559 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.wire] run function 42:portal/tools/sel_error
@@ -87,18 +87,18 @@ execute if score @s 42menu matches 4203584 as @e[limit=1,tag=42.tag.portal.selec
 execute if score @s 42menu matches 4203585 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.vent] at @s run function 42:portal/vent/drop
 execute if score @s 42menu matches 4203586 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.vent] at @s run function 42:portal/vent/fizzle_cube
 
-execute if score @s 42menu matches 4203590..4203609 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator] run function 42:portal/tools/sel_error
-execute if score @s 42menu matches 4203590..4203609 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator,tag=!42.tag.portal.elevator.search] run function 42:portal/elevator/move/set/sel_error
-execute if score @s 42menu matches 4203590 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator] at @s run function 42:portal/elevator/fizzle
-execute if score @s 42menu matches 4203591 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator] at @s run function 42:portal/elevator/move/set_none
-execute if score @s 42menu matches 4203592 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator] at @s run function 42:portal/elevator/move/move_x {x:1}
-execute if score @s 42menu matches 4203593 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator] at @s run function 42:portal/elevator/move/move_x {x:-1}
-execute if score @s 42menu matches 4203594 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator] at @s run function 42:portal/elevator/move/set/current
-execute if score @s 42menu matches 4203595 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator] at @s run function 42:portal/elevator/tp/remove
-execute if score @s 42menu matches 4203596 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator] at @s run function 42:portal/elevator/reset
-execute if score @s 42menu matches 4203597 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator] at @s run function 42:portal/elevator/start
-execute if score @s 42menu matches 4203598 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator] at @s run function 42:portal/elevator/tp/set
-execute if score @s 42menu matches 4203599 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator] at @s run function 42:portal/elevator/cycle
+execute if score @s 42menu matches 4203590..4203609 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] run function 42:portal/tools/sel_error
+execute if score @s 42menu matches 4203590..4203609 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main,tag=!42.tag.portal.elevator.search] run function 42:portal/elevator/move/set/sel_error
+execute if score @s 42menu matches 4203590 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/fizzle
+execute if score @s 42menu matches 4203591 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/move/set_none
+execute if score @s 42menu matches 4203592 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/move/move_x {x:1}
+execute if score @s 42menu matches 4203593 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/move/move_x {x:-1}
+execute if score @s 42menu matches 4203594 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/move/set/current
+execute if score @s 42menu matches 4203595 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/tp/remove
+execute if score @s 42menu matches 4203596 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/reset
+execute if score @s 42menu matches 4203597 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/start
+execute if score @s 42menu matches 4203598 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/tp/set
+execute if score @s 42menu matches 4203599 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/cycle
 
 
 execute if score @s 42menu matches 4203620..4203659 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] run function 42:portal/tools/sel_error

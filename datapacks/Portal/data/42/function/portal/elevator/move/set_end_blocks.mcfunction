@@ -6,4 +6,4 @@ execute as @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end] at @s run fil
 execute as @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end] at @s run fill ~-1 ~ ~-1 ~1 ~ ~1 air replace barrier
 execute as @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end] at @s run fill ^-1 ^ ^-1 ^1 ^2 ^2 air replace barrier
 
-execute as @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end] store result score @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator] 42.obj.portal.var.z run data get entity @s Pos[1] 100
+execute as @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end] store result score @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.main] 42.obj.portal.var.z run data get entity @s Pos[1] 100

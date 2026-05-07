@@ -1,8 +1,8 @@
 tag @e remove 42.tag.portal.new_spawn
 summon item_display ~ ~.5 ~ {Tags:["42.tag.summon","42.tag.portal.gel","42.tag.portal.gel.droplet","42.tag.portal.tags.has_tick","42.tag.portal.new_spawn"],CustomNameVisible:false,CustomName:"Gel Droplet",item:{id:"minecraft:white_concrete"},view_range:10f,brightness:{block:15,sky:15},teleport_duration:1,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1f,1f,1f]}}
-scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.var.x 0
-scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.var.y 0
-scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.var.z 0
+scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.motion.x 0
+scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.motion.y 0
+scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.motion.z 0
 scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.time 0
 scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.cool 0
 scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.lvl -1

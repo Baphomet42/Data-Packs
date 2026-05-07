@@ -1,10 +1,10 @@
 execute as @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.wall] at @s run function 42:portal/elevator/walls/clear
 
-execute at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.start] run fill ~-2 ~ ~-2 ~2 ~2 ~2 air replace barrier
+execute at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.main] run fill ~-2 ~ ~-2 ~2 ~2 ~2 air replace barrier
 execute at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end] run fill ~-2 ~ ~-2 ~2 ~2 ~2 air replace barrier
-execute if entity @s[tag=42.tag.portal.elevator.at_start] at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.start] run fill ~-2 ~ ~-2 ~2 ~2 ~2 barrier replace #42:portal/portal_replace
-execute if entity @s[tag=42.tag.portal.elevator.at_start] at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.start] run fill ~-1 ~ ~-1 ~1 ~2 ~1 air replace barrier
+execute if entity @s[tag=42.tag.portal.elevator.at_start] at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.main] run fill ~-2 ~ ~-2 ~2 ~2 ~2 barrier replace #42:portal/portal_replace
+execute if entity @s[tag=42.tag.portal.elevator.at_start] at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.main] run fill ~-1 ~ ~-1 ~1 ~2 ~1 air replace barrier
 execute if entity @s[tag=42.tag.portal.elevator.at_end] at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end] run fill ~-2 ~ ~-2 ~2 ~2 ~2 barrier replace #42:portal/portal_replace
 execute if entity @s[tag=42.tag.portal.elevator.at_end] at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end] run fill ~-1 ~ ~-1 ~1 ~2 ~1 air replace barrier
-execute if entity @s[tag=!42.tag.portal.elevator.shut] at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.start] run fill ^-1 ^ ^-1 ^1 ^2 ^2 air replace barrier
+execute if entity @s[tag=!42.tag.portal.elevator.shut] at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.main] run fill ^-1 ^ ^-1 ^1 ^2 ^2 air replace barrier
 execute if entity @s[tag=!42.tag.portal.elevator.shut] at @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.end] run fill ^-1 ^ ^-1 ^1 ^2 ^2 air replace barrier

@@ -5,9 +5,9 @@ function 42:gen/cmdfeed/hide
 tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},{text:"------------------------------\n",color:"dark_gray"},\
     {selector:"@s",color:"gold",bold:true},\
     {storage:"42:gen",nbt:"cmdfeed_btn",interpret:true},\
-    {text:" "},{text:"⟳",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203503"},hover_event:{action:"show_text",value:["","Refresh Selection Screen","\n\n",{text:"Selection options are only sent to chat when first selecting equipment. Refresh to reselct the equipment and see changes.",color:"gray"}]}}]
+    {text:" "},{text:"⟳",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203503"},hover_event:{action:"show_text",value:["","Refresh Selection Screen","\n\n",{text:"Selection options are only sent to chat when first selecting equipment. Refresh to reselect the equipment and see changes.",color:"gray"}]}}]
 
-execute if entity @s[tag=42.tag.portal.cube.tp] at @s run function 42:portal/cube/select
+execute if entity @s[tag=42.tag.portal.cube.main] at @s run function 42:portal/cube/select
 execute if entity @s[tag=42.tag.portal.faith_plate] at @s run function 42:portal/faith_plate/select
 execute if entity @s[tag=42.tag.portal.btn] at @s run function 42:portal/button/select
 execute if entity @s[tag=42.tag.portal.pedestal] at @s run function 42:portal/button/select_pedestal
@@ -19,7 +19,7 @@ execute if entity @s[tag=42.tag.portal.pellet.catcher] at @s run function 42:por
 execute if entity @s[tag=42.tag.portal.pellet] at @s run function 42:portal/pellet/pellet/select
 execute if entity @s[tag=42.tag.portal.laser.emitter] at @s run function 42:portal/laser/emitter/select
 execute if entity @s[tag=42.tag.portal.laser.catcher] at @s run function 42:portal/laser/catcher/select
-execute if entity @s[tag=42.tag.portal.elevator] at @s run function 42:portal/elevator/select
+execute if entity @s[tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/select
 execute if entity @s[tag=42.tag.portal.wire] at @s run function 42:portal/wire/select
 execute if entity @s[tag=42.tag.portal.gel] at @s run function 42:portal/gel/select
 execute if entity @s[tag=42.tag.portal.portal.spawner] at @s run function 42:portal/portal/spawner/select

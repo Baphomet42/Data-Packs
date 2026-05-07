@@ -4,7 +4,7 @@ execute store result storage 42:portal loader.lvl int 1 run scoreboard players g
 function 42:portal/level/loader/storage/get_level with storage 42:portal loader
 
 execute as @e[tag=42.tag.portal.pellet] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/pellet/pellet/fizzle_silent
-execute as @e[tag=42.tag.portal.cube.tp] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/cube/fizzle_silent
+execute as @e[tag=42.tag.portal.cube.main] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/cube/fizzle_silent
 execute as @e[tag=42.tag.portal.portal] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/portal/fizzle
 execute as @e[tag=42.tag.portal.zone] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run tag @s remove 42.tag.portal.zone.cool
 execute as @e[tag=42.tag.portal.gel] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/gel/fizzle

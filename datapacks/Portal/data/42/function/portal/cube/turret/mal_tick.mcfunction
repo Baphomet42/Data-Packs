@@ -3,11 +3,11 @@ execute if score @s 42.obj.portal.var.u matches 15.. run scoreboard players set 
 execute if score @s[tag=!42.tag.portal.turret.oracle] 42.obj.portal.var.u matches 2 if score @s 42.obj.portal.var.w matches 41.. run function 42:portal/cube/turret/target/new_laser_mal
 execute if score @s[tag=42.tag.portal.turret.oracle] 42.obj.portal.var.u matches 2 if score @s 42.obj.portal.var.w matches 1 run function 42:portal/cube/turret/target/new_laser_oracle
 
-execute if score @s 42.obj.portal.var.w matches 88 at @s positioned ^ ^1 ^1 run damage @p[distance=..2,gamemode=!creative,gamemode=!spectator] .00001 generic_kill by @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.tp,limit=1]
-execute if score @s 42.obj.portal.var.w matches 78 at @s positioned ^ ^1 ^1 run damage @p[distance=..2,gamemode=!creative,gamemode=!spectator] .00001 generic_kill by @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.tp,limit=1]
-execute if score @s 42.obj.portal.var.w matches 68 at @s positioned ^ ^1 ^1 run damage @p[distance=..2,gamemode=!creative,gamemode=!spectator] .00001 generic_kill by @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.tp,limit=1]
-execute if score @s 42.obj.portal.var.w matches 58 at @s positioned ^ ^1 ^1 run damage @p[distance=..2,gamemode=!creative,gamemode=!spectator] .00001 generic_kill by @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.tp,limit=1]
-execute if score @s 42.obj.portal.var.w matches 48 at @s positioned ^ ^1 ^1 run damage @p[distance=..2,gamemode=!creative,gamemode=!spectator] .00001 generic_kill by @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.tp,limit=1]
+execute if score @s 42.obj.portal.var.w matches 88 at @s positioned ^ ^1 ^1 run damage @p[distance=..2,gamemode=!creative,gamemode=!spectator] .00001 generic_kill by @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.main,limit=1]
+execute if score @s 42.obj.portal.var.w matches 78 at @s positioned ^ ^1 ^1 run damage @p[distance=..2,gamemode=!creative,gamemode=!spectator] .00001 generic_kill by @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.main,limit=1]
+execute if score @s 42.obj.portal.var.w matches 68 at @s positioned ^ ^1 ^1 run damage @p[distance=..2,gamemode=!creative,gamemode=!spectator] .00001 generic_kill by @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.main,limit=1]
+execute if score @s 42.obj.portal.var.w matches 58 at @s positioned ^ ^1 ^1 run damage @p[distance=..2,gamemode=!creative,gamemode=!spectator] .00001 generic_kill by @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.main,limit=1]
+execute if score @s 42.obj.portal.var.w matches 48 at @s positioned ^ ^1 ^1 run damage @p[distance=..2,gamemode=!creative,gamemode=!spectator] .00001 generic_kill by @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.main,limit=1]
 execute if score @s 42.obj.portal.var.w matches 88.. run particle flash{color:[1,1,1,1]}
 execute if score @s 42.obj.portal.var.w matches 68..70 run particle flash{color:[1,1,1,1]}
 execute if score @s 42.obj.portal.var.w matches 77 run particle flash{color:[1,1,1,1]}
