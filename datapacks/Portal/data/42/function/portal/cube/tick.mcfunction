@@ -1,6 +1,6 @@
 function 42:portal/tag_id
 
-execute if entity @e[limit=1,type=interaction,tag=42.tag.portal.cube.hit,tag=42.tag.portal.id,tag=42.tag.portal.cube.held] run function 42:portal/cube/tick_hold
+execute if entity @s[tag=42.tag.portal.cube.held] run function 42:portal/cube/tick_hold
 # TODO only run move tick when pos changed since last tick
 function 42:portal/cube/tick_move
 tag @e[limit=1,type=interaction,tag=42.tag.portal.cube.hit,tag=42.tag.portal.id] add 42.tag.portal.ticked
