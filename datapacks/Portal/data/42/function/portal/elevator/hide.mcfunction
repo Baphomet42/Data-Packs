@@ -7,3 +7,4 @@ kill @e[tag=42.tag.portal.id,tag=42.tag.portal.elevator.group,tag=!42.tag.portal
 tag @e remove 42.tag.portal.id
 
 tag @s remove 42.tag.portal.elevator.show
+tag @s remove 42.tag.portal.elevator.hide_when_off

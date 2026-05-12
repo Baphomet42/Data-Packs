@@ -3,6 +3,8 @@ summon block_display ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.new_spawn","42.
 execute as @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.elevator.main,limit=1] run function 42:portal/new_id
 scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.elevator.main] 42.obj.portal.var.x 0
 scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.elevator.main] 42.obj.portal.var.y 0
+scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.elevator.main] 42.obj.portal.var.a 0
+scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.elevator.main] 42.obj.portal.var.b 0
 execute as @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.elevator.main] store result score @s 42.obj.portal.var.y run data get entity @s Pos[1] 100
 execute as @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.elevator.main] run scoreboard players operation @s 42.obj.portal.var.z = @s 42.obj.portal.var.y
 scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.elevator.main] 42.obj.portal.skin 0
@@ -43,6 +45,8 @@ kill @s[type=area_effect_cloud]
 #   42.obj.portal.var.w     tp center z coord scaled 1000x
 #   42.obj.portal.yrot2     tp yrot offset count
 #   42.obj.portal.xrot2     id of paired elevator
+#   42.obj.portal.var.a     lvl where this elevator is the exit
+#   42.obj.portal.var.b     lvl where this elevator is the entrance
 
 #   =====tags=====
 #   42.tag.portal.elevator              main tick
@@ -52,4 +56,5 @@ kill @s[type=area_effect_cloud]
 #   42.tag.portal.elevator.at_start     if snapped start
 #   42.tag.portal.elevator.at_end       if snapped end
 #   42.tag.portal.elevator.is_moving    if moving
-#   42.tag.portal.elevator.off          won't run try_start
+#   42.tag.portal.elevator.exit_only    won't run try_start
+#   42.tag.portal.elevator.on           elevator is not idle waiting for players

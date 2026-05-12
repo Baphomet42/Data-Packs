@@ -4,6 +4,8 @@ scoreboard objectives add 42.obj.portal.vars dummy
 scoreboard objectives add 42.obj.portal.id dummy
 scoreboard objectives add 42.obj.portal.time dummy
 scoreboard objectives add 42.obj.portal.temp dummy
+scoreboard objectives add 42.obj.portal.var.a dummy
+scoreboard objectives add 42.obj.portal.var.b dummy
 scoreboard objectives add 42.obj.portal.var.c dummy
 scoreboard objectives add 42.obj.portal.var.u dummy
 scoreboard objectives add 42.obj.portal.var.v dummy

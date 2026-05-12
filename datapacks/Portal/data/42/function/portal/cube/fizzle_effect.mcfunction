@@ -1,4 +1,4 @@
-scoreboard players add @s[tag=42.tag.portal.cube.dis] 42.obj.portal.time 1
-data merge entity @s[scores={42.obj.portal.time=1}] {brightness:{block:0,sky:0},transformation:{left_rotation:{angle:45f,axis:[1f,0f,0f]},right_rotation:{angle:30f,axis:[0f,1f,0f]},translation:[-.5f,1f,.1f]},interpolation_duration:30,start_interpolation:-1}
-#tp @s ~-.02 ~.03 ~-.01 ~2 ~
-kill @s[tag=42.tag.portal.cube.dis,scores={42.obj.portal.time=30..}]
+scoreboard players add @s 42.obj.portal.time 1
+execute if entity @s[scores={42.obj.portal.time=2}] run tp @s ~ ~.75 ~
+execute if entity @s[tag=42.tag.portal.cube.dis.main] run particle minecraft:scrape ~ ~.5 ~ .5 .5 .5 3 1
+kill @s[type=!player,scores={42.obj.portal.time=30..}]

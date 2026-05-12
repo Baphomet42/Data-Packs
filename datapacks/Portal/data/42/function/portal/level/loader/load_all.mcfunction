@@ -27,3 +27,7 @@ tag @s remove 42.tag.portal.loader
 execute unless data storage 42:portal loader.error run function 42:portal/level/loader/storage/delete_level with storage 42:portal loader
 execute if data storage 42:portal loader.error run function 42:portal/level/loader/storage/load_error with storage 42:portal loader
 data remove storage 42:portal loader
+
+execute store result storage 42:portal temp.current_load_lvl int 1 run scoreboard players get @s 42.obj.portal.lvl
+execute as @e[tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/refresh_show_state
+data remove storage 42:portal temp.current_load_lvl

@@ -277,7 +277,6 @@ Datapacks can be designed to require no resourcepack, an optional resourcepack, 
             + Sometimes also `spawn2`
         + `tick`
             + Setup in `42:portal/tick_entity`
-            + Setup in `42:portal/level/do_tick`
         + `unload`
             + Setup in `42:portal/level/loader/unload_all`
 + Common traits

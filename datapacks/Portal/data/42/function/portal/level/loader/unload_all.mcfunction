@@ -30,3 +30,7 @@ execute as @e[tag=42.tag.portal.zone] if score @s 42.obj.portal.lvl = #42.var.po
 
 function 42:portal/level/loader/storage/save_level with storage 42:portal loader
 data remove storage 42:portal loader
+
+execute store result storage 42:portal temp.current_unload_lvl int 1 run scoreboard players get @s 42.obj.portal.lvl
+execute as @e[tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/refresh_show_state
+data remove storage 42:portal temp.current_unload_lvl

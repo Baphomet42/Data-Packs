@@ -44,5 +44,6 @@ execute unless score @s 42.obj.portal.var.x matches 0 as @e[tag=42.tag.portal.ne
 
 ride @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.elevator.start,limit=1] mount @s
 tag @s add 42.tag.portal.elevator.show
+tag @s remove 42.tag.portal.elevator.hide_when_off
 
 tag @e remove 42.tag.portal.new_spawn

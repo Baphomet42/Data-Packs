@@ -1,3 +1,5 @@
+execute if entity @s[tag=!42.tag.portal.elevator.show] run function 42:portal/elevator/show
+
 function 42:portal/tag_id
 function 42:portal/elevator/doors/close_silent
 function 42:portal/elevator/move/snap_start

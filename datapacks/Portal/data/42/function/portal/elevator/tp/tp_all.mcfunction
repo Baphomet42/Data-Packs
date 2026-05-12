@@ -11,9 +11,9 @@ data modify storage 42:portal tp_temp.from_pos set from entity @e[tag=42.tag.por
 scoreboard players operation #42.var.portal.dummy 42.obj.portal.yrot1 = @s 42.obj.portal.yrot1
 scoreboard players operation #42.var.portal.dummy 42.obj.portal.yrot2 = @s 42.obj.portal.yrot2
 
+execute as @e[tag=42.tag.portal.elevator.this.to] at @s run function 42:portal/elevator/tp/dest
 execute unless entity @e[limit=1,tag=42.tag.portal.elevator.this.to] as @a[tag=42.tag.portal.temp.in_elevator] at @s run function 42:portal/elevator/tp/tp_exact_macro with storage 42:portal tp_temp
 execute if entity @e[limit=1,tag=42.tag.portal.elevator.this.to] as @a[tag=42.tag.portal.temp.in_elevator] at @s run function 42:portal/elevator/tp/tp_relative
-execute as @e[tag=42.tag.portal.elevator.this.to] at @s run function 42:portal/elevator/tp/dest
 
 tag @e remove 42.tag.portal.elevator.this.to
 data remove storage 42:portal tp_temp

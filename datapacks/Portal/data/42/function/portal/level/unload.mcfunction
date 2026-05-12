@@ -10,3 +10,4 @@ tag @e remove 42.tag.portal.temp
 tag @s remove 42.tag.portal.temp1
 scoreboard players reset @s 42.obj.portal.death
 function 42:portal/portal/clear
+execute as @e[tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/refresh_show_state

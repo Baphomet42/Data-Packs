@@ -1,24 +1,24 @@
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.cube] at @s run function 42:portal/cube/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.faith_plate] at @s run function 42:portal/faith_plate/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.button] at @s run function 42:portal/button/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pedestal] at @s run function 42:portal/button/spawn_pedestal
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.door] at @s run function 42:portal/door/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.vent] at @s run function 42:portal/vent/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pellet] at @s run function 42:portal/pellet/pellet/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.gel] at @s run function 42:portal/gel/droplet/spawn
-execute as @e[type=glow_item_frame,tag=42.tag.portal.tool.spawn.gel] at @s run function 42:portal/gel/droplet/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pellet_emitter] at @s run function 42:portal/pellet/emitter/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pellet_catcher] at @s run function 42:portal/pellet/catcher/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.laser_emitter] at @s run function 42:portal/laser/emitter/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.laser_catcher] at @s run function 42:portal/laser/catcher/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.elevator] at @s run function 42:portal/elevator/spawn
-execute as @e[type=glow_item_frame,tag=42.tag.portal.tool.spawn.wire] at @s run function 42:portal/wire/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.zone] at @s run function 42:portal/zone/spawn
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.grill] at @s run function 42:portal/grill/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.cube] run function 42:portal/cube/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.faith_plate] run function 42:portal/faith_plate/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.button] run function 42:portal/button/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pedestal] run function 42:portal/button/spawn_pedestal
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.door] run function 42:portal/door/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.vent] run function 42:portal/vent/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pellet] run function 42:portal/pellet/pellet/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.gel] run function 42:portal/gel/droplet/spawn
+execute if entity @s[type=glow_item_frame,tag=42.tag.portal.tool.spawn.gel] run function 42:portal/gel/droplet/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pellet_emitter] run function 42:portal/pellet/emitter/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pellet_catcher] run function 42:portal/pellet/catcher/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.laser_emitter] run function 42:portal/laser/emitter/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.laser_catcher] run function 42:portal/laser/catcher/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.elevator] run function 42:portal/elevator/spawn
+execute if entity @s[type=glow_item_frame,tag=42.tag.portal.tool.spawn.wire] run function 42:portal/wire/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.zone] run function 42:portal/zone/spawn
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.grill] run function 42:portal/grill/spawn
 
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.fizzle] at @s run function 42:portal/tools/fizzler
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.cycle] at @s run function 42:portal/tools/cycle
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.link] at @s run function 42:portal/tools/link
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.skin] at @s run function 42:portal/tools/skin
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.lvl] at @s run function 42:portal/tools/level
-execute as @e[type=area_effect_cloud,tag=42.tag.portal.tool.sel] at @s run function 42:portal/tools/select
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.fizzle] run function 42:portal/tools/fizzler
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.cycle] run function 42:portal/tools/cycle
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.link] run function 42:portal/tools/link
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.skin] run function 42:portal/tools/skin
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.lvl] run function 42:portal/tools/level
+execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.sel] run function 42:portal/tools/select

@@ -1,6 +1,8 @@
 scoreboard players add #42.var.portal.music_time 42.obj.portal.vars 1
 execute if score #42.var.portal.music_time 42.obj.portal.vars matches 128.. run scoreboard players set #42.var.portal.music_time 42.obj.portal.vars 0
 
+execute unless entity @e[tag=42.tag.portal.radio] run return fail
+
 scoreboard players operation #42.var.portal.music_calc 42.obj.portal.vars = #42.var.portal.music_time 42.obj.portal.vars
 scoreboard players operation #42.var.portal.music_calc 42.obj.portal.vars %= #42.var.gen.const.2 42.obj.portal.vars
 

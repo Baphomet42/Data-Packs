@@ -25,6 +25,7 @@
         "42:portal/tools/craft_link",
         "42:portal/tools/craft_level",
         "42:portal/tools/craft_select",
-        "42:portal/zone/craft"
+        "42:portal/zone/craft",
+        "42:portal/gel/surface/craft_all"
     ]
 }

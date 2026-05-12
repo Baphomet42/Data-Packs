@@ -1,2 +1,0 @@
-execute if score @s 42.obj.portal.damage matches 0..1 run tag @s remove 42.tag.portal.damage
-execute if score @s 42.obj.portal.damage matches 1.. run scoreboard players remove @s 42.obj.portal.damage 1
