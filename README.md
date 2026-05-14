@@ -162,7 +162,8 @@ Optional resource pack - see [below](#resource-pack-info)
         + The entrance elevator will now teleport players to the exit elevator after it's done moving
         + The exit elevator should either be cycled to Exit Only mode or have a movement end point set up
         + When done correctly, a single elevator ride will seamlessly move the player to a new location anywhere in the world
-    + Elevators will unload and reset the previous level of whoever uses it
+    + Elevators can be configured to unload the previous level and/or load the next level
+        + Also see section on Load Zones below for an alternative way to switch levels
 + *High Energy Pellet*
     + Pellets spawn from High Energy Pellet Launchers
     + Bounce off walls and cubes, can go through portals
@@ -252,6 +253,7 @@ Optional resource pack - see [below](#resource-pack-info)
     + Automate a wide variety of features when a player enters the zone's hitbox
     + Zones have two modes: Load and Trigger
         + Load Zones update the player's level
+            + This can be used as an alternative for elevators
             + The zone will reset both the previous and current level, unless the player level already matches the zone level
                 + This makes sure the level won't reset just by walking back into the zone
             + Load Zones without a level number will unload the player's level (useful after each stage)
@@ -563,11 +565,16 @@ For datapack testing purposes only. Everything is experimental and may not be up
         + Revamped motion physics
             + Air drag is nullified after using Aerial Faith Plates and when passing through portals
             + Motion is preserved in more cases after passing through portals
-        + Elevator teleports are now more seamless
-            + Any existing elevators will need to be relinked
+        + Elevator changes
+            + Elevator teleports are now more seamless
+            + Levels can now be loaded or unloaded by using an elevator
+                + Load zones still exist as an alternative (see below)
+            + Elevators now partially unload with the level
+                + An elevator will stay loaded if the previous or current level is loaded
+                + When an elevator partially unloads, it leaves a single entity behind which can still detect players like a load zone
         + Zone changes
             + Load zones without a level configured will no longer unload the current level
-                + Levels can be unloaded by entering an elevator or through 42menu
+                + Levels can be unloaded by elevators or through 42menu
             + Trigger zones are now unloaded with the rest of the level
             + Removed death zones
                 + Defining out-of-bounds regions will eventually become part of the level system

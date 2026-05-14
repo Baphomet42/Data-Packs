@@ -8,6 +8,7 @@ execute as @e[tag=42.tag.portal.cube.main] if score @s 42.obj.portal.lvl = #42.v
 execute as @e[tag=42.tag.portal.portal] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/portal/fizzle
 execute as @e[tag=42.tag.portal.zone] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run tag @s remove 42.tag.portal.zone.cool
 execute as @e[tag=42.tag.portal.gel] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/gel/fizzle
+execute as @a if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp run scoreboard players set @s 42.obj.portal.lvl 0
 
 execute as @e[tag=42.tag.portal.btn] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/button/unload
 execute as @e[tag=42.tag.portal.pedestal] if score @s 42.obj.portal.lvl = #42.var.portal.loader_lvl 42.obj.portal.temp at @s run function 42:portal/button/unload_pedestal

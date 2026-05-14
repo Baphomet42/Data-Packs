@@ -1,5 +1,10 @@
+tag @s remove 42.tag.portal.zone.mode.load
+tag @s remove 42.tag.portal.zone.mode.trigger
+
 execute if score @s 42.obj.portal.var.x matches 0 run data modify entity @s CustomName set value "Load Zone"
+execute if score @s 42.obj.portal.var.x matches 0 run tag @s add 42.tag.portal.zone.mode.load
 execute if score @s 42.obj.portal.var.x matches 1 run data modify entity @s CustomName set value "Trigger Zone"
+execute if score @s 42.obj.portal.var.x matches 1 run tag @s add 42.tag.portal.zone.mode.trigger
 
 execute unless entity @s[tag=42.tag.portal.zone.show] run return 0
 

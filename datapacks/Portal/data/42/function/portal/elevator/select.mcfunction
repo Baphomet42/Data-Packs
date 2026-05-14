@@ -7,11 +7,11 @@ tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},\
     {text:"\n   Teleport... ",color:"dark_gray"},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"Teleport mode allows elevators to seamlessly teleport the player to a new area, instead of just moving up or down. Press `Pair` while standing in a different elevator to set the teleport location to that elevator.\n\nThe elevator will wait to teleport the player until it's done moving (or instantly if no Move End Point is set).\n\nIf the destination elevator is set to move, it will move as soon as the player is teleported to it. This can be used to create a seamless effect where it appears to be a single elevator ride."}]}},\
     {text:"\n      "},"[",{text:"Remove",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203595"}},"]",\
     {text:" "},"[",{text:"Pair",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203598"}},"]",\
-    {text:"\n   Set Level... ",color:"dark_gray"},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"Configure which level(s) the elevator corresponds to. If an elevator is used as the start of a level, set its Entrance Level. If an elevator is used as the end of a level, set its Exit Level. Often times, elevators will have both."}]}},\
-    {text:"\n      "},"[",{text:"Set Entrance",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203602"}},"]",\
-    {text:" "},"[",{text:"Reset Entrance",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203603"}},"]",\
-        {text:"\n      "},"[",{text:"Set Exit",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203604"}},"]",\
-    {text:" "},"[",{text:"Reset Exit",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203605"}},"]",\
+    {text:"\n   Set Level Transition... ",color:"dark_gray"},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"Configure the level transition when using the elevator. The elevator can optionally load a level, unload a level, or both.\n\nPress `Set Load` or `Set Unload` while standing near any object within a level."}]}},\
+    {text:"\n      "},"[",{text:"Set Load",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203602"}},"]",\
+    {text:" "},"[",{text:"Reset Load",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203603"}},"]",\
+        {text:"\n      "},"[",{text:"Set Unload",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203604"}},"]",\
+    {text:" "},"[",{text:"Reset Unload",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203605"}},"]",\
     {text:"\n   Action... ",color:"dark_gray"},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"Reset - Elevator goes back to the default position with the doors open\n\nTrigger - Elevator moves as if a player activated it"}]}},\
     {text:"\n      "},"[",{text:"Reset",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203596"}},"]",\
     {text:"\n      "},"[",{text:"Trigger",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203597"}},"]",\

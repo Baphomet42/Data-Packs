@@ -12,6 +12,7 @@ scoreboard players operation #42.var.portal.dummy 42.obj.portal.yrot1 = @s 42.ob
 scoreboard players operation #42.var.portal.dummy 42.obj.portal.yrot2 = @s 42.obj.portal.yrot2
 
 execute as @e[tag=42.tag.portal.elevator.this.to] at @s run function 42:portal/elevator/tp/dest
+function 42:portal/tag_id
 execute unless entity @e[limit=1,tag=42.tag.portal.elevator.this.to] as @a[tag=42.tag.portal.temp.in_elevator] at @s run function 42:portal/elevator/tp/tp_exact_macro with storage 42:portal tp_temp
 execute if entity @e[limit=1,tag=42.tag.portal.elevator.this.to] as @a[tag=42.tag.portal.temp.in_elevator] at @s run function 42:portal/elevator/tp/tp_relative
 

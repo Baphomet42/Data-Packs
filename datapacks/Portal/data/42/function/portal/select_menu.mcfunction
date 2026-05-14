@@ -8,6 +8,8 @@ execute if score @s 42menu matches 4203502 if score @e[limit=1,tag=42.tag.portal
 execute if score @s 42menu matches 4203502..4203503 as @e[limit=1,tag=42.tag.portal.selected,type=!player] at @s run function 42:portal/tools/sel_new
 execute if score @s 42menu matches 4203504 if score @e[limit=1,tag=42.tag.portal.selected,type=!player] 42.obj.portal.lvl matches 0.. run scoreboard players set @e[limit=1,tag=42.tag.portal.selected,type=!player] 42.obj.portal.lvl -1
 execute if score @s 42menu matches 4203504 as @e[limit=1,tag=42.tag.portal.selected,type=!player] at @s run function 42:portal/tools/sel_new
+execute if score @s 42menu matches 4203505 if score @e[limit=1,tag=42.tag.portal.selected,type=!player] 42.obj.portal.lvl matches 1.. if score @s 42.obj.portal.lvl = @e[limit=1,tag=42.tag.portal.selected,type=!player] 42.obj.portal.lvl run scoreboard players set @s 42.obj.portal.lvl 0
+execute if score @s 42menu matches 4203505 as @e[limit=1,tag=42.tag.portal.selected,type=!player] if score @s 42.obj.portal.lvl matches 1.. at @s run function 42:portal/level/unload
 
 execute if score @s 42menu matches 4203510..4203514 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.faith_plate] run function 42:portal/tools/sel_error
 execute if score @s 42menu matches 4203510 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.faith_plate] at @s run function 42:portal/faith_plate/rotate
