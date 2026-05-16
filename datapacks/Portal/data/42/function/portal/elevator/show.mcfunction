@@ -37,6 +37,10 @@ scoreboard players operation @e[tag=42.tag.portal.new_spawn] 42.obj.portal.id = 
 execute as @e[tag=42.tag.portal.new_spawn] run rotate @s ~ ~
 execute as @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.elevator.text] at @s run rotate @s ~180 ~
 
+execute store result score @s 42.obj.portal.var.y run data get entity @s Pos[1] 100
+scoreboard players set @s 42.obj.portal.var.z 100
+scoreboard players operation @s 42.obj.portal.var.z *= @s 42.obj.portal.var.x
+scoreboard players operation @s 42.obj.portal.var.z += @s 42.obj.portal.var.y
 execute store result entity @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.elevator.end,limit=1] Pos[1] double .01 run scoreboard players get @s 42.obj.portal.var.z
 
 execute if score @s 42.obj.portal.var.x matches 0 as @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.elevator.end_dis] run data modify entity @s view_range set value 0f

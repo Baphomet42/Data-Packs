@@ -19,7 +19,6 @@ execute if entity @s[tag=42.tag.portal.zone.show] run data modify storage 42:por
 execute if entity @s[tag=42.tag.portal.zone.has_spawn] run data modify storage 42:portal loader.temp_entity.tag_has_spawn set value true
 execute if entity @s[tag=42.tag.portal.zone.has_fizzle] run data modify storage 42:portal loader.temp_entity.tag_has_fizzle set value true
 execute if entity @s[tag=42.tag.portal.zone.grill] run data modify storage 42:portal loader.temp_entity.tag_grill set value true
-execute if entity @s[tag=42.tag.portal.zone.checkpoint] run data modify storage 42:portal loader.temp_entity.tag_checkpoint set value true
 function 42:portal/zone/fizzle
 
 data modify storage 42:portal loader.temp_equipment.zone append from storage 42:portal loader.temp_entity

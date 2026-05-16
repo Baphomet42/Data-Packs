@@ -8,8 +8,8 @@ tellraw @s[scores={42menu=1}] [{text:"",color:"gray"},\
     ,{text:"\n      "},"[",{text:"See Full List...",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203001"}},"]"\
     ,{text:"\n      "},"[",{text:"Get Everything",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203021"}},"]"\
     ,{text:"\n   Debug...",color:"dark_gray"}\
+    ,{text:"\n      "},"[",{text:"Reload Checkpoint",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203100"}},"]"\
     ,{text:"\n      "},"[",{text:"Unload Level",color:"#DDDDDD",click_event:{action:"suggest_command",command:"/function 42:portal/level/unload"}},"]"\
-    ,{text:"\n      "},"[",{text:"Reload Checkpoint",color:"#DDDDDD",click_event:{action:"suggest_command",command:"/trigger 42menu set 4203100"}},"]"\
     ,{text:"\n      "},"[",{text:"Unhide Zones",color:"#DDDDDD",click_event:{action:"suggest_command",command:"/function 42:portal/generic/show_nearby_invisibles"}},"]"\
     ]
 execute if score @s 42menu matches 11 run function 42:gen/cmdfeed/reset

@@ -11,9 +11,7 @@ tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},\
     {text:"\n      "},"[",{text:"Set Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203628"}},"]",{text:" "},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"Sets the zone level to the level of the nearest equipment (within range).\n\nLoad zones will load this level when entered, unless the player was already in that level.\n\nTrigger zones will only work if its level is loaded, and won't activate again until its level is loaded again."}]}}\
     ]
 execute if score @s 42.obj.portal.var.x matches 0 run tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},\
-    {text:"      "},"[",{text:"Remove Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203629"}},"]",{text:" "},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"If no level is set, the zone will unload the level of the player who enters it. These zones should be placed at the end of levels."}]}},\
-    {text:"\n      "},"[",{text:"Toggle Checkpoint",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203639"}},"]"\
-    ]
+    {text:"      "},"[",{text:"Remove Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203629"}},"]",{text:" "},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"If no level is set, the zone will unload the level of the player who enters it. These zones should be placed at the end of levels."}]}}]
 execute if score @s 42.obj.portal.var.x matches 1 run tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},\
     {text:"      "},"[",{text:"Set Link to Power",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203630"}},"]",\
     {text:" "},"[",{text:"Remove",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203631"}},"]",\

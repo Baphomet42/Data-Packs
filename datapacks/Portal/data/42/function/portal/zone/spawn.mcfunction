@@ -6,7 +6,7 @@ scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone] 42
 scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone] 42.obj.portal.xrot2 0
 scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone] 42.obj.portal.yrot1 0
 scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.zone] 42.obj.portal.yrot2 0
-execute as @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] at @s run function 42:portal/zone/mode {x:0}
+execute as @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] at @s run function 42:portal/zone/mode {x:1}
 execute as @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] at @s run function 42:portal/zone/size {y:1}
 execute as @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] at @s run function 42:portal/zone/show
 tag @e remove 42.tag.portal.new_spawn
@@ -29,4 +29,3 @@ kill @s[type=area_effect_cloud]
 #   42.tag.portal.zone.has_spawn    if the trigger zone should use yrot1 as an id to spawn
 #   42.tag.portal.zone.has_fizzle   if the trigger zone should use yrot2 as an id to fizzle
 #   42.tag.portal.zone.grill        if the trigger zone should fizzle portals of players who enter it
-#   42.tag.portal.zone.checkpoint   if the load zone should be a checkpoint

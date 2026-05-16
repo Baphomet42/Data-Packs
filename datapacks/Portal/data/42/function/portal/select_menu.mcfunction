@@ -105,10 +105,10 @@ execute if score @s 42menu matches 4203598 as @e[limit=1,tag=42.tag.portal.selec
 execute if score @s 42menu matches 4203599 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/cycle
 execute if score @s 42menu matches 4203600 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/show
 execute if score @s 42menu matches 4203601 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/hide
-execute if score @s 42menu matches 4203602 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/set_lvl_to_start
-execute if score @s 42menu matches 4203603 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/set_lvl_to_start_reset
-execute if score @s 42menu matches 4203604 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/set_lvl_to_end
-execute if score @s 42menu matches 4203605 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/set_lvl_to_end_reset
+execute if score @s 42menu matches 4203602 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/set_lvl_to_load
+execute if score @s 42menu matches 4203603 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/set_lvl_to_load_reset
+execute if score @s 42menu matches 4203604 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/set_lvl_to_unload
+execute if score @s 42menu matches 4203605 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/set_lvl_to_unload_reset
 
 
 execute if score @s 42menu matches 4203620..4203659 unless entity @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] run function 42:portal/tools/sel_error
@@ -133,7 +133,7 @@ execute if score @s 42menu matches 4203637 as @e[limit=1,tag=42.tag.portal.selec
 execute if score @s 42menu matches 4203628..4203637 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] at @s run function 42:portal/zone/update
 execute if score @s 42menu matches 4203638 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] at @s run tag @s remove 42.tag.portal.zone.cool
 execute if score @s 42menu matches 4203638 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] at @s run function 42:portal/tools/sel_new
-execute if score @s 42menu matches 4203639 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] at @s run function 42:portal/zone/mode/load/toggle_checkpoint
+#execute if score @s 42menu matches 4203639 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] at @s run function 
 #execute if score @s 42menu matches 4203640 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] at @s run function 
 execute if score @s 42menu matches 4203641 as @e[limit=1,tag=42.tag.portal.selected,tag=42.tag.portal.zone] at @s run function 42:portal/zone/mode/trigger/toggle_emancipation
 

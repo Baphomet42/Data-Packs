@@ -14,7 +14,6 @@ $execute as @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] at @s run fun
 execute if data storage 42:portal loader.temp_entity.tag_has_spawn run tag @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] add 42.tag.portal.zone.has_spawn
 execute if data storage 42:portal loader.temp_entity.tag_has_fizzle run tag @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] add 42.tag.portal.zone.has_fizzle
 execute if data storage 42:portal loader.temp_entity.tag_grill run tag @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] add 42.tag.portal.zone.grill
-execute if data storage 42:portal loader.temp_entity.tag_checkpoint run tag @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] add 42.tag.portal.zone.checkpoint
 
 execute if data storage 42:portal loader.temp_entity.tag_show as @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] at @s run function 42:portal/zone/show
 execute unless data storage 42:portal loader.temp_entity.tag_show as @e[tag=42.tag.portal.zone,tag=42.tag.portal.new_spawn] at @s run function 42:portal/zone/hide

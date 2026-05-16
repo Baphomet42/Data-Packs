@@ -38,9 +38,6 @@ execute if entity @s[tag=42.tag.portal.zone.cool] as @e[tag=42.tag.portal.id,tag
 
 execute as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.extra] run data modify entity @s text set value ""
 
-execute if score @s 42.obj.portal.var.x matches 0 if entity @s[tag=!42.tag.portal.zone.checkpoint] as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.pow] run data modify entity @s text set value {text:"Checkpoint [Off]"}
-execute if score @s 42.obj.portal.var.x matches 0 if entity @s[tag=42.tag.portal.zone.checkpoint] as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.pow] run data modify entity @s text set value {text:"Checkpoint [On]",color:"green"}
-
 execute if score @s 42.obj.portal.var.x matches 1 if score @s 42.obj.portal.xrot1 matches ..0 as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.pow] run data modify entity @s text set value {text:"No power link set"}
 execute if score @s 42.obj.portal.var.x matches 1 if score @s 42.obj.portal.xrot1 matches 1.. as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.pow] run data modify entity @s text set value {text:"Power link set",color:"green"}
 execute if score @s 42.obj.portal.var.x matches 1 if score @s 42.obj.portal.xrot2 matches ..0 as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.unpow] run data modify entity @s text set value {text:"No unpower link set"}

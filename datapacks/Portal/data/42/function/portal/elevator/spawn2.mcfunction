@@ -58,3 +58,4 @@ kill @s[type=area_effect_cloud]
 #   42.tag.portal.elevator.is_moving    if moving
 #   42.tag.portal.elevator.exit_only    won't run try_start
 #   42.tag.portal.elevator.on           elevator is not idle waiting for players
+#   42.tag.portal.elevator.tp           if the elevator is paired to tp
