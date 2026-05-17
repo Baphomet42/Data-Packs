@@ -3,7 +3,7 @@ summon block_display ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.portal.spawner"
 $execute as @e[tag=42.tag.portal.portal.spawner.group,tag=42.tag.portal.new_spawn] run rotate @s $(rotation_0) $(rotation_1)
 $scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.id $(id)
 $scoreboard players set @e[tag=42.tag.portal.portal.spawner,tag=42.tag.portal.new_spawn] 42.obj.portal.link $(link)
-$scoreboard players set @e[tag=42.tag.portal.portal.spawner,tag=42.tag.portal.new_spawn] 42.obj.portal.lvl $(lvl)
+execute store result score @e[tag=42.tag.portal.portal.spawner,tag=42.tag.portal.new_spawn] 42.obj.portal.lvl run data get storage 42:portal loader.lvl
 $scoreboard players set @e[tag=42.tag.portal.portal.spawner,tag=42.tag.portal.new_spawn] 42.obj.portal.var.x $(x)
 $scoreboard players set @e[tag=42.tag.portal.portal.spawner,tag=42.tag.portal.new_spawn] 42.obj.portal.var.y $(y)
 execute unless data storage 42:portal loader.temp_entity.tag_gun_arg_b run tag @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.portal.spawner] add 42.tag.portal.gun.arg_a

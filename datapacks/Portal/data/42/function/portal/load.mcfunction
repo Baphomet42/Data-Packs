@@ -48,6 +48,8 @@ execute unless score #42.var.portal.music_time 42.obj.portal.vars matches 1.. ru
 team add 42.team.gen.no_col
 team modify 42.team.gen.no_col collisionRule never
 
+data remove storage 42:portal tick
+
 function 42:gen/config/portal/reload
 function 42:portal/tick
 schedule function 42:42menu 1t replace

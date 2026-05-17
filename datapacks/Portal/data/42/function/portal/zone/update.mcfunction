@@ -29,12 +29,15 @@ function 42:portal/tag_id
 execute if score @s 42.obj.portal.var.x matches 0 as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl] run data modify entity @s text set value "Load Zone"
 execute if score @s 42.obj.portal.var.x matches 1 as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl] run data modify entity @s text set value "Trigger Zone"
 
-execute if score @s 42.obj.portal.lvl matches ..0 as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.lvl] run data modify entity @s text set value {text:"No level set"}
-execute if score @s 42.obj.portal.lvl matches ..0 if score @s 42.obj.portal.var.x matches 1..2 as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.lvl] run data modify entity @s text set value {text:"No level set",color:"red"}
-execute if score @s 42.obj.portal.lvl matches 1.. as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.lvl] run data modify entity @s text set value {text:"Level set"}
-execute if score @s 42.obj.portal.lvl matches 1.. if score @s 42.obj.portal.var.x matches 0 as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.lvl] run data modify entity @s text set value {text:"Level set",color:"green"}
-execute if entity @s[tag=!42.tag.portal.zone.cool] as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.cool] run data modify entity @s text set value {text:"Ready"}
-execute if entity @s[tag=42.tag.portal.zone.cool] as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.cool] run data modify entity @s text set value {text:"On cooldown",color:"red"}
+execute if score @s 42.obj.portal.var.x matches 0 unless score @s 42.obj.portal.var.a matches 1.. as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.lvl] run data modify entity @s text set value {text:"Level to unload unset"}
+execute if score @s 42.obj.portal.var.x matches 0 if score @s 42.obj.portal.var.a matches 1.. as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.lvl] run data modify entity @s text set value {text:"Level to unload set",color:"green"}
+execute if score @s 42.obj.portal.var.x matches 0 unless score @s 42.obj.portal.var.b matches 1.. as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.cool] run data modify entity @s text set value {text:"Level to load unset"}
+execute if score @s 42.obj.portal.var.x matches 0 if score @s 42.obj.portal.var.b matches 1.. as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.cool] run data modify entity @s text set value {text:"Level to load set",color:"green"}
+
+execute if score @s 42.obj.portal.var.x matches 1 unless score @s 42.obj.portal.lvl matches 1.. if score @s 42.obj.portal.var.x matches 1 as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.lvl] run data modify entity @s text set value {text:"No level set",color:"red"}
+execute if score @s 42.obj.portal.var.x matches 1 if score @s 42.obj.portal.lvl matches 1.. as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.lvl] run data modify entity @s text set value {text:"Level set"}
+execute if score @s 42.obj.portal.var.x matches 1 if entity @s[tag=!42.tag.portal.zone.cool] as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.cool] run data modify entity @s text set value {text:"Ready"}
+execute if score @s 42.obj.portal.var.x matches 1 if entity @s[tag=42.tag.portal.zone.cool] as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.cool] run data modify entity @s text set value {text:"On cooldown",color:"red"}
 
 execute as @e[tag=42.tag.portal.id,tag=42.tag.portal.zone.lbl.extra] run data modify entity @s text set value ""
 

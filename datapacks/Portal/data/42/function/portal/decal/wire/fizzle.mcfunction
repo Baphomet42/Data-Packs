@@ -1,0 +1,2 @@
+scoreboard players operation #42.var.portal.dummy 42.obj.portal.temp = @s[tag=42.tag.portal.decal.wire] 42.obj.portal.link
+execute as @e[tag=42.tag.portal.decal.wire] if score @s 42.obj.portal.link = #42.var.portal.dummy 42.obj.portal.temp run kill @s

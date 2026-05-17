@@ -6,14 +6,18 @@ tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},\
     {text:"\n   Set Size...",color:"dark_gray"},\
     {text:"\n      "},"[",{text:"1x1x1",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203625"}},"]",\
     {text:" "},"[",{text:"3x3x3",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203626"}},"]",\
-    {text:" "},"[",{text:"5x5x5",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203627"}},"]",\
-    {text:"\n   Configure...",color:"dark_gray"},\
-    {text:"\n      "},"[",{text:"Set Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203628"}},"]",{text:" "},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"Sets the zone level to the level of the nearest equipment (within range).\n\nLoad zones will load this level when entered, unless the player was already in that level.\n\nTrigger zones will only work if its level is loaded, and won't activate again until its level is loaded again."}]}}\
+    {text:" "},"[",{text:"5x5x5",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203627"}},"]"\
     ]
 execute if score @s 42.obj.portal.var.x matches 0 run tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},\
-    {text:"      "},"[",{text:"Remove Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203629"}},"]",{text:" "},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"If no level is set, the zone will unload the level of the player who enters it. These zones should be placed at the end of levels."}]}}]
+    {text:"   Set Level Transition... ",color:"dark_gray"},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"Configure the level transition when entering the load zone. The zone can optionally load a level, unload a level, or both.\n\nPress `Set Load` or `Set Unload` while standing near any object within a level."}]}},\
+    {text:"\n      "},"[",{text:"Set Load",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203628"}},"]",\
+    {text:" "},"[",{text:"Reset Load",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203629"}},"]",\
+    {text:"\n      "},"[",{text:"Set Unload",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203639"}},"]",\
+    {text:" "},"[",{text:"Reset Unload",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203640"}},"]"]
 execute if score @s 42.obj.portal.var.x matches 1 run tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},\
-    {text:"      "},"[",{text:"Set Link to Power",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203630"}},"]",\
+    {text:"   Configure...",color:"dark_gray"},\
+    {text:"\n      "},"[",{text:"Set Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203628"}},"]",{text:" "},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"Sets the zone level to the level of the nearest equipment (within range).\n\nTrigger zones require a level in order to activate. The zone cannot activate again until the level is reloaded."}]}},\
+    {text:"\n      "},"[",{text:"Set Link to Power",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203630"}},"]",\
     {text:" "},"[",{text:"Remove",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203631"}},"]",\
     {text:" "},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"The set button will get the link value from the nearest equipment (within range)\n\nIf there is a link value set, the equipment in this link will get powered. Any power sources in the link may overwrite this."}]}},\
     {text:"\n      "},"[",{text:"Set Link to Unpower",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203632"}},"]",\

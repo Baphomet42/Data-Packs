@@ -11,9 +11,10 @@ execute as @e[tag=42.tag.portal.laser.emitter,distance=..2.5] at @s run function
 execute as @e[tag=42.tag.portal.laser.catcher,distance=..2.5] at @s run function 42:portal/laser/catcher/fizzle
 execute as @e[tag=42.tag.portal.pellet,distance=..2.5] at @s run function 42:portal/pellet/pellet/fizzle
 execute as @e[tag=42.tag.portal.elevator.car,distance=..3.5] at @s run function 42:portal/elevator/fizzle
-execute as @e[tag=42.tag.portal.wire,distance=..1.5] at @s run function 42:portal/wire/fizzle
+execute as @e[tag=42.tag.portal.decal.basic,distance=..1.5] at @s run function 42:portal/decal/fizzle
+execute as @e[tag=42.tag.portal.decal.wire,distance=..1.5] at @s run function 42:portal/decal/wire/fizzle
 execute as @e[tag=42.tag.portal.gel,distance=..1.5] at @s run function 42:portal/gel/fizzle
-execute as @e[tag=42.tag.portal.wire.unlinked,distance=..1.5] at @s run kill @s
+execute as @e[tag=42.tag.portal.decal.wire.unlinked,distance=..1.5] at @s run kill @s
 execute as @e[tag=42.tag.portal.portal.spawner,distance=..2.5] at @s run function 42:portal/portal/spawner/fizzle
 execute as @e[tag=42.tag.portal.zone,tag=42.tag.portal.zone.show,distance=..2.5] at @s run function 42:portal/zone/fizzle
 execute as @e[tag=42.tag.portal.cube.spawner,tag=42.tag.portal.cube.spawner.show,distance=..2.5] at @s run function 42:portal/cube/spawner/fizzle

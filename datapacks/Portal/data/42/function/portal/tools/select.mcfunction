@@ -17,7 +17,8 @@ tag @e[tag=42.tag.portal.pellet,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.laser.emitter,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.laser.catcher,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.elevator.selgroup,distance=..3.5] add 42.tag.portal.temp
-tag @e[tag=42.tag.portal.wire,distance=..1.5] add 42.tag.portal.temp
+tag @e[tag=42.tag.portal.decal.basic,distance=..1.5] add 42.tag.portal.temp
+tag @e[tag=42.tag.portal.decal.wire,distance=..1.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.gel,distance=..1.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.portal.spawner,distance=..2.5] add 42.tag.portal.temp
 tag @e[tag=42.tag.portal.zone,distance=..2.5] add 42.tag.portal.temp

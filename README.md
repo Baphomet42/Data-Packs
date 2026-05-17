@@ -203,7 +203,13 @@ Optional resource pack - see [below](#resource-pack-info)
         + This will work for all spawners in the link
     + Trigger zones can also select a single spawner to spawn or fizzle its object
     + Combining spawners with zones can be used to create fully resettable levels
++ *Decal*
+    + Decoration feature which can be placed on any block face
+        + Use the `Change Skin Tool` to cycle decals
+    + Has no functional uses, but can be used to assist the player, such as placing a Red X decal on the ceiling above turrets
+    + Decals get covered by portals which are placed on top of it
 + *Power Wire*
+    + Similar to decals but can be powered to change appearance
     + Optional feature that can connect buttons to doors (and other powerable equipment)
         + All linking is done with the `Link Tool` and is not affected in any way by power wire
         + The wire just makes it clear when something is being powered
@@ -251,15 +257,12 @@ Optional resource pack - see [below](#resource-pack-info)
     + Debug options supply commands to delete large numbers of equipment
 + *Zones*
     + Automate a wide variety of features when a player enters the zone's hitbox
-    + Zones have two modes: Load and Trigger
-        + Load Zones update the player's level
-            + This can be used as an alternative for elevators
-            + The zone will reset both the previous and current level, unless the player level already matches the zone level
-                + This makes sure the level won't reset just by walking back into the zone
-            + Load Zones without a level number will unload the player's level (useful after each stage)
+    + Zones have two modes: Trigger and Load
         + Trigger zones will trigger the first time a player enters its hitbox
             + All trigger zones must be set to a load level, as the only way to reset the zone is to reload the level with a Load Zone
             + Trigger Zones can be used to power or unpower equipment, spawn portals, fizzle cubes and pellets, and more
+        + Load Zones act as level transitions as an alternative for elevators
+            + They can have a level to load, level to unload, or both
     + Zones can have different sized hitboxes to fit most scenarios
     + After configuring the zone with the `Select Tool`, press Hide so it can't be seen by players
     + Levels should always start with a Load Zone to load the level
@@ -556,12 +559,23 @@ For datapack testing purposes only. Everything is experimental and may not be up
     + **All datapacks**
         + Supported versions: 26.2
     + **Portal**
+        + Level system changes
+            + The level format has been reworked
+                + All existing levels will need to be recreated in the new format
+                + Old format example: `storage 42:portal_levels` = `{115:{btn:[],door:[]}}`
+                + New format example: `storage 42:portal/levels` = `{levels:[{lvl:115,equipment:{btn:[],door:[]},format:1}]}`
+            + Levels have a `format` version which can be used to track incompatible save data
+                + Eventually this format could be used to datafix levels automatically
+                + While the pack is still in early access, there will be no datafixing, and the format may not be updated for every minor change
         + Added gels
             + Gels can drop from Vital Apparatus Vents
             + Repulsion Gel (blue) makes surfaces and objects bouncy
             + Propulsion Gel (orange) reduces surface friction
             + Conversion Gel (white) is currently WIP
             + Cleansing Gel (clear) can remove gels from surfaces and objects
+        + Added decals
+            + Decals can be placed on any block surface and are for decoration only
+            + Example use cases are to place on the ceiling above Sentry Turrets or to indicate where an Aerial Faith Plate will launch entities
         + Revamped motion physics
             + Air drag is nullified after using Aerial Faith Plates and when passing through portals
             + Motion is preserved in more cases after passing through portals
@@ -573,9 +587,9 @@ For datapack testing purposes only. Everything is experimental and may not be up
                 + An elevator will stay loaded if the previous or current level is loaded
                 + When an elevator partially unloads, it leaves a single entity behind which can still detect players like a load zone
         + Zone changes
-            + Load zones without a level configured will no longer unload the current level
-                + Levels can be unloaded by elevators or through 42menu
-            + Trigger zones are now unloaded with the rest of the level
+            + Load zone reworked to optionally set a level to unload and a level to load
+                + Load zones and elevators use the same internal logic to transition levels
+            + Trigger zones now act like other level equipment and can be unloaded
             + Removed death zones
                 + Defining out-of-bounds regions will eventually become part of the level system
         + Misc fixes and performance improvements

@@ -13,7 +13,7 @@ execute if data storage 42:portal loader.temp_entity.tag_spawn_turret run summon
 execute if data storage 42:portal loader.temp_entity.tag_spawn_radio run summon block_display ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.new_spawn","42.tag.portal.cube.spawner","42.tag.portal.cube.spawner.group","42.tag.portal.tool.spawn.radio","42.tag.portal.is_spawner"],CustomNameVisible:false,CustomName:"Radio Spawner",block_state:{Name:"minecraft:ice"},view_range:0f,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-.2f,.05f,-.2f],scale:[.4f,.4f,.4f]},Passengers:[\
     {id:"minecraft:text_display",Tags:["42.tag.summon","42.tag.portal.new_spawn","42.tag.portal.cube.spawner.lbl","42.tag.portal.cube.spawner.group"],CustomNameVisible:false,CustomName:"42portal",text:"Radio Spawner",see_through:true,alignment:"center",billboard:"vertical",view_range:0f,brightness:{block:15,sky:15},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,.25f,0f],scale:[1f,1f,1f]}}]}
 
-$scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.cube.spawner] 42.obj.portal.lvl $(lvl)
+execute store result score @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.cube.spawner] 42.obj.portal.lvl run data get storage 42:portal loader.lvl
 $scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.cube.spawner] 42.obj.portal.link $(link)
 $scoreboard players set @e[tag=42.tag.portal.new_spawn,tag=42.tag.portal.cube.spawner] 42.obj.portal.skin $(skin)
 $scoreboard players set @e[tag=42.tag.portal.new_spawn] 42.obj.portal.id $(id)

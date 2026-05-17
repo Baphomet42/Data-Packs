@@ -1,6 +1,6 @@
 execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[dx=0,dy=0,dz=0,tag=42.tag.portal.motion] run function 42:portal/generic/motion/end
-execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @a[dx=0,dy=0,dz=0,gamemode=!spectator,limit=1,sort=nearest,predicate=!42:has_vehicle] positioned ~.5 ~.5 ~.5 run function 42:portal/faith_plate/launch_player
-execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[tag=42.tag.portal.cube.main,tag=!42.tag.portal.cube.held,dx=0,dy=0,dz=0,limit=1,sort=nearest] positioned ~.5 ~.5 ~.5 run function 42:portal/faith_plate/launch_cube
-execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[type=!#42:portal/portal_exempt,tag=!42.tag.tech,dx=0,dy=0,dz=0,limit=1,sort=nearest,predicate=!42:has_vehicle] positioned ~.5 ~.5 ~.5 run function 42:portal/faith_plate/launch_entity
+execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @a[dx=0,dy=0,dz=0,gamemode=!spectator,predicate=!42:has_vehicle] positioned ~.5 ~.5 ~.5 run function 42:portal/faith_plate/launch_player
+execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[tag=42.tag.portal.cube.main,tag=!42.tag.portal.cube.held,dx=0,dy=0,dz=0] positioned ~.5 ~.5 ~.5 run function 42:portal/faith_plate/launch_cube
+execute if score @s 42.obj.portal.time matches 0 positioned ~-.5 ~-.5 ~-.5 as @e[type=!#42:portal/portal_exempt,tag=!42.tag.tech,dx=0,dy=0,dz=0,predicate=!42:has_vehicle] positioned ~.5 ~.5 ~.5 run function 42:portal/faith_plate/launch_entity
 execute if score @s 42.obj.portal.time matches 1.. run scoreboard players remove @s 42.obj.portal.time 1
 execute if score @s 42.obj.portal.time matches 5 as @e[tag=42.tag.portal.faith_plate.dis,limit=2,sort=nearest,distance=..5] run data merge entity @s {transformation:{left_rotation:{angle:0f,axis:[1f,0f,0f]}},interpolation_duration:8,start_interpolation:-1}

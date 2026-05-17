@@ -15,6 +15,7 @@ scoreboard players set @a[tag=42.tag.portal.temp.in_elevator] 42.obj.portal.lvl 
 execute if score @s 42.obj.portal.var.b matches 1.. run scoreboard players operation @a[tag=42.tag.portal.temp.in_elevator] 42.obj.portal.lvl = @s 42.obj.portal.var.b
 
 execute if score @s 42.obj.portal.var.a matches 1.. run tag @s add 42.tag.portal.elevator.unload_prev
+execute if entity @s[tag=42.tag.portal.elevator.unload_prev,tag=!42.tag.portal.elevator.tp,scores={42.obj.portal.var.x=0}] run function 42:portal/elevator/unload_prev
 
 execute if score @s 42.obj.portal.var.b matches 1.. run scoreboard players operation @s 42.obj.portal.lvl = @s 42.obj.portal.var.b
 execute if score @s 42.obj.portal.var.b matches 1.. run function 42:portal/level/load

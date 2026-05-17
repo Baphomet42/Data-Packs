@@ -4,6 +4,7 @@ give @s bogged_spawn_egg[item_name="Reskin Nearby Equipment",rarity=uncommon,cus
         {text:"  Sentry Turret",color:"gray"},\
         {text:"  Storage Cube",color:"gray"},\
         {text:"  Vital Apparatus Vent",color:"gray"},\
+        {text:"  Decal",color:"gray"},\
         {text:"  Power Wire",color:"gray"},\
         {text:"  Portal Spawner",color:"gray"},\
         ""],\

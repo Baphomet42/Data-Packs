@@ -20,7 +20,8 @@ execute if entity @s[tag=42.tag.portal.pellet] at @s run function 42:portal/pell
 execute if entity @s[tag=42.tag.portal.laser.emitter] at @s run function 42:portal/laser/emitter/select
 execute if entity @s[tag=42.tag.portal.laser.catcher] at @s run function 42:portal/laser/catcher/select
 execute if entity @s[tag=42.tag.portal.elevator.main] at @s run function 42:portal/elevator/select
-execute if entity @s[tag=42.tag.portal.wire] at @s run function 42:portal/wire/select
+execute if entity @s[tag=42.tag.portal.decal.basic] at @s run function 42:portal/decal/select
+execute if entity @s[tag=42.tag.portal.decal.wire] at @s run function 42:portal/decal/wire/select
 execute if entity @s[tag=42.tag.portal.gel] at @s run function 42:portal/gel/select
 execute if entity @s[tag=42.tag.portal.portal.spawner] at @s run function 42:portal/portal/spawner/select
 execute if entity @s[tag=42.tag.portal.zone] at @s run function 42:portal/zone/select
@@ -29,8 +30,7 @@ execute if entity @s[tag=42.tag.portal.pellet.spawner] at @s run function 42:por
 execute if entity @s[tag=42.tag.portal.gel.spawner] at @s run function 42:portal/gel/spawner/select
 execute if entity @s[tag=42.tag.portal.grill] at @s run function 42:portal/grill/select
 
-execute if score @s[tag=!42.tag.portal.portal.group,tag=!42.tag.portal.wire] 42.obj.portal.link matches 1.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      [",color:"gray"},{text:"Unlink",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203502"}},"]"]
-execute if score @s[tag=!42.tag.portal.zone,tag=!42.tag.portal.portal] 42.obj.portal.lvl matches 0.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      [",color:"gray"},{text:"Unbind Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203504"}},"]"]
+execute if score @s[tag=!42.tag.portal.portal.group,tag=!42.tag.portal.decal.wire] 42.obj.portal.link matches 1.. run tellraw @p[tag=42.tag.portal.selected] [{text:"      [",color:"gray"},{text:"Unlink",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203502"}},"]"]
 execute if score @s[tag=!42.tag.portal.portal] 42.obj.portal.lvl matches 1.. run tellraw @p[tag=42.tag.portal.selected] \
     [{text:"      [",color:"gray"},{text:"Load Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203501"}},"]",\
     {text:" [",color:"gray"},{text:"Unload Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203505"}},"]"]

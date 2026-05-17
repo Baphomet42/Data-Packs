@@ -12,7 +12,8 @@ execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.pellet_
 execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.laser_emitter] run function 42:portal/laser/emitter/spawn
 execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.laser_catcher] run function 42:portal/laser/catcher/spawn
 execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.elevator] run function 42:portal/elevator/spawn
-execute if entity @s[type=glow_item_frame,tag=42.tag.portal.tool.spawn.wire] run function 42:portal/wire/spawn
+execute if entity @s[type=glow_item_frame,tag=42.tag.portal.tool.spawn.decal] run function 42:portal/decal/spawn
+execute if entity @s[type=glow_item_frame,tag=42.tag.portal.tool.spawn.wire] run function 42:portal/decal/wire/spawn
 execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.zone] run function 42:portal/zone/spawn
 execute if entity @s[type=area_effect_cloud,tag=42.tag.portal.tool.spawn.grill] run function 42:portal/grill/spawn
 

@@ -18,14 +18,15 @@
         "42:portal/laser/emitter/craft",
         "42:portal/laser/catcher/craft",
         "42:portal/gun/craft_default",
-        "42:portal/wire/craft",
-        "42:portal/tools/craft_fizzler",
+        "42:portal/decal/craft",
+        "42:portal/decal/wire/craft",
+        "42:portal/zone/craft",
         "42:portal/tools/craft_cycle",
         "42:portal/tools/craft_skin",
         "42:portal/tools/craft_link",
         "42:portal/tools/craft_level",
         "42:portal/tools/craft_select",
-        "42:portal/zone/craft",
+        "42:portal/tools/craft_fizzler",
         "42:portal/gel/surface/craft_all"
     ]
 }
