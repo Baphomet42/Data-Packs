@@ -3,7 +3,14 @@ summon area_effect_cloud ~ ~ ~ {Tags:["42.tag.summon"],Duration:10,DurationOnUse
 function 42:portal/tag_selected
 function 42:gen/cmdfeed/hide
 tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},{text:"------------------------------\n",color:"dark_gray"},\
-    {selector:"@s",color:"gold",bold:true},\
+    {selector:"@s",color:"gold",bold:true,hover_event:{action:"show_text",value:["",\
+        {selector:"@s"},\
+        "\n  Pos: ",{entity:"@s",nbt:"Pos"},\
+        "\n  Rotation: ",{entity:"@s",nbt:"Rotation"},\
+        "\n  id: ",{score:{name:"@s",objective:"42.obj.portal.id"},color:"gold"},\
+        "\n  lvl: ",{score:{name:"@s",objective:"42.obj.portal.lvl"},color:"gold"},\
+        "\n  link: ",{score:{name:"@s",objective:"42.obj.portal.link"},color:"gold"},\
+        ]}},\
     {storage:"42:gen",nbt:"cmdfeed_btn",interpret:true},\
     {text:" "},{text:"⟳",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203503"},hover_event:{action:"show_text",value:["","Refresh Selection Screen","\n\n",{text:"Selection options are only sent to chat when first selecting equipment. Refresh to reselect the equipment and see changes.",color:"gray"}]}}]
 

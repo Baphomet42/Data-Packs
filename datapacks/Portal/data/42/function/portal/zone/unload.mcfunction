@@ -17,7 +17,6 @@ execute store result storage 42:portal loader.temp_entity.var_y int 1 run scoreb
 execute if entity @s[tag=42.tag.portal.zone.show] run data modify storage 42:portal loader.temp_entity.tag_show set value true
 execute if entity @s[tag=42.tag.portal.zone.has_spawn] run data modify storage 42:portal loader.temp_entity.tag_has_spawn set value true
 execute if entity @s[tag=42.tag.portal.zone.has_fizzle] run data modify storage 42:portal loader.temp_entity.tag_has_fizzle set value true
-execute if entity @s[tag=42.tag.portal.zone.grill] run data modify storage 42:portal loader.temp_entity.tag_grill set value true
 function 42:portal/zone/fizzle
 
 scoreboard players add #42.var.portal.loader.equipment_count 42.obj.portal.temp 1

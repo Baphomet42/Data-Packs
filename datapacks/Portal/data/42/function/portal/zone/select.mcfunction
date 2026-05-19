@@ -29,7 +29,6 @@ execute if score @s 42.obj.portal.var.x matches 1 run tellraw @p[tag=42.tag.port
     {text:"\n      "},"[",{text:"Set id to Fizzle",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203636"}},"]",\
     {text:" "},"[",{text:"Remove",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203637"}},"]",\
     {text:" "},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"The set button will get the id of the nearest equipment (within range)\n\nIf there is an id value set, it will fizzle its spawn, if applicable (Vital Apparatus Vent, Pellet Launcher, or Spawner)"}]}},\
-    {text:"\n      "},"[",{text:"Toggle Emancipation",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203641"}},"]",{text:" "},{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:[{text:"(Off by default)\n\nWhen on - the player who activates the zone will have all their portals fizzled\n\nIt is recommended to use Material Emancipation Grills instead. This feature is for scripted events."}]}}\
     ]
 tellraw @p[tag=42.tag.portal.selected] [{text:"",color:"gray"},\
     {text:"   Misc...",color:"dark_gray"},\

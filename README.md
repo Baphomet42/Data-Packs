@@ -186,6 +186,9 @@ Optional resource pack - see [below](#resource-pack-info)
     + To create: use the `Select Tool` to convert available equipment into a spawner of that type
         + Portal spawners will create a portal that links to the closest player's portals
             + These are the only spawners that are visible (they appear in the early chambers in both Portal games)
+            + Portal spawners can be paired together to create a cycle in which one is powered at a time
+                + The delay before powering the next spawner is configurable
+                + This is used in the Portal 1 level 01
         + Other spawners are invisible, but can be seen in the Select Menu
             + Use `42menu` to unhide all zones and invisible spawners within a short range of the player
         + Turret spawners will keep all attributes of the turret when it was first converted
@@ -269,8 +272,6 @@ Optional resource pack - see [below](#resource-pack-info)
         + The level will unload automatically when switching levels
             + Load Zones can be used to unload levels manually
         + Make sure the hitbox is big enough so the player cannot avoid it
-    + There can be unlimited Trigger Zones within each level, and they can be placed anywhere
-        + These zones only activate if a player in the level walks through its hitbox, so spectators and outsiders cannot interfere
 + Co-op
     + Nothing will break with multiple players online, and most individual systems fully support co-op
         + Each player can have any amount of portals without conflicts, and physics objects properly respond to multiple players
@@ -562,8 +563,8 @@ For datapack testing purposes only. Everything is experimental and may not be up
         + Level system changes
             + The level format has been reworked
                 + All existing levels will need to be recreated in the new format
-                + Old format example: `storage 42:portal_levels` = `{115:{btn:[],door:[]}}`
-                + New format example: `storage 42:portal/levels` = `{levels:[{lvl:115,equipment:{btn:[],door:[]},format:1}]}`
+                + Old format example: `storage 42:portal_levels` = `{115:{btn:[ ... ],door:[ ... ], ... }}`
+                + New format example: `storage 42:portal/levels` = `{levels:[{lvl:115,equipment:{btn:[ ... ],door:[ ... ], ... },format:1}]}`
             + Levels have a `format` version which can be used to track incompatible save data
                 + Eventually this format could be used to datafix levels automatically
                 + While the pack is still in early access, there will be no datafixing, and the format may not be updated for every minor change
@@ -592,6 +593,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
             + Trigger zones now act like other level equipment and can be unloaded
             + Removed death zones
                 + Defining out-of-bounds regions will eventually become part of the level system
+        + Portal spawners can be joined in a group to power 1 at a time in a cycle
         + Misc fixes and performance improvements
     + **XLTT**
         + Improved O.D.M. physics

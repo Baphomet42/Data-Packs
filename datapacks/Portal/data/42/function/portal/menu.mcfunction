@@ -12,6 +12,7 @@ tellraw @s[scores={42menu=1}] [{text:"",color:"gray"},\
     ,{text:"\n      "},"[",{text:"Unload Level",color:"#DDDDDD",click_event:{action:"suggest_command",command:"/function 42:portal/level/unload"}},"]"\
     ,{text:"\n      "},"[",{text:"Unhide Zones",color:"#DDDDDD",click_event:{action:"suggest_command",command:"/function 42:portal/generic/show_nearby_invisibles"}},"]"\
     ]
+tellraw @s[scores={42menu=1,42.obj.portal.sel=1..}] [{text:"",color:"gray"},"      ","[",{text:"Refresh Selection",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203503"}},"]"]
 execute if data storage 42:portal tick run return run tellraw @s [{text:"42datapack error (3): Portal tick function was halted. Use `/reload` to resume.",color:"red"},\
     " ",{text:"[?]",color:"dark_purple",hover_event:{action:"show_text",value:"Functions being halted before finishing can result in corrupted data. It is recommended to backup your world now and monitor the datapack after resuming the tick function.\n\nThis can happen from game crashes or from the max_command_sequence_length or max_command_forks gamerules. Consider increasing the gamerules before resuming the tick function."}},"\n"]
 execute if score @s 42menu matches 11 run function 42:gen/cmdfeed/reset
@@ -30,13 +31,13 @@ tellraw @s[scores={42menu=4203001}] [{text:"",color:"gray"},{text:"-------------
     {text:"\n      "},"[",{text:"Pedestal Button",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203008"}},"]",\
     {text:"\n      "},"[",{text:"Door",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203010"}},"]",\
     {text:"\n      "},"[",{text:"Vital Apparatus Vent",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203011"}},"]",\
-    {text:"\n      "},"[",{text:"Aerial Faith Plate",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203004"}},"]",\
     {text:"\n      "},"[",{text:"Material Emancipation Grill",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203028"}},"]",\
     {text:"\n      "},"[",{text:"Elevator",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203025"}},"]",\
     {text:"\n      "},"[",{text:"Pellet Launcher",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203014"}},"]",\
     {text:"\n      "},"[",{text:"Pellet Catcher",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203015"}},"]",\
     {text:"\n      "},"[",{text:"Thermal Discouragement Beam",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203029"}},"]",\
     {text:"\n      "},"[",{text:"Discouragement Beam Receptacle",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203030"}},"]",\
+    {text:"\n      "},"[",{text:"Aerial Faith Plate",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203004"}},"]",\
     {text:"\n      "},"[",{text:"Decal",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203031"}},"]",\
     {text:"\n      "},"[",{text:"Power Wire",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203026"}},"]",\
     {text:"\n      "},"[",{text:"Zone",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203027"}},"]",\

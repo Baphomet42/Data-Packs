@@ -1,4 +1,4 @@
-execute unless entity @s[tag=42.tag.portal.elevator.main,tag=42.tag.portal.elevator.show] run return fail
+execute unless entity @s[tag=42.tag.portal.elevator.main,tag=42.tag.portal.elevator.show,tag=!42.tag.portal.elevator.search] run return fail
 
 function 42:portal/elevator/reset
 function 42:portal/tag_id

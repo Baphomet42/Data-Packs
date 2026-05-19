@@ -9,6 +9,9 @@
         "#42:stained_glass_panes",
         "minecraft:tinted_glass",
         "#minecraft:doors",
-        "#minecraft:trapdoors"
+        "#minecraft:trapdoors",
+        "minecraft:spawner",
+        "minecraft:trial_spawner",
+        "minecraft:vault"
     ]
 }

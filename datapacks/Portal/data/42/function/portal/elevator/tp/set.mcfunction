@@ -1,6 +1,7 @@
 function 42:portal/elevator/tp/remove
 tag @e remove 42.tag.portal.elevator.pair
-execute as @p[tag=42.tag.portal.selected] at @s run tag @e[tag=42.tag.portal.elevator.main,limit=1,sort=nearest,tag=!42.tag.portal.id,distance=..4] add 42.tag.portal.elevator.pair
+execute as @p[tag=42.tag.portal.selected] at @s run tag @e[tag=42.tag.portal.elevator.main,limit=1,sort=nearest,distance=..4] add 42.tag.portal.elevator.pair
+tag @s remove 42.tag.portal.elevator.pair
 
 execute unless entity @e[tag=42.tag.portal.elevator.pair] run title @p[tag=42.tag.portal.selected] title ""
 execute unless entity @e[tag=42.tag.portal.elevator.pair] run return run title @p[tag=42.tag.portal.selected] subtitle {text:"No elevator in range",color:"red"}
