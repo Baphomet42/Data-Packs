@@ -90,6 +90,9 @@ Documented modifiers:
     + `42:labs/item/vril_sphere/<slot>`
     + `42:labs/item/zero_gravity/<slot>`
     + `42:labs/item/luftballon/<slot>`
+    + `42:labs/item/aviator/<slot>`
+    + `42:labs/item/bouncy_ball/<slot>`
+    + `42:labs/item/ice_cube/<slot>`
     + `42:labs/item/tablet/antman/<slot>`
     + `42:labs/item/tablet/hobbit/<slot>`
     + `42:labs/item/tablet/bossmode/<slot>`
