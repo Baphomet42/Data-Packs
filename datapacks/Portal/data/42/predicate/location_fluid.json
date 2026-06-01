@@ -1,5 +1,5 @@
 {
-    "condition": "location_check",
+    "condition": "minecraft:location_check",
     "predicate": {
         "fluid": {
             "fluids": [

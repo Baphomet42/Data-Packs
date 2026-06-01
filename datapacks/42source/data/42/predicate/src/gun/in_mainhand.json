@@ -2,7 +2,7 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-        "slots": {
+        "minecraft:slots": {
             "weapon.mainhand": {
                 "predicates": {
                     "minecraft:custom_data": "{42data:{src:{gun:{}}}}"

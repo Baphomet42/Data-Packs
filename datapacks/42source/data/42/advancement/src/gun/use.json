@@ -1,11 +1,11 @@
 {
     "criteria": {
-        "click": {
-            "trigger": "using_item",
+        "requirement": {
+            "trigger": "minecraft:using_item",
             "conditions": {
                 "item": {
                     "predicates": {
-                        "custom_data": "{42data:{src:{gun:{}}}}"
+                        "minecraft:custom_data": "{42data:{src:{gun:{}}}}"
                     }
                 }
             }

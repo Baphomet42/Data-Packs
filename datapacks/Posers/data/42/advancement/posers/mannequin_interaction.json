@@ -6,13 +6,7 @@
                 "entity": {
                     "entity_type": "minecraft:interaction",
                     "predicates": {
-                        "minecraft:custom_data": {
-                            "42data": {
-                                "posers": {
-                                    "mannequin_interaction": {}
-                                }
-                            }
-                        }
+                        "minecraft:custom_data": "{42data:{posers:{mannequin_interaction:{}}}}"
                     }
                 }
             }
@@ -23,13 +17,7 @@
                 "entity": {
                     "entity_type": "minecraft:interaction",
                     "predicates": {
-                        "minecraft:custom_data": {
-                            "42data": {
-                                "posers": {
-                                    "mannequin_interaction": {}
-                                }
-                            }
-                        }
+                        "minecraft:custom_data": "{42data:{posers:{mannequin_interaction:{}}}}"
                     }
                 }
             }

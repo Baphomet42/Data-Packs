@@ -5,13 +5,7 @@
             "conditions": {
                 "item": {
                     "predicates": {
-                        "minecraft:custom_data": {
-                            "42data": {
-                                "xltt": {
-                                    "odm": {}
-                                }
-                            }
-                        }
+                        "minecraft:custom_data": "{42data:{xltt:{odm:{}}}}"
                     }
                 }
             }

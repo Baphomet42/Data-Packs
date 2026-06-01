@@ -1,8 +1,8 @@
 {
-    "condition": "entity_properties",
+    "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-        "movement": {
+        "minecraft:movement": {
             "horizontal_speed": {
                 "min": 2.5
             }

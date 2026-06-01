@@ -5,13 +5,7 @@
             "conditions": {
                 "item": {
                     "predicates": {
-                        "minecraft:custom_data": {
-                            "42data": {
-                                "portal": {
-                                    "portal_gun": {}
-                                }
-                            }
-                        }
+                        "minecraft:custom_data": "{42data:{portal:{portal_gun:{}}}}"
                     }
                 }
             }

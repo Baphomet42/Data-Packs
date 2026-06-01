@@ -2,15 +2,9 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-        "vehicle": {
+        "minecraft:vehicle": {
             "predicates": {
-                "minecraft:custom_data": {
-                    "42data": {
-                        "posers": {
-                            "sitting_interaction": {}
-                        }
-                    }
-                }
+                "minecraft:custom_data": "{42data:{posers:{sitting_interaction:{}}}}"
             }
         }
     }
