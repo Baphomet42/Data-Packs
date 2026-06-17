@@ -548,7 +548,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ `v0.11.0+mc26.2` Major Update (Current Dev Branch)
++ `v0.11.0+mc26.2` Major Update (6/16/2026)
     + **IMPORTANT**
         + The required Minecraft version has changed to 26.2
         + Before updating existing worlds with the datapacks:
