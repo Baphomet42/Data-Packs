@@ -26,7 +26,7 @@ execute as @e[type=villager,tag=42.tag.xltt.titan.transforming,scores={42.obj.xl
 # wine
 execute as @e[type=experience_bottle,nbt={Item:{components:{"minecraft:custom_data":{42data:{xltt:{wine:{}}}}}}}] at @s run function 42:xltt/wine/spawn
 execute as @e[type=marker,tag=42.tag.xltt.wine] at @s run particle dust{color:[.24,.04,.08],scale:1}
-execute as @e[type=marker,tag=42.tag.xltt.wine] at @s unless predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:vehicle":{}}} run function 42:xltt/wine/hit
+execute as @e[type=marker,tag=42.tag.xltt.wine] at @s unless predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:vehicle":{}}} run function 42:xltt/wine/hit
 execute at @e[tag=42.tag.xltt.titan.appear] run particle flash{color:[1,1,1,1]} ~ ~5 ~ 1 2 1 0 15 force
 execute at @e[tag=42.tag.xltt.titan.appear] run playsound entity.allay.death hostile @a[distance=..200] ~ ~ ~ 20 2
 scoreboard players add @e[tag=42.tag.xltt.titan.appear] 42.obj.xltt.titan_time 1

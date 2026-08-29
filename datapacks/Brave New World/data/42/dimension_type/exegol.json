@@ -16,7 +16,17 @@
         "minecraft:gameplay/bed_rule": {
             "can_set_spawn": "never",
             "can_sleep": "always",
-            "explodes": false,
+            "destroy_on_use": false,
+            "destroy_on_leave": false,
+            "error_message": {
+                "translate": "block.minecraft.bed.no_sleep"
+            }
+        },
+        "minecraft:gameplay/straw_bed_rule": {
+            "can_set_spawn": "never",
+            "can_sleep": "always",
+            "destroy_on_use": false,
+            "destroy_on_leave": false,
             "error_message": {
                 "translate": "block.minecraft.bed.no_sleep"
             }

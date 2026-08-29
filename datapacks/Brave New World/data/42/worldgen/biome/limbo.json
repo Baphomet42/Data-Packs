@@ -33,17 +33,6 @@
         [],
         []
     ],
-    "spawners": {
-        "ambient": [],
-        "axolotls": [],
-        "creature": [],
-        "misc": [],
-        "monster": [],
-        "underground_water_creature": [],
-        "water_ambient": [],
-        "water_creature": []
-    },
-    "spawn_costs": {},
     "has_precipitation": true,
     "temperature": 0.8,
     "downfall": 0.4

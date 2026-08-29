@@ -14,17 +14,16 @@ execute if block ~ ~ ~ bone_block[axis=x] run scoreboard players set @s 42.obj.p
 execute if block ~ ~ ~ bone_block[axis=y] run scoreboard players set @s 42.obj.portal.skin 10
 execute if block ~ ~ ~ bone_block[axis=z] run scoreboard players set @s 42.obj.portal.skin 11
 
-data modify entity @s block_state.Name set value quartz_block
-execute if score @s 42.obj.portal.skin matches 0 run data modify entity @s block_state.Name set value quartz_block
-execute if score @s 42.obj.portal.skin matches 1 run data modify entity @s block_state.Name set value smooth_quartz
-execute if score @s 42.obj.portal.skin matches 2 run data modify entity @s block_state.Name set value chiseled_quartz_block
-execute if score @s 42.obj.portal.skin matches 3 run data modify entity @s block_state.Name set value smooth_stone
-execute if score @s 42.obj.portal.skin matches 4 run data modify entity @s block_state.Name set value white_concrete
-execute if score @s 42.obj.portal.skin matches 5 run data modify entity @s block_state.Name set value calcite
-execute if score @s 42.obj.portal.skin matches 6 run data modify entity @s block_state.Name set value white_wool
-execute if score @s 42.obj.portal.skin matches 7 run data modify entity @s block_state.Name set value polished_diorite
-execute if score @s 42.obj.portal.skin matches 8 run data modify entity @s block_state.Name set value polished_andesite
-execute if score @s 42.obj.portal.skin matches 9..11 run data modify entity @s block_state.Name set value bone_block
-execute if score @s 42.obj.portal.skin matches 9 run data modify entity @s block_state.Properties set value {axis:"x"}
-execute if score @s 42.obj.portal.skin matches 10 run data modify entity @s block_state.Properties set value {axis:"y"}
-execute if score @s 42.obj.portal.skin matches 11 run data modify entity @s block_state.Properties set value {axis:"z"}
+data modify entity @s block_state set value "minecraft:quartz_block"
+execute if score @s 42.obj.portal.skin matches 0 run data modify entity @s block_state set value "minecraft:quartz_block"
+execute if score @s 42.obj.portal.skin matches 1 run data modify entity @s block_state set value "minecraft:smooth_quartz"
+execute if score @s 42.obj.portal.skin matches 2 run data modify entity @s block_state set value "minecraft:chiseled_quartz_block"
+execute if score @s 42.obj.portal.skin matches 3 run data modify entity @s block_state set value "minecraft:smooth_stone"
+execute if score @s 42.obj.portal.skin matches 4 run data modify entity @s block_state set value "minecraft:white_concrete"
+execute if score @s 42.obj.portal.skin matches 5 run data modify entity @s block_state set value "minecraft:calcite"
+execute if score @s 42.obj.portal.skin matches 6 run data modify entity @s block_state set value "minecraft:white_wool"
+execute if score @s 42.obj.portal.skin matches 7 run data modify entity @s block_state set value "minecraft:polished_diorite"
+execute if score @s 42.obj.portal.skin matches 8 run data modify entity @s block_state set value "minecraft:polished_andesite"
+execute if score @s 42.obj.portal.skin matches 9 run data modify entity @s block_state set value {id:"minecraft:bone_block",properties:{axis:"x"}}
+execute if score @s 42.obj.portal.skin matches 10 run data modify entity @s block_state set value {id:"minecraft:bone_block",properties:{axis:"y"}}
+execute if score @s 42.obj.portal.skin matches 11 run data modify entity @s block_state set value {id:"minecraft:bone_block",properties:{axis:"z"}}

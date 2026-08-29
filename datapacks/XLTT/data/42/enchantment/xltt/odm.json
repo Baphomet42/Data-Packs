@@ -21,7 +21,7 @@
         "minecraft:tick": [
             {
                 "requirements": {
-                    "condition": "minecraft:entity_scores",
+                    "type": "minecraft:entity_scores",
                     "entity": "this",
                     "scores": {
                         "42.obj.xltt.odm_motion": 1
@@ -34,7 +34,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_scores",
+                    "type": "minecraft:entity_scores",
                     "entity": "this",
                     "scores": {
                         "42.obj.xltt.odm_motion": 1
@@ -57,7 +57,7 @@
             },
             {
                 "requirements": {
-                    "condition": "minecraft:entity_scores",
+                    "type": "minecraft:entity_scores",
                     "entity": "this",
                     "scores": {
                         "42.obj.xltt.odm_motion": 1

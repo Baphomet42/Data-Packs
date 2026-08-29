@@ -1,7 +1,7 @@
 
 ----------------------------------------------------------------
 
-# Separate but compatible datapacks for Minecraft 26.2
+# Separate but compatible datapacks for Minecraft 26.3
 
 Multiplayer-friendly and designed to work with other packs.
 Most packs are proof of concepts and not intended for existing worlds.
@@ -547,6 +547,12 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ----------------------------------------------------------------
 
 # Changelog
+
++ Dev - `v0.12.0+mc26.3` Major Update (Current branch)
+    + **IMPORTANT**
+        + The required Minecraft version has changed to 26.3
+    + **All datapacks**
+        + Supported versions: 26.3
 
 + `v0.11.0+mc26.2` Major Update (6/16/2026)
     + **IMPORTANT**

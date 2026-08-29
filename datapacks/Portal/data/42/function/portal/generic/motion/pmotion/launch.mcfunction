@@ -13,5 +13,5 @@ scoreboard players operation @s 42.obj.portal.motion.y = @s 42.obj.portal.pmotio
 scoreboard players operation @s 42.obj.portal.motion.z = @s 42.obj.portal.pmotion.z
 
 function 42:portal/generic/motion/start
-item modify entity @s armor.body {function:"set_enchantments",enchantments:{"42:portal/long_fall_boots":1}}
+item modify entity @s armor.body {type:"set_enchantments",enchantments:{"42:portal/long_fall_boots":1}}
 scoreboard players set @s 42.obj.portal.pmotion.start 1

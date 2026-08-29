@@ -1,4 +1,4 @@
 #TODO optimize cube activation color
-execute if entity @s[tag=42.tag.portal.cube.storage] as @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.color] run data modify entity @s block_state.Name set value light_blue_concrete_powder
-execute if entity @s[tag=42.tag.portal.cube.companion] as @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.color] run data modify entity @s block_state.Name set value pink_concrete_powder
-execute at @e[tag=42.tag.portal.btn,distance=..3] positioned ~-.875 ~-.625 ~-.875 if entity @s[dx=.75,dy=0,dz=.75] as @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.color] run data modify entity @s block_state.Name set value orange_concrete_powder
+execute if entity @s[tag=42.tag.portal.cube.storage] as @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.color] run data modify entity @s block_state set value "minecraft:light_blue_concrete_powder"
+execute if entity @s[tag=42.tag.portal.cube.companion] as @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.color] run data modify entity @s block_state set value "minecraft:pink_concrete_powder"
+execute at @e[tag=42.tag.portal.btn,distance=..3] positioned ~-.875 ~-.625 ~-.875 if entity @s[dx=.75,dy=0,dz=.75] as @e[tag=42.tag.portal.id,tag=42.tag.portal.cube.color] run data modify entity @s block_state set value "minecraft:orange_concrete_powder"

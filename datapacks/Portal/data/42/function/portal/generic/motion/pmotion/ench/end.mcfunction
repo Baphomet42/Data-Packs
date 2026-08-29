@@ -1,7 +1,7 @@
 execute rotated as @e[type=marker,tag=42.tag.portal.pmotion,limit=1] run rotate @s ~ ~
 kill @e[type=marker,tag=42.tag.portal.pmotion]
 
-item modify entity @s armor.body {function:"set_enchantments",enchantments:{"42:portal/long_fall_boots":0}}
+item modify entity @s armor.body {type:"set_enchantments",enchantments:{"42:portal/long_fall_boots":0}}
 execute if items entity @s armor.body \
     *[custom_data~{42data:{delete_after_ench:true}},\
     !enchantments|enchantments={}|enchantments={"minecraft:binding_curse":1}|enchantments={"minecraft:vanishing_curse":1}|enchantments={"minecraft:binding_curse":1,"minecraft:vanishing_curse":1}\

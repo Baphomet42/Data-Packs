@@ -4,9 +4,13 @@
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "entity_type": "minecraft:interaction",
-                    "predicates": {
-                        "minecraft:custom_data": "{42data:{posers:{mannequin_interaction:{}}}}"
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_type": "minecraft:interaction",
+                        "predicates": {
+                            "minecraft:custom_data": "{42data:{posers:{mannequin_interaction:{}}}}"
+                        }
                     }
                 }
             }
@@ -15,9 +19,13 @@
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "entity": {
-                    "entity_type": "minecraft:interaction",
-                    "predicates": {
-                        "minecraft:custom_data": "{42data:{posers:{mannequin_interaction:{}}}}"
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_type": "minecraft:interaction",
+                        "predicates": {
+                            "minecraft:custom_data": "{42data:{posers:{mannequin_interaction:{}}}}"
+                        }
                     }
                 }
             }

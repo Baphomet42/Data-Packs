@@ -11,5 +11,5 @@ tag @e[tag=42.tag.portal.cube.main,tag=42.tag.portal.id] remove 42.tag.portal.tu
 tag @e[tag=42.tag.portal.cube.main,tag=42.tag.portal.id] remove 42.tag.portal.turret.always_on
 scoreboard players reset @s 42.obj.portal.var.c
 data modify entity @s HasVisualFire set value false
-data merge entity @e[tag=42.tag.portal.id,tag=42.tag.portal.turret.eye,limit=1] {block_state:{Name:"minecraft:red_shulker_box"},brightness:{block:12,sky:12}}
+data merge entity @e[tag=42.tag.portal.id,tag=42.tag.portal.turret.eye,limit=1] {block_state:"minecraft:red_shulker_box",brightness:{block:12,sky:12}}
 tag @e remove 42.tag.portal.id

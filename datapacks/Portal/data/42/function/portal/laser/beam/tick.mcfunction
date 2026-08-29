@@ -1,7 +1,7 @@
 execute if entity @s[tag=42.tag.portal.laser.beam.cube_watcher] run return run function 42:portal/laser/beam/tick_cube_watcher
 
 particle dust{color:[1,0,0],scale:1} ~ ~ ~ 0 0 0 0 1 force
-execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:periodic_tick":200}} run function 42:portal/laser/beam/check_emitter
+execute if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:periodic_tick":200}} run function 42:portal/laser/beam/check_emitter
 execute at @s as @a[gamemode=!spectator,dx=0] positioned ~-1 ~-1 ~-1 if entity @s[dx=0] at @s run damage @s .0001 fireball by @e[limit=1,sort=nearest,distance=..5,tag=42.tag.portal.laser.beam]
 
 execute unless entity @s[tag=42.tag.portal.laser.beam.end] run return 0
