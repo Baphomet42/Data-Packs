@@ -45,7 +45,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -54,7 +54,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -85,7 +85,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -94,7 +94,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -125,7 +125,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -134,7 +134,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -165,7 +165,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -174,7 +174,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -205,7 +205,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -214,7 +214,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -245,7 +245,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -254,7 +254,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -285,7 +285,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -294,7 +294,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -325,7 +325,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -334,7 +334,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -365,7 +365,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -374,7 +374,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -405,7 +405,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -414,7 +414,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -445,7 +445,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -454,7 +454,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -485,7 +485,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -494,7 +494,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -525,7 +525,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -534,7 +534,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -565,7 +565,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -574,7 +574,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -605,7 +605,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -614,7 +614,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -645,7 +645,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -654,7 +654,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -685,7 +685,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -694,7 +694,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -725,7 +725,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -734,7 +734,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -765,7 +765,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -774,7 +774,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -805,7 +805,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -814,7 +814,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -845,7 +845,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -854,7 +854,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -885,7 +885,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -894,7 +894,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -925,7 +925,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -934,7 +934,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -965,7 +965,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -974,7 +974,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -1005,7 +1005,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1014,7 +1014,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -1045,7 +1045,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1054,7 +1054,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -1085,7 +1085,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1094,7 +1094,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -1125,7 +1125,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1134,7 +1134,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -1165,7 +1165,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1174,7 +1174,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -1205,7 +1205,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1214,7 +1214,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -1245,7 +1245,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1254,7 +1254,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -1285,7 +1285,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1294,7 +1294,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -1325,7 +1325,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1334,7 +1334,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -1365,7 +1365,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1374,7 +1374,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -1405,7 +1405,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1414,7 +1414,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -1445,7 +1445,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1454,7 +1454,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -1485,7 +1485,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1494,7 +1494,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -1525,7 +1525,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1534,7 +1534,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -1565,7 +1565,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1574,7 +1574,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -1605,7 +1605,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1614,7 +1614,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -1645,7 +1645,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1654,7 +1654,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -1685,7 +1685,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1694,7 +1694,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -1725,7 +1725,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1734,7 +1734,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -1765,7 +1765,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1774,7 +1774,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -1805,7 +1805,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1814,7 +1814,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -1845,7 +1845,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1854,7 +1854,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
@@ -1885,7 +1885,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1894,7 +1894,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": 1
+                            "test": 1
                         }
                     ]
                 },
@@ -1925,7 +1925,7 @@
                             }
                         },
                         {
-                            "type": "minecraft:value_check",
+                            "type": "minecraft:int_value_check",
                             "value": {
                                 "type": "minecraft:score",
                                 "target": {
@@ -1934,7 +1934,7 @@
                                 },
                                 "score": "42.obj.portal.pmotion.start"
                             },
-                            "range": -1
+                            "test": -1
                         }
                     ]
                 },
