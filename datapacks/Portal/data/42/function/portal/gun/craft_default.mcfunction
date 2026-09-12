@@ -1,2 +1,1 @@
-function 42:portal/gun/craft_blue
-function 42:portal/gun/craft_orange
+function 42:portal/gun/craft_custom {args:{link:1,main:{color:12},alt:{color:6}}}

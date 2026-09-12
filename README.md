@@ -553,6 +553,13 @@ For datapack testing purposes only. Everything is experimental and may not be up
         + The required Minecraft version has changed to 26.3
     + **All datapacks**
         + Supported versions: 26.3
+    + **Portal**
+        + Portal Gun changes
+            + Portal Gun items can now contain both colors instead of using separate items for each color
+                + Portal Guns can be configured with 1 color (Single Portal Device), 2 colors (Dual Portal Device), or 0 colors (Disabled Portal Device)
+            + The "attack" key is now used to fire the secondary portal, while the "use" key still fires the main color
+            + The texture coloring now changes depending on the most recent fired color
+            + The item name now shows both colors (if applicable)
 
 + `v0.11.0+mc26.2` Major Update (6/16/2026)
     + **IMPORTANT**

@@ -1,12 +1,1 @@
-tag @e remove 42.tag.portal.new_spawn
-summon item ~ ~ ~ {Tags:["42.tag.summon","42.tag.portal.new_spawn"],Item:{id:"minecraft:warped_fungus_on_a_stick",components:{\
-    "minecraft:custom_data":{42data:{datapack:{}}},\
-    "minecraft:item_model":"42:portal/portal_gun",\
-    "!minecraft:damage":{},\
-    "!minecraft:max_damage":{},\
-    "minecraft:damage_resistant":{types:"#minecraft:is_fire"},\
-    "minecraft:tool":{rules:[],can_destroy_blocks_in_creative:false},\
-    "minecraft:item_name":"Portal Gun"\
-    }}}
-execute if score #42.var.portal.config.resourcepack 42.obj.portal.vars matches 0 run data remove entity @e[limit=1,tag=42.tag.portal.new_spawn] Item.components.minecraft:item_model
-tag @e remove 42.tag.portal.new_spawn
+function 42:portal/gun/craft_custom {args:{link:1}}

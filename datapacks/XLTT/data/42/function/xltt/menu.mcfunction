@@ -1,6 +1,5 @@
 tellraw @s[scores={42menu=1}] [{text:"",color:"gray"},\
     {text:"XL-TT",color:"gold",bold:true},\
-    " ",{text:"\u2318",color:"white",click_event:{action:"run_command",command:"/function 42:gen/config/xltt/menu"},hover_event:{action:"show_text",value:"Open config settings\n(requires server operator status)"}},\
     {text:"\n   "},{text:"Get item...",color:"dark_gray"},\
     {text:"\n      "},"[",{text:"O.D.M. Sword",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4201001"}},"]",\
     {text:"\n      "},"[",{text:"Titan Spawn Egg",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4201002"}},"]",\

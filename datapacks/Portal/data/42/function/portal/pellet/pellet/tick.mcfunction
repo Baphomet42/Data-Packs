@@ -1,5 +1,5 @@
 execute at @s positioned ~-.25 ~-.25 ~-.25 run function 42:portal/pellet/pellet/move_test
-execute if entity @s[tag=!42.tag.portal.pellet.valid] run function 42:portal/pellet/pellet/fizzle
+execute if entity @s[tag=!42.tag.portal.pellet.valid,tag=!42.tag.portal.pellet.on] run function 42:portal/pellet/pellet/fizzle
 tag @s remove 42.tag.portal.pellet.valid
 scoreboard players operation @s 42.obj.portal.var.y = @s 42.obj.portal.var.x
 

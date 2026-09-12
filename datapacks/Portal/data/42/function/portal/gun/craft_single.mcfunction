@@ -1,0 +1,1 @@
+function 42:portal/gun/craft_custom {args:{link:1,main:{color:12}}}

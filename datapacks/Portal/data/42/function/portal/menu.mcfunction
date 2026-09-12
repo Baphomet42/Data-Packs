@@ -1,16 +1,15 @@
 execute if score @s 42menu matches 4203000..4203999 run function 42:gen/cmdfeed/hide
 tellraw @s[scores={42menu=1}] [{text:"",color:"gray"},\
     {text:"Portal",color:"gold",bold:true},\
-    " ",{text:"\u2318",color:"white",click_event:{action:"run_command",command:"/function 42:gen/config/portal/menu"},hover_event:{action:"show_text",value:"Open config settings\n(requires server operator status)"}}\
-    ,{text:"\n   "},{text:"Get equipment...",color:"dark_gray"}\
-    ,{text:"\n      "},"[",{text:"Handheld Portal Device",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203013"}},"]"\
-    ,{text:"\n      "},"[",{text:"Fizzle Tool",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203003"}},"]"\
-    ,{text:"\n      "},"[",{text:"See Full List...",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203001"}},"]"\
-    ,{text:"\n      "},"[",{text:"Get Everything",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203021"}},"]"\
-    ,{text:"\n   Debug...",color:"dark_gray"}\
-    ,{text:"\n      "},"[",{text:"Restart Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203100"}},"]"\
-    ,{text:"\n      "},"[",{text:"Unload Level",color:"#DDDDDD",click_event:{action:"suggest_command",command:"/function 42:portal/level/unload"}},"]"\
-    ,{text:"\n      "},"[",{text:"Unhide Zones",color:"#DDDDDD",click_event:{action:"suggest_command",command:"/function 42:portal/generic/show_nearby_invisibles"}},"]"\
+    {text:"\n   "},{text:"Get equipment...",color:"dark_gray"},\
+    {text:"\n      "},"[",{text:"Handheld Portal Device",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203013"}},"]",\
+    {text:"\n      "},"[",{text:"Fizzle Tool",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203003"}},"]",\
+    {text:"\n      "},"[",{text:"See Full List...",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203001"}},"]",\
+    {text:"\n      "},"[",{text:"Get Everything",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203021"}},"]",\
+    {text:"\n   Debug...",color:"dark_gray"},\
+    {text:"\n      "},"[",{text:"Restart Level",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203100"}},"]",\
+    {text:"\n      "},"[",{text:"Unload Level",color:"#DDDDDD",click_event:{action:"suggest_command",command:"/function 42:portal/level/unload"}},"]",\
+    {text:"\n      "},"[",{text:"Unhide Zones",color:"#DDDDDD",click_event:{action:"suggest_command",command:"/function 42:portal/generic/show_nearby_invisibles"}},"]"\
     ]
 tellraw @s[scores={42menu=1,42.obj.portal.sel=1..}] [{text:"",color:"gray"},"      ","[",{text:"Refresh Selection",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203503"}},"]"]
 execute if data storage 42:portal tick run return run tellraw @s [{text:"42datapack error (3): Portal tick function was halted. Use `/reload` to resume.",color:"red"},\
@@ -20,8 +19,7 @@ execute if score @s 42menu matches 11 run function 42:gen/cmdfeed/reset
 tellraw @s[scores={42menu=4203001}] [{text:"",color:"gray"},{text:"------------------------------",color:"dark_gray"},\
     {text:"\n   "},{text:"Get equipment...",color:"dark_gray"},\
     {text:"\n      "},"[",{text:"Handheld Portal Device",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203013"}},"]",\
-    {text:"\n      "},"[",{text:"Co-Op Portal Guns",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203023"}},"]",\
-    {text:"\n      "},"[",{text:"Disabled Portal Gun",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203024"}},"]",\
+    {text:"\n      "},"[",{text:"Misc Portal Guns",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203023"}},"]",\
     {text:"\n      "},"[",{text:"Weighted Storage Cube",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203006"}},"]",\
     {text:"\n      "},"[",{text:"Weighted Companion Cube",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203002"}},"]",\
     {text:"\n      "},"[",{text:"Discouragement Redirection Cube",color:"#DDDDDD",click_event:{action:"run_command",command:"/trigger 42menu set 4203017"}},"]",\
@@ -78,8 +76,7 @@ execute if score @s 42menu matches 4203019 run function 42:portal/tools/craft_le
 execute if score @s 42menu matches 4203020 run function 42:portal/tools/craft_select
 execute if score @s 42menu matches 4203021 run function #42:portal/craft_all
 execute if score @s 42menu matches 4203022 run function 42:portal/cube/radio/craft
-execute if score @s 42menu matches 4203023 run function 42:portal/gun/craft_coop
-execute if score @s 42menu matches 4203024 run function 42:portal/gun/craft_off
+execute if score @s 42menu matches 4203023 run function 42:portal/gun/craft_misc
 execute if score @s 42menu matches 4203025 run function 42:portal/elevator/craft
 execute if score @s 42menu matches 4203026 run function 42:portal/decal/wire/craft
 execute if score @s 42menu matches 4203027 run function 42:portal/zone/craft
