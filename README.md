@@ -548,7 +548,7 @@ For datapack testing purposes only. Everything is experimental and may not be up
 
 # Changelog
 
-+ Dev - `v0.12.0+mc26.3` Major Update (Current branch)
++ `v0.12.0+mc26.3` Major Update (9/12/2026)
     + **IMPORTANT**
         + The required Minecraft version has changed to 26.3
     + **All datapacks**
