@@ -1,0 +1,21 @@
+{
+    "pack": {
+        "description": [
+            {
+                "text": "Drop player heads in pvp",
+				"color": "gray"
+            },
+            {
+                "text": " - ",
+                "color": "dark_gray"
+            },
+            {
+                "text": "BaphomethLabs",
+                "color": "gold",
+                "italic": true
+            }
+        ],
+        "min_format": 121,
+        "max_format": 121
+    }
+}

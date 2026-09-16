@@ -39,6 +39,21 @@ In most cases, use the namepace 42 and follow it with the pack code. (Ex: 42:por
 
 ----------------------------------------------------------------
 
+# Module packs
+
+Some datapacks are smaller modules and do not include all systems from main datapacks.
+
+Modules must be safe to add and remove from worlds. They should typically not leave behind any data in the world. They should not write to 42:config storage.
+
+Pack advancements should be placed in the `module` folder and include parent `42:dominion/module/packs`.
+
+Modules list:
+
++ 42endergrief
++ 42pvphead
+
+----------------------------------------------------------------
+
 # Naming conventions
 
 The following prefixes should be used in most cases:

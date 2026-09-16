@@ -45,6 +45,15 @@ Note that features may have changed since these were published
 
 # Datapack Descriptions
 
+### **Modules**
+
+Smaller packs that can safely be added and removed from worlds.
+
++ `42endergrief`
+    + Prevent endermen from picking up blocks
++ `42pvphead`
+    + Players drop their head when killed by a player
+
 ### **Posers**
 
 Tools to make building with mannequins effortless. Currently intended for creative mode building only.
@@ -287,7 +296,7 @@ Optional resource pack - see [below](#resource-pack-info)
         + Running this in Peaceful Mode could cause problems with vital entities unable to be summoned
         + Turning off spawning with `/gamerule spawn_mobs false` is ok
         + `/gamerule mob_griefing false` is recommended (but not required)
-            + This prevents enderman from moving blocks and breaking equipment
+            + This prevents endermen from moving blocks and breaking equipment
     + Simulation distance should be high enough to prevent nearby equipment from being unloaded
         + Most types of equipment need to be loaded in order for other things like doors and buttons to register them
         + The simulation distance should always be high enough to fit the entire current level from anywhere within the level
@@ -547,6 +556,12 @@ For datapack testing purposes only. Everything is experimental and may not be up
 ----------------------------------------------------------------
 
 # Changelog
+
++ Dev branch
+    + **42endergrief**
+        + New module datapack to prevent endermen from picking up blocks
+    + **42pvphead**
+        + New module datapack to make players drop their head when killed by a player
 
 + `v0.12.0+mc26.3` Major Update (9/12/2026)
     + **IMPORTANT**
