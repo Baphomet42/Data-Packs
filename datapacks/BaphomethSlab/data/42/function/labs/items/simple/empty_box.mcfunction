@@ -14,6 +14,9 @@ summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":{color:"gold",extra
 # statues 2
 summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":{color:"gold",extra:[{bold:true,color:"dark_purple",text:"Statues II"}," [",{italic:true,text:"BaphomethLabs"},"]"],italic:false,text:""},"minecraft:item_name":{color:"gold",extra:[{bold:true,color:"dark_purple",text:"Statues II"}," [",{italic:true,text:"BaphomethLabs"},"]"],italic:false,text:""}},count:1,id:"minecraft:purple_shulker_box"}}
 
+# mannequins
+summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":{color:"gold",extra:[{bold:true,color:"dark_gray",text:"Mannequins"}," [",{italic:true,text:"BaphomethLabs"},"]"],italic:false,text:""},"minecraft:item_name":{color:"gold",extra:[{bold:true,color:"dark_gray",text:"Mannequins"}," [",{italic:true,text:"BaphomethLabs"},"]"],italic:false,text:""}},count:1,id:"minecraft:gray_shulker_box"}}
+
 # power eggs
 summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":{color:"gold",extra:[{bold:true,color:"#F9801D",text:"Power Eggs"}," [",{italic:true,text:"BaphomethLabs"},"]"],italic:false,text:""},"minecraft:item_name":{color:"gold",extra:[{bold:true,color:"#F9801D",text:"Power Eggs"}," [",{italic:true,text:"BaphomethLabs"},"]"],italic:false,text:""}},count:1,id:"minecraft:orange_shulker_box"}}
 
@@ -31,9 +34,3 @@ summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":{color:"gold",extra
 
 # banners
 summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":{color:"gold",extra:[{bold:true,color:"blue",text:"Banners"}," [",{italic:true,text:"BaphomethLabs"},"]"],italic:false,text:""},"minecraft:item_name":{color:"gold",extra:[{bold:true,color:"blue",text:"Banners"}," [",{italic:true,text:"BaphomethLabs"},"]"],italic:false,text:""}},count:1,id:"minecraft:blue_shulker_box"}}
-
-# mannequins 42
-summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":{color:"white",extra:["42 ",{player:{id:[I;456917768,-717075144,-1332545803,-1234799884]}},{bold:true,color:"dark_purple",text:" [Mannequins]"}],italic:false,text:""},"minecraft:item_name":{color:"white",extra:["42 ",{player:{id:[I;456917768,-717075144,-1332545803,-1234799884]}},{bold:true,color:"dark_purple",text:" [Mannequins]"}],italic:false,text:""}},count:1,id:"minecraft:gray_shulker_box"}}
-
-# mannequins 6
-summon item ~ ~ ~ {Item:{components:{"minecraft:custom_name":{color:"white",extra:["6 ",{player:{id:[I;-1811621596,-172341255,-2101462190,412930373]}},{bold:true,color:"dark_purple",text:" [Mannequins]"}],italic:false,text:""},"minecraft:item_name":{color:"white",extra:["6 ",{player:{id:[I;-1811621596,-172341255,-2101462190,412930373]}},{bold:true,color:"dark_purple",text:" [Mannequins]"}],italic:false,text:""}},count:1,id:"minecraft:gray_shulker_box"}}
